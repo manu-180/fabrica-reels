@@ -142,7 +142,9 @@
         "7",
         "31",
         "12",
-        "18"
+        "18",
+        "6",
+        "50"
       ],
       "fuente": "repo:manu-180/calcular:src/data/aguinaldo.ts:46",
       "envejece": null,
@@ -155,7 +157,9 @@
       "id": "aguinaldo-estatales-provincias",
       "tipo": "dato",
       "texto": "Cada provincia anuncia su cronograma, en general en las dos primeras semanas del mes de pago",
-      "cifras": [],
+      "cifras": [
+        "30"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/aguinaldo/fechas/page.tsx:55",
       "envejece": null,
       "fuente_oficial": {
@@ -194,7 +198,9 @@
       "id": "aguinaldo-irrenunciable-chat",
       "tipo": "dato",
       "texto": "El aguinaldo es irrenunciable: no se puede pactar no cobrarlo",
-      "cifras": [],
+      "cifras": [
+        "18"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/aguinaldo/page.tsx:56",
       "envejece": null,
       "fuente_oficial": {
@@ -225,7 +231,9 @@
       "id": "aguinaldo-monotributista",
       "tipo": "norma",
       "texto": "Sin relación de dependencia no hay SAC; en pluriempleo se cobra solo sobre el sueldo registrado",
-      "cifras": [],
+      "cifras": [
+        "12"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/blog/aguinaldo-monotributista/page.tsx:50",
       "envejece": null,
       "fuente_oficial": {
@@ -309,7 +317,11 @@
       "id": "alquiler-chat-que-meses-tomaron",
       "tipo": "dato",
       "texto": "El derecho al ajuste sale del contrato; si el número no coincide, se pide la cuenta y los meses del IPC usados",
-      "cifras": [],
+      "cifras": [
+        "2",
+        "6",
+        "6,12"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/inflacion/alquiler/page.tsx:53",
       "envejece": null,
       "fuente_oficial": {
@@ -323,7 +335,8 @@
       "texto": "Contratos de la Ley 27.551 (jul-2020 a dic-2023): las leyes nuevas no alcanzan a los contratos en curso (art. 7 CCyC)",
       "cifras": [
         "27.551",
-        "7"
+        "7",
+        "70"
       ],
       "fuente": "repo:manu-180/calcular:src/data/inflacion.ts:15",
       "envejece": null,
@@ -364,7 +377,9 @@
       "id": "alquiler-ipc-vs-icl",
       "tipo": "dato",
       "texto": "IPC: sigue a los precios. ICL: combina inflación y sueldos. El que suba menos le conviene al inquilino",
-      "cifras": [],
+      "cifras": [
+        "70"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/inflacion/alquiler/page.tsx:61",
       "envejece": null,
       "fuente_oficial": {
@@ -391,7 +406,8 @@
       "cifras": [
         "1,02",
         "6,12",
-        "6"
+        "6",
+        "2"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/inflacion/alquiler/page.tsx:29",
       "envejece": null,
@@ -636,7 +652,10 @@
         "2",
         "24.557",
         "53",
-        "65"
+        "65",
+        "50",
+        "20",
+        "26.773"
       ],
       "fuente": "repo:manu-180/calcular:src/data/riesgos-trabajo.ts:100",
       "envejece": null,
@@ -684,7 +703,11 @@
         "1",
         "3",
         "17",
-        "26.773"
+        "26.773",
+        "6",
+        "1694",
+        "53",
+        "65"
       ],
       "fuente": "repo:manu-180/calcular:src/data/riesgos-trabajo.ts:46",
       "envejece": "cambia con cada actualización de montos o escalas en calcular",
@@ -704,7 +727,10 @@
         "1",
         "9",
         "28",
-        "2"
+        "2",
+        "6",
+        "1694",
+        "24.557"
       ],
       "fuente": "repo:manu-180/calcular:src/data/riesgos-trabajo.ts:44",
       "envejece": "cambia con cada actualización de montos o escalas en calcular",
@@ -1430,7 +1456,9 @@
         "0,77",
         "0,64",
         "0,68",
-        "3,09"
+        "3,09",
+        "30",
+        "60"
       ],
       "fuente": "repo:manu-180/calcular:src/data/adulto-equivalente.ts:21",
       "envejece": null,
@@ -1498,7 +1526,8 @@
         "80",
         "25",
         "27.802",
-        "45"
+        "45",
+        "6"
       ],
       "fuente": "repo:manu-180/calcular:src/data/certificado-trabajo.ts:43",
       "envejece": null,
@@ -1619,7 +1648,9 @@
         "198",
         "27.802",
         "14.546",
-        "1"
+        "1",
+        "25",
+        "31"
       ],
       "fuente": "repo:manu-180/calcular:src/data/viajantes.ts:61",
       "envejece": null,
@@ -2063,7 +2094,9 @@
       "cifras": [
         "137",
         "5",
-        "3"
+        "3",
+        "6",
+        "27.802"
       ],
       "fuente": "repo:manu-180/calcular:src/data/convenio-vencido.ts:66",
       "envejece": null,
@@ -2438,7 +2471,10 @@
       "texto": "Arts. 658 y 659 del CCyC: ambos progenitores deben la manutención, en proporción a sus posibilidades",
       "cifras": [
         "658",
-        "659"
+        "659",
+        "21",
+        "25",
+        "660"
       ],
       "fuente": "repo:manu-180/calcular:src/lib/cuota-alimentaria.ts:8",
       "envejece": null,
@@ -2550,7 +2586,11 @@
       "id": "deduccion-alquiler-sin-ganancias-no-sirve",
       "tipo": "dato",
       "texto": "La deducción solo baja un impuesto que existe: sin impuesto no hay saldo a favor ni traslado",
-      "cifras": [],
+      "cifras": [
+        "40",
+        "85",
+        "5547"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/deduccion-alquiler/page.tsx:100",
       "envejece": null,
       "fuente_oficial": {
@@ -3008,7 +3048,10 @@
       "tipo": "dato",
       "texto": "Los dos incisos del art. 8 calculan el aporte sobre los haberes, incluido el haber complementario, que es el aguinaldo previsional",
       "cifras": [
-        "8"
+        "8",
+        "19.032",
+        "3",
+        "6"
       ],
       "fuente": "repo:manu-180/calcular:src/data/descuento-pami.ts:23",
       "envejece": null,
@@ -3288,7 +3331,11 @@
       "texto": "Deducciones, retenciones y compensaciones: máximo 20 % de la remuneración en dinero (art. 133 LCT)",
       "cifras": [
         "20",
-        "133"
+        "133",
+        "436",
+        "6",
+        "2",
+        "131"
       ],
       "fuente": "repo:manu-180/calcular:src/data/descuentos-sueldo.ts:51",
       "envejece": null,
@@ -3358,7 +3405,16 @@
         "85",
         "9",
         "12",
-        "70"
+        "70",
+        "100",
+        "6",
+        "11",
+        "23",
+        "24",
+        "35",
+        "36",
+        "45",
+        "267"
       ],
       "fuente": "repo:manu-180/calcular:src/data/desempleo.ts:83",
       "envejece": null,
@@ -3383,7 +3439,10 @@
         "24",
         "35",
         "8",
-        "36"
+        "36",
+        "45",
+        "70",
+        "90"
       ],
       "fuente": "repo:manu-180/calcular:src/data/desempleo.ts:83",
       "envejece": null,
@@ -3398,7 +3457,9 @@
       "texto": "Art. 114 inc. f) Ley 24.013: expiración del tiempo convenido o fin de la obra, tarea o servicio",
       "cifras": [
         "114",
-        "24.013"
+        "24.013",
+        "27.802",
+        "241"
       ],
       "fuente": "repo:manu-180/calcular:src/data/desempleo.ts:122",
       "envejece": null,
@@ -3510,7 +3571,9 @@
         "50",
         "26.844",
         "99",
-        "27.742"
+        "27.742",
+        "10",
+        "30"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/despido-empleada-domestica/page.tsx:74",
       "envejece": null,
@@ -3560,7 +3623,8 @@
         "6",
         "3",
         "30",
-        "15"
+        "15",
+        "26.844"
       ],
       "fuente": "repo:manu-180/calcular:src/data/despido-casas-particulares.ts:60",
       "envejece": null,
@@ -3588,7 +3652,10 @@
       "tipo": "dato",
       "texto": "Art. 48: un mes por año o fracción mayor de tres meses, sobre la mejor remuneración del último año, sin ningún tope",
       "cifras": [
-        "48"
+        "48",
+        "67",
+        "26.844",
+        "245"
       ],
       "fuente": "repo:manu-180/calcular:src/data/despido-casas-particulares.ts:45",
       "envejece": null,
@@ -3699,7 +3766,9 @@
       "texto": "Art. 92 bis LCT rige sólo para el contrato por tiempo indeterminado; el plazo fijo roto en el mes 2 sí indemniza",
       "cifras": [
         "92",
-        "2"
+        "2",
+        "6",
+        "27.802"
       ],
       "fuente": "repo:manu-180/calcular:src/data/despido-plazo-fijo.ts:38",
       "envejece": null,
@@ -3795,7 +3864,11 @@
       "tipo": "dato",
       "texto": "Art. 166 LCT: la remuneración normal más una cantidad igual",
       "cifras": [
-        "166"
+        "166",
+        "26.541",
+        "6",
+        "30",
+        "169"
       ],
       "fuente": "repo:manu-180/calcular:src/data/dia-empleado-comercio.ts:60",
       "envejece": null,
@@ -3811,7 +3884,9 @@
       "cifras": [
         "26.541",
         "1",
-        "26"
+        "26",
+        "130",
+        "75"
       ],
       "fuente": "repo:manu-180/calcular:src/data/dia-empleado-comercio.ts:22",
       "envejece": null,
@@ -4118,7 +4193,9 @@
       "texto": "Se paga en dos cuotas: el último día de trabajo de junio y el de diciembre (art. 26 de la Ley 26.844)",
       "cifras": [
         "26",
-        "26.844"
+        "26.844",
+        "30",
+        "50"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/empleada-domestica/page.tsx:90",
       "envejece": null,
@@ -4320,7 +4397,17 @@
       "id": "empleada-domestica-vacaciones-sin-retiro",
       "tipo": "dato",
       "texto": "Personal sin retiro: habitación y comida que pone el empleador se pagan en dinero antes de que empiecen las vacaciones",
-      "cifras": [],
+      "cifras": [
+        "31",
+        "6",
+        "5",
+        "14",
+        "21",
+        "10",
+        "28",
+        "20",
+        "35"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/empleada-domestica/page.tsx:98",
       "envejece": null,
       "fuente_oficial": {
@@ -4439,7 +4526,9 @@
       "tipo": "norma",
       "texto": "Art. 208 LCT: remuneración del momento de la interrupción más los aumentos que se acuerden para la categoría",
       "cifras": [
-        "208"
+        "208",
+        "213",
+        "27.802"
       ],
       "fuente": "repo:manu-180/calcular:src/data/enfermedad.ts:25",
       "envejece": null,
@@ -4680,7 +4769,10 @@
       "texto": "Art. 248 LCT: queda liberado si paga dentro de los 30 días de ocurrido el deceso",
       "cifras": [
         "248",
-        "30"
+        "30",
+        "27.802",
+        "247",
+        "245"
       ],
       "fuente": "repo:manu-180/calcular:src/data/muerte-trabajador.ts:35",
       "envejece": null,
@@ -5123,7 +5215,11 @@
         "13",
         "12",
         "1",
-        "17"
+        "17",
+        "9",
+        "5",
+        "35",
+        "94"
       ],
       "fuente": "repo:manu-180/calcular:src/lib/ganancias.ts:122",
       "envejece": null,
@@ -5614,7 +5710,10 @@
       "cifras": [
         "12",
         "197",
-        "198"
+        "198",
+        "11",
+        "8",
+        "35"
       ],
       "fuente": "repo:manu-180/calcular:src/data/horas-extras.ts:78",
       "envejece": null,
@@ -5648,7 +5747,9 @@
         "52",
         "12",
         "208",
-        "200"
+        "200",
+        "8",
+        "25"
       ],
       "fuente": "repo:manu-180/calcular:src/data/horas-extras.ts:57",
       "envejece": null,
@@ -5695,7 +5796,8 @@
       "tipo": "norma",
       "texto": "Art. 203 LCT: el trabajador no está obligado a horas suplementarias, salvo excepciones",
       "cifras": [
-        "203"
+        "203",
+        "12"
       ],
       "fuente": "repo:manu-180/calcular:src/data/horas-extras.ts:91",
       "envejece": null,
@@ -5711,7 +5813,11 @@
       "cifras": [
         "30",
         "200",
-        "484"
+        "484",
+        "12",
+        "50",
+        "100",
+        "13"
       ],
       "fuente": "repo:manu-180/calcular:src/data/horas-extras.ts:69",
       "envejece": null,
@@ -5852,7 +5958,8 @@
       "tipo": "dato",
       "texto": "Art. 26 inc. i) LIG: exenta la indemnización por antigüedad; integración del mes, SAC y vacaciones no figuran en la lista",
       "cifras": [
-        "26"
+        "26",
+        "245"
       ],
       "fuente": "repo:manu-180/calcular:src/data/indemnizacion.ts:30",
       "envejece": null,
@@ -5931,7 +6038,9 @@
       "texto": "Arts. 231 y 232 LCT: el preaviso omitido se calcula con su SAC, la doceava parte",
       "cifras": [
         "231",
-        "232"
+        "232",
+        "5",
+        "12"
       ],
       "fuente": "repo:manu-180/calcular:src/lib/indemnizacion.ts:179",
       "envejece": null,
@@ -6056,7 +6165,9 @@
       "texto": "El INDEC publica el IPC de cada mes entre el 10 y el 15 del mes siguiente; el acumulado se completa con diciembre",
       "cifras": [
         "10",
-        "15"
+        "15",
+        "31",
+        "12"
       ],
       "fuente": "repo:manu-180/calcular:src/data/inflacion.ts:40",
       "envejece": null,
@@ -6413,7 +6524,8 @@
       "tipo": "dato",
       "texto": "Movilidad mensual: variación del IPC del INDEC de dos meses antes, redondeada a dos decimales (Decreto 274/2024)",
       "cifras": [
-        "274"
+        "274",
+        "12"
       ],
       "fuente": "repo:manu-180/calcular:src/data/jubilaciones.ts:7",
       "envejece": null,
@@ -6624,7 +6736,9 @@
       "texto": "Asignación por maternidad = remuneración bruta, sin aportes (art. 11 Ley 24.714)",
       "cifras": [
         "11",
-        "24.714"
+        "24.714",
+        "45",
+        "10"
       ],
       "fuente": "repo:manu-180/calcular:src/data/licencias.ts:8",
       "envejece": null,
@@ -6686,7 +6800,9 @@
       "cifras": [
         "182",
         "13",
-        "245"
+        "245",
+        "7",
+        "178"
       ],
       "fuente": "repo:manu-180/calcular:src/data/licencias.ts:57",
       "envejece": null,
@@ -6703,7 +6819,10 @@
         "179",
         "2",
         "30",
-        "12"
+        "12",
+        "90",
+        "45",
+        "10"
       ],
       "fuente": "repo:manu-180/calcular:src/data/licencias.ts:66",
       "envejece": null,
@@ -6735,7 +6854,10 @@
       "cifras": [
         "177",
         "11",
-        "24.714"
+        "24.714",
+        "15",
+        "10",
+        "45"
       ],
       "fuente": "repo:manu-180/calcular:src/data/licencias.ts:6",
       "envejece": null,
@@ -6863,7 +6985,9 @@
       "tipo": "dato",
       "texto": "Actualización semestral por IPC: valores vigentes desde el 1 de agosto, próxima en febrero",
       "cifras": [
-        "1"
+        "1",
+        "5",
+        "12"
       ],
       "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:3",
       "envejece": "cambia con cada actualización de montos o escalas en calcular",
@@ -6876,7 +7000,9 @@
       "id": "monotributo-calendario-febrero-actualiza",
       "tipo": "dato",
       "texto": "Escalas actualizadas dos veces por año por IPC: próxima actualización en febrero",
-      "cifras": [],
+      "cifras": [
+        "5"
+      ],
       "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:15",
       "envejece": "cambia con cada actualización de montos o escalas en calcular",
       "fuente_oficial": {
@@ -6970,7 +7096,9 @@
       "id": "monotributo-dependencia-solo-impuesto",
       "tipo": "dato",
       "texto": "Con relación de dependencia, jubilación y obra social ya se aportan por el empleo: solo se paga el impuesto integrado",
-      "cifras": [],
+      "cifras": [
+        "20"
+      ],
       "fuente": "repo:manu-180/calcular:src/lib/monotributo.ts:28",
       "envejece": null,
       "fuente_oficial": {
@@ -7027,7 +7155,12 @@
       "id": "monotributo-planilla-chat-local",
       "tipo": "dato",
       "texto": "Superficie, energía y alquileres también definen la categoría, aunque la facturación no cambie",
-      "cifras": [],
+      "cifras": [
+        "30",
+        "60",
+        "45",
+        "85"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/planillas/monotributo/page.tsx:91",
       "envejece": null,
       "fuente_oficial": {
@@ -7053,7 +7186,11 @@
       "id": "monotributo-recategorizacion-agosto-rige-enero",
       "tipo": "dato",
       "texto": "Vigencia: la de agosto rige de agosto a enero inclusive; la de febrero, de febrero a julio",
-      "cifras": [],
+      "cifras": [
+        "6",
+        "12",
+        "5"
+      ],
       "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:28",
       "envejece": null,
       "fuente_oficial": {
@@ -7065,7 +7202,11 @@
       "id": "monotributo-recategorizacion-bajar-sin-multa",
       "tipo": "norma",
       "texto": "No recategorizarse cuando tocaba bajar no tiene multa: se sigue pagando la cuota más alta",
-      "cifras": [],
+      "cifras": [
+        "5",
+        "12",
+        "6"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/monotributo/recategorizacion/page.tsx:43",
       "envejece": null,
       "fuente_oficial": {
@@ -7089,7 +7230,9 @@
       "id": "monotributo-recategorizacion-de-oficio",
       "tipo": "dato",
       "texto": "Recategorización de oficio con la información de ARCA: cuota nueva retroactiva y sanciones",
-      "cifras": [],
+      "cifras": [
+        "12"
+      ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/monotributo/recategorizacion/page.tsx:35",
       "envejece": null,
       "fuente_oficial": {
@@ -7102,7 +7245,8 @@
       "tipo": "dato",
       "texto": "En febrero se evalúan los 12 meses entre febrero del año anterior y enero",
       "cifras": [
-        "12"
+        "12",
+        "5"
       ],
       "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:106",
       "envejece": null,
@@ -7449,7 +7593,8 @@
       "texto": "Art. 10 inc. a: en caso de extinción del contrato, 3 meses sin aportes",
       "cifras": [
         "10",
-        "3"
+        "3",
+        "23.660"
       ],
       "fuente": "repo:manu-180/calcular:src/data/obra-social-continuidad.ts:69",
       "envejece": null,
@@ -7909,7 +8054,8 @@
         "12.908",
         "1",
         "31",
-        "12"
+        "12",
+        "6"
       ],
       "fuente": "repo:manu-180/calcular:src/data/periodistas.ts:66",
       "envejece": null,
@@ -8038,7 +8184,9 @@
       "tipo": "dato",
       "texto": "Art. 92 bis LCT: es abusiva la contratación sucesiva de distintos trabajadores para un mismo puesto permanente",
       "cifras": [
-        "92"
+        "92",
+        "5",
+        "6"
       ],
       "fuente": "repo:manu-180/calcular:src/data/periodo-prueba.ts:96",
       "envejece": null,
@@ -8189,7 +8337,10 @@
       "texto": "Base del aguinaldo: la mayor remuneración mensual devengada, por todo concepto, dentro del semestre (Ley 26.844, art. 26)",
       "cifras": [
         "26.844",
-        "26"
+        "26",
+        "100",
+        "50",
+        "13"
       ],
       "fuente": "repo:manu-180/calcular:src/data/casas-particulares.ts:323",
       "envejece": null,
@@ -8309,7 +8460,8 @@
       "texto": "Arts. 2 inc. f LCT y 128: no hay contrato de trabajo; supletorio el Código Civil y Comercial",
       "cifras": [
         "2",
-        "128"
+        "128",
+        "27.802"
       ],
       "fuente": "repo:manu-180/calcular:src/data/plataformas.ts:140",
       "envejece": null,
@@ -8486,7 +8638,8 @@
       "tipo": "dato",
       "texto": "Interés = capital × TNA × días ÷ 365",
       "cifras": [
-        "365"
+        "365",
+        "30"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/plazo-fijo/page.tsx:183",
       "envejece": null,
@@ -8756,7 +8909,10 @@
       "texto": "Art. 57: el término corre desde el 1° de enero siguiente al año del vencimiento general",
       "cifras": [
         "57",
-        "1"
+        "1",
+        "5",
+        "11.683",
+        "120"
       ],
       "fuente": "repo:manu-180/calcular:src/data/prescripcion-arca.ts:75",
       "envejece": null,
@@ -8911,7 +9067,8 @@
       "cifras": [
         "104",
         "32",
-        "27.802"
+        "27.802",
+        "6"
       ],
       "fuente": "repo:manu-180/calcular:src/data/propinas.ts:51",
       "envejece": null,
@@ -8942,7 +9099,8 @@
       "cifras": [
         "90",
         "918",
-        "24"
+        "24",
+        "27.260"
       ],
       "fuente": "repo:manu-180/calcular:src/data/puam.ts:58",
       "envejece": null,
@@ -8991,7 +9149,9 @@
         "38",
         "27.467",
         "4",
-        "12"
+        "12",
+        "65",
+        "80"
       ],
       "fuente": "repo:manu-180/calcular:src/data/puam.ts:14",
       "envejece": null,
@@ -9354,7 +9514,8 @@
       "cifras": [
         "143",
         "2",
-        "10"
+        "10",
+        "27.802"
       ],
       "fuente": "repo:manu-180/calcular:src/data/conservacion-recibos.ts:50",
       "envejece": null,
@@ -9737,7 +9898,13 @@
         "5",
         "30",
         "4",
-        "48"
+        "48",
+        "2",
+        "3",
+        "27.802",
+        "164",
+        "157",
+        "10"
       ],
       "fuente": "repo:manu-180/calcular:src/data/rifl.ts:13",
       "envejece": null,
@@ -9899,7 +10066,10 @@
       "id": "smvm-convenio-piso",
       "tipo": "dato",
       "texto": "El SMVM es el piso absoluto; con convenio, el piso real es la escala de la categoría",
-      "cifras": [],
+      "cifras": [
+        "20",
+        "48"
+      ],
       "fuente": "repo:manu-180/calcular:src/lib/salario-minimo.ts:13",
       "envejece": null,
       "fuente_oficial": {
@@ -9973,7 +10143,8 @@
       "texto": "El SMVM es para la jornada legal completa; los casos de los arts. 92 ter y 198 lo cobran en proporción",
       "cifras": [
         "92",
-        "198"
+        "198",
+        "118"
       ],
       "fuente": "repo:manu-180/calcular:src/lib/salario-minimo.ts:7",
       "envejece": null,
@@ -10138,7 +10309,8 @@
       "texto": "11 % jubilación, 3 % PAMI y 3 % obra social: aportes a la seguridad social",
       "cifras": [
         "11",
-        "3"
+        "3",
+        "17"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/sueldo-neto/page.tsx:52",
       "envejece": null,
@@ -10179,7 +10351,11 @@
       "tipo": "dato",
       "texto": "Jubilación, Ley 19.032 y obra social: iguales para todo empleado en relación de dependencia",
       "cifras": [
-        "19.032"
+        "19.032",
+        "11",
+        "3",
+        "17",
+        "1"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/planillas/mi-sueldo/page.tsx:126",
       "envejece": null,
@@ -10509,7 +10685,10 @@
         "207",
         "27.802",
         "6",
-        "3"
+        "3",
+        "8",
+        "48",
+        "36"
       ],
       "fuente": "repo:manu-180/calcular:src/data/trabajo-mujeres.ts:52",
       "envejece": null,
@@ -11019,7 +11198,11 @@
       "tipo": "norma",
       "texto": "Días corridos: incluyen fines de semana y feriados (art. 150 LCT)",
       "cifras": [
-        "150"
+        "150",
+        "25",
+        "5",
+        "14",
+        "30"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/vacaciones/page.tsx:25",
       "envejece": null,
@@ -11079,7 +11262,10 @@
       "texto": "Remunerativo: 11 % jubilación, 3 % PAMI y 3 % obra social",
       "cifras": [
         "11",
-        "3"
+        "3",
+        "25",
+        "30",
+        "17"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/blog/cuanto-se-cobra-de-vacaciones-plus-vacacional-2026/page.tsx:68",
       "envejece": null,
@@ -11108,7 +11294,10 @@
       "tipo": "norma",
       "texto": "Sin antigüedad mínima (art. 151 LCT); si no llegás a la mitad de los días hábiles, es proporcional",
       "cifras": [
-        "151"
+        "151",
+        "20",
+        "30",
+        "31"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/vacaciones/page.tsx:45",
       "envejece": null,
@@ -11125,7 +11314,10 @@
         "1",
         "30",
         "154",
-        "27.802"
+        "27.802",
+        "25",
+        "45",
+        "7"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/vacaciones/page.tsx:37",
       "envejece": null,
@@ -11140,7 +11332,9 @@
       "texto": "Aviso fehaciente del trabajador; deben terminar antes del 31 de mayo (art. 157 LCT)",
       "cifras": [
         "31",
-        "157"
+        "157",
+        "162",
+        "164"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/vacaciones/page.tsx:53",
       "envejece": null,
@@ -11156,7 +11350,8 @@
       "cifras": [
         "1",
         "20",
-        "153"
+        "153",
+        "5"
       ],
       "fuente": "repo:manu-180/calcular:src/data/vacaciones.ts:36",
       "envejece": null,
@@ -11170,7 +11365,8 @@
       "tipo": "dato",
       "texto": "Vacaciones no simultáneas: en verano al menos una vez cada tres años (art. 154 LCT)",
       "cifras": [
-        "154"
+        "154",
+        "30"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/vacaciones/page.tsx:37",
       "envejece": null,
@@ -11277,7 +11473,12 @@
       "texto": "Art. 3 del Dec. 886/2005: extiende el beneficio a oficiales y suboficiales en retiro o baja destinados en el TOM o que combatieron en el TOAS",
       "cifras": [
         "3",
-        "886"
+        "886",
+        "100",
+        "70",
+        "1357",
+        "7",
+        "14"
       ],
       "fuente": "repo:manu-180/calcular:src/data/veteranos-malvinas.ts:113",
       "envejece": null,
@@ -11296,7 +11497,8 @@
         "2",
         "4",
         "14",
-        "6"
+        "6",
+        "1357"
       ],
       "fuente": "repo:manu-180/calcular:src/data/veteranos-malvinas.ts:112",
       "envejece": null,
