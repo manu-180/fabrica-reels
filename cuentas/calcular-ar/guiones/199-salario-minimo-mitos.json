@@ -63,6 +63,7 @@
   ],
   "tema": "salario-minimo",
   "hechos": [
-    "smvm-media-jornada"
+    "smvm-media-jornada",
+    "smvm-asignaciones-aparte"
   ]
 }

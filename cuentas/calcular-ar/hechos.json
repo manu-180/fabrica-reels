@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "actualizado": "2026-11-23",
+  "actualizado": "2026-11-24",
   "hechos": [
     {
       "id": "82-por-ciento-movil-excombatientes",
@@ -53,7 +53,7 @@
       "texto": "Excluidas: Ley 24.476 (Dec. 1454/2005), art. 6 de la Ley 25.994 y Ley 26.970",
       "cifras": [
         "24.476",
-        "1454",
+        "1.454",
         "6",
         "25.994",
         "26.970"
@@ -139,12 +139,10 @@
       "texto": "Semestre del 1/7 al 31/12; la cuota vence el 18 de diciembre",
       "cifras": [
         "1",
-        "7",
         "31",
         "12",
         "18",
-        "6",
-        "50"
+        "6"
       ],
       "fuente": "repo:manu-180/calcular:src/data/aguinaldo.ts:46",
       "envejece": null,
@@ -2503,7 +2501,7 @@
         "12",
         "6"
       ],
-      "fuente": "repo:manu-180/calcular:src/lib/cuota-alimentaria.ts:21",
+      "fuente": "repo:manu-180/calcular:src/data/canasta-crianza.ts:28",
       "envejece": null,
       "fuente_oficial": {
         "nombre": "INDEC: Valorización mensual de la canasta de crianza",
@@ -3653,7 +3651,6 @@
       "texto": "Art. 48: un mes por año o fracción mayor de tres meses, sobre la mejor remuneración del último año, sin ningún tope",
       "cifras": [
         "48",
-        "67",
         "26.844",
         "245"
       ],
@@ -4401,12 +4398,9 @@
         "31",
         "6",
         "5",
-        "14",
         "21",
         "10",
-        "28",
-        "20",
-        "35"
+        "20"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/empleada-domestica/page.tsx:98",
       "envejece": null,
@@ -4664,8 +4658,7 @@
       "texto": "Art. 202 de la reforma: deroga la Ley 23.759, que daba 4 días de licencia",
       "cifras": [
         "202",
-        "23.759",
-        "4"
+        "23.759"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/blog/estatutos-laborales-derogados-2027/page.tsx:91",
       "envejece": null,
@@ -5216,9 +5209,7 @@
         "12",
         "1",
         "17",
-        "9",
         "5",
-        "35",
         "94"
       ],
       "fuente": "repo:manu-180/calcular:src/lib/ganancias.ts:122",
@@ -5557,7 +5548,6 @@
       "cifras": [
         "27.630",
         "25",
-        "30",
         "35"
       ],
       "fuente": "repo:manu-180/calcular:src/data/ganancias-sociedades.ts:30",
@@ -6693,7 +6683,7 @@
         "25",
         "20"
       ],
-      "fuente": "repo:manu-180/calcular:src/data/licencias-especiales.ts:14",
+      "fuente": "repo:manu-180/calcular:src/data/licencias-especiales.ts:124",
       "envejece": null,
       "fuente_oficial": {
         "nombre": "Ley 20.744 de Contrato de Trabajo, texto actualizado (InfoLEG)",
@@ -6872,8 +6862,7 @@
       "texto": "Art. 158 inc. a y art. 160 LCT: 2 días corridos, con un día hábil garantizado si cae en domingo o feriado",
       "cifras": [
         "158",
-        "160",
-        "2"
+        "160"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/licencia-por-maternidad/page.tsx:62",
       "envejece": null,
@@ -6903,8 +6892,7 @@
       "texto": "Art. 11 Ley 24.714: 3 meses de antigüedad continuada para la asignación; la licencia es de la LCT",
       "cifras": [
         "11",
-        "24.714",
-        "3"
+        "24.714"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/licencia-por-maternidad/page.tsx:54",
       "envejece": null,
@@ -7029,7 +7017,7 @@
       "cifras": [
         "11"
       ],
-      "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:160",
+      "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:9",
       "envejece": "cambia con cada actualización de montos o escalas en calcular",
       "fuente_oficial": {
         "nombre": "ARCA: categorías del monotributo",
@@ -7096,9 +7084,7 @@
       "id": "monotributo-dependencia-solo-impuesto",
       "tipo": "dato",
       "texto": "Con relación de dependencia, jubilación y obra social ya se aportan por el empleo: solo se paga el impuesto integrado",
-      "cifras": [
-        "20"
-      ],
+      "cifras": [],
       "fuente": "repo:manu-180/calcular:src/lib/monotributo.ts:28",
       "envejece": null,
       "fuente_oficial": {
@@ -7161,7 +7147,7 @@
         "45",
         "85"
       ],
-      "fuente": "repo:manu-180/calcular:src/app/(ar)/planillas/monotributo/page.tsx:91",
+      "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:134",
       "envejece": null,
       "fuente_oficial": {
         "nombre": "Ley 24.977, Anexo t.o. Ley 26.565, texto actualizado (InfoLEG)",
@@ -8506,13 +8492,12 @@
     {
       "id": "plataformas-plus-vacacional",
       "tipo": "dato",
-      "texto": "14 días × (1/25 menos 1/30) = 0,0933 sueldos de plus vacacional que el prestador no cobra (arts. 150 y 155 LCT)",
+      "texto": "14 días × (1/25 menos 1/30): el plus vacacional que el prestador no cobra (arts. 150 y 155 LCT)",
       "cifras": [
         "14",
         "1",
         "25",
         "30",
-        "0,0933",
         "150",
         "155"
       ],
@@ -9903,7 +9888,6 @@
         "3",
         "27.802",
         "164",
-        "157",
         "10"
       ],
       "fuente": "repo:manu-180/calcular:src/data/rifl.ts:13",
@@ -10143,8 +10127,7 @@
       "texto": "El SMVM es para la jornada legal completa; los casos de los arts. 92 ter y 198 lo cobran en proporción",
       "cifras": [
         "92",
-        "198",
-        "118"
+        "198"
       ],
       "fuente": "repo:manu-180/calcular:src/lib/salario-minimo.ts:7",
       "envejece": null,
@@ -10351,11 +10334,7 @@
       "tipo": "dato",
       "texto": "Jubilación, Ley 19.032 y obra social: iguales para todo empleado en relación de dependencia",
       "cifras": [
-        "19.032",
-        "11",
-        "3",
-        "17",
-        "1"
+        "19.032"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/planillas/mi-sueldo/page.tsx:126",
       "envejece": null,
@@ -11264,8 +11243,7 @@
         "11",
         "3",
         "25",
-        "30",
-        "17"
+        "30"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/blog/cuanto-se-cobra-de-vacaciones-plus-vacacional-2026/page.tsx:68",
       "envejece": null,
@@ -11316,7 +11294,6 @@
         "154",
         "27.802",
         "25",
-        "45",
         "7"
       ],
       "fuente": "repo:manu-180/calcular:src/app/(ar)/vacaciones/page.tsx:37",
@@ -11475,7 +11452,6 @@
         "3",
         "886",
         "100",
-        "70",
         "1357",
         "7",
         "14"
@@ -11527,12 +11503,13 @@
     {
       "id": "veteranos-malvinas-derivada-100",
       "tipo": "dato",
-      "texto": "Art. 7 del Dec. 1357/04: la pensión derivada es el 100 % del beneficio del causante",
+      "texto": "Art. 7 del Dec. 1357/04: la pensión derivada es el 100 % del beneficio del causante, no el 70 % del régimen general",
       "cifras": [
         "7",
         "1357",
         "04",
-        "100"
+        "100",
+        "70"
       ],
       "fuente": "repo:manu-180/calcular:src/data/veteranos-malvinas.ts:13",
       "envejece": null,

@@ -91,6 +91,8 @@
   ],
   "tema": "sueldo",
   "hechos": [
-    "sueldo-descuentos-iguales-convenios"
+    "sueldo-descuentos-iguales-convenios",
+    "sueldo-aportes-no-impuestos",
+    "sueldo-cuota-sindical-opcional"
   ]
 }
