@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "clave": "002-vacaciones-dias",
+  "titulo": "vacaciones dias",
+  "hooks": [
+    "Esto no te lo cuentan",
+    "La cuenta que nadie hace",
+    "Mirá este dato"
+  ],
+  "captions": [
+    "Hacé la cuenta antes de firmar.",
+    "Un dato que te sirve.",
+    "Guardalo para cuando lo necesites."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "empleo",
+    "argentina",
+    "calculadora",
+    "finanzas"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-10"
+    }
+  ],
+  "formato": "mito",
+  "categoria": "mito",
+  "paleta": "selva",
+  "tema": "vacaciones",
+  "idea": "vacaciones-dias",
+  "hechos": [
+    "vacaciones-14"
+  ],
+  "voz": "Mucha gente cree que las vacaciones son siempre dos semanas pero depende de la antigüedad que tengas en el trabajo y con menos de cinco años te tocan catorce días corridos por ley",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Siempre son dos semanas",
+        "realidad": "Depende de tu antigüedad"
+      }
+    ]
+  }
+}

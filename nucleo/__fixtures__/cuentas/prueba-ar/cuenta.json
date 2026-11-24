@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "id": "prueba-ar",
+  "usuario": "prueba.ar",
+  "idioma": "es-AR",
+  "activa": true,
+  "modo": "real",
+  "creativos_por_dia": 3,
+  "variantes_por_creativo": 1,
+  "destinos": {
+    "prueba": {
+      "activo": true,
+      "trial": "MANUAL"
+    },
+    "normal": {
+      "activo": true,
+      "share_to_feed": true,
+      "espera_min": 60
+    },
+    "historia": {
+      "activo": true,
+      "espera_min": 30,
+      "cierre": "reel"
+    }
+  },
+  "franjas": [
+    {
+      "desde": "09:00",
+      "hasta": "23:59"
+    }
+  ],
+  "antispam": {
+    "max_dia": 12,
+    "max_dia_propias": 9,
+    "gap_min": 50,
+    "max_por_corrida": 1,
+    "reserva_cupo": 15
+  },
+  "rampa": {
+    "inicio": "2026-11-01",
+    "escalones": [
+      {
+        "creativos": 1,
+        "acciones": 3
+      },
+      {
+        "creativos": 2,
+        "acciones": 6
+      },
+      {
+        "creativos": 3,
+        "acciones": 9
+      }
+    ]
+  },
+  "voz": {
+    "proveedor": "elevenlabs",
+    "modelo": "eleven_multilingual_v2",
+    "voice_id": "voz-de-prueba",
+    "ajustes": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.3
+    },
+    "pausas": {
+      "tras_hook": 0.85,
+      "entre": 0.8,
+      "antes_cta": 0.9,
+      "coma": 0.25
+    },
+    "respaldo": {
+      "proveedor": "gemini",
+      "voz": "Kore",
+      "estilo": "rioplatense cálido"
+    },
+    "presupuesto_mes": 30000
+  },
+  "marca": {
+    "paletas": "marca/paletas.json",
+    "fuentes": {
+      "titulo": "marca/fuentes/Geist-800.woff2",
+      "cuerpo": "marca/fuentes/Geist-400.woff2",
+      "mono": "marca/fuentes/GeistMono-500.woff2"
+    },
+    "tracking_titulo": -0.03,
+    "motivos": [
+      "cuaderno"
+    ],
+    "logo": "marca/logo.svg",
+    "radio": 28,
+    "formatos": [
+      "chat",
+      "mito",
+      "explicador"
+    ]
+  },
+  "cierre": {
+    "texto_voz": "Hacé la cuenta con tus números, gratis, en calcular punto ar.",
+    "texto_historia": null,
+    "caption": "Hacé la cuenta con tus números, gratis, en calcular.ar",
+    "clips": "cta/clips.json",
+    "palabra_clave": null
+  },
+  "captions": {
+    "hashtags_por_post": [
+      5,
+      7
+    ],
+    "hashtags_fijos": [
+      "pruebaar"
+    ]
+  },
+  "secretos": {
+    "ig_user": "IG_PRUEBA_AR_USER_ID",
+    "ig_token": "IG_PRUEBA_AR_TOKEN",
+    "ig_insights": null
+  },
+  "reglas_texto": {
+    "prohibidas": [],
+    "max_palabras_voz": [
+      25,
+      55
+    ],
+    "sin_montos": true,
+    "fuentes_dominios": [
+      ".gob.ar"
+    ]
+  },
+  "banco": {
+    "guiones": "guiones",
+    "ideas": "ideas.json",
+    "hechos": "hechos.json",
+    "tono": "TONO.md"
+  },
+  "kairo": {
+    "seccion": "reels-prueba-ar"
+  }
+}

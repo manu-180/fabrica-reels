@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "clave": "004-horas-extra",
+  "titulo": "horas extra",
+  "hooks": [
+    "Esto no te lo cuentan",
+    "La cuenta que nadie hace",
+    "Mirá este dato"
+  ],
+  "captions": [
+    "Hacé la cuenta antes de firmar.",
+    "Un dato que te sirve.",
+    "Guardalo para cuando lo necesites."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "empleo",
+    "argentina",
+    "calculadora",
+    "finanzas"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-10"
+    }
+  ],
+  "formato": "chat",
+  "categoria": "negocio",
+  "paleta": "menta",
+  "tema": "horas-extra",
+  "idea": "horas-extra",
+  "hechos": [
+    "extra-50"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Recursos humanos",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "La hora extra se paga con 50 % de recargo"
+      }
+    ],
+    "remate": null
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "clave": "001-sobrino-hace-webs",
+  "titulo": "sobrino hace webs",
+  "hooks": [
+    "Tu sobrino te hizo la web",
+    "La web que nunca termina",
+    "Esto le pasa a todos"
+  ],
+  "captions": [
+    "El sobrino hace lo que puede.",
+    "Todos tenemos un sobrino que hace webs.",
+    "Una web no es un favor."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "webs",
+    "argentina"
+  ],
+  "formato": "chat",
+  "categoria": "comedia",
+  "paleta": "noche",
+  "tema": "sobrino",
+  "voz": null,
+  "contenido": {
+    "contacto": "Cliente nuevo",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Me la hace mi sobrino"
+      }
+    ],
+    "remate": "Ya casi"
+  }
+}

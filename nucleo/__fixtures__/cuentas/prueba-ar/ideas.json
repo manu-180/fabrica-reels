@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "ideas": [
+    {
+      "id": "aguinaldo-mitad",
+      "tema": "aguinaldo",
+      "angulo": "mito",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "aguinaldo-50"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "vacaciones-dias",
+      "tema": "vacaciones",
+      "angulo": "dato",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "vacaciones-14"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "preaviso-plazo",
+      "tema": "preaviso",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "preaviso-15"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "horas-extra",
+      "tema": "horas-extra",
+      "angulo": "dato",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "extra-50"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "despido-sin-guion",
+      "tema": "despido",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [],
+      "ventana": null,
+      "origen": "hechos"
+    }
+  ]
+}

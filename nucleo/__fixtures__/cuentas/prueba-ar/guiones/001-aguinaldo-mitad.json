@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "clave": "001-aguinaldo-mitad",
+  "titulo": "aguinaldo mitad",
+  "hooks": [
+    "Esto no te lo cuentan",
+    "La cuenta que nadie hace",
+    "Mirá este dato"
+  ],
+  "captions": [
+    "Hacé la cuenta antes de firmar.",
+    "Un dato que te sirve.",
+    "Guardalo para cuando lo necesites."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "empleo",
+    "argentina",
+    "calculadora",
+    "finanzas"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-10"
+    }
+  ],
+  "formato": "chat",
+  "categoria": "comedia",
+  "paleta": "papel",
+  "tema": "aguinaldo",
+  "idea": "aguinaldo-mitad",
+  "hechos": [
+    "aguinaldo-50"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mi jefe",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "El aguinaldo es el 50 % del mejor sueldo"
+      }
+    ],
+    "remate": "Mitad del mejor sueldo"
+  }
+}

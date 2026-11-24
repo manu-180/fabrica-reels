@@ -1,0 +1,162 @@
+[
+  {
+    "id": "noche-sello",
+    "paleta": "noche",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/noche-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "noche-sello-historia",
+    "paleta": "noche",
+    "estilo": "sello",
+    "destino": "historia",
+    "archivo": "clips/noche-sello-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "noche-tipografico",
+    "paleta": "noche",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/noche-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "noche-tipografico-historia",
+    "paleta": "noche",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/noche-tipografico-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "crema-sello",
+    "paleta": "crema",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/crema-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "crema-sello-historia",
+    "paleta": "crema",
+    "estilo": "sello",
+    "destino": "historia",
+    "archivo": "clips/crema-sello-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "crema-tipografico",
+    "paleta": "crema",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/crema-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "crema-tipografico-historia",
+    "paleta": "crema",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/crema-tipografico-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "bosque-sello",
+    "paleta": "bosque",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/bosque-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "bosque-sello-historia",
+    "paleta": "bosque",
+    "estilo": "sello",
+    "destino": "historia",
+    "archivo": "clips/bosque-sello-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "bosque-tipografico",
+    "paleta": "bosque",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/bosque-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "bosque-tipografico-historia",
+    "paleta": "bosque",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/bosque-tipografico-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "tinta-sello",
+    "paleta": "tinta",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/tinta-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "tinta-sello-historia",
+    "paleta": "tinta",
+    "estilo": "sello",
+    "destino": "historia",
+    "archivo": "clips/tinta-sello-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "tinta-tipografico",
+    "paleta": "tinta",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/tinta-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "tinta-tipografico-historia",
+    "paleta": "tinta",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/tinta-tipografico-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "arcilla-sello",
+    "paleta": "arcilla",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/arcilla-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "arcilla-sello-historia",
+    "paleta": "arcilla",
+    "estilo": "sello",
+    "destino": "historia",
+    "archivo": "clips/arcilla-sello-historia.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "arcilla-tipografico",
+    "paleta": "arcilla",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/arcilla-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "arcilla-tipografico-historia",
+    "paleta": "arcilla",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/arcilla-tipografico-historia.mp4",
+    "duracion_s": 4.9
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "papel-sello",
+    "paleta": "papel",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/papel-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "papel-tipografico",
+    "paleta": "papel",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/papel-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "selva-sello",
+    "paleta": "selva",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/selva-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "selva-tipografico",
+    "paleta": "selva",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/selva-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "noche-sello",
+    "paleta": "noche",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/noche-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "noche-tipografico",
+    "paleta": "noche",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/noche-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "menta-sello",
+    "paleta": "menta",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/menta-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "menta-tipografico",
+    "paleta": "menta",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/menta-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "pizarra-sello",
+    "paleta": "pizarra",
+    "estilo": "sello",
+    "destino": "reel",
+    "archivo": "clips/pizarra-sello.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "pizarra-tipografico",
+    "paleta": "pizarra",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/pizarra-tipografico.mp4",
+    "duracion_s": 4.9
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "clave": "003-preaviso-plazo",
+  "titulo": "preaviso plazo",
+  "hooks": [
+    "Esto no te lo cuentan",
+    "La cuenta que nadie hace",
+    "Mirá este dato"
+  ],
+  "captions": [
+    "Hacé la cuenta antes de firmar.",
+    "Un dato que te sirve.",
+    "Guardalo para cuando lo necesites."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "empleo",
+    "argentina",
+    "calculadora",
+    "finanzas"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-10"
+    }
+  ],
+  "formato": "explicador",
+  "categoria": "tecnico",
+  "paleta": "noche",
+  "tema": "preaviso",
+  "idea": "preaviso-plazo",
+  "hechos": [
+    "preaviso-15"
+  ],
+  "voz": "Si renunciás tenés que avisar con quince días de anticipación y si te despiden el aviso depende de tu antigüedad en la empresa y eso cambia lo que te corresponde cobrar al final",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "avisar con quince días",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "15 días"
+        }
+      }
+    ]
+  }
+}

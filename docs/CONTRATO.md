@@ -174,12 +174,20 @@ job de esa cuenta lo escribe (y Kairo sólo `pausado`).
 ```
 
 ```js
-leerEstado(texto, cuentaId)        // → EstadoV2; vacío → estadoVacio; roto o de otra cuenta → TIRA (nunca arranca de cero)
+leerEstado(texto, cuentaId)        // → EstadoV2; vacío → estadoVacio; roto, v1 o de otra cuenta → TIRA (nunca arranca de cero)
 estadoVacio(cuentaId, ahora)       // → EstadoV2
 serializarEstado(e)                // → string, orden estable de claves, '\n' final
-migrarV1(estadoV1, cuentaId)       // → EstadoV2 (M1: cada variante vieja pasa a publicaciones[tipo ?? 'prueba'])
+migrarV1(estadoV1, cuentaId)       // → EstadoV2 (M1, abajo)
 fusionarEstado(base, remoto, propio)  // → EstadoV2
+// Ayudas (F1): textoRef(ref) / leerRef(texto), publicacionVacia(destino, caption, vence), publicacionDe(e, ref),
+// varianteDe(e, ref), tocarPublicacion(e, ref, cambios) (sin mutar), todasLasPublicaciones(e),
+// yaSalio / afuera / pendiente(pub), MAX_INTENTOS = 3
 ```
+
+`migrarV1`: un creativo de calcular (variantes con `tipo`) es una sola variante con sus publicaciones por
+`tipo`; uno de apex-demos (variantes sin `tipo`, cada una otro video) da una variante por cada vieja con su
+`prueba`, y el `real` pasa a ser la `normal` de la variante de la que salió. `franja` pasa a `slot`; la firma
+vieja queda con `layout` y `motivo` en `'v1'`.
 
 **Fusión** (`fusionarEstado`, tres vías como la de calcular): `base` es lo que esta corrida leyó,
 `remoto` la punta de la rama, `propio` lo que esta corrida deja.
@@ -187,7 +195,9 @@ fusionarEstado(base, remoto, propio)  // → EstadoV2
 1. Por clave de primer nivel: si `propio` no cambió respecto de `base`, vale `remoto`; si cambió,
    vale `propio`. `actualizado` = el mayor.
 2. `creativos` por id; adentro, por campo igual que 1, salvo `variantes`, que va por `indice`; adentro
-   de cada variante, por campo, salvo `publicaciones`, que va por destino como objeto entero.
+   de cada variante, por campo, salvo `publicaciones`, que va por destino y adentro **por campo**
+   (cambio de F1: como objeto entero, una corrida que publicaba borraba las métricas que otra había
+   pusheado en el medio; lo prueba `correr.test.mjs`).
 3. **Monótonos**: `ig_container_id`, `ig_media_id`, `publicado_at` y `creando_at` nunca se pierden.
    Si la regla 1 elige un lado que no los tiene y el otro sí, se quedan los del otro. Es lo que
    impide publicar dos veces tras una carrera.
@@ -201,18 +211,20 @@ Cada publicación se identifica con `ref = { creativo, variante, destino }` (tex
 `<creativo>/<indice>/<destino>`).
 
 ```js
-agendar({ cuenta, creativos, dia, semilla })   // al producir: pone no_antes_de y vence a cada publicación
-cola({ estado, cuenta, ahora })                // → { ref, no_antes_de, vence }[] pendientes, por no_antes_de
-siguiente({ estado, cuenta, ahora, cuentaReal })  // → ref | null: la vencida más vieja que pasa el antispam
-alPublicar({ estado, cuenta, ref, publicado_at, semilla })  // pone el reloj de la que sigue
-descartarViejas({ estado, ahora })             // a medianoche de BA, con motivo
+agendar({ cuenta, creativos, dia, semilla, estado?, por?, ahora? })  // → Creativo[] con no_antes_de y vence
+  // por = { creativos, variantes } del día (la rampa); ahora: no agenda antes de ahora + 10 min
+cola({ estado, cuenta, ahora })                // → { ref, no_antes_de, vence }[] pendientes con reloj efectivo, por no_antes_de
+siguiente({ estado, cuenta, ahora, cuentaReal, ya? })  // → { ref: Ref | null, motivo }: la vencida más vieja que pasa el antispam
+alPublicar({ estado, cuenta, ref, publicado_at, semilla })  // → EstadoV2 con el reloj de la que sigue
+descartarViejas({ estado, ahora })             // → { estado, descartadas }: lo vencido sin salir, con motivo
+relojEfectivo(estado, cuenta, ref)             // → string | null: su no_antes_de o el heredado de la anterior que quedó afuera
 ```
 
 Relojes (todo determinista por `semilla = cuenta|creativo|indice|destino`):
 
-- **Slots**: el día tiene `creativos × variantes` slots, en orden de creativo y variante. Las franjas
-  se ponen una detrás de otra como una sola línea de minutos y se parten en partes iguales; el slot
-  `i` toma la parte `i`.
+- **Slots**: el día tiene `creativos × variantes` slots, en orden de creativo y variante (slot
+  `c·V + i`). Los minutos de las franjas se ponen en fila como una sola línea y se parten en partes
+  iguales; el slot `i` toma un minuto de la parte `i` (nunca uno del hueco entre dos franjas).
 - `prueba.no_antes_de`: un minuto al azar dentro de su parte, nunca terminado en 0 o 5, y no más
   tarde que `fin de la última franja − (espera normal + espera historia + 50)`.
 - `normal.no_antes_de`: `null` al producir; `alPublicar` de la prueba lo pone en
@@ -225,25 +237,44 @@ Relojes (todo determinista por `semilla = cuenta|creativo|indice|destino`):
   se descarta.
 - Una publicación de un destino en `estado.destinos_apagados` no entra a la cola; su siguiente hereda.
 
-`siguiente` elige como mucho `antispam.max_por_corrida` por tic (hoy 1) y nunca una cuya anterior
-está pendiente.
+`siguiente` devuelve una; `publicarCuenta` la llama hasta `antispam.max_por_corrida` veces por tic (hoy
+1), releyendo la cuenta real cada vez, y nunca toma una cuya anterior está pendiente. `ya` (`--ahora`)
+ignora el reloj, no el antispam ni el día.
 
 ## 4. Antispam (`nucleo/antispam.mjs`, F1)
 
 ```js
-/** Lectura real de la cuenta (D5): todo lo publicado en 24 h por cualquiera. */
-leerCuentaReal({ igUser, token, ahora, fetch })  // → CuentaReal
-/** @typedef {{ publicaciones_24h: { at: string, tipo: 'REELS' | 'STORY' | 'FEED' | string, propia: boolean }[],
- *              ultima_at: string | null, cupo: { usado: number, total: number } | null, username: string | null }} CuentaReal */
+/** Lectura real de la cuenta (D5): todo lo de 24 h de cualquiera, más la media de 48 h con caption. */
+leerCuentaReal({ igUser, token, ahora, fetch, espera?, estado? })  // → CuentaReal (estado: para marcar `propia`)
+/** @typedef {{ publicaciones_24h: { id: string, at: string, tipo: 'REELS' | 'STORY' | 'FEED' | string, propia: boolean }[],
+ *              ultima_at: string | null, cupo: { usado: number, total: number } | null, username: string | null,
+ *              recientes: { id, caption, permalink, timestamp }[],      // 48 h, hasta 150: la deduplicación por caption
+ *              historias: { id: string, at: string }[] | null }} CuentaReal   // /stories; null si no se pudo leer */
 puedePublicar({ cuenta, estado, cuentaReal, ahora })  // → { ok: true } | { ok: false, motivo: string }
-aplicarErrorRampa({ estado, cuenta, codigo, ahora })  // baja un escalón; dos en 7 días: pausa 48 h
+aplicarErrorRampa({ estado, cuenta, codigo, ahora })  // → EstadoV2: baja un escalón y lo sostiene; dos en 7 días: pausa 48 h ('antispam')
+actualizarRampa({ estado, cuenta, ahora })            // → EstadoV2: 7 días sin antispam sube uno; al alcanzar el calendario, rampa: null
+levantarPausaVencida(estado, ahora)                   // → EstadoV2: una pausa con pausado_hasta vencido se levanta sola
 ```
 
-`propia` = su `ig_media_id` está en el estado. No pasa si: 24 h ≥ `max_dia`; propias de hoy ≥
-`porDiaHoy(...).acciones`; última de la cuenta hace < `gap_min`; cupo libre < `reserva_cupo`;
-`username` distinto de `cuenta.usuario`. Lo que no sale por antispam no cuenta intento.
+`propia` = su `ig_media_id` está en el estado. No pasa si: 24 h (lo de Instagram más lo propio del estado
+que Instagram todavía no lista) ≥ `max_dia`; propias de hoy ≥ `porDiaHoy(...).acciones`; última de la
+cuenta hace < `gap_min`; cupo libre ≤ `reserva_cupo` o sin poder leerlo; `username` distinto de
+`cuenta.usuario`. Lo que no sale por antispam no cuenta intento. Antes del antispam, `publicarCuenta`
+reconoce lo que ya está en la cuenta (caption en `recientes`, historia con `creando_at` en `historias`) sin
+publicarlo de nuevo.
 
-Errores de Meta: `clasificarErrorMeta(e, { destino }) → ClaseError` con la tabla del diseño § 8.4.
+Publicar (`nucleo/meta/publicar.mjs`): `publicarCuenta({ cuenta, estado, ahora, env, fetch, espera, ya,
+guardar, log, reloj, semilla }) → { estado, publicadas: string[], motivo, fallar }`. Medir
+(`nucleo/meta/medir.mjs`, pasa a F7): `medir({ cuenta, estado, ahora, env, fetch, espera, log }) → { estado,
+medidas }`; `metricas_72h` es la primera lectura a las 72 h o más (historia: a las 20 h o más, antes de las
+24). `preguntas` se guarda sin usuarios, @menciones, mails ni teléfonos: el estado es público. Historias:
+la segunda red busca en `/stories` una de los 90 min posteriores al `creando_at`; la duración no se compara
+porque el campo no está verificado en la Graph API (queda la tolerancia de ±0,5 s en el código si se suma).
+
+Errores de Meta (`nucleo/meta/errores.mjs`): `clasificarErrorMeta(e, { destino }) → ClaseError` con la
+tabla del diseño § 8.4. Además: una historia con `permiso` apaga `destinos_apagados.historia` (D6, igual
+que la prueba con `permiso-trial`) y una historia con `publicacion` se descarta; `antispam` o `cupo` en una
+lectura (no al publicar) sólo esperan al próximo tic, sin tocar la rampa.
 
 ## 5. Los formatos (`formatos/<formato>/armar.mjs`, F2a y F2b)
 
@@ -296,9 +327,44 @@ export const layouts /* : { id: string, apto: (guion) => boolean }[] */
 - Render: `npx hyperframes@0.8.140 render <salida> -o <mp4> --fps 30 -q delivery` con las banderas
   de `render.mjs` de calcular. 1080×1920, 30 fps, zona segura de Reels.
 
-`nucleo/diseno.mjs` (F1): `firmaPara({ cuenta, guion, ronda, indice, historial, formato }) → Firma`
-con las reglas del diseño § 5.3 (no repite `layout` ni `paleta` del mismo tema; difiere en ≥ 2 ejes
-de cada uno de los 3 creativos anteriores; hermanas en ≥ 3 ejes).
+`nucleo/diseno.mjs` (F1): `firmaPara({ cuenta, guion, ronda, indice, historial, formato, opciones, hermanas?,
+variantes?, tema? }) → Firma` con las reglas del diseño § 5.3 (no repite `layout` ni `paleta` de las últimas
+salidas del mismo tema; difiere en ≥ 2 ejes de cada uno de los 3 creativos anteriores; hermanas en ≥ 3 ejes).
+`opciones = { paletas, musicas, clips }`: claves de `marca/paletas.json`, ids de `musica/` y `cta/clips.json`.
+`historial` sale de `historialDeFirmas(estado, excluir)`. Hook: `hookDe(ronda, indice, V) = (ronda·V + indice) % 3`.
+La plantilla recibe `diseno = { ronda, firma, layout, paleta }`.
+
+## 5 bis. Producir (`nucleo/producir.mjs`, F1) y lo que espera de F2a, F3 y F4
+
+`producir` carga estas dependencias recién cuando las usa (planear y publicar no las necesitan); en los
+tests van dobles:
+
+```js
+import { locutar } from '../nucleo/voz/index.mjs'                         // F3, § 6
+import { renderizarCuerpo, armarFinal } from '../nucleo/render/index.mjs'  // F4
+import { temaDe } from '../formatos/_comun/tema.mjs'                       // F2a, § 5
+
+renderizarCuerpo({ proyecto, salida, log })   // → Promise<void>: el proyecto HyperFrames a mp4 en `salida`
+armarFinal({ cuerpo, firma, clip, musica, conVoz, dir, destino })  // → Promise<{ archivo, duracion_s }>
+  // música, color, textura, mezcla a −14 LUFS y el clip del cierre; destino 'reel' | 'historia';
+  // clip = un Clip de cta/clips.json con `archivo` ya absoluto; musica = ruta absoluta en musica/
+```
+
+- `debeProducir({ cuenta, estado, ahora })` produce para `diaObjetivo(ahora)`: desde las 12 de BA el día
+  siguiente, antes el mismo. Los slots salen de `porDiaHoy(cuenta, dia, { escalon: estado.rampa?.escalon })`.
+- Por variante: `firmaPara` → `locutar({ hook: guion.hooks[firma.hook], cuerpo: guion.voz })` (nada en `chat`)
+  → `temaDe({ paleta: firma.paleta, motivo: firma.motivo })` → `armar` → `renderizarCuerpo` → `armarFinal`
+  (reel, y otra vez con un clip `destino: 'historia'` si la cuenta tiene `historia.cierre: 'historia'`) → Blob
+  `videos/<cuenta>/<fecha>/<creativo>-<indice>-<reel|historia>-<hash8>.mp4` → `captionsDeVariante` →
+  publicaciones de los destinos vivos → `agendar`.
+- Un error en `armar` es falla del guion (lo quema); cualquier otro es general (vuelve otro día).
+- La caché de voz es `blobVercel()` de F3 (en `--seco` sin token, `blobEnMemoria()`); `locutar` recibe
+  `dir` (la carpeta de la variante). Producir no pasa `respaldo`: una cuenta que no admite Gemini (APEX en
+  prueba y normal, diseño § 7.3) lo dice con `voz.respaldo: null` en su `cuenta.json`.
+- Captions (`nucleo/banco.mjs`): `armarCaptions({ guion, cuenta, n })` y `captionsDeVariante({ guion, cuenta,
+  ronda, indice, variantes })`; cada uno cierra con `cierre.caption` y suma `captions.hashtags_fijos`.
+- Revisor (`nucleo/banco.mjs`): `revisarGuion(g, archivo, { cuenta, ideas, hechos, paletas })` y
+  `revisarEstricto({ guion, cuenta, hechos, ideas, leerRepo })`; los nombres propios no se revisan ahí.
 
 ## 6. La voz (`nucleo/voz/**`, F3)
 
@@ -360,8 +426,12 @@ node nucleo/correr.mjs fusionar <base> <remoto> <propio> <salida>
   (checkout de la rama `estado`), `ELEVENLABS_API_KEY`, `GEMINI_API_KEY`, `BLOB_READ_WRITE_TOKEN`, y
   los IG de la cuenta **con sus propios nombres** (`env[cuenta.secretos.ig_token]`): el workflow
   exporta sólo los de la cuenta del job. El render corre con `entornoSinSecretos()`.
-- `publicar` pushea el estado tras crear cada contenedor y tras cada `media_publish` (callback
-  `guardar(estado)` que el workflow convierte en commit + fusión + push).
+- `publicar` guarda el estado antes de pedir el contenedor de una historia, tras crear cada contenedor y
+  tras cada `media_publish` (`guardar(estado)`). Con `FABRICA_PUSH=1` cada guardado es commit, fusión de
+  tres vías contra `origin/estado` y push (`empujarEstado`: 8 vueltas con espera creciente, fast-forward,
+  autor manu-180 noreply); sin eso sólo escribe `<FABRICA_ESTADO>/cuentas/<id>/estado.json`.
+  `FABRICA_ESTADO` por defecto es `<raíz>/.estado`. El workflow sólo tiene que poner `FABRICA_PUSH=1` y
+  dejar `FABRICA_ESTADO` como un clone de la rama `estado` con permiso de push.
 - Salida: 0 bien (también "nada que hacer"), 1 falla, 2 uso incorrecto. Anotaciones de Actions con
   `::notice::[fabrica:<cuenta>]`.
 
@@ -373,13 +443,13 @@ coordinador.
 | Fase | Archivos exclusivos | Depende de |
 |---|---|---|
 | F0 contrato | `docs/CONTRATO.md`, `docs/decisiones/fabrica.md`, `nucleo/cuenta.mjs` + test, `package.json`, `.github/workflows/ci.yml`, `cuentas/calcular-ar/cuenta.json` (ejemplo; pasa a F5) | |
-| F1 núcleo | `nucleo/estado.mjs`, `banco.mjs`, `elegir.mjs`, `diseno.mjs`, `agenda.mjs`, `antispam.mjs`, `correr.mjs`, `nucleo/meta/**` (salvo `medir.mjs` desde que cierra), sus tests | F0 |
+| F1 núcleo | `nucleo/estado.mjs`, `tiempo.mjs`, `banco.mjs`, `elegir.mjs`, `diseno.mjs`, `agenda.mjs`, `antispam.mjs`, `producir.mjs`, `correr.mjs`, `limpiar.mjs`, `nucleo/meta/**` (salvo `medir.mjs` desde que cierra), `puntaje.mjs` (versión inicial, pasa a F7), `nucleo/__fixtures__/**`, sus tests | F0 |
 | F2a tema y formatos | `formatos/**` (salvo lo de F2b) | F0 |
 | F2b formatos nuevos | `formatos/lista-de-errores/**`, `pregunta/**`, `comparador/**`, `cuenta-regresiva/**`, `formatos/_comun/motivos/{grilla,luz,pizarra,papel}.mjs` | F2a (`_comun/tema.mjs` congelado) |
 | F3 voz | `nucleo/voz/**` | F0 |
 | F4 render y cierres | `nucleo/render/**`, `cuentas/*/cta/**` | F2a, F3 |
 | F5 cuentas | `cuentas/*/cuenta.json`, `marca/**`, `guiones/**`, `hechos.json`, `ideas.json`, `TONO.md` | F0 |
-| F6 workflows | `.github/workflows/fabrica.yml`, `mantenimiento.yml`, `nucleo/limpiar.mjs` | F1 |
+| F6 workflows | `.github/workflows/fabrica.yml`, `mantenimiento.yml` (`nucleo/limpiar.mjs` lo hizo F1: borra `videos/` de más de 21 días, nunca `voz/`) | F1 |
 | F7 medición y Kairo | `nucleo/puntaje.mjs`, `nucleo/meta/medir.mjs`, `kairo/herramientas/reels-prueba.mjs` (repo kairo) | F1 |
 | F8 ideas y guiones | `agentes/**`, `.github/workflows/guiones.yml`, `ideas.yml`, `nucleo/hechos.mjs` | F1 (`banco.mjs` congelado), F5 |
 | F9 corte | variables de los repos, PR de apagado en apex-demos y calcular | todo |

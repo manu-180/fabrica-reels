@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "hechos": [
+    {
+      "id": "aguinaldo-50",
+      "tipo": "norma",
+      "texto": "El aguinaldo es el 50 % de la mayor remuneración del semestre",
+      "cifras": [
+        "50"
+      ],
+      "fuente": "repo:calcular:src/lib/aguinaldo.ts:12",
+      "envejece": null
+    },
+    {
+      "id": "vacaciones-14",
+      "tipo": "norma",
+      "texto": "Con menos de 5 años de antigüedad corresponden 14 días corridos",
+      "cifras": [
+        "14",
+        "5"
+      ],
+      "fuente": "https://servicios.infoleg.gob.ar/x",
+      "envejece": null
+    },
+    {
+      "id": "preaviso-15",
+      "tipo": "norma",
+      "texto": "El preaviso del trabajador es de 15 días",
+      "cifras": [
+        "15"
+      ],
+      "fuente": "https://servicios.infoleg.gob.ar/x",
+      "envejece": null
+    },
+    {
+      "id": "extra-50",
+      "tipo": "norma",
+      "texto": "Las horas extra se pagan con 50 % de recargo en días hábiles",
+      "cifras": [
+        "50"
+      ],
+      "fuente": "https://servicios.infoleg.gob.ar/x",
+      "envejece": null
+    },
+    {
+      "id": "gratis",
+      "tipo": "oferta",
+      "texto": "La calculadora es gratis",
+      "cifras": [],
+      "fuente": "manuel:2026-11-23",
+      "envejece": null
+    }
+  ]
+}

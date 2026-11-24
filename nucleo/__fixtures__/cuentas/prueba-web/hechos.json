@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hechos": [
+    {
+      "id": "oferta-demo",
+      "tipo": "oferta",
+      "texto": "La demo es gratis y se paga la primera cuota recién cuando gusta",
+      "cifras": [],
+      "fuente": "manuel:2026-11-23",
+      "envejece": null
+    }
+  ]
+}
