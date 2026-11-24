@@ -1,0 +1,38 @@
+{
+  "chat": {
+    "hora": "21:14",
+    "en_linea": "en línea",
+    "escribiendo": "escribiendo…",
+    "escribiendo_corto": "escribiendo",
+    "mensaje": "Mensaje",
+    "teclado": [["q","w","e","r","t","y","u","i","o","p"], ["a","s","d","f","g","h","j","k","l","ñ"], ["⇧","z","x","c","v","b","n","m","⌫"], ["123","espacio","listo"]]
+  },
+  "mito": {
+    "se_cree": "Lo que se cree",
+    "es": "Lo que es",
+    "abre": "“",
+    "cierra": "”"
+  },
+  "explicador": {
+    "compu": "Compu",
+    "celular": "Celular"
+  },
+  "antes_despues": {
+    "menu": ["Inicio", "Nosotros", "Servicios", "Galería de fotos", "Contacto", "Libro de visitas"],
+    "bienvenida": "¡¡Bienvenidos a nuestra página web!!",
+    "link": "Hacé click AQUÍ para más información",
+    "boton_viejo": "Enviar consulta",
+    "imagen_rota": "imagen1.jpg",
+    "nuevo": "¡¡¡NUEVO!!!",
+    "pie": "Sitio en construcción · Todos los derechos reservados · Mejor visto en pantalla grande",
+    "error_titulo": "Error",
+    "error_texto": "No se pudo enviar la consulta. Intente nuevamente más tarde.",
+    "error_ok": "Aceptar",
+    "parrafo": "Somos {nombre}, {rubro} con muchos años de trayectoria en el barrio. En esta página vas a encontrar toda la información sobre nuestros servicios, horarios de atención y formas de contacto. Para cualquier consulta podés comunicarte con nosotros por teléfono o acercarte personalmente. ¡Muchas gracias por visitar nuestra página web!\n\nAtendemos de lunes a sábado. Hacemos envíos a domicilio en toda la zona y aceptamos todos los medios de pago. Para pedidos especiales consultá con anticipación. ¡Te esperamos!",
+    "rubros": {
+      "panaderia": "Panadería", "peluqueria": "Peluquería", "consultorio": "Consultorio", "estudio-juridico": "Estudio jurídico",
+      "gimnasio": "Gimnasio", "restaurante": "Restaurante", "inmobiliaria": "Inmobiliaria", "taller-mecanico": "Taller mecánico",
+      "veterinaria": "Veterinaria", "ferreteria": "Ferretería", "estetica": "Estética", "cafeteria": "Cafetería"
+    }
+  }
+}

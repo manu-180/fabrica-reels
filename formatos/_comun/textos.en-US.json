@@ -1,0 +1,38 @@
+{
+  "chat": {
+    "hora": "9:14",
+    "en_linea": "online",
+    "escribiendo": "typing…",
+    "escribiendo_corto": "typing",
+    "mensaje": "Message",
+    "teclado": [["q","w","e","r","t","y","u","i","o","p"], ["a","s","d","f","g","h","j","k","l"], ["⇧","z","x","c","v","b","n","m","⌫"], ["123","space","return"]]
+  },
+  "mito": {
+    "se_cree": "What people think",
+    "es": "What's true",
+    "abre": "“",
+    "cierra": "”"
+  },
+  "explicador": {
+    "compu": "Desktop",
+    "celular": "Phone"
+  },
+  "antes_despues": {
+    "menu": ["Home", "About us", "Services", "Photo gallery", "Contact", "Guestbook"],
+    "bienvenida": "Welcome to our website!!",
+    "link": "Click HERE for more information",
+    "boton_viejo": "Send inquiry",
+    "imagen_rota": "image1.jpg",
+    "nuevo": "NEW!!!",
+    "pie": "Under construction · All rights reserved · Best viewed on a large screen",
+    "error_titulo": "Error",
+    "error_texto": "Your message could not be sent. Please try again later.",
+    "error_ok": "OK",
+    "parrafo": "We are {nombre}, a {rubro} with many years of experience in the neighborhood. On this page you will find all the information about our services, opening hours and how to reach us. For any questions you can call us or stop by in person. Thank you very much for visiting our website!\n\nWe are open Monday through Saturday. We deliver all over the area and accept all forms of payment. For special orders please ask in advance. See you soon!",
+    "rubros": {
+      "panaderia": "Bakery", "peluqueria": "Hair salon", "consultorio": "Medical office", "estudio-juridico": "Law firm",
+      "gimnasio": "Gym", "restaurante": "Restaurant", "inmobiliaria": "Real estate", "taller-mecanico": "Auto repair",
+      "veterinaria": "Vet clinic", "ferreteria": "Hardware store", "estetica": "Beauty salon", "cafeteria": "Coffee shop"
+    }
+  }
+}

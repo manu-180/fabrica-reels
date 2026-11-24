@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "clave": "panaderia-web-vieja",
+  "titulo": "La web de la panadería, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "hooks": [
+    "Así se ve la web de tu negocio",
+    "Tu web espanta clientes y no lo sabés",
+    "Esta web ya la viste en todos lados"
+  ],
+  "voz": "Letra chiquita, colores que gritan y fotos pixeladas. En el celular no se lee nada. Hoy la gente decide en segundos si te escribe o se va. Mirá la misma panadería con una web pensada para vender: clara, rápida y con un botón para pedir.",
+  "contenido": {
+    "negocio": {
+      "rubro": "panaderia",
+      "nombre": "Panadería Miga Alta",
+      "lema": "Pan de masa madre, todos los días"
+    },
+    "antes": {
+      "defectos": [
+        "Letra chiquita",
+        "Fotos pixeladas",
+        "En el celular no se lee"
+      ]
+    },
+    "despues": {
+      "titular": "El pan de siempre, recién salido",
+      "boton": "Pedí por mensaje",
+      "secciones": [
+        "Masa madre",
+        "Facturas",
+        "Pedidos y eventos"
+      ]
+    }
+  },
+  "captions": [
+    "Tu web es la vidriera que más gente ve, aunque no la mires nunca. Si se ve vieja, el cliente piensa que el negocio también.",
+    "Letra chiquita, fotos borrosas y nada que tocar desde el celular. Así se pierden pedidos todos los días.",
+    "La misma panadería, otra web: clara, rápida y con un botón para pedir. Así se ve una web que vende."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negociolocal",
+    "panaderia",
+    "antesydespues",
+    "marketingdigital",
+    "emprendimiento",
+    "webprofesional"
+  ]
+}

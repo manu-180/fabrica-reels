@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>mito</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/datos.js"></script>
+<script src="assets/comun/subtitulos.js"></script>
+<script src="assets/comun/cinetica.js"></script>
+<style>
+{{css}}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); font-family: var(--f-cuerpo); color: var(--tinta); }
+.estacion { position: absolute; left: 0; width: 1080px; height: 1920px; }
+.bloque { position: absolute; left: 90px; width: 900px; }
+.comillas { position: absolute; font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 0.7; letter-spacing: calc(var(--tracking-titulo) * 2); color: transparent; -webkit-text-stroke: 5px var(--acento); opacity: 0.6; }
+.dicho { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1; letter-spacing: calc(var(--tracking-titulo) * 1.33); color: var(--tinta); text-wrap: balance; transform-origin: 0% 0%; }
+.dicho .wi { opacity: 0.32; }
+.verdad { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1; letter-spacing: calc(var(--tracking-titulo) * 1.33); color: var(--tinta); text-wrap: balance; }
+.raya { position: absolute; height: 18px; border-radius: 9px; background: var(--acento); transform-origin: 0% 50%; }
+.rotulo.es i { background: var(--acento); }
+.rotulo.cree i { background: var(--tenue); }
+.panel { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; background: var(--tinta); }
+.panel .dicho { color: var(--fondo); }
+.panel .rotulo { color: var(--fondo); opacity: 0.7; }
+.panel .rotulo i { background: var(--fondo); }
+.panel-luz { position: absolute; inset: 0; background: radial-gradient(ellipse 90% 60% at 30% 20%, rgba(255,255,255,0.08), transparent 70%); }
+.panel .comillas { -webkit-text-stroke-color: var(--fondo); opacity: 0.16; }
+.centro { text-align: center; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="{{duracion}}">
+  {{fondo}}
+  <div id="camara" data-layout-allow-overflow>
+    {{profundo}}
+    <div id="riel" data-layout-allow-overflow>
+      {{hoja}}
+      <div id="escenas" data-layout-allow-overflow data-layout-allow-overlap></div>
+    </div>
+  </div>
+  {{luces}}
+  <div id="subs"></div>
+  {{audio}}
+</div>
+<script>
+Subtitulos.fuentes().then(function () {
+  var R = window.REEL;
+  var L = R.layout;
+  var H = 1920;
+  gsap.defaults({ lazy: false });
+  var tl = gsap.timeline({ paused: true });
+  var cam = document.getElementById("camara");
+  var riel = document.getElementById("riel");
+  var profundo = document.getElementById("profundo");
+  var escenas = document.getElementById("escenas");
+
+  function estado(el, v) { tl.fromTo(el, v, Object.assign({}, v, { duration: 0.001, ease: "none" }), 0); }
+  function nuevo(tag, cls, padre) { var e = document.createElement(tag); if (cls) e.className = cls; padre.appendChild(e); return e; }
+  function rotulo(padre, texto, cls, centro) {
+    var r = nuevo("div", "rotulo bloque " + cls, padre);
+    r.innerHTML = "<i></i>";
+    r.appendChild(document.createTextNode(texto));
+    if (centro) { r.style.left = "0px"; r.style.width = "1080px"; r.style.justifyContent = "center"; }
+    return r;
+  }
+  // Las palabras se encienden cuando la voz las dice.
+  function encender(wis, luces, desde) {
+    wis.forEach(function (w, k) {
+      var t = luces ? luces[k] : desde + k * 0.12;
+      tl.to(w, { opacity: 1, duration: 0.16, ease: "power1.out" }, Math.max(desde + 0.42 + k * 0.04, t - 1 / 30));
+    });
+  }
+  function comillas(padre, tam, x, y) {
+    var c = nuevo("div", "comillas", padre);
+    c.textContent = R.t.abre;
+    c.style.fontSize = tam + "px"; c.style.left = x + "px"; c.style.top = y + "px";
+    return c;
+  }
+
+  // ---- Portada ----
+  var portada = nuevo("div", "estacion", escenas);
+  portada.style.top = "0px";
+  var q = comillas(portada, 1100, L === "hoja" ? 470 : 230, L === "hoja" ? 820 : 300);
+  if (R.fuente) { var rf = rotulo(portada, R.fuente, "es", L !== "hoja"); rf.style.top = "292px"; }
+  var g = nuevo("div", "bloque" + (L === "hoja" ? "" : " centro"), portada);
+  Cinetica.gancho(tl, g, { palabras: R.hook.palabras, max: 176, min: 100, lineas: 4, ancho: 900, alto: 780, resalte: R.resalte, tinta: R.tinta, resaltar: R.hook.resaltar });
+  g.style.top = (L === "hoja" ? 380 : 760 - g.offsetHeight / 2) + "px";
+  if (L !== "hoja") g.querySelector(".gancho").style.textAlign = "center";
+  tl.fromTo(q, { scale: 1.12, transformOrigin: "30% 30%" }, { scale: 1, duration: Math.max(1.2, R.hook.fin), ease: "power2.out" }, 0);
+
+  // ---- Cada mito ----
+  var previa = portada;
+  R.tarjetas.forEach(function (c, i) {
+    var k = i + 1;
+    var e = nuevo("div", "estacion", escenas);
+    e.style.top = (L === "hoja" ? k * H : 0) + "px";
+    var centro = L !== "hoja";
+    var fondoPanel = null;
+    if (L === "panel") {
+      fondoPanel = nuevo("div", "panel", e);
+      nuevo("div", "panel-luz", fondoPanel);
+      comillas(fondoPanel, 1100, 230, 260);
+    }
+    var cree = rotulo(fondoPanel || e, R.t.se_cree, "cree", centro);
+    var dicho = nuevo("div", "bloque dicho" + (centro ? " centro" : ""), fondoPanel || e);
+    var wm = Cinetica.trocear(dicho, R.t.abre + c.mito + R.t.cierra, { cifras: false });
+    Cinetica.ajustar(dicho, { max: 150, min: 84, lineas: 4, ancho: 900 });
+    var altoM = dicho.offsetHeight;
+    var es = rotulo(e, R.t.es, "es", centro);
+    var verdad = nuevo("div", "bloque verdad" + (centro ? " centro" : ""), e);
+    var wv = Cinetica.trocear(verdad, c.realidad);
+    Cinetica.ajustar(verdad, { max: centro ? 150 : 150, min: 76, lineas: 4, ancho: 900 });
+    var altoV = verdad.offsetHeight;
+    // La palabra clave de la verdad (una cifra, o la última) se marca con el resaltador.
+    var clave = verdad.querySelector(".wi.num") || wv[wv.length - 1];
+    var w = clave.parentElement;
+    w.style.backgroundImage = "linear-gradient(" + R.resalte.fondo + "," + R.resalte.fondo + ")";
+    w.style.backgroundRepeat = "no-repeat"; w.style.backgroundPosition = "0% 55%"; w.style.borderRadius = "18px";
+    w.style.paddingLeft = "0.1em"; w.style.paddingRight = "0.1em";
+    function marcar(t) {
+      tl.fromTo(w, { backgroundSize: "0% 74%" }, { backgroundSize: "100% 74%", duration: 0.5, ease: "power3.out" }, t);
+      tl.set(clave, { color: R.resalte.tinta }, t + 0.12);
+    }
+
+    if (L === "hoja") {
+      var arribaM = 420 + Math.max(0, (720 - altoM) / 2);
+      cree.style.top = (arribaM - 84) + "px";
+      dicho.style.top = arribaM + "px";
+      // Lo que se cree se achica arriba como referencia; lo que es ocupa el centro. La pila final
+      // (rótulo, mito chico, rótulo, verdad, raya) queda centrada en la zona 420-1150.
+      var escalaM = 0.42;
+      // La verdad se achica hasta que la pila entera cabe arriba de los subtítulos (y 1200).
+      var tamV = parseFloat(verdad.style.fontSize);
+      while (84 + altoM * escalaM + 44 + 84 + verdad.offsetHeight + 64 > 900 && tamV > 72) { tamV -= 4; verdad.style.fontSize = tamV + "px"; }
+      altoV = verdad.offsetHeight;
+      var pila =84 + altoM * escalaM + 44 + 84 + altoV + 64;
+      var arriba0 = Math.max(290, 420 + (730 - pila) / 2);
+      var finalM = arriba0 + 84;
+      var arribaV = finalM + altoM * escalaM + 44 + 84;
+      es.style.top = (arribaV - 84) + "px";
+      verdad.style.top = arribaV + "px";
+      var raya = nuevo("div", "raya", e);
+      raya.style.left = "90px"; raya.style.width = "260px"; raya.style.top = (arribaV + altoV + 40) + "px";
+      if (arribaV + altoV + 58 > 1195) raya.style.display = "none";
+      tl.fromTo(cree, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, c.entra + 0.3);
+      Cinetica.subir(tl, wm, c.entra + 0.25, { stagger: 0.04, opacidad: 0.32 });
+      encender(wm, c.lucesMito, c.entra + 0.25);
+      tl.to(dicho, { scale: escalaM, y: (finalM - arribaM), duration: 0.55, ease: "power3.inOut" }, c.tacha);
+      tl.to(cree, { y: arriba0 - (arribaM - 84), opacity: 0.8, duration: 0.55, ease: "power3.inOut" }, c.tacha);
+      estado(es, { opacity: 0 });
+      tl.fromTo(es, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, c.tacha + 0.3);
+      Cinetica.subir(tl, wv, c.gira, { stagger: 0.05 });
+      tl.fromTo(raya, { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.out" }, c.gira + 0.45);
+      marcar(c.gira + 0.55);
+      if (k > 0) {
+        tl.to(riel, { y: -k * H, duration: 0.8, ease: "power3.inOut" }, c.entra);
+        tl.to(profundo, { y: -k * H * 0.45, duration: 0.8, ease: "power3.inOut" }, c.entra);
+        tl.to(cam, { scale: 1, duration: 0.8, ease: "power3.inOut" }, c.entra);
+      }
+    } else {
+      dicho.style.top = (790 - altoM / 2) + "px";
+      cree.style.top = (790 - altoM / 2 - 100) + "px";
+      verdad.style.top = (790 - altoV / 2) + "px";
+      es.style.top = (790 - altoV / 2 - 100) + "px";
+      // El panel oscuro entra subiendo desde abajo y se levanta para mostrar la verdad (la corriente es hacia arriba).
+      estado(e, { opacity: 0 });
+      tl.set(e, { opacity: 1 }, c.entra);
+      tl.fromTo(fondoPanel, { clipPath: "inset(100% 0% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.6, ease: "power3.inOut" }, c.entra);
+      tl.set(previa, { opacity: 0 }, c.entra + 0.61);
+      Cinetica.subir(tl, wm, c.entra + 0.3, { stagger: 0.04, opacidad: 0.32 });
+      encender(wm, c.lucesMito, c.entra + 0.3);
+      tl.to(fondoPanel, { clipPath: "inset(0% 0% 100% 0%)", duration: 0.6, ease: "power3.inOut" }, c.tacha);
+      estado(es, { opacity: 0 });
+      tl.fromTo(es, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, c.tacha + 0.35);
+      Cinetica.subir(tl, wv, c.gira, { stagger: 0.05 });
+      marcar(c.gira + 0.5);
+      estado(wv, { opacity: 0 });
+    }
+    previa = e;
+  });
+  if (L === "hoja") tl.fromTo(cam, { scale: 1 }, { scale: 1.045, duration: Math.max(1.2, R.hook.fin), ease: "power1.inOut" }, 0);
+
+  Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos, tono: R.tono, resalte: R.resalte, tinta: R.tinta });
+  tl.set({}, {}, R.duracion);
+  window.__timelines["main"] = tl;
+});
+</script>
+</body>
+</html>
