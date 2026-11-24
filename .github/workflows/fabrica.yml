@@ -195,6 +195,17 @@ jobs:
           if-no-files-found: ignore
           retention-days: 3
 
+      # correr.mjs copia ahí los mp4 sólo si la cuenta está en modo sombra: en una cuenta real la
+      # carpeta no existe y el paso no sube nada.
+      - name: Guardar los videos de la sombra
+        if: always() && env.SECO == ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: fabrica-${{ matrix.cuenta }}-sombra
+          path: ${{ runner.temp }}/sombra/**/*.mp4
+          if-no-files-found: ignore
+          retention-days: 3
+
   publicar:
     name: publicar ${{ matrix.cuenta }}
     needs: planear

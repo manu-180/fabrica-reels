@@ -41,7 +41,8 @@ Para frenar sin apagar (sigue midiendo lo ya publicado):
 Una pausa que puso la fábrica sola (token vencido, bloqueo, antispam) está en el estado: se levanta
 con `"pausado": null` en `cuentas/<id>/estado.json` de la rama `estado`, o sola si tiene
 `pausado_hasta`. Con `"modo": "sombra"` en `cuenta.json` la cuenta produce (sube a Blob y guarda
-estado) pero no publica.
+estado) pero no publica; los mp4 de cada producción quedan como artefacto `fabrica-<id>-sombra`
+(`<creativo>/<indice>-<reel|historia>.mp4`) 3 días en la corrida de producir.
 
 Las variables del repo se ven en el log de cada corrida (el repo es público): nunca algo sensible
 en una variable.
