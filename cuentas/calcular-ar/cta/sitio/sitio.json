@@ -1,0 +1,106 @@
+{
+  "base": "https://calcular.ar",
+  "temas": {
+    "aguinaldo": "aguinaldo",
+    "indemnizacion": "indemnizacion",
+    "despido": "indemnizacion",
+    "preaviso": "indemnizacion",
+    "vacaciones": "vacaciones",
+    "renuncia": "renuncia",
+    "periodo-de-prueba": "periodo-de-prueba",
+    "horas-extras": "horas-extras",
+    "monotributo": "monotributo",
+    "enfermedad": "licencia-por-enfermedad",
+    "licencias-especiales": "licencias-especiales",
+    "bruto-neto": "sueldo-neto",
+    "sueldo-neto": "sueldo-neto"
+  },
+  "capturas": {
+    "inicio": {
+      "ruta": "/",
+      "resultado": null
+    },
+    "indemnizacion": {
+      "ruta": "/indemnizacion",
+      "campos": {
+        "#mejor-sueldo": "1500000",
+        "#fecha-ingreso": "2022-06-01",
+        "#fecha-despido": "2026-11-02"
+      },
+      "ancla": "¿Cuándo fue (o sería) el despido?",
+      "arriba": 70,
+      "marca": "Te corresponde aproximadamente",
+      "marcaHasta": "Antigüedad:",
+      "resultado": {
+        "x": 74,
+        "y": 762,
+        "w": 632,
+        "h": 184
+      }
+    },
+    "aguinaldo": {
+      "ruta": "/aguinaldo",
+      "campos": {
+        "#mejor-sueldo": "1500000"
+      },
+      "clics": [
+        "2do semestre"
+      ],
+      "ancla": "¿Qué cuota querés calcular?",
+      "arriba": 80,
+      "marca": "Esta cuota vence",
+      "resultado": {
+        "x": 74,
+        "y": 1139,
+        "w": 596,
+        "h": 40
+      }
+    },
+    "vacaciones": {
+      "ruta": "/vacaciones",
+      "campos": {
+        "#sueldo-mensual": "1500000",
+        "#fecha-ingreso": "2019-03-01",
+        "#fecha-inicio": "2027-01-04"
+      },
+      "ancla": "¿Cuándo entraste a este trabajo?",
+      "arriba": 80,
+      "marca": "Te corresponden",
+      "marcaHasta": "Antigüedad al",
+      "resultado": {
+        "x": 74,
+        "y": 915,
+        "w": 317,
+        "h": 256
+      }
+    },
+    "renuncia": {
+      "ruta": "/renuncia",
+      "resultado": null
+    },
+    "periodo-de-prueba": {
+      "ruta": "/periodo-de-prueba",
+      "resultado": null
+    },
+    "horas-extras": {
+      "ruta": "/horas-extras",
+      "resultado": null
+    },
+    "monotributo": {
+      "ruta": "/monotributo",
+      "resultado": null
+    },
+    "licencia-por-enfermedad": {
+      "ruta": "/licencia-por-enfermedad",
+      "resultado": null
+    },
+    "licencias-especiales": {
+      "ruta": "/licencias-especiales",
+      "resultado": null
+    },
+    "sueldo-neto": {
+      "ruta": "/sueldo-neto",
+      "resultado": null
+    }
+  }
+}

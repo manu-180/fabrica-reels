@@ -1,0 +1,22 @@
+{
+  "reel": {
+    "estilos": [
+      "buscador",
+      "tipografico"
+    ],
+    "textos": {
+      "titular": "15 días de prueba",
+      "destacado": "Assistify",
+      "ficha": "Gratis",
+      "pista": "App para mi academia"
+    },
+    "voz": {
+      "wav": "voz.wav",
+      "palabras": "voz-palabras.json"
+    },
+    "sitio": "sitio/sitio.json",
+    "portada": "inicio",
+    "por_reel": false
+  },
+  "historia": null
+}

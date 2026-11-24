@@ -1,0 +1,122 @@
+[
+  {
+    "id": "noche-comentario",
+    "paleta": "noche",
+    "estilo": "comentario",
+    "destino": "reel",
+    "archivo": "clips/noche-comentario.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "noche-tipografico",
+    "paleta": "noche",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/noche-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "crema-comentario",
+    "paleta": "crema",
+    "estilo": "comentario",
+    "destino": "reel",
+    "archivo": "clips/crema-comentario.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "crema-tipografico",
+    "paleta": "crema",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/crema-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "bosque-comentario",
+    "paleta": "bosque",
+    "estilo": "comentario",
+    "destino": "reel",
+    "archivo": "clips/bosque-comentario.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "bosque-tipografico",
+    "paleta": "bosque",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/bosque-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "tinta-comentario",
+    "paleta": "tinta",
+    "estilo": "comentario",
+    "destino": "reel",
+    "archivo": "clips/tinta-comentario.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "tinta-tipografico",
+    "paleta": "tinta",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/tinta-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "arcilla-comentario",
+    "paleta": "arcilla",
+    "estilo": "comentario",
+    "destino": "reel",
+    "archivo": "clips/arcilla-comentario.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "arcilla-tipografico",
+    "paleta": "arcilla",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/arcilla-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "historia-noche-tipografico",
+    "paleta": "noche",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/historia-noche-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "historia-crema-tipografico",
+    "paleta": "crema",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/historia-crema-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "historia-bosque-tipografico",
+    "paleta": "bosque",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/historia-bosque-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "historia-tinta-tipografico",
+    "paleta": "tinta",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/historia-tinta-tipografico.mp4",
+    "duracion_s": 4.9
+  },
+  {
+    "id": "historia-arcilla-tipografico",
+    "paleta": "arcilla",
+    "estilo": "tipografico",
+    "destino": "historia",
+    "archivo": "clips/historia-arcilla-tipografico.mp4",
+    "duracion_s": 4.9
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "texto": "Probá Assistify gratis quince días. El link está en el perfil.",
+  "voz": "gemini:Kore",
+  "proveedor": "gemini",
+  "palabras": [
+    {
+      "texto": "Probá",
+      "inicio_s": 0.03,
+      "fin_s": 0.461
+    },
+    {
+      "texto": "Assistify",
+      "inicio_s": 0.498,
+      "fin_s": 1.216
+    },
+    {
+      "texto": "gratis",
+      "inicio_s": 1.278,
+      "fin_s": 1.78
+    },
+    {
+      "texto": "quince",
+      "inicio_s": 1.824,
+      "fin_s": 2.326
+    },
+    {
+      "texto": "días.",
+      "inicio_s": 2.37,
+      "fin_s": 2.729
+    },
+    {
+      "texto": "El",
+      "inicio_s": 3.56,
+      "fin_s": 3.723
+    },
+    {
+      "texto": "link",
+      "inicio_s": 3.738,
+      "fin_s": 4.01
+    },
+    {
+      "texto": "está",
+      "inicio_s": 4.034,
+      "fin_s": 4.306
+    },
+    {
+      "texto": "en",
+      "inicio_s": 4.33,
+      "fin_s": 4.493
+    },
+    {
+      "texto": "el",
+      "inicio_s": 4.508,
+      "fin_s": 4.671
+    },
+    {
+      "texto": "perfil.",
+      "inicio_s": 4.685,
+      "fin_s": 5.067
+    }
+  ]
+}

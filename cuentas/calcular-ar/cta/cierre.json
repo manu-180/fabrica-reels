@@ -1,0 +1,23 @@
+{
+  "reel": {
+    "estilos": [
+      "buscador",
+      "tipografico"
+    ],
+    "textos": {
+      "titular": "Hacé la cuenta",
+      "destacado": "calcular.ar",
+      "corte": 8,
+      "ficha": "Gratis",
+      "pista": "¿Cuánto me toca?"
+    },
+    "voz": {
+      "wav": "voz.wav",
+      "palabras": "voz-palabras.json"
+    },
+    "sitio": "sitio/sitio.json",
+    "portada": "inicio",
+    "por_reel": true
+  },
+  "historia": null
+}

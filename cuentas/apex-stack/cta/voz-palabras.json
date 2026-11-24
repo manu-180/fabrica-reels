@@ -1,0 +1,71 @@
+{
+  "texto": "Comentá WEB y te hacemos tu demo gratis, a medida para tu empresa.",
+  "voz": "p7AwDmKvTdoHTBuueGvP",
+  "palabras": [
+    {
+      "texto": "Comentá",
+      "inicio_s": 0,
+      "fin_s": 0.372
+    },
+    {
+      "texto": "WEB",
+      "inicio_s": 0.441,
+      "fin_s": 0.673
+    },
+    {
+      "texto": "y",
+      "inicio_s": 0.766,
+      "fin_s": 0.848
+    },
+    {
+      "texto": "te",
+      "inicio_s": 0.906,
+      "fin_s": 0.952
+    },
+    {
+      "texto": "hacemos",
+      "inicio_s": 0.975,
+      "fin_s": 1.254
+    },
+    {
+      "texto": "tu",
+      "inicio_s": 1.289,
+      "fin_s": 1.37
+    },
+    {
+      "texto": "demo",
+      "inicio_s": 1.405,
+      "fin_s": 1.614
+    },
+    {
+      "texto": "gratis,",
+      "inicio_s": 1.637,
+      "fin_s": 2.183
+    },
+    {
+      "texto": "a",
+      "inicio_s": 2.223,
+      "fin_s": 2.316
+    },
+    {
+      "texto": "medida",
+      "inicio_s": 2.374,
+      "fin_s": 2.583
+    },
+    {
+      "texto": "para",
+      "inicio_s": 2.629,
+      "fin_s": 2.78
+    },
+    {
+      "texto": "tu",
+      "inicio_s": 2.827,
+      "fin_s": 2.873
+    },
+    {
+      "texto": "empresa.",
+      "inicio_s": 2.896,
+      "fin_s": 3.443
+    }
+  ]
+}

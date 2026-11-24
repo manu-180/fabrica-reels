@@ -1,0 +1,57 @@
+{
+  "texto": "Comment WEB and we'll build you a free website demo.",
+  "voz": "gemini:Kore",
+  "proveedor": "gemini",
+  "palabras": [
+    {
+      "texto": "Comment",
+      "inicio_s": 0.03,
+      "fin_s": 0.692
+    },
+    {
+      "texto": "WEB",
+      "inicio_s": 0.75,
+      "fin_s": 1.081
+    },
+    {
+      "texto": "and",
+      "inicio_s": 1.11,
+      "fin_s": 1.441
+    },
+    {
+      "texto": "we'll",
+      "inicio_s": 1.47,
+      "fin_s": 1.884
+    },
+    {
+      "texto": "build",
+      "inicio_s": 1.92,
+      "fin_s": 2.417
+    },
+    {
+      "texto": "you",
+      "inicio_s": 2.46,
+      "fin_s": 2.791
+    },
+    {
+      "texto": "a",
+      "inicio_s": 2.82,
+      "fin_s": 2.986
+    },
+    {
+      "texto": "free",
+      "inicio_s": 3,
+      "fin_s": 3.414
+    },
+    {
+      "texto": "website",
+      "inicio_s": 3.45,
+      "fin_s": 4.112
+    },
+    {
+      "texto": "demo.",
+      "inicio_s": 4.17,
+      "fin_s": 4.584
+    }
+  ]
+}

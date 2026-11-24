@@ -1,0 +1,27 @@
+{
+  "reel": {
+    "estilos": [
+      "tipografico"
+    ],
+    "textos": {
+      "titular": "Comment",
+      "destacado": "WEB",
+      "ficha": "Free"
+    },
+    "voz": {
+      "wav": "voz.wav",
+      "palabras": "voz-palabras.json"
+    }
+  },
+  "historia": {
+    "estilos": [
+      "tipografico"
+    ],
+    "textos": {
+      "titular": "Reply with",
+      "destacado": "WEB",
+      "ficha": "Free"
+    },
+    "voz": null
+  }
+}

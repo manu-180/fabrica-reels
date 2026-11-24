@@ -1,0 +1,15 @@
+{
+  "base": "https://assistify.lat",
+  "temas": {},
+  "capturas": {
+    "inicio": {
+      "ruta": "/",
+      "resultado": {
+        "x": 236,
+        "y": 950,
+        "w": 308,
+        "h": 58
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "noche-buscador",
+    "paleta": "noche",
+    "estilo": "buscador",
+    "destino": "reel",
+    "archivo": "clips/noche-buscador.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "noche-tipografico",
+    "paleta": "noche",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/noche-tipografico.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "papel-buscador",
+    "paleta": "papel",
+    "estilo": "buscador",
+    "destino": "reel",
+    "archivo": "clips/papel-buscador.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "papel-tipografico",
+    "paleta": "papel",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/papel-tipografico.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "cielo-buscador",
+    "paleta": "cielo",
+    "estilo": "buscador",
+    "destino": "reel",
+    "archivo": "clips/cielo-buscador.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "cielo-tipografico",
+    "paleta": "cielo",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/cielo-tipografico.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "indigo-buscador",
+    "paleta": "indigo",
+    "estilo": "buscador",
+    "destino": "reel",
+    "archivo": "clips/indigo-buscador.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "indigo-tipografico",
+    "paleta": "indigo",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/indigo-tipografico.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "teal-buscador",
+    "paleta": "teal",
+    "estilo": "buscador",
+    "destino": "reel",
+    "archivo": "clips/teal-buscador.mp4",
+    "duracion_s": 5.9
+  },
+  {
+    "id": "teal-tipografico",
+    "paleta": "teal",
+    "estilo": "tipografico",
+    "destino": "reel",
+    "archivo": "clips/teal-tipografico.mp4",
+    "duracion_s": 5.9
+  }
+]
