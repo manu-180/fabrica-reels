@@ -182,6 +182,7 @@ export function validarIdea(i, { cuenta, hechos, exigirOrigenRepo = false, leerR
   if (!ORIGENES.includes(i.origen)) p.push(`origen: ${ORIGENES.join(' | ')}`)
   if (i.ventana !== null && i.ventana !== undefined && !(mesDia(i.ventana?.desde) && mesDia(i.ventana?.hasta))) p.push('ventana: null o { desde: "MM-DD", hasta: "MM-DD" }')
   if (i.origen === 'temporada' && !i.ventana) p.push('una idea de temporada lleva ventana')
+  if (i.formato_sugerido === 'cuenta-regresiva' && !i.ventana) p.push('una cuenta regresiva necesita una fecha: lleva ventana')
   if (!Array.isArray(i.hechos) || !i.hechos.length) p.push('hechos: al menos uno (una idea sin hechos no se escribe)')
   else for (const h of i.hechos) if (!hechos.has(h)) p.push(`hechos: "${h}" no existe`)
   const texto = [i.idea, i.angulo, i.dato].filter((x) => typeof x === 'string').join('. ')

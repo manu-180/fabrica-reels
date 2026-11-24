@@ -33,7 +33,8 @@ En este orden de preferencia:
    tiene hecho. Ahí sí proponés hechos nuevos (abajo).
 
 Repartí `formato_sugerido` entre **todos** los formatos de la cuenta (incluidos `lista-de-errores`,
-`pregunta`, `comparador`, `cuenta-regresiva` y, donde está, `antes-despues`) y variá el `angulo`
+`pregunta`, `comparador`, `cuenta-regresiva` y, donde está, `antes-despues`; la `cuenta-regresiva` sólo
+para una idea con `ventana` y un hecho que diga la fecha) y variá el `angulo`
 (`dato`, `mito`, `comedia`, `error`, `pregunta`, `comparacion`, `calendario`).
 
 ## La idea

@@ -66,6 +66,7 @@ test('una idea sin hechos, con un hecho que no existe o con un dato personal se 
   assert.match(p({ idea: 'Llamá al 11 3427-2488' }), /teléfono/)
   assert.match(p({ formato_sugerido: 'antes-despues' }), /formato_sugerido/)
   assert.match(p({ origen: 'temporada' }), /lleva ventana/)
+  assert.match(p({ formato_sugerido: 'cuenta-regresiva' }), /necesita una fecha/)
   assert.equal(p({}), '')
 })
 
