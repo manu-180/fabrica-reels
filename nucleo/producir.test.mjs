@@ -157,3 +157,18 @@ test('producir con conservar (modo sombra): los mp4 finales quedan copiados aunq
     assert.equal(e.PATH, '/usr/bin')
   }
 })
+
+test('producir le pasa el guion a armarFinal y, con vozLocal, la caché de voz es esa carpeta', async () => {
+  const { deps, llamadas } = dobles()
+  /** @type {any[]} */
+  const pedidos = []
+  const vozLocal = mkdtempSync(join(tmpdir(), 'voz-local-'))
+  const r = await producir({
+    cuenta: cuentaAr(), estado: estadoCon('prueba-ar', []), raiz: RAIZ, ahora: MADRUGADA, env: {}, seco: mkdtempSync(join(tmpdir(), 'fabrica-seco-')), vozLocal,
+    deps: { ...deps, blobVoz: async (/** @type {any} */ p) => { pedidos.push(p); return { local: p.vozLocal } } },
+  })
+  assert.equal(r.ok, true, r.motivo)
+  assert.deepEqual(pedidos.map((p) => p.vozLocal), [vozLocal])
+  for (const x of llamadas.variar) assert.equal(typeof x.guion?.clave, 'string')
+  for (const x of llamadas.locutar) assert.deepEqual(x.blob, { local: vozLocal })
+})

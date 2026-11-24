@@ -2,7 +2,8 @@
 
 Lo que `producir` espera de F4 (`docs/CONTRATO.md` § 5 bis): `renderizarCuerpo` y `armarFinal`, en
 `index.mjs`. Todo proceso de terceros (npx, HyperFrames, ffmpeg) se lanza con el `env` que llega, que
-es `entornoSinSecretos(...)`: nunca con `process.env`.
+es `entornoSinSecretos(...)`: nunca con `process.env`. El guion del reel llega en `armarFinal({ guion })`:
+el cierre propio busca su página por la idea, el tema o la clave de ese guion, nunca por el nombre de la carpeta.
 
 | Archivo | Qué hace |
 |---|---|

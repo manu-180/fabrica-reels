@@ -1,6 +1,6 @@
 // @ts-check
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs'
-import { basename, dirname, isAbsolute, join, resolve } from 'node:path'
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync } from 'node:fs'
+import { dirname, isAbsolute, join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { renderizarProyecto } from './hyperframes.mjs'
 import { ffmpeg, medirAudio, sondear } from './medios.mjs'
@@ -76,33 +76,6 @@ export function paginaDe({ guion, sitio, ideas = [], hay, portada = 'inicio' }) 
   const textos = [guion?.tema, guion?.clave].filter((x) => typeof x === 'string')
   for (const t of textos) for (const [tema, c] of Object.entries(sitio.temas ?? {})) if (t.includes(tema) && existe(c)) return c
   return portada
-}
-
-/**
- * El guion del reel: el que pasa producir o, si no lo pasa, el de la carpeta de la variante.
- * producir arma `<base>/<AAAA-MM-DD>-<clave>/v<i>/cuerpo.mp4` y todavía no le pasa el guion a
- * armarFinal (pedido a F1): mientras tanto se lee de `cuentas/<id>/guiones/` o de `guiones-auto/`.
- * @param {{ guion?: any, cuerpo: string, dirCuenta: string, env: Record<string, string | undefined> }} p
- */
-export function guionDelReel({ guion, cuerpo, dirCuenta, env }) {
-  if (guion && typeof guion === 'object') return guion
-  const creativo = basename(dirname(dirname(resolve(cuerpo))))
-  const m = creativo.match(/^\d{4}-\d{2}-\d{2}-([a-z0-9]+(?:-[a-z0-9]+)*)$/)
-  if (!m) return null
-  const clave = /** @type {string} */ (m[1])
-  const id = basename(dirCuenta)
-  const carpetas = [join(dirCuenta, 'guiones'), env.FABRICA_ESTADO ? join(env.FABRICA_ESTADO, 'cuentas', id, 'guiones-auto') : null].filter((x) => x && existsSync(x))
-  for (const c of /** @type {string[]} */ (carpetas)) {
-    for (const f of readdirSync(c).filter((x) => x.endsWith('.json'))) {
-      try {
-        const g = JSON.parse(readFileSync(join(c, f), 'utf8'))
-        if (g?.clave === clave) return g
-      } catch {
-        /* un guion roto no es el de este reel */
-      }
-    }
-  }
-  return { clave }
 }
 
 /** @param {string} dirCuenta */
@@ -217,7 +190,7 @@ export async function cierreDelReel({ clip, destino, firma, cuerpo, dir, env, gu
   const d = config?.[destino]
   if (!d?.por_reel || !d.sitio) return generico
   try {
-    const g = guionDelReel({ guion, cuerpo, dirCuenta, env })
+    const g = guion ?? null
     const sitio = JSON.parse(readFileSync(dentro(dirCta, d.sitio), 'utf8'))
     const dirSitio = dirname(dentro(dirCta, d.sitio))
     const portada = d.portada ?? 'inicio'

@@ -17,7 +17,7 @@ import { DIA } from './tiempo.mjs'
   La entrada de los workflows (docs/CONTRATO.md § 8):
 
     node nucleo/correr.mjs planear  [--cuenta <id>]
-    node nucleo/correr.mjs producir --cuenta <id> [--guion <clave>] [--seco <dir>] [--conservar <dir>]
+    node nucleo/correr.mjs producir --cuenta <id> [--guion <clave>] [--seco <dir>] [--conservar <dir>] [--voz-local <dir>]
     node nucleo/correr.mjs publicar --cuenta <id> [--ahora] [--seco]
     node nucleo/correr.mjs medir    --cuenta <id>
     node nucleo/correr.mjs fusionar <base> <remoto> <propio> <salida>
@@ -282,9 +282,10 @@ async function comandoProducir(raiz) {
         writeFileSync(join(resolve(seco), 'estado.json'), serializarEstado(e))
       }
     : crearGuardar({ dir, cuentaId: cuenta.id, base: estado, log })
+  const vozLocal = arg('--voz-local') ?? (process.env.FABRICA_VOZ_LOCAL || null)
   // En sombra los videos no salen a Instagram: quedan copiados para revisarlos (el workflow los sube como artefacto).
   const conservar = arg('--conservar') ?? (process.env.FABRICA_CONSERVAR || null) ?? (cuenta.modo === 'sombra' && process.env.RUNNER_TEMP ? join(process.env.RUNNER_TEMP, 'sombra') : null)
-  const r = await producir({ cuenta, estado, raiz, guionClave: arg('--guion') ?? (process.env.GUION || null), seco: seco ? resolve(seco) : null, conservar: conservar ? resolve(conservar) : null, log, guardar })
+  const r = await producir({ cuenta, estado, raiz, guionClave: arg('--guion') ?? (process.env.GUION || null), seco: seco ? resolve(seco) : null, conservar: conservar ? resolve(conservar) : null, vozLocal: vozLocal ? resolve(vozLocal) : null, log, guardar })
   salidas({ creativos: r.resultados.filter((x) => x.ok && x.creativo).map((x) => x.creativo).join(' ') })
   if (!r.resultados.length) anotar('notice', cuenta.id, r.motivo)
   for (const x of r.resultados) {
@@ -339,7 +340,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1
   const tareas = { planear: () => comandoPlanear(raiz), producir: () => comandoProducir(raiz), publicar: () => comandoPublicar(raiz), medir: () => comandoMedir(raiz), fusionar: comandoFusionar }
   const tarea = tareas[process.argv[2] ?? '']
   if (!tarea) {
-    console.error('uso: node nucleo/correr.mjs planear [--cuenta id] | producir --cuenta id [--guion X] [--seco dir] [--conservar dir] | publicar --cuenta id [--ahora] [--seco] | medir --cuenta id | fusionar <base> <remoto> <propio> <salida>')
+    console.error('uso: node nucleo/correr.mjs planear [--cuenta id] | producir --cuenta id [--guion X] [--seco dir] [--conservar dir] [--voz-local dir] | publicar --cuenta id [--ahora] [--seco] | medir --cuenta id | fusionar <base> <remoto> <propio> <salida>')
     process.exit(2)
   }
   Promise.resolve()

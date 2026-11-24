@@ -8,7 +8,7 @@ import { test } from 'node:test'
 import { fileURLToPath } from 'node:url'
 import { EJES } from '../diseno.mjs'
 import { entornoSinSecretos } from '../entorno.mjs'
-import { cierreDelReel, cuentaDeArchivo, duracionCierre, guionDelReel, paginaDe } from './cierre.mjs'
+import { cierreDelReel, cuentaDeArchivo, duracionCierre, paginaDe } from './cierre.mjs'
 import { fusionarClips, idClip } from './cierres.mjs'
 import { CAPTURAS, HYPERFRAMES, argumentosRender, renderizarProyecto } from './hyperframes.mjs'
 import { armarFinal } from './index.mjs'
@@ -200,17 +200,6 @@ test('paginaDe: la página de la idea, si no la del tema de la clave, si no la p
   assert.equal(paginaDe({ guion: null, sitio, hay }), 'inicio')
 })
 
-test('guionDelReel: el que pasa producir, o el de la carpeta de la variante', () => {
-  const dirCuenta = join(RAIZ, 'cuentas', 'calcular-ar')
-  const propio = { clave: 'x' }
-  assert.equal(guionDelReel({ guion: propio, cuerpo: '/a/b.mp4', dirCuenta, env: {} }), propio)
-  const g = guionDelReel({ guion: null, cuerpo: join('/tmp', 'seco', '2026-11-25-009-aguinaldo-mitos', 'v0', 'cuerpo.mp4'), dirCuenta, env: {} })
-  assert.equal(g?.clave, '009-aguinaldo-mitos')
-  assert.equal(g?.tema, 'aguinaldo')
-  assert.deepEqual(guionDelReel({ guion: null, cuerpo: join('/tmp', '2026-11-25-no-existe', 'v0', 'cuerpo.mp4'), dirCuenta, env: {} }), { clave: 'no-existe' })
-  assert.equal(guionDelReel({ guion: null, cuerpo: join('/tmp', 'cualquiera', 'cuerpo.mp4'), dirCuenta, env: {} }), null)
-})
-
 test('duracionCierre: 4,9 s salvo que la frase no entre', () => {
   assert.equal(duracionCierre(null), 4.9)
   assert.equal(duracionCierre({ palabras: [{ fin_s: 3.6 }] }), 4.9)
@@ -242,15 +231,16 @@ test('cierreDelReel: el clip genérico salvo que la cuenta pida el propio y el t
   const dir = mkdtempSync(join(tmpdir(), 'render-v0-'))
   /** @type {string[]} */
   const logs = []
-  const falla = await cierreDelReel({ clip, destino: 'reel', firma: firma(), cuerpo, dir, env: {}, log: (m) => logs.push(m), renderizar: async () => { throw new Error('hyperframes se cayó') } })
+  const guion = { clave: '009-aguinaldo-mitos', tema: 'aguinaldo' }
+  const falla = await cierreDelReel({ clip, destino: 'reel', firma: firma(), cuerpo, dir, env: {}, guion, log: (m) => logs.push(m), renderizar: async () => { throw new Error('hyperframes se cayó') } })
   assert.deepEqual(falla, { archivo: clip.archivo, propio: false, pagina: null })
   assert.match(logs.join(), /va el clip papel-buscador/)
-  const portada = await cierreDelReel({ clip, destino: 'reel', firma: firma(), cuerpo: join(tmpdir(), '2026-11-25-050-monotributo', 'v0', 'cuerpo.mp4'), dir, env: {} })
+  const portada = await cierreDelReel({ clip, destino: 'reel', firma: firma(), cuerpo, dir, env: {}, guion: { clave: '050-monotributo' } })
   assert.equal(portada.propio, false)
-  const historia = await cierreDelReel({ clip, destino: 'historia', firma: firma(), cuerpo, dir, env: {} })
+  const historia = await cierreDelReel({ clip, destino: 'historia', firma: firma(), cuerpo, dir, env: {}, guion })
   assert.equal(historia.propio, false)
   const sin = cuentaFalsa({ reel: { ...destino, por_reel: false } })
-  assert.equal((await cierreDelReel({ clip: sin.clip, destino: 'reel', firma: firma(), cuerpo, dir, env: {} })).propio, false)
+  assert.equal((await cierreDelReel({ clip: sin.clip, destino: 'reel', firma: firma(), cuerpo, dir, env: {}, guion })).propio, false)
 })
 
 test('clips: ids por destino y fusión estable por id', () => {

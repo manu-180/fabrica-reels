@@ -35,10 +35,10 @@ export class FallaDelGuion extends Error {}
  *     Promise<{ wav: string, duracion_s: number, palabras: { texto: string, inicio_s: number, fin_s: number }[], proveedor: string, caracteres_pagados: number, caracteres_cache: number }>,
  *   temaDe: (p: { cuenta: Cuenta, dirCuenta: string, paleta: string, motivo: string }) => any,
  *   renderizar: (p: { proyecto: string, salida: string, log: (m: string) => void, env: Record<string, string> }) => Promise<void>,
- *   variar: (p: { cuerpo: string, firma: Firma, clip: Clip, musica: string, conVoz: boolean, dir: string, destino: 'reel' | 'historia', env: Record<string, string> }) => Promise<{ archivo: string, duracion_s: number }>,
+ *   variar: (p: { cuerpo: string, firma: Firma, clip: Clip, musica: string, conVoz: boolean, dir: string, destino: 'reel' | 'historia', env: Record<string, string>, guion: any }) => Promise<{ archivo: string, duracion_s: number }>,
  *   subir: (p: { ruta: string, archivo: string, env: Record<string, string | undefined> }) => Promise<string>,
  *   cargarFormato: typeof cargarFormato,
- *   blobVoz?: (p: { env: Record<string, string | undefined>, seco: boolean }) => Promise<any>,
+ *   blobVoz?: (p: { env: Record<string, string | undefined>, seco: boolean, vozLocal: string | null }) => Promise<any>,
  * }} Deps
  */
 
@@ -134,7 +134,8 @@ export async function subirVideo({ ruta, archivo, env, put }) {
 
 /**
  * Las dependencias de otras fases, cargadas recién cuando hacen falta (planear y publicar no las usan).
- * La caché de voz va en el Blob de la fábrica; en --seco sin token, en memoria (se paga igual, no se guarda).
+ * La caché de voz va en el Blob de la fábrica; con `vozLocal`, en esa carpeta (no se vuelve a pagar lo ya
+ * grabado ahí); en --seco sin token ni carpeta, en memoria (se paga y no se guarda).
  * @returns {Promise<Deps>}
  */
 export async function depsPorDefecto() {
@@ -143,14 +144,15 @@ export async function depsPorDefecto() {
   const tema = await import(new URL('../formatos/_comun/tema.mjs', import.meta.url).href)
   return {
     locutar: voz.locutar, temaDe: tema.temaDe, renderizar: render.renderizarCuerpo, variar: render.armarFinal, subir: subirVideo, cargarFormato,
-    blobVoz: async ({ env, seco }) => (seco && !env.BLOB_READ_WRITE_TOKEN?.trim() ? voz.blobEnMemoria() : voz.blobVercel({ token: env.BLOB_READ_WRITE_TOKEN?.trim() })),
+    blobVoz: async ({ env, seco, vozLocal }) =>
+      vozLocal ? voz.blobEnDisco(vozLocal) : seco && !env.BLOB_READ_WRITE_TOKEN?.trim() ? voz.blobEnMemoria() : voz.blobVercel({ token: env.BLOB_READ_WRITE_TOKEN?.trim() }),
   }
 }
 
 /**
  * @typedef {{ cuenta: Cuenta, estado: EstadoV2, raiz: string, ahora?: Date, guionClave?: string | null, seco?: string | null, env?: Record<string, string | undefined>,
  *   fetch?: typeof fetch, blob?: any, deps?: Partial<Deps>, log?: (m: string) => void, guardar?: (e: EstadoV2) => void | Promise<void>, reloj?: () => Date, trabajo?: string,
- *   temas?: Record<string, { puntaje: number, n: number }>, conservar?: string | null }} OpcionesProducir
+ *   temas?: Record<string, { puntaje: number, n: number }>, conservar?: string | null, vozLocal?: string | null }} OpcionesProducir
  * `conservar`: carpeta donde quedan copiados los mp4 finales (modo sombra: el workflow los sube como artefacto).
  * @typedef {{ estado: EstadoV2, creativo: string | null, ok: boolean, motivo: string }} Resultado
  */
@@ -178,7 +180,7 @@ export async function producir(p) {
   const banco = leerBancoCuenta(cuenta, raiz)
   const guiones = leerGuiones(banco.dirGuiones, { cuenta, ...banco })
   const deps = /** @type {Deps} */ ({ ...(p.deps?.locutar && p.deps?.renderizar && p.deps?.variar && p.deps?.temaDe ? {} : await depsPorDefecto()), cargarFormato, subir: subirVideo, ...p.deps })
-  const blob = p.blob ?? (deps.blobVoz ? await deps.blobVoz({ env, seco: Boolean(p.seco) }) : null)
+  const blob = p.blob ?? (deps.blobVoz ? await deps.blobVoz({ env, seco: Boolean(p.seco), vozLocal: p.vozLocal ?? null }) : null)
   /** @type {Set<string>} */
   const rechazados = new Set()
   /** @type {Resultado[]} */
@@ -352,14 +354,14 @@ export async function producirCreativo({ cuenta, raiz, estado, guion, formato, i
     await deps.renderizar({ proyecto, salida: cuerpo, log, env: limpio })
     const musica = /** @type {string} */ (musicas.get(firma.musica))
     const clipReel = /** @type {Clip} */ (clips.find((c) => c.id === firma.cierre))
-    const reel = await deps.variar({ cuerpo, firma, clip: clipReel, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'reel', env: limpio })
+    const reel = await deps.variar({ cuerpo, firma, clip: clipReel, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'reel', env: limpio, guion })
     /** @type {{ archivo: string, duracion_s: number } | null} */
     let historia = null
     if (historiaPropia) {
       const deHistoria = clips.filter((c) => c.destino === 'historia')
       const clip = deHistoria.find((c) => c.paleta === firma.paleta && c.estilo === clipReel.estilo) ?? deHistoria.find((c) => c.paleta === firma.paleta) ?? deHistoria[0]
       if (!clip) throw new Error(`la cuenta pide cierre de historia y no hay clips de historia en ${cuenta.cierre.clips}`)
-      historia = await deps.variar({ cuerpo, firma, clip, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'historia', env: limpio })
+      historia = await deps.variar({ cuerpo, firma, clip, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'historia', env: limpio, guion })
     }
     if (conservar) {
       mkdirSync(join(conservar, id), { recursive: true })

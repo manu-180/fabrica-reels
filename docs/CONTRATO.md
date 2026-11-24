@@ -345,7 +345,7 @@ import { renderizarCuerpo, armarFinal } from '../nucleo/render/index.mjs'  // F4
 import { temaDe } from '../formatos/_comun/tema.mjs'                       // F2a, § 5
 
 renderizarCuerpo({ proyecto, salida, log, env })   // → Promise<void>: el proyecto HyperFrames a mp4 en `salida`
-armarFinal({ cuerpo, firma, clip, musica, conVoz, dir, destino, env })  // → Promise<{ archivo, duracion_s }>
+armarFinal({ cuerpo, firma, clip, musica, conVoz, dir, destino, env, guion })  // → Promise<{ archivo, duracion_s }>
   // env = entornoSinSecretos(...) de nucleo/entorno.mjs: es el ÚNICO entorno con el que F4 lanza npx, hyperframes o ffmpeg
   // música, color, textura, mezcla a −14 LUFS y el clip del cierre; destino 'reel' | 'historia';
   // clip = un Clip de cta/clips.json con `archivo` ya absoluto; musica = ruta absoluta en musica/
@@ -445,6 +445,8 @@ node nucleo/correr.mjs fusionar <base> <remoto> <propio> <salida>
 - `producir --conservar <dir>` (o `FABRICA_CONSERVAR`; en `modo: sombra` con `RUNNER_TEMP`, por defecto
   `$RUNNER_TEMP/sombra`) deja copiados los mp4 finales en `<dir>/<creativo>/<indice>-<reel|historia>.mp4`.
   `--seco` nunca borra su carpeta: ahí quedan cuerpos, finales y `estado.json`.
+- `producir --voz-local <dir>` (o `FABRICA_VOZ_LOCAL`) usa como caché de voz `blobEnDisco(dir)` de `nucleo/voz/disco.mjs`
+  (las mismas rutas que en el Blob): `--seco` sin Blob y sin volver a pagar lo ya grabado en esa carpeta.
 - `publicar` guarda el estado antes de pedir el contenedor de una historia, tras crear cada contenedor y
   tras cada `media_publish` (`guardar(estado)`). Con `FABRICA_PUSH=1` cada guardado es commit, fusión de
   tres vías contra `origin/estado` y push (`empujarEstado`: 8 vueltas con espera creciente, fast-forward,

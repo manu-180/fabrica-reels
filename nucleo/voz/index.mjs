@@ -13,6 +13,7 @@ import { pausasCompletas, planDeFrases } from './texto.mjs'
 export { claveVoz, blobEnMemoria } from './cache.mjs'
 export { presupuesto, costoVoz, priorizarPorPresupuesto } from './presupuesto.mjs'
 export { blobVercel } from './blob.mjs'
+export { blobEnDisco } from './disco.mjs'
 
 /** No hay voz posible sin pasarse (o sin respaldo permitido): el creativo queda para otro día. */
 export class SinPresupuesto extends Error {}
