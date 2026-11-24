@@ -56,11 +56,7 @@
       "antes_cta": 0.9,
       "coma": 0.25
     },
-    "respaldo": {
-      "proveedor": "gemini",
-      "voz": "Kore",
-      "estilo": "rioplatense cálido"
-    },
+    "respaldo": null,
     "presupuesto_mes": 7000
   },
   "marca": {
