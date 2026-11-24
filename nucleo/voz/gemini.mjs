@@ -31,8 +31,14 @@ export async function sintetizarGemini({ texto, voz, estilo, clave, fetch: f, es
       if (r) {
         const t = await r.text()
         if (r.ok) {
-          const b64 = JSON.parse(t)?.candidates?.[0]?.content?.parts?.find((/** @type {any} */ p) => p?.inlineData?.data)?.inlineData?.data
-          if (!b64) throw new Error('Gemini TTS no devolvió audio')
+          const candidato = JSON.parse(t)?.candidates?.[0]
+          const b64 = candidato?.content?.parts?.find((/** @type {any} */ p) => p?.inlineData?.data)?.inlineData?.data
+          // A veces responde 200 sin audio (finishReason OTHER) y la misma frase sale en el intento siguiente.
+          if (!b64) {
+            ultimo = `Gemini TTS no devolvió audio (${modelo}, ${candidato?.finishReason ?? 'sin candidato'})`
+            await espera(3000 * (intento + 1))
+            continue
+          }
           const crudo = Buffer.from(b64, 'base64')
           const copia = new Uint8Array(crudo.length - (crudo.length % 2))
           copia.set(crudo.subarray(0, copia.length))

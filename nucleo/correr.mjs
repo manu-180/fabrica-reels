@@ -290,7 +290,8 @@ async function comandoProducir(raiz) {
   if (!r.resultados.length) anotar('notice', cuenta.id, r.motivo)
   for (const x of r.resultados) {
     const intentos = x.creativo ? (r.estado.creativos[x.creativo]?.intentos ?? 0) : 0
-    const definitiva = !x.ok && Boolean(x.creativo) && intentos >= MAX_INTENTOS
+    // En --seco no hay otro intento: un creativo que falla deja la corrida en rojo para que se vea.
+    const definitiva = !x.ok && (seco ? true : Boolean(x.creativo) && intentos >= MAX_INTENTOS)
     anotar(x.ok ? 'notice' : definitiva ? 'error' : 'warning', cuenta.id, x.motivo)
     if (definitiva) process.exitCode = 1
   }
