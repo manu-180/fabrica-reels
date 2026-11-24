@@ -1,0 +1,9 @@
+{
+  "name": "fabrica-reels",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test \"nucleo/**/*.test.mjs\" \"formatos/**/*.test.mjs\""
+  }
+}
