@@ -315,6 +315,34 @@ const TUTEO = /(?<!\p{L})(tú|tienes|puedes|quieres|sabes|eres|vienes|necesitas|
 const CHE = /\bche\b/
 const CASTELLANO = /\b(vos|tenes|podes|queres|sabes|que|para|con|los|las|una|pero|porque|nuestro|nuestra|pagina|empresa)\b/g
 
+// La fecha de una cuenta regresiva (AAAA-MM-DD) y los `dias` de cada paso no son cifras que el reel
+// afirma: son el calendario del layout, y como texto parecen un teléfono y
+// cifras sueltas. La fecha sí se revisa: su día tiene que estar en un hecho citado. Lo que dice la
+// voz ("el dieciocho de diciembre") se revisa como cualquier cifra.
+/** @param {any} g */
+function sinCalendario(g) {
+  if (g?.formato !== 'cuenta-regresiva' || !g.contenido) return g
+  const contenido = { ...g.contenido, fecha: undefined, pasos: Array.isArray(g.contenido.pasos) ? g.contenido.pasos.map((/** @type {any} */ x) => ({ ...x, dias: undefined })) : g.contenido.pasos }
+  return { ...g, contenido }
+}
+
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+
+/** Si la fecha de la cuenta regresiva está en alguno de los hechos que cita. @param {string} fecha @param {Hecho[]} citados */
+export function fechaRespaldada(fecha, citados) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(fecha)
+  if (!m) return false
+  const [, , mm, dd] = m
+  const dia = String(Number(dd))
+  const mes = Number(mm) - 1
+  const formasFecha = [fecha, `${mm}-${dd}`, `${dd}/${mm}`, `${dia}/${Number(mm)}`, `${dia} de ${MESES[mes]}`, `${MONTHS[mes]} ${dia}`]
+  return citados.some((h) => {
+    const t = normalizar(`${h.texto} ${h.cifras.join(' ')}`)
+    return formasFecha.some((f) => t.includes(normalizar(f)))
+  })
+}
+
 /**
  * El revisor estricto (diseño § 4.4, del 2 al 6): toda cifra con respaldo en los hechos que cita, nada de
  * la oferta sin un hecho `oferta`, ningún precio, ninguna palabra prohibida, ningún dato de contacto ni
@@ -322,13 +350,16 @@ const CASTELLANO = /\b(vos|tenes|podes|queres|sabes|que|para|con|los|las|una|per
  * @param {{ guion: any, cuenta: Cuenta, hechos?: Map<string, Hecho>, ideas?: Map<string, Idea>, leerRepo?: ((archivo: string) => string | null) | null }} p
  * @returns {string[]}
  */
-export function revisarEstricto({ guion: g, cuenta, hechos = new Map(), ideas = new Map(), leerRepo = null }) {
+export function revisarEstricto({ guion: original, cuenta, hechos = new Map(), ideas = new Map(), leerRepo = null }) {
   /** @type {string[]} */
   const p = []
+  const g = sinCalendario(original)
   const idea = g.idea ? (ideas.get(g.idea) ?? null) : null
   const citados = [...(Array.isArray(g.hechos) ? g.hechos : []), ...(Array.isArray(idea?.hechos) ? idea.hechos : [])].map((id) => hechos.get(id)).filter(Boolean)
   const sueltas = cifrasSinRespaldo({ guion: g, hechos, idea, idioma: cuenta.idioma, leerRepo })
   if (sueltas.length) p.push(`cifras sin respaldo en los hechos que cita: ${sueltas.join(', ')}`)
+  const fecha = original?.formato === 'cuenta-regresiva' ? original.contenido?.fecha : undefined
+  if (typeof fecha === 'string' && !fechaRespaldada(fecha, /** @type {Hecho[]} */ (citados))) p.push(`la fecha ${fecha} no está en los hechos que cita`)
   const texto = normalizar(textoDe(g))
   const frases = texto.split(/[.!?\n"]+|\\n/)
   const prometidas = frases.filter((f) => OFERTA.test(f) && PROMESA.test(f))

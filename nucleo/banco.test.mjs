@@ -214,3 +214,18 @@ test('revisarEstricto: "la primera cuota del aguinaldo" es un dato, no la oferta
   const g = { hooks: ['a', 'b', 'c'], voz: 'La primera cuota del aguinaldo vence en junio', contenido: {}, captions: [] }
   assert.deepEqual(revisarEstricto({ guion: g, cuenta: cuentaAr() }), [])
 })
+
+test('revisarEstricto: la fecha y los dias de una cuenta regresiva son calendario, pero la fecha tiene que estar en un hecho citado', async () => {
+  const { readFileSync } = await import('node:fs')
+  const ejemplo = JSON.parse(readFileSync(new URL('../formatos/cuenta-regresiva/ejemplo.json', import.meta.url), 'utf8'))
+  const hechos = new Map([['aguinaldo-18-dic', { id: 'aguinaldo-18-dic', tipo: /** @type {const} */ ('norma'), texto: 'La segunda cuota del aguinaldo se paga hasta el 18 de diciembre', cifras: ['18'], fuente: 'manuel:2026-11-23', envejece: null }]])
+  const cuenta = cuentaAr()
+  assert.deepEqual(revisarEstricto({ guion: { ...ejemplo, hechos: ['aguinaldo-18-dic'] }, cuenta, hechos }), [])
+  const sinHecho = revisarEstricto({ guion: ejemplo, cuenta, hechos }).join('; ')
+  assert.match(sinHecho, /la fecha 2026-12-18 no está en los hechos que cita/)
+  assert.doesNotMatch(sinHecho, /teléfono/)
+  const otraFecha = { ...ejemplo, hechos: ['aguinaldo-18-dic'], contenido: { ...ejemplo.contenido, fecha: '2026-12-20' } }
+  assert.match(revisarEstricto({ guion: otraFecha, cuenta, hechos }).join(), /la fecha 2026-12-20/)
+  const otroFormato = { ...ejemplo, formato: 'explicador', hechos: ['aguinaldo-18-dic'] }
+  assert.match(revisarEstricto({ guion: otroFormato, cuenta, hechos }).join(), /teléfono|cifras sin respaldo/)
+})

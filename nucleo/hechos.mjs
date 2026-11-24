@@ -2,6 +2,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { CLAVE, cargarFormato, cifrasSinRespaldo, leerGuiones, revisarEstricto } from './banco.mjs'
+export { fechaRespaldada } from './banco.mjs'
 
 /**
  * El revisor de hechos (diseño § 4.2 y § 4.3): cada hecho con una fuente que se puede verificar, y
@@ -283,39 +284,10 @@ export function unirPorId(base, nuevas) {
   return [...base, ...nuevas.filter((x) => !ids.has(x.id))]
 }
 
-// La fecha de una cuenta regresiva (AAAA-MM-DD) y los `dias` de cada paso no son cifras que el reel
-// afirma: son el calendario del layout, y el estricto de banco.mjs las lee como un teléfono y como
-// cifras sueltas. La fecha sí se revisa acá: su día tiene que estar en un hecho citado. Lo que dice la
-// voz ("el dieciocho de diciembre") lo sigue revisando el estricto.
-/** @param {any} g */
-function sinCalendario(g) {
-  if (g?.formato !== 'cuenta-regresiva' || !g.contenido) return g
-  const contenido = { ...g.contenido, fecha: undefined, pasos: Array.isArray(g.contenido.pasos) ? g.contenido.pasos.map((/** @type {any} */ x) => ({ ...x, dias: undefined })) : g.contenido.pasos }
-  return { ...g, contenido }
-}
-
-const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
-const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
-
-/** Si la fecha de la cuenta regresiva está en alguno de los hechos que cita. @param {string} fecha @param {Hecho[]} citados */
-export function fechaRespaldada(fecha, citados) {
-  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(fecha)
-  if (!m) return false
-  const [, , mm, dd] = m
-  const dia = String(Number(dd))
-  const mes = Number(mm) - 1
-  const formasFecha = [fecha, `${mm}-${dd}`, `${dd}/${mm}`, `${dia}/${Number(mm)}`, `${dia} de ${MESES[mes]}`, `${MONTHS[mes]} ${dia}`]
-  return citados.some((h) => {
-    const t = normalizar(`${h.texto} ${h.cifras.join(' ')}`)
-    return formasFecha.some((f) => t.includes(normalizar(f)))
-  })
-}
-
 /**
  * Revisa una tanda de guiones del agente: lo del pipeline, el `validar()` del formato, el estricto de
  * banco.mjs (con las ideas y hechos de la rama `estado` sumados a los de main), y además: que tenga
- * `idea`, que no repita la clave ni los hooks de un guion existente y, en una cuenta regresiva, que la
- * fecha esté en un hecho.
+ * `idea` y que no repita la clave ni los hooks de un guion existente.
  * @param {{ cuenta: Cuenta, dir: string, dirFormatos: string, ideas: Map<string, Idea>, hechos: Map<string, Hecho>, paletas: string[],
  *   existentes: any[], leerRepo?: ((archivo: string) => string | null) | null }} p
  * @returns {Promise<{ archivo: string, problemas: string[] }[]>}
@@ -334,12 +306,7 @@ export async function revisarTanda({ cuenta, dir, dirFormatos, ideas, hechos, pa
         p.push(`formato ${guion.formato}: ${/** @type {Error} */ (e).message}`)
       }
       if (typeof guion.idea !== 'string' || !ideas.has(guion.idea)) p.push('idea: tiene que ser una idea existente')
-      p.push(...revisarEstricto({ guion: sinCalendario(guion), cuenta, hechos, ideas, leerRepo }))
-      if (guion.formato === 'cuenta-regresiva' && typeof guion.contenido?.fecha === 'string') {
-        const idea = ideas.get(guion.idea)
-        const citados = [...(guion.hechos ?? []), ...(idea?.hechos ?? [])].map((/** @type {string} */ id) => hechos.get(id)).filter((h) => h !== undefined)
-        if (!fechaRespaldada(guion.contenido.fecha, /** @type {Hecho[]} */ (citados))) p.push(`la fecha ${guion.contenido.fecha} no está en los hechos que cita`)
-      }
+      p.push(...revisarEstricto({ guion, cuenta, hechos, ideas, leerRepo }))
       if (claves.has(guion.clave)) p.push(`la clave ${guion.clave} ya existe`)
       const repetidos = (Array.isArray(guion.hooks) ? guion.hooks : []).filter((/** @type {unknown} */ h) => hooks.has(normalizar(String(h)).trim()))
       if (repetidos.length) p.push(`repite hooks de otro guion: ${repetidos.join(' / ')}`)
