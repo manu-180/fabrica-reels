@@ -1,0 +1,86 @@
+name: Mantenimiento
+
+# Diario a las 4:05 de Buenos Aires (docs/decisiones/fabrica.md § 9): borra de Blob los videos de más
+# de 21 días (nunca la caché de voz), corre los tests y avisa si una cuenta prendida dejó de moverse.
+
+on:
+  schedule:
+    - cron: '5 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-audit --no-fund --no-package-lock @vercel/blob@2.8.1
+      - name: Borrar videos viejos de Blob
+        env:
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+        run: node nucleo/limpiar.mjs
+
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - run: node --test .github/scripts/*.test.mjs
+
+  vigia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: write
+    env:
+      FABRICA_ESTADO: ${{ github.workspace }}/../estado
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # GitHub apaga los crons de un repo público tras 60 días sin actividad. Los pushes a `estado`
+      # cuentan, pero si igual pasó, se vuelve a prender (Kairo hace lo mismo desde afuera).
+      - name: Fábrica prendida
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          estado=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/fabrica.yml" --jq .state)
+          if [ "$estado" != active ]; then
+            echo "::warning::fabrica.yml estaba $estado: se vuelve a prender."
+            gh workflow enable fabrica.yml -R "$GITHUB_REPOSITORY"
+          fi
+
+      - name: Traer el estado
+        run: bash .github/scripts/estado.sh lectura "$FABRICA_ESTADO"
+
+      - name: Variables de la fábrica
+        env:
+          VARIABLES: ${{ toJSON(vars) }}
+        run: |
+          node -e '
+            const v = JSON.parse(process.env.VARIABLES || "{}")
+            for (const [k, x] of Object.entries(v))
+              if (/^FABRICA_[A-Z0-9_]+$/.test(k) && !/[\r\n]/.test(String(x))) console.log(`${k}=${x}`)
+          ' >> "$GITHUB_ENV"
+
+      - name: Cuentas que dejaron de moverse
+        run: node .github/scripts/vigia.mjs

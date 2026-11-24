@@ -1,0 +1,269 @@
+name: Fábrica
+
+# Produce y publica los reels de todas las cuentas (docs/decisiones/fabrica.md § 8 y § 9). Cómo se
+# prende cada cuenta, dry_run y qué secretos lleva cada una: docs/OPERAR.md.
+
+on:
+  schedule:
+    # 17:05 y 19:05 de Buenos Aires producen lo de mañana; 5:05 reintenta lo que falló (3 intentos
+    # por creativo, 12 h antes de su franja). BA es UTC-3 todo el año.
+    - cron: '5 20,22 * * *'
+    - cron: '5 8 * * *'
+    # Tics de 8:17 a 23:47 de BA: publica como mucho una vencida por cuenta y mide. Un tic sin nada
+    # que hacer termina en el job planear, sin instalar nada.
+    - cron: '17,47 11-23,0-2 * * *'
+  workflow_dispatch:
+    inputs:
+      cuenta:
+        description: 'Cuenta (carpeta de cuentas/, o prueba-ar / prueba-web con dry_run). Vacío = todas'
+        required: false
+        default: ''
+      accion:
+        description: 'Qué hacer'
+        type: choice
+        options: [todo, producir, publicar, medir]
+        default: todo
+      guion:
+        description: 'Producir este guion (clave), aunque hoy ya haya creativos. Necesita cuenta'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Producir sin Blob, Instagram ni guardar el estado (los mp4 quedan como artefacto 3 días)'
+        type: boolean
+        default: false
+      ahora:
+        description: 'Publicar ya la próxima publicación de hoy (el antispam se respeta igual)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+env:
+  HYPERFRAMES_VERSION: '0.8.140'
+  VERCEL_BLOB_VERSION: '2.8.1'
+
+jobs:
+  planear:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      producir: ${{ steps.matriz.outputs.producir }}
+      publicar: ${{ steps.matriz.outputs.publicar }}
+      hay_producir: ${{ steps.matriz.outputs.hay_producir }}
+      hay_publicar: ${{ steps.matriz.outputs.hay_publicar }}
+    env:
+      ACCION: ${{ github.event_name == 'schedule' && (startsWith(github.event.schedule, '5 ') && 'producir' || 'publicar') || inputs.accion || 'todo' }}
+      CUENTA: ${{ inputs.cuenta }}
+      GUION: ${{ inputs.guion }}
+      AHORA: ${{ inputs.ahora && 'true' || '' }}
+      DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
+      FABRICA_ESTADO: ${{ github.workspace }}/../estado
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Traer el estado
+        if: env.DRY_RUN != 'true'
+        run: bash .github/scripts/estado.sh lectura "$FABRICA_ESTADO"
+
+      # Las variables del repo FABRICA_* (pausas y prendido por cuenta) se pasan todas porque el nombre
+      # depende de la cuenta. Son públicas en el log: nunca algo sensible en una variable de este repo.
+      - name: Variables de la fábrica
+        env:
+          VARIABLES: ${{ toJSON(vars) }}
+        run: |
+          node -e '
+            const v = JSON.parse(process.env.VARIABLES || "{}")
+            for (const [k, x] of Object.entries(v))
+              if (/^FABRICA_[A-Z0-9_]+$/.test(k) && !/[\r\n]/.test(String(x))) console.log(`${k}=${x}`)
+          ' >> "$GITHUB_ENV"
+
+      - name: Planear
+        if: env.DRY_RUN != 'true'
+        run: |
+          rc=0
+          if [ -n "$CUENTA" ]; then
+            GITHUB_OUTPUT="$RUNNER_TEMP/plan" node nucleo/correr.mjs planear --cuenta "$CUENTA" || rc=$?
+          else
+            GITHUB_OUTPUT="$RUNNER_TEMP/plan" node nucleo/correr.mjs planear || rc=$?
+          fi
+          echo "PLANEAR_RC=$rc" >> "$GITHUB_ENV"
+
+      - name: Armar las matrices
+        id: matriz
+        env:
+          PLAN: ${{ runner.temp }}/plan
+        run: node .github/scripts/matriz.mjs
+
+      # Una cuenta rota no frena a las otras: la matriz ya salió; esto sólo deja la corrida en rojo.
+      - name: Fallar si alguna cuenta no se pudo planear
+        if: env.PLANEAR_RC != '' && env.PLANEAR_RC != '0'
+        run: exit 1
+
+  producir:
+    needs: planear
+    if: ${{ !cancelled() && needs.planear.outputs.hay_producir == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.planear.outputs.producir) }}
+    # Una cola por cuenta, separada de la de publicar: GitHub reemplaza el pendiente de un mismo grupo,
+    # y una producción no puede quedar reemplazada por un tic. dry_run no guarda nada: no hace cola.
+    concurrency:
+      group: ${{ inputs.dry_run && format('seco-{0}-{1}', matrix.cuenta, github.run_id) || format('producir-{0}', matrix.cuenta) }}
+      cancel-in-progress: false
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+      GUION: ${{ inputs.guion }}
+      SECO: ${{ inputs.dry_run && 'true' || '' }}
+      FABRICA_RAIZ: ${{ github.workspace }}/${{ matrix.raiz }}
+      FABRICA_ESTADO: ${{ github.workspace }}/../estado
+      FABRICA_PAUSADA: ${{ vars.FABRICA_PAUSADA }}
+    steps:
+      # La punta de la rama, no el commit que disparó la corrida: una corrida que esperó en la cola
+      # arrancaría con código viejo.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Traer el estado
+        run: |
+          if [ -n "$SECO" ]; then
+            bash .github/scripts/estado.sh lectura "$FABRICA_ESTADO"
+          else
+            bash .github/scripts/estado.sh escritura "$FABRICA_ESTADO" "$CUENTA"
+          fi
+
+      - name: Instalar @vercel/blob y ffmpeg
+        run: |
+          npm install --no-save --no-audit --no-fund --no-package-lock "@vercel/blob@${VERCEL_BLOB_VERSION}"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji fonts-liberation > /dev/null
+
+      - name: Cache de HyperFrames
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/hyperframes
+          key: hyperframes-${{ env.HYPERFRAMES_VERSION }}-v1
+
+      - name: Preparar HyperFrames
+        run: npx --yes "hyperframes@${HYPERFRAMES_VERSION}" browser ensure
+
+      # Con tope propio: lo que ya terminó quedó pusheado y el intento del que se colgó quedó contado.
+      # En dry_run va BLOB_READ_WRITE_TOKEN igual: sólo lo usa la caché de voz (no sube videos) y evita
+      # pagar dos veces a ElevenLabs la misma frase.
+      - name: Producir
+        id: producir
+        timeout-minutes: 100
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          FABRICA_PUSH: ${{ !inputs.dry_run && '1' || '' }}
+          FABRICA_GIT_TOKEN: ${{ !inputs.dry_run && github.token || '' }}
+        run: |
+          args=(producir --cuenta "$CUENTA")
+          if [ -n "$GUION" ]; then args+=(--guion "$GUION"); fi
+          if [ -n "$SECO" ]; then args+=(--seco "$RUNNER_TEMP/seco"); fi
+          node nucleo/correr.mjs "${args[@]}"
+
+      - name: Guardar los videos del dry_run
+        if: always() && env.SECO != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: fabrica-${{ matrix.cuenta }}-seco
+          path: |
+            ${{ runner.temp }}/seco/estado.json
+            ${{ runner.temp }}/seco/**/*.mp4
+            ${{ runner.temp }}/seco/**/*.log
+          if-no-files-found: ignore
+          retention-days: 3
+
+  publicar:
+    needs: planear
+    if: ${{ !cancelled() && needs.planear.outputs.hay_publicar == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.planear.outputs.publicar) }}
+    concurrency:
+      group: publicar-${{ matrix.cuenta }}
+      cancel-in-progress: false
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+      AHORA: ${{ inputs.ahora && 'true' || '' }}
+      FABRICA_RAIZ: ${{ github.workspace }}/${{ matrix.raiz }}
+      FABRICA_ESTADO: ${{ github.workspace }}/../estado
+      FABRICA_PAUSADA: ${{ vars.FABRICA_PAUSADA }}
+      FABRICA_PUSH: '1'
+      IG_USER_NOMBRE: ${{ matrix.ig_user }}
+      IG_TOKEN_NOMBRE: ${{ matrix.ig_token }}
+      IG_INSIGHTS_NOMBRE: ${{ matrix.ig_insights }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # El estado se lee recién acá, no en planear: si este job esperó en la cola a que terminara el
+      # tic anterior, trae lo que ese tic pusheó.
+      - name: Traer el estado
+        run: bash .github/scripts/estado.sh escritura "$FABRICA_ESTADO" "$CUENTA"
+
+      # correr.mjs lee los secretos de la cuenta con sus propios nombres (cuenta.json → secretos):
+      # el valor llega como secrets[nombre] y se exporta con ese nombre sólo para este proceso.
+      - name: Publicar
+        id: publicar
+        if: matrix.publicar
+        env:
+          IG_USER_VALOR: ${{ secrets[matrix.ig_user] }}
+          IG_TOKEN_VALOR: ${{ secrets[matrix.ig_token] }}
+          FABRICA_GIT_TOKEN: ${{ github.token }}
+        run: |
+          valido='^[A-Z][A-Z0-9_]*$'
+          [[ $IG_USER_NOMBRE =~ $valido && $IG_TOKEN_NOMBRE =~ $valido ]] || { echo "::error::nombres de secretos inválidos"; exit 2; }
+          export "$IG_USER_NOMBRE=$IG_USER_VALOR" "$IG_TOKEN_NOMBRE=$IG_TOKEN_VALOR"
+          unset IG_USER_VALOR IG_TOKEN_VALOR
+          if [ "$AHORA" = true ]; then
+            node nucleo/correr.mjs publicar --cuenta "$CUENTA" --ahora
+          else
+            node nucleo/correr.mjs publicar --cuenta "$CUENTA"
+          fi
+
+      # always(): si publicar falló, lo ya publicado se mide igual.
+      - name: Medir
+        if: always() && matrix.medir && steps.publicar.outcome != 'cancelled'
+        env:
+          IG_USER_VALOR: ${{ secrets[matrix.ig_user] }}
+          IG_TOKEN_VALOR: ${{ secrets[matrix.ig_token] }}
+          IG_INSIGHTS_VALOR: ${{ matrix.ig_insights != '' && secrets[matrix.ig_insights] || '' }}
+          FABRICA_GIT_TOKEN: ${{ github.token }}
+        run: |
+          valido='^[A-Z][A-Z0-9_]*$'
+          [[ $IG_USER_NOMBRE =~ $valido && $IG_TOKEN_NOMBRE =~ $valido ]] || { echo "::error::nombres de secretos inválidos"; exit 2; }
+          export "$IG_USER_NOMBRE=$IG_USER_VALOR" "$IG_TOKEN_NOMBRE=$IG_TOKEN_VALOR"
+          if [[ $IG_INSIGHTS_NOMBRE =~ $valido ]]; then export "$IG_INSIGHTS_NOMBRE=$IG_INSIGHTS_VALOR"; fi
+          unset IG_USER_VALOR IG_TOKEN_VALOR IG_INSIGHTS_VALOR
+          node nucleo/correr.mjs medir --cuenta "$CUENTA"
