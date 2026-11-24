@@ -68,7 +68,9 @@ idea no entra (por ejemplo, una `cuenta-regresiva` sin fecha en los hechos citad
 - `cuenta-regresiva`: `contenido.fecha` es la fecha real del evento y tiene que estar en un hecho
   citado (como `AAAA-MM-DD`, `MM-DD`, `18 de diciembre` o `December 18`); el día dicho en la voz
   también. Los `dias` de cada paso van de más lejos a más cerca.
-- `antes-despues`: `negocio.rubro` uno de los que tienen foto en `formatos/antes-despues/fotos/`. En
+- `antes-despues`: `negocio.rubro` uno de los que tienen foto en `formatos/antes-despues/fotos/`, y el
+  `nombre` y el `lema` del negocio de ese mismo rubro (la foto se ve: una peluquería no se llama
+  "Taller Arcilla"). En
   Assistify, `antes.tipo: "papel"` y `despues.pantallas` de `formatos/antes-despues/pantallas/` (mirá
   `ejemplo-app.json`).
 - `chat`: de 5 a 9 mensajes de los dos lados, remate corto; tiene que durar menos que el tope que
