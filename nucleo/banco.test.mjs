@@ -165,3 +165,52 @@ test('leerBancoCuenta lee ideas, hechos y paletas de la carpeta de la cuenta', (
   assert.deepEqual(b.hechos.get('aguinaldo-50')?.cifras, ['50'])
   assert.deepEqual(b.paletas, ['papel', 'selva', 'noche', 'menta', 'pizarra'])
 })
+
+test('revisarEstricto: dominios y mails de ejemplo (tu/your + rubro) sí; marcas reales, dominios de los hechos y otros mails no', () => {
+  const g = (/** @type {string} */ voz) => ({ hooks: ['a', 'b', 'c'], voz, contenido: {}, captions: [] })
+  const ar = cuentaAr()
+  assert.deepEqual(revisarEstricto({ guion: g('Mirá tutaller.com.ar y escribí a consultas@tuestudio.com'), cuenta: ar }), [])
+  assert.deepEqual(revisarEstricto({ guion: g('Visit yourgarage.com'), cuenta: { ...cuentaWeb(), idioma: 'en-US' } }), [])
+  assert.ok(revisarEstricto({ guion: g('Entrá a tumblr.com'), cuenta: ar }).some((p) => /tumblr/.test(p)))
+  assert.ok(revisarEstricto({ guion: g('Escribí a juan@gmail.com'), cuenta: ar }).some((p) => /mail: juan@gmail.com/.test(p)))
+  const hechos = leerHechos(JSON.stringify({ hechos: [{ id: 'h', tipo: 'dato', cifras: [], texto: 'El sitio tufactura.com.ar cobra comisión' }] }))
+  assert.ok(revisarEstricto({ guion: g('Mirá tufactura.com.ar'), cuenta: ar, hechos }).some((p) => /tufactura/.test(p)))
+})
+
+test('revisarEstricto: "gratis" sólo pide respaldo cuando la cuenta lo promete; un dato gratis con su hecho pasa', () => {
+  const g = (/** @type {string} */ voz, extra = {}) => ({ hooks: ['a', 'b', 'c'], voz, contenido: {}, captions: [], ...extra })
+  const ar = cuentaAr()
+  const hechos = leerHechos(JSON.stringify({ hechos: [{ id: 'telegrama', tipo: 'norma', cifras: [], texto: 'El telegrama laboral es gratis para el trabajador' }, { id: 'demo', tipo: 'oferta', cifras: [], texto: 'La demo es gratis' }] }))
+  assert.deepEqual(revisarEstricto({ guion: g('Con una plantilla gratis queda igual. Lo gratis sale caro.'), cuenta: ar, hechos }), [])
+  assert.deepEqual(revisarEstricto({ guion: g('La ficha de Google Maps es gratis'), cuenta: ar, hechos }), [])
+  assert.ok(revisarEstricto({ guion: g('Te la armamos gratis'), cuenta: ar, hechos }).some((p) => /oferta/.test(p)))
+  assert.deepEqual(revisarEstricto({ guion: g('Te la armamos gratis', { hechos: ['demo'] }), cuenta: ar, hechos }), [])
+  assert.ok(revisarEstricto({ guion: g('Te mandamos el telegrama gratis'), cuenta: ar, hechos }).some((p) => /oferta/.test(p)))
+  assert.deepEqual(revisarEstricto({ guion: g('Te mandamos el telegrama gratis', { hechos: ['telegrama'] }), cuenta: ar, hechos }), [])
+  assert.ok(revisarEstricto({ guion: g('Pagás la primera cuota cuando te gusta'), cuenta: ar, hechos }).some((p) => /oferta/.test(p)))
+})
+
+test('revisarEstricto: números de utilería sólo en un chat de comedia que los marca en ilustrativos, y nunca precios, plazos ni porcentajes de la oferta', () => {
+  const ar = cuentaAr()
+  const hechos = leerHechos(JSON.stringify({ hechos: [{ id: 'demo-24', tipo: 'oferta', cifras: ['24'], texto: 'La demo en 24 horas' }] }))
+  const chat = (/** @type {string} */ texto, extra = {}) => ({ formato: 'chat', categoria: 'comedia', hooks: ['a', 'b', 'c'], voz: null, contenido: { mensajes: [{ de: 'ellos', texto }] }, captions: [], ...extra })
+  assert.ok(revisarEstricto({ guion: chat('1.284 visitas. Pa, 1.280 son tuyas'), cuenta: ar, hechos }).some((p) => /1\.284/.test(p)))
+  assert.deepEqual(revisarEstricto({ guion: chat('1.284 visitas. Pa, 1.280 son tuyas', { ilustrativos: ['1.284', '1.280'] }), cuenta: ar, hechos }), [])
+  assert.ok(revisarEstricto({ guion: chat('1.284 visitas', { ilustrativos: ['1.284'], formato: 'explicador' }), cuenta: ar, hechos }).some((p) => /sólo en un chat de comedia/.test(p)))
+  assert.ok(revisarEstricto({ guion: chat('1.284 visitas', { ilustrativos: ['1.284'], categoria: 'tecnico' }), cuenta: ar, hechos }).some((p) => /1\.284/.test(p)))
+  assert.ok(revisarEstricto({ guion: chat('La tenés en 24 horas', { ilustrativos: ['24'] }), cuenta: ar, hechos }).some((p) => /oferta/.test(p)))
+  assert.ok(revisarEstricto({ guion: chat('En 15 días está', { ilustrativos: ['15'] }), cuenta: ar, hechos }).some((p) => /plazo/.test(p)))
+  assert.ok(revisarEstricto({ guion: chat('El 70 % se va', { ilustrativos: ['70 %'] }), cuenta: ar, hechos }).some((p) => /porcentaje/.test(p)))
+  assert.ok(revisarEstricto({ guion: chat('Sale $ 30000', { ilustrativos: ['30000'] }), cuenta: ar, hechos }).some((p) => /precio/.test(p)))
+  assert.ok(revisarGuion({ ...guion(), ilustrativos: 'x' }, ARCHIVO, { cuenta: ar }).some((p) => /ilustrativos/.test(p)))
+})
+
+test('cifrasDe no toma los atributos de un visual de código', () => {
+  const g = { hooks: ['a', 'b', 'c'], voz: 'Cargá rápido', contenido: { bloques: [{ visual: { tipo: 'codigo', lineas: ['<img width="800" height="600">'] } }, { visual: { tipo: 'titulo', texto: '53 %' } }] }, captions: [] }
+  assert.deepEqual(cifrasDe(g), ['53'])
+})
+
+test('revisarEstricto: "la primera cuota del aguinaldo" es un dato, no la oferta', () => {
+  const g = { hooks: ['a', 'b', 'c'], voz: 'La primera cuota del aguinaldo vence en junio', contenido: {}, captions: [] }
+  assert.deepEqual(revisarEstricto({ guion: g, cuenta: cuentaAr() }), [])
+})

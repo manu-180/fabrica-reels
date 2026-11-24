@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { mkdtempSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, readdirSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'node:test'
@@ -135,4 +135,25 @@ test('producir con --guion: ese guion, en el primer slot libre del día', async 
   assert.equal(r.estado.creativos['2026-11-10-003-preaviso-plazo'].slot, 1)
   const no = await producir({ cuenta: cuentaAr(), estado: e, raiz: RAIZ, ahora: MADRUGADA, guionClave: 'no-existe', deps, env: {}, seco: mkdtempSync(join(tmpdir(), 'fabrica-seco-')) })
   assert.match(no.motivo, /no existe/)
+})
+
+test('producir con conservar (modo sombra): los mp4 finales quedan copiados aunque se borre la carpeta de trabajo, y el render no ve secretos', async () => {
+  const { deps, llamadas } = dobles()
+  /** @type {any[]} */
+  const renders = []
+  const conservar = mkdtempSync(join(tmpdir(), 'fabrica-sombra-'))
+  const env = { BLOB_READ_WRITE_TOKEN: 'b', FABRICA_GIT_TOKEN: 'ghs', IG_PRUEBA_WEB_TOKEN: 'i', PATH: '/usr/bin' }
+  const r = await producir({
+    cuenta: cuentaWeb(), estado: estadoCon('prueba-web', []), raiz: RAIZ, ahora: TARDE, reloj: () => TARDE, env, conservar, trabajo: mkdtempSync(join(tmpdir(), 'fabrica-')),
+    deps: { ...deps, renderizar: async (/** @type {any} */ p) => { renders.push(p.env); writeFileSync(p.salida, 'cuerpo') } },
+  })
+  assert.equal(r.ok, true, r.motivo)
+  const id = String(r.resultados[0]?.creativo)
+  assert.deepEqual(readdirSync(join(conservar, id)).sort(), ['0-historia.mp4', '0-reel.mp4', '1-historia.mp4', '1-reel.mp4'])
+  for (const e of [...renders, ...llamadas.variar.map((x) => x.env)]) {
+    assert.equal(e.FABRICA_GIT_TOKEN, undefined)
+    assert.equal(e.BLOB_READ_WRITE_TOKEN, undefined)
+    assert.equal(e.IG_PRUEBA_WEB_TOKEN, undefined)
+    assert.equal(e.PATH, '/usr/bin')
+  }
 })

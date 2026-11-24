@@ -1,6 +1,6 @@
 // @ts-check
 import { createHash } from 'node:crypto'
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -10,6 +10,7 @@ import { captionsDeVariante, cargarFormato, leerBancoCuenta, leerGuiones } from 
 import { firmaPara, historialDeFirmas, resumenFirma } from './diseno.mjs'
 import { MAX_INTENTOS, publicacionVacia } from './estado.mjs'
 import { creativoAnterior, elegirGuion, historialGuion } from './elegir.mjs'
+import { entornoSinSecretos } from './entorno.mjs'
 import { diaAR, finDelDia, minutoAR, sumarDias } from './tiempo.mjs'
 
 /*
@@ -33,8 +34,8 @@ export class FallaDelGuion extends Error {}
  *   locutar: (p: { cuenta: Cuenta, hook: string, cuerpo: string | null, env: Record<string, string | undefined>, fetch: typeof fetch, blob: any, log: (m: string) => void }) =>
  *     Promise<{ wav: string, duracion_s: number, palabras: { texto: string, inicio_s: number, fin_s: number }[], proveedor: string, caracteres_pagados: number, caracteres_cache: number }>,
  *   temaDe: (p: { cuenta: Cuenta, dirCuenta: string, paleta: string, motivo: string }) => any,
- *   renderizar: (p: { proyecto: string, salida: string, log: (m: string) => void }) => Promise<void>,
- *   variar: (p: { cuerpo: string, firma: Firma, clip: Clip, musica: string, conVoz: boolean, dir: string, destino: 'reel' | 'historia' }) => Promise<{ archivo: string, duracion_s: number }>,
+ *   renderizar: (p: { proyecto: string, salida: string, log: (m: string) => void, env: Record<string, string> }) => Promise<void>,
+ *   variar: (p: { cuerpo: string, firma: Firma, clip: Clip, musica: string, conVoz: boolean, dir: string, destino: 'reel' | 'historia', env: Record<string, string> }) => Promise<{ archivo: string, duracion_s: number }>,
  *   subir: (p: { ruta: string, archivo: string, env: Record<string, string | undefined> }) => Promise<string>,
  *   cargarFormato: typeof cargarFormato,
  *   blobVoz?: (p: { env: Record<string, string | undefined>, seco: boolean }) => Promise<any>,
@@ -149,7 +150,8 @@ export async function depsPorDefecto() {
 /**
  * @typedef {{ cuenta: Cuenta, estado: EstadoV2, raiz: string, ahora?: Date, guionClave?: string | null, seco?: string | null, env?: Record<string, string | undefined>,
  *   fetch?: typeof fetch, blob?: any, deps?: Partial<Deps>, log?: (m: string) => void, guardar?: (e: EstadoV2) => void | Promise<void>, reloj?: () => Date, trabajo?: string,
- *   temas?: Record<string, { puntaje: number, n: number }> }} OpcionesProducir
+ *   temas?: Record<string, { puntaje: number, n: number }>, conservar?: string | null }} OpcionesProducir
+ * `conservar`: carpeta donde quedan copiados los mp4 finales (modo sombra: el workflow los sube como artefacto).
  * @typedef {{ estado: EstadoV2, creativo: string | null, ok: boolean, motivo: string }} Resultado
  */
 
@@ -278,7 +280,7 @@ async function producirSlot(p) {
   const dir = seco ? join(seco, id) : (p.trabajo ? join(p.trabajo, id) : join(process.env.RUNNER_TEMP ?? tmpdir(), 'fabrica', cuenta.id, id))
   try {
     if (!seco && !env.BLOB_READ_WRITE_TOKEN?.trim()) throw new Error('falta BLOB_READ_WRITE_TOKEN: sin Blob no hay URL para Instagram')
-    const r = await producirCreativo({ cuenta, raiz, estado, guion, formato: /** @type {any} */ (formato), id, dia, ronda, slot, variantes: por.variantes, dir, seco: Boolean(seco), env, deps, log, fetch: p.fetch ?? fetch, blob: p.blob ?? null })
+    const r = await producirCreativo({ cuenta, raiz, estado, guion, formato: /** @type {any} */ (formato), id, dia, ronda, slot, variantes: por.variantes, dir, seco: Boolean(seco), env, deps, log, fetch: p.fetch ?? fetch, blob: p.blob ?? null, conservar: p.conservar ?? null })
     const [agendado] = agendar({ cuenta, creativos: [{ ...entrada, variantes: r.variantes }], dia, semilla: cuenta.id, estado, por, ahora: reloj() })
     entrada = { ...entrada, producido_at: reloj().toISOString(), error: null, falla: null, intentos: entrada.intentos - 1, voz: r.voz, variantes: /** @type {Creativo} */ (agendado).variantes }
     await poner()
@@ -297,11 +299,13 @@ async function producirSlot(p) {
 /**
  * Del guion a sus variantes subidas, cada una con su firma, sus videos y sus publicaciones vacías.
  * @param {{ cuenta: Cuenta, raiz: string, estado: EstadoV2, guion: any, formato: Awaited<ReturnType<typeof cargarFormato>>, id: string, dia: string, ronda: number, slot: number,
- *   variantes: number, dir: string, seco: boolean, env: Record<string, string | undefined>, deps: Deps, log: (m: string) => void, fetch: typeof fetch, blob: any }} p
+ *   variantes: number, dir: string, seco: boolean, env: Record<string, string | undefined>, deps: Deps, log: (m: string) => void, fetch: typeof fetch, blob: any,
+ *   conservar?: string | null }} p
  * @returns {Promise<{ variantes: Variante[], voz: Creativo['voz'] }>}
  */
-export async function producirCreativo({ cuenta, raiz, estado, guion, formato, id, dia, ronda, slot, variantes: V, dir, seco, env, deps, log, fetch: f, blob }) {
+export async function producirCreativo({ cuenta, raiz, estado, guion, formato, id, dia, ronda, slot, variantes: V, dir, seco, env, deps, log, fetch: f, blob, conservar = null }) {
   mkdirSync(dir, { recursive: true })
+  const limpio = entornoSinSecretos(env, cuenta)
   const dc = dirCuenta(cuenta.id, raiz)
   const clips = leerClips(join(dc, cuenta.cierre.clips), log)
   const musicas = listarMusicas(join(raiz, 'musica'))
@@ -345,17 +349,22 @@ export async function producirCreativo({ cuenta, raiz, estado, guion, formato, i
       throw new FallaDelGuion(`${guion.formato} no pudo armar el guion: ${String(/** @type {Error} */ (e).message).split('\n')[0]}`)
     }
     const cuerpo = join(vdir, 'cuerpo.mp4')
-    await deps.renderizar({ proyecto, salida: cuerpo, log })
+    await deps.renderizar({ proyecto, salida: cuerpo, log, env: limpio })
     const musica = /** @type {string} */ (musicas.get(firma.musica))
     const clipReel = /** @type {Clip} */ (clips.find((c) => c.id === firma.cierre))
-    const reel = await deps.variar({ cuerpo, firma, clip: clipReel, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'reel' })
+    const reel = await deps.variar({ cuerpo, firma, clip: clipReel, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'reel', env: limpio })
     /** @type {{ archivo: string, duracion_s: number } | null} */
     let historia = null
     if (historiaPropia) {
       const deHistoria = clips.filter((c) => c.destino === 'historia')
       const clip = deHistoria.find((c) => c.paleta === firma.paleta && c.estilo === clipReel.estilo) ?? deHistoria.find((c) => c.paleta === firma.paleta) ?? deHistoria[0]
       if (!clip) throw new Error(`la cuenta pide cierre de historia y no hay clips de historia en ${cuenta.cierre.clips}`)
-      historia = await deps.variar({ cuerpo, firma, clip, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'historia' })
+      historia = await deps.variar({ cuerpo, firma, clip, musica, conVoz: Boolean(guion.voz), dir: vdir, destino: 'historia', env: limpio })
+    }
+    if (conservar) {
+      mkdirSync(join(conservar, id), { recursive: true })
+      copyFileSync(reel.archivo, join(conservar, id, `${indice}-reel.mp4`))
+      if (historia) copyFileSync(historia.archivo, join(conservar, id, `${indice}-historia.mp4`))
     }
     const base = `videos/${cuenta.id}/${dia}/${id}-${indice}`
     const video_url = seco ? pathToFileURL(reel.archivo).href : await deps.subir({ ruta: `${base}-reel.mp4`, archivo: reel.archivo, env })

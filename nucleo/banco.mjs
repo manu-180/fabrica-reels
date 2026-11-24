@@ -121,6 +121,7 @@ export function revisarGuion(g, archivo, { cuenta, ideas = null, hechos = null, 
     if (!Array.isArray(g.hechos) || g.hechos.some((/** @type {unknown} */ h) => typeof h !== 'string')) p.push('hechos: lista de ids de hechos.json')
     else if (hechos) for (const h of g.hechos) if (!hechos.has(h)) p.push(`hechos: "${h}" no está en hechos.json`)
   }
+  if (g.ilustrativos !== undefined && (!Array.isArray(g.ilustrativos) || g.ilustrativos.some((/** @type {unknown} */ x) => typeof x !== 'string' || !x.trim()))) p.push('ilustrativos: lista de cifras de utilería, tal como aparecen')
   if (g.caduca !== undefined && !(typeof g.caduca === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(g.caduca))) p.push('caduca: "AAAA-MM-DD", el último día en que lo que dice sigue siendo cierto')
   if (g.ventana !== undefined && !(g.ventana && mesDia(g.ventana.desde) && mesDia(g.ventana.hasta))) p.push('ventana: { "desde": "MM-DD", "hasta": "MM-DD" } con fechas que existan')
   if (g.idea !== undefined) {
@@ -221,13 +222,29 @@ const normalizar = (texto) => texto.normalize('NFD').replace(/\p{Diacritic}/gu, 
 const textoDe = (g) => JSON.stringify({ hooks: g.hooks, voz: g.voz, contenido: g.contenido, captions: g.captions })
 
 /**
+ * El contenido sin las líneas de los visuales `codigo`: `width="800"` en un fragmento de HTML es un
+ * atributo, no un dato que el reel afirma. Sólo para buscar cifras.
+ * @param {any} contenido
+ */
+function sinCodigo(contenido) {
+  if (!contenido || typeof contenido !== 'object') return contenido
+  return JSON.parse(JSON.stringify(contenido, (k, v) => (v && typeof v === 'object' && v.tipo === 'codigo' ? { tipo: 'codigo' } : v)))
+}
+
+/** Lo que el reel afirma, para buscar cifras. @param {any} g */
+const textoParaCifras = (g) => JSON.stringify({ hooks: g.hooks, voz: g.voz, contenido: sinCodigo(g.contenido), captions: g.captions })
+
+/** Un chat de comedia puede marcar números de utilería (visitas de un contador, un horario de ejemplo). @param {any} g */
+export const admiteIlustrativos = (g) => g?.formato === 'chat' && g?.categoria === 'comedia'
+
+/**
  * Las cifras de un guion que tienen que estar respaldadas: 5 o más, o con coma, punto o %. Del 1 al 4
  * quedan libres porque son los ejemplos ("4 años y 5 meses") y no reglas; los años, porque nombran la
  * norma y no son un dato que se calcula.
  * @param {object} g @param {'es-AR' | 'en-US'} [idioma] @returns {string[]}
  */
 export function cifrasDe(g, idioma = 'es-AR') {
-  const texto = letrasACifras(normalizar(textoDe(g)), idioma)
+  const texto = letrasACifras(normalizar(textoParaCifras(g)), idioma)
   /** @type {Set<string>} */
   const cifras = new Set()
   for (const m of texto.matchAll(/\d+(?:[.,]\d+)*(?:\s?%)?/g)) {
@@ -250,6 +267,7 @@ const formasDe = (c) => [c, c.replace(/\./g, ''), c.replace(',', '.'), c.replace
  * @returns {string[]}
  */
 export function cifrasSinRespaldo({ guion, hechos = new Map(), idea = null, idioma = 'es-AR', leerRepo = null }) {
+  const ilustrativas = admiteIlustrativos(guion) && Array.isArray(guion.ilustrativos) ? guion.ilustrativos.map((x) => normalizar(String(x)).replace(/\s|%/g, '')) : []
   const citados = [...(Array.isArray(guion.hechos) ? guion.hechos : []), ...(Array.isArray(idea?.hechos) ? idea.hechos : [])]
   let respaldo = [idea?.dato ?? '', ...citados.flatMap((id) => hechos.get(id)?.cifras ?? [])].join('\n')
   if (leerRepo) {
@@ -262,7 +280,8 @@ export function cifrasSinRespaldo({ guion, hechos = new Map(), idea = null, idio
     }
   }
   const r = normalizar(respaldo).replace(/_/g, '')
-  return cifrasDe(guion, idioma).filter((c) => !formasDe(c).some((v) => new RegExp(`(^|[^\\d])${v.replace('.', '\\.')}([^\\d]|$)`).test(r)))
+  const deUtileria = (/** @type {string} */ c) => ilustrativas.some((x) => formasDe(x).some((f) => formasDe(c).includes(f)))
+  return cifrasDe(guion, idioma).filter((c) => !deUtileria(c) && !formasDe(c).some((v) => new RegExp(`(^|[^\\d])${v.replace('.', '\\.')}([^\\d]|$)`).test(r)))
 }
 
 
@@ -271,11 +290,27 @@ const PRECIO = /(us\$|u\$s|\$\s?\d|\d\s?(pesos|usd|dolares|dollars|euros)\b)/
 const TELEFONO = /(?<![\d.,])\+?\d(?:[\s()-]*\d){7,14}(?![\d.,])/g
 /** Ocho dígitos o más con un +, un guion o un grupo de cuatro: un teléfono, no una lista de números. @param {string} t */
 const pareceTelefono = (t) => [...t.matchAll(TELEFONO)].some((m) => /\+|-|\d{4}/.test(m[0]))
-const MAIL = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/
+const MAIL = /[a-z0-9._%+-]+@([a-z0-9.-]+\.[a-z]{2,})/g
 const ARROBA = /(^|[\s"(])@[a-z0-9._]{2,}/
 const DOMINIO = /\b((?:https?:\/\/)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|ar|net|org|io|app|ai|co|dev|tech|site|store|shop|info)(?:\.[a-z]{2})?)\b/g
 // Dominios de ejemplo que usan los formatos (el navegador del explicador): no son de nadie.
 export const DOMINIOS_FICTICIOS = ['tunegocio.com', 'tuempresa.com', 'tupagina.com', 'yourbusiness.com', 'yourcompany.com']
+// Un dominio de ejemplo es "tu" o "your" + un rubro, con un TLD genérico: tutaller.com.ar, yourgarage.com.
+// Los que existen y son de alguien quedan afuera aunque tengan esa forma.
+const DE_EJEMPLO = /^(tu|your)[a-z]{3,20}\.(com|com\.ar|ar|net)$/
+export const MARCAS_CON_FORMA_DE_EJEMPLO = ['tuenti.com', 'tumblr.com', 'yourdictionary.com', 'tunein.com', 'tuentrada.com', 'tutorialspoint.com']
+/**
+ * Si un dominio se puede mostrar: el de la cuenta, uno de la lista o uno con forma de ejemplo que no sea
+ * una marca real ni aparezca en los hechos (ahí sería un dato).
+ * @param {string} d @param {{ usuario: string }} cuenta @param {string} textoHechos
+ */
+export function dominioPermitido(d, cuenta, textoHechos = '') {
+  if (d === cuenta.usuario.toLowerCase() || DOMINIOS_FICTICIOS.includes(d)) return true
+  return DE_EJEMPLO.test(d) && !MARCAS_CON_FORMA_DE_EJEMPLO.includes(d) && !textoHechos.includes(d)
+}
+// Una promesa es la oferta en boca de la cuenta: "te la armamos gratis", "free demo". "Una plantilla gratis"
+// o "la ficha de Google es gratis" no prometen nada.
+const PROMESA = /\b(te|les|se)?\s?(la |lo )?(armamos|hacemos|damos|regalamos|ofrecemos|incluimos|mandamos|entregamos|preparamos)\b|\bdemo\b|primera cuota(?! del? )|\bwe('ll| will)?\s(build|make|give|design|send|create)\b|first payment/
 const TUTEO = /(?<!\p{L})(tú|tienes|puedes|quieres|sabes|eres|vienes|necesitas|haces)(?!\p{L})/u
 const CHE = /\bche\b/
 const CASTELLANO = /\b(vos|tenes|podes|queres|sabes|que|para|con|los|las|una|pero|porque|nuestro|nuestra|pagina|empresa)\b/g
@@ -295,16 +330,30 @@ export function revisarEstricto({ guion: g, cuenta, hechos = new Map(), ideas = 
   const sueltas = cifrasSinRespaldo({ guion: g, hechos, idea, idioma: cuenta.idioma, leerRepo })
   if (sueltas.length) p.push(`cifras sin respaldo en los hechos que cita: ${sueltas.join(', ')}`)
   const texto = normalizar(textoDe(g))
-  if (OFERTA.test(texto) && !citados.some((h) => h?.tipo === 'oferta')) p.push('promete algo de la oferta sin citar un hecho de tipo oferta')
+  const frases = texto.split(/[.!?\n"]+|\\n/)
+  const prometidas = frases.filter((f) => OFERTA.test(f) && PROMESA.test(f))
+  const respaldada = (/** @type {string} */ f) => citados.some((h) => h?.tipo === 'oferta' || [...f.matchAll(new RegExp(OFERTA, 'g'))].every((m) => normalizar(h?.texto ?? '').includes(m[1])))
+  if (prometidas.some((f) => !respaldada(f))) p.push('promete algo de la oferta sin citar un hecho que lo respalde')
+  if (Array.isArray(g.ilustrativos) && g.ilustrativos.length) {
+    if (!admiteIlustrativos(g)) p.push('ilustrativos: sólo en un chat de comedia')
+    const deOferta = new Set([...hechos.values()].filter((h) => h.tipo === 'oferta').flatMap((h) => h.cifras.flatMap((c) => formasDe(normalizar(c)))))
+    for (const x of g.ilustrativos) {
+      const c = normalizar(String(x)).trim()
+      if (/%/.test(c)) p.push(`ilustrativos: ${x} es un porcentaje, no utilería`)
+      else if (formasDe(c).some((f) => deOferta.has(f))) p.push(`ilustrativos: ${x} es una cifra de la oferta`)
+      else if (new RegExp(`(^|[^\\d])${c.replace(/[.]/g, '\\.')}\\s?(dias|horas|semanas|meses|cuotas|days|hours|weeks|months|installments)\\b`).test(texto)) p.push(`ilustrativos: ${x} es un plazo`)
+    }
+  }
   if (PRECIO.test(texto)) p.push('menciona un precio o un monto')
   for (const palabra of cuenta.reglas_texto.prohibidas) if (new RegExp(`\\b${normalizar(palabra).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(texto)) p.push(`usa una palabra prohibida: ${palabra}`)
-  if (MAIL.test(texto)) p.push('trae un mail')
-  if (ARROBA.test(texto)) p.push('trae un @usuario')
-  if (pareceTelefono(texto.replace(MAIL, ''))) p.push('trae algo que parece un teléfono')
-  const propios = new Set([cuenta.usuario, ...DOMINIOS_FICTICIOS].map((d) => d.toLowerCase()))
-  for (const m of texto.matchAll(DOMINIO)) {
+  const textoHechos = normalizar([...hechos.values()].map((h) => h.texto ?? '').join('\n'))
+  for (const m of texto.matchAll(MAIL)) if (!dominioPermitido(String(m[1]), cuenta, textoHechos)) p.push(`trae un mail: ${m[0]}`)
+  const sinMails = texto.replace(MAIL, ' ')
+  if (ARROBA.test(sinMails)) p.push('trae un @usuario')
+  if (pareceTelefono(sinMails)) p.push('trae algo que parece un teléfono')
+  for (const m of sinMails.matchAll(DOMINIO)) {
     const d = String(m[1]).replace(/^https?:\/\//, '').replace(/^www\./, '')
-    if (!propios.has(d)) p.push(`trae un dominio ajeno: ${d}`)
+    if (!dominioPermitido(d, cuenta, textoHechos)) p.push(`trae un dominio ajeno: ${d}`)
   }
   if (cuenta.idioma === 'es-AR') {
     if (CHE.test(texto)) p.push('usa "che"')

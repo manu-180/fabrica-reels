@@ -344,8 +344,9 @@ import { locutar } from '../nucleo/voz/index.mjs'                         // F3,
 import { renderizarCuerpo, armarFinal } from '../nucleo/render/index.mjs'  // F4
 import { temaDe } from '../formatos/_comun/tema.mjs'                       // F2a, § 5
 
-renderizarCuerpo({ proyecto, salida, log })   // → Promise<void>: el proyecto HyperFrames a mp4 en `salida`
-armarFinal({ cuerpo, firma, clip, musica, conVoz, dir, destino })  // → Promise<{ archivo, duracion_s }>
+renderizarCuerpo({ proyecto, salida, log, env })   // → Promise<void>: el proyecto HyperFrames a mp4 en `salida`
+armarFinal({ cuerpo, firma, clip, musica, conVoz, dir, destino, env })  // → Promise<{ archivo, duracion_s }>
+  // env = entornoSinSecretos(...) de nucleo/entorno.mjs: es el ÚNICO entorno con el que F4 lanza npx, hyperframes o ffmpeg
   // música, color, textura, mezcla a −14 LUFS y el clip del cierre; destino 'reel' | 'historia';
   // clip = un Clip de cta/clips.json con `archivo` ya absoluto; musica = ruta absoluta en musica/
 ```
@@ -364,7 +365,20 @@ armarFinal({ cuerpo, firma, clip, musica, conVoz, dir, destino })  // → Promis
 - Captions (`nucleo/banco.mjs`): `armarCaptions({ guion, cuenta, n })` y `captionsDeVariante({ guion, cuenta,
   ronda, indice, variantes })`; cada uno cierra con `cierre.caption` y suma `captions.hashtags_fijos`.
 - Revisor (`nucleo/banco.mjs`): `revisarGuion(g, archivo, { cuenta, ideas, hechos, paletas })` y
-  `revisarEstricto({ guion, cuenta, hechos, ideas, leerRepo })`; los nombres propios no se revisan ahí.
+  `revisarEstricto({ guion, cuenta, hechos, ideas, leerRepo })`; los nombres propios no se revisan ahí. Reglas
+  que no son falsos positivos (pedido de F5):
+  - Dominios y mails de ejemplo: `tu` o `your` + rubro con `.com`, `.com.ar`, `.ar` o `.net` (`tutaller.com.ar`,
+    `consultas@tuestudio.com`, `yourgarage.com`) pasan si no están en `MARCAS_CON_FORMA_DE_EJEMPLO` ni aparecen
+    en el texto de un hecho (ahí serían un dato). Cualquier otro dominio o mail sigue siendo problema.
+  - Oferta: "gratis", "sin cargo", "primera cuota" (salvo "primera cuota del…"), "free" sólo pide respaldo
+    cuando la frase es una promesa de la cuenta (te/les + armamos, hacemos, damos…; "demo"; "we'll build"). La
+    respalda un hecho `oferta` citado o un hecho citado cuyo texto dice esa misma palabra (el telegrama gratis
+    de calcular).
+  - `ilustrativos: string[]` (opcional, sólo `formato: chat` con `categoria: comedia`): cifras de utilería tal
+    como aparecen ("1.284"). Quedan fuera del chequeo de respaldo salvo que sean un porcentaje, una cifra de
+    un hecho `oferta` de la cuenta o un plazo (seguidas de días, horas, semanas, meses, cuotas); los precios
+    se rechazan igual. En otro formato el campo es un problema.
+  - Las líneas de un visual `codigo` no cuentan para cifras (`width="800"` es un atributo).
 
 ## 6. La voz (`nucleo/voz/**`, F3)
 
@@ -425,7 +439,12 @@ node nucleo/correr.mjs fusionar <base> <remoto> <propio> <salida>
 - Entorno: `FABRICA_RAIZ` (checkout de `main`, por defecto la raíz del repo), `FABRICA_ESTADO`
   (checkout de la rama `estado`), `ELEVENLABS_API_KEY`, `GEMINI_API_KEY`, `BLOB_READ_WRITE_TOKEN`, y
   los IG de la cuenta **con sus propios nombres** (`env[cuenta.secretos.ig_token]`): el workflow
-  exporta sólo los de la cuenta del job. El render corre con `entornoSinSecretos()`.
+  exporta sólo los de la cuenta del job. El render corre con `entornoSinSecretos(env, cuenta)` de
+  `nucleo/entorno.mjs` (lista `SECRETOS` más cualquier nombre con forma de credencial: `FABRICA_GIT_TOKEN`,
+  `IG_*`, `*_TOKEN`, `*_KEY`); el token de git sólo lo usa el `git push` de `correr.mjs`.
+- `producir --conservar <dir>` (o `FABRICA_CONSERVAR`; en `modo: sombra` con `RUNNER_TEMP`, por defecto
+  `$RUNNER_TEMP/sombra`) deja copiados los mp4 finales en `<dir>/<creativo>/<indice>-<reel|historia>.mp4`.
+  `--seco` nunca borra su carpeta: ahí quedan cuerpos, finales y `estado.json`.
 - `publicar` guarda el estado antes de pedir el contenedor de una historia, tras crear cada contenedor y
   tras cada `media_publish` (`guardar(estado)`). Con `FABRICA_PUSH=1` cada guardado es commit, fusión de
   tres vías contra `origin/estado` y push (`empujarEstado`: 8 vueltas con espera creciente, fast-forward,
@@ -443,7 +462,7 @@ coordinador.
 | Fase | Archivos exclusivos | Depende de |
 |---|---|---|
 | F0 contrato | `docs/CONTRATO.md`, `docs/decisiones/fabrica.md`, `nucleo/cuenta.mjs` + test, `package.json`, `.github/workflows/ci.yml`, `cuentas/calcular-ar/cuenta.json` (ejemplo; pasa a F5) | |
-| F1 núcleo | `nucleo/estado.mjs`, `tiempo.mjs`, `banco.mjs`, `elegir.mjs`, `diseno.mjs`, `agenda.mjs`, `antispam.mjs`, `producir.mjs`, `correr.mjs`, `limpiar.mjs`, `nucleo/meta/**` (salvo `medir.mjs` desde que cierra), `puntaje.mjs` (versión inicial, pasa a F7), `nucleo/__fixtures__/**`, sus tests | F0 |
+| F1 núcleo | `nucleo/estado.mjs`, `tiempo.mjs`, `banco.mjs`, `elegir.mjs`, `diseno.mjs`, `agenda.mjs`, `antispam.mjs`, `producir.mjs`, `correr.mjs`, `limpiar.mjs`, `entorno.mjs`, `nucleo/meta/**` (salvo `medir.mjs` desde que cierra), `puntaje.mjs` (versión inicial, pasa a F7), `nucleo/__fixtures__/**`, sus tests | F0 |
 | F2a tema y formatos | `formatos/**` (salvo lo de F2b) | F0 |
 | F2b formatos nuevos | `formatos/lista-de-errores/**`, `pregunta/**`, `comparador/**`, `cuenta-regresiva/**`, `formatos/_comun/motivos/{grilla,luz,pizarra,papel}.mjs` | F2a (`_comun/tema.mjs` congelado) |
 | F3 voz | `nucleo/voz/**` | F0 |
