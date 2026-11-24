@@ -2,7 +2,8 @@
 # Prepara FABRICA_ESTADO desde la rama `estado`.
 #   estado.sh lectura <dir>             copia la punta de la rama (planear, vigía: no pushean)
 #   estado.sh escritura <dir> <cuenta>  worktree de la rama, para que correr.mjs con FABRICA_PUSH=1 pushee
-# En los dos casos suma al banco los guiones que el agente semanal deja en cuentas/<id>/guiones-auto/.
+# En los dos casos suma al banco de la copia de trabajo (nunca se commitea) los guiones que el agente
+# semanal deja en cuentas/<id>/guiones-auto/ y las ideas y hechos automáticos que citan.
 set -euo pipefail
 
 modo=${1:?modo}
@@ -60,3 +61,6 @@ for auto in "$dir"/cuentas/*/guiones-auto; do
   [ -d "$destino" ] || continue
   cp -n "$auto"/*.json "$destino"/ 2> /dev/null || true
 done
+
+# Sin las ideas y hechos automáticos, un guion-auto que cita uno de ellos no pasa el revisor al producir.
+FABRICA_RAIZ="$raiz" node "$(dirname "$0")/../../agentes/tanda.mjs" sumar-auto --estado "$dir"

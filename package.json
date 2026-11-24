@@ -4,6 +4,6 @@
   "type": "module",
   "engines": { "node": ">=22" },
   "scripts": {
-    "test": "node --test \"nucleo/**/*.test.mjs\" \"formatos/**/*.test.mjs\""
+    "test": "node --test \"nucleo/**/*.test.mjs\" \"formatos/**/*.test.mjs\" \"agentes/**/*.test.mjs\" \".github/scripts/*.test.mjs\""
   }
 }

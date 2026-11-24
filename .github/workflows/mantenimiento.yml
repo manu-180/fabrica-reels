@@ -39,7 +39,6 @@ jobs:
         with:
           node-version: 22
       - run: npm test
-      - run: node --test .github/scripts/*.test.mjs
 
   vigia:
     runs-on: ubuntu-latest
