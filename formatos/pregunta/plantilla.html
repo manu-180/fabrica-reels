@@ -127,16 +127,16 @@ Subtitulos.fuentes().then(function () {
     encender(wq, R.pregunta.luces, R.entra + 0.35);
 
     // La respuesta: tarjeta con el logo de la cuenta.
-    var esc = 0.72;
-    var arribaR = 260 + altoQ * esc + 56;
-    var cr = nuevo("div", "caja", e); cr.style.top = arribaR + "px"; cr.style.left = "130px"; cr.style.width = "880px";
+    var esc = 0.58;
+    var arribaR = 250 + altoQ * esc + 50;
+    var cr = nuevo("div", "caja", e); cr.style.top = arribaR + "px";
     var nr = nuevo("div", "nucleo", cr);
     var mr = nuevo("div", "fila-meta", nr);
     var avr = nuevo("div", "avatar", mr); var img = nuevo("img", "", avr); img.src = R.logo; img.alt = "";
     var mer = nuevo("div", "meta", mr); mer.innerHTML = "<b></b>"; mer.querySelector("b").textContent = R.t.respuesta;
     var tr = nuevo("div", "titular leer", nr); tr.style.marginTop = "28px";
     var wr = Cinetica.trocear(tr, R.respuesta.texto);
-    var tamR = Cinetica.ajustar(tr, { max: 104, min: 58, lineas: 3, ancho: 784 });
+    var tamR = Cinetica.ajustar(tr, { max: 110, min: 60, lineas: 3, ancho: 844 });
     var items = R.claves.map(function (k) {
       var f = nuevo("div", "clave", nr);
       var ch = check(f);
@@ -146,12 +146,13 @@ Subtitulos.fuentes().then(function () {
     });
     // Si no entra arriba de los subtítulos, se achica la respuesta y después las claves.
     var tamK = 54;
-    while (arribaR + cr.offsetHeight > PISO && (tamR > 54 || tamK > 36)) {
-      if (tamR > 54) { tamR -= 4; tr.style.fontSize = tamR + "px"; } else { tamK -= 2; items.forEach(function (it) { it.tx.style.fontSize = tamK + "px"; }); }
+    // Se achican juntas (la respuesta nunca menos de 1,6 veces las claves) hasta que entra arriba de los subtítulos.
+    while (arribaR + cr.offsetHeight > PISO && (tamR > 60 || tamK > 40)) {
+      if (tamR > 60 && (tamR > tamK * 1.6 || tamK <= 40)) { tamR -= 4; tr.style.fontSize = tamR + "px"; } else { tamK -= 2; items.forEach(function (it) { it.tx.style.fontSize = tamK + "px"; }); }
     }
-    var hilo = nuevo("div", "hilo", e); hilo.style.top = (260 + altoQ * esc) + "px"; hilo.style.height = "56px";
+    var hilo = nuevo("div", "hilo", e); hilo.style.top = (250 + altoQ * esc) + "px"; hilo.style.height = "50px";
     var T = R.respuesta.t;
-    tl.to(cq, { y: 260 - 380, scale: esc, duration: 0.6, ease: "power3.inOut" }, T);
+    tl.to(cq, { y: 250 - 380, scale: esc, duration: 0.6, ease: "power3.inOut" }, T);
     tl.to(rq, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, T);
     tl.fromTo(hilo, { scaleY: 0 }, { scaleY: 1, duration: 0.35, ease: "power2.out" }, T + 0.35);
     tl.fromTo(cr, { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, T + 0.45);
@@ -195,8 +196,8 @@ Subtitulos.fuentes().then(function () {
     });
     function acomodar() { lista.style.top = (410 + ta.offsetHeight + 56) + "px"; return 410 + ta.offsetHeight + 56 + lista.offsetHeight; }
     var tamL = 64;
-    while (acomodar() > PISO && (tamA > 72 || tamL > 38)) {
-      if (tamA > 80) { tamA -= 6; ta.style.fontSize = tamA + "px"; } else { tamL -= 2; filas.forEach(function (f) { f.tx.style.fontSize = tamL + "px"; }); }
+    while (acomodar() > PISO && (tamA > 72 || tamL > 44)) {
+      if (tamA > 72 && (tamA > tamL * 1.8 || tamL <= 44)) { tamA -= 4; ta.style.fontSize = tamA + "px"; } else { tamL -= 2; filas.forEach(function (f) { f.tx.style.fontSize = tamL + "px"; }); }
     }
     var T2 = R.respuesta.t;
     tl.to(riel, { x: -2 * W, duration: 0.8, ease: "power3.inOut" }, T2);

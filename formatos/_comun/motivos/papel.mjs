@@ -27,7 +27,7 @@ export function capas(tema) {
 #pp-luz { position: absolute; left: -500px; top: -620px; width: 1900px; height: 1700px; border-radius: 50%;
   background: radial-gradient(closest-side, var(--pp-luz) 0%, var(--pp-luz) 14%, transparent 100%); }
 #hoja { position: absolute; left: -2160px; top: -1920px; width: 7560px; height: 13440px; pointer-events: none; background-color: var(--pp-hoja);
-  background-image: ${FIBRAS(9, 0.004, 0.05, o ? 0.14 : 0.09)},
+  background-image: ${FIBRAS(9, 0.012, 0.03, o ? 0.1 : 0.05)},
     linear-gradient(to right, transparent 2290px, var(--pp-margen) 2290px, var(--pp-margen) 2293px, transparent 2293px, transparent 2302px, var(--pp-margen) 2302px, var(--pp-margen) 2305px, transparent 2305px),
     linear-gradient(to bottom, transparent 0, transparent 70px, var(--pp-renglon) 70px, var(--pp-renglon) 72px, transparent 72px);
   background-size: 600px 600px, 100% 100%, 100% 72px; background-repeat: repeat, no-repeat, repeat;

@@ -19,11 +19,11 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
 .cuerpo { font-family: var(--f-cuerpo); font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--tinta); text-wrap: balance; }
 .leer .wi { opacity: 0.28; }
 .col { position: absolute; top: 0; width: 450px; height: 1920px; }
-.cab { position: absolute; left: 0; top: 300px; width: 450px; font-size: 66px; }
+.cab { position: absolute; left: 0; top: 296px; width: 450px; font-size: 92px; }
 .celda { position: absolute; left: 0; width: 450px; display: flex; gap: 18px; align-items: flex-start; }
 .celda svg { flex: none; width: 46px; height: 46px; margin-top: 4px; }
 .celda .cuerpo { width: 386px; }
-.divisor { position: absolute; left: 538px; top: 290px; width: 4px; height: 660px; border-radius: 2px; background: var(--linea-fuerte); transform-origin: 50% 0%; }
+.divisor { position: absolute; left: 538px; top: 290px; width: 4px; height: 830px; border-radius: 2px; background: var(--linea-fuerte); transform-origin: 50% 0%; }
 .vs { position: absolute; width: 104px; height: 104px; border-radius: 50%; background: var(--superficie); box-shadow: 0 0 0 2px var(--linea-fuerte), 0 18px 40px var(--sombra-1);
   display: flex; align-items: center; justify-content: center; font-family: var(--f-mono); font-weight: var(--p-mono); font-size: 40px; letter-spacing: 0.02em; color: var(--tinta); }
 .check path { fill: none; stroke: var(--sobre-acento); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
@@ -118,11 +118,11 @@ Subtitulos.fuentes().then(function () {
     var cols = { a: nuevo("div", "col", e), b: nuevo("div", "col", e) };
     cols.a.style.left = "70px"; cols.b.style.left = "560px";
     var div = nuevo("div", "divisor", e);
-    var vs = nuevo("div", "vs", e); vs.textContent = R.t.contra; vs.style.left = "488px"; vs.style.top = "898px";
+    var vs = nuevo("div", "vs", e); vs.textContent = R.t.contra; vs.style.left = "488px"; vs.style.top = "1068px";
     ["a", "b"].forEach(function (lado) {
       var cab = nuevo("div", "titular cab", cols[lado]);
       Cinetica.trocear(cab, R[lado], { cifras: false });
-      Cinetica.ajustar(cab, { max: 72, min: 42, lineas: 2, ancho: 450 });
+      Cinetica.ajustar(cab, { max: 96, min: 52, lineas: 2, ancho: 420 });
       tl.fromTo(cab, { opacity: 0, x: lado === "a" ? -40 : 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, R.entra + 0.4);
     });
     tl.fromTo(div, { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "power3.inOut" }, R.entra + 0.35);
@@ -131,11 +131,11 @@ Subtitulos.fuentes().then(function () {
     R.filas.forEach(function (f, k) {
       ["a", "b"].forEach(function (lado) {
         var c = nuevo("div", "celda", cols[lado]);
-        c.style.top = (470 + k * 160) + "px";
+        c.style.top = (530 + k * 200) + "px";
         var ic = icono(c, lado === GANA);
         var tx = nuevo("div", "cuerpo leer", c);
         var ws = Cinetica.trocear(tx, f[lado].texto, { cifras: false });
-        Cinetica.ajustar(tx, { max: 52, min: 34, lineas: 2, ancho: 386 });
+        Cinetica.ajustar(tx, { max: 62, min: 40, lineas: 3, ancho: 386 });
         estado(c, { opacity: 0 });
         tl.fromTo(c, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, f[lado].t);
         encender(ws, f[lado].luces, f[lado].t);
@@ -150,7 +150,7 @@ Subtitulos.fuentes().then(function () {
     var pierde = GANA === "a" ? "b" : "a";
     tl.to(cols[pierde], { x: pierde === "a" ? -160 : 160, opacity: 0, duration: 0.6, ease: "power3.in" }, T);
     tl.to([div, vs], { opacity: 0, duration: 0.3, ease: "power2.in" }, T);
-    tl.to(cols[GANA], { x: GANA === "a" ? 245 : -245, duration: 0.8, ease: "power3.inOut" }, T + 0.15);
+    tl.to(cols[GANA], { x: GANA === "a" ? 245 : -245, scale: 0.8, transformOrigin: "50% 290px", duration: 0.8, ease: "power3.inOut" }, T + 0.15);
     veredicto(e, 990, 84, 2);
   }
 
