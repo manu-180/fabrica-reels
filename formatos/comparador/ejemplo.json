@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "clave": "planilla-contra-reservas",
+  "titulo": "Planilla en papel contra reservas solas",
+  "categoria": "comparacion",
+  "formato": "comparador",
+  "hooks": [
+    "Planilla o reservas solas: hagamos cuentas",
+    "Lo mismo, de dos formas distintas",
+    "¿Seguís anotando turnos a mano?"
+  ],
+  "voz": "Con la planilla, cada cambio es un mensaje. Con reservas solas, cada alumno se anota solo. En papel, el lugar libre queda vacío. Acá, entra el primero de la espera. Y el historial, en el cuaderno se pierde, en la app queda guardado. Tu tiempo vuelve a ser para enseñar.",
+  "contenido": {
+    "a": { "etiqueta": "Planilla", "puntos": ["Cada cambio es un mensaje", "El lugar libre queda vacío", "El historial se pierde"] },
+    "b": { "etiqueta": "Reservas solas", "puntos": ["Cada alumno se anota solo", "Entra el primero de la espera", "Queda guardado"] },
+    "ganador": "b",
+    "veredicto": "Tu tiempo vuelve a ser para enseñar"
+  },
+  "captions": ["La misma semana, de dos formas.", "¿De qué lado estás hoy?", "Probalo con tu próxima clase."],
+  "hashtags": ["profesores", "talleres", "academias", "docentes", "clases"]
+}

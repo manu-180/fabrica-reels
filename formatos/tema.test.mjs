@@ -11,7 +11,7 @@ import { textos } from './_comun/textos.mjs'
 
 const AQUI = dirname(fileURLToPath(import.meta.url))
 const RAIZ = join(AQUI, '..')
-const FORMATOS = ['chat', 'mito', 'explicador', 'antes-despues']
+const FORMATOS = ['chat', 'mito', 'explicador', 'antes-despues', 'lista-de-errores', 'pregunta', 'comparador', 'cuenta-regresiva']
 const TMP = mkdtempSync(join(tmpdir(), 'formatos-'))
 after(() => rmSync(TMP, { recursive: true, force: true }))
 

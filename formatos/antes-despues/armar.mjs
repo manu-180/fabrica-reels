@@ -20,7 +20,9 @@ import {
 
 const AQUI = dirname(fileURLToPath(import.meta.url))
 const PLANTILLA = join(AQUI, 'plantilla', 'index.html')
+const PLANTILLA_APP = join(AQUI, 'plantilla', 'app.html')
 const FOTOS = join(AQUI, 'fotos')
+const PANTALLAS = join(AQUI, 'pantallas')
 
 const CON_FOTO = readdirSync(FOTOS).filter((f) => f.endsWith('.jpg')).map((f) => f.replace(/\.jpg$/, '')).sort()
 export const rubrosConFoto = () => [...CON_FOTO]
@@ -32,7 +34,36 @@ export const rubrosConFoto = () => [...CON_FOTO]
  */
 export const COLORES_FIJOS = ['#fff7b0', '#c7e2ff', '#1717a3', '#2f8bff', '#ffcc00', '#ffef00', '#e00000', '#000000', '#c0c0c0',
   '#6f6f6f', '#222', '#0000ee', '#d40000', '#111', '#d4d0c8', '#f0f0f0', '#eeeeee', '#999', '#666', '#ff00ff', '#888', '#ffff00', '#00a000',
-  '#ffd400', '#444', '#f2f2f2', '#0a1a8c', '#2a6bd8', '#000', '#7a0000']
+  '#ffd400', '#444', '#f2f2f2', '#0a1a8c', '#2a6bd8', '#000', '#7a0000',
+  // El caos del layout app: papel, birome azul y roja, el chat del grupo y el cuaderno de asistencia.
+  '#f4efe2', '#1f3d9c', '#c0392b', '#2b2b2b', '#d9fdd3', '#efe7dc', '#0b5c4f', '#fbf7ea', '#9fc3e6', '#e05a4f', '#5f6b6d', '#e9e4d6', '#d6cfbd']
+
+/*
+  Las pantallas del layout app son capturas reales de la app (de sus videos de App Store, sin la barra
+  de estado). Cada una con las palabras de una sección que la piden. Nada dibujado ni inventado: una
+  pantalla nueva es una captura nueva en pantallas/ y su fila acá.
+*/
+export const PANTALLAS_APP = {
+  inicio: /inicio|alumn|credito|creditos|pago|saldo/,
+  calendario: /calendario|turno|reserv|horario|espera|anot|inscrib|semana/,
+  confirmar: /confirm|sumar|lugar/,
+  confirmada: /listo|confirmada|avis/,
+  misclases: /misclases|clases|proxim/,
+  cancelar: /cancel|recuper/,
+  reembolso: /reembols|devuelve|vuelve/,
+  historial: /historial|registro|movimiento/,
+}
+
+/** ¿El antes es el caos de papel y mensajes (app) o una web vieja? `antes.tipo` manda; si no está, lo dicen los defectos. @param {any} guion */
+export function esApp(guion) {
+  const tipo = guion?.contenido?.antes?.tipo
+  if (tipo === 'papel') return true
+  if (tipo === 'web') return false
+  if (Array.isArray(guion?.contenido?.despues?.pantallas)) return true
+  const d = guion?.contenido?.antes?.defectos
+  if (!Array.isArray(d)) return false
+  return d.filter((x) => /planilla|whatsapp|cuaderno|asistencia|recuper|cupo/.test(normalizar(String(x)).replace(/\s+/g, ''))).length >= 2
+}
 
 /*
   Dónde se señala cada defecto en la web vieja (px del video). Se elige por palabras del texto del
@@ -41,14 +72,17 @@ export const COLORES_FIJOS = ['#fff7b0', '#c7e2ff', '#1717a3', '#2f8bff', '#ffcc
 export const ZONAS = {
   texto: { x: 30, y: 318, w: 712, h: 420, claves: /letra|texto|leer|chic|peque|tipogra/ },
   celular: { x: 790, y: 292, w: 284, h: 548, claves: /celular|movil|responsive|pantalla|telefono|adapta/ },
-  foto: { x: 28, y: 1196, w: 1024, h: 470, claves: /foto|imagen|pixel|borros/ },
+  foto: { x: 800, y: 300, w: 276, h: 530, claves: /foto|imagen|pixel|borros/ },
   boton: { x: 28, y: 742, w: 470, h: 96, claves: /boton|contacto|turno|consulta|pedido|escrib|llam/ },
   colores: { x: 8, y: 8, w: 1064, h: 214, claves: /color|chill|diseno|viej|antigu|feo|logo/ },
   carga: { x: 28, y: 936, w: 196, h: 196, claves: /carga|lent|tarda|rot|error|no anda/ },
 }
 const RESERVA = ['texto', 'celular', 'foto', 'boton', 'colores', 'carga']
-export const LAYOUTS = ['web']
-export const layouts = LAYOUTS.map((id) => ({ id, apto: () => true }))
+export const LAYOUTS = ['web', 'app']
+export const layouts = [
+  { id: 'web', apto: (/** @type {any} */ g) => !esApp(g) },
+  { id: 'app', apto: (/** @type {any} */ g) => esApp(g) },
+]
 
 const COLA = 0.9
 
@@ -78,7 +112,13 @@ export function validar(guion) {
     if (!lleno(s.boton) || s.boton.length > 22) mal.push('despues.boton: 1 a 22 caracteres')
     if (!Array.isArray(s.secciones) || s.secciones.length !== 3) mal.push('despues.secciones: exactamente 3')
     else s.secciones.forEach((/** @type {unknown} */ x, /** @type {number} */ i) => { if (!lleno(x) || x.length > 18) mal.push(`despues.secciones[${i}]: 1 a 18 caracteres`) })
+    if (s.pantallas !== undefined) {
+      if (!Array.isArray(s.pantallas) || s.pantallas.length < 1 || s.pantallas.length > 4) mal.push('despues.pantallas: opcional, 1 a 4')
+      else s.pantallas.forEach((/** @type {unknown} */ x, /** @type {number} */ i) => { if (typeof x !== 'string' || !(x in PANTALLAS_APP)) mal.push(`despues.pantallas[${i}]: una de ${Object.keys(PANTALLAS_APP).join(', ')}`) })
+    }
   }
+  const tipo = c.antes?.tipo
+  if (tipo !== undefined && tipo !== 'web' && tipo !== 'papel') mal.push('antes.tipo: opcional, "web" o "papel"')
   return mal
 }
 
@@ -165,19 +205,34 @@ function textoViejo(n, idioma) {
  *   diseno?: { ronda?: number, layout?: string }, tema: import('../_comun/tema.mjs').Tema }} p
  * @returns {Promise<{ duracion_s: number }>}
  */
-export async function armar({ guion, hook, voz, salida, tema }) {
+export async function armar({ guion, hook, voz, salida, diseno, tema }) {
   const problemas = validar(guion)
   if (problemas.length) throw new Error(`guion de antes-despues inválido:\n- ${problemas.join('\n- ')}`)
   if (![0, 1, 2].includes(hook)) throw new Error('hook tiene que ser 0, 1 o 2')
   if (!voz || !voz.wav || !Array.isArray(voz.palabras)) throw new Error('antes-despues necesita la voz con sus palabras')
   if (!tema) throw new Error('falta el tema')
+  const pedido = diseno?.layout
+  const layout = pedido && LAYOUTS.includes(pedido) ? pedido : esApp(guion) ? 'app' : 'web'
+  return layout === 'app' ? armarApp({ guion, hook, voz, salida, tema }) : armarWeb({ guion, hook, voz, salida, tema })
+}
 
+/** El resaltador sobre un fondo claro (el libro de visitas, el papel): el acento si se lee, si no el neutro oscuro. @param {any} p */
+function resalteSobreClaro(p) {
+  const t = tintaSobre(p.acento)
+  return contraste(p.acento, NEUTROS.blanco) >= 3 && contraste(p.acento, t) >= 4.5 ? { fondo: p.acento, tinta: t } : { fondo: NEUTROS.oscuro, tinta: NEUTROS.blanco }
+}
+
+/** @param {{ guion: any, hook: 0|1|2, voz: any, salida: string, tema: import('../_comun/tema.mjs').Tema }} a */
+async function armarWeb({ guion, hook, voz, salida, tema }) {
   const c = guion.contenido
   const plan = planificar(guion, hook, voz)
   const p = { ...tema.paleta, ...derivar(tema.paleta) }
   const { grupos } = gruposDeVoz(voz.palabras, { hook: guion.hooks[hook], hasta: plan.duracion - 0.3 })
-  // Sobre las fotos de las dos webs el subtítulo va claro con trazo; el resaltador es el acento si se lee.
-  const resalte = contraste(p.acento, tintaSobre(p.acento)) >= 4.5 ? { fondo: p.acento, tinta: tintaSobre(p.acento) } : { fondo: NEUTROS.claro, tinta: NEUTROS.negro }
+  // Sobre la web vieja el subtítulo cae en el libro de visitas blanco, en tinta oscura; sobre la nueva y el
+  // celular, en el tono de la paleta. Nunca encima de una foto pixelada (se veía como un bloque sucio).
+  const resalte = contraste(p.acento, tintaSobre(p.acento)) >= 4.5 ? { fondo: p.acento, tinta: tintaSobre(p.acento) } : p.resalte
+  const tramo = (/** @type {{ inicio: number }} */ g) => (g.inicio < plan.cambio ? 'viejo' : g.inicio < plan.celular ? 'nuevo' : 'celular')
+  const gruposWeb = grupos.map((g) => ({ ...g, arriba: tramo(g) === 'celular' ? 1330 : 1290, tramo: tramo(g) }))
 
   const { dir } = prepararSalida(salida, tema)
   copiarVoz(voz.wav, dir)
@@ -191,9 +246,10 @@ export async function armar({ guion, hook, voz, salida, tema }) {
   escribirDatos(dir, tema, {
     t: { menu: T.menu, error_ok: T.error_ok },
     ...plan,
-    // Más abajo que el default (1240): así cae entero sobre la foto en las dos webs y en el celular del final.
-    grupos: grupos.map((g) => ({ ...g, arriba: 1280 })),
+    grupos: gruposWeb,
     resalte,
+    resalteClaro: resalteSobreClaro(p),
+    tono: p.tono,
     negocio: { ...c.negocio, rubroTexto: T.rubros[c.negocio.rubro] ?? c.negocio.rubro, parrafo: textoViejo(c.negocio, tema.idioma) },
     despues: c.despues,
     zonas: ZONAS,
@@ -214,6 +270,68 @@ export async function armar({ guion, hook, voz, salida, tema }) {
     profundo: capas.profundo,
     luces: capas.luces,
     audio: vozHtml(plan.duracion) + '\n' + sfxHtml(sfx, plan.duracion),
+    duracion: plan.duracion.toFixed(3),
+  }, tema.idioma)
+  writeFileSync(join(dir, 'index.html'), html)
+  return { duracion_s: plan.duracion }
+}
+
+/**
+ * Las pantallas reales que se muestran después del cambio, una por sección (o las que pide el guion), sin repetir.
+ * @param {any} despues
+ */
+export function pantallasDe(despues) {
+  if (Array.isArray(despues.pantallas)) return [...new Set(/** @type {string[]} */ (despues.pantallas))]
+  /** @type {string[]} */
+  const usadas = []
+  const orden = Object.keys(PANTALLAS_APP)
+  for (const s of despues.secciones) {
+    const n = normalizar(String(s))
+    const id = orden.find((k) => !usadas.includes(k) && PANTALLAS_APP[/** @type {keyof typeof PANTALLAS_APP} */ (k)].test(n)) ?? orden.find((k) => !usadas.includes(k))
+    if (id) usadas.push(id)
+  }
+  return usadas
+}
+
+/** @param {{ guion: any, hook: 0|1|2, voz: any, salida: string, tema: import('../_comun/tema.mjs').Tema }} a */
+async function armarApp({ guion, hook, voz, salida, tema }) {
+  const c = guion.contenido
+  const plan = planificar(guion, hook, voz)
+  const p = { ...tema.paleta, ...derivar(tema.paleta) }
+  const { grupos } = gruposDeVoz(voz.palabras, { hook: guion.hooks[hook], hasta: plan.duracion - 0.3 })
+  const ids = pantallasDe(c.despues)
+  // Cada pantalla entra cuando la voz nombra su sección; si no la nombra, se reparten parejas.
+  const desde = plan.cambio + 1.5
+  const hasta = plan.duracion - 1.4
+  let previo = -Infinity
+  const pantallas = ids.map((id, k) => {
+    const s = plan.secciones[k]
+    const parejo = desde + ((hasta - desde) * k) / Math.max(1, ids.length)
+    const t = k === 0 ? plan.cambio + 0.5 : s && s.dicho !== null && s.dicho > desde && s.dicho < hasta ? s.dicho - 0.15 : parejo
+    previo = Math.min(hasta, Math.max(previo + 1.3, t))
+    return { id, src: `assets/pantallas/${id}.jpg`, t: r3(previo), seccion: s ? s.texto : null }
+  })
+  const { dir } = prepararSalida(salida, tema)
+  copiarVoz(voz.wav, dir)
+  mkdirSync(join(dir, 'assets', 'pantallas'), { recursive: true })
+  for (const id of ids) copyFileSync(join(PANTALLAS, `${id}.jpg`), join(dir, 'assets', 'pantallas', `${id}.jpg`))
+  escribirDatos(dir, tema, {
+    t: texto(tema.idioma, 'antes_despues.app'),
+    duracion: plan.duracion, cambio: plan.cambio, defectos: plan.defectos,
+    grupos: grupos.map((g) => ({ ...g, arriba: 1290 })),
+    tono: p.tono, resalte: p.resalte, tinta: p.tinta,
+    negocio: { nombre: c.negocio.nombre, lema: c.negocio.lema },
+    despues: { titular: c.despues.titular },
+    pantallas,
+  })
+  /** @type {{ tipo: any, t: number, volumen: number }[]} */
+  const sfx = plan.defectos.map((d) => ({ tipo: 'pop', t: d.t + 0.35, volumen: 0.5 }))
+  sfx.push({ tipo: 'whoosh-cinematic', t: plan.cambio + 0.3, volumen: 0.32 })
+  if (pantallas[1]) sfx.push({ tipo: 'click-soft', t: pantallas[1].t, volumen: 0.7 })
+  const capas = await lienzo(tema)
+  const html = rellenar(readFileSync(PLANTILLA_APP, 'utf8'), {
+    css: capas.css, fondo: capas.fondo, hoja: capas.hoja, profundo: capas.profundo, luces: capas.luces,
+    audio: vozHtml(plan.duracion) + '\n' + sfxHtml(sfx.slice(0, 5), plan.duracion),
     duracion: plan.duracion.toFixed(3),
   }, tema.idioma)
   writeFileSync(join(dir, 'index.html'), html)

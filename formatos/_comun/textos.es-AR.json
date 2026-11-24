@@ -5,7 +5,7 @@
     "escribiendo": "escribiendo…",
     "escribiendo_corto": "escribiendo",
     "mensaje": "Mensaje",
-    "teclado": [["q","w","e","r","t","y","u","i","o","p"], ["a","s","d","f","g","h","j","k","l","ñ"], ["⇧","z","x","c","v","b","n","m","⌫"], ["123","espacio","listo"]]
+    "teclado": [["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"], ["a", "s", "d", "f", "g", "h", "j", "k", "l", "ñ"], ["⇧", "z", "x", "c", "v", "b", "n", "m", "⌫"], ["123", "espacio", "listo"]]
   },
   "mito": {
     "se_cree": "Lo que se cree",
@@ -30,9 +30,60 @@
     "error_ok": "Aceptar",
     "parrafo": "Somos {nombre}, {rubro} con muchos años de trayectoria en el barrio. En esta página vas a encontrar toda la información sobre nuestros servicios, horarios de atención y formas de contacto. Para cualquier consulta podés comunicarte con nosotros por teléfono o acercarte personalmente. ¡Muchas gracias por visitar nuestra página web!\n\nAtendemos de lunes a sábado. Hacemos envíos a domicilio en toda la zona y aceptamos todos los medios de pago. Para pedidos especiales consultá con anticipación. ¡Te esperamos!",
     "rubros": {
-      "panaderia": "Panadería", "peluqueria": "Peluquería", "consultorio": "Consultorio", "estudio-juridico": "Estudio jurídico",
-      "gimnasio": "Gimnasio", "restaurante": "Restaurante", "inmobiliaria": "Inmobiliaria", "taller-mecanico": "Taller mecánico",
-      "veterinaria": "Veterinaria", "ferreteria": "Ferretería", "estetica": "Estética", "cafeteria": "Cafetería"
+      "panaderia": "Panadería",
+      "peluqueria": "Peluquería",
+      "consultorio": "Consultorio",
+      "estudio-juridico": "Estudio jurídico",
+      "gimnasio": "Gimnasio",
+      "restaurante": "Restaurante",
+      "inmobiliaria": "Inmobiliaria",
+      "taller-mecanico": "Taller mecánico",
+      "veterinaria": "Veterinaria",
+      "ferreteria": "Ferretería",
+      "estetica": "Estética",
+      "cafeteria": "Cafetería"
+    },
+    "libro": "Libro de visitas",
+    "contador": "Visitante número 004213",
+    "app": {
+      "planilla": "Turnos de la semana",
+      "horas": ["Lun 18 h", "Mié 19 h", "Jue 18 h"],
+      "nombres": ["Lu", "Caro", "Mati", "Sofi", "Juli", "Vero", "Nico", "Ana", "Pau", "Tomi", "Flor", "Gabi"],
+      "grupo": "Clases jueves",
+      "no_leidos": "47",
+      "escribiendo": "escribiendo…",
+      "mensajes": ["hay lugar a las 19?", "me bajo hoy, perdón", "yo voy!!", "quién falta el jueves?", "me guardás el lugar?", "cambié con Sofi, ok?"],
+      "cuaderno": "Asistencia",
+      "fechas": ["3/3", "10/3", "17/3", "24/3", "31/3"],
+      "presente": "P",
+      "ausente": "A",
+      "recupera": "R?"
     }
+  },
+  "lista_errores": {
+    "error": "Error",
+    "mejor": "Mejor así",
+    "titulo": "Errores que se repiten"
+  },
+  "pregunta": {
+    "te_preguntaron": "Nos preguntaron",
+    "respuesta": "La respuesta",
+    "responder": "Responder",
+    "hace": "2 h",
+    "me_gusta": "Me gusta",
+    "comentario": "Comentario"
+  },
+  "comparador": {
+    "contra": "vs",
+    "gana": "Gana"
+  },
+  "cuenta_regresiva": {
+    "faltan": "Faltan",
+    "dias": "días",
+    "dia": "día",
+    "llega": "Llegó el día",
+    "meses": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+    "semana": ["L", "M", "M", "J", "V", "S", "D"],
+    "fecha": "{d} de {m}"
   }
 }

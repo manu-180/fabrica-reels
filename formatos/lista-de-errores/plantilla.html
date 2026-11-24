@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>lista de errores</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/datos.js"></script>
+<script src="assets/comun/subtitulos.js"></script>
+<script src="assets/comun/cinetica.js"></script>
+<style>
+{{css}}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); font-family: var(--f-cuerpo); color: var(--tinta); }
+.estacion { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+.bloque { position: absolute; left: 90px; width: 900px; }
+.titular { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1; letter-spacing: calc(var(--tracking-titulo) * 1.33); color: var(--tinta); text-wrap: balance; }
+.arreglo { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1.04; letter-spacing: var(--tracking-titulo); color: var(--tinta); text-wrap: balance; }
+.arreglo .wi { opacity: 0.3; }
+.titular .wi.apagada { opacity: 0.32; }
+.tacho { position: absolute; left: -10px; height: 14px; border-radius: 7px; background: var(--acento); transform-origin: 0% 50%; box-shadow: 0 0 0 4px var(--fondo); }
+.fila { position: absolute; left: 90px; width: 900px; height: 268px; }
+.fila .marca { position: absolute; left: 0; top: 10px; width: 52px; height: 52px; border-radius: 50%; border: 4px solid var(--linea-fuerte); }
+.fila .marca svg { position: absolute; left: -4px; top: -4px; width: 52px; height: 52px; }
+.fila .err { position: absolute; left: 84px; top: 0; width: 816px; transform-origin: 0% 0%; }
+.fila .arr { position: absolute; left: 84px; width: 816px; }
+.fila .sep { position: absolute; left: 0; bottom: 0; width: 900px; height: 2px; background: var(--linea); transform-origin: 0% 50%; }
+.check path { fill: none; stroke: var(--sobre-acento); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.check circle { fill: var(--acento); }
+.puntos { position: absolute; left: 90px; top: 268px; display: flex; gap: 14px; }
+.puntos i { display: block; width: 64px; height: 8px; border-radius: 4px; background: var(--linea-fuerte); overflow: hidden; position: relative; }
+.puntos i b { position: absolute; inset: 0; background: var(--acento); transform-origin: 0% 50%; }
+.tarjeta { position: absolute; left: 60px; top: 330px; width: 960px; height: 840px; border-radius: calc(var(--radio) + 14px); padding: 12px; background: var(--linea); box-shadow: 0 40px 90px var(--sombra-1), 0 8px 24px var(--sombra-2); }
+.tarjeta .nucleo { position: relative; width: 100%; height: 100%; border-radius: calc(var(--radio) + 2px); background: var(--superficie); overflow: hidden; box-shadow: inset 0 1px 0 var(--luz); }
+.tarjeta .rotulo { position: absolute; left: 60px; top: 56px; }
+.tarjeta .err { position: absolute; left: 60px; top: 150px; width: 816px; transform-origin: 0% 0%; }
+.tarjeta .arr { position: absolute; left: 60px; width: 816px; }
+.panel { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; }
+.mitad { position: absolute; left: 0; width: 1080px; overflow: hidden; background: var(--tinta); box-shadow: 0 30px 70px var(--sombra-1); }
+.mitad .err { position: absolute; left: 90px; width: 900px; color: var(--fondo); }
+.mitad .rotulo { color: var(--fondo); opacity: 0.66; }
+.mitad .rotulo i { background: var(--fondo); }
+.mitad .tacho { box-shadow: none; height: 20px; border-radius: 10px; }
+.debajo .arr { position: absolute; left: 90px; width: 900px; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="{{duracion}}">
+  {{fondo}}
+  <div id="camara" data-layout-allow-overflow>
+    {{profundo}}
+    <div id="riel" data-layout-allow-overflow>
+      {{hoja}}
+      <div id="escenas" data-layout-allow-overflow data-layout-allow-overlap></div>
+    </div>
+  </div>
+  {{luces}}
+  <div id="subs"></div>
+  {{audio}}
+</div>
+<script>
+Subtitulos.fuentes().then(function () {
+  var R = window.REEL;
+  var L = R.layout;
+  var W = 1080, H = 1920;
+  gsap.defaults({ lazy: false });
+  var tl = gsap.timeline({ paused: true });
+  var cam = document.getElementById("camara");
+  var riel = document.getElementById("riel");
+  var profundo = document.getElementById("profundo");
+  var escenas = document.getElementById("escenas");
+  var NS = "http://www.w3.org/2000/svg";
+
+  function estado(el, v) { tl.fromTo(el, v, Object.assign({}, v, { duration: 0.001, ease: "none" }), 0); }
+  function nuevo(tag, cls, padre) { var e = document.createElement(tag); if (cls) e.className = cls; padre.appendChild(e); return e; }
+  function rotulo(padre, t) { var r = nuevo("div", "rotulo", padre); r.innerHTML = "<i></i>"; r.appendChild(document.createTextNode(t)); return r; }
+  function check(padre, tam) {
+    var s = document.createElementNS(NS, "svg"); s.setAttribute("viewBox", "0 0 52 52"); s.setAttribute("class", "check");
+    s.style.width = tam + "px"; s.style.height = tam + "px";
+    var c = document.createElementNS(NS, "circle"); c.setAttribute("cx", "26"); c.setAttribute("cy", "26"); c.setAttribute("r", "26"); s.appendChild(c);
+    var p = document.createElementNS(NS, "path"); p.setAttribute("d", "M15 27 L23 34 L37 19"); s.appendChild(p);
+    padre.appendChild(s);
+    return { svg: s, circulo: c, trazo: p };
+  }
+  function dibujarCheck(ch, t) {
+    tl.fromTo(ch.circulo, { scale: 0.4, transformOrigin: "50% 50%", opacity: 0 }, { scale: 1, opacity: 1, duration: 0.34, ease: "back.out(1.7)" }, t);
+    tl.fromTo(ch.trazo, { strokeDasharray: 40, strokeDashoffset: 40 }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, t + 0.12);
+  }
+  function encender(wis, luces, desde) {
+    wis.forEach(function (w, k) {
+      var t = luces ? luces[k] : desde + k * 0.12;
+      tl.to(w, { opacity: 1, duration: 0.16, ease: "power1.out" }, Math.max(desde + 0.3 + k * 0.03, t - 1 / 30));
+    });
+  }
+  // El tachón cubre cada renglón del texto, de izquierda a derecha, uno detrás del otro.
+  function tachar(cont, t, op) {
+    op = op || {};
+    var ws = cont.querySelectorAll(".w");
+    var renglones = [];
+    ws.forEach(function (w) {
+      var top = Math.round(w.offsetTop);
+      var r = renglones.filter(function (x) { return Math.abs(x.top - top) < 12; })[0];
+      if (!r) { r = { top: top, izq: w.offsetLeft, der: w.offsetLeft + w.offsetWidth, alto: w.offsetHeight }; renglones.push(r); }
+      r.izq = Math.min(r.izq, w.offsetLeft); r.der = Math.max(r.der, w.offsetLeft + w.offsetWidth);
+    });
+    var dur = op.dur || 0.42;
+    renglones.forEach(function (r, k) {
+      var b = nuevo("div", "tacho", cont);
+      b.style.left = (r.izq - 12) + "px"; b.style.width = (r.der - r.izq + 24) + "px";
+      b.style.top = (r.top + r.alto * 0.5 - (op.grueso || 14) / 2) + "px";
+      if (op.grueso) { b.style.height = op.grueso + "px"; b.style.borderRadius = op.grueso / 2 + "px"; }
+      b.style.transform = "rotate(" + (k % 2 ? 1.2 : -1.6) + "deg)";
+      tl.fromTo(b, { scaleX: 0 }, { scaleX: 1, duration: dur / renglones.length + 0.12, ease: "power3.inOut" }, t + k * (dur / renglones.length));
+    });
+    return renglones;
+  }
+
+  // ---- Portada: el gancho ----
+  var portada = nuevo("div", "estacion", escenas);
+  var g = nuevo("div", "bloque", portada);
+  Cinetica.gancho(tl, g, { palabras: R.hook.palabras, max: 172, min: 96, lineas: 4, ancho: 900, alto: 760, resalte: R.resalte, tinta: R.tinta, resaltar: R.hook.resaltar });
+  g.style.top = (L === "tachon" ? 760 - g.offsetHeight / 2 : 400) + "px";
+  if (L !== "tachon") {
+    var rt = rotulo(portada, R.titulo); rt.style.position = "absolute"; rt.style.left = "90px"; rt.style.top = "300px";
+    tl.fromTo(rt, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 0.15);
+  }
+  tl.fromTo(cam, { scale: 1.05 }, { scale: 1, duration: Math.max(1.2, R.hook.fin), ease: "power2.out" }, 0);
+
+  if (L === "pila") {
+    // La lista entera en una hoja: la cámara baja una pantalla y cada fila se tacha y se arregla en su lugar.
+    var hoja = nuevo("div", "estacion", escenas);
+    hoja.style.top = H + "px";
+    var cab = rotulo(hoja, R.titulo); cab.style.position = "absolute"; cab.style.left = "90px"; cab.style.top = "286px";
+    var t0 = R.items[0].entra;
+    tl.to(riel, { y: -H, duration: 0.8, ease: "power3.inOut" }, t0);
+    tl.to(profundo, { y: -H * 0.45, duration: 0.8, ease: "power3.inOut" }, t0);
+    tl.fromTo(cab, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, t0 + 0.4);
+    R.items.forEach(function (it, k) {
+      var f = nuevo("div", "fila", hoja);
+      f.style.top = (370 + k * 280) + "px";
+      var marca = nuevo("div", "marca", f);
+      var err = nuevo("div", "titular err", f);
+      var we = Cinetica.trocear(err, it.error, { cifras: false });
+      Cinetica.ajustar(err, { max: 108, min: 60, lineas: 2, ancho: 816 });
+      we.forEach(function (w) { w.classList.add("apagada"); });
+      var arr = nuevo("div", "arreglo arr", f);
+      var wa = Cinetica.trocear(arr, it.arreglo);
+      Cinetica.ajustar(arr, { max: 74, min: 46, lineas: 2, ancho: 816 });
+      var esc = 0.42;
+      arr.style.top = (err.offsetHeight * esc + 18) + "px";
+      var sep = nuevo("div", "sep", f);
+      var ch = check(marca, 52); ch.svg.style.position = "absolute"; ch.svg.style.left = "-4px"; ch.svg.style.top = "-4px";
+      // Las filas que todavía no se dijeron esperan tenues; la que se dice se enciende.
+      estado([err, marca], { opacity: 0 });
+      estado(wa, { opacity: 0 });
+      tl.fromTo([err, marca], { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out", stagger: 0.05 }, Math.max(t0 + 0.55 + k * 0.08, it.entra));
+      tl.fromTo(sep, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, t0 + 0.6 + k * 0.08);
+      encender(we, it.luces, it.entra);
+      tachar(err, it.tacha);
+      tl.to(err, { scale: esc, opacity: 0.5, duration: 0.5, ease: "power3.inOut" }, it.tacha + 0.4);
+      Cinetica.subir(tl, wa, it.arregla, { stagger: 0.04, opacidad: 0.3 });
+      encender(wa, it.lucesArreglo, it.arregla);
+      dibujarCheck(ch, it.arregla + 0.1);
+    });
+    tl.fromTo(cam, { scale: 1 }, { scale: 1.035, duration: 1.2, ease: "power2.inOut" }, R.items[2].arregla);
+  }
+
+  if (L === "tarjetas") {
+    // Una tarjeta por error; la corriente es hacia la izquierda.
+    var puntos = nuevo("div", "puntos", document.getElementById("root"));
+    puntos.style.zIndex = 30;
+    var barras = R.items.map(function () { var i = nuevo("i", "", puntos); return nuevo("b", "", i); });
+    estado(puntos, { opacity: 0 });
+    tl.to(puntos, { opacity: 1, duration: 0.3, ease: "power2.out" }, R.items[0].entra + 0.3);
+    R.items.forEach(function (it, k) {
+      var e = nuevo("div", "estacion", escenas);
+      e.style.left = ((k + 1) * W) + "px";
+      var tj = nuevo("div", "tarjeta", e);
+      var nu = nuevo("div", "nucleo", tj);
+      rotulo(nu, R.t.error);
+      var err = nuevo("div", "titular err", nu);
+      var we = Cinetica.trocear(err, it.error, { cifras: false });
+      Cinetica.ajustar(err, { max: 140, min: 80, lineas: 4, ancho: 816 });
+      we.forEach(function (w) { w.classList.add("apagada"); });
+      var arr = nuevo("div", "arreglo arr", nu);
+      var wa = Cinetica.trocear(arr, it.arreglo);
+      Cinetica.ajustar(arr, { max: 118, min: 64, lineas: 4, ancho: 816 });
+      var esc = 0.42;
+      var ch = check(nu, 76); ch.svg.style.position = "absolute"; ch.svg.style.left = "60px";
+      var arriba = 150 + err.offsetHeight * esc + 44;
+      ch.svg.style.top = arriba + "px";
+      arr.style.top = (arriba + 100) + "px";
+      estado(wa, { opacity: 0 });
+      tl.to(riel, { x: -(k + 1) * W, duration: 0.8, ease: "power3.inOut" }, it.entra);
+      tl.to(profundo, { x: -(k + 1) * W * 0.4, duration: 0.8, ease: "power3.inOut" }, it.entra);
+      tl.fromTo(barras[k], { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.out" }, it.entra + 0.5);
+      encender(we, it.luces, it.entra + 0.2);
+      tachar(err, it.tacha, { grueso: 18 });
+      tl.to(err, { scale: esc, opacity: 0.45, duration: 0.55, ease: "power3.inOut" }, it.tacha + 0.4);
+      dibujarCheck(ch, it.arregla);
+      Cinetica.subir(tl, wa, it.arregla + 0.08, { stagger: 0.045, opacidad: 0.3 });
+      encender(wa, it.lucesArreglo, it.arregla + 0.08);
+    });
+  }
+
+  if (L === "tachon") {
+    // Cada error es un cartel a sangre; el tachón lo parte y las dos mitades se abren hacia arriba y abajo
+    // dejando ver el arreglo, que estaba debajo.
+    var previa = portada;
+    R.items.forEach(function (it, k) {
+      var e = nuevo("div", "estacion", escenas);
+      var debajo = nuevo("div", "debajo panel", e);
+      var r2 = rotulo(debajo, R.t.mejor); r2.style.position = "absolute"; r2.style.left = "90px";
+      var arr = nuevo("div", "arreglo arr", debajo);
+      var wa = Cinetica.trocear(arr, it.arreglo);
+      Cinetica.ajustar(arr, { max: 136, min: 72, lineas: 4, ancho: 900 });
+      arr.style.top = (720 - arr.offsetHeight / 2) + "px";
+      r2.style.top = (720 - arr.offsetHeight / 2 - 96) + "px";
+      var ch = check(debajo, 84); ch.svg.style.position = "absolute"; ch.svg.style.left = "90px"; ch.svg.style.top = (720 + arr.offsetHeight / 2 + 50) + "px";
+      // El cartel: dos mitades con el mismo texto, cada una recorta su parte. El corte es la línea del tachón.
+      var medida = nuevo("div", "titular err", e);
+      medida.style.position = "absolute"; medida.style.left = "90px"; medida.style.width = "900px"; medida.style.visibility = "hidden";
+      Cinetica.trocear(medida, it.error, { cifras: false });
+      var tam = Cinetica.ajustar(medida, { max: 150, min: 84, lineas: 4, ancho: 900 });
+      var alto = medida.offsetHeight;
+      var arribaTxt = 720 - alto / 2;
+      var corte = Math.round(arribaTxt + alto / 2);
+      function mitad(arribaM, altoM) {
+        var m = nuevo("div", "mitad", e);
+        m.style.top = arribaM + "px"; m.style.height = altoM + "px";
+        var r = rotulo(m, R.t.error); r.style.position = "absolute"; r.style.left = "90px"; r.style.top = (arribaTxt - 100 - arribaM) + "px";
+        var tx = nuevo("div", "titular err", m);
+        tx.style.fontSize = tam + "px"; tx.style.top = (arribaTxt - arribaM) + "px";
+        var ws = Cinetica.trocear(tx, it.error, { cifras: false });
+        return { el: m, txt: tx, ws: ws };
+      }
+      var BANDA0 = 300, BANDA1 = 1180;
+      var sup = mitad(BANDA0, corte - BANDA0), inf = mitad(corte, BANDA1 - corte);
+      medida.remove();
+      estado(wa, { opacity: 0 });
+      estado([sup.el, inf.el], { yPercent: 0 });
+      // Entra subiendo desde abajo (la corriente es hacia arriba): el cartel tapa la escena anterior.
+      estado(e, { opacity: 0 });
+      tl.set(e, { opacity: 1 }, it.entra);
+      tl.fromTo([sup.el, inf.el], { y: H }, { y: 0, duration: 0.7, ease: "power3.inOut" }, it.entra);
+      tl.fromTo(debajo, { y: H }, { y: 0, duration: 0.7, ease: "power3.inOut" }, it.entra);
+      tl.to(previa, { opacity: 0, duration: 0.3, ease: "power2.in" }, it.entra + 0.15);
+      Cinetica.subir(tl, sup.ws.concat(inf.ws), it.entra + 0.35, { stagger: 0.035 });
+      var rs = tachar(sup.txt, it.tacha, { grueso: 20 });
+      tachar(inf.txt, it.tacha, { grueso: 20 });
+      // Pausa en el pico y se abre por el medio.
+      var abre = Math.max(it.tacha + 0.75, it.arregla - 0.25);
+      tl.to(sup.el, { y: -corte - 40, duration: 0.7, ease: "power4.inOut" }, abre);
+      tl.to(inf.el, { y: H - corte + 40, duration: 0.7, ease: "power4.inOut" }, abre);
+      tl.fromTo(debajo, { scale: 0.94, transformOrigin: "50% 40%" }, { scale: 1, duration: 0.9, ease: "power3.out" }, abre);
+      tl.fromTo(r2, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, abre + 0.25);
+      Cinetica.subir(tl, wa, abre + 0.2, { stagger: 0.045, opacidad: 0.3 });
+      encender(wa, it.lucesArreglo, abre + 0.2);
+      dibujarCheck(ch, abre + 0.45);
+      previa = e;
+    });
+  }
+
+  Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos, tono: R.tono, resalte: R.resalte, tinta: R.tinta });
+  tl.set({}, {}, R.duracion);
+  window.__timelines["main"] = tl;
+});
+</script>
+</body>
+</html>

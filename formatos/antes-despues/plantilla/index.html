@@ -41,7 +41,12 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
 .v-der .v-foto { width: 576px; height: 656px; border: 8px ridge #ff00ff; overflow: hidden; background: #888; }
 .v-der .v-nuevo { margin-top: 18px; display: inline-block; padding: 6px 16px; background: #ffff00; font-family: var(--f-titulo); font-weight: var(--p-titulo); font-size: 40px; color: #00a000; }
 .v-foto img, .v-banner img { display: block; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
-.v-banner { position: absolute; left: 40px; top: 1500px; width: 1520px; height: 620px; border: 6px double #000; overflow: hidden; background: #888 url("assets/fotos/pixelada.jpg") 50% 60% / cover no-repeat; image-rendering: pixelated; }
+.v-banner { position: absolute; left: 40px; top: 1880px; width: 1520px; height: 620px; border: 6px double #000; overflow: hidden; background: #888 url("assets/fotos/pixelada.jpg") 50% 60% / cover no-repeat; image-rendering: pixelated; }
+/* El libro de visitas: un bloque blanco liso justo donde van los subtítulos (antes ahí había una foto pixelada y el
+   subtítulo quedaba sobre un borrón). */
+.v-libro { position: absolute; left: 40px; top: 1440px; width: 1520px; height: 420px; background: #ffffff; border: 3px solid #999; }
+.v-libro p { padding: 14px 22px; font-weight: 400; font-size: 24px; color: #666; white-space: nowrap; }
+.v-libro p b { font-weight: 600; color: #0000ee; text-decoration: underline; margin-right: 24px; }
 .v-pie { position: absolute; left: 0; top: 2150px; width: 1600px; height: 250px; background: #ffffff; }
 .v-obra { height: 64px; background: repeating-linear-gradient(45deg, #ffd400 0 34px, #111 34px 68px); }
 .v-pie p { padding: 18px 40px; font-weight: 400; font-size: 20px; color: #444; }
@@ -73,7 +78,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
 .n-fila .raya { position: absolute; left: 0; top: 0; width: 900px; height: 2px; background: var(--linea-fuerte); transform-origin: 0 50%; }
 .n-fila b { font-family: var(--f-titulo); font-weight: 600; font-size: 44px; letter-spacing: -0.015em; color: var(--tinta); }
 .n-fila svg { width: 44px; height: 44px; }
-.n-foto { position: absolute; left: 70px; top: 1214px; width: 940px; height: 860px; border-radius: 44px; overflow: hidden; background: var(--superficie); }
+.n-foto { position: absolute; left: 70px; top: 1500px; width: 940px; height: 860px; border-radius: 44px; overflow: hidden; background: var(--superficie); }
 .n-foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 /* El cartel de error de la web vieja (el gag del botón que no anda). */
@@ -115,6 +120,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
           <span class="v-boton">{{t:antes_despues.boton_viejo}}</span>
           <div class="v-rota"><svg width="64" height="64" viewBox="0 0 64 64"><rect x="6" y="10" width="52" height="44" fill="none" stroke="#999" stroke-width="3"/><path d="M10 48 L26 30 L36 40 L44 32 L54 44" fill="none" stroke="#999" stroke-width="3"/><path d="M40 6 L30 58" stroke="#d40000" stroke-width="4"/></svg><span>{{t:antes_despues.imagen_rota}}</span></div>
           <div class="v-der"><div class="v-foto"><img src="assets/fotos/pixelada.jpg" alt=""></div><span class="v-nuevo">{{t:antes_despues.nuevo}}</span></div>
+          <div class="v-libro"><p><b>{{t:antes_despues.libro}}</b>{{t:antes_despues.contador}}</p></div>
           <div class="v-banner"></div>
           <div class="v-pie"><div class="v-obra"></div><p>{{t:antes_despues.pie}}</p></div>
         </div>
@@ -283,7 +289,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
     // Zoom inverso = llegada: la web nueva se mete en un celular sobre el fondo del reel.
     const t = R.celular;
     const escala = 0.58;
-    tl.to("#escena", { x: 500 - 540 * escala, y: 880 - 960 * escala, scale: escala, duration: 0.75, ease: "power3.inOut", transformOrigin: "0% 0%" }, t);
+    tl.to("#escena", { x: 500 - 540 * escala, y: 740 - 960 * escala, scale: escala, duration: 0.75, ease: "power3.inOut", transformOrigin: "0% 0%" }, t);
     tl.to("#pantalla", { borderRadius: 150, duration: 0.75, ease: "power3.inOut" }, t);
     tl.to("#marco", { opacity: 1, duration: 0.45, ease: "power2.out" }, t + 0.2);
   }
@@ -311,7 +317,9 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
     });
     nuevo();
     celular();
-    Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos, tono: "oscuro", resalte: R.resalte });
+    // Sobre la web vieja los subtítulos caen en el libro de visitas (blanco): tinta oscura. Después, el tono de la paleta.
+    Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos.filter(function (g) { return g.tramo === "viejo"; }), tono: "claro", resalte: R.resalteClaro, prefijo: "sv" });
+    Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos.filter(function (g) { return g.tramo !== "viejo"; }), tono: R.tono, resalte: R.resalte, prefijo: "sn" });
     tl.set({}, {}, R.duracion);
     window.__timelines["main"] = tl;
   }

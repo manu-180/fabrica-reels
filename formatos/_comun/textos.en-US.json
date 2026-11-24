@@ -5,7 +5,7 @@
     "escribiendo": "typing…",
     "escribiendo_corto": "typing",
     "mensaje": "Message",
-    "teclado": [["q","w","e","r","t","y","u","i","o","p"], ["a","s","d","f","g","h","j","k","l"], ["⇧","z","x","c","v","b","n","m","⌫"], ["123","space","return"]]
+    "teclado": [["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"], ["a", "s", "d", "f", "g", "h", "j", "k", "l"], ["⇧", "z", "x", "c", "v", "b", "n", "m", "⌫"], ["123", "space", "return"]]
   },
   "mito": {
     "se_cree": "What people think",
@@ -30,9 +30,60 @@
     "error_ok": "OK",
     "parrafo": "We are {nombre}, a {rubro} with many years of experience in the neighborhood. On this page you will find all the information about our services, opening hours and how to reach us. For any questions you can call us or stop by in person. Thank you very much for visiting our website!\n\nWe are open Monday through Saturday. We deliver all over the area and accept all forms of payment. For special orders please ask in advance. See you soon!",
     "rubros": {
-      "panaderia": "Bakery", "peluqueria": "Hair salon", "consultorio": "Medical office", "estudio-juridico": "Law firm",
-      "gimnasio": "Gym", "restaurante": "Restaurant", "inmobiliaria": "Real estate", "taller-mecanico": "Auto repair",
-      "veterinaria": "Vet clinic", "ferreteria": "Hardware store", "estetica": "Beauty salon", "cafeteria": "Coffee shop"
+      "panaderia": "Bakery",
+      "peluqueria": "Hair salon",
+      "consultorio": "Medical office",
+      "estudio-juridico": "Law firm",
+      "gimnasio": "Gym",
+      "restaurante": "Restaurant",
+      "inmobiliaria": "Real estate",
+      "taller-mecanico": "Auto repair",
+      "veterinaria": "Vet clinic",
+      "ferreteria": "Hardware store",
+      "estetica": "Beauty salon",
+      "cafeteria": "Coffee shop"
+    },
+    "libro": "Guestbook",
+    "contador": "You are visitor #004213",
+    "app": {
+      "planilla": "This week’s classes",
+      "horas": ["Mon 6 pm", "Wed 7 pm", "Thu 6 pm"],
+      "nombres": ["Lu", "Caro", "Matt", "Sophie", "Jules", "Vera", "Nick", "Anna", "Paula", "Tom", "Flora", "Gabe"],
+      "grupo": "Thursday class",
+      "no_leidos": "47",
+      "escribiendo": "typing…",
+      "mensajes": ["any spot at 7?", "can’t make it today, sorry", "I’m in!!", "who’s missing Thursday?", "can you save me a spot?", "swapped with Sophie, ok?"],
+      "cuaderno": "Attendance",
+      "fechas": ["3/3", "3/10", "3/17", "3/24", "3/31"],
+      "presente": "P",
+      "ausente": "A",
+      "recupera": "M?"
     }
+  },
+  "lista_errores": {
+    "error": "Mistake",
+    "mejor": "Do this instead",
+    "titulo": "Mistakes we keep seeing"
+  },
+  "pregunta": {
+    "te_preguntaron": "You asked",
+    "respuesta": "The answer",
+    "responder": "Reply",
+    "hace": "2h",
+    "me_gusta": "Like",
+    "comentario": "Comment"
+  },
+  "comparador": {
+    "contra": "vs",
+    "gana": "Winner"
+  },
+  "cuenta_regresiva": {
+    "faltan": "Only",
+    "dias": "days left",
+    "dia": "day left",
+    "llega": "The day is here",
+    "meses": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    "semana": ["M", "T", "W", "T", "F", "S", "S"],
+    "fecha": "{m} {d}"
   }
 }

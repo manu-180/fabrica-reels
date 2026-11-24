@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>cuenta regresiva</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/datos.js"></script>
+<script src="assets/comun/subtitulos.js"></script>
+<script src="assets/comun/cinetica.js"></script>
+<style>
+{{css}}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); font-family: var(--f-cuerpo); color: var(--tinta); }
+.estacion { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+.bloque { position: absolute; left: 90px; width: 900px; }
+.titular { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1.02; letter-spacing: calc(var(--tracking-titulo) * 1.33); color: var(--tinta); text-wrap: balance; }
+.leer .wi { opacity: 0.28; }
+.paso { position: absolute; left: 90px; width: 900px; }
+.paso .rotulo { margin-bottom: 14px; }
+.cal { position: absolute; left: 70px; top: 520px; width: 940px; border-radius: calc(var(--radio) + 14px); padding: 10px; background: var(--linea); box-shadow: 0 36px 80px var(--sombra-1), 0 8px 22px var(--sombra-2); }
+.cal .nucleo { position: relative; border-radius: calc(var(--radio) + 4px); background: var(--superficie); padding: 34px 40px 30px; box-shadow: inset 0 1px 0 var(--luz); }
+.cal .mes { display: flex; align-items: baseline; justify-content: space-between; font-size: 64px; text-transform: capitalize; }
+.cal .mes span { font-family: var(--f-mono); font-weight: var(--p-mono); font-size: 34px; letter-spacing: 0.04em; color: var(--tenue); }
+.cal .sem, .cal .grilla { display: grid; grid-template-columns: repeat(7, 1fr); }
+.cal .sem { margin-top: 22px; padding-bottom: 12px; border-bottom: 2px solid var(--linea); }
+.cal .sem b { text-align: center; font-family: var(--f-mono); font-weight: var(--p-mono); font-size: 28px; color: var(--tenue); }
+.cal .grilla { position: relative; margin-top: 8px; }
+.cal .dia { position: relative; height: 78px; display: flex; align-items: center; justify-content: center; font-family: var(--f-mono); font-weight: var(--p-mono); font-size: 38px; color: var(--tinta); }
+.cal .dia .fondo-dia { position: absolute; left: 50%; top: 50%; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%; background: var(--acento); opacity: 0; }
+.cal .dia span { position: relative; }
+.anillo { position: absolute; left: 0; top: 0; width: 78px; height: 78px; margin: -39px 0 0 -39px; border-radius: 50%; border: 5px solid var(--acento-texto); opacity: 0; }
+.meta { position: absolute; left: 0; top: 0; width: 82px; height: 82px; margin: -41px 0 0 -41px; border-radius: 50%; border: 3px dashed var(--linea-fuerte); }
+.contador { position: absolute; left: 0; width: 1080px; text-align: center; }
+.contador .n { font-family: var(--f-titulo); font-weight: var(--p-titulo); font-size: 440px; line-height: 0.86; letter-spacing: calc(var(--tracking-titulo) * 2.4); color: var(--tinta); font-variant-numeric: tabular-nums; }
+.contador .u { margin-top: 18px; font-family: var(--f-titulo); font-weight: var(--p-titulo); font-size: 76px; letter-spacing: var(--tracking-titulo); color: var(--acento-texto); }
+.contador .faltan { font-family: var(--f-mono); font-weight: var(--p-mono); font-size: 40px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--tenue); margin-bottom: 24px; }
+.contador .alt { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1; letter-spacing: var(--tracking-titulo); }
+.barra { position: absolute; left: 90px; top: 924px; width: 900px; height: 6px; border-radius: 3px; background: var(--linea-fuerte); overflow: hidden; }
+.barra b { position: absolute; inset: 0; background: var(--acento); transform-origin: 0% 50%; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="{{duracion}}">
+  {{fondo}}
+  <div id="camara" data-layout-allow-overflow>
+    {{profundo}}
+    <div id="riel" data-layout-allow-overflow>
+      {{hoja}}
+      <div id="escenas" data-layout-allow-overflow data-layout-allow-overlap></div>
+    </div>
+  </div>
+  {{luces}}
+  <div id="subs"></div>
+  {{audio}}
+</div>
+<script>
+Subtitulos.fuentes().then(function () {
+  var R = window.REEL;
+  var L = R.layout;
+  var H = 1920;
+  gsap.defaults({ lazy: false });
+  var tl = gsap.timeline({ paused: true });
+  var cam = document.getElementById("camara");
+  var riel = document.getElementById("riel");
+  var profundo = document.getElementById("profundo");
+  var escenas = document.getElementById("escenas");
+
+  function estado(el, v) { tl.fromTo(el, v, Object.assign({}, v, { duration: 0.001, ease: "none" }), 0); }
+  function nuevo(tag, cls, padre) { var e = document.createElement(tag); if (cls) e.className = cls; padre.appendChild(e); return e; }
+  function rotulo(padre, t) { var r = nuevo("div", "rotulo", padre); r.innerHTML = "<i></i>"; r.appendChild(document.createTextNode(t)); return r; }
+  function encender(wis, luces, desde) {
+    wis.forEach(function (w, k) {
+      var t = luces ? luces[k] : desde + k * 0.1;
+      tl.to(w, { opacity: 1, duration: 0.16, ease: "power1.out" }, Math.max(desde + 0.25 + k * 0.02, t - 1 / 30));
+    });
+  }
+  // El texto de cada paso: entra el nuevo desde abajo y el anterior sale hacia arriba (la corriente sube).
+  function pasos(arriba, maxT, lineas) {
+    var previo = null;
+    R.pasos.forEach(function (p, k) {
+      var c = nuevo("div", "paso", escena);
+      c.style.top = arriba + "px";
+      rotulo(c, p.cuando);
+      var tx = nuevo("div", "titular leer", c);
+      var ws = Cinetica.trocear(tx, p.que);
+      Cinetica.ajustar(tx, { max: maxT, min: 48, lineas: lineas, ancho: 900 });
+      estado(c, { opacity: 0 });
+      tl.fromTo(c, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, p.t + 0.1);
+      encender(ws, p.luces, p.t + 0.1);
+      if (previo) tl.to(previo, { opacity: 0, y: -40, duration: 0.3, ease: "power2.in" }, p.t - 0.2);
+      previo = c;
+    });
+    return function (t) { if (previo) tl.to(previo, { opacity: 0, y: -40, duration: 0.3, ease: "power2.in" }, t); };
+  }
+
+  // ---- Portada ----
+  var portada = nuevo("div", "estacion", escenas);
+  var g = nuevo("div", "bloque", portada);
+  Cinetica.gancho(tl, g, { palabras: R.hook.palabras, max: 172, min: 96, lineas: 4, ancho: 900, alto: 760, resalte: R.resalte, tinta: R.tinta, resaltar: R.hook.resaltar });
+  g.style.top = (760 - g.offsetHeight / 2) + "px";
+  tl.fromTo(cam, { scale: 1.05 }, { scale: 1, duration: Math.max(1.2, R.hook.fin), ease: "power2.out" }, 0);
+  tl.to(riel, { y: -H, duration: 0.8, ease: "power3.inOut" }, R.entra);
+  tl.to(profundo, { y: -H * 0.45, duration: 0.8, ease: "power3.inOut" }, R.entra);
+  var escena = nuevo("div", "estacion", escenas); escena.style.top = H + "px";
+  var ev = rotulo(escena, R.evento); ev.style.position = "absolute"; ev.style.left = "90px"; ev.style.top = "290px";
+  tl.fromTo(ev, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, R.entra + 0.4);
+
+  if (L === "calendario") {
+    var cal = nuevo("div", "cal", escena);
+    var nu = nuevo("div", "nucleo", cal);
+    var mes = nuevo("div", "titular mes", nu);
+    mes.appendChild(document.createTextNode(R.fecha.mes));
+    var an = nuevo("span", "", mes); an.textContent = String(R.fecha.anio);
+    var sem = nuevo("div", "sem", nu);
+    R.t.semana.forEach(function (d) { var b = nuevo("b", "", sem); b.textContent = d; });
+    var grilla = nuevo("div", "grilla", nu);
+    var celdas = {};
+    R.fecha.celdas.forEach(function (n) {
+      var d = nuevo("div", "dia", grilla);
+      if (n === null) return;
+      var f = nuevo("i", "fondo-dia", d);
+      var s = nuevo("span", "", d); s.textContent = String(n);
+      celdas[n] = { el: d, fondo: f, num: s };
+    });
+    var centro = function (n) { var c = celdas[n].el; return { x: c.offsetLeft + c.offsetWidth / 2, y: c.offsetTop + c.offsetHeight / 2 }; };
+    var meta = nuevo("div", "meta", grilla); var cm = centro(R.fecha.dia); meta.style.left = cm.x + "px"; meta.style.top = cm.y + "px";
+    var anillo = nuevo("div", "anillo", grilla);
+    // El calendario entra como una hoja que sube; la meta (el día) ya está marcada con línea punteada.
+    tl.fromTo(cal, { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, R.entra + 0.35);
+    var cerrar = pasos(300, 58, 2);
+    ev.style.top = "-200px";
+    var hasta = 0;
+    var primero = true;
+    R.pasos.forEach(function (p) {
+      if (p.dia === null) return;
+      var c = centro(p.dia);
+      if (primero) { tl.set(anillo, { x: c.x, y: c.y }, p.t); tl.fromTo(anillo, { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, p.t + 0.3); primero = false; }
+      else tl.to(anillo, { x: c.x, y: c.y, duration: 0.6, ease: "power3.inOut" }, p.t + 0.3);
+      // Los días que quedaron atrás se apagan, en orden.
+      var atras = [];
+      for (var n = hasta + 1; n < p.dia; n++) if (celdas[n]) atras.push(celdas[n].num);
+      if (atras.length) tl.to(atras, { opacity: 0.25, duration: 0.2, ease: "power1.out", stagger: Math.min(0.03, 0.5 / atras.length) }, p.t + 0.3);
+      hasta = p.dia - 1;
+    });
+    var T = R.llega;
+    cerrar(T - 0.25);
+    var dest = celdas[R.fecha.dia];
+    var cd = centro(R.fecha.dia);
+    var atras2 = [];
+    for (var m = hasta + 1; m < R.fecha.dia; m++) if (celdas[m]) atras2.push(celdas[m].num);
+    if (atras2.length) tl.to(atras2, { opacity: 0.25, duration: 0.2, ease: "power1.out", stagger: Math.min(0.03, 0.4 / atras2.length) }, T - 0.2);
+    tl.to(anillo, { x: cd.x, y: cd.y, opacity: 1, duration: 0.55, ease: "power3.inOut" }, T - 0.2);
+    // Pausa y se clava: el día se llena del acento.
+    tl.fromTo(dest.fondo, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, T + 0.3);
+    tl.to(dest.num, { color: "var(--sobre-acento)", duration: 0.1 }, T + 0.35);
+    tl.to(meta, { opacity: 0, duration: 0.2 }, T + 0.3);
+    tl.fromTo(cal, { scale: 1 }, { scale: 1.03, duration: 0.5, ease: "power2.out", transformOrigin: "50% 60%" }, T + 0.3);
+    var final = nuevo("div", "paso", escena); final.style.top = "300px";
+    rotulo(final, R.t.llega);
+    var ft = nuevo("div", "titular", final);
+    var wf = Cinetica.trocear(ft, R.fecha.texto, { cifras: false });
+    Cinetica.ajustar(ft, { max: 92, min: 56, lineas: 1, ancho: 900 });
+    estado(final, { opacity: 0 });
+    tl.set(final, { opacity: 1 }, T + 0.1);
+    Cinetica.subir(tl, wf, T + 0.15, { stagger: 0.05 });
+  }
+
+  if (L === "reloj") {
+    // Odómetro: cada cifra es una tira de 0 a 9 que rueda. Todo es transform, nada de texto que cambie.
+    var ALTO = 380;
+    var cont = nuevo("div", "contador", escena); cont.style.top = "360px";
+    var fal = nuevo("div", "faltan", cont); fal.textContent = R.t.faltan;
+    var num = nuevo("div", "n odometro", cont);
+    num.style.height = ALTO + "px"; num.style.overflow = "hidden"; num.style.display = "flex"; num.style.justifyContent = "center";
+    var cols = [0, 1, 2].map(function () {
+      var c = nuevo("div", "col-cifra", num); c.style.position = "relative"; c.style.lineHeight = ALTO + "px";
+      var tira = nuevo("div", "", c);
+      for (var d = 0; d <= 9; d++) { var x = nuevo("div", "", tira); x.textContent = String(d); x.style.height = ALTO + "px"; }
+      return { c: c, tira: tira };
+    });
+    var uniWrap = nuevo("div", "u", cont); uniWrap.style.position = "relative"; uniWrap.style.height = "90px";
+    var uDias = nuevo("div", "", uniWrap); uDias.textContent = R.t.dias; uDias.style.position = "absolute"; uDias.style.left = "0"; uDias.style.width = "1080px";
+    var uDia = nuevo("div", "", uniWrap); uDia.textContent = R.t.dia; uDia.style.position = "absolute"; uDia.style.left = "0"; uDia.style.width = "1080px";
+    var barra = nuevo("div", "barra", escena); var bb = nuevo("b", "", barra);
+    var conDias = R.pasos.filter(function (p) { return p.dias !== null; });
+    var max = conDias.length ? conDias[0].dias : 1;
+    function cifras(n) { return [Math.floor(n / 100) % 10, Math.floor(n / 10) % 10, n % 10]; }
+    function mostrar(n, t, dur) {
+      var c = cifras(n);
+      cols.forEach(function (col, k) {
+        var visible = k === 2 || (k === 1 && n >= 10) || (k === 0 && n >= 100);
+        if (dur) {
+          tl.to(col.tira, { y: -c[k] * ALTO, duration: dur, ease: "power3.inOut" }, t);
+          tl.to(col.c, { opacity: visible ? 1 : 0, duration: dur * 0.6, ease: "power2.inOut" }, t);
+        } else {
+          tl.set(col.tira, { y: -c[k] * ALTO }, t);
+          tl.set(col.c, { opacity: visible ? 1 : 0 }, t);
+        }
+      });
+      var ocultas = n >= 100 ? 0 : n >= 10 ? 1 : 2;
+      var anchoCifra = cols[2].c.offsetWidth;
+      if (dur) tl.to(num, { x: -ocultas * anchoCifra / 2, duration: dur, ease: "power3.inOut" }, t); else tl.set(num, { x: -ocultas * anchoCifra / 2 }, t);
+      tl.to(uDias, { opacity: n === 1 ? 0 : 1, duration: 0.2 }, t + (dur || 0) * 0.5);
+      tl.to(uDia, { opacity: n === 1 ? 1 : 0, duration: 0.2 }, t + (dur || 0) * 0.5);
+    }
+    estado([fal, num, uniWrap, uDia], { opacity: 0 });
+    estado(bb, { scaleX: 0 });
+    var cerrar2 = pasos(980, 66, 2);
+    var actual = null;
+    var alts = [];
+    R.pasos.forEach(function (p) {
+      var t = p.t + 0.25;
+      if (p.dias === null) {
+        // Sin cifra, el paso mismo ocupa el lugar del número.
+        var al = nuevo("div", "titular paso", escena); al.style.top = "520px";
+        var wal = Cinetica.trocear(al, p.cuando, { cifras: false });
+        Cinetica.ajustar(al, { max: 160, min: 80, lineas: 2, ancho: 900 });
+        al.style.textAlign = "center";
+        alts.forEach(function (x) { tl.to(x, { opacity: 0, duration: 0.2 }, t - 0.2); });
+        tl.to([fal, num, uniWrap], { opacity: 0, duration: 0.2 }, t - 0.2);
+        estado(wal, { opacity: 0 });
+        Cinetica.subir(tl, wal, t, { stagger: 0.05 });
+        alts.push(al);
+        actual = null;
+        return;
+      }
+      alts.forEach(function (x) { tl.to(x, { opacity: 0, duration: 0.2 }, t - 0.2); });
+      if (actual === null) {
+        mostrar(p.dias, t - 0.01, 0);
+        tl.fromTo([fal, num, uniWrap], { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out", stagger: 0.06 }, t);
+      } else mostrar(p.dias, t, 0.9);
+      tl.to(bb, { scaleX: 1 - p.dias / Math.max(1, max + 1), duration: 0.9, ease: "power3.inOut" }, t);
+      actual = p.dias;
+    });
+    var T2 = R.llega;
+    cerrar2(T2 - 0.25);
+    // Llega a cero y el número le deja el lugar a la fecha.
+    if (actual !== null) mostrar(0, T2 - 0.45, 0.7);
+    tl.to(bb, { scaleX: 1, duration: 0.7, ease: "power3.in" }, T2 - 0.45);
+    tl.to([fal, num, uniWrap].concat(alts), { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, T2 + 0.35);
+    var fin = nuevo("div", "paso", escena); fin.style.top = "480px";
+    rotulo(fin, R.t.llega);
+    var ft2 = nuevo("div", "titular", fin);
+    var wf2 = Cinetica.trocear(ft2, R.fecha.texto, { cifras: false });
+    Cinetica.ajustar(ft2, { max: 200, min: 90, lineas: 2, ancho: 900 });
+    ft2.style.color = "var(--acento-texto)";
+    estado(fin, { opacity: 0 });
+    tl.set(fin, { opacity: 1 }, T2 + 0.6);
+    Cinetica.subir(tl, wf2, T2 + 0.6, { stagger: 0.06 });
+  }
+
+  Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos, tono: R.tono, resalte: R.resalte, tinta: R.tinta });
+  tl.set({}, {}, R.duracion);
+  window.__timelines["main"] = tl;
+});
+</script>
+</body>
+</html>

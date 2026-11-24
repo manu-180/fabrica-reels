@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "clave": "taller-planilla-a-reservas",
+  "titulo": "Un taller de cerámica, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "hooks": [
+    "Así se organizan los turnos hoy",
+    "Planilla, grupo y cuaderno: ¿te suena?",
+    "Mismo taller, otra forma de reservar"
+  ],
+  "voz": "Planilla en la pared, avisos por WhatsApp y un cuaderno de asistencia que nadie entiende. Pasa en un montón de talleres. Ahora cada alumna reserva su clase en un toque, ve sus clases y su historial, y vos dejás de contestar mensajes.",
+  "contenido": {
+    "negocio": { "rubro": "estetica", "nombre": "Taller Arcilla", "lema": "Cerámica en torno y modelado" },
+    "antes": { "tipo": "papel", "defectos": ["Planilla en la pared", "Avisos por WhatsApp", "Cuaderno de asistencia"] },
+    "despues": {
+      "titular": "Cada alumna reserva sola",
+      "boton": "Reservar clase",
+      "secciones": ["Reservar", "Mis clases", "Historial"],
+      "pantallas": ["calendario", "misclases", "historial"]
+    }
+  },
+  "captions": ["Si los turnos de tu taller van por planilla y grupo, cada cupo es una charla.", "Cada alumna reserva sola y ve su historial.", "¿Cómo lo organizás hoy?"],
+  "hashtags": ["talleres", "ceramica", "profesores", "clases", "docentes"]
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "clave": "aguinaldo-cuenta-regresiva",
+  "titulo": "Lo que conviene hacer antes del aguinaldo",
+  "categoria": "calendario",
+  "formato": "cuenta-regresiva",
+  "hooks": [
+    "Se viene el aguinaldo: preparate así",
+    "Antes de cobrar, hacé esto",
+    "Faltan semanas para el aguinaldo"
+  ],
+  "voz": "Faltan semanas y conviene ordenarse. Primero, revisá tu recibo de junio. Después, hacé la cuenta con tu mejor sueldo. El día antes, chequeá que te lo depositen completo. El dieciocho de diciembre es el último día para pagarlo.",
+  "contenido": {
+    "evento": "Aguinaldo",
+    "fecha": "2026-12-18",
+    "pasos": [
+      { "cuando": "Tres semanas antes", "que": "Revisá tu recibo de junio", "dias": 21 },
+      { "cuando": "Una semana antes", "que": "Hacé la cuenta con tu mejor sueldo", "dias": 7 },
+      { "cuando": "El día antes", "que": "Chequeá que te lo depositen completo", "dias": 1 }
+    ]
+  },
+  "captions": ["Tres cosas para hacer antes de cobrar.", "Guardalo para diciembre.", "¿Ya sabés cuánto te toca?"],
+  "hashtags": ["aguinaldo", "sueldo", "trabajo", "argentina", "finanzas"]
+}

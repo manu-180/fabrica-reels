@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "clave": "tres-errores-de-la-web",
+  "titulo": "Tres errores que espantan clientes",
+  "categoria": "errores",
+  "formato": "lista-de-errores",
+  "hooks": [
+    "Tres errores que te espantan clientes",
+    "Si tu web hace esto, perdés",
+    "Revisá esto en tu página hoy"
+  ],
+  "voz": "El teléfono escondido en el pie. Ponelo arriba, donde se ve sin buscar. Fotos que tardan en cargar. Achicalas y la página vuela. Un formulario eterno. Con nombre y mensaje alcanza para que te escriban.",
+  "contenido": {
+    "titulo": "Errores que espantan clientes",
+    "errores": [
+      { "error": "El teléfono escondido en el pie", "arreglo": "Ponelo arriba, donde se ve sin buscar" },
+      { "error": "Fotos que tardan en cargar", "arreglo": "Achicalas y la página vuela" },
+      { "error": "Un formulario eterno", "arreglo": "Con nombre y mensaje alcanza" }
+    ]
+  },
+  "captions": [
+    "Tres cosas chicas que hacen que alguien se vaya de tu web sin escribirte.",
+    "Ninguna cuesta mucho de arreglar y todas suman consultas.",
+    "¿Cuál de las tres tiene tu página?"
+  ],
+  "hashtags": ["diseñoweb", "paginaweb", "emprendedores", "pymes", "negociolocal"]
+}

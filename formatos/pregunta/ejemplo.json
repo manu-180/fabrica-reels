@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "clave": "necesito-web-si-tengo-instagram",
+  "titulo": "¿Necesito web si ya tengo Instagram?",
+  "categoria": "pregunta",
+  "formato": "pregunta",
+  "hooks": [
+    "Nos preguntaron esto y vale la pena",
+    "La pregunta que más nos llega",
+    "¿Instagram alcanza o hace falta web?"
+  ],
+  "voz": "¿Necesito una web si ya tengo Instagram? Sí, y te cuento por qué. Tu web es tuya, no de una red. Te encuentran en Google cuando te buscan. Y el cliente ve todo en un solo lugar, sin scrollear fotos viejas.",
+  "contenido": {
+    "pregunta": "¿Necesito una web si ya tengo Instagram?",
+    "respuesta": "Sí, y te cuento por qué",
+    "claves": [
+      "Tu web es tuya, no de una red",
+      "Te encuentran en Google",
+      "Todo en un solo lugar"
+    ]
+  },
+  "captions": ["La pregunta que más nos hacen, respondida en treinta segundos.", "Instagram suma. Tu web es la casa.", "¿Vos qué pensás?"],
+  "hashtags": ["diseñoweb", "paginaweb", "emprendedores", "pymes", "negociolocal"]
+}

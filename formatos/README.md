@@ -1,4 +1,4 @@
-# Formatos (F2a)
+# Formatos (F2a y F2b)
 
 Plantillas HyperFrames neutras de marca. Cada formato exporta lo de `docs/CONTRATO.md` § 5:
 `armar({ guion, hook, voz, salida, diseno, tema })`, `validar(guion)` (sin IO) y `layouts`.
@@ -8,7 +8,11 @@ Plantillas HyperFrames neutras de marca. Cada formato exporta lo de `docs/CONTRA
 | `chat` | `telefono`, `hoja` | La charla en un celular con teclado, o en la hoja con la cabecera grande; remate con cifra enorme |
 | `mito` | `hoja`, `panel` | Lo que se cree se achica (o su panel de tinta se levanta) y lo que es sube palabra por palabra |
 | `explicador` | `hoja`, `zoom` (guiones con `titulo`, `cuenta`, `comparacion`), `pantallas` (con `navegador`, `busqueda`, `celular-vs-compu`, `codigo`) | Bloques que entran cuando la voz dice su `frase` |
-| `antes-despues` | `web` | La web vieja con sus defectos marcados, el barrido a la nueva y la vuelta al celular |
+| `antes-despues` | `web`, `app` | `web`: la web vieja con sus defectos marcados (los subtítulos caen en su libro de visitas blanco, nunca sobre la foto pixelada), el barrido a la nueva y la vuelta al celular. `app`: el caos de quien da clases (planilla en la pared, grupo de mensajes, cuaderno de asistencia) y las pantallas reales de la app (`pantallas/`, capturas de sus videos de App Store) en un celular. Lo elige `antes.tipo` (`web` o `papel`) o, si no está, los defectos |
+| `lista-de-errores` | `pila`, `tarjetas`, `tachon` | Tres errores que se tachan cuando la voz termina de decirlos y su arreglo sube con un tilde: en una lista, en tarjetas que corren a la izquierda, o en carteles que el tachón parte al medio |
+| `pregunta` | `comentario`, `titular` | Una pregunta de comentario (sin usuario ni foto) y la respuesta de la cuenta colgada en hilo con su logo; o la pregunta enorme entre comillas y la respuesta que la empuja |
+| `comparador` | `columnas`, `rondas` | A contra B fila por fila (tilde y cruz cuando la voz dice cada punto) que se resuelve: la columna que pierde se va y la que gana toma el centro; o una ronda por punto y el veredicto con la etiqueta ganadora enorme |
+| `cuenta-regresiva` | `calendario`, `reloj` | Tres pasos hacia una fecha (`AAAA-MM-DD`): el mes con un anillo que salta de día en día y el día que se llena del acento; o un odómetro que rueda los días que faltan y le deja el lugar a la fecha |
 | `_cierre` | `tipografico`, `buscador` | El cierre genérico (no es un formato de guion; ver `_cierre/README.md`) |
 
 ## El tema (`_comun/tema.mjs`, congelado)
@@ -49,6 +53,15 @@ primero), `#hoja` (adentro de `#riel`, viaja con la cámara: mide ≥ 7 pantalla
 adentro de `#camara`) y `#luces` (viñeta y grano, encima, z-index 40). `cuaderno.mjs` es el de calcular. Los
 de F2b (`grilla`, `luz`, `pizarra`, `papel`) se suman con la misma forma; mientras no existan, `motivoDe` usa
 `base.mjs` (luz, contraluz, grilla ancha, viñeta y grano: nunca un fondo plano).
+
+| Motivo | Qué es | Cuenta |
+|---|---|---|
+| `grilla` | Plano técnico: grilla mayor y menor, cruces en las intersecciones, piso en perspectiva y foco | APEX |
+| `luz` | Luz de estudio: haces en diagonal, clave arriba a la derecha, rebote abajo, polvo en el aire | APEX |
+| `pizarra` | Pizarrón con borrones de tiza, polvo y renglones guía (en paleta clara, pizarra blanca) | Assistify |
+| `papel` | Hoja de carpeta con renglones, margen en el acento, fibras y la hoja de abajo corrida | Assistify |
+
+Las texturas que comparten (grano, fibras) viven en `motivos/textura.mjs`, que no es un motivo.
 
 ## Probar
 

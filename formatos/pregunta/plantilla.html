@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>pregunta</title>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/datos.js"></script>
+<script src="assets/comun/subtitulos.js"></script>
+<script src="assets/comun/cinetica.js"></script>
+<style>
+{{css}}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--fondo); font-family: var(--f-cuerpo); color: var(--tinta); }
+.estacion { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+.bloque { position: absolute; left: 90px; width: 900px; }
+.titular { font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 1.02; letter-spacing: calc(var(--tracking-titulo) * 1.33); color: var(--tinta); text-wrap: balance; }
+.leer .wi { opacity: 0.3; }
+.cuerpo { font-family: var(--f-cuerpo); font-weight: 600; line-height: 1.22; letter-spacing: -0.01em; color: var(--tinta); text-wrap: pretty; }
+.caja { position: absolute; left: 70px; width: 940px; border-radius: calc(var(--radio) + 14px); padding: 10px; background: var(--linea); box-shadow: 0 36px 80px var(--sombra-1), 0 8px 22px var(--sombra-2); transform-origin: 50% 0%; }
+.caja .nucleo { position: relative; border-radius: calc(var(--radio) + 4px); background: var(--superficie); padding: 44px 48px 40px; box-shadow: inset 0 1px 0 var(--luz); }
+.fila-meta { display: flex; align-items: center; gap: 22px; }
+.avatar { flex: none; width: 84px; height: 84px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--f-titulo); font-weight: var(--p-titulo); font-size: 46px; color: var(--tenue);
+  background: radial-gradient(circle at 35% 30%, var(--fondo), var(--linea-fuerte)); box-shadow: inset 0 0 0 2px var(--linea-fuerte); }
+.avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.meta { font-family: var(--f-mono); font-weight: var(--p-mono); font-size: 30px; letter-spacing: 0.03em; color: var(--tenue); }
+.meta b { font-weight: inherit; color: var(--tinta); }
+.corazon { margin-left: auto; width: 46px; height: 46px; }
+.corazon path { fill: none; stroke: var(--tenue); stroke-width: 3.5; stroke-linejoin: round; }
+.texto-q { margin-top: 30px; }
+.hilo { position: absolute; left: 160px; width: 4px; border-radius: 2px; background: var(--linea-fuerte); transform-origin: 50% 0%; }
+.clave { display: flex; align-items: flex-start; gap: 22px; margin-top: 26px; }
+.clave svg { flex: none; width: 50px; height: 50px; margin-top: 2px; }
+.check path { fill: none; stroke: var(--sobre-acento); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.check circle { fill: var(--acento); }
+.comillas { position: absolute; font-family: var(--f-titulo); font-weight: var(--p-titulo); line-height: 0.7; color: transparent; -webkit-text-stroke: 5px var(--acento); opacity: 0.55; }
+.lista { position: absolute; left: 90px; width: 900px; }
+.lista .item { position: relative; display: flex; gap: 26px; align-items: baseline; padding: 26px 0; }
+.lista .item .raya { position: absolute; left: 0; top: 0; width: 900px; height: 2px; background: var(--linea-fuerte); transform-origin: 0% 50%; }
+.lista .item i { flex: none; display: block; width: 16px; height: 16px; border-radius: 50%; background: var(--acento); transform: translateY(-8px); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="{{duracion}}">
+  {{fondo}}
+  <div id="camara" data-layout-allow-overflow>
+    {{profundo}}
+    <div id="riel" data-layout-allow-overflow>
+      {{hoja}}
+      <div id="escenas" data-layout-allow-overflow data-layout-allow-overlap></div>
+    </div>
+  </div>
+  {{luces}}
+  <div id="subs"></div>
+  {{audio}}
+</div>
+<script>
+Subtitulos.fuentes().then(function () {
+  var R = window.REEL;
+  var L = R.layout;
+  var W = 1080, H = 1920, PISO = 1190;
+  gsap.defaults({ lazy: false });
+  var tl = gsap.timeline({ paused: true });
+  var cam = document.getElementById("camara");
+  var riel = document.getElementById("riel");
+  var profundo = document.getElementById("profundo");
+  var escenas = document.getElementById("escenas");
+  var NS = "http://www.w3.org/2000/svg";
+
+  function estado(el, v) { tl.fromTo(el, v, Object.assign({}, v, { duration: 0.001, ease: "none" }), 0); }
+  function nuevo(tag, cls, padre) { var e = document.createElement(tag); if (cls) e.className = cls; padre.appendChild(e); return e; }
+  function rotulo(padre, t, x, y) { var r = nuevo("div", "rotulo", padre); r.innerHTML = "<i></i>"; r.appendChild(document.createTextNode(t)); r.style.position = "absolute"; r.style.left = x + "px"; r.style.top = y + "px"; return r; }
+  function svg(padre, vb, cls) { var s = document.createElementNS(NS, "svg"); s.setAttribute("viewBox", vb); if (cls) s.setAttribute("class", cls); padre.appendChild(s); return s; }
+  function check(padre) {
+    var s = svg(padre, "0 0 52 52", "check");
+    var c = document.createElementNS(NS, "circle"); c.setAttribute("cx", "26"); c.setAttribute("cy", "26"); c.setAttribute("r", "26"); s.appendChild(c);
+    var p = document.createElementNS(NS, "path"); p.setAttribute("d", "M15 27 L23 34 L37 19"); s.appendChild(p);
+    return { svg: s, circulo: c, trazo: p };
+  }
+  function dibujarCheck(ch, t) {
+    tl.fromTo(ch.circulo, { scale: 0.4, transformOrigin: "50% 50%", opacity: 0 }, { scale: 1, opacity: 1, duration: 0.32, ease: "back.out(1.7)" }, t);
+    tl.fromTo(ch.trazo, { strokeDasharray: 40, strokeDashoffset: 40 }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, t + 0.1);
+  }
+  function encender(wis, luces, desde) {
+    wis.forEach(function (w, k) {
+      var t = luces ? luces[k] : desde + k * 0.1;
+      tl.to(w, { opacity: 1, duration: 0.16, ease: "power1.out" }, Math.max(desde + 0.3 + k * 0.02, t - 1 / 30));
+    });
+  }
+  function resaltar(wi, t) {
+    var w = wi.parentElement;
+    w.style.backgroundImage = "linear-gradient(" + R.resalte.fondo + "," + R.resalte.fondo + ")";
+    w.style.backgroundRepeat = "no-repeat"; w.style.backgroundPosition = "0% 55%"; w.style.borderRadius = "16px";
+    w.style.paddingLeft = "0.1em"; w.style.paddingRight = "0.1em";
+    tl.fromTo(w, { backgroundSize: "0% 76%" }, { backgroundSize: "100% 76%", duration: 0.5, ease: "power3.out" }, t);
+    tl.set(wi, { color: R.resalte.tinta }, t + 0.12);
+  }
+
+  // ---- Portada ----
+  var portada = nuevo("div", "estacion", escenas);
+  var g = nuevo("div", "bloque", portada);
+  Cinetica.gancho(tl, g, { palabras: R.hook.palabras, max: 172, min: 96, lineas: 4, ancho: 900, alto: 760, resalte: R.resalte, tinta: R.tinta, resaltar: R.hook.resaltar });
+  g.style.top = (L === "titular" ? 420 : 760 - g.offsetHeight / 2) + "px";
+  tl.fromTo(cam, { scale: 1.05 }, { scale: 1, duration: Math.max(1.2, R.hook.fin), ease: "power2.out" }, 0);
+
+  if (L === "comentario") {
+    // La pregunta llega como un comentario; la respuesta de la cuenta se cuelga debajo, en hilo.
+    var e = nuevo("div", "estacion", escenas);
+    e.style.top = H + "px";
+    tl.to(riel, { y: -H, duration: 0.8, ease: "power3.inOut" }, R.entra);
+    tl.to(profundo, { y: -H * 0.45, duration: 0.8, ease: "power3.inOut" }, R.entra);
+    var rq = rotulo(e, R.t.te_preguntaron, 90, 300);
+    var cq = nuevo("div", "caja", e); cq.style.top = "380px";
+    var nq = nuevo("div", "nucleo", cq);
+    var mq = nuevo("div", "fila-meta", nq);
+    var av = nuevo("div", "avatar", mq); av.textContent = "?";
+    var me = nuevo("div", "meta", mq); me.textContent = R.t.comentario + " · " + R.t.hace;
+    var co = svg(mq, "0 0 46 46", "corazon");
+    var cp = document.createElementNS(NS, "path"); cp.setAttribute("d", "M23 39 C10 30 5 23 5 16 C5 10 10 6 15 6 C19 6 21 8 23 11 C25 8 27 6 31 6 C36 6 41 10 41 16 C41 23 36 30 23 39 Z"); co.appendChild(cp);
+    var tq = nuevo("div", "cuerpo texto-q leer", nq);
+    var wq = Cinetica.trocear(tq, R.pregunta.texto, { cifras: false });
+    Cinetica.ajustar(tq, { max: 84, min: 52, lineas: 5, ancho: 844 });
+    var altoQ = cq.offsetHeight;
+    tl.fromTo(rq, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, R.entra + 0.4);
+    tl.fromTo(cq, { opacity: 0, y: 70, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, R.entra + 0.35);
+    encender(wq, R.pregunta.luces, R.entra + 0.35);
+
+    // La respuesta: tarjeta con el logo de la cuenta.
+    var esc = 0.72;
+    var arribaR = 260 + altoQ * esc + 56;
+    var cr = nuevo("div", "caja", e); cr.style.top = arribaR + "px"; cr.style.left = "130px"; cr.style.width = "880px";
+    var nr = nuevo("div", "nucleo", cr);
+    var mr = nuevo("div", "fila-meta", nr);
+    var avr = nuevo("div", "avatar", mr); var img = nuevo("img", "", avr); img.src = R.logo; img.alt = "";
+    var mer = nuevo("div", "meta", mr); mer.innerHTML = "<b></b>"; mer.querySelector("b").textContent = R.t.respuesta;
+    var tr = nuevo("div", "titular leer", nr); tr.style.marginTop = "28px";
+    var wr = Cinetica.trocear(tr, R.respuesta.texto);
+    var tamR = Cinetica.ajustar(tr, { max: 104, min: 58, lineas: 3, ancho: 784 });
+    var items = R.claves.map(function (k) {
+      var f = nuevo("div", "clave", nr);
+      var ch = check(f);
+      var tx = nuevo("div", "cuerpo leer", f); tx.style.fontSize = "54px";
+      var ws = Cinetica.trocear(tx, k.texto, { cifras: false });
+      return { f: f, ch: ch, tx: tx, ws: ws, k: k };
+    });
+    // Si no entra arriba de los subtítulos, se achica la respuesta y después las claves.
+    var tamK = 54;
+    while (arribaR + cr.offsetHeight > PISO && (tamR > 54 || tamK > 36)) {
+      if (tamR > 54) { tamR -= 4; tr.style.fontSize = tamR + "px"; } else { tamK -= 2; items.forEach(function (it) { it.tx.style.fontSize = tamK + "px"; }); }
+    }
+    var hilo = nuevo("div", "hilo", e); hilo.style.top = (260 + altoQ * esc) + "px"; hilo.style.height = "56px";
+    var T = R.respuesta.t;
+    tl.to(cq, { y: 260 - 380, scale: esc, duration: 0.6, ease: "power3.inOut" }, T);
+    tl.to(rq, { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, T);
+    tl.fromTo(hilo, { scaleY: 0 }, { scaleY: 1, duration: 0.35, ease: "power2.out" }, T + 0.35);
+    tl.fromTo(cr, { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, T + 0.45);
+    estado(wr, { opacity: 0 });
+    Cinetica.subir(tl, wr, T + 0.6, { stagger: 0.04, opacidad: 0.3 });
+    encender(wr, R.respuesta.luces, T + 0.6);
+    resaltar(wr[wr.length - 1], Math.max(T + 1.2, (R.respuesta.luces ? R.respuesta.luces[wr.length - 1] : T + 1.2) + 0.1));
+    items.forEach(function (it) {
+      estado(it.f, { opacity: 0 });
+      tl.fromTo(it.f, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, it.k.t);
+      dibujarCheck(it.ch, it.k.t + 0.05);
+      encender(it.ws, it.k.luces, it.k.t);
+    });
+  }
+
+  if (L === "titular") {
+    // Editorial: la pregunta enorme entre comillas; la respuesta la empuja hacia la izquierda.
+    var q = nuevo("div", "estacion", escenas); q.style.left = W + "px";
+    var cm = nuevo("div", "comillas", q); cm.textContent = "”"; cm.style.fontSize = "900px"; cm.style.left = "520px"; cm.style.top = "860px";
+    var rq2 = rotulo(q, R.t.te_preguntaron, 90, 320);
+    var tq2 = nuevo("div", "titular leer bloque", q); tq2.style.top = "410px";
+    var wq2 = Cinetica.trocear(tq2, R.pregunta.texto, { cifras: false });
+    Cinetica.ajustar(tq2, { max: 124, min: 70, lineas: 6, ancho: 900 });
+    tl.to(riel, { x: -W, duration: 0.8, ease: "power3.inOut" }, R.entra);
+    tl.to(profundo, { x: -W * 0.4, duration: 0.8, ease: "power3.inOut" }, R.entra);
+    tl.fromTo(cm, { scale: 1.15, transformOrigin: "20% 20%" }, { scale: 1, duration: 1.4, ease: "power2.out" }, R.entra);
+    encender(wq2, R.pregunta.luces, R.entra + 0.2);
+
+    var a = nuevo("div", "estacion", escenas); a.style.left = (2 * W) + "px";
+    var ra = rotulo(a, R.t.respuesta, 90, 320);
+    var ta = nuevo("div", "titular leer bloque", a); ta.style.top = "410px";
+    var wa = Cinetica.trocear(ta, R.respuesta.texto);
+    var tamA = Cinetica.ajustar(ta, { max: 150, min: 72, lineas: 4, ancho: 900 });
+    var lista = nuevo("div", "lista", a);
+    var filas = R.claves.map(function (k) {
+      var f = nuevo("div", "item", lista);
+      nuevo("div", "raya", f); nuevo("i", "", f);
+      var tx = nuevo("div", "cuerpo leer", f); tx.style.fontSize = "64px";
+      var ws = Cinetica.trocear(tx, k.texto, { cifras: false });
+      return { f: f, tx: tx, ws: ws, k: k };
+    });
+    function acomodar() { lista.style.top = (410 + ta.offsetHeight + 56) + "px"; return 410 + ta.offsetHeight + 56 + lista.offsetHeight; }
+    var tamL = 64;
+    while (acomodar() > PISO && (tamA > 72 || tamL > 38)) {
+      if (tamA > 80) { tamA -= 6; ta.style.fontSize = tamA + "px"; } else { tamL -= 2; filas.forEach(function (f) { f.tx.style.fontSize = tamL + "px"; }); }
+    }
+    var T2 = R.respuesta.t;
+    tl.to(riel, { x: -2 * W, duration: 0.8, ease: "power3.inOut" }, T2);
+    tl.to(profundo, { x: -2 * W * 0.4, duration: 0.8, ease: "power3.inOut" }, T2);
+    estado(wa, { opacity: 0 });
+    Cinetica.subir(tl, wa, T2 + 0.45, { stagger: 0.045, opacidad: 0.3 });
+    encender(wa, R.respuesta.luces, T2 + 0.45);
+    resaltar(wa[wa.length - 1], Math.max(T2 + 1.1, (R.respuesta.luces ? R.respuesta.luces[wa.length - 1] : T2 + 1.1) + 0.1));
+    filas.forEach(function (f) {
+      estado([f.f.querySelector(".raya"), f.f.querySelector("i"), f.tx], { opacity: 0 });
+      tl.fromTo(f.f.querySelector(".raya"), { scaleX: 0, opacity: 1 }, { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.inOut" }, f.k.t - 0.1);
+      tl.fromTo(f.f.querySelector("i"), { scale: 0, opacity: 1 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(1.7)" }, f.k.t);
+      tl.fromTo(f.tx, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, f.k.t);
+      encender(f.ws, f.k.luces, f.k.t);
+    });
+  }
+
+  Subtitulos.montar(tl, { contenedor: document.getElementById("subs"), grupos: R.grupos, tono: R.tono, resalte: R.resalte, tinta: R.tinta });
+  tl.set({}, {}, R.duracion);
+  window.__timelines["main"] = tl;
+});
+</script>
+</body>
+</html>
