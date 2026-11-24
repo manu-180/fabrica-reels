@@ -118,11 +118,11 @@ Subtitulos.fuentes().then(function () {
     var cols = { a: nuevo("div", "col", e), b: nuevo("div", "col", e) };
     cols.a.style.left = "70px"; cols.b.style.left = "560px";
     var div = nuevo("div", "divisor", e);
-    var vs = nuevo("div", "vs", e); vs.textContent = R.t.contra; vs.style.left = "488px"; vs.style.top = "1068px";
+    var vs = nuevo("div", "vs", e); vs.textContent = R.t.contra; vs.style.left = "488px"; vs.style.top = "1080px";
     ["a", "b"].forEach(function (lado) {
       var cab = nuevo("div", "titular cab", cols[lado]);
       Cinetica.trocear(cab, R[lado], { cifras: false });
-      Cinetica.ajustar(cab, { max: 96, min: 52, lineas: 2, ancho: 420 });
+      Cinetica.ajustar(cab, { max: 96, min: 52, lineas: 2, ancho: 450 });
       tl.fromTo(cab, { opacity: 0, x: lado === "a" ? -40 : 40 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, R.entra + 0.4);
     });
     tl.fromTo(div, { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "power3.inOut" }, R.entra + 0.35);
@@ -131,11 +131,11 @@ Subtitulos.fuentes().then(function () {
     R.filas.forEach(function (f, k) {
       ["a", "b"].forEach(function (lado) {
         var c = nuevo("div", "celda", cols[lado]);
-        c.style.top = (530 + k * 200) + "px";
+        c.style.top = (530 + k * 210) + "px";
         var ic = icono(c, lado === GANA);
         var tx = nuevo("div", "cuerpo leer", c);
         var ws = Cinetica.trocear(tx, f[lado].texto, { cifras: false });
-        Cinetica.ajustar(tx, { max: 62, min: 40, lineas: 3, ancho: 386 });
+        Cinetica.ajustar(tx, { max: 56, min: 38, lineas: 3, ancho: 386 });
         estado(c, { opacity: 0 });
         tl.fromTo(c, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, f[lado].t);
         encender(ws, f[lado].luces, f[lado].t);
