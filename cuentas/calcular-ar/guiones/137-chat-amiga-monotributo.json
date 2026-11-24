@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "137-chat-amiga-monotributo",
+  "idea": "monotributo-chat-cuanto-pago",
+  "titulo": "La cuota del monotributo trae obra social",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "Mi amiga cree que el monotributo es impuesto",
+    "Lo que pagás de monotributo trae premio",
+    "Tu cuota de monotributo trae obra social"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Sofi",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Pago un montón de monotributo y es todo impuesto"
+      },
+      {
+        "de": "yo",
+        "texto": "No es todo impuesto"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y qué es entonces?"
+      },
+      {
+        "de": "yo",
+        "texto": "Impuesto, jubilación y obra social, en una sola cuota"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Tengo obra social?"
+      },
+      {
+        "de": "yo",
+        "texto": "Sí, te cubre a vos. A tu familia la sumás aparte"
+      },
+      {
+        "de": "ellos",
+        "texto": "Hace tres años que no la uso"
+      }
+    ],
+    "remate": "La cuota del monotributo incluye tu obra social"
+  },
+  "captions": [
+    "La cuota del monotributo tiene tres partes: el impuesto integrado, el aporte jubilatorio y el aporte a la obra social.",
+    "El aporte obligatorio de obra social cubre solo al titular. Para sumar a tu familia hay un aporte opcional por cada persona.",
+    "El impuesto integrado reemplaza al IVA y a Ganancias, y es la única parte que cambia entre servicios y venta.",
+    "Etiquetá a quien paga monotributo y nunca usó su obra social."
+  ],
+  "hashtags": [
+    "monotributo",
+    "monotributista",
+    "obrasocial",
+    "jubilacion",
+    "humor",
+    "emprendedores",
+    "freelance",
+    "argentina",
+    "impuestos",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: jubilación y obra social del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/jubilacion.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: categorías del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-chat-cuanto-pago"
+  ]
+}

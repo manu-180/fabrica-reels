@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "003-velocidad-tres-segundos",
+  "titulo": "Por qué tu página tiene que abrir rápido",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "tinta",
+  "hooks": [
+    "¿Cuánto tarda en abrir tu página?",
+    "Una página lenta espanta clientes",
+    "Abrí tu web con los datos del celular"
+  ],
+  "voz": "Más de la mitad de las visitas desde el celular se van si la página tarda más de tres segundos. Casi siempre la culpa es de fotos pesadas y código de más. Por eso achicamos cada imagen y cargamos primero lo que se ve. Así tu página abre al toque.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Más de la mitad",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Más de la mitad se va"
+        }
+      },
+      {
+        "frase": "tarda más de tres segundos",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tunegocio.com",
+          "estado": "lento"
+        }
+      },
+      {
+        "frase": "fotos pesadas y código de más",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Fotos pesadas, código de más"
+        }
+      },
+      {
+        "frase": "achicamos cada imagen",
+        "visual": {
+          "tipo": "codigo",
+          "lineas": [
+            "<img src=\"local.webp\"",
+            "  loading=\"lazy\"",
+            "  width=\"800\" height=\"600\"",
+            "  alt=\"Frente del local\">"
+          ]
+        }
+      },
+      {
+        "frase": "abre al toque",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tunegocio.com",
+          "estado": "rapido"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Si tu página tarda en abrir, la gente no espera: vuelve atrás y entra a la siguiente. Probala vos con los datos del celular, sin wifi, y fijate cuánto tarda.",
+    "Muchas páginas lentas tienen el mismo problema: fotos enormes subidas tal cual salieron de la cámara. Si las achicás y las cargás en orden, la página abre mucho más rápido.",
+    "Google lo midió: más de la mitad de las visitas desde el celular se pierden si la página tarda más de tres segundos en cargar. Cada foto pesada suma espera."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "velocidadweb",
+    "seo",
+    "desarrolloweb",
+    "tipsdenegocio"
+  ],
+  "fuente": "Google/SOASTA Research (2016), \"The Need for Mobile Speed\": el 53 % de las visitas desde el celular se abandonan si la página tarda más de 3 segundos en cargar.",
+  "tema": "velocidad",
+  "hechos": [
+    "velocidad-tres-segundos",
+    "carga-en-menos-de-2-segundos"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "155-inflacion-anual-como-se-mide",
+  "idea": "inflacion-anual-diciembre-a-diciembre",
+  "titulo": "Cómo se mide la inflación de un año",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "La inflación del año no arranca en enero",
+    "Cómo se mide la inflación anual",
+    "Diciembre contra diciembre"
+  ],
+  "voz": "La inflación de un año no se mide de enero a diciembre. Se mide de diciembre del año anterior a diciembre de ese año. Se divide un índice por el otro y se le resta uno. Y si el año no terminó, lo que ves es un acumulado parcial.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "de enero a diciembre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "De enero a diciembre: no"
+        }
+      },
+      {
+        "frase": "de diciembre del año anterior",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Diciembre contra diciembre"
+        }
+      },
+      {
+        "frase": "Se divide un índice",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Índice de este diciembre",
+              "valor": "A"
+            },
+            {
+              "concepto": "Índice del diciembre previo",
+              "valor": "B"
+            }
+          ],
+          "total": {
+            "concepto": "Inflación del año",
+            "valor": "A ÷ B − 1"
+          }
+        }
+      },
+      {
+        "frase": "un acumulado parcial",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Año sin cerrar: acumulado parcial"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La inflación anual se calcula con el índice de precios de diciembre del año dividido el de diciembre del año anterior, menos uno.",
+    "Si el año todavía no terminó, el número que ves es un acumulado parcial hasta el último mes publicado.",
+    "Las inflaciones mensuales no se suman: se multiplican. Por eso conviene hacer la cuenta con los índices oficiales.",
+    "Guardalo para la próxima discusión sobre la inflación del año."
+  ],
+  "hashtags": [
+    "inflacion",
+    "ipc",
+    "indec",
+    "precios",
+    "economia",
+    "inflacionanual",
+    "argentina",
+    "finanzaspersonales",
+    "datos",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "INDEC: IPC Nacional, nivel general (API oficial de series de tiempo)",
+      "url": "https://datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&format=json",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "inflacion",
+  "hechos": [
+    "inflacion-anual-diciembre-a-diciembre"
+  ]
+}

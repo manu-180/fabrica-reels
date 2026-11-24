@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "clave": "198-art-indemnizacion-mitos",
+  "titulo": "Accidente de trabajo: tres mitos de la indemnización",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "Accidente de trabajo: tres mitos de la indemnización",
+    "La ley no dice lo que creés",
+    "El piso de la ART, sin mitos"
+  ],
+  "voz": "La ley pone un techo a tu indemnización. No: un decreto de 2009 suprimió esos topes y los convirtió en un piso. El piso es el mismo de siempre. Falso: se actualiza cada seis meses según el promedio de los sueldos registrados. La aseguradora te paga en cuotas. La regla general es el pago único.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La ley pone un techo a tu indemnización",
+        "realidad": "El Decreto 1694/2009 suprimió los topes: hoy es un piso."
+      },
+      {
+        "mito": "El piso es el mismo de siempre",
+        "realidad": "Se actualiza cada seis meses por RIPTE, el índice de sueldos."
+      },
+      {
+        "mito": "La aseguradora te paga en cuotas",
+        "realidad": "La regla general es el pago único."
+      }
+    ]
+  },
+  "captions": [
+    "El texto de la Ley 24.557 todavía muestra un tope, pero el Decreto 1694/2009 lo suprimió y lo convirtió en un mínimo. Copiar la ley sin el decreto da lo opuesto de lo que rige.",
+    "El piso se actualiza cada seis meses por RIPTE (art. 17 bis de la Ley 26.773). La Superintendencia de Riesgos del Trabajo publica una resolución en marzo y otra en septiembre.",
+    "Desde la Ley 26.773, el principio general de la indemnización es el pago único, no la renta en cuotas.",
+    "Si tuviste un accidente, fijate qué resolución estaba vigente antes de hacer la cuenta."
+  ],
+  "hashtags": [
+    "art",
+    "accidentedetrabajo",
+    "riesgosdeltrabajo",
+    "indemnizacion",
+    "srt",
+    "trabajo",
+    "derechoslaborales",
+    "abogadolaboral",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Resolución SRT 39/2026 (Boletín Oficial)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346792",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 26.773, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/203798/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Decreto 1694/2009 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/155000-159999/159765/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.557 de Riesgos del Trabajo, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "art-piso-semestral",
+  "ventana": {
+    "desde": "09-01",
+    "hasta": "09-15"
+  },
+  "tema": "art",
+  "hechos": [
+    "art-piso-semestral"
+  ]
+}

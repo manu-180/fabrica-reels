@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "clave": "100-descuentos-de-ley-iguales",
+  "idea": "sueldo-descuentos-iguales-convenios",
+  "titulo": "Los descuentos de ley son iguales en todo convenio",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Por qué tu recibo descuenta distinto",
+    "Mismo bruto, distinto neto: el motivo",
+    "Lo único que cambia entre recibos"
+  ],
+  "voz": "Los descuentos de ley son los mismos en cualquier convenio. 11 por ciento de jubilación, 3 por ciento para PAMI y 3 por ciento de obra social. 17 en total. Lo que cambia de un recibo a otro es la cuota sindical, que va del 1 al 3 por ciento según el convenio.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Los descuentos de ley",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Descuentos de ley: iguales para todos"
+        }
+      },
+      {
+        "frase": "11 por ciento de jubilación",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Jubilación",
+              "valor": "11 %"
+            },
+            {
+              "concepto": "PAMI (Ley 19.032)",
+              "valor": "3 %"
+            },
+            {
+              "concepto": "Obra social",
+              "valor": "3 %"
+            }
+          ],
+          "total": {
+            "concepto": "Descuentos de ley",
+            "valor": "17 %"
+          }
+        }
+      },
+      {
+        "frase": "es la cuota sindical",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cuota sindical: del 1 % al 3 %"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Jubilación 11 %, PAMI 3 % y obra social 3 %: los descuentos de ley son los mismos para todo empleado en relación de dependencia, tenga el convenio que tenga.",
+    "¿Mismo bruto que un compañero de otro gremio y distinto neto? Mirá la cuota sindical: según el convenio va del 1 % al 3 %.",
+    "Si tu sueldo pasa la base máxima de aportes, por encima de ese tope el 17 % deja de crecer. Por eso a veces el descuento no da justo.",
+    "Guardalo para el próximo recibo: así separás lo que es de ley de lo que es de tu gremio."
+  ],
+  "hashtags": [
+    "recibodesueldo",
+    "sueldoneto",
+    "descuentos",
+    "aportes",
+    "cuotasindical",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 19.032: INSSJP / PAMI",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-19032-21581",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.241, art. 11: aporte jubilatorio (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/639/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/app/(ar)/sueldo-neto/page.tsx:52",
+    "src/app/(ar)/planillas/mi-sueldo/page.tsx:62",
+    "src/app/(ar)/aguinaldo/neto/page.tsx:51"
+  ],
+  "tema": "sueldo",
+  "hechos": [
+    "sueldo-descuentos-iguales-convenios"
+  ]
+}

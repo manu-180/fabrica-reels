@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "clave": "034-presupuesto-un-domingo",
+  "titulo": "The Sunday night quote request",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "A message on Sunday at eleven",
+    "The customer who texts you at night",
+    "When they ask for a quote on Sunday"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mark (closet quote)",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hi, sorry it's late. How much for a closet?"
+      },
+      {
+        "de": "yo",
+        "texto": "Hi! First thing tomorrow I'll send you details."
+      },
+      {
+        "de": "ellos",
+        "texto": "It's urgent, I need a ballpark now."
+      },
+      {
+        "de": "yo",
+        "texto": "Sure, it starts at the base model we posted."
+      },
+      {
+        "de": "ellos",
+        "texto": "Perfect, I'll confirm first thing tomorrow."
+      },
+      {
+        "de": "yo",
+        "texto": "Morning! Did you get a chance to check the sizes?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Actually someone gave me a metal wardrobe."
+      }
+    ],
+    "remate": "The urgency lasted until Monday morning"
+  },
+  "captions": [
+    "They text you in a panic after hours, you answer right away so you do not lose the sale, and then they vanish into thin air.",
+    "Having your work, sizes and options clear on your website saves you from answering other people's emergencies at midnight.",
+    "The classic customer who's in a huge rush on Sunday at eleven and has forgotten all about it by Monday."
+  ],
+  "hashtags": [
+    "smallbusiness",
+    "localbusiness",
+    "carpentry",
+    "customers",
+    "workhumor",
+    "shoplocal",
+    "webdesign",
+    "website",
+    "entrepreneur"
+  ],
+  "tema": "presupuesto",
+  "hechos": []
+}

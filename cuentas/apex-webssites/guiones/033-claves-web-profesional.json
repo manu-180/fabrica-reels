@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "clave": "033-claves-web-profesional",
+  "titulo": "The three things that make your website professional",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "arcilla",
+  "hooks": [
+    "A website is useless if you do this",
+    "Your website could be scaring customers off",
+    "Three common mistakes on business websites"
+  ],
+  "voz": "Having a website thrown together in a rush isn't enough. You need it to open instantly without making anyone wait. To read comfortably on any phone. And to have a clear button so people can message you directly, no runaround.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Having a website thrown together",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Thrown-together website",
+            "items": [
+              "Cluttered text",
+              "Slow to open",
+              "No clear info"
+            ]
+          },
+          "der": {
+            "titulo": "Well-planned website",
+            "items": [
+              "Loads instantly",
+              "Easy to read",
+              "Direct contact"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "open instantly without making anyone wait",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourgarage.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "comfortably on any phone",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Big buttons, readable text",
+          "compu": "Clean layout, sharp photos"
+        }
+      },
+      {
+        "frase": "clear button so people can",
+        "visual": {
+          "tipo": "codigo",
+          "lineas": [
+            "<a class=\"text-button\"",
+            "   href=\"sms:...\">",
+            "  Text us now",
+            "</a>"
+          ]
+        }
+      }
+    ]
+  },
+  "captions": [
+    "A website isn't just about being online. It's about the person who visits understanding fast what you do and being able to reach you right away.",
+    "If your website is slow or hard to read on a phone screen, the customer goes to someone else in two seconds.",
+    "Custom design means thinking about whoever's visiting your business: speed, clarity and direct contact without the hassle.",
+    "The secret to a useful website is in the simple details: it loads in a snap and it puts the way to reach you right there."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "localbusiness",
+    "entrepreneur",
+    "webdevelopment",
+    "shoplocal",
+    "onlinepresence",
+    "onlinesales"
+  ],
+  "tema": "claves-de-una-web",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

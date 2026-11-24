@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "clave": "025-chat-entre-de-la-espera",
+  "titulo": "Entré desde la lista de espera",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "teal",
+  "tema": "lista-espera",
+  "hooks": [
+    "¿Se liberó un lugar el jueves?",
+    "Entraste y nadie movió un dedo",
+    "La lista de espera hizo todo"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Juli, pilates",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, ¿se liberó algún lugar el jueves?"
+      },
+      {
+        "de": "yo",
+        "texto": "Fijate en la app"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ah, me llegó un aviso, dice confirmada"
+      },
+      {
+        "de": "yo",
+        "texto": "Alguien canceló y entraste vos"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y no tuviste que hacer nada?"
+      },
+      {
+        "de": "yo",
+        "texto": "Nada, me enteré igual que vos"
+      }
+    ],
+    "remate": "La lista de espera trabaja sola"
+  },
+  "captions": [
+    "En Assistify, cuando alguien cancela, el primero de la lista de espera con crédito entra solo y le llega el aviso al instante.",
+    "La clase le aparece confirmada en la app. El profe se entera igual que el alumno.",
+    "Etiquetá a tu compañera de pilates que siempre está en lista de espera."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "pilates",
+    "humor",
+    "listadeespera",
+    "clases",
+    "estudiodepilates"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "aviso-promocion",
+    "lista-espera-automatica"
+  ],
+  "idea": "entre-de-la-espera"
+}

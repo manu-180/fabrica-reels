@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "clave": "203-canasta-familia-tipo",
+  "idea": "canasta-familia-tipo-3-09",
+  "titulo": "La familia tipo no son cuatro personas",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "La familia tipo no son cuatro",
+    "Cómo se mide si un hogar es pobre",
+    "Cuatro personas, tres coma cero nueve"
+  ],
+  "voz": "Para medir la pobreza no se cuentan personas. Se cuentan adultos equivalentes. Un varón de treinta y cinco vale uno. Una mujer de treinta y uno, cero setenta y siete. Un chico de seis, cero sesenta y cuatro, y uno de ocho, cero sesenta y ocho. Esa familia suma tres coma cero nueve, no cuatro.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Se cuentan adultos equivalentes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Se cuentan adultos equivalentes"
+        }
+      },
+      {
+        "frase": "Una mujer de treinta",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Varón de 35 años",
+              "valor": "1,00"
+            },
+            {
+              "concepto": "Mujer de 31 años",
+              "valor": "0,77"
+            },
+            {
+              "concepto": "Chico de 6 años",
+              "valor": "0,64"
+            },
+            {
+              "concepto": "Chico de 8 años",
+              "valor": "0,68"
+            }
+          ],
+          "total": {
+            "concepto": "Adultos equivalentes",
+            "valor": "3,09"
+          }
+        }
+      },
+      {
+        "frase": "Esa familia suma tres",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "3,09 adultos, no 4 personas"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El INDEC no mide la canasta por persona: usa adultos equivalentes. Un varón de 30 a 60 años vale 1 y el resto se pondera por sexo y edad.",
+    "La familia tipo del INDEC (varón de 35, mujer de 31 y chicos de 6 y 8 años) suma 3,09 adultos equivalentes.",
+    "La línea de pobreza de un hogar es la canasta básica total de un adulto equivalente multiplicada por los adultos equivalentes del hogar.",
+    "Hacé la cuenta con tu hogar: cada integrante pesa distinto."
+  ],
+  "hashtags": [
+    "canastabasica",
+    "pobreza",
+    "indec",
+    "familia",
+    "economia",
+    "inflacion",
+    "datos",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "INDEC: Metodología N° 22, la medición de la pobreza y la indigencia",
+      "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/EPH_metodologia_22_pobreza.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "canasta-basica",
+  "hechos": [
+    "canasta-familia-tipo-3-09"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "clave": "101-descuentos-del-recibo",
+  "idea": "sueldo-aportes-no-impuestos",
+  "titulo": "Lo que te descuentan del sueldo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Lo que te descuentan no son impuestos",
+    "Tu recibo esconde tres aportes",
+    "Adónde va lo que te descuentan"
+  ],
+  "voz": "Del sueldo bruto te descuentan diecisiete por ciento, y no son impuestos. Son aportes. El once va a tu jubilación. Tres van al PAMI, la obra social de los jubilados. Y otros tres van a tu obra social. Ganancias es aparte y solo aparece en sueldos altos.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "te descuentan diecisiete por ciento",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "17 % de aportes de ley"
+        }
+      },
+      {
+        "frase": "El once va a",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Jubilación",
+              "valor": "11 %"
+            },
+            {
+              "concepto": "PAMI",
+              "valor": "3 %"
+            },
+            {
+              "concepto": "Obra social",
+              "valor": "3 %"
+            }
+          ],
+          "total": {
+            "concepto": "Aportes del recibo",
+            "valor": "17 %"
+          }
+        }
+      },
+      {
+        "frase": "Ganancias es aparte",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ganancias va aparte, en sueldos altos"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "De cada sueldo bruto se descuenta un 17 %: 11 % para tu jubilación, 3 % para el PAMI y 3 % para tu obra social. Son aportes a la seguridad social, no impuestos.",
+    "La cuota sindical solo se descuenta si estás afiliado, y la retención de Ganancias recién aparece con sueldos altos. Lo demás de tu recibo son aportes.",
+    "Los aportes tienen un tope: si tu bruto pasa la base máxima, el 17 % se calcula solo hasta ese tope.",
+    "Agarrá tu último recibo y buscá estos tres renglones. Si falta alguno, preguntá por qué."
+  ],
+  "hashtags": [
+    "sueldoneto",
+    "recibodesueldo",
+    "aportes",
+    "jubilacion",
+    "obrasocial",
+    "sueldo",
+    "trabajo",
+    "argentina",
+    "empleados",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.241 del Sistema Integrado de Jubilaciones y Pensiones (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/639/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "sueldo",
+  "hechos": [
+    "sueldo-aportes-no-impuestos"
+  ]
+}

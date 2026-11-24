@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "clave": "154-empleada-sin-retiro-vacaciones",
+  "idea": "empleada-domestica-vacaciones-sin-retiro",
+  "titulo": "Vacaciones de la empleada sin retiro",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Vacaciones de tu empleada sin retiro",
+    "Lo que se paga antes de sus vacaciones",
+    "Empleada sin retiro: el detalle de vacaciones"
+  ],
+  "voz": "Tu empleada sin retiro tiene vacaciones según su antigüedad al 31 de diciembre. Con más de seis meses y hasta cinco años, son 14 días corridos. Y hay un detalle: la habitación y la comida que le das se le pagan en plata antes de que empiecen las vacaciones.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "según su antigüedad al",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Según la antigüedad al 31 de diciembre"
+        }
+      },
+      {
+        "frase": "son 14 días corridos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hasta 5 años: 14 días corridos"
+        }
+      },
+      {
+        "frase": "la habitación y la comida",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Habitación y comida, en plata"
+        }
+      },
+      {
+        "frase": "antes de que empiecen",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Antes de que empiecen"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En casas particulares las vacaciones van por antigüedad al 31 de diciembre: 14 días corridos hasta 5 años, 21 hasta 10, 28 hasta 20 y 35 con más de 20.",
+    "Si es sin retiro, la habitación y la comida que pone el empleador se le pagan en dinero antes de que empiecen las vacaciones.",
+    "Si todavía no llegó a los 6 meses de trabajo, le corresponde un día de descanso por cada 20 días trabajados.",
+    "Guardalo para cuando organices las vacaciones de verano en tu casa."
+  ],
+  "hashtags": [
+    "empleadadomestica",
+    "casasparticulares",
+    "vacaciones",
+    "sinretiro",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleadores",
+    "hogar",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.844 de Casas Particulares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/casas-particulares.ts:351"
+  ],
+  "tema": "empleada-domestica",
+  "hechos": [
+    "empleada-domestica-vacaciones-sin-retiro"
+  ]
+}

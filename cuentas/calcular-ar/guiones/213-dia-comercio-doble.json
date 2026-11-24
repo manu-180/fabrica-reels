@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "213-dia-comercio-doble",
+  "titulo": "Si trabajás el día de comercio, cobrás doble",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Trabajás el día de comercio: cobrás doble",
+    "El día del gremio se paga dos veces",
+    "Cuánto vale trabajar el día de comercio"
+  ],
+  "voz": "Si trabajás el Día del Empleado de Comercio, ese día se paga doble. La ley lo asimila a un feriado nacional. Cobrás la remuneración normal más una cantidad igual. No es un recargo sobre las horas: es el día pagado dos veces. Con sueldo variable, se saca un promedio.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "ese día se paga doble",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ese día se paga doble"
+        }
+      },
+      {
+        "frase": "a un feriado nacional",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Como un feriado nacional"
+        }
+      },
+      {
+        "frase": "más una cantidad igual",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Día normal",
+              "valor": "1 día"
+            },
+            {
+              "concepto": "Cantidad igual",
+              "valor": "+ 1 día"
+            }
+          ],
+          "total": {
+            "concepto": "Lo que cobrás",
+            "valor": "2 días"
+          }
+        }
+      },
+      {
+        "frase": "se saca un promedio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sueldo variable: se promedia"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Art. 166 de la LCT: quien trabaja un feriado cobra la remuneración normal de los días laborables más una cantidad igual.",
+    "El Día del Empleado de Comercio se paga con esas reglas porque el art. 2 de la Ley 26.541 lo asimila a feriado nacional.",
+    "Con sueldo a destajo se promedian los 6 días trabajados anteriores; con otras formas variables, los 30 días anteriores (art. 169).",
+    "Guardalo por si te toca trabajar ese día."
+  ],
+  "hashtags": [
+    "diadelempleadodecomercio",
+    "comercio",
+    "empleadosdecomercio",
+    "feriado",
+    "sueldo",
+    "septiembre",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.541: Día del Empleado de Comercio (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161502/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "dia-comercio-doble",
+  "ventana": {
+    "desde": "09-15",
+    "hasta": "09-30"
+  },
+  "tema": "dia-comercio",
+  "hechos": [
+    "dia-comercio-doble"
+  ]
+}

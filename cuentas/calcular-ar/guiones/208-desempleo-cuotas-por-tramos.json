@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "clave": "208-desempleo-cuotas-por-tramos",
+  "idea": "desempleo-baja-por-tramos",
+  "titulo": "El seguro de desempleo baja por tramos",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "El seguro de desempleo baja con el tiempo",
+    "Desempleo: por qué la cuota se achica",
+    "Cuántas cuotas de desempleo te tocan"
+  ],
+  "voz": "La prestación por desempleo no es pareja. Las primeras cuatro cuotas se cobran enteras. De la quinta a la octava, el 85 por ciento. De la novena a la duodécima, el 70 por ciento. Y cuántas cobrás depende de los meses que aportaste en los tres años anteriores.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "La prestación por desempleo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No es pareja: baja por tramos"
+        }
+      },
+      {
+        "frase": "Las primeras cuatro cuotas",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Cuotas 1 a 4",
+              "valor": "100 %"
+            },
+            {
+              "concepto": "Cuotas 5 a 8",
+              "valor": "85 %"
+            },
+            {
+              "concepto": "Cuotas 9 a 12",
+              "valor": "70 %"
+            }
+          ],
+          "total": {
+            "concepto": "Máximo",
+            "valor": "12 cuotas"
+          }
+        }
+      },
+      {
+        "frase": "depende de los meses",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "6 a 11 meses aportados",
+              "valor": "2 cuotas"
+            },
+            {
+              "concepto": "12 a 23 meses",
+              "valor": "4 cuotas"
+            },
+            {
+              "concepto": "24 a 35 meses",
+              "valor": "8 cuotas"
+            }
+          ],
+          "total": {
+            "concepto": "36 meses o más",
+            "valor": "12 cuotas"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La prestación por desempleo se cobra entera las primeras 4 cuotas, al 85 % de la 5 a la 8 y al 70 % de la 9 a la 12.",
+    "Cuántas cuotas te tocan depende de los meses aportados en los 3 años anteriores al cese: con 6 a 11 meses, 2 cuotas; con 36 o más, 12.",
+    "Si tenés 45 años o más, el Decreto 267/2006 suma 6 cuotas al 70 % de la prestación original.",
+    "Guardalo para planificar los meses que vienen si te quedaste sin trabajo."
+  ],
+  "hashtags": [
+    "desempleo",
+    "segurodedesempleo",
+    "anses",
+    "despido",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.013, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "desempleo",
+  "hechos": [
+    "desempleo-baja-por-tramos"
+  ]
+}

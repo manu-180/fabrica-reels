@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "clave": "012-candadito-https",
+  "titulo": "El candadito de tu página y por qué importa",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "crema",
+  "hooks": [
+    "¿Tu página tiene el candadito?",
+    "Sin candadito, tu página parece peligrosa",
+    "El aviso que espanta a tus clientes"
+  ],
+  "voz": "Ese candadito al lado de la dirección significa HTTPS: lo que tu cliente escribe en la página viaja cifrado. Si no lo tiene, el navegador avisa que la página no es segura y nadie quiere dejar sus datos ahí. Todas nuestras páginas salen con el candadito puesto.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "significa HTTPS",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Candadito: HTTPS activo"
+        }
+      },
+      {
+        "frase": "viaja cifrado",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sin HTTPS",
+            "items": [
+              "Datos a la vista",
+              "Aviso de sitio no seguro"
+            ]
+          },
+          "der": {
+            "titulo": "Con HTTPS",
+            "items": [
+              "Datos cifrados",
+              "Candadito en la barra"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "no es segura",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Aviso: sitio no seguro"
+        }
+      },
+      {
+        "frase": "con el candadito puesto",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tunegocio.com",
+          "estado": "rapido"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El candadito al lado de la dirección dice que tu página usa HTTPS: lo que tus clientes escriben, como su teléfono o su mail, viaja cifrado. Sin eso, el navegador les avisa que tu página no es segura.",
+    "Desde 2018, Chrome marca como no seguras a las páginas sin HTTPS. Si la tuya todavía no lo tiene, tus clientes ven el aviso antes que tus productos.",
+    "Un formulario de contacto sin HTTPS es como dictar tus datos a los gritos en un bar. Cualquiera que esté en el medio los podría escuchar."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "seguridadweb",
+    "https",
+    "ciberseguridad",
+    "desarrolloweb",
+    "confianza"
+  ],
+  "fuente": "Chromium Blog (2018): desde Chrome 68, todas las páginas HTTP se marcan como \"No seguro\".",
+  "tema": "seguridad",
+  "hechos": []
+}

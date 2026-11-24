@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "clave": "015-turnos-online",
+  "titulo": "Turnos online: chau al ida y vuelta por mensaje",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "bosque",
+  "hooks": [
+    "¿Das turnos por WhatsApp todo el día?",
+    "Dejá de dar turnos por mensaje",
+    "Tu agenda puede llenarse mientras dormís"
+  ],
+  "voz": "¿Tenés a las cinco? ¿Y el jueves? ¿Y más tarde? Cada turno por mensaje es un ida y vuelta que te come la tarde. Con turnos online, tu cliente ve los horarios libres, elige el suyo y le llega un recordatorio. Vos te enterás cuando ya está agendado.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "un ida y vuelta",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ida y vuelta, todo el día"
+        }
+      },
+      {
+        "frase": "ve los horarios libres",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Turnos por mensaje",
+            "items": [
+              "Preguntas a toda hora",
+              "Te olvidás de anotar",
+              "Huecos sin llenar"
+            ]
+          },
+          "der": {
+            "titulo": "Turnos online",
+            "items": [
+              "Elige su horario",
+              "Recordatorio automático",
+              "Agenda siempre al día"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "le llega un recordatorio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Recordatorio: tu turno es mañana"
+        }
+      },
+      {
+        "frase": "ya está agendado",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Nuevo turno: jueves 17 h"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Cada turno que das por mensaje trae varias idas y vueltas: qué día, qué hora, si hay otro más tarde. Con turnos online, tu cliente elige y vos te ocupás de atender.",
+    "Los turnos online también le mandan un recordatorio a tu cliente, así se olvida menos y te quedan menos huecos en la agenda.",
+    "Peluquerías, consultorios, estudios, talleres: cualquier negocio que trabaja con horarios gana tiempo cuando el cliente se agenda solo."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "turnosonline",
+    "agendaonline",
+    "productividad",
+    "atencionalcliente",
+    "consultorios"
+  ],
+  "tema": "turnos-online",
+  "hechos": []
+}

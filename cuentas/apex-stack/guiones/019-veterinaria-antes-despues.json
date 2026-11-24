@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "019-veterinaria-antes-despues",
+  "titulo": "La página de una veterinaria, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "arcilla",
+  "hooks": [
+    "¿Encontrás la guardia en tu página?",
+    "La página que nadie quiere ver de urgencia",
+    "Cuando es urgente, cada toque cuenta"
+  ],
+  "voz": "Cuando tu perro se enferma a la noche, no querés buscar el teléfono entre huellitas animadas. En la versión nueva de esta veterinaria, la guardia está arriba de todo con un botón que llama directo. Vacunas, turnos y horarios quedan a un toque.",
+  "contenido": {
+    "negocio": {
+      "rubro": "veterinaria",
+      "nombre": "Veterinaria Hocico",
+      "lema": "Clínica, vacunas y guardia"
+    },
+    "antes": {
+      "defectos": [
+        "Fondo lleno de huellitas",
+        "Teléfono escondido abajo",
+        "Sin horario de guardia"
+      ]
+    },
+    "despues": {
+      "titular": "Guardia y turnos para tu mascota",
+      "boton": "Llamar a la guardia",
+      "secciones": [
+        "Guardia",
+        "Vacunas",
+        "Turnos"
+      ]
+    }
+  },
+  "captions": [
+    "El que entra a la página de una veterinaria muchas veces está asustado y apurado. Lo primero que tiene que ver es cómo llegar a la guardia.",
+    "Fondos con huellitas, música y el teléfono al final: mucha onda, poca ayuda. En una urgencia, un botón grande que llame directo vale más que cualquier animación.",
+    "Vacunas, castraciones, baño y turnos: si cada servicio tiene su lugar en la página, te ahorrás explicar lo mismo por teléfono todo el día."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "veterinaria",
+    "mascotas",
+    "antesydespues",
+    "rediseñoweb",
+    "comerciolocal"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

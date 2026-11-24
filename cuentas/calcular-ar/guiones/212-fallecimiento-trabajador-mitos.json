@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "clave": "212-fallecimiento-trabajador-mitos",
+  "idea": "fallecimiento-mitad",
+  "titulo": "Si muere un trabajador: qué cobra la familia",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Qué cobra la familia de un trabajador",
+    "Tres mitos de la indemnización por fallecimiento",
+    "Lo que la familia no sabe que cobra"
+  ],
+  "voz": "Si muere un trabajador, la familia cobra toda la indemnización. No: cobra la mitad de la indemnización por antigüedad. Si cobra un seguro, no cobra esto. Falso: se suma, es independiente. Lo demás se pierde. Tampoco: el aguinaldo y las vacaciones proporcionales también se pagan.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La familia cobra toda la indemnización",
+        "realidad": "Cobra la mitad de la indemnización por antigüedad."
+      },
+      {
+        "mito": "Si cobra un seguro, no cobra esto",
+        "realidad": "Se suma: es independiente de seguros y de la aseguradora de riesgos."
+      },
+      {
+        "mito": "Lo demás se pierde",
+        "realidad": "Aguinaldo y vacaciones proporcionales también se pagan."
+      }
+    ]
+  },
+  "captions": [
+    "Si muere un trabajador, sus derechohabientes cobran una indemnización igual a la mitad de la que fija el artículo 245 por antigüedad.",
+    "Esa indemnización es independiente de lo que paguen la aseguradora de riesgos del trabajo, los seguros o el convenio colectivo.",
+    "El aguinaldo proporcional y las vacaciones no gozadas corresponden por cualquier causa de extinción, también la muerte.",
+    "Es un tema difícil. Guardalo por si alguien cercano lo necesita."
+  ],
+  "hashtags": [
+    "indemnizacion",
+    "fallecimiento",
+    "derechohabientes",
+    "liquidacionfinal",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "familia",
+    "reformalaboral",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.557 de Riesgos del Trabajo (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "fallecimiento",
+  "hechos": [
+    "fallecimiento-mitad"
+  ]
+}

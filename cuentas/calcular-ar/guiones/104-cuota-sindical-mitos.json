@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "clave": "104-cuota-sindical-mitos",
+  "idea": "sueldo-cuota-sindical-opcional",
+  "titulo": "Mitos de la cuota sindical",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Tres mitos de la cuota sindical",
+    "La cuota sindical no siempre se paga",
+    "Te descuentan sindicato sin estar afiliado"
+  ],
+  "voz": "La cuota sindical es obligatoria. No: solo te la descuentan si estás afiliado. Si te desafiliás te la siguen cobrando. Tampoco: deja de descontarse. Es un porcentaje fijo por ley. Falso: lo fija cada convenio, en general entre el uno y el tres por ciento.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La cuota sindical es obligatoria",
+        "realidad": "Solo se descuenta si estás afiliado al sindicato."
+      },
+      {
+        "mito": "Si te desafiliás te la siguen cobrando",
+        "realidad": "Deja de descontarse. La contribución solidaria es otra cosa."
+      },
+      {
+        "mito": "Es un porcentaje fijo por ley",
+        "realidad": "Lo fija cada convenio: en general, del 1 % al 3 %."
+      }
+    ]
+  },
+  "captions": [
+    "La cuota sindical no es uno de los aportes de ley: solo aparece en tu recibo si estás afiliado al sindicato de tu actividad.",
+    "Si te desafiliás, la cuota deja de descontarse. Ojo: la contribución solidaria que cobran algunos convenios es otro concepto.",
+    "El porcentaje lo fija cada convenio colectivo, y en general va del 1 % al 3 % del sueldo.",
+    "Mirá tu recibo: si figura cuota sindical y nunca te afiliaste, preguntá en tu trabajo."
+  ],
+  "hashtags": [
+    "cuotasindical",
+    "sindicato",
+    "recibodesueldo",
+    "sueldoneto",
+    "descuentos",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "sueldo",
+  "hechos": [
+    "sueldo-cuota-sindical-opcional"
+  ]
+}

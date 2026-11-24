@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "clave": "020-cambio-de-mes-solo",
+  "titulo": "Pasar de mes sin rearmar nada",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "indigo",
+  "tema": "cambio-de-mes",
+  "hooks": [
+    "Fin de mes sin rearmar la agenda",
+    "El mes nuevo se arma solo",
+    "¿Todavía rearmás las clases cada mes?"
+  ],
+  "voz": "Fin de mes y te toca rearmar todo. Con el cambio de mes automático, el próximo mes se prepara solo y se activa el día uno. Assistify reinscribe a cada alumno en sus clases fijas, y las clases del mes actual no se borran.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "te toca rearmar todo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Rearmar el mes, otra vez"
+        }
+      },
+      {
+        "frase": "se prepara solo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El mes nuevo, listo solo"
+        }
+      },
+      {
+        "frase": "en sus clases fijas",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "A mano",
+            "items": [
+              "Anotar uno por uno",
+              "Revisar listas"
+            ]
+          },
+          "der": {
+            "titulo": "Con Assistify",
+            "items": [
+              "Reinscripción sola",
+              "Clases fijas listas"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "no se borran",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Nada se borra"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Con el cambio de mes automático de Assistify, el próximo mes se prepara solo y se activa el día 1.",
+    "Cada alumno queda reinscripto en sus clases fijas. Si preferís arrancar el mes vacío, lo apagás.",
+    "Y las clases del mes que termina no se borran."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "agenda",
+    "findemes",
+    "horarios",
+    "clases",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "cambio-de-mes-dia-1",
+    "reinscripcion-fijas",
+    "no-se-borran"
+  ],
+  "idea": "cambio-de-mes-solo"
+}

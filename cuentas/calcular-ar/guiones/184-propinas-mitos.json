@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "184-propinas-mitos",
+  "idea": "propinas-no-sueldo",
+  "titulo": "Propinas y sueldo desde 2026",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "menta",
+  "hooks": [
+    "Las propinas no son sueldo desde 2026",
+    "Lo que cambió con las propinas",
+    "Dos mitos de las propinas"
+  ],
+  "voz": "Si las cobrás todos los días, las propinas son sueldo. Ya no: desde marzo de 2026 la ley dice que en ningún caso son remuneración. El adicional del convenio tampoco es sueldo. Falso: lo que paga el empleador o el convenio sí es salario.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si las cobrás todos los días, las propinas son sueldo",
+        "realidad": "Desde el 6/3/2026, en ningún caso son remuneración."
+      },
+      {
+        "mito": "El adicional del convenio tampoco es sueldo",
+        "realidad": "Lo que paga el empleador o el convenio sí es salario."
+      }
+    ]
+  },
+  "captions": [
+    "El art. 104 de la Ley de Contrato de Trabajo, según la Ley 27.802, dice que en ningún caso las propinas pueden considerarse remuneración, aunque sean habituales en la actividad.",
+    "La exclusión es para lo que paga un tercero, el cliente. Los adicionales que paga el empleador o que fija el convenio siguen siendo salario.",
+    "Como dejaron de ser remuneración, las propinas salen de la base de la indemnización por antigüedad.",
+    "Pasáselo a quien trabaja en un bar o un restaurante."
+  ],
+  "hashtags": [
+    "propinas",
+    "gastronomia",
+    "mozos",
+    "sueldo",
+    "reformalaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "propinas",
+  "hechos": [
+    "propinas-no-sueldo"
+  ]
+}

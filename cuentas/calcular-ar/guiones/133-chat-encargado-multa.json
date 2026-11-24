@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "133-chat-encargado-multa",
+  "idea": "descuentos-multas-chat",
+  "titulo": "Multas descontadas del sueldo: prohibidas",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "menta",
+  "hooks": [
+    "Mi encargado me quiso poner una multa",
+    "Te descuento del sueldo por llegar tarde",
+    "Multas en el recibo: no se puede"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Encargado",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Por llegar tarde te pongo una multa y te la descuento"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Una multa en el sueldo?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Es para que aprendas"
+      },
+      {
+        "de": "yo",
+        "texto": "Las multas al trabajador están prohibidas por ley"
+      },
+      {
+        "de": "ellos",
+        "texto": "Entonces te descuento el almuerzo que te damos"
+      },
+      {
+        "de": "yo",
+        "texto": "Tampoco: la comida que me dan no se descuenta"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, la próxima lo hablamos sin multa"
+      }
+    ],
+    "remate": "Multas en el sueldo: prohibidas"
+  },
+  "captions": [
+    "El art. 131 de la Ley de Contrato de Trabajo es claro: no se puede imponer multas al trabajador ni descontarlas del sueldo.",
+    "Tampoco te pueden descontar por mercadería, comida, vivienda o el uso de herramientas.",
+    "Si en el recibo aparece un descuento que no entendés, preguntá qué es y con qué artículo.",
+    "Etiquetá a alguien que tiene un encargado así."
+  ],
+  "hashtags": [
+    "sueldo",
+    "descuentos",
+    "humorlaboral",
+    "encargado",
+    "recibodesueldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "descuentos",
+  "hechos": [
+    "descuentos-multas-chat"
+  ]
+}

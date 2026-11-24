@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "020-las-mismas-preguntas",
+  "titulo": "Las mismas preguntas, todo el día",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "bosque",
+  "hooks": [
+    "¿Contestás lo mismo todo el día?",
+    "Horario, dirección y si hacen envíos",
+    "El cliente que pregunta todo dos veces"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Cliente nueva",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hola, ¿qué horario tienen?"
+      },
+      {
+        "de": "yo",
+        "texto": "Hola, de lunes a sábado de 9 a 18"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y dónde quedan?"
+      },
+      {
+        "de": "yo",
+        "texto": "En Belgrano 1450, frente a la plaza"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Hacen envíos?"
+      },
+      {
+        "de": "yo",
+        "texto": "Sí, a todo el barrio"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Aceptan tarjeta?"
+      },
+      {
+        "de": "yo",
+        "texto": "Sí, todas. ¿Algo más?"
+      },
+      {
+        "de": "ellos",
+        "texto": "No, gracias. ¿A qué hora abren?"
+      }
+    ],
+    "remate": "Y todavía no es mediodía"
+  },
+  "captions": [
+    "Si contestás lo mismo todo el día, tu página lo puede contestar por vos, también a la noche y los domingos.",
+    "Horarios, dirección, envíos y formas de pago: lo que te preguntan todos los días tiene que estar en tu página, bien a la vista.",
+    "Cada pregunta repetida es tiempo que no usás para vender. Una página clara, con lo que la gente siempre pregunta a la vista, te devuelve ese tiempo."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "atencionalcliente",
+    "whatsapp",
+    "comerciolocal",
+    "humor"
+  ],
+  "tema": "consultas-repetidas",
+  "hechos": []
+}

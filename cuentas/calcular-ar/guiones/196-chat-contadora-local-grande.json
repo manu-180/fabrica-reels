@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "196-chat-contadora-local-grande",
+  "idea": "monotributo-planilla-chat-local",
+  "titulo": "Monotributo: el local también define la categoría",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "Me mudé de local y subí de categoría",
+    "Facturo lo mismo y pago más monotributo",
+    "El local nuevo me cambió la categoría"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Contadora",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Me mudé a un local de setenta metros, facturo lo mismo"
+      },
+      {
+        "de": "ellos",
+        "texto": "Entonces ya no sos categoría A"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Cómo? Si no vendo más"
+      },
+      {
+        "de": "ellos",
+        "texto": "La superficie también cuenta. La A llega a 30 metros"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y con setenta en cuál quedo?"
+      },
+      {
+        "de": "ellos",
+        "texto": "En la D. La C llega hasta 60"
+      },
+      {
+        "de": "yo",
+        "texto": "¿La luz y el alquiler también?"
+      },
+      {
+        "de": "ellos",
+        "texto": "También. Manda el parámetro más alto"
+      }
+    ],
+    "remate": "Más metros, más categoría"
+  },
+  "captions": [
+    "En el monotributo la categoría la define el mayor de tus parámetros: facturación, superficie, energía eléctrica y alquileres. Aunque factures poco, un local grande te puede subir.",
+    "Superficie máxima por categoría: 30 m² en la A, 45 en la B, 60 en la C y 85 en la D.",
+    "Si te mudaste, revisá los cuatro parámetros antes de la próxima recategorización.",
+    "Etiquetá a alguien que está por alquilar un local más grande."
+  ],
+  "hashtags": [
+    "monotributo",
+    "recategorizacion",
+    "emprendedores",
+    "comercio",
+    "local",
+    "humor",
+    "arca",
+    "argentina",
+    "pymes",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.977, Anexo t.o. Ley 26.565, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/51609/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/monotributo.ts:147"
+  ],
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-planilla-chat-local"
+  ]
+}

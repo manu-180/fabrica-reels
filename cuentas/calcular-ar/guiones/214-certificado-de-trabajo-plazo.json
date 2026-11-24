@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "214-certificado-de-trabajo-plazo",
+  "idea": "certificado-45-dias-habiles",
+  "titulo": "El plazo del certificado de trabajo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Te fuiste: tu certificado tiene plazo",
+    "El certificado de trabajo tiene fecha límite",
+    "Cuándo te tienen que dar el certificado"
+  ],
+  "voz": "Cuando termina tu contrato, tu empleador tiene 45 días hábiles para darte el certificado de trabajo. Puede ser en papel en la empresa o digital, con constancia. Si los datos ya están en el sistema de ARCA, también cuenta como entregado. Y la multa de tres sueldos ya no está en el texto vigente.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tiene 45 días hábiles",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "45 días hábiles desde que terminó"
+        }
+      },
+      {
+        "frase": "Puede ser en papel",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "En papel",
+            "items": [
+              "En la sede de la empresa",
+              "A tu disposición"
+            ]
+          },
+          "der": {
+            "titulo": "Digital",
+            "items": [
+              "Con constancia de entrega",
+              "O en el sistema de ARCA"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "Si los datos ya",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Si está en ARCA, cuenta"
+        }
+      },
+      {
+        "frase": "la multa de tres",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Multa de 3 sueldos: ya no está"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 80, según la Ley 27.802, da 45 días hábiles desde la extinción del contrato para entregar el certificado de trabajo. Rige para los contratos que terminaron desde el 6/3/2026.",
+    "Se cumple poniéndolo a tu disposición en papel en la empresa, en digital con constancia fehaciente, o si la información ya está en el sistema de ARCA.",
+    "La frase de la multa de tres veces la mejor remuneración ya no está en el texto vigente del art. 80. Si esa multa corre para contratos que terminaron entre julio de 2024 y marzo de 2026, se discute en tribunales.",
+    "Guardá la fecha en que terminó tu contrato: desde ahí corre el plazo."
+  ],
+  "hashtags": [
+    "certificadodetrabajo",
+    "despido",
+    "renuncia",
+    "arca",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "reformalaboral",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "certificado-de-trabajo",
+  "hechos": [
+    "certificado-45-dias-habiles"
+  ]
+}

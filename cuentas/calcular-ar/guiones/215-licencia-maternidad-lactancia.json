@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "215-licencia-maternidad-lactancia",
+  "idea": "maternidad-lactancia",
+  "titulo": "Licencia por maternidad y lactancia",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Noventa días y dos pausas por día",
+    "Tu licencia por maternidad, en números",
+    "Lo que te toca al volver"
+  ],
+  "voz": "La licencia por maternidad son noventa días: cuarenta y cinco antes del parto y cuarenta y cinco después. Podés achicar el tramo de antes hasta diez días, y lo que no tomás se suma después. Y cuando volvés, tenés dos pausas de media hora por día para amamantar, durante un año.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "son noventa días",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Antes del parto",
+              "valor": "45 días"
+            },
+            {
+              "concepto": "Después del parto",
+              "valor": "45 días"
+            }
+          ],
+          "total": {
+            "concepto": "Licencia",
+            "valor": "90 días"
+          }
+        }
+      },
+      {
+        "frase": "Podés achicar el tramo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Antes del parto: mínimo 10 días"
+        }
+      },
+      {
+        "frase": "lo que no tomás",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Lo que no tomás, va después"
+        }
+      },
+      {
+        "frase": "dos pausas de media hora",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "2 pausas de 30 minutos, por 12 meses"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La licencia por maternidad es de 45 días antes del parto y 45 después. El tramo de antes se puede reducir hasta 10 días y el resto se suma después.",
+    "Al volver al trabajo tenés dos descansos de 30 minutos por día para amamantar, durante 12 meses desde el nacimiento.",
+    "En un nacimiento pretérmino, lo que no gozaste antes se acumula después hasta completar los 90 días.",
+    "Guardalo o pasáselo a quien está esperando un bebé."
+  ],
+  "hashtags": [
+    "licenciapormaternidad",
+    "maternidad",
+    "lactancia",
+    "embarazo",
+    "mamas",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "licencia",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "maternidad",
+  "hechos": [
+    "maternidad-lactancia"
+  ]
+}

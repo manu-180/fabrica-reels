@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "204-dia-comercio-fecha",
+  "titulo": "Día del Empleado de Comercio: quién corre la fecha",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "26 de septiembre: el día del gremio",
+    "¿Quién corre el Día del Empleado de Comercio?",
+    "Día de comercio: no lo mueve el Gobierno"
+  ],
+  "voz": "El Día del Empleado de Comercio es el 26 de septiembre de cada año. Lo fija la ley. Si cae fin de semana se puede correr, pero no lo decide la ley ni el Gobierno: sale de un acuerdo entre las partes del convenio. Por eso cada año hay que mirar la circular.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "el 26 de septiembre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "26 de septiembre de cada año"
+        }
+      },
+      {
+        "frase": "Si cae fin de semana",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "¿Y si cae fin de semana?"
+        }
+      },
+      {
+        "frase": "un acuerdo entre las partes",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "La ley o el Gobierno",
+            "items": [
+              "No corren la fecha",
+              "No es automático"
+            ]
+          },
+          "der": {
+            "titulo": "El convenio",
+            "items": [
+              "Las partes lo acuerdan",
+              "Sale en una circular"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "mirar la circular",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cada año, la circular"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La Ley 26.541 fija el 26 de septiembre de cada año como descanso para los empleados de comercio.",
+    "Cuando cae fin de semana, el traslado lo acuerdan las partes del CCT 130/75. No es automático ni lo decide el Gobierno.",
+    "Ese día se paga con las reglas del feriado nacional: el art. 2 de la Ley 26.541 lo asimila a todos los efectos.",
+    "Guardalo para septiembre y fijate la circular de este año."
+  ],
+  "hashtags": [
+    "diadelempleadodecomercio",
+    "comercio",
+    "empleadosdecomercio",
+    "faecys",
+    "feriados",
+    "septiembre",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.541: Día del Empleado de Comercio (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161502/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "dia-comercio-fecha",
+  "ventana": {
+    "desde": "09-10",
+    "hasta": "09-28"
+  },
+  "tema": "dia-comercio",
+  "hechos": [
+    "dia-comercio-fecha"
+  ]
+}

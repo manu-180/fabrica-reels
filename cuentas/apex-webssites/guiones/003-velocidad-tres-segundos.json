@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "003-velocidad-tres-segundos",
+  "titulo": "Why your website has to load fast",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "tinta",
+  "hooks": [
+    "How long does your website take to load?",
+    "A slow website scares customers away",
+    "Open your website on cellular data"
+  ],
+  "voz": "More than half of mobile visits leave if the page takes longer than three seconds. It's almost always heavy photos and extra code. That's why we shrink every image and load what you see first. So your website opens in a snap.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "More than half",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "More than half leave"
+        }
+      },
+      {
+        "frase": "takes longer than three seconds",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourbusiness.com",
+          "estado": "lento"
+        }
+      },
+      {
+        "frase": "heavy photos and extra code",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Heavy photos, extra code"
+        }
+      },
+      {
+        "frase": "we shrink every image",
+        "visual": {
+          "tipo": "codigo",
+          "lineas": [
+            "<img src=\"storefront.webp\"",
+            "  loading=\"lazy\"",
+            "  width=\"800\" height=\"600\"",
+            "  alt=\"Our storefront\">"
+          ]
+        }
+      },
+      {
+        "frase": "opens in a snap",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourbusiness.com",
+          "estado": "rapido"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "If your website is slow to open, people don't wait: they hit back and tap the next result. Try it yourself on cellular data, no Wi-Fi, and see how long it takes.",
+    "A lot of slow websites have the same problem: huge photos uploaded straight from the camera. Shrink them and load them in order, and the page opens way faster.",
+    "Google measured it: more than half of mobile visits are lost if a page takes longer than three seconds to load. Every heavy photo adds to the wait."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "sitespeed",
+    "seo",
+    "webdevelopment",
+    "smallbusinesstips"
+  ],
+  "fuente": "Google/SOASTA Research (2016), \"The Need for Mobile Speed\": 53% of mobile visits are abandoned if a page takes longer than 3 seconds to load.",
+  "tema": "velocidad",
+  "hechos": [
+    "velocidad-tres-segundos",
+    "carga-en-menos-de-2-segundos"
+  ]
+}

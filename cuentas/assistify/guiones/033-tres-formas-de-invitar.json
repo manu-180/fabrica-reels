@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "clave": "033-tres-formas-de-invitar",
+  "titulo": "Tres formas de sumar alumnos",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "teal",
+  "tema": "invitacion",
+  "hooks": [
+    "Sumar a tus alumnos lleva un rato",
+    "Tres formas de sumar alumnos",
+    "¿Cómo meto a todos en la app?"
+  ],
+  "voz": "Sumar a tus alumnos lleva un rato corto. Compartís el link del taller para todos a la vez. Si querés invitar a uno, lo hacés por WhatsApp con el mensaje listo. Y al que no tiene smartphone, le creás la cuenta vos.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Compartís el link del taller",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un link para todos"
+        }
+      },
+      {
+        "frase": "invitar a uno, lo hacés",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Uno por WhatsApp"
+        }
+      },
+      {
+        "frase": "no tiene smartphone",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sin smartphone, asistida"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify compartís el link del taller y se suman todos a la vez.",
+    "Para invitar a uno, se abre WhatsApp con el mensaje listo y vos confirmás el envío.",
+    "Al alumno sin smartphone le creás la cuenta de forma asistida. Nadie queda afuera."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "alumnos",
+    "invitacion",
+    "whatsapp",
+    "clases",
+    "academia"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "invitar-link",
+    "invitar-whatsapp",
+    "cuenta-sin-smartphone"
+  ],
+  "idea": "tres-formas-de-invitar"
+}

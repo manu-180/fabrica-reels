@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "clave": "007-boton-de-whatsapp",
+  "titulo": "The WhatsApp button that brings you inquiries",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "crema",
+  "hooks": [
+    "How many forget to message you?",
+    "Your bare number is costing you inquiries",
+    "One tap and they're already messaging you"
+  ],
+  "voz": "If messaging you means copying your number, saving it and finding it in WhatsApp, plenty of people leave it for later. And later never comes. With a button, the chat opens with a message already written. They tap, send, and you reply with the question already there.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "copying your number",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Bare number",
+            "items": [
+              "Copy the number",
+              "Save the contact",
+              "Find it in WhatsApp"
+            ]
+          },
+          "der": {
+            "titulo": "WhatsApp button",
+            "items": [
+              "One tap",
+              "Message already written"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "leave it for later",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "So they leave it for later"
+        }
+      },
+      {
+        "frase": "a message already written",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hi, I have a question"
+        }
+      },
+      {
+        "frase": "you reply",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "The full question lands with you"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Every step your customer has to take to message you is an excuse not to. A WhatsApp button on your website takes all those steps off their plate.",
+    "The button can open the chat with a message already written, like 'Hi, I'd like to book Saturday.' Your customer just taps send.",
+    "If your number is buried at the bottom of the page in tiny print, you're losing inquiries you'll never even see."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "whatsappbusiness",
+    "sales",
+    "customerservice",
+    "conversions",
+    "leadgeneration"
+  ],
+  "tema": "whatsapp",
+  "hechos": [
+    "whatsapp-con-consulta-escrita"
+  ]
+}

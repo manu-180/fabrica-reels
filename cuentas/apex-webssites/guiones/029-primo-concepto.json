@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "029-primo-concepto",
+  "titulo": "The designer cousin and his concept",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "arcilla",
+  "hooks": [
+    "I asked my designer cousin for a website",
+    "Does your website have a concept, or customers?",
+    "When the designer goes full artist"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Cousin Gus",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Hey cuz, how's the website coming?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Sending you an idea. Don't freak out"
+      },
+      {
+        "de": "ellos",
+        "texto": "Black on black. It's a concept"
+      },
+      {
+        "de": "yo",
+        "texto": "And how do you read it?"
+      },
+      {
+        "de": "ellos",
+        "texto": "You don't read it. You feel it"
+      },
+      {
+        "de": "yo",
+        "texto": "I sell fridge parts"
+      },
+      {
+        "de": "ellos",
+        "texto": "Exactly. We have to break the mold"
+      },
+      {
+        "de": "yo",
+        "texto": "My customers want my number"
+      },
+      {
+        "de": "ellos",
+        "texto": "It's there. Hidden in the logo"
+      }
+    ],
+    "remate": "Still no website. But I've got a concept."
+  },
+  "captions": [
+    "A website can be good-looking and sell, or it can be a work of art nobody gets. Your customers are looking for your phone number, your hours and whether you have what they need.",
+    "Premium design shows when your customer finds everything without thinking: what you sell, where you are and how to reach you.",
+    "Your website has to win over your customers before your cousin. If the guy selling fridge parts needs a concept, make it one people can read."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "graphicdesign",
+    "uxdesign",
+    "smallbiz",
+    "humor"
+  ],
+  "tema": "sobrino-hace-la-web",
+  "hechos": []
+}

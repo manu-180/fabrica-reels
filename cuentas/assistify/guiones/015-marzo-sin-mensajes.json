@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "clave": "015-marzo-sin-mensajes",
+  "titulo": "Arrancar marzo sin que explote el WhatsApp",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "teal",
+  "tema": "inicio-de-clases",
+  "hooks": [
+    "Marzo arranca y tu WhatsApp explota",
+    "Este marzo, sin mensajes pendientes",
+    "Inscripciones de marzo sin perder la cabeza"
+  ],
+  "voz": "Marzo arranca y tu WhatsApp explota. Este año probá otra cosa: cargás los horarios fijos una sola vez, después compartís el link del taller y cada alumno se anota solo, a la hora que quiera. Vos llegás a la primera clase sin un mensaje pendiente.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tu WhatsApp explota",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Marzo, el mes de los mensajes"
+        }
+      },
+      {
+        "frase": "cargás los horarios fijos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Horarios cargados una vez"
+        }
+      },
+      {
+        "frase": "compartís el link del taller",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un link para todos"
+        }
+      },
+      {
+        "frase": "se anota solo",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Por WhatsApp",
+            "items": [
+              "Mensaje por mensaje",
+              "Lista en papel"
+            ]
+          },
+          "der": {
+            "titulo": "Con Assistify",
+            "items": [
+              "Se anotan solos",
+              "A cualquier hora"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Inicio de clases en marzo: el mes en que todos preguntan qué horarios hay. Con Assistify cargás los horarios una vez y compartís el link del taller.",
+    "Tus alumnos se anotan solos, a cualquier hora, mientras vos preparás las clases.",
+    "Guardalo para febrero y llegá a marzo con todo armado."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "iniciodeclases",
+    "marzo",
+    "inscripciones",
+    "whatsapp",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "horarios-una-vez",
+    "invitar-link",
+    "inscripciones-24-7"
+  ],
+  "idea": "marzo-sin-mensajes",
+  "ventana": {
+    "desde": "02-10",
+    "hasta": "03-31"
+  }
+}

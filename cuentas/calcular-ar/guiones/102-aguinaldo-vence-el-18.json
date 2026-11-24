@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "clave": "102-aguinaldo-vence-el-18",
+  "titulo": "La segunda cuota vence el 18 de diciembre",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "El aguinaldo no vence el 31",
+    "Tu segunda cuota tiene fecha límite",
+    "Diciembre tiene un día que importa"
+  ],
+  "voz": "La segunda cuota del aguinaldo cubre de julio a diciembre entero. Pero no vence el 31. Vence el 18 de diciembre. Tu empleador te la puede pagar antes, pero no después. Y se calcula con la mitad de tu mejor sueldo del semestre.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "de julio a diciembre entero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Julio a diciembre: seis meses"
+        }
+      },
+      {
+        "frase": "Vence el 18 de diciembre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Vence el 18 de diciembre"
+        }
+      },
+      {
+        "frase": "pagar antes, pero no después",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Antes sí, después no"
+        }
+      },
+      {
+        "frase": "la mitad de tu mejor sueldo",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Mejor sueldo del semestre",
+              "valor": "Entero"
+            },
+            {
+              "concepto": "Dividido",
+              "valor": "÷ 2"
+            }
+          ],
+          "total": {
+            "concepto": "Segunda cuota",
+            "valor": "50 %"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La segunda cuota del aguinaldo cubre todo el semestre de julio a diciembre, pero vence antes de que termine: el 18 de diciembre.",
+    "Tu empleador puede adelantarte el aguinaldo, pero no pagarlo después del 18 de diciembre.",
+    "Cada cuota es el 50 % de la mejor remuneración mensual del semestre. Si un mes cobraste más, cuenta ese.",
+    "Agendalo: 18 de diciembre. Y antes de que llegue, sabé cuánto te tiene que entrar."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "sac",
+    "diciembre",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "aguinaldo-diciembre-antes-del-cierre",
+  "ventana": {
+    "desde": "12-01",
+    "hasta": "12-18"
+  },
+  "respaldo": [
+    "src/app/(ar)/aguinaldo/neto/page.tsx:39"
+  ],
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-diciembre-antes-del-cierre"
+  ]
+}

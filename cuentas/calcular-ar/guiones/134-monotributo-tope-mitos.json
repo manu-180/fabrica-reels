@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "134-monotributo-tope-mitos",
+  "idea": "monotributo-blog-tope-un-mes",
+  "titulo": "Me pasé del tope del monotributo",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Te pasaste del tope del monotributo",
+    "Facturaste de más un mes",
+    "Tres mitos del tope del monotributo"
+  ],
+  "voz": "Me pasé un mes y quedo afuera. No: se mira lo que facturaste en los últimos doce meses. Si paso mi categoría, me excluyen. Tampoco: si seguís debajo del tope máximo, te recategorizás. La exclusión arranca desde hoy. Ojo: puede ir para atrás, hasta cuando pasaste el límite.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Me pasé un mes y quedo afuera",
+        "realidad": "Se mira lo facturado en los últimos 12 meses, no un mes."
+      },
+      {
+        "mito": "Si paso mi categoría, me excluyen",
+        "realidad": "Si seguís debajo del tope máximo, te recategorizás."
+      },
+      {
+        "mito": "La exclusión arranca desde hoy",
+        "realidad": "Puede ir para atrás, hasta cuando pasaste el límite."
+      }
+    ]
+  },
+  "captions": [
+    "El monotributo no mira un mes suelto: mira lo que facturaste en los últimos 12 meses. Pasarte un mes no te saca solo.",
+    "Si pasaste el tope de tu categoría pero seguís por debajo del tope máximo del régimen, lo que corresponde es recategorizarte.",
+    "Si pasás el tope máximo, la exclusión es automática y puede ir para atrás: IVA, Ganancias y autónomos desde ese momento, más intereses.",
+    "La recategorización es dos veces por año, en febrero y en agosto. Llevá la cuenta de tus últimos 12 meses antes de que llegue."
+  ],
+  "hashtags": [
+    "monotributo",
+    "monotributista",
+    "recategorizacion",
+    "facturacion",
+    "arca",
+    "emprendedores",
+    "impuestos",
+    "argentina",
+    "freelance",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: categorías del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-blog-tope-un-mes"
+  ]
+}

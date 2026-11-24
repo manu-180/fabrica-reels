@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "210-dia-comercio-condicion",
+  "titulo": "Día de comercio sin trabajar: la condición",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "No trabajaste el día de comercio: ¿lo cobrás?",
+    "La condición que casi nadie te cuenta",
+    "El día del gremio tiene letra chica"
+  ],
+  "voz": "El Día del Empleado de Comercio se cobra aunque no lo trabajes. Pero hay una condición. Tenés que haber trabajado para el mismo empleador 48 horas o seis jornadas en los diez días hábiles anteriores. O el día hábil anterior y alguno de los cinco siguientes.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Día del Empleado de Comercio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Se cobra sin trabajarlo"
+        }
+      },
+      {
+        "frase": "Pero hay una condición",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Con una condición"
+        }
+      },
+      {
+        "frase": "48 horas o seis jornadas",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Antes del día",
+            "items": [
+              "48 horas o 6 jornadas",
+              "En los 10 días hábiles previos"
+            ]
+          },
+          "der": {
+            "titulo": "O antes y después",
+            "items": [
+              "El día hábil anterior",
+              "Y uno de los 5 siguientes"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "el día hábil anterior y",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Si entraste hace poco, fijate"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Art. 168 de la LCT: para cobrar el feriado sin trabajarlo tenés que haber trabajado 48 horas o 6 jornadas para el mismo empleador en los 10 días hábiles anteriores.",
+    "La otra opción: haber trabajado la víspera hábil y seguir trabajando en alguno de los 5 días hábiles siguientes.",
+    "Si entraste hace pocos días o venías de una licencia larga, puede que no cumplas ninguna de las dos.",
+    "Si cumplís, el día se paga aunque el local haya estado cerrado."
+  ],
+  "hashtags": [
+    "diadelempleadodecomercio",
+    "comercio",
+    "empleadosdecomercio",
+    "feriado",
+    "sueldo",
+    "septiembre",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 26.541: Día del Empleado de Comercio (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161502/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "dia-comercio-condicion-168",
+  "ventana": {
+    "desde": "09-10",
+    "hasta": "09-30"
+  },
+  "tema": "dia-comercio",
+  "hechos": [
+    "dia-comercio-condicion-168"
+  ]
+}

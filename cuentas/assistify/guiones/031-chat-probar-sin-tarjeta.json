@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "clave": "031-chat-probar-sin-tarjeta",
+  "titulo": "Probar sin poner la tarjeta",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "teal",
+  "tema": "prueba-gratis",
+  "hooks": [
+    "¿Para probarla hay que poner la tarjeta?",
+    "Mi amiga quería probar sin vueltas",
+    "Probar antes de decidir"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mariela, yoga",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "¿Y para probar Assistify tengo que poner la tarjeta?"
+      },
+      {
+        "de": "yo",
+        "texto": "No, tenés quince días para usarla entera"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y si no me gusta?"
+      },
+      {
+        "de": "yo",
+        "texto": "La dejás ahí y listo"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y mis alumnos tienen que hacer algo?"
+      },
+      {
+        "de": "yo",
+        "texto": "Bajan la app y entran con el código del taller"
+      }
+    ],
+    "remate": "Probala quince días sin tarjeta"
+  },
+  "captions": [
+    "Al crear tu cuenta de Assistify tenés quince días para usar todo, sin datos de pago.",
+    "Tus alumnos bajan la app y entran a tu taller con el código de invitación.",
+    "Mandáselo a la amiga profe que anda con ganas de ordenarse."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "yoga",
+    "humor",
+    "profesdeyoga",
+    "organizacion",
+    "emprendedoras"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "prueba-15-dias",
+    "codigo-invitacion"
+  ],
+  "idea": "probar-sin-tarjeta"
+}

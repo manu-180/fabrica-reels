@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "clave": "187-despido-por-maternidad",
+  "idea": "maternidad-indemnizacion-especial",
+  "titulo": "Despido por maternidad: la indemnización especial",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Despido por maternidad: lo que corresponde",
+    "Embarazada y despedida: esto te toca",
+    "Un año de sueldos extra por ley"
+  ],
+  "voz": "Si te despiden cerca del parto, la ley presume que fue por maternidad. Esa presunción cubre siete meses y medio antes y después del parto, con el embarazo notificado. Ahí corresponde una indemnización especial de un año de remuneraciones. Y se suma a la indemnización común.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "la ley presume que",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Se presume que fue por maternidad"
+        }
+      },
+      {
+        "frase": "siete meses y medio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "7 meses y medio antes y después"
+        }
+      },
+      {
+        "frase": "un año de remuneraciones",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Indemnización común",
+              "valor": "Art. 245"
+            },
+            {
+              "concepto": "Indemnización especial",
+              "valor": "1 año"
+            }
+          ],
+          "total": {
+            "concepto": "Se cobran",
+            "valor": "Las dos"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 178 presume que el despido es por maternidad si ocurre dentro de los siete meses y medio anteriores o posteriores al parto, siempre que hayas notificado el embarazo.",
+    "El art. 182 fija una indemnización especial de un año de remuneraciones, que se acumula a la indemnización por antigüedad.",
+    "La presunción depende de que hayas notificado el embarazo: guardá la constancia.",
+    "Pasáselo a quien está embarazada y tiene miedo de perder el trabajo."
+  ],
+  "hashtags": [
+    "maternidad",
+    "embarazo",
+    "despido",
+    "indemnizacion",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "mamas",
+    "empleadas",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "maternidad",
+  "hechos": [
+    "maternidad-indemnizacion-especial"
+  ]
+}

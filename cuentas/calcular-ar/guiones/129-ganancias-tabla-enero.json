@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "129-ganancias-tabla-enero",
+  "titulo": "En enero cambia la tabla de Ganancias",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "En enero cambia la tabla de Ganancias",
+    "Tu recibo de enero puede cambiar",
+    "Ganancias se actualiza dos veces por año"
+  ],
+  "voz": "En enero cambia la tabla de Ganancias. Las deducciones y la escala se actualizan dos veces por año, en enero y en julio. Se ajustan con la inflación del semestre anterior. Si te retienen Ganancias, tu recibo de enero puede cambiar aunque tu sueldo no.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "cambia la tabla de Ganancias",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tabla nueva de Ganancias"
+        }
+      },
+      {
+        "frase": "en enero y en julio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Enero y julio"
+        }
+      },
+      {
+        "frase": "la inflación del semestre anterior",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Con la inflación del semestre"
+        }
+      },
+      {
+        "frase": "tu recibo de enero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mirá tu recibo de enero"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Las deducciones personales y la escala de Ganancias para empleados se actualizan semestralmente, en enero y en julio, por la inflación del INDEC del semestre anterior.",
+    "No se actualizan todos los meses: dos veces por año. Por eso la retención puede moverse en enero aunque tu sueldo siga igual.",
+    "ARCA publica las tablas nuevas de cada semestre. Con ellas se recalcula cuánto te retienen.",
+    "Si en diciembre te retuvieron Ganancias, en enero mirá tu recibo con atención."
+  ],
+  "hashtags": [
+    "ganancias",
+    "impuestoalasganancias",
+    "sueldo",
+    "recibodesueldo",
+    "arca",
+    "enero",
+    "empleados",
+    "finanzaspersonales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: Deducciones personales art. 30 LIG (julio a diciembre 2026)",
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-jul-dic-2026.pdf",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "ganancias-calendario-enero",
+  "ventana": {
+    "desde": "01-01",
+    "hasta": "01-31"
+  },
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-calendario-enero"
+  ]
+}

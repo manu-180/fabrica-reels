@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "clave": "192-recategorizacion-bajar-mitos",
+  "titulo": "Recategorización: mitos de bajar de categoría",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Si no bajás de categoría, ¿te multan?",
+    "Tres mitos de la recategorización de agosto",
+    "Lo que pasa si no te recategorizás"
+  ],
+  "voz": "Si no bajo de categoría, me multan. No: no hay multa, pero seguís pagando la cuota más alta hasta la próxima ventana. Si no cambió nada, igual tengo que hacer el trámite. Tampoco: tu categoría se mantiene sola. Puedo recategorizarme cualquier mes. Falso: sólo en febrero y agosto, hasta el día 5.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si no bajo de categoría, me multan",
+        "realidad": "No hay multa: pagás la cuota más alta hasta la próxima ventana."
+      },
+      {
+        "mito": "Si no cambió nada, igual tengo que hacer el trámite",
+        "realidad": "No: tu categoría se mantiene sola."
+      },
+      {
+        "mito": "Puedo recategorizarme cualquier mes",
+        "realidad": "Sólo en febrero y en agosto, hasta el día 5."
+      }
+    ]
+  },
+  "captions": [
+    "Si te tocaba bajar de categoría y no lo hiciste, no hay multa: seguís pagando de más todos los meses hasta la próxima recategorización.",
+    "Si lo que facturaste en los últimos 12 meses sigue dentro de tu categoría, no tenés que hacer nada.",
+    "La recategorización se hace dos veces por año, en febrero y en agosto, y el trámite se puede hacer hasta el día 5.",
+    "Bajar a tiempo es plata que no pagás de más durante seis meses. Hacé la cuenta antes del 5."
+  ],
+  "hashtags": [
+    "monotributo",
+    "recategorizacion",
+    "monotributistas",
+    "arca",
+    "cuota",
+    "emprendedores",
+    "independientes",
+    "impuestos",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: ayuda sobre recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "monotributo-recategorizacion-bajar-sin-multa",
+  "ventana": {
+    "desde": "07-15",
+    "hasta": "08-05"
+  },
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-recategorizacion-bajar-sin-multa"
+  ]
+}

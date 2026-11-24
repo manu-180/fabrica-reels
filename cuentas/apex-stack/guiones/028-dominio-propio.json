@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "028-dominio-propio",
+  "titulo": "Dominio propio contra link prestado",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "tinta",
+  "hooks": [
+    "¿Tu página es un link de Linktree?",
+    "Tu dirección en internet, ¿es tuya?",
+    "Lo que dice tu link de vos"
+  ],
+  "voz": "Cuando pasás un link de Linktree o de Instagram, tu negocio vive en casa ajena. Con un dominio propio la dirección lleva tu nombre y es tuya: la ponés en la tarjeta, en la camioneta y en tu correo. Si mañana cambia una red social, tu dirección sigue igual.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "un link de Linktree",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Link prestado",
+            "items": [
+              "linktr.ee/tunegocio_ok",
+              "Depende de otra empresa"
+            ]
+          },
+          "der": {
+            "titulo": "Dominio propio",
+            "items": [
+              "tunegocio.com",
+              "Lo controlás vos"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "en casa ajena",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tu negocio, en casa ajena"
+        }
+      },
+      {
+        "frase": "la dirección lleva tu nombre",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tunegocio.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "en tu correo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "hola@tunegocio.com"
+        }
+      },
+      {
+        "frase": "tu dirección sigue igual",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La dirección sigue siendo tuya"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Un link de Linktree o de Instagram depende de las reglas de otra empresa. Un dominio propio, como tunegocio.com, lo controlás vos y te acompaña aunque cambien las redes.",
+    "Tu dominio va en la tarjeta, en la vidriera, en la camioneta y en tu correo. Es la dirección de tu negocio en internet, y conviene que sea tuya.",
+    "¿Qué es más fácil de recordar y dictar por teléfono: tunegocio.com o un link con guiones bajos y números?"
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "dominio",
+    "dominiopropio",
+    "presenciadigital",
+    "marcapersonal",
+    "desarrolloweb"
+  ],
+  "tema": "dominio-propio",
+  "hechos": [
+    "hosting-incluido-dominio-propio"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "022-chat-colega-ya-no-contesta",
+  "titulo": "La colega que dejó de contestar a la noche",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "cielo",
+  "tema": "caos-whatsapp",
+  "hooks": [
+    "¿Cómo dejaste de contestar a la noche?",
+    "Mi colega ya no vive en WhatsApp",
+    "La profe que recuperó sus noches"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Vale, profe de danza",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "¿Seguís contestando mensajes de alumnos a la noche?"
+      },
+      {
+        "de": "yo",
+        "texto": "Ya no, ahora se anotan solos"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Cómo solos?"
+      },
+      {
+        "de": "yo",
+        "texto": "Ven el calendario y reservan, a cualquier hora"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y si se llena?"
+      },
+      {
+        "de": "yo",
+        "texto": "Quedan en espera y entran si alguien cancela"
+      },
+      {
+        "de": "ellos",
+        "texto": "Pasame cómo se llama eso"
+      }
+    ],
+    "remate": "Inscripciones las 24 horas, los 7 días"
+  },
+  "captions": [
+    "Con Assistify tus alumnos ven el calendario y se reservan solos, a cualquier hora del día.",
+    "Si la clase se llena, quedan en lista de espera y entran solos cuando alguien cancela.",
+    "Mandáselo a la colega que todavía contesta mensajes a la noche."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "danza",
+    "humor",
+    "inscripciones",
+    "whatsapp",
+    "profesdedanza"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "inscripciones-24-7",
+    "lista-espera-automatica"
+  ],
+  "idea": "colega-ya-no-contesta"
+}

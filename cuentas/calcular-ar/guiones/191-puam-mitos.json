@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "clave": "191-puam-mitos",
+  "idea": "puam-no-se-puede-trabajar",
+  "titulo": "Tres mitos de la PUAM",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "Tres mitos de la PUAM",
+    "Lo que se dice mal de la PUAM",
+    "La pensión para mayores de 65"
+  ],
+  "voz": "Hablemos de la pensión universal para el adulto mayor. Podés seguir trabajando con la PUAM. No: desde dos mil dieciocho es incompatible. Para la PUAM necesitás aportes. Tampoco: alcanza con tener sesenta y cinco años. La PUAM es una jubilación entera. Falso: es el ochenta por ciento de la mínima.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Podés seguir trabajando con la PUAM",
+        "realidad": "Desde 2018 es incompatible, salvo efectores de la economía social."
+      },
+      {
+        "mito": "Para la PUAM necesitás aportes",
+        "realidad": "No hace falta ningún año de aportes: tener 65 años o más."
+      },
+      {
+        "mito": "La PUAM es una jubilación entera",
+        "realidad": "Es el 80 % de la jubilación mínima."
+      }
+    ]
+  },
+  "captions": [
+    "La Pensión Universal para el Adulto Mayor es incompatible con trabajar desde la Ley 27.467 de 2018. La única excepción son los monotributistas del Registro de Efectores.",
+    "No pide años de aportes: se pide con 65 años o más, cualquiera sea el género. ANSES hace antes una evaluación socioeconómica.",
+    "Su monto es el 80 % del haber mínimo jubilatorio y sigue su movilidad.",
+    "Mucho de lo que circula cita el texto de 2016, que cambió. Pasáselo a quien lo esté averiguando."
+  ],
+  "hashtags": [
+    "puam",
+    "pension",
+    "adultosmayores",
+    "anses",
+    "jubilacion",
+    "jubilados",
+    "derechos",
+    "argentina",
+    "terceraedad",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.260, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/263691/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.467, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/316974/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ANSES: cartilla PUAM",
+      "url": "https://www.anses.gob.ar/sites/default/files/cartilla/2025-10/Cartilla-PUAM.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "puam",
+  "hechos": [
+    "puam-no-se-puede-trabajar"
+  ]
+}

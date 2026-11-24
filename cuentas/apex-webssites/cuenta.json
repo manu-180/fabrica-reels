@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "id": "apex-webssites",
+  "usuario": "apex.webssites",
+  "idioma": "en-US",
+  "activa": true,
+  "modo": "sombra",
+  "creativos_por_dia": 1,
+  "variantes_por_creativo": 2,
+  "destinos": {
+    "prueba": {
+      "activo": true,
+      "trial": "MANUAL"
+    },
+    "normal": {
+      "activo": true,
+      "share_to_feed": false,
+      "espera_min": 60
+    },
+    "historia": {
+      "activo": true,
+      "espera_min": 30,
+      "cierre": "reel"
+    }
+  },
+  "franjas": [
+    {
+      "desde": "13:30",
+      "hasta": "16:30"
+    },
+    {
+      "desde": "19:00",
+      "hasta": "23:59"
+    }
+  ],
+  "antispam": {
+    "max_dia": 10,
+    "max_dia_propias": 6,
+    "gap_min": 50,
+    "max_por_corrida": 1,
+    "reserva_cupo": 15
+  },
+  "rampa": {
+    "inicio": "2026-12-01",
+    "escalones": [
+      {
+        "creativos": 1,
+        "variantes": 1,
+        "acciones": 3
+      },
+      {
+        "creativos": 1,
+        "variantes": 2,
+        "acciones": 6
+      }
+    ]
+  },
+  "voz": {
+    "proveedor": "elevenlabs",
+    "modelo": "eleven_multilingual_v2",
+    "voice_id": "jqcCZkN6Knx8BJ5TBdYR",
+    "ajustes": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.3
+    },
+    "pausas": {
+      "tras_hook": 0.85,
+      "entre": 0.8,
+      "antes_cta": 0.9,
+      "coma": 0.25
+    },
+    "respaldo": {
+      "proveedor": "gemini",
+      "voz": "Kore",
+      "estilo": "warm, natural American English"
+    },
+    "presupuesto_mes": 7000
+  },
+  "marca": {
+    "paletas": "marca/paletas.json",
+    "fuentes": {
+      "titulo": "marca/fuentes/bricolage-grotesque-latin-800-normal.woff2",
+      "cuerpo": "marca/fuentes/geist-sans-latin-400-normal.woff2",
+      "mono": "marca/fuentes/geist-mono-latin-500-normal.woff2"
+    },
+    "tracking_titulo": -0.03,
+    "motivos": [
+      "grilla",
+      "luz"
+    ],
+    "logo": "marca/logo.png",
+    "radio": 28,
+    "formatos": [
+      "chat",
+      "mito",
+      "explicador",
+      "antes-despues"
+    ]
+  },
+  "cierre": {
+    "texto_voz": "Comment WEB and we'll build you a free website demo.",
+    "texto_historia": "Reply WEB to this story",
+    "caption": "Comment WEB and we'll build your business website for free. You only pay the first installment once you've seen it and love it.",
+    "clips": "cta/clips.json",
+    "palabra_clave": "WEB"
+  },
+  "captions": {
+    "hashtags_por_post": [
+      5,
+      7
+    ],
+    "hashtags_fijos": []
+  },
+  "secretos": {
+    "ig_user": "IG_APEX_WEBSSITES_USER_ID",
+    "ig_token": "IG_APEX_WEBSSITES_TOKEN",
+    "ig_insights": "IG_APEX_WEBSSITES_INSIGHTS_TOKEN"
+  },
+  "reglas_texto": {
+    "prohibidas": [],
+    "max_palabras_voz": [
+      25,
+      55
+    ],
+    "sin_montos": true,
+    "fuentes_dominios": null
+  },
+  "banco": {
+    "guiones": "guiones",
+    "ideas": "ideas.json",
+    "hechos": "hechos.json",
+    "tono": "TONO.md"
+  },
+  "kairo": {
+    "seccion": "reels-apex-webssites"
+  }
+}

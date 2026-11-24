@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "clave": "209-tope-horas-extra",
+  "idea": "horas-extras-topes",
+  "titulo": "Las horas extra tienen tope",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Las horas extra tienen tope",
+    "Cuántas horas extra te pueden pedir",
+    "Más de treinta horas extra por mes"
+  ],
+  "voz": "Las horas extra tienen tope. Sin una autorización especial, no pueden pasar de treinta por mes ni de doscientas por año. Además, entre una jornada y la siguiente tiene que haber doce horas de descanso. Y cada hora extra se paga con recargo, del cincuenta o del cien por ciento.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Las horas extra tienen tope",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Las horas extra tienen tope"
+        }
+      },
+      {
+        "frase": "treinta por mes ni",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Por mes",
+              "valor": "30 horas"
+            },
+            {
+              "concepto": "Por año",
+              "valor": "200 horas"
+            }
+          ],
+          "total": {
+            "concepto": "Para pasar ese tope",
+            "valor": "Autorización"
+          }
+        }
+      },
+      {
+        "frase": "doce horas de descanso",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "12 horas entre jornada y jornada"
+        }
+      },
+      {
+        "frase": "se paga con recargo",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Días comunes",
+            "items": [
+              "50 % de recargo",
+              "Hasta el sábado 13 h"
+            ]
+          },
+          "der": {
+            "titulo": "Sábado tarde y domingo",
+            "items": [
+              "100 % de recargo",
+              "También feriados"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Sin autorización administrativa previa, el tope es de 30 horas extra por mes y 200 por año (Decreto 484/2000).",
+    "Entre el fin de una jornada y el comienzo de la siguiente tiene que haber por lo menos 12 horas de descanso.",
+    "Cada hora extra lleva recargo: 50 % en días comunes y 100 % el sábado después de las 13, el domingo y los feriados.",
+    "Si tenés un equipo, llevá la cuenta de las horas extra de cada persona."
+  ],
+  "hashtags": [
+    "horasextras",
+    "jornadalaboral",
+    "descanso",
+    "empleadores",
+    "rrhh",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "pymes",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Decreto 484/2000: máximo de horas suplementarias (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/63347/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "horas-extras",
+  "hechos": [
+    "horas-extras-topes"
+  ]
+}

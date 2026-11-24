@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "clave": "144-convenio-vencido-5-de-marzo",
+  "titulo": "Convenios vencidos: el plazo vence el 5 de marzo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Convenios vencidos: el plazo es un día antes",
+    "El 5 de marzo vence un plazo clave",
+    "La fecha que casi todos calculan mal"
+  ],
+  "voz": "La reforma laboral le puso fecha a los convenios vencidos. La Secretaría de Trabajo tiene un año desde la promulgación para convocar a renegociarlos. La ley se promulgó el 5 de marzo de 2026, así que el plazo vence el 5 de marzo de 2027. Un día antes de lo que casi todos calculan.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "a los convenios vencidos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Convenios colectivos vencidos"
+        }
+      },
+      {
+        "frase": "un año desde la promulgación",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un año desde la promulgación"
+        }
+      },
+      {
+        "frase": "el 5 de marzo de 2026",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Promulgación",
+              "valor": "5/3/2026"
+            },
+            {
+              "concepto": "Publicación",
+              "valor": "6/3/2026"
+            }
+          ],
+          "total": {
+            "concepto": "Vence el plazo",
+            "valor": "5/3/2027"
+          }
+        }
+      },
+      {
+        "frase": "Un día antes de lo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un día antes de lo que se cree"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 137 de la Ley 27.802 le da a la Secretaría de Trabajo un año desde la promulgación para convocar a renegociar los convenios colectivos vencidos.",
+    "La ley se promulgó por el Decreto 137/2026 el 5 de marzo y se publicó el 6. El plazo corre desde la promulgación: vence el 5 de marzo de 2027.",
+    "Un convenio vencido no se cae solo: sus condiciones de trabajo siguen vigentes por ultraactividad hasta que haya uno nuevo.",
+    "Si tu convenio está vencido, guardá esta fecha."
+  ],
+  "hashtags": [
+    "convenioscolectivos",
+    "reformalaboral",
+    "ley27802",
+    "paritarias",
+    "sindicatos",
+    "trabajo",
+    "derechoslaborales",
+    "rrhh",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Boletín Oficial del 6/3/2026: Decreto 137/2026, que promulga la Ley 27.802",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/339129/20260306",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "convenio-vencido-plazo-137",
+  "ventana": {
+    "desde": "02-15",
+    "hasta": "03-05"
+  },
+  "caduca": "2027-03-05",
+  "tema": "convenio-vencido",
+  "hechos": [
+    "convenio-vencido-plazo-137"
+  ]
+}

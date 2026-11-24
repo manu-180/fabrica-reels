@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "clave": "202-plazo-fijo-cuenta",
+  "idea": "plazo-fijo-interes-simple",
+  "titulo": "Cómo se calcula un plazo fijo",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Cómo se calcula un plazo fijo",
+    "La cuenta del plazo fijo, sin vueltas",
+    "Lo que te paga un plazo fijo"
+  ],
+  "voz": "Un plazo fijo tradicional paga interés simple sobre un año de 365 días. La cuenta es el capital, por la tasa nominal anual, por los días, dividido 365. A 30 días, lo que ganás es la tasa anual por 30 y dividida 365. Ese es el número para comparar con la inflación.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "paga interés simple sobre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Interés simple, año de 365 días"
+        }
+      },
+      {
+        "frase": "La cuenta es el capital",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Capital",
+              "valor": "Lo que ponés"
+            },
+            {
+              "concepto": "Tasa nominal anual",
+              "valor": "× TNA"
+            },
+            {
+              "concepto": "Plazo",
+              "valor": "× 30 ÷ 365"
+            }
+          ],
+          "total": {
+            "concepto": "Ganás en 30 días",
+            "valor": "Interés"
+          }
+        }
+      },
+      {
+        "frase": "Ese es el número",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Comparalo con la inflación del mes"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Los plazos fijos tradicionales en pesos pagan interés simple: interés = capital × TNA × días ÷ 365.",
+    "Lo que ganás en un mes es la TEM, TNA × 30 ÷ 365. Esa es la tasa que tenés que comparar con la inflación mensual.",
+    "Cada banco pone su TNA y la cambia seguido: hacé la cuenta con la tasa del día en que lo armás.",
+    "Guardalo para la próxima vez que te ofrezcan una tasa."
+  ],
+  "hashtags": [
+    "plazofijo",
+    "interes",
+    "tna",
+    "ahorro",
+    "inversiones",
+    "bancos",
+    "inflacion",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "BCRA: Estadísticas monetarias, tasa de depósitos a 30 días (serie 12)",
+      "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/12",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "plazo-fijo",
+  "hechos": [
+    "plazo-fijo-interes-simple"
+  ]
+}

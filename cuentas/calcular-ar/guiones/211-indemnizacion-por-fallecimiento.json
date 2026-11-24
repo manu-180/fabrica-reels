@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "211-indemnizacion-por-fallecimiento",
+  "idea": "fallecimiento-30-dias",
+  "titulo": "Indemnización por fallecimiento del trabajador",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Si muere un trabajador, esto cobra la familia",
+    "La indemnización por fallecimiento, explicada",
+    "Treinta días para pagarle a la familia"
+  ],
+  "voz": "Si un trabajador muere, su familia cobra una indemnización. Es la mitad de la indemnización por antigüedad. Primero cobran el cónyuge o conviviente y los hijos menores, en partes iguales. Si el empleador paga dentro de los 30 días del fallecimiento, con los papeles que tenía, queda liberado.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Si un trabajador muere",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La familia cobra una indemnización"
+        }
+      },
+      {
+        "frase": "Es la mitad de",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Indemnización por antigüedad",
+              "valor": "Entera"
+            },
+            {
+              "concepto": "Por fallecimiento",
+              "valor": "÷ 2"
+            }
+          ],
+          "total": {
+            "concepto": "Para la familia",
+            "valor": "La mitad"
+          }
+        }
+      },
+      {
+        "frase": "el cónyuge o conviviente",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cónyuge, conviviente e hijos"
+        }
+      },
+      {
+        "frase": "dentro de los 30 días",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "30 días para pagar"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 248 de la Ley de Contrato de Trabajo, sustituido por la Ley 27.802, remite al 247: la indemnización por muerte del trabajador es la mitad de la del art. 245.",
+    "La cobran el cónyuge o conviviente, los hijos menores y los hijos mayores con certificado de discapacidad, en partes iguales. Los demás hijos mayores, sólo si no hay ninguno de ellos.",
+    "Es independiente de lo que pague la aseguradora de riesgos del trabajo, un seguro o el convenio.",
+    "El empleador queda liberado si paga dentro de los 30 días del deceso, con la documentación que tenía o le entregaron."
+  ],
+  "hashtags": [
+    "indemnizacion",
+    "fallecimiento",
+    "familia",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "rrhh",
+    "reformalaboral",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "fallecimiento",
+  "hechos": [
+    "fallecimiento-30-dias"
+  ]
+}

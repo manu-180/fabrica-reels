@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "112-vacaciones-primer-anio-mitos",
+  "idea": "vacaciones-sin-antiguedad-minima",
+  "titulo": "Vacaciones el primer año: tres mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Vacaciones el primer año: sí te tocan",
+    "No necesitás un año para tener vacaciones",
+    "Entraste hace poco y te dijeron que no"
+  ],
+  "voz": "Necesitás un año de antigüedad para tener vacaciones. No: la ley no pide antigüedad mínima. Si entraste hace poco, no te toca nada. Falso: te toca un día por cada 20 trabajados. Te las pueden dar cuando quieran. Tampoco: van del 1 de octubre al 30 de abril, salvo acuerdo.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Necesitás un año de antigüedad para tener vacaciones",
+        "realidad": "La ley no pide antigüedad mínima (art. 151)."
+      },
+      {
+        "mito": "Si entraste hace poco, no te toca nada",
+        "realidad": "Te toca 1 día de descanso por cada 20 días trabajados."
+      },
+      {
+        "mito": "Te las pueden dar cuando quieran",
+        "realidad": "Van del 1 de octubre al 30 de abril, salvo que acuerden otra fecha."
+      }
+    ]
+  },
+  "captions": [
+    "Para tener vacaciones no hace falta antigüedad mínima. Si al 31 de diciembre no trabajaste la mitad de los días hábiles del año, te toca 1 día por cada 20 trabajados.",
+    "La regla general: entre el 1 de octubre y el 30 de abril, con aviso por escrito de al menos 30 días.",
+    "Si no son simultáneas para todos, te tienen que tocar en verano al menos una vez cada tres años.",
+    "Pasáselo a quien empezó a trabajar este año y cree que se queda sin descanso."
+  ],
+  "hashtags": [
+    "vacaciones",
+    "primertrabajo",
+    "trabajo",
+    "derechoslaborales",
+    "licencia",
+    "argentina",
+    "empleados",
+    "rrhh",
+    "verano",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "vacaciones",
+  "hechos": [
+    "vacaciones-sin-antiguedad-minima"
+  ]
+}

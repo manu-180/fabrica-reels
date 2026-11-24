@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "149-chat-novia-asignacion",
+  "idea": "asignaciones-familiares-matrimonio-dos",
+  "titulo": "La asignación por matrimonio, de a dos",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "selva",
+  "hooks": [
+    "Nos casamos y pedimos la asignación",
+    "La asignación por matrimonio no es una",
+    "Se casan dos que trabajan en blanco"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Caro",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Ya pedí la asignación por matrimonio"
+      },
+      {
+        "de": "yo",
+        "texto": "Yo también la voy a pedir"
+      },
+      {
+        "de": "ellos",
+        "texto": "Es una sola por pareja, ¿no?"
+      },
+      {
+        "de": "yo",
+        "texto": "Si los dos trabajamos en blanco, la cobramos los dos"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿En serio?"
+      },
+      {
+        "de": "yo",
+        "texto": "Cada uno con seis meses de antigüedad en su trabajo"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, la luna de miel la pagás vos"
+      }
+    ],
+    "remate": "Si se casan dos en blanco, la cobran los dos"
+  },
+  "captions": [
+    "La asignación por matrimonio se paga a los dos cónyuges cuando los dos están dentro del régimen de asignaciones familiares.",
+    "El requisito es una antigüedad mínima y continuada de seis meses en el empleo a la fecha del casamiento, para cada uno.",
+    "Ojo con el plazo: según ANSES, se pide entre los 2 meses y los 2 años de celebrado el matrimonio.",
+    "Etiquetá a la pareja que se casa este año."
+  ],
+  "hashtags": [
+    "asignacionesfamiliares",
+    "matrimonio",
+    "anses",
+    "casamiento",
+    "humor",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "parejas",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.714: Régimen de Asignaciones Familiares",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-24714-39880",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ANSES: cartilla Asignación por Matrimonio",
+      "url": "https://www.anses.gob.ar/sites/default/files/cartilla/2019-10/matrimonio.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "asignaciones-familiares",
+  "hechos": [
+    "asignaciones-familiares-matrimonio-dos"
+  ]
+}

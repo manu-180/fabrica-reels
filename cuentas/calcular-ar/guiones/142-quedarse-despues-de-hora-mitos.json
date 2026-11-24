@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "142-quedarse-despues-de-hora-mitos",
+  "idea": "horas-extras-no-obligado",
+  "titulo": "Quedarse después de hora: tres mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "papel",
+  "hooks": [
+    "No estás obligado a quedarte después de hora",
+    "Horas extra: lo que no te dicen",
+    "Tres mitos de quedarse de más"
+  ],
+  "voz": "Si te piden horas extra, estás obligado. No: sólo por peligro, accidente, fuerza mayor o exigencias excepcionales. Entre jornada y jornada no hay mínimo. Falso: tiene que haber 12 horas de pausa. Te pueden compensar con francos sin firmar nada. Tampoco: ese régimen es voluntario y va por escrito.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si te piden horas extra, estás obligado",
+        "realidad": "Sólo por peligro, accidente, fuerza mayor o exigencias excepcionales."
+      },
+      {
+        "mito": "Entre jornada y jornada no hay mínimo",
+        "realidad": "Tiene que haber una pausa de al menos 12 horas."
+      },
+      {
+        "mito": "Te pueden compensar con francos sin firmar nada",
+        "realidad": "Ese régimen es voluntario y se formaliza por escrito."
+      }
+    ]
+  },
+  "captions": [
+    "El art. 203 de la Ley de Contrato de Trabajo dice que no estás obligado a hacer horas extra, salvo peligro o accidente, fuerza mayor o exigencias excepcionales de la economía nacional o de la empresa.",
+    "Entre el fin de una jornada y el comienzo de la siguiente tiene que haber una pausa no inferior a 12 horas.",
+    "Compensar horas extra con descanso es posible, pero por acuerdo voluntario y por escrito, con un método de control para los dos.",
+    "Pasáselo a quien siempre se queda porque cree que no puede decir que no."
+  ],
+  "hashtags": [
+    "horasextra",
+    "horasextras",
+    "jornadalaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "rrhh",
+    "descanso",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "horas-extras",
+  "hechos": [
+    "horas-extras-no-obligado"
+  ]
+}

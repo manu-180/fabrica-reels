@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "clave": "162-ganancias-liquidacion-anual",
+  "titulo": "Ganancias de más: vuelve con la liquidación anual",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "¿Te retuvieron Ganancias de más?",
+    "La plata de Ganancias que vuelve",
+    "Abril o mayo: mirá tu recibo"
+  ],
+  "voz": "Si el año pasado te retuvieron Ganancias de más, esa plata no se pierde. Tu empleador hace una liquidación anual en abril o mayo, y ahí corrige las diferencias. También se ajusta cuando actualizás tus deducciones en el SiRADIG, el formulario de ARCA donde las cargás.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "esa plata no se pierde",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Esa plata no se pierde"
+        }
+      },
+      {
+        "frase": "una liquidación anual en abril",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Liquidación anual: abril o mayo"
+        }
+      },
+      {
+        "frase": "corrige las diferencias",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Se corrigen las diferencias"
+        }
+      },
+      {
+        "frase": "actualizás tus deducciones en el",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Deducciones al día en el SiRADIG"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La liquidación anual de Ganancias la hace tu empleador en abril o mayo del año siguiente: ahí se comparan las retenciones del año con el impuesto real.",
+    "Si te retuvieron de más, la diferencia te vuelve. Por eso conviene revisar el recibo de esos meses.",
+    "Compará tu recibo con lo que cargaste en el SiRADIG. Si falta una deducción, cargala para que la cuenta te dé bien.",
+    "En abril y mayo, mirá el concepto de Ganancias de tu recibo."
+  ],
+  "hashtags": [
+    "ganancias",
+    "impuestoalasganancias",
+    "devolucion",
+    "liquidacionanual",
+    "siradig",
+    "recibodesueldo",
+    "empleados",
+    "arca",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: Ganancias para empleados y jubilados, conceptos básicos",
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/empleados-jubilados/conceptos-basicos.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "ganancias-informe-liquidacion-anual",
+  "ventana": {
+    "desde": "04-01",
+    "hasta": "05-31"
+  },
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-informe-liquidacion-anual"
+  ]
+}

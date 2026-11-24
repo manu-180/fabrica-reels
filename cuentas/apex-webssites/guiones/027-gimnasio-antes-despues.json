@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "027-gimnasio-antes-despues",
+  "titulo": "A gym's website, before and after",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "crema",
+  "hooks": [
+    "Is your gym's schedule just a photo?",
+    "Nobody signs up at a blurry gym",
+    "From pixelated flyer to booked class"
+  ],
+  "voz": "Schedule in a blurry photo, no membership info and music that autoplays. No wonder nobody wants to come in. In the new version you see today's classes, the schedule reads at a glance and a button lets you book your first trial class.",
+  "contenido": {
+    "negocio": {
+      "rubro": "gimnasio",
+      "nombre": "South Iron Gym",
+      "lema": "Weights and group classes"
+    },
+    "antes": {
+      "defectos": [
+        "Schedule in a blurry photo",
+        "No membership info",
+        "Music that autoplays"
+      ]
+    },
+    "despues": {
+      "titular": "Train on your schedule, no hassle",
+      "boton": "Book your class",
+      "secciones": [
+        "Classes",
+        "Schedule",
+        "Memberships"
+      ]
+    }
+  },
+  "captions": [
+    "Someone looking for a gym wants to know what classes there are, at what time and how to get started. If your website shows that at a glance, that first step gets a lot easier.",
+    "A blurry photo of your schedule can't be read on a phone, and Google can't read it either. A real schedule grid can.",
+    "Booking a first trial class with one button takes the fear out of getting started. Your trainers handle the rest."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "gym",
+    "fitness",
+    "beforeandafter",
+    "websiteredesign",
+    "gymowner"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

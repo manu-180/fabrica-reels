@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "clave": "026-mitos-instagram-alcanza",
+  "titulo": "Los mitos de 'con Instagram me alcanza'",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "¿Con Instagram te alcanza?",
+    "Tu cuenta de Instagram no es tuya",
+    "Te cierran la cuenta mañana. ¿Y ahora?"
+  ],
+  "voz": "Con Instagram me alcanza. Hasta que te bloquean la cuenta y te quedás sin vidriera. Tu página, en cambio, sigue ahí. Una página es para empresas grandes. Al almacén del barrio también lo buscan en Google. Tener página es un lío técnico. Con hosting y mantenimiento incluidos, vos no tocás nada.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Con Instagram me alcanza",
+        "realidad": "Si te bloquean la cuenta, te quedás sin vidriera. Tu página sigue ahí"
+      },
+      {
+        "mito": "Una página es para empresas grandes",
+        "realidad": "Al almacén del barrio también lo buscan en Google"
+      },
+      {
+        "mito": "Tener página es un lío técnico",
+        "realidad": "Con hosting y mantenimiento incluidos, vos no tocás nada técnico"
+      }
+    ]
+  },
+  "captions": [
+    "Instagram es una gran vidriera, pero prestada: las reglas las pone otro y una cuenta se puede bloquear o hackear de un día para el otro. Tu página es tuya.",
+    "El almacén, la peluquería, el electricista: a todos los buscan en Google antes de ir. Tener página ya no es cosa de empresas grandes.",
+    "Si lo técnico te frena, no tenés que tocar nada: el hosting, la seguridad y los cambios corren por nuestra cuenta."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "instagramparanegocios",
+    "mitos",
+    "presenciadigital",
+    "comerciolocal",
+    "emprendedoreslatinos"
+  ],
+  "tema": "instagram",
+  "hechos": []
+}

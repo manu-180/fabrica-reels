@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "218-obra-social-despues-del-despido",
+  "idea": "obra-social-tres-meses-requisito",
+  "titulo": "Obra social después de quedarte sin trabajo",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Te quedaste sin trabajo: tu obra social",
+    "Tres meses más de obra social",
+    "Tu obra social no se corta enseguida"
+  ],
+  "voz": "Si te quedás sin trabajo, tu obra social no se corta en el acto. Te sigue cubriendo tres meses, sin pagar nada. Pero hay una condición: haber trabajado más de tres meses seguidos. Y vale para cualquier forma de terminar: despido, renuncia o fin de contrato.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no se corta en el acto",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tu obra social no se corta"
+        }
+      },
+      {
+        "frase": "Te sigue cubriendo tres meses",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "3 meses más, sin pagar nada"
+        }
+      },
+      {
+        "frase": "haber trabajado más de tres",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Más de 3 meses seguidos trabajando"
+        }
+      },
+      {
+        "frase": "despido, renuncia o fin",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Despido, renuncia o fin de contrato"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Si se termina tu contrato de trabajo, seguís con tu obra social 3 meses desde el cese, sin pagar aportes, si trabajaste en forma continuada más de 3 meses.",
+    "Vale igual si te despidieron, si renunciaste o si terminó tu contrato.",
+    "Si la causa es otra (una suspensión, una licencia sin goce o una enfermedad), las reglas cambian.",
+    "Guardalo por si te toca un cambio de trabajo."
+  ],
+  "hashtags": [
+    "obrasocial",
+    "despido",
+    "renuncia",
+    "salud",
+    "cobertura",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.660 de Obras Sociales, art. 10 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/62/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "obra-social",
+  "hechos": [
+    "obra-social-tres-meses-requisito"
+  ]
+}

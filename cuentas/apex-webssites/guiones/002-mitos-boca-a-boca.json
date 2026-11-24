@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "clave": "002-mitos-boca-a-boca",
+  "titulo": "Myths of 'my business doesn't need a website'",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "crema",
+  "hooks": [
+    "Your industry doesn't need a website?",
+    "Word of mouth isn't enough anymore",
+    "They got referred. Now they're Googling you"
+  ],
+  "voz": "I live off word of mouth. Great, but the first thing a referral does is look you up on their phone. My customers are all local. Locals check photos and hours before they come in too. I don't sell online. They still look you up there to decide whether to reach out.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "I live off word of mouth",
+        "realidad": "The first thing a referral does is look you up on their phone"
+      },
+      {
+        "mito": "My customers are all local",
+        "realidad": "Locals check photos and hours before they come in too"
+      },
+      {
+        "mito": "I don't sell online",
+        "realidad": "They still look you up there to decide whether to reach out"
+      }
+    ]
+  },
+  "captions": [
+    "Word of mouth still works, with one extra step in the middle: before calling you, the person who got referred looks you up on their phone. If they find nothing, they hesitate.",
+    "Welder, plumber, accountant, vet: it doesn't matter what you do. These days everyone gets Googled before anyone reaches out.",
+    "My customers are all local, I live off word of mouth, I don't sell online. All three have some truth to them, and all three leave you out when someone looks you up on their phone.",
+    "Your best customer came from a referral. The next one will look you up on their phone before calling, and depending on what they find, they call or they don't."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "wordofmouth",
+    "customers",
+    "shoplocal",
+    "localbusiness",
+    "myths"
+  ],
+  "tema": "boca-a-boca",
+  "hechos": []
+}

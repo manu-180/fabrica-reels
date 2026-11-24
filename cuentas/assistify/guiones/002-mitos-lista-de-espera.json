@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clave": "002-mitos-lista-de-espera",
+  "titulo": "Tres mitos de la lista de espera",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "indigo",
+  "tema": "lista-espera",
+  "hooks": [
+    "¿La lista de espera te gasta la clase?",
+    "Tres mitos de la lista de espera",
+    "Clase llena no es clase perdida"
+  ],
+  "voz": "Anotarse en espera ya te gasta la clase. Falso: no consume crédito hasta que entrás. Si se libera un lugar, el profe tiene que avisar. No: el primero de la lista con crédito entra solo y recibe el aviso. La lista de espera tiene cupo. Tampoco: no hay tope.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Anotarse en espera ya te gasta la clase",
+        "realidad": "No consume crédito hasta que efectivamente entrás."
+      },
+      {
+        "mito": "Si se libera un lugar, el profe tiene que avisar",
+        "realidad": "El primero de la lista con crédito entra solo y recibe el aviso."
+      },
+      {
+        "mito": "La lista de espera tiene cupo",
+        "realidad": "No hay tope de personas en la lista de espera."
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify, anotarse en lista de espera no gasta ninguna clase: el crédito se descuenta recién cuando entrás.",
+    "Cuando alguien cancela, el primero de la lista con crédito entra solo y le llega el aviso al instante. El profe no tiene que escribir nada.",
+    "Una clase llena ya no es un lugar perdido: la lista de espera trabaja sola."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "listadeespera",
+    "pilates",
+    "yoga",
+    "clases",
+    "mitos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "espera-no-consume",
+    "lista-espera-automatica",
+    "aviso-promocion",
+    "espera-sin-tope"
+  ],
+  "idea": "mitos-lista-de-espera"
+}

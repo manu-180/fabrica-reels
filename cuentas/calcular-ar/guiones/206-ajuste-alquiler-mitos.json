@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "206-ajuste-alquiler-mitos",
+  "idea": "alquiler-porcentajes-se-multiplican",
+  "titulo": "Mitos del ajuste del alquiler",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Tres mitos del aumento del alquiler",
+    "Dos por ciento por tres no es seis",
+    "Lo que se calcula mal del alquiler"
+  ],
+  "voz": "Tres meses de dos por ciento son seis. No: se multiplican, y dan seis coma doce. El ajuste se hace con el índice de tu provincia. Tampoco: salvo que el contrato diga otra cosa, va el nacional. La ley fija cada cuánto se ajusta. Ya no: lo eligen las partes en el contrato.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Tres meses de dos por ciento son seis",
+        "realidad": "Se multiplican: 1,02 × 1,02 × 1,02 da 6,12 %."
+      },
+      {
+        "mito": "El ajuste se hace con el índice de tu provincia",
+        "realidad": "Salvo que el contrato diga otra cosa, va el índice nacional."
+      },
+      {
+        "mito": "La ley fija cada cuánto se ajusta",
+        "realidad": "Desde 2024, índice y frecuencia los eligen las partes."
+      }
+    ]
+  },
+  "captions": [
+    "Los aumentos mensuales no se suman: se multiplican. Tres meses de 2 % dan 6,12 %, no 6 %.",
+    "Salvo que tu contrato diga otra cosa, el ajuste por inflación usa el índice de precios nacional, nivel general, del INDEC.",
+    "En los contratos firmados desde 2024, las partes eligen libremente el índice y cada cuánto se ajusta.",
+    "Antes de pagar el aumento, hacé la cuenta con los índices oficiales."
+  ],
+  "hashtags": [
+    "alquiler",
+    "aumentoalquiler",
+    "inquilinos",
+    "ipc",
+    "inflacion",
+    "contratodealquiler",
+    "vivienda",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Código Civil y Comercial, art. 1199 (texto según DNU 70/2023)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "INDEC: IPC Nacional, nivel general (API oficial de series de tiempo)",
+      "url": "https://datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&format=json",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "alquiler",
+  "hechos": [
+    "alquiler-porcentajes-se-multiplican"
+  ]
+}

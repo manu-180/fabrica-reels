@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "clave": "157-empleada-indemnizacion-sin-tope",
+  "idea": "despido-empleada-domestica-sin-tope",
+  "titulo": "Indemnización en casas particulares: sin tope",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "La indemnización doméstica no tiene tope",
+    "Casas particulares: indemnización sin techo",
+    "Despedir a tu empleada: así es la cuenta"
+  ],
+  "voz": "La indemnización de una empleada de casas particulares es un mes de sueldo por año trabajado. Si la fracción pasa de tres meses, cuenta como un año. Se toma la mejor remuneración del último año. Y a diferencia de la ley general, no tiene ningún tope. Además, hay preaviso e integración del mes.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "un mes de sueldo por",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un sueldo por año trabajado"
+        }
+      },
+      {
+        "frase": "Si la fracción pasa",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Años completos",
+              "valor": "3"
+            },
+            {
+              "concepto": "Fracción de más de 3 meses",
+              "valor": "+ 1"
+            }
+          ],
+          "total": {
+            "concepto": "Sueldos de indemnización",
+            "valor": "4"
+          }
+        }
+      },
+      {
+        "frase": "la mejor remuneración del",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mejor sueldo del último año"
+        }
+      },
+      {
+        "frase": "no tiene ningún tope",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Ley general",
+            "items": [
+              "Tope por convenio",
+              "Piso del 67 %"
+            ]
+          },
+          "der": {
+            "titulo": "Casas particulares",
+            "items": [
+              "Sin ningún tope",
+              "Piso de un mes"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 48 de la Ley 26.844: un mes de sueldo por año o fracción mayor de tres meses, sobre la mejor remuneración del último año, con piso de un mes y sin ningún tope.",
+    "El tope del art. 245 de la ley general no se aplica a casas particulares.",
+    "Al despedir sin causa también van el preaviso y la integración del mes. Hacé la cuenta completa antes de decidir.",
+    "Tres años y cuatro meses de antigüedad son cuatro sueldos de indemnización."
+  ],
+  "hashtags": [
+    "empleadadomestica",
+    "casasparticulares",
+    "indemnizacion",
+    "despido",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleadores",
+    "hogar",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.844 de Casas Particulares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/indemnizacion.ts:45"
+  ],
+  "tema": "despido-empleada-domestica",
+  "hechos": [
+    "despido-empleada-domestica-sin-tope"
+  ]
+}

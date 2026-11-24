@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "016-socio-moderno-clasico",
+  "titulo": "Something modern, but classic",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "I want something modern, but classic",
+    "Your business partner has opinions too?",
+    "This is how websites never get finished"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Business partner",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "For the website I want something modern"
+      },
+      {
+        "de": "ellos",
+        "texto": "But classic"
+      },
+      {
+        "de": "yo",
+        "texto": "Sure. Colors?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Subtle. But eye-catching"
+      },
+      {
+        "de": "yo",
+        "texto": "Lots of text or a little?"
+      },
+      {
+        "de": "ellos",
+        "texto": "A little. But with all the info"
+      },
+      {
+        "de": "yo",
+        "texto": "And when do you need it?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Yesterday. But no rush"
+      }
+    ],
+    "remate": "And that's how we've gone two years without a website"
+  },
+  "captions": [
+    "When you have to imagine the website, nobody agrees. When you see it built, with your colors and your photos, deciding gets way easier.",
+    "Modern but classic, subtle but eye-catching, not much text but all the info. If you've ever said something like that, you're not the only one.",
+    "When every partner pictures a different website, the website never happens. With an actual demo everyone can look at, the argument gets unstuck."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "businesspartners",
+    "graphicdesign",
+    "smallbiz",
+    "humor"
+  ],
+  "tema": "web-vieja",
+  "hechos": []
+}

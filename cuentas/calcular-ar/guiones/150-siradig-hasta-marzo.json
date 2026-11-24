@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "150-siradig-hasta-marzo",
+  "titulo": "SiRADIG: lo del año pasado entra hasta el 31 de marzo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Te olvidaste de cargar deducciones: todavía llegás",
+    "El 31 de marzo cierra el SiRADIG",
+    "Ganancias: deducciones que todavía podés recuperar"
+  ],
+  "voz": "Si el año pasado te olvidaste de cargar deducciones en el SiRADIG, todavía estás a tiempo. Es el formulario de ARCA donde declarás alquiler, prepaga o gastos de educación. Lo del año anterior se puede cargar hasta el 31 de marzo. Y si te retuvieron de más, esa diferencia vuelve.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "todavía estás a tiempo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Todavía estás a tiempo"
+        }
+      },
+      {
+        "frase": "alquiler, prepaga o gastos de educación",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sin cargar",
+            "items": [
+              "Te retienen de más",
+              "Sin restar lo que pagás"
+            ]
+          },
+          "der": {
+            "titulo": "Cargadas",
+            "items": [
+              "Bajan la retención",
+              "Te devuelven lo de más"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "hasta el 31 de marzo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hasta el 31 de marzo"
+        }
+      },
+      {
+        "frase": "esa diferencia vuelve",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La diferencia vuelve"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El SiRADIG (formulario 572 web) del período fiscal anterior se puede completar hasta el 31 de marzo del año siguiente.",
+    "Alquiler, prepaga, gastos de educación, servicio doméstico, seguros y donaciones son algunas de las deducciones que se cargan ahí.",
+    "Si te retuvieron Ganancias de más, te lo devuelven con la liquidación anual o cuando actualizás el SiRADIG.",
+    "Antes de fin de marzo, revisá si cargaste todo lo del año pasado."
+  ],
+  "hashtags": [
+    "ganancias",
+    "siradig",
+    "deducciones",
+    "impuestoalasganancias",
+    "arca",
+    "alquiler",
+    "prepaga",
+    "empleados",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA, SiRADIG: qué datos cargar",
+      "url": "https://www.afip.gob.ar/572Web/carga-datos/que-datos-cargar.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "ganancias-informe-siradig-marzo",
+  "ventana": {
+    "desde": "03-01",
+    "hasta": "03-31"
+  },
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-informe-siradig-marzo"
+  ]
+}

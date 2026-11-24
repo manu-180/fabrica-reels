@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "clave": "194-cuota-alimentaria-proporcion",
+  "idea": "cuota-alimentaria-no-es-mitad-mitad",
+  "titulo": "La cuota alimentaria no es mitad y mitad",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "La cuota alimentaria no es mitad y mitad",
+    "Cuánto pone cada uno por los hijos",
+    "Gana el doble, pone el doble"
+  ],
+  "voz": "La cuota alimentaria no siempre es mitad y mitad. Cada progenitor aporta según lo que gana. Se suman los dos ingresos y se ve qué parte pone cada uno. Si uno gana el doble, pone el doble. Y el cuidado diario del que convive también cuenta como aporte.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no siempre es mitad",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mitad y mitad: no siempre"
+        }
+      },
+      {
+        "frase": "Se suman los dos ingresos",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Ingreso de quien paga",
+              "valor": "2 partes"
+            },
+            {
+              "concepto": "Ingreso del otro",
+              "valor": "1 parte"
+            }
+          ],
+          "total": {
+            "concepto": "Pone quien paga",
+            "valor": "2 de 3"
+          }
+        }
+      },
+      {
+        "frase": "el cuidado diario del",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cuidar también es aportar"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En la cuota alimentaria cada progenitor aporta según su capacidad económica. La parte de cada uno sale de su ingreso sobre la suma de los dos.",
+    "Las tareas cotidianas de cuidado del progenitor que convive con los chicos tienen valor económico y se computan como aporte.",
+    "Lo común es actualizar la cuota por inflación, por la canasta de crianza o con un porcentaje del ingreso de quien paga.",
+    "Esto es una referencia para entender la cuenta. Cada caso lo resuelve un acuerdo o un juez."
+  ],
+  "hashtags": [
+    "cuotaalimentaria",
+    "alimentos",
+    "hijos",
+    "divorcio",
+    "crianza",
+    "familia",
+    "derechos",
+    "argentina",
+    "padres",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ministerio de Justicia: Los alimentos de los hijos (Derecho Fácil)",
+      "url": "https://www.argentina.gob.ar/justicia/derechofacil/aplicalaley/los-alimentos-de-los-hijos",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Código Civil y Comercial de la Nación (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "cuota-alimentaria",
+  "hechos": [
+    "cuota-alimentaria-no-es-mitad-mitad"
+  ]
+}

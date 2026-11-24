@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "170-jubilacion-aumento-mensual",
+  "idea": "jubilacion-ipc-dos-meses",
+  "titulo": "Cómo se calcula el aumento de la jubilación",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "El aumento de tu jubilación tiene fórmula",
+    "Tu jubilación sube con inflación vieja",
+    "El aumento de la jubilación, antes del anuncio"
+  ],
+  "voz": "Tu jubilación aumenta todos los meses, y no es un número que se inventa. Es la inflación de dos meses antes, redondeada a dos decimales. Por eso, cuando sale el dato de precios, el aumento de dos meses después ya quedó fijado. Se puede saber unas tres semanas antes del anuncio.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "aumenta todos los meses",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Aumento todos los meses"
+        }
+      },
+      {
+        "frase": "la inflación de dos meses",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Inflación del mes",
+              "valor": "Agosto"
+            },
+            {
+              "concepto": "Se aplica en",
+              "valor": "Octubre"
+            }
+          ],
+          "total": {
+            "concepto": "Atraso",
+            "valor": "2 meses"
+          }
+        }
+      },
+      {
+        "frase": "cuando sale el dato",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sale el dato: ya sabés el aumento"
+        }
+      },
+      {
+        "frase": "unas tres semanas antes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Unas 3 semanas antes del anuncio"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Desde mayo de 2024 la movilidad es mensual: el aumento de cada mes es la inflación del INDEC de dos meses antes, redondeada a dos decimales.",
+    "El INDEC publica la inflación cerca del día 12 y ANSES dicta la resolución a fin de mes. En el medio, el aumento ya está determinado por la norma.",
+    "Ejemplo: la inflación de agosto define el aumento de octubre.",
+    "Pasáselo a quien cobra jubilación y espera el anuncio todos los meses."
+  ],
+  "hashtags": [
+    "jubilacion",
+    "jubilados",
+    "movilidad",
+    "anses",
+    "aumentojubilacion",
+    "inflacion",
+    "ipc",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Decreto 274/2024: movilidad mensual por IPC (Boletín Oficial)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/305905/20240322",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "jubilacion",
+  "hechos": [
+    "jubilacion-ipc-dos-meses"
+  ]
+}

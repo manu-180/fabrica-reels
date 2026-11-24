@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "031-negocio-atendiendo-de-noche",
+  "titulo": "Tu negocio atendiendo de noche sin contestar mensajes",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Tu negocio puede atender mientras vos dormís",
+    "Así responde tu local a la madrugada",
+    "Tu negocio abierto las veinticuatro horas"
+  ],
+  "voz": "Tu negocio cierra, pero la gente sigue buscando en Google. Entran directo a tu página, miran los servicios con fotos claras y revisan los horarios. Se sacan las dudas solos, tocan el botón de WhatsApp y te dejan la consulta lista para cuando abras.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "sigue buscando en Google",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "flete y mudanza urgente",
+          "resultados": [
+            "Directorio de Transportes",
+            "Fletes Los Primos",
+            "Servicio de Mudanzas Norte"
+          ],
+          "destacado": 2
+        }
+      },
+      {
+        "frase": "miran los servicios con fotos",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tuflete.com.ar",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "tocan el botón de WhatsApp",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Horarios y fotos al toque",
+          "compu": "Toda la info bien ordenada"
+        }
+      },
+      {
+        "frase": "dejan la consulta lista para",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sin sitio web",
+            "items": [
+              "Mensajes a cualquier hora",
+              "Preguntan lo básico",
+              "Se cansan de esperar"
+            ]
+          },
+          "der": {
+            "titulo": "Con web propia",
+            "items": [
+              "Dudas resueltas solas",
+              "Llegan con decisión",
+              "Consulta bien directa"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Aunque bajes la persiana, la gente busca servicios a cualquier hora. Una web clara explica lo que hacés y cómo trabajás.",
+    "El cliente que navega de noche no quiere esperar: quiere ver fotos, saber tus horarios y mandar un mensaje directo.",
+    "Tener una página bien armada hace que te encuentren cuando necesitan una solución, incluso fuera de tu horario de atención.",
+    "Dejá que tu página responda las preguntas de siempre para que los mensajes te lleguen ya listos para cerrar."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "pymesargentinas",
+    "negociolocal",
+    "emprendedores",
+    "comerciolocal",
+    "presenciadigital",
+    "ventasonline",
+    "sitiosweb",
+    "desarrolloweb"
+  ],
+  "tema": "web-que-vende-de-noche",
+  "hechos": []
+}

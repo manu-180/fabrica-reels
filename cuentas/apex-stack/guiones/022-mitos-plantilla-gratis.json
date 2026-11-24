@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "clave": "022-mitos-plantilla-gratis",
+  "titulo": "Mitos de hacerte la página vos mismo",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "crema",
+  "hooks": [
+    "¿La hacés vos con una plantilla gratis?",
+    "Lo gratis te puede salir carísimo",
+    "La hago yo, ¿qué tan difícil puede ser?"
+  ],
+  "voz": "Con una plantilla gratis queda igual. Esa misma plantilla la usan un montón de negocios, y el tuyo termina pareciéndose a todos. La armo yo en un fin de semana. Y después vienen el dominio, el correo, la seguridad y cada arreglo. El fin de semana se te hace un año.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Con una plantilla gratis queda igual",
+        "realidad": "Esa plantilla la usan un montón de negocios, y el tuyo termina igual a todos"
+      },
+      {
+        "mito": "La armo yo en un fin de semana",
+        "realidad": "Después vienen el dominio, el correo, la seguridad y cada arreglo"
+      }
+    ]
+  },
+  "captions": [
+    "Las plantillas gratis sirven para probar. Para un negocio que quiere vender, tu página tiene que parecerse a vos y a nadie más.",
+    "Armar la página es la parte divertida. Después hay que conectar el dominio, configurar el correo, cuidar la seguridad y arreglar lo que se rompe. Ahí se va el fin de semana, y unos cuantos más.",
+    "Si ya intentaste hacerla vos y quedó a medio camino, pasa seguido. Lo difícil empieza después de elegir la plantilla."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "plantillasweb",
+    "mitos",
+    "diseñopersonalizado",
+    "emprender",
+    "presenciadigital"
+  ],
+  "tema": "plantilla-gratis",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

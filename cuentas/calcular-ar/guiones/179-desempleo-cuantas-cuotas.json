@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "clave": "179-desempleo-cuantas-cuotas",
+  "idea": "desempleo-cuantas-cuotas",
+  "titulo": "Cuántas cuotas de desempleo cobrás",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Cuántas cuotas de desempleo te tocan",
+    "El seguro de desempleo no dura igual",
+    "Tus aportes deciden cuántas cuotas cobrás"
+  ],
+  "voz": "Cuántas cuotas de desempleo cobrás depende de los meses que aportaste en los últimos tres años. Con seis a once meses, son dos cuotas. De doce a veintitrés, cuatro. De veinticuatro a treinta y cinco, ocho. Y con treinta y seis o más, doce cuotas.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "depende de los meses",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mirá tus aportes de los últimos 3 años"
+        }
+      },
+      {
+        "frase": "Con seis a once",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "6 a 11 meses",
+              "valor": "2 cuotas"
+            },
+            {
+              "concepto": "12 a 23 meses",
+              "valor": "4 cuotas"
+            },
+            {
+              "concepto": "24 a 35 meses",
+              "valor": "8 cuotas"
+            }
+          ],
+          "total": {
+            "concepto": "36 meses o más",
+            "valor": "12 cuotas"
+          }
+        }
+      },
+      {
+        "frase": "con treinta y seis",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Con 45 años o más, 6 cuotas extra"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La prestación por desempleo dura según los meses que aportaste en los 3 años anteriores al cese: de 2 a 12 cuotas. Con 45 años o más se suman 6 cuotas al 70 %.",
+    "Con menos de 6 meses de aportes en ese período no se accede a la prestación.",
+    "Hay 90 días para pedirla: pasado ese plazo, se descuentan los días de más.",
+    "Guardalo por si lo necesitás, o pasáselo a alguien que se quedó sin trabajo."
+  ],
+  "hashtags": [
+    "segurodedesempleo",
+    "desempleo",
+    "anses",
+    "despido",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "prestacionpordesempleo",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.013 de Empleo, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ANSES: prestación por desempleo",
+      "url": "https://www.anses.gob.ar/trabajo/desempleo/desempleo-para-trabajadores-en-relacion-de-dependencia",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "desempleo",
+  "hechos": [
+    "desempleo-cuantas-cuotas"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "clave": "117-aguinaldo-plazo-fijo-ganancias",
+  "titulo": "Los intereses del plazo fijo no pagan Ganancias",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Tu aguinaldo en plazo fijo no paga esto",
+    "Plazo fijo y Ganancias: lo que nadie aclara",
+    "Antes de invertir el aguinaldo, mirá esto"
+  ],
+  "voz": "Cobraste el aguinaldo y pensás ponerlo en un plazo fijo. Los intereses no pagan Ganancias si sos una persona y no una empresa. Lo dice el artículo 26 de la ley. Y desde los ejercicios 2026 ya no importa la moneda. Tampoco aparecen en tu recibo de sueldo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "en un plazo fijo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El aguinaldo, al plazo fijo"
+        }
+      },
+      {
+        "frase": "no pagan Ganancias",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Los intereses no pagan Ganancias"
+        }
+      },
+      {
+        "frase": "el artículo 26 de la",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Artículo 26, inciso h"
+        }
+      },
+      {
+        "frase": "ya no importa la moneda",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Pesos o dólares: da igual"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Los intereses de plazo fijo de personas humanas están exentos de Ganancias por el art. 26 inc. h de la ley.",
+    "Desde los ejercicios 2026 la exención ya no distingue moneda: alcanza a los plazos fijos en pesos y en moneda extranjera.",
+    "El aguinaldo sí puede tener retención de Ganancias según tu sueldo. Lo que gana después en un plazo fijo, no.",
+    "Guardalo para cuando te depositen el aguinaldo en diciembre."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "plazofijo",
+    "ganancias",
+    "impuestoalasganancias",
+    "ahorro",
+    "finanzaspersonales",
+    "inversiones",
+    "diciembre",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "ganancias-blog-aguinaldo-plazo-fijo",
+  "ventana": {
+    "desde": "12-01",
+    "hasta": "12-18"
+  },
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-blog-aguinaldo-plazo-fijo"
+  ]
+}

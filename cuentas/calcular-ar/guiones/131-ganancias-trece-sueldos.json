@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "clave": "131-ganancias-trece-sueldos",
+  "idea": "ganancias-trece-sueldos",
+  "titulo": "Ganancias cuenta trece sueldos",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Para Ganancias tu año tiene trece sueldos",
+    "El sueldo extra que Ganancias cuenta",
+    "Por qué Ganancias mira tu aguinaldo"
+  ],
+  "voz": "Para Ganancias tu año no tiene doce sueldos. Tiene trece, porque el aguinaldo también paga. Se suman los doce sueldos y el aguinaldo. Se restan los aportes y las deducciones que te tocan. Y sobre lo que queda se aplica la escala del impuesto.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Tiene trece, porque el aguinaldo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tu año tiene trece sueldos"
+        }
+      },
+      {
+        "frase": "Se suman los doce sueldos",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Sueldos del año",
+              "valor": "12"
+            },
+            {
+              "concepto": "Aguinaldo",
+              "valor": "+ 1"
+            }
+          ],
+          "total": {
+            "concepto": "Sueldos gravados",
+            "valor": "13"
+          }
+        }
+      },
+      {
+        "frase": "Se restan los aportes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Menos aportes y deducciones"
+        }
+      },
+      {
+        "frase": "la escala del impuesto",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Escala de 9 tramos, del 5 % al 35 %"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Para estimar Ganancias del año se suman 13 remuneraciones: los 12 sueldos y el aguinaldo, que también es ganancia gravada.",
+    "Después se restan los aportes (17 %, con tope), la cuota sindical si la pagás y las deducciones personales y generales que te correspondan.",
+    "Sobre lo que queda se aplica la escala del artículo 94: 9 tramos, del 5 % al 35 %.",
+    "La retención mensual que hace tu empleador va acumulando el año: por eso un mes te pueden retener distinto que otro."
+  ],
+  "hashtags": [
+    "ganancias",
+    "impuestoalasganancias",
+    "aguinaldo",
+    "sueldo",
+    "deducciones",
+    "arca",
+    "impuestos",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: escala del art. 94 de la Ley de Ganancias, julio a diciembre 2026",
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-jul-a-dic-2026.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/ganancias.ts:37"
+  ],
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-trece-sueldos"
+  ]
+}

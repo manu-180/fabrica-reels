@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "clave": "122-preaviso-lleva-aguinaldo",
+  "idea": "indemnizacion-preaviso-con-aguinaldo",
+  "titulo": "El preaviso también lleva aguinaldo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Al preaviso le falta algo",
+    "El preaviso también lleva aguinaldo",
+    "Lo que muchas liquidaciones se olvidan"
+  ],
+  "voz": "Si te despiden sin preaviso, te lo tienen que pagar. Es un mes de sueldo hasta cinco años de antigüedad, y dos meses si pasás los cinco. Y ese preaviso lleva su aguinaldo: la doceava parte. Muchas liquidaciones se lo olvidan.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "te lo tienen que pagar",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Preaviso no dado: se paga"
+        }
+      },
+      {
+        "frase": "un mes de sueldo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "1 mes, o 2 si pasás los 5 años"
+        }
+      },
+      {
+        "frase": "la doceava parte",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Preaviso",
+              "valor": "1 sueldo"
+            },
+            {
+              "concepto": "Su aguinaldo",
+              "valor": "+ 1/12"
+            }
+          ],
+          "total": {
+            "concepto": "Preaviso con aguinaldo",
+            "valor": "1 + 1/12"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El preaviso que no te dieron se paga como indemnización: un mes de sueldo con hasta 5 años de antigüedad y dos meses si la pasás.",
+    "Ese preaviso no va solo: lleva su aguinaldo, la doceava parte. Es uno de los renglones que más se olvidan en una liquidación.",
+    "Revisá tu liquidación final renglón por renglón: preaviso, su aguinaldo, integración del mes, antigüedad, aguinaldo y vacaciones proporcionales.",
+    "Guardalo: si te despiden, esta cuenta te sirve."
+  ],
+  "hashtags": [
+    "preaviso",
+    "despido",
+    "indemnizacion",
+    "liquidacionfinal",
+    "aguinaldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "indemnizacion",
+  "hechos": [
+    "indemnizacion-preaviso-con-aguinaldo"
+  ]
+}

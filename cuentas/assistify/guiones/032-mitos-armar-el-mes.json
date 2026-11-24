@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "clave": "032-mitos-armar-el-mes",
+  "titulo": "Tres mitos de armar la agenda del mes",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "tema": "horarios",
+  "hooks": [
+    "Tres mitos de armar tu agenda",
+    "¿Cada mes cargás todo de cero?",
+    "Tu agenda no necesita un domingo entero"
+  ],
+  "voz": "Cada mes cargo las clases de cero. Falso: cargás los horarios fijos una vez. Un feriado me desarma la semana. No: lo marcás y ese día se bloquea. Cambiar un cupo es rehacer todo. Tampoco: lo ajustás sin tocar el resto.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Cada mes cargo las clases de cero",
+        "realidad": "Cargás los horarios fijos una vez y el mes se arma solo."
+      },
+      {
+        "mito": "Un feriado me desarma la semana",
+        "realidad": "Lo marcás y ese día se bloquea para reservas."
+      },
+      {
+        "mito": "Cambiar un cupo es rehacer todo",
+        "realidad": "Ajustás el cupo de una clase sin tocar el resto."
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify cargás tus horarios fijos una sola vez y la app crea las clases de todo el mes.",
+    "Los feriados se marcan y ese día queda bloqueado para nuevas reservas.",
+    "Si una clase puntual necesita otro cupo, lo cambiás sin tocar el resto de la agenda."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "agenda",
+    "horarios",
+    "mitos",
+    "feriados",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "horarios-una-vez",
+    "feriados",
+    "cupo-puntual"
+  ],
+  "idea": "mitos-armar-el-mes"
+}

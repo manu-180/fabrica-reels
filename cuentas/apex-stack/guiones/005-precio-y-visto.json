@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "005-precio-y-visto",
+  "titulo": "El que pregunta 'precio' y desaparece",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "bosque",
+  "hooks": [
+    "Te escriben 'precio' y desaparecen",
+    "¿Cuántos 'precio' te dejaron en visto?",
+    "El cliente que solo escribe 'precio'"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Número desconocido",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "precio"
+      },
+      {
+        "de": "yo",
+        "texto": "Hola, ¿qué medida necesitás?"
+      },
+      {
+        "de": "ellos",
+        "texto": "precio"
+      },
+      {
+        "de": "yo",
+        "texto": "Depende de la tela. ¿Es para el living o el cuarto?"
+      },
+      {
+        "de": "ellos",
+        "texto": "pasame precio"
+      },
+      {
+        "de": "yo",
+        "texto": "Te mando el catálogo"
+      },
+      {
+        "de": "yo",
+        "texto": "catalogo_cortinas_FINAL_ahora_si.pdf"
+      },
+      {
+        "de": "ellos",
+        "texto": "uh es mucho, decime precio nomás"
+      },
+      {
+        "de": "yo",
+        "texto": "Está en la segunda hoja"
+      }
+    ],
+    "remate": "Visto. Hace tres semanas."
+  },
+  "captions": [
+    "Te escriben 'precio', les contestás con todo el cariño y desaparecen. Una página con tus productos, fotos y medidas responde eso antes de que te escriban, y el que te escribe ya viene decidido.",
+    "Si tu catálogo es un PDF que mandás por WhatsApp, el cliente tiene que descargarlo, abrirlo y hacer zoom. En una página lo ve todo de un vistazo, desde el celular.",
+    "Si te pasás el día contestando 'precio' por mensaje, la información está en el lugar equivocado. Ponela donde tu cliente la encuentre solo, sin tener que preguntarte."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "ventasonline",
+    "catalogodigital",
+    "atencionalcliente",
+    "emprendedoresargentinos"
+  ],
+  "tema": "precio",
+  "hechos": []
+}

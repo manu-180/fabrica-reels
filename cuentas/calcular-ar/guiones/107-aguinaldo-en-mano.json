@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "clave": "107-aguinaldo-en-mano",
+  "idea": "aguinaldo-neto-41",
+  "titulo": "Cuánto aguinaldo te queda en mano",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Cuánto aguinaldo te queda en mano",
+    "Tu aguinaldo en mano no es la mitad",
+    "El aguinaldo también lleva descuentos"
+  ],
+  "voz": "Tu aguinaldo es la mitad de tu mejor sueldo bruto del semestre. Pero es sueldo, así que lleva los mismos aportes: diecisiete por ciento. La cuenta es simple. Cincuenta por ciento menos los aportes te deja cerca de cuarenta y uno y medio por ciento de ese sueldo, en mano.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "la mitad de tu mejor",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "50 % del mejor bruto del semestre"
+        }
+      },
+      {
+        "frase": "los mismos aportes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Lleva el 17 % de aportes"
+        }
+      },
+      {
+        "frase": "cerca de cuarenta y uno",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Cuota de aguinaldo",
+              "valor": "50 %"
+            },
+            {
+              "concepto": "Aportes sobre la cuota",
+              "valor": "− 17 %"
+            }
+          ],
+          "total": {
+            "concepto": "Te queda en mano",
+            "valor": "41,5 %"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Cada cuota de aguinaldo es el 50 % de tu mejor sueldo bruto del semestre. Como es remunerativo, lleva el mismo 17 % de aportes que el sueldo.",
+    "50 % menos el 17 % de aportes da cerca del 41,5 % de tu mejor bruto. Si pagás cuota sindical o Ganancias, en mano te queda algo menos.",
+    "Si tu mejor sueldo tuvo conceptos no remunerativos, esos no pagan aportes y la cuenta cambia.",
+    "Antes de que llegue el depósito, sabé cuánto te tiene que quedar."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "aguinaldoneto",
+    "sac",
+    "sueldo",
+    "aportes",
+    "trabajo",
+    "argentina",
+    "empleados",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.241 del Sistema Integrado de Jubilaciones y Pensiones (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/639/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/app/(ar)/aguinaldo/neto/page.tsx:39"
+  ],
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-neto-41"
+  ]
+}

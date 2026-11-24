@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "clave": "013-web-2009-contador",
+  "titulo": "La página de 2009 con contador de visitas",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "tinta",
+  "hooks": [
+    "¿Tu página todavía tiene contador de visitas?",
+    "Mi viejo y su página de 2009",
+    "Le revisé la página a mi papá"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Papá",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Pa, entré a la página del negocio"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Viste qué linda? Me la hicieron en 2009"
+      },
+      {
+        "de": "yo",
+        "texto": "Tiene un contador de visitas"
+      },
+      {
+        "de": "ellos",
+        "texto": "1.284 visitas. Nada mal, ¿eh?"
+      },
+      {
+        "de": "yo",
+        "texto": "Pa, 1.280 son tuyas"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, pero las otras cuatro son clientes"
+      },
+      {
+        "de": "yo",
+        "texto": "Las otras cuatro son de mamá"
+      }
+    ],
+    "remate": "Hay páginas que ya se ganaron la jubilación"
+  },
+  "captions": [
+    "Contador de visitas, música que arranca sola y un 'bienvenidos a nuestra página' que titila. Si tu página tiene algo de esto, ya se ganó la jubilación con honores.",
+    "Si el que más visita tu página sos vos, algo falla. Una página que se ve bien en el celular y aparece en Google trae visitas de gente que todavía no te conoce.",
+    "Una página vieja cumple hasta que un cliente nuevo entra desde el celular y no puede leer nada. Desde ese día te juega en contra."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "rediseñoweb",
+    "nostalgia",
+    "emprendedoresargentinos",
+    "humor"
+  ],
+  "tema": "web-vieja",
+  "hechos": []
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "clave": "125-chat-encargado-turno",
+  "idea": "horas-extras-12-horas-chat",
+  "titulo": "Cerrar a las 23 y abrir a las 7",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "menta",
+  "hooks": [
+    "Cerrás a las once, abrís a las siete",
+    "Mi encargado y el descanso entre turnos",
+    "Entre turno y turno hay un mínimo"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Encargado",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hoy cerrás vos a las once de la noche, ¿dale?"
+      },
+      {
+        "de": "yo",
+        "texto": "Dale"
+      },
+      {
+        "de": "ellos",
+        "texto": "Y mañana abrís a las siete"
+      },
+      {
+        "de": "yo",
+        "texto": "Entre una jornada y otra van 12 horas de descanso"
+      },
+      {
+        "de": "ellos",
+        "texto": "Son ocho, alcanza"
+      },
+      {
+        "de": "yo",
+        "texto": "La ley pide 12, no ocho"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, abrí a las once"
+      }
+    ],
+    "remate": "Entre jornada y jornada, 12 horas de descanso"
+  },
+  "captions": [
+    "Entre el final de una jornada y el comienzo de la siguiente tiene que haber por lo menos 12 horas de descanso. Si cerrás a las once de la noche, no abrís antes de las once de la mañana.",
+    "El descanso entre jornadas ahora está escrito con número en la Ley de Contrato de Trabajo: 12 horas.",
+    "Además, el descanso semanal mínimo es de 35 horas.",
+    "Etiquetá a quien cierra y abre el mismo local."
+  ],
+  "hashtags": [
+    "descanso",
+    "jornadalaboral",
+    "horasextras",
+    "turnos",
+    "humorlaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "gastronomia",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/horas-extras.ts:78"
+  ],
+  "tema": "horas-extras",
+  "hechos": [
+    "horas-extras-12-horas-chat"
+  ]
+}

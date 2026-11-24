@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "025-mama-google",
+  "titulo": "I asked my mom to Google me",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "bosque",
+  "hooks": [
+    "I asked my mom to Google me",
+    "What shows up when people Google you?",
+    "Google your business. I'll wait"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mom",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Mom, Google 'Altamira Ironworks'"
+      },
+      {
+        "de": "ellos",
+        "texto": "It's showing up, sweetie"
+      },
+      {
+        "de": "yo",
+        "texto": "And what comes up?"
+      },
+      {
+        "de": "ellos",
+        "texto": "A gorgeous ironworks shop, photos and all"
+      },
+      {
+        "de": "yo",
+        "texto": "That's not mine"
+      },
+      {
+        "de": "ellos",
+        "texto": "So which one's yours?"
+      },
+      {
+        "de": "yo",
+        "texto": "Further down. My old Facebook photo"
+      },
+      {
+        "de": "ellos",
+        "texto": "Oh, yes. You were so skinny"
+      },
+      {
+        "de": "ellos",
+        "texto": "I asked the other one for a quote"
+      }
+    ],
+    "remate": "Even my mom went with the competition"
+  },
+  "captions": [
+    "If people search for you and another business shows up with photos, hours and quotes while you show up with an old Facebook photo, you know who they're calling. Even if it's your mom.",
+    "Try this: ask someone to Google your business and tell you what they see. Sometimes it stings, but it helps.",
+    "Your competitors can do worse work than you and still land the customer, because when people search for them, they show up complete."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "google",
+    "localseo",
+    "smallbiz",
+    "humor"
+  ],
+  "tema": "google",
+  "hechos": []
+}

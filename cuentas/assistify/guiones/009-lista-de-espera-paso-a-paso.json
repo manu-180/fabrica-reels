@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "clave": "009-lista-de-espera-paso-a-paso",
+  "titulo": "La lista de espera, paso a paso",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "indigo",
+  "tema": "lista-espera",
+  "hooks": [
+    "Se llenó la clase. ¿Y ahora?",
+    "Así se mueve la lista de espera",
+    "Clase llena, lugar que no se pierde"
+  ],
+  "voz": "La clase se llenó. Tu alumna toca anotarme en lista de espera y no gasta ningún crédito. Si alguien cancela, el primero de la lista con crédito entra solo. Le llega el aviso al instante y la clase le aparece confirmada. Vos no escribiste nada.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "La clase se llenó",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Clase llena"
+        }
+      },
+      {
+        "frase": "no gasta ningún crédito",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Clases disponibles",
+              "valor": "3"
+            },
+            {
+              "concepto": "Anotarse en espera",
+              "valor": "0"
+            }
+          ],
+          "total": {
+            "concepto": "Clases disponibles",
+            "valor": "3"
+          }
+        }
+      },
+      {
+        "frase": "el primero de la lista",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Entra el primero con crédito"
+        }
+      },
+      {
+        "frase": "Le llega el aviso",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Antes",
+            "items": [
+              "En espera",
+              "Sin lugar"
+            ]
+          },
+          "der": {
+            "titulo": "Ahora",
+            "items": [
+              "Confirmada",
+              "Aviso al instante"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Cuando una clase se llena, tus alumnos se anotan en lista de espera y no gastan ningún crédito hasta entrar.",
+    "Si alguien cancela, el primero de la lista con crédito entra solo y le llega el aviso al instante.",
+    "En la app la clase pasa de en espera a confirmada. Vos no tuviste que escribir nada."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "listadeespera",
+    "clases",
+    "yoga",
+    "pilates",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "espera-no-consume",
+    "lista-espera-automatica",
+    "aviso-promocion"
+  ],
+  "idea": "lista-de-espera-paso-a-paso"
+}

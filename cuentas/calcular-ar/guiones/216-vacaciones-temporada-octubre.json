@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "clave": "216-vacaciones-temporada-octubre",
+  "titulo": "Desde el 1 de octubre arranca la temporada de vacaciones",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Desde octubre te pueden dar vacaciones",
+    "La temporada de vacaciones ya empezó",
+    "Vacaciones: cuándo te las pueden dar"
+  ],
+  "voz": "Desde el 1 de octubre ya te pueden mandar de vacaciones. La temporada legal va hasta el 30 de abril del año siguiente, salvo que acuerden otra fecha. Te tienen que avisar por escrito con 30 días. Y cada día de vacaciones se paga como tu sueldo dividido 25, no 30.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Desde el 1 de octubre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Desde el 1 de octubre"
+        }
+      },
+      {
+        "frase": "hasta el 30 de abril",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hasta el 30 de abril"
+        }
+      },
+      {
+        "frase": "por escrito con 30 días",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Aviso por escrito: 30 días"
+        }
+      },
+      {
+        "frase": "tu sueldo dividido 25",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Día trabajado",
+            "items": [
+              "Sueldo ÷ 30",
+              "El valor de siempre"
+            ]
+          },
+          "der": {
+            "titulo": "Día de vacaciones",
+            "items": [
+              "Sueldo ÷ 25",
+              "Por eso se cobra más"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Art. 154 de la LCT: las vacaciones se dan entre el 1 de octubre y el 30 de abril del año siguiente, salvo que las partes acuerden otra fecha.",
+    "El aviso es por escrito y con al menos 30 días de anticipación desde la Ley 27.802. Antes eran 45.",
+    "Cada día de vacaciones se paga sueldo ÷ 25 en vez de ÷ 30: esa diferencia es el plus vacacional. Y se cobra antes de salir.",
+    "Con la Ley 27.802 se pueden partir en tramos de común acuerdo, ninguno de menos de 7 días."
+  ],
+  "hashtags": [
+    "vacaciones",
+    "plusvacacional",
+    "temporada",
+    "trabajo",
+    "derechoslaborales",
+    "empleados",
+    "lct",
+    "reformalaboral",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "vacaciones-temporada-octubre",
+  "ventana": {
+    "desde": "09-01",
+    "hasta": "10-31"
+  },
+  "respaldo": [
+    "src/app/(ar)/planillas/vacaciones/page.tsx:129"
+  ],
+  "tema": "vacaciones",
+  "hechos": [
+    "vacaciones-temporada-octubre"
+  ]
+}

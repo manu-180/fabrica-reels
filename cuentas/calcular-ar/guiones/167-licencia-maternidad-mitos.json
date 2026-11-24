@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "167-licencia-maternidad-mitos",
+  "idea": "maternidad-paga-anses",
+  "titulo": "Quién paga la licencia por maternidad",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Quién te paga la licencia por maternidad",
+    "Tres mitos de la licencia por maternidad",
+    "Durante la licencia no cobrás sueldo"
+  ],
+  "voz": "La licencia por maternidad la paga la empresa. No: la paga ANSES, como asignación. Cobrás lo mismo que en tu recibo. Mejor: cobrás el bruto, porque no lleva aportes. Antes del parto son quince días mínimo. Falso: el mínimo es de diez, y lo demás se suma después.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La licencia por maternidad la paga la empresa",
+        "realidad": "La paga ANSES, como asignación familiar."
+      },
+      {
+        "mito": "Cobrás lo mismo que en tu recibo",
+        "realidad": "Cobrás el bruto: la asignación no lleva aportes."
+      },
+      {
+        "mito": "Antes del parto son quince días mínimo",
+        "realidad": "El mínimo es de 10 días, y lo demás se suma después."
+      }
+    ]
+  },
+  "captions": [
+    "Durante la licencia por maternidad no cobrás sueldo: ANSES te paga una asignación igual a la remuneración que te habría correspondido.",
+    "Como es una asignación familiar y no sueldo, no lleva aportes: cobrás el bruto, no el neto de tu recibo.",
+    "Son 45 días antes y 45 después del parto. El tramo de antes se puede achicar hasta 10 días y lo que no tomás se suma después.",
+    "Para cobrarla, ANSES pide una antigüedad mínima y continuada de 3 meses en el empleo."
+  ],
+  "hashtags": [
+    "licenciapormaternidad",
+    "maternidad",
+    "anses",
+    "embarazo",
+    "asignacionesfamiliares",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "mamas",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.714 de Asignaciones Familiares, art. 11 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39880/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "maternidad",
+  "hechos": [
+    "maternidad-paga-anses"
+  ]
+}

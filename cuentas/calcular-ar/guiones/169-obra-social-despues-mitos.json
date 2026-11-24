@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clave": "169-obra-social-despues-mitos",
+  "idea": "obra-social-renuncia-tambien",
+  "titulo": "Obra social después de renunciar",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "Renunciaste: tu obra social sigue tres meses",
+    "¿Te quedaste sin trabajo y sin obra social?",
+    "Dos mitos de la obra social"
+  ],
+  "voz": "Si renunciás, perdés la obra social ese mismo día. No: si trabajaste más de tres meses seguidos, la mantenés tres meses más. Esos tres meses tenés que pagarlos. Tampoco: son sin aportes. La ley habla de cualquier extinción del contrato, también de la renuncia.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si renunciás, perdés la obra social ese mismo día",
+        "realidad": "Con más de 3 meses seguidos trabajados, la mantenés 3 meses más."
+      },
+      {
+        "mito": "Esos tres meses tenés que pagarlos",
+        "realidad": "Son sin aportes: vale para despido, renuncia o fin de contrato."
+      }
+    ]
+  },
+  "captions": [
+    "Art. 10 inc. a de la Ley 23.660: al extinguirse el contrato, si trabajaste en forma continuada más de 3 meses, seguís como beneficiario 3 meses desde el distracto, sin hacer aportes.",
+    "La ley dice extinción del contrato, sin distinguir: entra el despido, la renuncia y el fin de contrato.",
+    "Antes de que se cumplan los tres meses, pensá cómo vas a seguir con la cobertura.",
+    "Pasáselo a quien está por renunciar y tiene un tratamiento en curso."
+  ],
+  "hashtags": [
+    "obrasocial",
+    "renuncia",
+    "despido",
+    "salud",
+    "cobertura",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.660, art. 10, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/62/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "obra-social",
+  "hechos": [
+    "obra-social-renuncia-tambien"
+  ]
+}

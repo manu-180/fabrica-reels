@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "174-asignaciones-aguinaldo-junio",
+  "titulo": "El aguinaldo no te saca de las asignaciones",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "El aguinaldo no te saca de las asignaciones",
+    "¿Te pasás del tope en junio?",
+    "Asignaciones familiares y aguinaldo, sin miedo"
+  ],
+  "voz": "En junio cobrás aguinaldo y te preocupa pasarte del tope de las asignaciones familiares. Tranqui: ANSES, que es la que las paga, no suma el aguinaldo al ingreso del grupo familiar. Tampoco las horas extras ni el plus por zona. Así que en el mes del aguinaldo, tu ingreso no se duplica.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tope de las asignaciones familiares",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El tope de ingresos del grupo"
+        }
+      },
+      {
+        "frase": "no suma el aguinaldo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El aguinaldo no se suma"
+        }
+      },
+      {
+        "frase": "Tampoco las horas extras",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sí se suma",
+            "items": [
+              "Sueldo bruto",
+              "Jubilaciones y pensiones"
+            ]
+          },
+          "der": {
+            "titulo": "No se suma",
+            "items": [
+              "Aguinaldo",
+              "Horas extras",
+              "Plus por zona"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "tu ingreso no se duplica",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tu ingreso no se duplica"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Para el tope de las asignaciones familiares, ANSES mira el ingreso del grupo familiar. El aguinaldo, las horas extras y el plus por zona desfavorable quedan afuera.",
+    "En junio y en diciembre, los meses del aguinaldo, el ingreso que mira ANSES no se duplica.",
+    "Sí entran el sueldo bruto, las sumas no remunerativas, las jubilaciones, la prestación por desempleo y los planes sociales.",
+    "Si cobrás asignaciones, guardá este dato para junio y diciembre."
+  ],
+  "hashtags": [
+    "asignacionesfamiliares",
+    "anses",
+    "aguinaldo",
+    "auh",
+    "sueldo",
+    "familia",
+    "junio",
+    "trabajo",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ANSES: Montos de asignaciones familiares, AUH y embarazo",
+      "url": "https://www.anses.gob.ar/sites/default/files/cartilla/2026-09/Montos-AAFF-09-2026.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "asignaciones-familiares-blog-aguinaldo-junio",
+  "ventana": {
+    "desde": "06-01",
+    "hasta": "06-30"
+  },
+  "tema": "asignaciones-familiares",
+  "hechos": [
+    "asignaciones-familiares-blog-aguinaldo-junio"
+  ]
+}

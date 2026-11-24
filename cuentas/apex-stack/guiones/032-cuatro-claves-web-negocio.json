@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "032-cuatro-claves-web-negocio",
+  "titulo": "Las cuatro cosas que tu web necesita para vender",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Cuatro cosas que hacen que tu web funcione",
+    "Lo único que tu página necesita para vender",
+    "Los cuatro puntos clave de una buena web"
+  ],
+  "voz": "Una web que funciona tiene cuatro cosas claras. Primero, abre al instante en el celular. Segundo, dice directo qué hacés y dónde estás. Tercero, muestra tus trabajos con fotos reales. Y la más importante: un botón de WhatsApp visible para que te escriban directo sin dar vueltas.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "abre al instante en el celular",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tufabrica.com.ar",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "dice directo qué hacés",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "carpinteria a medida quilmes",
+          "resultados": [
+            "Muebles zona sur",
+            "Tu Carpintería - Muebles a Medida",
+            "Maderera del centro"
+          ],
+          "destacado": 1
+        }
+      },
+      {
+        "frase": "muestra tus trabajos con fotos",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Galería clara y ágil",
+          "compu": "Fotos nítidas y ordenadas"
+        }
+      },
+      {
+        "frase": "un botón de WhatsApp visible",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Web complicada",
+            "items": [
+              "Textos larguísimos",
+              "Formulario eterno"
+            ]
+          },
+          "der": {
+            "titulo": "Web directa",
+            "items": [
+              "Fotos de tus trabajos",
+              "Botón directo a tu chat"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "No necesitás complicarte con cosas raras: una web sirve cuando le hace la vida fácil al cliente que te busca.",
+    "El cliente entra desde el celular, quiere ver qué hacés, dónde estás y hablarte al toque.",
+    "Tener una página web no es sumar tareas: es dejar en claro tu laburo para que te escriban directo.",
+    "Información clara, fotos reales de tu trabajo y un botón directo a tu WhatsApp. Con eso marcás la diferencia."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "pymesargentinas",
+    "negociolocal",
+    "emprendedoresargentinos",
+    "ventasonline",
+    "desarrolloweb",
+    "comerciolocal",
+    "presenciadigital",
+    "sitiosweb"
+  ],
+  "tema": "claves-de-una-web",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

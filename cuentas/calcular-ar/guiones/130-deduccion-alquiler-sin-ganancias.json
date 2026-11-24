@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "clave": "130-deduccion-alquiler-sin-ganancias",
+  "idea": "deduccion-alquiler-sin-ganancias-no-sirve",
+  "titulo": "Deducir el alquiler si no pagás Ganancias",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Deducir el alquiler no siempre te devuelve",
+    "Si no pagás Ganancias, esto no suma",
+    "Alquilás y no pagás Ganancias: ojo"
+  ],
+  "voz": "Si alquilás, podés deducir en Ganancias el 40 por ciento de lo que pagás de alquiler. Pero la deducción sólo baja un impuesto que existe. Si no te retienen Ganancias, no genera saldo a favor. No es un reintegro y tampoco pasa al año siguiente. Y no tenés que ser dueño de ningún inmueble.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "el 40 por ciento",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "40 % del alquiler, con tope"
+        }
+      },
+      {
+        "frase": "sólo baja un impuesto",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sólo baja un impuesto que existe"
+        }
+      },
+      {
+        "frase": "no genera saldo a favor",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sin Ganancias",
+            "items": [
+              "Sin saldo a favor",
+              "Sin reintegro",
+              "No pasa al año siguiente"
+            ]
+          },
+          "der": {
+            "titulo": "Con Ganancias",
+            "items": [
+              "Baja lo que te retienen",
+              "Hasta el tope anual"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "ningún inmueble",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sin ningún inmueble a tu nombre"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La deducción de alquiler (art. 85 inc. h de Ganancias) es el 40 % de lo pagado por la casa donde vivís, con tope en la ganancia no imponible anual.",
+    "Si no pagás Ganancias, restar más deducciones no genera saldo a favor, no es un reintegro y no pasa al año siguiente.",
+    "Para deducirlo no podés ser dueño de ningún inmueble, cualquiera sea la proporción, y el dueño te tiene que dar factura.",
+    "Desde la RG 5547/2024, si sos empleado ya no tenés que adjuntar el contrato en el SiRADIG."
+  ],
+  "hashtags": [
+    "ganancias",
+    "deducciones",
+    "alquiler",
+    "siradig",
+    "inquilinos",
+    "impuestos",
+    "argentina",
+    "empleados",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: SiRADIG, carga de alquileres",
+      "url": "https://www.afip.gob.ar/572web/carga-datos/alquileres.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "deduccion-alquiler",
+  "hechos": [
+    "deduccion-alquiler-sin-ganancias-no-sirve"
+  ]
+}

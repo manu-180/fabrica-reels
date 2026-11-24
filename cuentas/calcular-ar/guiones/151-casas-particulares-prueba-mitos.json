@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "151-casas-particulares-prueba-mitos",
+  "idea": "despido-empleada-domestica-prueba-6-meses",
+  "titulo": "Período de prueba en casas particulares",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "menta",
+  "hooks": [
+    "La prueba en casas particulares cambió",
+    "Seis meses de prueba en casas particulares",
+    "Tres mitos de la prueba doméstica"
+  ],
+  "voz": "La prueba en casas particulares es de 30 días. Ya no: desde marzo de 2026 son seis meses. Con retiro la prueba es más corta. Tampoco: es el mismo plazo para las dos modalidades. Se puede tomar a prueba otra vez. No: sólo una vez a la misma persona.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La prueba en casas particulares es de 30 días",
+        "realidad": "Desde el 6 de marzo de 2026 son 6 meses (Ley 27.802)."
+      },
+      {
+        "mito": "Con retiro la prueba es más corta",
+        "realidad": "Es el mismo plazo para con retiro y sin retiro."
+      },
+      {
+        "mito": "Se puede tomar a prueba otra vez",
+        "realidad": "El empleador no puede usar la prueba más de una vez con la misma persona."
+      }
+    ]
+  },
+  "captions": [
+    "La Ley 27.802 cambió el art. 7 de la Ley 26.844: el período de prueba en casas particulares es de 6 meses para las dos modalidades. Antes eran 30 días sin retiro y 15 días de trabajo con retiro.",
+    "Durante la prueba, cualquiera de las partes puede terminar la relación sin causa y sin indemnización por esa extinción.",
+    "La reforma no es retroactiva: lo que vale es la fecha en que terminó la relación.",
+    "Pasáselo a quien contrató a alguien para su casa este año."
+  ],
+  "hashtags": [
+    "empleadadomestica",
+    "casasparticulares",
+    "periododeprueba",
+    "reformalaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleadores",
+    "hogar",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 26.844 de Casas Particulares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "despido-empleada-domestica",
+  "hechos": [
+    "despido-empleada-domestica-prueba-6-meses"
+  ]
+}

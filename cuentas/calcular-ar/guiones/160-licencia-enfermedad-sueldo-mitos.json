@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "160-licencia-enfermedad-sueldo-mitos",
+  "idea": "enfermedad-aumentos-durante-licencia",
+  "titulo": "Licencia por enfermedad: tu sueldo no se congela",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Licencia por enfermedad: tu sueldo no se congela",
+    "Tres mitos de la licencia médica",
+    "Enfermo y con aumento: sí, te toca"
+  ],
+  "voz": "Durante la licencia cobrás lo mismo de siempre. No: también te tocan los aumentos de tu categoría. Si te echan de licencia, sólo cobrás la indemnización. Falso: suman los sueldos hasta el alta o el fin del plazo. Cualquier certificado médico sirve. Tampoco: va con diagnóstico, tratamiento, días de reposo y firma digital.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Durante la licencia cobrás lo mismo de siempre",
+        "realidad": "También cobrás los aumentos que se acuerden para tu categoría."
+      },
+      {
+        "mito": "Si te echan de licencia, sólo cobrás la indemnización",
+        "realidad": "Suman los sueldos hasta el alta o hasta que vence el plazo."
+      },
+      {
+        "mito": "Cualquier certificado médico sirve",
+        "realidad": "Diagnóstico, tratamiento, días de reposo y firma digital."
+      }
+    ]
+  },
+  "captions": [
+    "Art. 208: durante la licencia por enfermedad cobrás la remuneración del momento en que la empezaste, más los aumentos que se acuerden para tu categoría mientras dura.",
+    "Si te despiden durante la licencia, el art. 213 suma a la indemnización los sueldos hasta que vence el plazo o hasta el alta.",
+    "Desde la Ley 27.802, el certificado tiene que decir diagnóstico, tratamiento y días de reposo, con firma digital por las plataformas autorizadas.",
+    "Pasáselo a quien está de licencia y cree que su sueldo quedó congelado."
+  ],
+  "hashtags": [
+    "licenciamedica",
+    "enfermedad",
+    "licencia",
+    "certificadomedico",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "paritarias",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "enfermedad",
+  "hechos": [
+    "enfermedad-aumentos-durante-licencia"
+  ]
+}

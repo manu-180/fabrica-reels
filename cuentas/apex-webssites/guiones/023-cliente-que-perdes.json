@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "clave": "023-cliente-que-perdes",
+  "titulo": "The customer you lose without knowing it",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "tinta",
+  "hooks": [
+    "The customer you lost without knowing",
+    "What do your referrals find when they look?",
+    "Referred, looked you up, picked someone else"
+  ],
+  "voz": "Someone recommends you. That person looks you up on their phone before reaching out. If they find nothing, or an old website that won't load, they move on to the next one on the list. You never find out, but that customer was already yours.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Someone recommends you",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "A friend recommended you"
+        }
+      },
+      {
+        "frase": "on their phone",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "couch reupholstery",
+          "resultados": [
+            "Ombu Upholstery | Online quotes",
+            "Park Side Reupholstery",
+            "Mobile upholsterer near you"
+          ],
+          "destacado": 0
+        }
+      },
+      {
+        "frase": "an old website that won't load",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourbusiness.com",
+          "estado": "lento"
+        }
+      },
+      {
+        "frase": "the next one on the list",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "So they pick the next one"
+        }
+      },
+      {
+        "frase": "was already yours",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "That customer was already yours"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "The sales you lose don't show up as complaints. They're people who looked you up, didn't find anything clear and messaged someone else.",
+    "You earned that recommendation. Whether the referred person finds you and trusts you depends on what they see when they look you up.",
+    "Try this: search for your business on your phone like you're a new customer. What you see is what they see."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "customers",
+    "sales",
+    "onlinepresence",
+    "shoplocal",
+    "referrals"
+  ],
+  "tema": "clientes-que-se-van",
+  "hechos": []
+}

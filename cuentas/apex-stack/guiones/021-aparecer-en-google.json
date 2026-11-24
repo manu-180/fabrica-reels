@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "021-aparecer-en-google",
+  "titulo": "Cómo hace Google para mostrar tu negocio",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "¿Te buscan en Google y no aparecés?",
+    "Google no adivina qué hacés",
+    "Buscá tu rubro y tu barrio ahora"
+  ],
+  "voz": "Cuando alguien busca plomero en Caballito, Google muestra las páginas que dicen con claridad qué hacen y dónde. Para aparecer, tu página necesita un título con tu rubro y tu zona, textos propios y una ficha en Google Maps. Con Instagram solo, casi no entrás en esa lista.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "busca plomero en Caballito",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "plomero en caballito",
+          "resultados": [
+            "Plomería Tornasol | Caballito",
+            "Cañerías Delta Sur",
+            "Plomeros cerca de vos"
+          ],
+          "destacado": 0
+        }
+      },
+      {
+        "frase": "un título con tu rubro",
+        "visual": {
+          "tipo": "codigo",
+          "lineas": [
+            "<title>Plomero en Caballito</title>",
+            "<meta name=\"description\"",
+            "  content=\"Arreglos y urgencias\">"
+          ]
+        }
+      },
+      {
+        "frase": "una ficha en Google Maps",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tu ficha en Google Maps"
+        }
+      },
+      {
+        "frase": "casi no entrás en esa lista",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Solo Instagram no alcanza"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Google muestra a quien explica bien qué hace y dónde. Si tu página dice 'Bienvenidos' en el título, Google no tiene idea de que sos plomero en Caballito.",
+    "Para empezar a aparecer: un título con tu rubro y tu zona, textos escritos por vos y una ficha en Google Maps con fotos y horarios.",
+    "Buscá tu rubro y tu barrio en Google, como lo haría un cliente. ¿Aparecés? ¿Aparece tu competencia? Ahí tenés tu respuesta."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "seo",
+    "seolocal",
+    "googlemaps",
+    "posicionamientoweb",
+    "google"
+  ],
+  "tema": "google",
+  "hechos": [
+    "seo-tecnico"
+  ]
+}

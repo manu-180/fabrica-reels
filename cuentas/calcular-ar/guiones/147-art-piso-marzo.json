@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "clave": "147-art-piso-marzo",
+  "titulo": "En marzo se actualiza el piso de la ART",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Accidente de trabajo: en marzo cambia el piso",
+    "Tu cuenta de febrero ya quedó vieja",
+    "El piso de la indemnización se mueve"
+  ],
+  "voz": "Si tuviste un accidente de trabajo, la indemnización tiene un piso. Ese piso no es fijo: la Superintendencia de Riesgos del Trabajo lo actualiza cada seis meses, en marzo y en septiembre. Lo ajusta por el RIPTE, el promedio de los sueldos registrados. Si hiciste la cuenta en febrero, en marzo ya quedó vieja.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "la indemnización tiene un piso",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La indemnización tiene un piso"
+        }
+      },
+      {
+        "frase": "en marzo y en septiembre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Se actualiza en marzo y septiembre"
+        }
+      },
+      {
+        "frase": "el promedio de los sueldos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "RIPTE: promedio de sueldos registrados"
+        }
+      },
+      {
+        "frase": "en marzo ya quedó vieja",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La cuenta de febrero ya no sirve"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El piso de la indemnización por accidente de trabajo se actualiza por RIPTE cada seis meses (art. 17 bis de la Ley 26.773). La Superintendencia lo fija por resolución.",
+    "Es un piso, no un techo: el Decreto 1694/2009 suprimió los topes de la ley y los convirtió en mínimos.",
+    "Cada resolución rige seis meses: de marzo a agosto y de septiembre a febrero. Fijate cuál es la vigente antes de hacer la cuenta.",
+    "Para una incapacidad parcial, la fórmula es 53 veces el ingreso base, por el porcentaje de incapacidad, por 65 dividido la edad."
+  ],
+  "hashtags": [
+    "art",
+    "accidentedetrabajo",
+    "riesgosdeltrabajo",
+    "indemnizacion",
+    "srt",
+    "trabajo",
+    "derechoslaborales",
+    "abogadolaboral",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Resolución SRT 39/2026 (Boletín Oficial)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346792",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 26.773, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/203798/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Decreto 1694/2009 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/155000-159999/159765/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "art-piso-marzo",
+  "ventana": {
+    "desde": "03-01",
+    "hasta": "03-15"
+  },
+  "tema": "art",
+  "hechos": [
+    "art-piso-marzo"
+  ]
+}

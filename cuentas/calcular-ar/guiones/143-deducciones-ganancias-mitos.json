@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "143-deducciones-ganancias-mitos",
+  "idea": "ganancias-informe-deduccion-no-es-reintegro",
+  "titulo": "Lo que te devuelve una deducción",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Deducir un gasto no te lo devuelve",
+    "Cuánto te devuelve una deducción, de verdad",
+    "Dos mitos de las deducciones de Ganancias"
+  ],
+  "voz": "Si deducís un gasto, te lo devuelven. No: te devuelven lo que te ahorrás de impuesto. Lo que vuelve es el gasto por tu alícuota. Tampoco, sobre todo en el borde de un tramo. La cuenta correcta es el impuesto del año sin la deducción, menos el impuesto con ella.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si deducís un gasto, te lo devuelven",
+        "realidad": "Te devuelven lo que ahorrás de impuesto, no el gasto."
+      },
+      {
+        "mito": "Lo que vuelve es el gasto por tu alícuota",
+        "realidad": "Es el impuesto del año sin la deducción menos con ella."
+      }
+    ]
+  },
+  "captions": [
+    "Cargar una deducción no te reintegra lo que gastaste: baja la ganancia sobre la que se calcula el impuesto, y te vuelve lo que te ahorrás.",
+    "Multiplicar la deducción por tu alícuota da mal cuando estás en el borde de un tramo. La cuenta exacta compara el impuesto del año con y sin la deducción.",
+    "Si cargás tus deducciones antes de la fecha tope, la retención acumulada corrige el año entero.",
+    "Guardalo para cuando cargues tus gastos del año."
+  ],
+  "hashtags": [
+    "ganancias",
+    "deducciones",
+    "siradig",
+    "impuestoalasganancias",
+    "arca",
+    "impuestos",
+    "sueldo",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: escala del art. 94 de la Ley de Ganancias, julio a diciembre 2026",
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/declaracion-jurada/documentos/Tabla-Art-94-LIG-per-jul-a-dic-2026.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-informe-deduccion-no-es-reintegro"
+  ]
+}

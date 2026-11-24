@@ -1,0 +1,591 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-23",
+  "hechos": [
+    {
+      "id": "que-es-assistify",
+      "tipo": "producto",
+      "texto": "Assistify es una app para talleres y estudios donde el dueño o profesor administra horarios y alumnos, y el alumno reserva, cancela y recupera sus clases desde el celular",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:11",
+      "envejece": null
+    },
+    {
+      "id": "rubros-que-sirve",
+      "tipo": "producto",
+      "texto": "Sirve para cualquiera que maneje clases por turnos: cerámica, yoga, idiomas, danza, música, arte, pilates, teatro y más",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:17",
+      "envejece": null
+    },
+    {
+      "id": "plataformas",
+      "tipo": "producto",
+      "texto": "Funciona en Android, iOS, web y Windows",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:13",
+      "envejece": null
+    },
+    {
+      "id": "tres-dolores",
+      "tipo": "dato",
+      "texto": "Resuelve tres dolores de cualquier taller por turnos: el alumno no sabe cuándo tiene clase ni cuántas le quedan, cancelar y reprogramar por WhatsApp es un caos, y no hay forma justa de manejar cupos llenos",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:22",
+      "envejece": null
+    },
+    {
+      "id": "un-credito-una-clase",
+      "tipo": "producto",
+      "texto": "Un crédito es una clase: cada inscripción consume uno y en la app aparece como clases disponibles",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:53",
+      "envejece": null
+    },
+    {
+      "id": "plazo-ejemplo-24",
+      "tipo": "producto",
+      "texto": "El taller define un plazo para cancelar sin penalidad, por ejemplo 24 horas; si el alumno cancela en plazo, el crédito vuelve solo y el cupo se libera",
+      "cifras": [
+        "24"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:39",
+      "envejece": null
+    },
+    {
+      "id": "plazo-lo-define-el-taller",
+      "tipo": "producto",
+      "texto": "Las horas mínimas para cancelar con crédito las define cada taller en Configuración",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/configuration/presentation/sheets/edit_anticipacion_sheet.dart:40",
+      "envejece": null
+    },
+    {
+      "id": "cambio-de-plazo-no-retroactivo",
+      "tipo": "producto",
+      "texto": "El cambio de las horas de anticipación aplica desde ese momento en adelante, no hacia atrás",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:54",
+      "envejece": null
+    },
+    {
+      "id": "cancelacion-tardia",
+      "tipo": "producto",
+      "texto": "Si el alumno cancela fuera del plazo, el cupo se libera igual pero el crédito no se devuelve, y la app lo avisa antes de confirmar",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:44",
+      "envejece": null
+    },
+    {
+      "id": "limite-estricto",
+      "tipo": "producto",
+      "texto": "El límite de anticipación es estricto: si faltan las horas configuradas o más, el crédito vuelve",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:159",
+      "envejece": null
+    },
+    {
+      "id": "sin-creditos-negativos",
+      "tipo": "producto",
+      "texto": "Los créditos nunca quedan en negativo: el mínimo es cero",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:160",
+      "envejece": null
+    },
+    {
+      "id": "clases-pasadas",
+      "tipo": "producto",
+      "texto": "No se puede reservar una clase que ya pasó",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:162",
+      "envejece": null
+    },
+    {
+      "id": "lista-espera-automatica",
+      "tipo": "producto",
+      "texto": "Cuando una clase está llena el alumno se anota en lista de espera; si alguien cancela, el primero de la lista con crédito entra solo",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:58",
+      "envejece": null
+    },
+    {
+      "id": "espera-no-consume",
+      "tipo": "producto",
+      "texto": "Anotarse en lista de espera no consume crédito hasta que el alumno efectivamente entra a la clase",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:66",
+      "envejece": null
+    },
+    {
+      "id": "espera-saltea-sin-credito",
+      "tipo": "producto",
+      "texto": "Si el primero de la lista de espera no tiene crédito cuando se libera el cupo, el sistema pasa al siguiente que sí tenga",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:77",
+      "envejece": null
+    },
+    {
+      "id": "espera-sin-tope",
+      "tipo": "producto",
+      "texto": "La lista de espera no tiene un tope de personas",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:165",
+      "envejece": null
+    },
+    {
+      "id": "aviso-promocion",
+      "tipo": "producto",
+      "texto": "Cuando pasa de lista de espera a confirmado, el alumno recibe una notificación al instante y la clase cambia de en espera a confirmada",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:71",
+      "envejece": null
+    },
+    {
+      "id": "aviso-al-profe",
+      "tipo": "producto",
+      "texto": "Assistify le avisa al profe cada vez que un alumno cancela o se inscribe, con el detalle de la clase",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/faq.ts:84",
+      "envejece": null
+    },
+    {
+      "id": "recordatorio-de-clase",
+      "tipo": "producto",
+      "texto": "Hay recordatorios de clase: un aviso antes de la próxima clase del alumno",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/notifications/domain/app_notification.dart:68",
+      "envejece": null
+    },
+    {
+      "id": "avisos-por-categoria",
+      "tipo": "producto",
+      "texto": "Cada usuario elige qué avisos recibe por categoría: cancelaciones, inscripciones, lista de espera, créditos, cambios del profesor, recordatorios y anuncios del taller",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/notifications/domain/app_notification.dart:21",
+      "envejece": null
+    },
+    {
+      "id": "anuncios-del-taller",
+      "tipo": "producto",
+      "texto": "Existe una categoría de avisos importantes del taller para sus alumnos",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/notifications/domain/app_notification.dart:70",
+      "envejece": null
+    },
+    {
+      "id": "historial-cancelaciones",
+      "tipo": "producto",
+      "texto": "En el historial cada cancelación aparece como cancelación a tiempo o cancelación tardía",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:211",
+      "envejece": null
+    },
+    {
+      "id": "historial-creditos",
+      "tipo": "producto",
+      "texto": "Cada alumno ve en su app el registro de ingresos, descuentos y reintegros de créditos",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:122",
+      "envejece": null
+    },
+    {
+      "id": "familia-una-cuenta",
+      "tipo": "producto",
+      "texto": "Un padre o madre crea una cuenta como titular y agrega a cada hijo; cada hijo tiene su perfil y su historial, pero los créditos salen del saldo del titular",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:225",
+      "envejece": null
+    },
+    {
+      "id": "familia-credito-vuelve",
+      "tipo": "producto",
+      "texto": "Cuando un hijo cancela a tiempo, el crédito vuelve al saldo del padre",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:137",
+      "envejece": null
+    },
+    {
+      "id": "codigo-invitacion",
+      "tipo": "producto",
+      "texto": "El alumno se une al taller con el código de invitación que le pasa el profe",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:119",
+      "envejece": null
+    },
+    {
+      "id": "invitar-link",
+      "tipo": "producto",
+      "texto": "El profe puede compartir el link del taller para invitar a todos a la vez",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/invitacion/presentation/invitar_alumnos_sheet.dart:91",
+      "envejece": null
+    },
+    {
+      "id": "invitar-whatsapp",
+      "tipo": "producto",
+      "texto": "Invitar por WhatsApp abre WhatsApp con el mensaje listo y el profe confirma el envío",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/invitacion/presentation/invitar_por_whatsapp_sheet.dart:156",
+      "envejece": null
+    },
+    {
+      "id": "cuenta-sin-smartphone",
+      "tipo": "producto",
+      "texto": "Para un alumno sin smartphone, el profe puede crearle la cuenta de forma manual y asistida",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/invitacion/presentation/invitar_alumnos_sheet.dart:80",
+      "envejece": null
+    },
+    {
+      "id": "horarios-una-vez",
+      "tipo": "producto",
+      "texto": "Cargás los horarios fijos una sola vez y Assistify crea todas las clases del mes",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:80",
+      "envejece": null
+    },
+    {
+      "id": "grupos-de-dias",
+      "tipo": "producto",
+      "texto": "Al armar las clases se agrupan los días que comparten los mismos horarios, hasta 4 grupos",
+      "cifras": [
+        "4"
+      ],
+      "fuente": "repo:manu-180/Assistify:lib/features/bulk_setup_clases/presentation/notifiers/bulk_setup_notifier.dart:13",
+      "envejece": null
+    },
+    {
+      "id": "atajos-dias",
+      "tipo": "producto",
+      "texto": "Hay atajos para elegir días de una: lunes a viernes, fin de semana o todos los días",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/bulk_setup_clases/presentation/widgets/atajos_row.dart:38",
+      "envejece": null
+    },
+    {
+      "id": "capacidad-por-clase",
+      "tipo": "producto",
+      "texto": "Se define cuántos lugares tiene cada clase, para todas a la vez, con ajuste por horario",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/bulk_setup_clases/presentation/widgets/step_2_capacidad.dart:26",
+      "envejece": null
+    },
+    {
+      "id": "feriados",
+      "tipo": "producto",
+      "texto": "Los feriados o días que no se trabaja se marcan y quedan bloqueados para nuevas reservas",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:81",
+      "envejece": null
+    },
+    {
+      "id": "cambio-de-mes-dia-1",
+      "tipo": "producto",
+      "texto": "Con el cambio de mes automático, el próximo mes se prepara solo y se activa el día 1",
+      "cifras": [
+        "1"
+      ],
+      "fuente": "repo:manu-180/Assistify:lib/features/configuration/presentation/sheets/gestion_periodo_sheet.dart:234",
+      "envejece": null
+    },
+    {
+      "id": "reinscripcion-fijas",
+      "tipo": "producto",
+      "texto": "Al pasar de mes, Assistify reinscribe a cada alumno en sus clases fijas",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/configuration/presentation/sheets/gestion_periodo_sheet.dart:280",
+      "envejece": null
+    },
+    {
+      "id": "packs-de-4",
+      "tipo": "producto",
+      "texto": "Se puede elegir anotar a un alumno en 4 clases de su horario, como funcionan los packs de 4, o en todas las del mes",
+      "cifras": [
+        "4"
+      ],
+      "fuente": "repo:manu-180/Assistify:lib/features/configuration/presentation/sheets/gestion_periodo_sheet.dart:328",
+      "envejece": null
+    },
+    {
+      "id": "mes-activo",
+      "tipo": "producto",
+      "texto": "Solo se puede reservar en clases del mes activo: las del mes anterior ya no se recuperan",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:110",
+      "envejece": null
+    },
+    {
+      "id": "pagos-tipos",
+      "tipo": "producto",
+      "texto": "Los pagos se registran como cuota mensual, pack de clases u otro",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/pagos/domain/pago_models.dart:9",
+      "envejece": null
+    },
+    {
+      "id": "pagos-metodos",
+      "tipo": "producto",
+      "texto": "Cada pago se anota como efectivo, transferencia u otro",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/pagos/domain/pago_models.dart:27",
+      "envejece": null
+    },
+    {
+      "id": "pagos-al-dia",
+      "tipo": "producto",
+      "texto": "La ficha de pagos muestra si el alumno está al día con el mes o si lo debe",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/pagos/presentation/registrar_pago_sheet.dart:381",
+      "envejece": null
+    },
+    {
+      "id": "ficha-alumno",
+      "tipo": "producto",
+      "texto": "La ficha de cada alumno muestra créditos disponibles, clases tomadas e historial",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:68",
+      "envejece": null
+    },
+    {
+      "id": "creditos-a-mano",
+      "tipo": "producto",
+      "texto": "El profe puede sumar o descontar créditos a mano cuando hay un acuerdo especial",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:69",
+      "envejece": null
+    },
+    {
+      "id": "categorias-horario",
+      "tipo": "producto",
+      "texto": "Con categorías se define qué grupo de alumnos puede reservar cada horario",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/categorias/presentation/screens/categorias_screen.dart:612",
+      "envejece": null
+    },
+    {
+      "id": "perfil-autogestion",
+      "tipo": "producto",
+      "texto": "Cada alumno actualiza su foto, teléfono y contraseña desde la app",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:101",
+      "envejece": null
+    },
+    {
+      "id": "color-y-modo-oscuro",
+      "tipo": "producto",
+      "texto": "Cada alumno elige su color dentro de la app y hay modo claro y oscuro",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:91",
+      "envejece": null
+    },
+    {
+      "id": "asistente-voz",
+      "tipo": "producto",
+      "texto": "Con el asistente de voz se pueden decir cosas como cancelame la clase del martes o qué clases tengo esta semana",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:INFORME_PRODUCTO_ASSISTIFY.md:148",
+      "envejece": null
+    },
+    {
+      "id": "panel-web-calendario",
+      "tipo": "producto",
+      "texto": "El administrador también tiene un panel web con calendario",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/app/admin/_components/admin-shell.tsx:24",
+      "envejece": null
+    },
+    {
+      "id": "recupero-dia-28",
+      "tipo": "dato",
+      "texto": "Sin sistema, todos se acuerdan de recuperar el día 28 y el profe hace malabares con los horarios",
+      "cifras": [
+        "28"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/transformations.ts:49",
+      "envejece": null
+    },
+    {
+      "id": "recuperos-repartidos",
+      "tipo": "producto",
+      "texto": "Los alumnos ven la disponibilidad real en el calendario y usan sus créditos cuando les conviene, repartiendo la asistencia en todo el mes",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/transformations.ts:51",
+      "envejece": null
+    },
+    {
+      "id": "espacios-vacios",
+      "tipo": "dato",
+      "texto": "Sin sistema, alguien cancela y nadie se entera: el lugar queda vacío aunque había gente queriendo ir",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/transformations.ts:35",
+      "envejece": null
+    },
+    {
+      "id": "mas-secretario",
+      "tipo": "dato",
+      "texto": "Muchos profes pasan más horas respondiendo consultas y armando la agenda que dando clase: son más secretarios que profesores",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/transformations.ts:19",
+      "envejece": null
+    },
+    {
+      "id": "no-se-borran",
+      "tipo": "producto",
+      "texto": "Al pasar de mes no se borran las clases del mes actual",
+      "cifras": [],
+      "fuente": "repo:manu-180/Assistify:lib/features/configuration/presentation/sheets/gestion_periodo_sheet.dart:449",
+      "envejece": null
+    },
+    {
+      "id": "cupo-puntual",
+      "tipo": "producto",
+      "texto": "El cupo de una clase puntual se ajusta sin tocar el resto de la agenda",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:82",
+      "envejece": null
+    },
+    {
+      "id": "voz-sin-tocar",
+      "tipo": "oferta",
+      "texto": "El asistente de voz del plan Premium permite gestionar sin tocar la pantalla",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:78",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "inscripciones-24-7",
+      "tipo": "producto",
+      "texto": "Las inscripciones funcionan las 24 horas, los 7 días: los alumnos se reservan solos",
+      "cifras": [
+        "24",
+        "7"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:40",
+      "envejece": null
+    },
+    {
+      "id": "entrar-con-google",
+      "tipo": "producto",
+      "texto": "Los alumnos pueden entrar con Google, sin contraseñas",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:45",
+      "envejece": null
+    },
+    {
+      "id": "soporte-whatsapp",
+      "tipo": "producto",
+      "texto": "El soporte es directo por WhatsApp",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:46",
+      "envejece": null
+    },
+    {
+      "id": "prueba-15-dias",
+      "tipo": "oferta",
+      "texto": "Al crear la cuenta hay 15 días para usar todo Assistify sin límites ni datos de pago",
+      "cifras": [
+        "15"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:94",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "sin-permanencia",
+      "tipo": "oferta",
+      "texto": "Se puede cancelar en cualquier momento, sin permanencia",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:90",
+      "envejece": null
+    },
+    {
+      "id": "plan-basico-60",
+      "tipo": "oferta",
+      "texto": "El plan Básico es para hasta 60 alumnos",
+      "cifras": [
+        "60"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:37",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "plan-pro-150",
+      "tipo": "oferta",
+      "texto": "El plan Pro es para hasta 150 alumnos",
+      "cifras": [
+        "150"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:58",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "plan-premium-ilimitado",
+      "tipo": "oferta",
+      "texto": "El plan Premium tiene alumnos ilimitados",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:75",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "precio-basico",
+      "tipo": "oferta",
+      "texto": "El plan Básico cuesta 9 USD por mes",
+      "cifras": [
+        "9"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:33",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "precio-pro",
+      "tipo": "oferta",
+      "texto": "El plan Pro cuesta 19 USD por mes",
+      "cifras": [
+        "19"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:53",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "precio-premium",
+      "tipo": "oferta",
+      "texto": "El plan Premium cuesta 35 USD por mes",
+      "cifras": [
+        "35"
+      ],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:71",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "cobro-en-pesos",
+      "tipo": "oferta",
+      "texto": "El cobro se procesa en pesos argentinos por MercadoPago al tipo de cambio del día",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:103",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "familias-desde-pro",
+      "tipo": "oferta",
+      "texto": "Agrupar hermanos o familias en una sola cuenta está desde el plan Pro",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:61",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "voz-premium",
+      "tipo": "oferta",
+      "texto": "El asistente de voz es exclusivo del plan Premium",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/features.ts:147",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    },
+    {
+      "id": "multitaller-premium",
+      "tipo": "oferta",
+      "texto": "En Premium se manejan todos los talleres o sedes en una sola app",
+      "cifras": [],
+      "fuente": "repo:manu-180/assistify_web:src/content/plans.ts:79",
+      "envejece": "cambia si se actualizan los planes en src/content/plans.ts"
+    }
+  ]
+}

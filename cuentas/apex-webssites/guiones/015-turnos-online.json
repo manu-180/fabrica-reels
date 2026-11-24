@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "clave": "015-turnos-online",
+  "titulo": "Online booking: no more back-and-forth texts",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "bosque",
+  "hooks": [
+    "Booking appointments by text all day?",
+    "Stop booking appointments over text",
+    "Your calendar can fill up while you sleep"
+  ],
+  "voz": "Got anything at five? How about Thursday? Anything later? Every appointment booked by text is a back-and-forth that eats your afternoon. With online booking, your customer sees the open slots, picks one and gets a reminder. You find out when it's already booked.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "a back-and-forth",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Back-and-forth, all day long"
+        }
+      },
+      {
+        "frase": "sees the open slots",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Booking by text",
+            "items": [
+              "Questions at all hours",
+              "You forget to write it down",
+              "Empty gaps in your day"
+            ]
+          },
+          "der": {
+            "titulo": "Online booking",
+            "items": [
+              "They pick their time",
+              "Automatic reminder",
+              "Calendar always up to date"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "gets a reminder",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Reminder: your appointment is tomorrow"
+        }
+      },
+      {
+        "frase": "it's already booked",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "New booking: Thursday 5 PM"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Every appointment you book by text comes with a bunch of back-and-forth: what day, what time, anything later. With online booking, your customer picks and you get to focus on the work.",
+    "Online booking also sends your customer a reminder, so fewer people forget and you end up with fewer gaps in your calendar.",
+    "Salons, clinics, studios, auto shops: any business that runs on appointments saves time when customers book themselves."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "onlinebooking",
+    "appointmentscheduling",
+    "productivity",
+    "customerservice",
+    "salonowner"
+  ],
+  "tema": "turnos-online",
+  "hechos": []
+}

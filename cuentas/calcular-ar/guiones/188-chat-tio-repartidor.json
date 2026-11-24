@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "188-chat-tio-repartidor",
+  "idea": "plataformas-chat-indemnizacion-app",
+  "titulo": "Me desactivaron de la app",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "papel",
+  "hooks": [
+    "Me desactivaron de la app de reparto",
+    "Mi tío y la indemnización de la app",
+    "Repartís por app y te dan de baja"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Tío Rubén",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "¿Es cierto que te desactivaron de la app?"
+      },
+      {
+        "de": "yo",
+        "texto": "Sí, de un día para el otro"
+      },
+      {
+        "de": "ellos",
+        "texto": "Pedí indemnización por despido"
+      },
+      {
+        "de": "yo",
+        "texto": "Si sos independiente de una app, no hay contrato de trabajo"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y entonces?"
+      },
+      {
+        "de": "yo",
+        "texto": "No hay despido. Se aplica el Código Civil, no la ley laboral"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, venite a comer el domingo"
+      }
+    ],
+    "remate": "Independiente de una app: no hay despido"
+  },
+  "captions": [
+    "Desde la Ley 27.802, los prestadores independientes de plataformas quedaron fuera de la Ley de Contrato de Trabajo.",
+    "Sin contrato de trabajo no hay despido ni indemnización. Para lo que la ley no prevé, se aplica el Código Civil y Comercial.",
+    "Tampoco hay ART: la ley pide un seguro de accidentes personales, que cubre otra cosa.",
+    "Pasáselo a quien reparte por app."
+  ],
+  "hashtags": [
+    "repartidores",
+    "apps",
+    "plataformas",
+    "reformalaboral",
+    "humor",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "delivery",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "plataformas",
+  "hechos": [
+    "plataformas-chat-indemnizacion-app"
+  ]
+}

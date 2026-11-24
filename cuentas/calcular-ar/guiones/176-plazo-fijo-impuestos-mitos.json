@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "176-plazo-fijo-impuestos-mitos",
+  "idea": "plazo-fijo-ganancias-exento",
+  "titulo": "Plazo fijo e impuestos: mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "menta",
+  "hooks": [
+    "Tu plazo fijo y los impuestos",
+    "Los intereses del plazo fijo no pagan",
+    "Tres mitos del plazo fijo"
+  ],
+  "voz": "Los intereses del plazo fijo pagan Ganancias. No: para personas humanas están exentos. La exención es solo en pesos. Ya no: desde marzo de dos mil veintiséis la ley sacó ese límite. Pagan Bienes Personales. Tampoco: los depósitos a plazo fijo también están exentos.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Los intereses del plazo fijo pagan Ganancias",
+        "realidad": "Para personas humanas están exentos."
+      },
+      {
+        "mito": "La exención es solo en pesos",
+        "realidad": "Desde la Ley 27.802 ya no se limita a la moneda nacional."
+      },
+      {
+        "mito": "Pagan Bienes Personales",
+        "realidad": "Los depósitos a plazo fijo también están exentos."
+      }
+    ]
+  },
+  "captions": [
+    "Los intereses de un plazo fijo no pagan Ganancias si sos persona humana: están exentos por el artículo 26, inciso h, de la ley.",
+    "La Ley 27.802, publicada el 6 de marzo de 2026, sacó la limitación a moneda nacional de esa exención.",
+    "Los depósitos a plazo fijo también están exentos de Bienes Personales.",
+    "Antes de elegir dónde ahorrar, compará la tasa con la inflación del mes."
+  ],
+  "hashtags": [
+    "plazofijo",
+    "ganancias",
+    "bienespersonales",
+    "ahorro",
+    "impuestos",
+    "inversiones",
+    "bancos",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "plazo-fijo",
+  "hechos": [
+    "plazo-fijo-ganancias-exento"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "008-taller-antes-despues",
+  "titulo": "An auto shop's website, before and after",
+  "categoria": "tecnico",
+  "formato": "antes-despues",
+  "paleta": "tinta",
+  "hooks": [
+    "Do people have to zoom to call you?",
+    "The auto shop website nobody can read",
+    "From zooming in to a quote button"
+  ],
+  "voz": "A classic: the shop's website has tiny text on phones, the phone number is buried below and the map never loads. In the new version everything reads at a glance, it opens fast and the button to get a quote is always within reach.",
+  "contenido": {
+    "negocio": {
+      "rubro": "taller-mecanico",
+      "nombre": "South Piston Auto",
+      "lema": "General repair and maintenance"
+    },
+    "antes": {
+      "defectos": [
+        "Tiny text on phones",
+        "Phone number buried below",
+        "Map never loads"
+      ]
+    },
+    "despues": {
+      "titular": "Repairs and maintenance, by appointment",
+      "boton": "Get a quote",
+      "secciones": [
+        "Services",
+        "Appointments",
+        "Find us"
+      ]
+    }
+  },
+  "captions": [
+    "If someone has to zoom in to find your phone number, you've used up their patience before they even call.",
+    "A website built for phones reads without zooming, opens fast and keeps the contact button in view, even when you scroll all the way down.",
+    "Whoever's searching for a mechanic is usually stuck with a broken-down car and in a hurry. Give them your phone number, address and hours at first glance."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "autorepair",
+    "beforeandafter",
+    "websiteredesign",
+    "responsivedesign",
+    "mechanic"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

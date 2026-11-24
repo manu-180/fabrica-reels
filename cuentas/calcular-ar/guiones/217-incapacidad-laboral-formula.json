@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "clave": "217-incapacidad-laboral-formula",
+  "idea": "art-formula-53",
+  "titulo": "Cómo se calcula la indemnización por incapacidad",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Accidente de trabajo: la cuenta de la indemnización",
+    "53 por tu sueldo: la fórmula",
+    "Incapacidad laboral: así se calcula"
+  ],
+  "voz": "Si un accidente de trabajo te deja una incapacidad parcial, la aseguradora de riesgos del trabajo te paga una sola vez. La fórmula es 53, por tu ingreso base, por el porcentaje de incapacidad, por 65 dividido tu edad. Cuanto más joven, más alto el resultado. Y hay un piso mínimo que fija una resolución.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "un accidente de trabajo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Pago único"
+        }
+      },
+      {
+        "frase": "La fórmula es 53",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Coeficiente fijo",
+              "valor": "53"
+            },
+            {
+              "concepto": "Ingreso base mensual",
+              "valor": "× ingreso"
+            },
+            {
+              "concepto": "Porcentaje de incapacidad",
+              "valor": "× %"
+            },
+            {
+              "concepto": "Coeficiente de edad",
+              "valor": "× 65 ÷ edad"
+            }
+          ],
+          "total": {
+            "concepto": "Pago único",
+            "valor": "Resultado"
+          }
+        }
+      },
+      {
+        "frase": "Cuanto más joven, más",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Más joven, más alto"
+        }
+      },
+      {
+        "frase": "hay un piso mínimo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Con un piso por resolución"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Ley 24.557, art. 14 ap. 2 inc. a: incapacidad parcial de hasta el 50 %, pago único de 53 × ingreso base mensual × porcentaje de incapacidad × 65 ÷ edad.",
+    "La edad que cuenta es la que tenías en la primera manifestación invalidante.",
+    "Si el accidente fue en el lugar de trabajo o a disposición del empleador, se suma un 20 % adicional (art. 3 de la Ley 26.773). El accidente in itinere no lo tiene.",
+    "El principio general de la ley es el pago único, no una renta mensual."
+  ],
+  "hashtags": [
+    "art",
+    "accidentelaboral",
+    "riesgosdeltrabajo",
+    "incapacidad",
+    "indemnizacion",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.557 de Riesgos del Trabajo, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/app/(ar)/indemnizacion-art/page.tsx:69"
+  ],
+  "tema": "art",
+  "hechos": [
+    "art-formula-53"
+  ]
+}

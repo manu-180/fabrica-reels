@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "028-chat-diciembre-cuantas-me-quedan",
+  "titulo": "Diciembre y cuántas clases me quedan",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "tema": "cierre-de-anio",
+  "hooks": [
+    "Diciembre en el grupo del taller",
+    "¿Cuántas clases me quedan en diciembre?",
+    "Fin de año y todos preguntan lo mismo"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Cerámica jueves",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, ¿las clases que me quedan las uso en enero?"
+      },
+      {
+        "de": "yo",
+        "texto": "Solo se reserva en el mes activo, chicas"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y dónde veo cuántas me quedan?"
+      },
+      {
+        "de": "yo",
+        "texto": "En la app, arriba: clases disponibles"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ah, mirá, tengo dos"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ya me anoto antes de que se llene"
+      }
+    ],
+    "remate": "Cada alumno ve cuántas clases le quedan"
+  },
+  "captions": [
+    "Fin de año en el taller: todos quieren saber cuántas clases les quedan. En Assistify lo ven en la app como clases disponibles.",
+    "Las clases se reservan en el mes activo. Mejor usarlas antes de que termine.",
+    "Mandáselo al grupo de tu taller antes de las fiestas."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "ceramica",
+    "humor",
+    "diciembre",
+    "findeanio",
+    "creditos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "mes-activo",
+    "un-credito-una-clase"
+  ],
+  "idea": "diciembre-cuantas-me-quedan",
+  "ventana": {
+    "desde": "11-15",
+    "hasta": "12-20"
+  }
+}

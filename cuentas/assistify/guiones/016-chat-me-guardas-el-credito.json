@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "clave": "016-chat-me-guardas-el-credito",
+  "titulo": "¿Me guardás el crédito igual?",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "indigo",
+  "tema": "cancelaciones",
+  "hooks": [
+    "¿Me guardás el crédito igual, profe?",
+    "Cancelar una hora antes y pedir favor",
+    "La alumna que cancela a último momento"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Caro, yoga",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, hoy no llego, ¿me guardás el crédito igual?"
+      },
+      {
+        "de": "yo",
+        "texto": "La clase es en una hora, Caro"
+      },
+      {
+        "de": "ellos",
+        "texto": "Dale, porfa, es la última vez"
+      },
+      {
+        "de": "yo",
+        "texto": "Eso dijiste la otra semana"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, ¿y esta me la regalás?"
+      },
+      {
+        "de": "yo",
+        "texto": "La regla la pone la app, no yo"
+      }
+    ],
+    "remate": "Si cancelás tarde, el crédito no vuelve"
+  },
+  "captions": [
+    "Con Assistify el plazo para cancelar lo define el taller y vale igual para todos. Si alguien cancela tarde, el lugar se libera pero el crédito no vuelve.",
+    "Se terminan los favores que hacés para no quedar mal.",
+    "Etiquetá a la profe que siempre termina regalando clases."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "yoga",
+    "humor",
+    "cancelaciones",
+    "profesoresdeyoga",
+    "reglas"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "cancelacion-tardia",
+    "plazo-lo-define-el-taller"
+  ],
+  "idea": "me-guardas-el-credito"
+}

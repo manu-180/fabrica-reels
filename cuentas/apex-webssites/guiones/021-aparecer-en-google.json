@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "021-aparecer-en-google",
+  "titulo": "How Google decides to show your business",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "They Google you and you don't show up?",
+    "Google can't guess what you do",
+    "Search your trade and your neighborhood now"
+  ],
+  "voz": "When someone searches plumber in Austin, Google shows the websites that say clearly what they do and where. To show up, your website needs a title with your trade and your area, original copy and a Google Maps listing. With just Instagram, you barely make that list.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "searches plumber in Austin",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "plumber in austin",
+          "resultados": [
+            "Bluebird Plumbing | Austin",
+            "Delta South Pipe Co.",
+            "Plumbers near you"
+          ],
+          "destacado": 0
+        }
+      },
+      {
+        "frase": "a title with your trade",
+        "visual": {
+          "tipo": "codigo",
+          "lineas": [
+            "<title>Plumber in Austin</title>",
+            "<meta name=\"description\"",
+            "  content=\"Repairs and emergencies\">"
+          ]
+        }
+      },
+      {
+        "frase": "a Google Maps listing",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Your Google Maps listing"
+        }
+      },
+      {
+        "frase": "barely make that list",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Instagram alone won't cut it"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Google shows whoever explains clearly what they do and where. If your website's title just says 'Welcome,' Google has no idea you're a plumber in Austin.",
+    "To start showing up: a title with your trade and your area, copy you wrote yourself, and a Google Maps listing with photos and hours.",
+    "Search your trade and your neighborhood on Google, the way a customer would. Do you show up? Do your competitors? There's your answer."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "seo",
+    "localseo",
+    "googlemaps",
+    "searchengineoptimization",
+    "google"
+  ],
+  "tema": "google",
+  "hechos": [
+    "seo-tecnico"
+  ]
+}

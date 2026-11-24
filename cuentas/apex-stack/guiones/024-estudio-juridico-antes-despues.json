@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "024-estudio-juridico-antes-despues",
+  "titulo": "La página de un estudio jurídico, antes y después",
+  "categoria": "tecnico",
+  "formato": "antes-despues",
+  "paleta": "arcilla",
+  "hooks": [
+    "¿Tu estudio tiene un aviso de no seguro?",
+    "Un abogado con correo genérico da dudas",
+    "Abogados: lo que ve tu cliente primero"
+  ],
+  "voz": "Un estudio jurídico vive de la confianza. Si el navegador avisa que tu página no es segura y contestás desde un correo genérico, esa confianza se pierde antes de la primera consulta. Con dominio propio, candadito y textos claros, el cliente llega a la reunión convencido.",
+  "contenido": {
+    "negocio": {
+      "rubro": "estudio-juridico",
+      "nombre": "Estudio Quillén Abogados",
+      "lema": "Derecho laboral y de familia"
+    },
+    "antes": {
+      "defectos": [
+        "Aviso de sitio no seguro",
+        "Correo gratuito genérico",
+        "Párrafos eternos en gris"
+      ]
+    },
+    "despues": {
+      "titular": "Te explicamos tus derechos, claro",
+      "boton": "Consultá tu caso",
+      "secciones": [
+        "Áreas",
+        "El equipo",
+        "Contacto"
+      ]
+    }
+  },
+  "captions": [
+    "En un estudio jurídico, el cliente evalúa la seriedad antes de la primera reunión. Un aviso de sitio no seguro o un mail genérico lo hacen dudar justo ahí.",
+    "Un correo como consultas@tuestudio.com transmite más que cualquier título colgado en la pared. Y lo conseguís con el dominio de tu página.",
+    "Párrafos eternos en letra gris no le explican nada a nadie. Tu cliente quiere entender en dos líneas si podés ayudarlo con su caso."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "abogados",
+    "estudiojuridico",
+    "antesydespues",
+    "seguridadweb",
+    "marketingjuridico",
+    "profesionales"
+  ],
+  "fuente": "Chromium Blog (2018): desde Chrome 68, todas las páginas HTTP se marcan como \"No seguro\".",
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

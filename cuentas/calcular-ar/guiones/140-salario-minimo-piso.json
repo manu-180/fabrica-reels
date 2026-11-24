@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "clave": "140-salario-minimo-piso",
+  "idea": "smvm-convenio-piso",
+  "titulo": "El salario mínimo no es tu piso",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "El salario mínimo no es tu piso",
+    "Con convenio, tu piso es otro",
+    "Media jornada, medio salario mínimo"
+  ],
+  "voz": "El salario mínimo es el piso absoluto de todos. Pero si tenés convenio, tu piso real es la escala de tu categoría, que es más alta. Y el mínimo mensual es por jornada completa: si trabajás media jornada, te toca la mitad. Lo que no cambia es el valor de la hora.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "el piso absoluto",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Salario mínimo: el piso de todos"
+        }
+      },
+      {
+        "frase": "la escala de tu categoría",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Salario mínimo",
+            "items": [
+              "Piso absoluto",
+              "Para todos"
+            ]
+          },
+          "der": {
+            "titulo": "Tu convenio",
+            "items": [
+              "Escala de tu categoría",
+              "Más alta"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "te toca la mitad",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Jornada completa",
+              "valor": "Entero"
+            },
+            {
+              "concepto": "Media jornada",
+              "valor": "÷ 2"
+            }
+          ],
+          "total": {
+            "concepto": "Tu salario mínimo",
+            "valor": "La mitad"
+          }
+        }
+      },
+      {
+        "frase": "el valor de la hora",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La hora vale lo mismo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El salario mínimo, vital y móvil es el piso absoluto. Si trabajás con convenio colectivo, tu piso real es la escala de tu categoría.",
+    "El mínimo mensual es para la jornada legal completa. Con media jornada te corresponde la mitad, en proporción.",
+    "El valor por hora no se prorratea: una hora vale lo mismo trabajes 20 o 48 horas por semana.",
+    "Si tu sueldo está cerca del salario mínimo, revisá tu convenio: casi siempre te corresponde más."
+  ],
+  "hashtags": [
+    "salariominimo",
+    "smvm",
+    "convenio",
+    "sueldo",
+    "mediajornada",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Resolución 4/2026 del Consejo del Salario (Boletín Oficial)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/lib/salario-minimo.ts:8"
+  ],
+  "tema": "salario-minimo",
+  "hechos": [
+    "smvm-convenio-piso"
+  ]
+}

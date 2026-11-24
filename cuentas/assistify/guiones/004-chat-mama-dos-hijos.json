@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "004-chat-mama-dos-hijos",
+  "titulo": "Una cuenta para toda la familia",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "cielo",
+  "tema": "familias",
+  "hooks": [
+    "La mamá que tiene dos hijos en danza",
+    "¿Dos hijos en el taller? Una cuenta",
+    "Cuando anotar a los chicos era un trámite"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mamá de Tomi y Juli",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hola profe, ¿cómo anoto a los dos chicos?"
+      },
+      {
+        "de": "yo",
+        "texto": "Creás una cuenta vos y sumás a cada uno"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y pago dos veces?"
+      },
+      {
+        "de": "yo",
+        "texto": "No, las clases salen de tu saldo"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y si Juli falta?"
+      },
+      {
+        "de": "yo",
+        "texto": "Si cancela a tiempo, la clase vuelve a tu cuenta"
+      },
+      {
+        "de": "ellos",
+        "texto": "Por fin algo que no anoto en la heladera"
+      }
+    ],
+    "remate": "Una cuenta para toda la familia"
+  },
+  "captions": [
+    "En Assistify el titular crea una cuenta y agrega a cada hijo. Cada uno tiene su perfil y su historial, y las clases salen del saldo del titular.",
+    "Si un hijo cancela a tiempo, la clase vuelve al saldo de la familia. Nada de cuentas en la heladera.",
+    "Ideal para talleres de chicos y academias con hermanos."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "danza",
+    "familias",
+    "humor",
+    "academiainfantil",
+    "hermanos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "familia-una-cuenta",
+    "familia-credito-vuelve"
+  ],
+  "idea": "mama-con-dos-hijos"
+}

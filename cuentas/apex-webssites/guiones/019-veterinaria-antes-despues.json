@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "019-veterinaria-antes-despues",
+  "titulo": "A vet clinic's website, before and after",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "arcilla",
+  "hooks": [
+    "Can people find your emergency line fast?",
+    "The website nobody wants in an emergency",
+    "In an emergency, every tap counts"
+  ],
+  "voz": "When your dog gets sick at night, you don't want to hunt for the phone number among animated paw prints. In this vet's new version, emergency care is right at the top with a button that calls directly. Vaccines, appointments and hours are one tap away.",
+  "contenido": {
+    "negocio": {
+      "rubro": "veterinaria",
+      "nombre": "Snout Vet Clinic",
+      "lema": "Checkups, vaccines and emergency care"
+    },
+    "antes": {
+      "defectos": [
+        "Paw prints all over",
+        "Phone number buried below",
+        "No emergency hours"
+      ]
+    },
+    "despues": {
+      "titular": "Emergency care and checkups for your pet",
+      "boton": "Call emergency line",
+      "secciones": [
+        "Emergency",
+        "Vaccines",
+        "Appointments"
+      ]
+    }
+  },
+  "captions": [
+    "Whoever lands on a vet's website is often scared and in a hurry. The first thing they need to see is how to reach emergency care.",
+    "Paw print backgrounds, music and the phone number at the very bottom: lots of personality, not much help. In an emergency, a big button that calls directly beats any animation.",
+    "Vaccines, spay and neuter, grooming and appointments: if every service has its own spot on the website, you stop explaining the same thing over the phone all day."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "veterinary",
+    "pets",
+    "beforeandafter",
+    "websiteredesign",
+    "shoplocal"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

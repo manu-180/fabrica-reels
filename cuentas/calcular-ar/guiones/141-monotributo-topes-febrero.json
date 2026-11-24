@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "141-monotributo-topes-febrero",
+  "titulo": "En febrero se actualizan los topes del monotributo",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Febrero mueve los topes del monotributo",
+    "Tu margen para facturar cambia en febrero",
+    "Monotributo: lo que cambia en febrero"
+  ],
+  "voz": "En febrero se actualizan los topes del monotributo. Las escalas suben con la inflación dos veces por año, en febrero y en agosto. Si estabas cerca del tope de tu categoría, tu margen para facturar cambia. Revisá en qué categoría quedás antes del 5 de febrero.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "se actualizan los topes del",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Topes nuevos del monotributo"
+        }
+      },
+      {
+        "frase": "en febrero y en agosto",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Febrero y agosto"
+        }
+      },
+      {
+        "frase": "tu margen para facturar cambia",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cambia tu margen para facturar"
+        }
+      },
+      {
+        "frase": "antes del 5 de febrero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Recategorización: hasta el 5"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "ARCA actualiza las escalas del monotributo dos veces por año por la inflación: los topes de facturación y las cuotas suben por el mismo factor.",
+    "Si en agosto estabas justo en el límite de tu categoría, con los topes nuevos de febrero tu margen puede ser otro.",
+    "La recategorización de febrero se puede hacer hasta el día 5. Si seguís dentro de tu categoría, no tenés que hacer nada.",
+    "Antes de facturar más en febrero, mirá cuánto te queda en tu categoría."
+  ],
+  "hashtags": [
+    "monotributo",
+    "monotributistas",
+    "topes",
+    "categorias",
+    "arca",
+    "facturacion",
+    "emprendedores",
+    "independientes",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: categorías del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: ayuda sobre recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "monotributo-calendario-febrero-actualiza",
+  "ventana": {
+    "desde": "02-01",
+    "hasta": "02-28"
+  },
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-calendario-febrero-actualiza"
+  ]
+}

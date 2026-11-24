@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "clave": "030-confianza",
+  "titulo": "Why people don't trust a business without a website",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "bosque",
+  "hooks": [
+    "Why do people ask for photos before buying?",
+    "Can't find you? They won't trust you",
+    "Customers doubt you before they meet you"
+  ],
+  "voz": "Before buying from you, people look for signs that you're real. They check for actual photos of your place, customer reviews, an address and a clear way to reach you. A polished website puts all of that in one place. Without it, even if you're the best, you look like everyone else.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "signs that you're real",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Are you even real?"
+        }
+      },
+      {
+        "frase": "actual photos of your place",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "No website",
+            "items": [
+              "A random phone number",
+              "No photos",
+              "No address"
+            ]
+          },
+          "der": {
+            "titulo": "With a website",
+            "items": [
+              "Photos of your place",
+              "Customer reviews",
+              "Address and map"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "in one place",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourbusiness.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "look like everyone else",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "electrician north side",
+          "resultados": [
+            "Licensed electrician",
+            "General electrical work",
+            "Electrician who comes to you"
+          ],
+          "destacado": 1
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Before paying someone they don't know, your customer looks for proof: real photos, reviews, an address. If they don't find it, they hesitate, even if you're the best in town.",
+    "A polished website shows your work, tells people who you are and makes it clear how to reach you, any time, without you having to explain it.",
+    "Stock photos are easy to spot. Photos of your place, your team and your real work show your customer that you actually exist."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "trust",
+    "sales",
+    "onlinepresence",
+    "shoplocal",
+    "reputation"
+  ],
+  "tema": "confianza",
+  "hechos": []
+}

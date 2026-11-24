@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "clave": "161-empleada-domestica-despido-mitos",
+  "idea": "despido-empleada-domestica-multa-derogada",
+  "titulo": "Despido de la empleada doméstica",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "papel",
+  "hooks": [
+    "Tres mitos del despido en casas particulares",
+    "Despedir a tu empleada: lo que cambió",
+    "Lo que se dice mal del despido doméstico"
+  ],
+  "voz": "Si estaba en negro, cobra una indemnización extra. Ya no: esa multa de su ley se derogó en julio de dos mil veinticuatro. El preaviso es de uno o dos meses. No: son diez días con menos de un año y treinta con más. Si renuncia ella, no avisa nada. Falso: ella da diez días.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si estaba en negro, cobra una indemnización extra",
+        "realidad": "Esa multa de su ley se derogó en julio de 2024."
+      },
+      {
+        "mito": "El preaviso es de uno o dos meses",
+        "realidad": "Son 10 días con menos de un año y 30 días con más."
+      },
+      {
+        "mito": "Si renuncia ella, no avisa nada",
+        "realidad": "Tiene que dar 10 días de preaviso."
+      }
+    ]
+  },
+  "captions": [
+    "El artículo 50 de la Ley 26.844, que preveía la indemnización agravada por falta de registro, lo derogó la Ley 27.742 en julio de 2024. No registrarla tiene otras consecuencias.",
+    "En casas particulares el preaviso se cuenta en días: 10 con menos de un año de antigüedad y 30 con más.",
+    "Si la que se va es la empleada, tiene que dar 10 días de preaviso.",
+    "La indemnización por antigüedad sigue siendo un mes de sueldo por año o fracción de más de tres meses."
+  ],
+  "hashtags": [
+    "empleadadomestica",
+    "casasparticulares",
+    "despido",
+    "preaviso",
+    "indemnizacion",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleadores",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.844 de Casas Particulares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "despido-empleada-domestica",
+  "hechos": [
+    "despido-empleada-domestica-multa-derogada"
+  ]
+}

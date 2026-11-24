@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "clave": "120-casas-particulares-aguinaldo-extras",
+  "titulo": "Aguinaldo en casas particulares: el mes de horas extras",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Tu empleada hizo horas extras: mirá el aguinaldo",
+    "El mes con horas extras cuenta",
+    "Aguinaldo de casas particulares, sin errores"
+  ],
+  "voz": "Si tenés a alguien trabajando en tu casa, revisá el semestre antes de pagar el aguinaldo. La base es la mayor remuneración mensual, por todo concepto. Si un mes hizo horas extras y cobró más, ese mes es el que cuenta. El aguinaldo es la mitad de ese mes.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "antes de pagar el aguinaldo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Aguinaldo de casas particulares"
+        }
+      },
+      {
+        "frase": "la mayor remuneración mensual",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La mayor remuneración del semestre"
+        }
+      },
+      {
+        "frase": "hizo horas extras",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Con horas extras, ese mes cuenta"
+        }
+      },
+      {
+        "frase": "la mitad de ese mes",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Mejor mes del semestre",
+              "valor": "100 %"
+            },
+            {
+              "concepto": "Dividido",
+              "valor": "÷ 2"
+            }
+          ],
+          "total": {
+            "concepto": "Aguinaldo",
+            "valor": "50 %"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En casas particulares el aguinaldo es el 50 % de la mayor remuneración mensual devengada, por todo concepto, dentro del semestre (Ley 26.844, art. 26).",
+    "Las horas extras se pagan con 50 % de recargo, y con 100 % los sábados después de las 13, los domingos y los feriados. Ese mes puede ser el más alto.",
+    "Antes de pagar, repasá mes por mes de julio a diciembre y quedate con el más alto. Ese es la base.",
+    "Si sos empleador en casas particulares, guardalo para diciembre."
+  ],
+  "hashtags": [
+    "casasparticulares",
+    "empleadadomestica",
+    "aguinaldo",
+    "sac",
+    "horasextras",
+    "empleador",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.844, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "planilla-casas-particulares-aguinaldo-extras",
+  "ventana": {
+    "desde": "12-15",
+    "hasta": "12-31"
+  },
+  "tema": "planilla-casas-particulares",
+  "hechos": [
+    "planilla-casas-particulares-aguinaldo-extras"
+  ]
+}

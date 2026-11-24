@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-23",
+  "hechos": [
+    {
+      "id": "demo-gratis-antes-de-pagar",
+      "tipo": "oferta",
+      "texto": "La demo es gratis y se ve antes de pagar: si no convence, no se paga nada",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:41",
+      "envejece": null
+    },
+    {
+      "id": "demo-en-24-horas",
+      "tipo": "oferta",
+      "texto": "La demo, gratis, en menos de 24 horas",
+      "cifras": [
+        "24"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:25",
+      "envejece": null
+    },
+    {
+      "id": "plazos-por-plan",
+      "tipo": "oferta",
+      "texto": "Landing en 5 días hábiles, web interactiva en 10 y tienda online en 15, desde que está el contenido",
+      "cifras": [
+        "5",
+        "10",
+        "15"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/plazos.ts:7",
+      "envejece": null
+    },
+    {
+      "id": "plazo-por-escrito-o-devolucion",
+      "tipo": "oferta",
+      "texto": "El plazo queda por escrito; si no se cumple, se devuelve lo pagado",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:25",
+      "envejece": null
+    },
+    {
+      "id": "cambios-ilimitados-de-por-vida",
+      "tipo": "oferta",
+      "texto": "Cambios ilimitados y mantenimiento gratis de por vida, con hosting incluido y sin abono",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:65",
+      "envejece": null
+    },
+    {
+      "id": "carga-en-menos-de-2-segundos",
+      "tipo": "producto",
+      "texto": "Carga en menos de 2 segundos, sin mensualidades ni comisiones por venta",
+      "cifras": [
+        "2"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:37",
+      "envejece": null
+    },
+    {
+      "id": "codigo-es-tuyo",
+      "tipo": "oferta",
+      "texto": "El código es del cliente cuando termina de pagar y se lo lleva sin costo con sus datos",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:57",
+      "envejece": null
+    },
+    {
+      "id": "se-adapta-al-celular",
+      "tipo": "producto",
+      "texto": "Se adapta a cualquier pantalla y se revisa en distintos dispositivos antes de entregarla",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:49",
+      "envejece": null
+    },
+    {
+      "id": "hosting-incluido-dominio-propio",
+      "tipo": "oferta",
+      "texto": "El hosting está incluido; el dominio va a nombre del cliente y cuesta unos USD 10 por año",
+      "cifras": [
+        "10"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:53",
+      "envejece": null
+    },
+    {
+      "id": "diseno-a-medida-sin-plantillas",
+      "tipo": "producto",
+      "texto": "Diseño 100 % a medida, sin plantillas",
+      "cifras": [
+        "100"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:34",
+      "envejece": null
+    },
+    {
+      "id": "whatsapp-con-consulta-escrita",
+      "tipo": "producto",
+      "texto": "Botón de WhatsApp con la consulta ya escrita",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:36",
+      "envejece": null
+    },
+    {
+      "id": "formularios-consulta-completa",
+      "tipo": "producto",
+      "texto": "Formularios que traen cada consulta completa (Web Interactiva)",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:65",
+      "envejece": null
+    },
+    {
+      "id": "tienda-sin-comision",
+      "tipo": "producto",
+      "texto": "Tienda online propia: 0 % de comisión, cada venta es 100 % del negocio",
+      "cifras": [
+        "0",
+        "100"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:105",
+      "envejece": null
+    },
+    {
+      "id": "seo-tecnico",
+      "tipo": "producto",
+      "texto": "Carga rápida y SEO técnico para aparecer en Google",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:37",
+      "envejece": null
+    },
+    {
+      "id": "velocidad-tres-segundos",
+      "tipo": "dato",
+      "texto": "Google/SOASTA (2016, \"The Need for Mobile Speed\"): el 53 % de las visitas desde el celular se abandonan si la página tarda más de 3 segundos",
+      "cifras": [
+        "53",
+        "3"
+      ],
+      "fuente": "repo:manu-180/apex-demos:reels/prueba/guiones/003-velocidad-tres-segundos.json:77",
+      "envejece": null
+    },
+    {
+      "id": "primera-cuota-tras-ver-la-demo",
+      "tipo": "oferta",
+      "texto": "Comentá WEB y te armamos gratis la página web de tu empresa; recién cuando la ves y te gusta, pagás la primera cuota para avanzar",
+      "cifras": [],
+      "fuente": "repo:manu-180/apex-demos:scripts/prueba/lib.mjs:21",
+      "envejece": null
+    },
+    {
+      "id": "tres-cuotas-sin-interes",
+      "tipo": "oferta",
+      "texto": "Se paga de una vez o en 3 cuotas sin interés: al contratar, a los 30 y a los 60 días, con MercadoPago o transferencia",
+      "cifras": [
+        "3",
+        "30",
+        "60"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:45",
+      "envejece": null
+    },
+    {
+      "id": "precio-landing",
+      "tipo": "oferta",
+      "texto": "Landing Page: $300.000, precio fijo por escrito",
+      "cifras": [
+        "300.000",
+        "300000"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:28",
+      "envejece": "cambia si APEX actualiza precios en apex_web"
+    },
+    {
+      "id": "precio-web-interactiva",
+      "tipo": "oferta",
+      "texto": "Web Interactiva: $600.000, precio fijo por escrito",
+      "cifras": [
+        "600.000",
+        "600000"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:57",
+      "envejece": "cambia si APEX actualiza precios en apex_web"
+    },
+    {
+      "id": "precio-tienda-online",
+      "tipo": "oferta",
+      "texto": "Tienda Online: $900.000, precio fijo por escrito",
+      "cifras": [
+        "900.000",
+        "900000"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:86",
+      "envejece": "cambia si APEX actualiza precios en apex_web"
+    },
+    {
+      "id": "tienda-cobra-con-mercado-pago",
+      "tipo": "producto",
+      "texto": "Tienda Online con catálogo, buscador, carrito y cobro con el Mercado Pago del negocio",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:94",
+      "envejece": null
+    }
+  ]
+}

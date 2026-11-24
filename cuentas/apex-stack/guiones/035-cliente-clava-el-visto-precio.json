@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "clave": "035-cliente-clava-el-visto-precio",
+  "titulo": "El cliente que te deja en visto",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "arcilla",
+  "hooks": [
+    "Cuando mandás el precio y desaparecen",
+    "El misterio del cliente que no vuelve",
+    "POV: le pasaste el presupuesto por chat"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Lucas · Taller",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hola, ¿cuánto sale hacer la distribución completa?"
+      },
+      {
+        "de": "yo",
+        "texto": "Hola Lucas. Te sale tanto con repuestos originales y garantía."
+      },
+      {
+        "de": "ellos",
+        "texto": "Buenísimo, dejame que lo hablo con mi señora"
+      },
+      {
+        "de": "yo",
+        "texto": "Dale, avisame cualquier duda."
+      },
+      {
+        "de": "yo",
+        "texto": "Hola Lucas, ¿pudiste hablarlo?"
+      },
+      {
+        "de": "ellos",
+        "texto": "No me dio los tiempos todavía"
+      },
+      {
+        "de": "yo",
+        "texto": "Lucas, pasaron ocho meses"
+      }
+    ],
+    "remate": "La señora todavía lo está pensando"
+  },
+  "captions": [
+    "Pasar presupuestos en frío por WhatsApp casi siempre termina en visto. Cuando tenés una web clara con tus servicios explicados, el cliente ya sabe lo que hacés antes de escribirte.",
+    "El clásico te aviso después de hablarlo en casa. Si tu negocio tuviera una página con fotos de tus trabajos y detalles de atención, la consulta llega mucho más firme.",
+    "Para los que todavía están esperando esa respuesta desde el año pasado."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "tallermecanico",
+    "pymesargentinas",
+    "negocioslocales",
+    "emprendedoresargentinos",
+    "humorcomercial",
+    "paginaweb",
+    "argentina",
+    "ventasonline"
+  ],
+  "tema": "precio",
+  "hechos": []
+}

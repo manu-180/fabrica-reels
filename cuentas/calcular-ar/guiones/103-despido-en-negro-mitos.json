@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "103-despido-en-negro-mitos",
+  "idea": "indemnizacion-multas-derogadas",
+  "titulo": "Doble indemnización por trabajo en negro: ya no",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "La doble indemnización ya no existe",
+    "Trabajabas en negro: esto cambió en 2024",
+    "Dos mitos del despido en negro"
+  ],
+  "voz": "Si trabajabas en negro, te pagan doble indemnización. Ya no: la Ley 27.742 derogó esas multas en julio de 2024. Sin registro, no te corresponde indemnización. Falso: seguís teniendo la indemnización común y podés reclamar los aportes que te deben.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si trabajabas en negro, te pagan doble indemnización",
+        "realidad": "La Ley 27.742 derogó esas multas en julio de 2024."
+      },
+      {
+        "mito": "Sin registro, no te corresponde indemnización",
+        "realidad": "Tenés la indemnización común y podés reclamar los aportes."
+      }
+    ]
+  },
+  "captions": [
+    "La Ley 27.742, de julio de 2024, derogó las multas por empleo no registrado de la Ley 24.013 y las indemnizaciones agravadas de las Leyes 25.323 y 25.345.",
+    "Trabajar sin registrar no te deja sin nada: te corresponde la indemnización común por antigüedad y podés reclamar los aportes que no te hicieron.",
+    "Si alguien te promete una doble indemnización, pedile el artículo. Esas multas ya no corren.",
+    "Mandáselo a quien todavía cree que trabajar en negro paga doble."
+  ],
+  "hashtags": [
+    "indemnizacion",
+    "despido",
+    "trabajoennegro",
+    "trabajonoregistrado",
+    "derechoslaborales",
+    "trabajo",
+    "argentina",
+    "leybases",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.742 (Bases), arts. 99 y 100 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=401266",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "indemnizacion",
+  "hechos": [
+    "indemnizacion-multas-derogadas"
+  ]
+}

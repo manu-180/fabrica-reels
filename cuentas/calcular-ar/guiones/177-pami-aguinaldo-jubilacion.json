@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "clave": "177-pami-aguinaldo-jubilacion",
+  "titulo": "El aguinaldo de la jubilación también paga PAMI",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "El aguinaldo de tu jubilación tiene descuento",
+    "Jubilado: mirá tu recibo de junio",
+    "PAMI también se descuenta del aguinaldo"
+  ],
+  "voz": "En junio cobrás el aguinaldo de tu jubilación, y también te descuentan PAMI, la obra social de los jubilados. No está exento. La ley calcula el aporte sobre el haber, incluido el haber complementario, que es el aguinaldo. Por eso en junio el descuento de PAMI es más grande.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "también te descuentan PAMI",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El aguinaldo también paga PAMI"
+        }
+      },
+      {
+        "frase": "No está exento",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No está exento"
+        }
+      },
+      {
+        "frase": "incluido el haber complementario",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Haber complementario: el aguinaldo"
+        }
+      },
+      {
+        "frase": "el descuento de PAMI es",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Junio: descuento más grande"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Ley 19.032, art. 8: el aporte a PAMI se calcula sobre los haberes, incluido el haber complementario, que es el aguinaldo previsional.",
+    "Si venís de relación de dependencia, el descuento es del 3 % hasta el haber mínimo y del 6 % sobre lo que lo supera. Si venís de autónomos, es el 6 % sobre todo el haber.",
+    "El bono extraordinario no lleva este descuento: los decretos que lo fijan lo declaran no sujeto a descuentos.",
+    "Mirá tu recibo de junio con este dato en la cabeza."
+  ],
+  "hashtags": [
+    "jubilados",
+    "jubilacion",
+    "pami",
+    "aguinaldo",
+    "anses",
+    "recibo",
+    "junio",
+    "previsional",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 19.032, art. 8, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16081/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "descuento-pami-aguinaldo",
+  "ventana": {
+    "desde": "06-01",
+    "hasta": "06-30"
+  },
+  "tema": "descuento-pami",
+  "hechos": [
+    "descuento-pami-aguinaldo"
+  ]
+}

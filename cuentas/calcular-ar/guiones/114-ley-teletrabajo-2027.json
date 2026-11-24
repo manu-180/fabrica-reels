@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "clave": "114-ley-teletrabajo-2027",
+  "titulo": "La ley de teletrabajo se deroga en 2027",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "La ley de teletrabajo tiene fecha de salida",
+    "Trabajás desde tu casa: mirá esto",
+    "La desconexión digital se queda sin ley"
+  ],
+  "voz": "La ley de teletrabajo tiene fecha de salida. El 1 de enero de 2027 se deroga la Ley 27.555. Es la que trajo la desconexión digital, la vuelta a la oficina si la pedís y que te paguen los gastos. Desde enero, eso pasa a depender de tu convenio y tu contrato.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "El 1 de enero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "1 de enero de 2027"
+        }
+      },
+      {
+        "frase": "la desconexión digital",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Desconexión digital"
+        }
+      },
+      {
+        "frase": "te paguen los gastos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Equipos y gastos a cargo del empleador"
+        }
+      },
+      {
+        "frase": "de tu convenio y tu contrato",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tu convenio y tu contrato"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 199 de la Ley 27.802 deroga la Ley 27.555, el régimen de teletrabajo, a partir del 1 de enero de 2027.",
+    "La Ley 27.555 trajo la desconexión digital, la voluntariedad, la reversibilidad, los horarios para quien cuida y la compensación de gastos.",
+    "Desde enero, lo que garantizaba la ley especial pasa a depender del convenio de tu actividad y de tu contrato. Revisalos antes.",
+    "Si trabajás remoto o híbrido, guardá esto para charlarlo en tu trabajo antes de fin de año."
+  ],
+  "hashtags": [
+    "teletrabajo",
+    "homeoffice",
+    "trabajoremoto",
+    "desconexiondigital",
+    "reformalaboral",
+    "ley27802",
+    "derechoslaborales",
+    "trabajo",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "estatutos-teletrabajo-2027",
+  "ventana": {
+    "desde": "11-15",
+    "hasta": "12-31"
+  },
+  "caduca": "2026-12-31",
+  "tema": "estatutos-derogados",
+  "hechos": [
+    "estatutos-teletrabajo-2027"
+  ]
+}

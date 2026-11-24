@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "clave": "034-presupuesto-un-domingo",
+  "titulo": "El que te pide presupuesto un domingo a la noche",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "Mensaje un domingo a las once",
+    "El cliente que te escribe de noche",
+    "Cuando te piden presupuesto un domingo"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mariano Carpintería",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hola, perdón la hora. ¿Cuánto sale un placard?"
+      },
+      {
+        "de": "yo",
+        "texto": "Hola! Mañana a primera hora te paso detalles."
+      },
+      {
+        "de": "ellos",
+        "texto": "Urgente necesito una idea de valor ahora."
+      },
+      {
+        "de": "yo",
+        "texto": "Dale, arranca en el modelo base publicado."
+      },
+      {
+        "de": "ellos",
+        "texto": "Perfecto, mañana temprano te confirmo."
+      },
+      {
+        "de": "yo",
+        "texto": "Buen día, ¿pudiste ver las medidas?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Al final me regalaron un ropero de chapa."
+      }
+    ],
+    "remate": "La urgencia duró hasta el lunes a la mañana"
+  },
+  "captions": [
+    "Te escriben desesperados fuera de hora, les contestás volando para no perder la venta y después desaparecen en la nada.",
+    "Tener tus trabajos, medidas y opciones claras en tu página te ahorra contestar urgencias ajenas a medianoche.",
+    "El clásico cliente que se apura solo un domingo a las once y el lunes ya se olvidó."
+  ],
+  "hashtags": [
+    "pymesargentinas",
+    "negocioslocales",
+    "carpinteria",
+    "clientes",
+    "humorlaboral",
+    "comerciolocal",
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores"
+  ],
+  "tema": "presupuesto",
+  "hechos": []
+}

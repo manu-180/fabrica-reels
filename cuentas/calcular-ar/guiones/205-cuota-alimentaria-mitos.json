@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "clave": "205-cuota-alimentaria-mitos",
+  "idea": "cuota-alimentaria-no-hay-porcentaje",
+  "titulo": "Cuota alimentaria: tres mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "La cuota alimentaria no es un porcentaje fijo",
+    "Tres mitos de la cuota alimentaria",
+    "Cuánto es la cuota: la ley no dice"
+  ],
+  "voz": "La cuota alimentaria es un porcentaje fijo del sueldo. No: depende de lo que necesita el hijo y lo que puede cada uno. Si convivís con tu hijo, no aportás nada. Falso: cuidarlo tiene valor económico. La cuota termina con la mayoría de edad. Tampoco: llega a los 21, y a los 25 si estudia.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La cuota alimentaria es un porcentaje fijo del sueldo",
+        "realidad": "La ley mira lo que necesita el hijo y lo que puede cada progenitor."
+      },
+      {
+        "mito": "Si convivís con tu hijo, no aportás nada",
+        "realidad": "El cuidado diario tiene valor económico y cuenta como aporte."
+      },
+      {
+        "mito": "La cuota termina con la mayoría de edad",
+        "realidad": "Llega a los 21; hasta los 25 si estudia y eso le impide mantenerse."
+      }
+    ]
+  },
+  "captions": [
+    "Los arts. 658 y 659 del Código Civil y Comercial dicen que los dos progenitores deben la manutención, en proporción a sus posibilidades. No hay un porcentaje fijo del sueldo.",
+    "Art. 660: las tareas de cuidado que hace el progenitor que convive con el hijo tienen valor económico y son un aporte a su manutención.",
+    "La obligación llega a los 21 años, y hasta los 25 si el hijo estudia o se capacita y eso le impide mantenerse.",
+    "La cuota la fija un juez o la acuerdan los progenitores. Lo que sí se puede estimar es cuánto cuesta criar."
+  ],
+  "hashtags": [
+    "cuotaalimentaria",
+    "alimentos",
+    "hijos",
+    "familia",
+    "divorcio",
+    "crianza",
+    "derechos",
+    "argentina",
+    "padres",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ministerio de Justicia: Los alimentos de los hijos (Derecho Fácil)",
+      "url": "https://www.argentina.gob.ar/justicia/derechofacil/aplicalaley/los-alimentos-de-los-hijos",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/lib/cuota-alimentaria.ts:16"
+  ],
+  "tema": "cuota-alimentaria",
+  "hechos": [
+    "cuota-alimentaria-no-hay-porcentaje"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "027-gimnasio-antes-despues",
+  "titulo": "La página de un gimnasio, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "crema",
+  "hooks": [
+    "¿Los horarios de tu gimnasio son una foto?",
+    "Nadie se anota en un gimnasio borroso",
+    "Del flyer pixelado a la clase reservada"
+  ],
+  "voz": "Horarios en una foto borrosa, ni una pista de los planes y música que arranca sola. Así nadie se anima a ir. En la versión nueva ves las clases del día, los horarios se leen de una y un botón te deja reservar tu primera clase de prueba.",
+  "contenido": {
+    "negocio": {
+      "rubro": "gimnasio",
+      "nombre": "Gimnasio Hierro Sur",
+      "lema": "Musculación y clases grupales"
+    },
+    "antes": {
+      "defectos": [
+        "Horarios en una foto borrosa",
+        "Sin info de planes",
+        "Música que arranca sola"
+      ]
+    },
+    "despues": {
+      "titular": "Entrená a tu hora, sin vueltas",
+      "boton": "Reservá tu clase",
+      "secciones": [
+        "Clases",
+        "Horarios",
+        "Planes"
+      ]
+    }
+  },
+  "captions": [
+    "El que busca gimnasio quiere saber qué clases hay, a qué hora y cómo se arranca. Si tu página se lo muestra de una, el primer paso le cuesta mucho menos.",
+    "Una foto borrosa con los horarios no se lee en el celular y Google no la puede leer. Una grilla de verdad, sí.",
+    "Reservar una primera clase de prueba con un botón saca el miedo de arrancar. El resto lo hacen tus profes."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "gimnasio",
+    "fitness",
+    "antesydespues",
+    "rediseñoweb",
+    "entrenamiento"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

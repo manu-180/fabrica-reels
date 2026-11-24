@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "clave": "008-chat-cuantas-me-quedan",
+  "titulo": "¿Cuántas clases me quedan?",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "papel",
+  "tema": "recuperos",
+  "hooks": [
+    "¿Cuántas clases me quedan, profe?",
+    "La pregunta que todo profe teme",
+    "Cuando el cuaderno no contesta"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Martín, pilates",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, ¿cuántas clases me quedan este mes?"
+      },
+      {
+        "de": "yo",
+        "texto": "Uh, dejame que reviso el cuaderno"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y la que recuperé el martes contaba?"
+      },
+      {
+        "de": "yo",
+        "texto": "Creo que sí, o no"
+      },
+      {
+        "de": "ellos",
+        "texto": "Jaja, bueno, avisame"
+      },
+      {
+        "de": "yo",
+        "texto": "Te aviso mañana"
+      }
+    ],
+    "remate": "Con Assistify lo ve solo, en su celular"
+  },
+  "captions": [
+    "En Assistify cada alumno ve sus clases disponibles en la app. Un crédito es una clase, sin cuentas en el cuaderno.",
+    "La ficha de cada alumno muestra créditos, clases tomadas e historial. Vos lo ves en segundos.",
+    "Mandáselo a la profe que todavía cuenta clases con lápiz."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "pilates",
+    "humor",
+    "creditos",
+    "clases",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "un-credito-una-clase",
+    "ficha-alumno",
+    "tres-dolores"
+  ],
+  "idea": "cuantas-clases-me-quedan"
+}

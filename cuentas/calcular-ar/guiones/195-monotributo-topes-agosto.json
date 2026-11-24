@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "195-monotributo-topes-agosto",
+  "titulo": "En agosto cambian topes y cuotas del monotributo",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Agosto: cambian las cuotas del monotributo",
+    "Tus topes del monotributo se mueven en agosto",
+    "¿Seguís en tu categoría desde agosto?"
+  ],
+  "voz": "En agosto cambian los topes y las cuotas del monotributo. Suben con la inflación, igual que en febrero, y todo por el mismo porcentaje. Si facturaste cerca del límite, revisá si seguís en tu categoría. La recategorización de agosto se hace hasta el 5 y mira tus últimos doce meses.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "cambian los topes y las cuotas",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Topes y cuotas nuevos"
+        }
+      },
+      {
+        "frase": "todo por el mismo porcentaje",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Todo sube por el mismo factor"
+        }
+      },
+      {
+        "frase": "revisá si seguís en tu",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "¿Seguís en tu categoría?"
+        }
+      },
+      {
+        "frase": "se hace hasta el 5",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Recategorización: hasta el 5 de agosto"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "ARCA actualiza el monotributo dos veces por año por la inflación: en febrero y en agosto. Los topes, el impuesto y los aportes suben por el mismo factor.",
+    "La cuota de agosto ya viene con los valores nuevos. Revisá cuánto vas a pagar por mes.",
+    "En la recategorización de agosto se suma lo facturado de agosto del año anterior a julio de este. El trámite es hasta el día 5.",
+    "Si estabas en el límite, con los topes nuevos podés tener más margen. Fijate antes de facturar."
+  ],
+  "hashtags": [
+    "monotributo",
+    "monotributistas",
+    "cuotamonotributo",
+    "topes",
+    "arca",
+    "agosto",
+    "emprendedores",
+    "independientes",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: categorías del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/categorias.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: ayuda sobre recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "monotributo-calendario-agosto-actualiza",
+  "ventana": {
+    "desde": "08-01",
+    "hasta": "08-31"
+  },
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-calendario-agosto-actualiza"
+  ]
+}

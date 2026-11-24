@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "110-chat-dueno-alquiler",
+  "idea": "alquiler-chat-que-meses-tomaron",
+  "titulo": "El aumento del alquiler que no cierra",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "menta",
+  "hooks": [
+    "Me llegó el aumento del alquiler",
+    "El aumento del alquiler no me cerraba",
+    "Antes de pagar el aumento, pedí esto"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Dueño del depto",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hola, te paso el aumento del alquiler"
+      },
+      {
+        "de": "yo",
+        "texto": "Con el índice de precios me da distinto"
+      },
+      {
+        "de": "ellos",
+        "texto": "Es lo que calculó la inmobiliaria"
+      },
+      {
+        "de": "yo",
+        "texto": "Pasame la cuenta y qué meses tomaron"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Para qué tanto detalle?"
+      },
+      {
+        "de": "yo",
+        "texto": "Porque los porcentajes se multiplican, no se suman"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, lo reviso y te aviso"
+      }
+    ],
+    "remate": "El aumento se revisa con los índices oficiales"
+  },
+  "captions": [
+    "Si el aumento no te coincide con el índice de tu contrato, pedí la cuenta y qué meses tomaron. Es lo primero que hay que mirar.",
+    "Tres meses de 2 % no son 6 %: son 6,12 %, porque los porcentajes se multiplican. Si alguien los sumó, el número da distinto.",
+    "Salvo que el contrato diga otra cosa, se usa el índice de precios nacional del INDEC, nivel general.",
+    "Mandáselo a quien alquila y paga el aumento sin revisarlo."
+  ],
+  "hashtags": [
+    "alquiler",
+    "aumentoalquiler",
+    "inquilinos",
+    "ipc",
+    "inflacion",
+    "contratodealquiler",
+    "humor",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Código Civil y Comercial, art. 1199 (texto según DNU 70/2023)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "INDEC: IPC Nacional, nivel general (API oficial de series de tiempo)",
+      "url": "https://datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&format=json",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "alquiler",
+  "hechos": [
+    "alquiler-chat-que-meses-tomaron"
+  ]
+}

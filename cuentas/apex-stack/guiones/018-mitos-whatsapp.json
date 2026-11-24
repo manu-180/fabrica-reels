@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "clave": "018-mitos-whatsapp",
+  "titulo": "Mitos de atender todo por WhatsApp",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "tinta",
+  "hooks": [
+    "¿Con WhatsApp te alcanza para vender?",
+    "Atender todo por WhatsApp tiene un límite",
+    "Contestás lo mismo todo el santo día"
+  ],
+  "voz": "Si tengo WhatsApp, no necesito página. En la página ya ven horarios, precios y ubicación, y te escriben decididos. Respondo rápido, con eso alcanza. De noche dormís, y tu página sigue mostrando todo. Un formulario de contacto es suficiente. En el celular, un botón de WhatsApp es más rápido.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si tengo WhatsApp, no necesito página",
+        "realidad": "En la página ya ven horarios, precios y ubicación, y te escriben decididos"
+      },
+      {
+        "mito": "Respondo rápido, con eso alcanza",
+        "realidad": "De noche dormís, y tu página sigue mostrando todo"
+      },
+      {
+        "mito": "Un formulario de contacto es suficiente",
+        "realidad": "En el celular, tocar un botón de WhatsApp es más rápido que llenar un formulario"
+      }
+    ]
+  },
+  "captions": [
+    "WhatsApp es buenísimo para cerrar una venta. Para que alguien llegue a escribirte, primero tiene que encontrarte y confiar, y eso pasa en tu página.",
+    "Si todos los días contestás las mismas preguntas, ponelas en tu página: horarios, zona de envío, medios de pago. El que te escribe después ya viene a comprar.",
+    "Cuando estás atendiendo, durmiendo o de vacaciones, tu cliente igual puede ver todo lo que ofrecés en tu página."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "whatsapp",
+    "mitos",
+    "atencionalcliente",
+    "ventas",
+    "emprendedoresargentinos"
+  ],
+  "tema": "whatsapp",
+  "hechos": []
+}

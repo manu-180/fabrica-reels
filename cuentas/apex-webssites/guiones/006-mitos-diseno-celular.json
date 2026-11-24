@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "clave": "006-mitos-diseno-celular",
+  "titulo": "Design myths that cost you customers",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "Design doesn't really matter?",
+    "More stuff on your website, fewer sales",
+    "Your website looks broken on phones"
+  ],
+  "voz": "Looks don't matter. False: people decide whether to trust you by looking at the design. The more stuff, the better. Every extra thing pulls attention from the button that matters. If it looks good on a computer, it looks good on a phone. Not at all: design it for the phone first.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Looks don't matter",
+        "realidad": "Before reading anything, people decide whether to trust you by the design"
+      },
+      {
+        "mito": "The more stuff, the better",
+        "realidad": "Every extra thing pulls attention from the button that matters"
+      },
+      {
+        "mito": "If it looks good on a computer, it looks good on a phone",
+        "realidad": "Design it for the phone first, then for the computer"
+      }
+    ]
+  },
+  "captions": [
+    "The first thing a customer notices is how your website looks. If it seems abandoned, they figure the business is too.",
+    "Banner, slider, pop-up, music, countdown: every thing you add pulls attention from the only thing you care about, getting people to reach out.",
+    "Your customer is looking at you on their phone, one-handed and in a hurry. That's why a website gets designed for that screen first and the computer second."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "uxdesign",
+    "myths",
+    "graphicdesign",
+    "responsivedesign",
+    "onlinesales"
+  ],
+  "tema": "diseno",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

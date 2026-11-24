@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "clave": "026-manos-con-barro",
+  "titulo": "El asistente de voz con las manos ocupadas",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "indigo",
+  "tema": "voz",
+  "hooks": [
+    "Manos con barro y una pregunta",
+    "Hablale a tu app y listo",
+    "¿Cancelar una clase sin tocar el celular?"
+  ],
+  "voz": "Tenés las manos con barro y querés saber qué clases tenés esta semana. Le hablás al asistente de voz. Podés decirle cancelame la clase del martes, o preguntarle qué clases tengo esta semana. Y la app lo resuelve sin que toques la pantalla.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "las manos con barro",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Manos ocupadas"
+        }
+      },
+      {
+        "frase": "Le hablás al asistente",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hablale a tu app"
+        }
+      },
+      {
+        "frase": "cancelame la clase del martes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cancelame la del martes"
+        }
+      },
+      {
+        "frase": "sin que toques la pantalla",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sin tocar la pantalla"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El asistente de voz de Assistify entiende cosas como cancelame la clase del martes o qué clases tengo esta semana.",
+    "Ideal para cuando tenés las manos ocupadas: en el torno, en la barra o en plena clase.",
+    "Está en el plan Premium."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "ceramica",
+    "asistentedevoz",
+    "tallerdeceramica",
+    "clases",
+    "tecnologia"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "asistente-voz",
+    "voz-sin-tocar"
+  ],
+  "idea": "manos-con-barro"
+}

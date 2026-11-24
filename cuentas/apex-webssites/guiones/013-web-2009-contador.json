@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "clave": "013-web-2009-contador",
+  "titulo": "The 2009 website with a visitor counter",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "tinta",
+  "hooks": [
+    "Does your website still have a visitor counter?",
+    "My dad and his 2009 website",
+    "I checked out my dad's website"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Dad",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Dad, I just checked out the shop's website"
+      },
+      {
+        "de": "ellos",
+        "texto": "Isn't it nice? Had it made in 2009"
+      },
+      {
+        "de": "yo",
+        "texto": "It has a visitor counter"
+      },
+      {
+        "de": "ellos",
+        "texto": "1,284 visits. Not bad, huh?"
+      },
+      {
+        "de": "yo",
+        "texto": "Dad, 1,280 of those are you"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ok, but the other four are customers"
+      },
+      {
+        "de": "yo",
+        "texto": "The other four are Mom"
+      }
+    ],
+    "remate": "Some websites have earned their retirement"
+  },
+  "captions": [
+    "A visitor counter, music that autoplays and a blinking 'Welcome to our website.' If your site has any of these, it's earned its retirement with full honors.",
+    "If the person visiting your website the most is you, something's off. A website that looks good on a phone and shows up on Google brings in people who don't know you yet.",
+    "An old website does the job until a new customer opens it on their phone and can't read a thing. From that day on, it's working against you."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "websiteredesign",
+    "nostalgia",
+    "smallbiz",
+    "humor"
+  ],
+  "tema": "web-vieja",
+  "hechos": []
+}

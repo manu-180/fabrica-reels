@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "186-ganancias-tabla-julio",
+  "titulo": "En julio cambia la tabla de Ganancias",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Julio: fijate si te retienen menos",
+    "La retención de Ganancias puede bajar en julio",
+    "Tu recibo de julio puede cambiar"
+  ],
+  "voz": "En julio cambia la tabla de Ganancias. Las deducciones y la escala se actualizan por la inflación, igual que en enero. Si te retienen Ganancias, mirá tu recibo de julio: con deducciones más altas, la retención puede bajar aunque tu sueldo siga igual.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "cambia la tabla de Ganancias",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Julio: tabla nueva de Ganancias"
+        }
+      },
+      {
+        "frase": "igual que en enero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Dos veces por año: enero y julio"
+        }
+      },
+      {
+        "frase": "mirá tu recibo de julio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mirá tu recibo de julio"
+        }
+      },
+      {
+        "frase": "la retención puede bajar",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La retención puede bajar"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Las deducciones personales y la escala de Ganancias se actualizan dos veces por año, en enero y en julio, por la inflación del INDEC.",
+    "Con deducciones más altas, la parte de tu sueldo que paga Ganancias se achica. Por eso la retención puede bajar en julio aunque cobres lo mismo.",
+    "ARCA publica las tablas nuevas de cada semestre.",
+    "Compará el recibo de junio con el de julio: el concepto de Ganancias puede moverse."
+  ],
+  "hashtags": [
+    "ganancias",
+    "impuestoalasganancias",
+    "julio",
+    "recibodesueldo",
+    "sueldo",
+    "arca",
+    "empleados",
+    "finanzaspersonales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: Deducciones personales art. 30 LIG (julio a diciembre 2026)",
+      "url": "https://www.afip.gob.ar/gananciasYBienes/ganancias/personas-humanas-sucesiones-indivisas/deducciones/documentos/Deducciones-personales-art-30-jul-dic-2026.pdf",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "ganancias-calendario-julio",
+  "ventana": {
+    "desde": "07-01",
+    "hasta": "07-31"
+  },
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-calendario-julio"
+  ]
+}

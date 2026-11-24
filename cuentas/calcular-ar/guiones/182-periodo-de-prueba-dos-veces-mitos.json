@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "clave": "182-periodo-de-prueba-dos-veces-mitos",
+  "idea": "periodo-de-prueba-una-sola-vez",
+  "titulo": "El período de prueba, una sola vez",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Te pueden tomar a prueba dos veces",
+    "Te recontratan y otra vez a prueba",
+    "Tres mitos del período de prueba"
+  ],
+  "voz": "Te pueden tomar a prueba dos veces. No: un empleador puede usarla una sola vez con vos. Si te recontratan, empieza otra prueba. Tampoco: si la repite, se entiende que renunció a ella. En negro, la prueba igual corre. Falso: si no te registra desde el primer día, la pierde.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Te pueden tomar a prueba dos veces",
+        "realidad": "Un empleador puede usar el período de prueba una sola vez con vos."
+      },
+      {
+        "mito": "Si te recontratan, empieza otra prueba",
+        "realidad": "Si la repite, se considera que renunció a la prueba."
+      },
+      {
+        "mito": "En negro, la prueba igual corre",
+        "realidad": "Si no te registra desde el primer día, renunció a la prueba."
+      }
+    ]
+  },
+  "captions": [
+    "Un empleador no puede contratar a la misma persona más de una vez usando el período de prueba. Si lo hace, se considera que renunció a él.",
+    "El empleador tiene que registrarte desde el primer día. Si no lo hace, se considera que renunció al período de prueba.",
+    "El período de prueba cuenta como antigüedad para todos los efectos laborales y de la seguridad social.",
+    "Pasáselo a quien volvió a un trabajo donde ya estuvo."
+  ],
+  "hashtags": [
+    "periododeprueba",
+    "contratodetrabajo",
+    "despido",
+    "trabajoenblanco",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "rrhh",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "periodo-de-prueba",
+  "hechos": [
+    "periodo-de-prueba-una-sola-vez"
+  ]
+}

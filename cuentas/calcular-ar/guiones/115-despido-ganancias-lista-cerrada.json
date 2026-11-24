@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "clave": "115-despido-ganancias-lista-cerrada",
+  "idea": "indemnizacion-ganancias-lista-cerrada",
+  "titulo": "Qué parte del despido puede pagar Ganancias",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Qué parte de tu despido paga Ganancias",
+    "No toda la liquidación está exenta",
+    "Despido y Ganancias: la lista es cerrada"
+  ],
+  "voz": "En un despido, la indemnización por antigüedad no paga Ganancias. Pero la lista de lo exento es cerrada. El preaviso figura como no exento, y la integración del mes, el aguinaldo y las vacaciones no están. Igual, sólo pagás si tus ingresos del año superan tus deducciones personales.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "la indemnización por antigüedad",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Antigüedad: exenta de Ganancias"
+        }
+      },
+      {
+        "frase": "la lista de lo exento",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Una lista cerrada, en la ley"
+        }
+      },
+      {
+        "frase": "El preaviso figura como",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Puede pagar",
+            "items": [
+              "Preaviso",
+              "Integración del mes",
+              "Aguinaldo y vacaciones"
+            ]
+          },
+          "der": {
+            "titulo": "Exento",
+            "items": [
+              "Antigüedad (art. 245)",
+              "Muerte o incapacidad"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "sólo pagás si tus",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sólo si superás tus deducciones"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 26 inc. i) de la ley de Ganancias exime la indemnización por antigüedad y dice que la indemnización por falta de preaviso no está exenta.",
+    "La integración del mes, el aguinaldo y las vacaciones proporcionales no figuran entre lo exento: se tratan como un sueldo más.",
+    "Que un rubro no esté exento no quiere decir que te lo descuenten: sólo pagás si tus ingresos del año superan tus deducciones personales.",
+    "Antes de firmar la liquidación, separá lo exento de lo que no."
+  ],
+  "hashtags": [
+    "ganancias",
+    "indemnizacion",
+    "despido",
+    "liquidacionfinal",
+    "impuestos",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "indemnizacion",
+  "hechos": [
+    "indemnizacion-ganancias-lista-cerrada"
+  ]
+}

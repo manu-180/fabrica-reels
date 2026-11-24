@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "175-plazo-fijo-tasas-mitos",
+  "idea": "plazo-fijo-nadie-cobra-la-tna",
+  "titulo": "Plazo fijo: tres mitos de las tasas",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Nadie cobra la tasa del cartel",
+    "Lo que de verdad paga un plazo fijo",
+    "Tres mitos del plazo fijo"
+  ],
+  "voz": "Lo que ganás es la tasa nominal anual. No: nadie la cobra, en un mes ganás la tasa efectiva mensual. Si el plazo fijo crece, ganaste plata. Sólo si el total le gana a la inflación del período. La tasa efectiva anual es igual a la nominal. Falso: siempre es más alta.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Lo que ganás es la tasa nominal anual",
+        "realidad": "En un mes ganás la tasa efectiva mensual: TNA × 30 ÷ 365."
+      },
+      {
+        "mito": "Si el plazo fijo crece, ganaste plata",
+        "realidad": "Sólo si el total le gana a la inflación del período."
+      },
+      {
+        "mito": "La tasa efectiva anual es igual a la nominal",
+        "realidad": "Siempre es más alta: renueva capital e intereses."
+      }
+    ]
+  },
+  "captions": [
+    "La TNA es el número grande que publican los bancos, pero nadie la cobra. Lo que ganás en un mes es la TEM: TNA × 30 ÷ 365. Esa es la que se compara con la inflación del mes.",
+    "Un plazo fijo puede hacer crecer el número de tu cuenta y aun así achicar lo que podés comprar: pasa cuando la inflación del período supera a la tasa efectiva.",
+    "La TEA es lo que ganarías en un año renovando capital e intereses en cada vencimiento. Por eso siempre es más alta que la TNA.",
+    "Guardalo para la próxima vez que compares bancos."
+  ],
+  "hashtags": [
+    "plazofijo",
+    "tna",
+    "tasadeinteres",
+    "ahorro",
+    "inversiones",
+    "inflacion",
+    "bancos",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "BCRA: Estadísticas monetarias, tasa de depósitos a 30 días (serie 12)",
+      "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/12",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "INDEC: Índice de precios al consumidor (informes técnicos mensuales)",
+      "url": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "plazo-fijo",
+  "hechos": [
+    "plazo-fijo-nadie-cobra-la-tna"
+  ]
+}

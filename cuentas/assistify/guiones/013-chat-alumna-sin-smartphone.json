@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "clave": "013-chat-alumna-sin-smartphone",
+  "titulo": "La alumna sin celular moderno",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "cielo",
+  "tema": "invitacion",
+  "hooks": [
+    "Mi alumna favorita no tiene celular moderno",
+    "¿Y la que no tiene smartphone?",
+    "Nadie queda afuera del taller"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Elsa, cerámica",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Querida, yo no tengo esos teléfonos modernos"
+      },
+      {
+        "de": "yo",
+        "texto": "No pasa nada, Elsa"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Entonces no puedo seguir en el taller?"
+      },
+      {
+        "de": "yo",
+        "texto": "Te creo la cuenta yo y listo"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y me anoto igual que las chicas?"
+      },
+      {
+        "de": "yo",
+        "texto": "Igual, y te ayudo con lo que haga falta"
+      }
+    ],
+    "remate": "Nadie queda afuera por el celular"
+  },
+  "captions": [
+    "Para el alumno sin smartphone, en Assistify el profe le crea la cuenta de forma manual y asistida.",
+    "La app es para todo el taller, también para los que no se llevan bien con la tecnología.",
+    "Mandáselo a la profe que tiene alumnas de todas las edades."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "ceramica",
+    "humor",
+    "alumnos",
+    "inclusion",
+    "tallerdeceramica"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "cuenta-sin-smartphone"
+  ],
+  "idea": "alumna-sin-smartphone"
+}

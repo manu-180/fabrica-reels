@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "009-pasame-el-link",
+  "titulo": "Me pidieron la página y mandé el Instagram",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "arcilla",
+  "hooks": [
+    "Me pidieron la página y mandé el Instagram",
+    "¿Tu página web es tu Instagram?",
+    "Instagram no es una página web"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Lucía (compras)",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hola, ¿tienen página? Así se la paso a mi jefe"
+      },
+      {
+        "de": "yo",
+        "texto": "Sí, obvio. Te paso el link"
+      },
+      {
+        "de": "yo",
+        "texto": "instagram.com/roble.oficial2"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ah, pero eso es Instagram"
+      },
+      {
+        "de": "yo",
+        "texto": "Ahí está todo. Mirá los destacados"
+      },
+      {
+        "de": "ellos",
+        "texto": "Mi jefe no usa Instagram"
+      },
+      {
+        "de": "yo",
+        "texto": "Bueno, te mando un audio y te explico"
+      },
+      {
+        "de": "ellos",
+        "texto": "No, dejá. Cualquier cosa te escribo"
+      }
+    ],
+    "remate": "Spoiler: no escribió nunca más"
+  },
+  "captions": [
+    "Un cliente grande quiere ver tu página para mostrársela a su jefe, y le mandás el Instagram. Algunos lo miran. Otros, como el jefe de Lucía, no tienen ni cuenta.",
+    "Instagram te sirve para mostrarte. Una página web te sirve para que te encuentren en Google, te comparen y te contraten sin tener que mandar un audio.",
+    "Si tu 'página' es tu Instagram, dependés de que el otro tenga cuenta, de que no te la cierren y de que encuentre lo que busca entre todos tus posteos."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "instagramparanegocios",
+    "emprendedoresargentinos",
+    "ventasb2b",
+    "presenciadigital"
+  ],
+  "tema": "clientes-que-se-van",
+  "hechos": []
+}

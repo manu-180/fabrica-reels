@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "clave": "030-confianza",
+  "titulo": "Por qué desconfían de un negocio sin página",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "bosque",
+  "hooks": [
+    "¿Por qué te piden fotos antes de comprar?",
+    "Si no te encuentran, desconfían",
+    "Tu cliente desconfía antes de conocerte"
+  ],
+  "voz": "Antes de comprarte, la gente busca señales de que existís de verdad: fotos reales del local, opiniones de clientes, una dirección y una forma clara de contactarte. Una página prolija junta todo eso en un solo lugar. Sin eso, aunque seas el mejor, parecés uno más.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "señales de que existís",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "¿Existís de verdad?"
+        }
+      },
+      {
+        "frase": "fotos reales del local",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sin página",
+            "items": [
+              "Un número suelto",
+              "Sin fotos",
+              "Sin dirección"
+            ]
+          },
+          "der": {
+            "titulo": "Con página",
+            "items": [
+              "Fotos del local",
+              "Opiniones de clientes",
+              "Dirección y mapa"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "en un solo lugar",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tunegocio.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "parecés uno más",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "electricista zona norte",
+          "resultados": [
+            "Electricista matriculado",
+            "Electricidad general",
+            "Electricista a domicilio"
+          ],
+          "destacado": 1
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Antes de pagarle a alguien que no conoce, tu cliente busca pruebas: fotos reales, opiniones, una dirección. Si no las encuentra, duda, aunque seas el mejor de tu zona.",
+    "Una página prolija muestra tu trabajo, cuenta quién sos y deja claro cómo contactarte, a cualquier hora y sin que tengas que explicarlo.",
+    "Las fotos de stock se notan enseguida. Las de tu local, tu equipo y tus trabajos reales le muestran a tu cliente que existís."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "confianza",
+    "ventas",
+    "presenciadigital",
+    "comerciolocal",
+    "reputacion"
+  ],
+  "tema": "confianza",
+  "hechos": []
+}

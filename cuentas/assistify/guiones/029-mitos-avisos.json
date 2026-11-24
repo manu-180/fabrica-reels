@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clave": "029-mitos-avisos",
+  "titulo": "Quién avisa qué en el taller",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "indigo",
+  "tema": "avisos",
+  "hooks": [
+    "¿Tenés que avisar vos cada cambio?",
+    "Tres mitos de los avisos del taller",
+    "Vos no mandás nada, ellos se enteran"
+  ],
+  "voz": "Tengo que avisar yo cada cambio. Falso: Assistify avisa cuando alguien cancela, se inscribe o entra de espera. Me van a llegar avisos de todo. No: cada uno elige qué avisos recibe. Los alumnos se olvidan igual. Tampoco: les llega un recordatorio antes de clase.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Tengo que avisar yo cada cambio",
+        "realidad": "Assistify avisa cuando alguien cancela, se inscribe o entra de espera."
+      },
+      {
+        "mito": "Me van a llegar avisos de todo",
+        "realidad": "Cada uno elige qué avisos recibe, por categoría."
+      },
+      {
+        "mito": "Los alumnos se olvidan igual",
+        "realidad": "Les llega un recordatorio antes de su próxima clase."
+      }
+    ]
+  },
+  "captions": [
+    "Assistify te avisa cada vez que un alumno cancela o se inscribe, y al alumno cuando entra desde la lista de espera.",
+    "Cada uno elige qué avisos quiere recibir: cancelaciones, inscripciones, lista de espera, créditos, recordatorios y anuncios.",
+    "Y antes de cada clase, un recordatorio. Vos no mandás nada."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "avisos",
+    "recordatorios",
+    "mitos",
+    "clases",
+    "alumnos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "aviso-al-profe",
+    "aviso-promocion",
+    "avisos-por-categoria",
+    "recordatorio-de-clase"
+  ],
+  "idea": "mitos-avisos"
+}

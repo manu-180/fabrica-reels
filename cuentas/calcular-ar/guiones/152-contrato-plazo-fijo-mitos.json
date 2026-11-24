@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "152-contrato-plazo-fijo-mitos",
+  "idea": "despido-plazo-fijo-sin-prueba",
+  "titulo": "Despido en un contrato a plazo fijo",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "Contrato a plazo fijo: lo que nadie dice",
+    "Tu contrato a plazo fijo no tiene prueba",
+    "Te echan antes de que venza el contrato"
+  ],
+  "voz": "En un plazo fijo hay período de prueba. No: eso es solo del contrato por tiempo indeterminado. Si te echan en el mes dos, no cobrás. Falso: en un plazo fijo, sí hay indemnización. Te pagan con tu antigüedad real. Tampoco: se toma la que ibas a tener al terminar el plazo.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "En un plazo fijo hay período de prueba",
+        "realidad": "Es solo del contrato por tiempo indeterminado."
+      },
+      {
+        "mito": "Si te echan en el mes dos, no cobrás",
+        "realidad": "En un contrato a plazo fijo, sí hay indemnización."
+      },
+      {
+        "mito": "Te pagan con tu antigüedad real",
+        "realidad": "Se toma la que ibas a tener al terminar el plazo."
+      }
+    ]
+  },
+  "captions": [
+    "El período de prueba de seis meses es del contrato por tiempo indeterminado. En un contrato a plazo fijo no hay período de prueba.",
+    "Por eso, si rompen un contrato a plazo fijo en el segundo mes, sí corresponde indemnización.",
+    "Desde la Ley 27.802, la indemnización se calcula con la antigüedad que habrías acumulado hasta el final del plazo pactado.",
+    "Si firmaste un contrato con fecha de fin, guardate esto."
+  ],
+  "hashtags": [
+    "contratoaplazofijo",
+    "despido",
+    "indemnizacion",
+    "periododeprueba",
+    "reformalaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "despido-plazo-fijo",
+  "hechos": [
+    "despido-plazo-fijo-sin-prueba"
+  ]
+}

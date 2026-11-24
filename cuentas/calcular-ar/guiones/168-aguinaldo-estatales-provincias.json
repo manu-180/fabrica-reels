@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "168-aguinaldo-estatales-provincias",
+  "titulo": "Aguinaldo estatal: cada provincia pone la fecha",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Estatal provincial: tu aguinaldo tiene otra fecha",
+    "¿Cuándo cobran el aguinaldo los estatales?",
+    "Tu provincia decide el día"
+  ],
+  "voz": "Si sos empleado estatal de una provincia, la fecha de tu aguinaldo no sale de la Ley de Contrato de Trabajo. Cada provincia anuncia su propio cronograma, en general en las dos primeras semanas del mes de pago. Fijate en el anuncio oficial de tu provincia, no en notas de años anteriores.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "la fecha de tu aguinaldo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La fecha la pone tu provincia"
+        }
+      },
+      {
+        "frase": "anuncia su propio cronograma",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cada provincia, su cronograma"
+        }
+      },
+      {
+        "frase": "las dos primeras semanas",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Primeras dos semanas del mes"
+        }
+      },
+      {
+        "frase": "el anuncio oficial de tu provincia",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Notas viejas",
+            "items": [
+              "Fechas de otros años",
+              "Cronogramas vencidos"
+            ]
+          },
+          "der": {
+            "titulo": "Anuncio oficial",
+            "items": [
+              "La fecha de este año",
+              "De tu provincia"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Para los privados, la primera cuota del aguinaldo vence el 30 de junio. Para los estatales provinciales, la fecha la fija cada gobierno con su propio cronograma.",
+    "Las provincias suelen anunciar el cronograma en las dos primeras semanas del mes de pago. Si la tuya todavía no lo anunció, esperá el comunicado oficial.",
+    "Ojo con las notas de años anteriores que siguen apareciendo en los buscadores: la fecha cambia cada año.",
+    "El cálculo es el mismo: la mitad de la mejor remuneración mensual del semestre."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "estatales",
+    "empleadospublicos",
+    "sac",
+    "junio",
+    "provincias",
+    "sueldo",
+    "trabajo",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "aguinaldo-estatales-provincias",
+  "ventana": {
+    "desde": "06-01",
+    "hasta": "06-20"
+  },
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-estatales-provincias"
+  ]
+}

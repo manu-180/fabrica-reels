@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "clave": "007-box-planilla-a-app",
+  "titulo": "Un box de funcional, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "noche",
+  "tema": "caos-whatsapp",
+  "hooks": [
+    "La planilla en la pared del box",
+    "Mismo box, otra forma de reservar",
+    "¿Tus turnos todavía van por WhatsApp?"
+  ],
+  "voz": "Planilla en la pared, turnos por WhatsApp y cupos que nadie controla. Pasa en un montón de boxes. Ahora cada alumno reserva su turno en un toque, ve su lista de espera y su historial, y vos dejás de contestar mensajes.",
+  "contenido": {
+    "negocio": {
+      "rubro": "gimnasio",
+      "nombre": "Box Brío",
+      "lema": "Entrenamiento funcional por turnos"
+    },
+    "antes": {
+      "defectos": [
+        "Planilla en la pared",
+        "Turnos por WhatsApp",
+        "Cupos que nadie controla"
+      ]
+    },
+    "despues": {
+      "titular": "Reservá tu turno en un toque",
+      "boton": "Reservar clase",
+      "secciones": [
+        "Mis clases",
+        "Lista de espera",
+        "Historial"
+      ]
+    }
+  },
+  "captions": [
+    "Si los turnos de tu box van por planilla y WhatsApp, cada cupo es una conversación. Con Assistify cada alumno reserva solo.",
+    "Clase llena, lista de espera. Alguien cancela, entra el primero con crédito. Sin que vos escribas nada.",
+    "Cada alumno ve su historial de créditos en la app. Se terminan las dudas de cuántas clases le quedan."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "funcional",
+    "crossfit",
+    "gimnasio",
+    "entrenamientofuncional",
+    "antesydespues"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "tres-dolores",
+    "lista-espera-automatica",
+    "historial-creditos"
+  ],
+  "idea": "box-planilla-a-app"
+}

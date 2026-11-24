@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "011-peluqueria-antes-despues",
+  "titulo": "La página de una peluquería, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "noche",
+  "hooks": [
+    "¿Tus turnos siguen siendo solo por teléfono?",
+    "Tu cliente quiere reservar a la medianoche",
+    "Misma peluquería, agenda nueva"
+  ],
+  "voz": "Turnos solo por teléfono, fotos de hace años y una lista de precios vieja. Así nadie puede sacar turno a la noche, que es cuando la gente se acuerda del corte. En la versión nueva, primero ves los trabajos y después un botón para reservar el horario que te queda cómodo.",
+  "contenido": {
+    "negocio": {
+      "rubro": "peluqueria",
+      "nombre": "Peluquería Bruma",
+      "lema": "Corte, color y peinados"
+    },
+    "antes": {
+      "defectos": [
+        "Turnos solo por teléfono",
+        "Fotos de hace años",
+        "Lista de precios vieja"
+      ]
+    },
+    "despues": {
+      "titular": "Tu próximo corte, a dos toques",
+      "boton": "Reservá tu turno",
+      "secciones": [
+        "Trabajos",
+        "Servicios",
+        "Turnos"
+      ]
+    }
+  },
+  "captions": [
+    "Tus clientes se acuerdan de pedir turno a la noche, con el celular en la mano. Si solo atendés por teléfono en horario de local, esa reserva se pierde.",
+    "Las fotos de tus trabajos venden más que cualquier descripción. Ponelas arriba de todo, bien grandes, y dejá el botón de reservar a un toque.",
+    "Una lista de precios de hace años en tu página trae más discusiones que turnos. Si cambiás los precios seguido, tu página tiene que poder cambiar igual de rápido."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "peluqueria",
+    "turnosonline",
+    "antesydespues",
+    "rediseñoweb",
+    "estilistas"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

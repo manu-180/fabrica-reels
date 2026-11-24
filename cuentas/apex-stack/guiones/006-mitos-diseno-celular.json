@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "clave": "006-mitos-diseno-celular",
+  "titulo": "Mitos de diseño que te cuestan clientes",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "¿El diseño es lo de menos?",
+    "Más cosas en tu página, menos ventas",
+    "Tu página se ve rota en el celular"
+  ],
+  "voz": "Lo lindo es lo de menos. Falso: la gente decide si confía mirando el diseño. Cuantas más cosas, mejor. Cada cosa de más le saca atención al botón que importa. Si se ve bien en la compu, se ve bien en el celular. Para nada: hay que diseñarla primero para el celular.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Lo lindo es lo de menos",
+        "realidad": "Antes de leer nada, la gente decide si confía mirando el diseño"
+      },
+      {
+        "mito": "Cuantas más cosas, mejor",
+        "realidad": "Cada cosa de más le saca atención al botón que importa"
+      },
+      {
+        "mito": "Si se ve bien en la compu, se ve bien en el celular",
+        "realidad": "Hay que diseñarla primero para el celular y después para la compu"
+      }
+    ]
+  },
+  "captions": [
+    "Lo primero que mira un cliente es cómo se ve tu página. Si parece abandonada, piensa que el negocio también.",
+    "Banner, carrusel, ventanita emergente, música, contador: cada cosa que sumás le saca atención a lo único que te importa, que te escriban.",
+    "Tu cliente te mira desde el celular, con una mano y apurado. Por eso la página se diseña primero para esa pantalla y después para la compu."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "diseñoux",
+    "mitos",
+    "diseñografico",
+    "webresponsive",
+    "ventasonline"
+  ],
+  "tema": "diseno",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

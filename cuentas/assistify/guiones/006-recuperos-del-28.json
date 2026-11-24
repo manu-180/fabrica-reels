@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "006-recuperos-del-28",
+  "titulo": "Todos quieren recuperar el día 28",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "tema": "recuperos",
+  "hooks": [
+    "El caos de recuperos a fin de mes",
+    "Día 28: todos quieren recuperar",
+    "¿Tu taller explota a fin de mes?"
+  ],
+  "voz": "Todos se acuerdan de recuperar el día veintiocho. Y vos haciendo malabares con los horarios. Con Assistify, cada alumno ve los lugares libres en el calendario y usa su crédito cuando le conviene. La asistencia se reparte en todo el mes.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "recuperar el día veintiocho",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El día 28, todos juntos"
+        }
+      },
+      {
+        "frase": "haciendo malabares con los horarios",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "A mano",
+            "items": [
+              "Recuperos el 28",
+              "Clases desbordadas"
+            ]
+          },
+          "der": {
+            "titulo": "Con Assistify",
+            "items": [
+              "Lugares a la vista",
+              "Asistencia repartida"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "ve los lugares libres",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Lugares libres a la vista"
+        }
+      },
+      {
+        "frase": "se reparte en todo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Todo el mes parejo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El clásico del taller: nadie recupera en todo el mes y el día 28 todos quieren venir.",
+    "Con Assistify cada alumno ve los lugares libres en el calendario y usa su crédito cuando le conviene. La asistencia se reparte sola.",
+    "Etiquetá a la profe que vive el fin de mes como una maratón."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "recuperos",
+    "findemes",
+    "ceramica",
+    "clases",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "recupero-dia-28",
+    "recuperos-repartidos"
+  ],
+  "idea": "recuperos-del-28"
+}

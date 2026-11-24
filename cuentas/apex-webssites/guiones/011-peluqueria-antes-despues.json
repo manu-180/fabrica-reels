@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "011-peluqueria-antes-despues",
+  "titulo": "A hair salon's website, before and after",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "noche",
+  "hooks": [
+    "Are your appointments still phone-only?",
+    "Your client wants to book at midnight",
+    "Same salon, brand-new booking"
+  ],
+  "voz": "Booking by phone only, photos from years ago and an outdated price list. That way nobody can book at night, which is when people remember they need a cut. In the new version, you see the work first and then a button to book the time that works for you.",
+  "contenido": {
+    "negocio": {
+      "rubro": "peluqueria",
+      "nombre": "Mist Hair Studio",
+      "lema": "Cuts, color and styling"
+    },
+    "antes": {
+      "defectos": [
+        "Booking by phone only",
+        "Photos from years ago",
+        "Outdated price list"
+      ]
+    },
+    "despues": {
+      "titular": "Your next cut, two taps away",
+      "boton": "Book your appointment",
+      "secciones": [
+        "Our work",
+        "Services",
+        "Booking"
+      ]
+    }
+  },
+  "captions": [
+    "Your clients remember to book at night, phone in hand. If you only take appointments by phone during business hours, that booking is gone.",
+    "Photos of your work sell better than any description. Put them right at the top, nice and big, and keep the booking button one tap away.",
+    "A years-old price list on your website brings more arguments than appointments. If your prices change often, your website has to keep up just as fast."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "hairsalon",
+    "onlinebooking",
+    "beforeandafter",
+    "websiteredesign",
+    "hairstylist"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

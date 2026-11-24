@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "clave": "026-mitos-instagram-alcanza",
+  "titulo": "Myths of 'Instagram is enough for me'",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "Is Instagram enough for your business?",
+    "Your Instagram account isn't really yours",
+    "They shut your account down tomorrow. Now what?"
+  ],
+  "voz": "Instagram is enough for me. Until your account gets blocked and you lose your storefront. Your website, on the other hand, stays put. Websites are for big companies. People Google the corner store too. Having a website is a technical headache. With hosting and maintenance included, you don't touch a thing.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Instagram is enough for me",
+        "realidad": "If your account gets blocked, you lose your storefront. Your website stays put"
+      },
+      {
+        "mito": "Websites are for big companies",
+        "realidad": "People Google the corner store too"
+      },
+      {
+        "mito": "Having a website is a technical headache",
+        "realidad": "With hosting and maintenance included, you don't touch anything technical"
+      }
+    ]
+  },
+  "captions": [
+    "Instagram is a great storefront, but it's borrowed: someone else makes the rules, and an account can get blocked or hacked overnight. Your website is yours.",
+    "The corner store, the hair salon, the electrician: they all get Googled before anyone shows up. Having a website isn't just for big companies anymore.",
+    "If the technical side is holding you back, you don't have to touch a thing: hosting, security and changes are on us."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "instagramforbusiness",
+    "myths",
+    "onlinepresence",
+    "shoplocal",
+    "smallbiz"
+  ],
+  "tema": "instagram",
+  "hechos": []
+}

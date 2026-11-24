@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "clave": "010-mitos-de-google",
+  "titulo": "Google myths that leave you without visits",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "bosque",
+  "hooks": [
+    "Will a website put you first on Google?",
+    "Google doesn't find you by magic",
+    "Why your competitors show up and you don't"
+  ],
+  "voz": "If I have a website, I show up first. I wish. That takes clear copy, a fast site and time. Google only looks at keywords. It also checks speed and how you look on phones. You have to pay to show up. A Google Maps listing and a good site get you found without ads.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "If I have a website, I show up first",
+        "realidad": "Showing up takes clear copy, a fast website and some time"
+      },
+      {
+        "mito": "Google only looks at keywords",
+        "realidad": "It also checks if your site loads fast and how it looks on a phone"
+      },
+      {
+        "mito": "You have to pay to show up",
+        "realidad": "A Google Maps listing and a good website bring you visits without paying"
+      }
+    ]
+  },
+  "captions": [
+    "Having a website is step one to showing up on Google. Then comes copy that says what you do and where, a site that loads fast, and a little patience.",
+    "Google looks at way more than keywords: whether your site loads fast, whether it looks good on a phone, and whether it answers what people are searching for.",
+    "A Google Maps listing is free and it's often the first thing someone sees when they search for your kind of business nearby. If you don't have one, start there."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "seo",
+    "searchengineoptimization",
+    "google",
+    "googlemaps",
+    "localseo",
+    "myths"
+  ],
+  "fuente": "Google Search Central: mobile-first indexing and page experience signals (Core Web Vitals); Google Business Profile is free.",
+  "tema": "google",
+  "hechos": [
+    "seo-tecnico"
+  ]
+}

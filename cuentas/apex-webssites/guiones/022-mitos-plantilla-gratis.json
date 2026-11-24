@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "clave": "022-mitos-plantilla-gratis",
+  "titulo": "Myths about building your website yourself",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "crema",
+  "hooks": [
+    "Building it yourself with a free template?",
+    "Free can end up costing you a lot",
+    "DIY website? How hard could it be?"
+  ],
+  "voz": "A free template looks just as good. That same template is used by a ton of businesses, and yours ends up looking like all of them. I'll build it myself in a weekend. Then come the domain, the email, security and every fix. That weekend turns into a year.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "A free template looks just as good",
+        "realidad": "Tons of businesses use it, and yours ends up looking like all of them"
+      },
+      {
+        "mito": "I'll build it myself in a weekend",
+        "realidad": "Then come the domain, the email, security and every fix"
+      }
+    ]
+  },
+  "captions": [
+    "Free templates are fine for trying things out. For a business that wants to sell, your website has to look like you and nobody else.",
+    "Building the website is the fun part. Then you have to connect the domain, set up email, handle security and fix whatever breaks. There goes the weekend, and a few more.",
+    "If you already tried building it yourself and it ended up half done, that happens a lot. The hard part starts after you pick the template."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "websitetemplates",
+    "myths",
+    "customwebsite",
+    "entrepreneurship",
+    "onlinepresence"
+  ],
+  "tema": "plantilla-gratis",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

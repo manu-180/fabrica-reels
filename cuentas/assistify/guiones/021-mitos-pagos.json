@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "clave": "021-mitos-pagos",
+  "titulo": "Tres mitos de llevar los pagos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "teal",
+  "tema": "pagos",
+  "hooks": [
+    "Tres mitos de los pagos del taller",
+    "¿Quién te debe el mes?",
+    "Chau cuaderno de pagos"
+  ],
+  "voz": "Para los pagos necesito una planilla aparte. Falso: registrás cada pago como cuota, pack u otro. No sé quién debe el mes. No: la ficha te muestra quién está al día. Solo anoto los que pagan en efectivo. Tampoco: también va la transferencia.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Para los pagos necesito una planilla aparte",
+        "realidad": "Registrás cada pago como cuota mensual, pack de clases u otro."
+      },
+      {
+        "mito": "No sé quién debe el mes",
+        "realidad": "La ficha muestra si cada alumno está al día o debe el mes."
+      },
+      {
+        "mito": "Solo anoto los que pagan en efectivo",
+        "realidad": "Cada pago va como efectivo, transferencia u otro."
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify registrás cada pago como cuota mensual, pack de clases u otro, sin planilla aparte.",
+    "La ficha de pagos de cada alumno te muestra si está al día con el mes o si lo debe.",
+    "Efectivo, transferencia u otro: cada pago queda anotado como fue."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "pagos",
+    "cuotas",
+    "mitos",
+    "academia",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "pagos-tipos",
+    "pagos-al-dia",
+    "pagos-metodos"
+  ],
+  "idea": "mitos-pagos"
+}

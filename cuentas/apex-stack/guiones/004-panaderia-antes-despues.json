@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "clave": "004-panaderia-antes-despues",
+  "titulo": "La página de una panadería, antes y después",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "arcilla",
+  "hooks": [
+    "¿Tu página da hambre o da pena?",
+    "La típica página de panadería de barrio",
+    "Mismo pan, otra página"
+  ],
+  "voz": "Fotos borrosas, un menú que no se lee y ni un horario a la vista. Así se ven muchas páginas de panadería en el celular. En la versión nueva hay fotos que dan hambre, el pan del día arriba de todo y un botón para encargar por WhatsApp.",
+  "contenido": {
+    "negocio": {
+      "rubro": "panaderia",
+      "nombre": "Panadería Miga Alta",
+      "lema": "Pan de masa madre, todos los días"
+    },
+    "antes": {
+      "defectos": [
+        "Fotos borrosas del mostrador",
+        "Menú que no se lee",
+        "Sin horarios ni dirección"
+      ]
+    },
+    "despues": {
+      "titular": "Pan recién horneado, cada mañana",
+      "boton": "Encargá por WhatsApp",
+      "secciones": [
+        "Panes del día",
+        "Encargos",
+        "Cómo llegar"
+      ]
+    }
+  },
+  "captions": [
+    "Tu página es la vidriera que la gente mira desde el celular. Si las fotos están borrosas y no aparece el horario, nadie se acerca a preguntar.",
+    "Una panadería vende con los ojos. Fotos que den hambre, el pan del día bien a la vista y un botón para encargar: con eso ya te eligen.",
+    "¿A qué hora abren? ¿Hacen tortas por encargo? Si tu página contesta eso, te ahorrás un montón de mensajes."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "panaderia",
+    "comerciolocal",
+    "antesydespues",
+    "rediseñoweb",
+    "gastronomia"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas",
+    "whatsapp-con-consulta-escrita"
+  ]
+}

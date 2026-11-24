@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "171-aguinaldo-junio-intimar",
+  "titulo": "Medio aguinaldo de junio: cuándo podés reclamar",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "No te pagaron el aguinaldo: qué hacer",
+    "El aguinaldo de junio tiene fecha",
+    "Pasó el 30 y no cobraste"
+  ],
+  "voz": "El medio aguinaldo de junio vence el 30. La ley le da al empleador un margen de cuatro días hábiles. Si pasaron y no cobraste, reclamá por escrito, con una carta documento que intime el pago. Si no te responden, podés denunciarlo en la Secretaría de Trabajo de tu provincia.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "de junio vence el 30",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Vence el 30 de junio"
+        }
+      },
+      {
+        "frase": "margen de cuatro días hábiles",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Más cuatro días hábiles"
+        }
+      },
+      {
+        "frase": "con una carta documento que",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Carta documento: intimá el pago"
+        }
+      },
+      {
+        "frase": "en la Secretaría de Trabajo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Denuncia en la Secretaría de Trabajo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Art. 122 de la LCT: la primera cuota del aguinaldo vence el 30 de junio. El art. 128 da 4 días hábiles de tolerancia para pagar.",
+    "Si pasó ese margen y no cobraste, intimá el pago por escrito con una carta documento. Si no responden, denunciá ante la Secretaría de Trabajo.",
+    "El aguinaldo es irrenunciable. Si el atraso se repite, puede ser una injuria laboral: asesorate antes de decidir.",
+    "Etiquetá a quien todavía espera el aguinaldo de junio."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "medioaguinaldo",
+    "junio",
+    "sac",
+    "cartadocumento",
+    "trabajo",
+    "derechoslaborales",
+    "empleados",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "aguinaldo-junio-intimar",
+  "ventana": {
+    "desde": "06-01",
+    "hasta": "06-30"
+  },
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-junio-intimar"
+  ]
+}

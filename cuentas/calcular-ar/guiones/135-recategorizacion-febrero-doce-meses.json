@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "clave": "135-recategorizacion-febrero-doce-meses",
+  "titulo": "Recategorización de febrero: qué meses se suman",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Monotributo: febrero no mira el año calendario",
+    "Qué facturas cuentan en febrero",
+    "Los doce meses que mira ARCA"
+  ],
+  "voz": "En la recategorización de febrero del monotributo no se mira el año calendario. Se suman tus facturas de febrero del año pasado a enero de este. Son los últimos doce meses. El trámite se hace hasta el 5 de febrero, y la categoría nueva rige de febrero a julio.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no se mira el año calendario",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No es el año calendario"
+        }
+      },
+      {
+        "frase": "de febrero del año pasado",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Desde",
+              "valor": "Febrero"
+            },
+            {
+              "concepto": "Hasta",
+              "valor": "Enero"
+            }
+          ],
+          "total": {
+            "concepto": "Meses que se suman",
+            "valor": "12"
+          }
+        }
+      },
+      {
+        "frase": "hasta el 5 de febrero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hasta el 5 de febrero"
+        }
+      },
+      {
+        "frase": "rige de febrero a julio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Rige de febrero a julio"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La recategorización se hace dos veces por año, en febrero y en agosto, y siempre mira los últimos 12 meses de actividad.",
+    "En la de febrero se suma lo facturado entre febrero del año anterior y enero del año en curso. No de enero a diciembre.",
+    "El trámite se puede hacer hasta el día 5. La categoría que declares rige desde el período febrero hasta julio inclusive.",
+    "Si lo que facturaste sigue dentro de tu categoría, no tenés que hacer nada: se mantiene sola."
+  ],
+  "hashtags": [
+    "monotributo",
+    "recategorizacion",
+    "monotributistas",
+    "arca",
+    "facturacion",
+    "emprendedores",
+    "independientes",
+    "impuestos",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: ayuda sobre recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "monotributo-recategorizacion-febrero-meses",
+  "ventana": {
+    "desde": "01-15",
+    "hasta": "02-05"
+  },
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-recategorizacion-febrero-meses"
+  ]
+}

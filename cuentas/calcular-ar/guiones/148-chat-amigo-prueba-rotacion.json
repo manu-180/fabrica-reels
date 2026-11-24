@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "148-chat-amigo-prueba-rotacion",
+  "idea": "periodo-de-prueba-chat-rotacion",
+  "titulo": "Rotar empleados en la prueba es abuso",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "papel",
+  "hooks": [
+    "Me echaron a los cinco meses, otra vez",
+    "Siempre echan al nuevo antes de los seis",
+    "El puesto que nunca pasa la prueba"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Nico",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Me echaron a los cinco meses, en la prueba"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y quién quedó en tu puesto?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Uno nuevo. El de antes también duró cinco meses"
+      },
+      {
+        "de": "yo",
+        "texto": "Eso la ley lo llama uso abusivo del período de prueba"
+      },
+      {
+        "de": "ellos",
+        "texto": "Pensé que era normal"
+      },
+      {
+        "de": "yo",
+        "texto": "Tomar a uno tras otro para el mismo puesto fijo es abuso"
+      },
+      {
+        "de": "ellos",
+        "texto": "Mañana lo consulto"
+      }
+    ],
+    "remate": "Rotar gente en la prueba es abuso"
+  },
+  "captions": [
+    "El art. 92 bis considera abusivo contratar sucesivamente a distintos trabajadores para un mismo puesto permanente usando el período de prueba. Tiene sanciones.",
+    "El período de prueba es de 6 meses y cuenta como antigüedad a todos los efectos.",
+    "Si no te registraron desde el primer día, se considera que el empleador renunció al período de prueba.",
+    "Etiquetá a alguien que trabaja en un puesto que nunca pasa los seis meses."
+  ],
+  "hashtags": [
+    "periododeprueba",
+    "despido",
+    "humorlaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "rrhh",
+    "primertrabajo",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "periodo-de-prueba",
+  "hechos": [
+    "periodo-de-prueba-chat-rotacion"
+  ]
+}

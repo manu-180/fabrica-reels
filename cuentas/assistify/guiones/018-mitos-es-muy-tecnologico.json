@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "clave": "018-mitos-es-muy-tecnologico",
+  "titulo": "La app no es complicada para tus alumnos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "papel",
+  "tema": "autogestion",
+  "hooks": [
+    "¿Una app para mis alumnos? Ni loca",
+    "Tres mitos de usar una app",
+    "Tu taller en el celular, sin vueltas"
+  ],
+  "voz": "Solo anda en algunos celulares. Falso: funciona en Android, iOS, web y Windows. Hay que recordar otra contraseña. No: tus alumnos entran con Google. Si cambia el teléfono, me escribe a mí. Tampoco: cada uno lo actualiza desde la app.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Solo anda en algunos celulares",
+        "realidad": "Funciona en Android, iOS, web y Windows."
+      },
+      {
+        "mito": "Hay que recordar otra contraseña",
+        "realidad": "Tus alumnos pueden entrar con Google."
+      },
+      {
+        "mito": "Si cambia el teléfono, me escribe a mí",
+        "realidad": "Cada alumno actualiza su foto, teléfono y contraseña desde la app."
+      }
+    ]
+  },
+  "captions": [
+    "Assistify funciona en Android, iOS, web y Windows. Tus alumnos lo usan desde el celular que tengan.",
+    "Pueden entrar con Google, sin otra contraseña para recordar.",
+    "Si alguien cambia de número, lo actualiza solo desde la app. Un mensaje menos para vos."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "mitos",
+    "alumnos",
+    "celular",
+    "clases",
+    "academia"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "plataformas",
+    "entrar-con-google",
+    "perfil-autogestion"
+  ],
+  "idea": "mitos-es-muy-tecnologico"
+}

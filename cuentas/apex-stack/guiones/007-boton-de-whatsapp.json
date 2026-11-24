@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "clave": "007-boton-de-whatsapp",
+  "titulo": "El botón de WhatsApp que te trae consultas",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "crema",
+  "hooks": [
+    "¿Cuántos se olvidan de escribirte?",
+    "Tu número suelto te está costando consultas",
+    "Un toque y ya te están escribiendo"
+  ],
+  "voz": "Si para escribirte hay que copiar tu número, agendarlo y buscarlo en WhatsApp, más de uno lo deja para después. Y después no llega. Con un botón, el chat se abre con un mensaje ya escrito. Tocan, mandan, y vos contestás con la consulta adentro.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "copiar tu número",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Número suelto",
+            "items": [
+              "Copiar el número",
+              "Agendarlo",
+              "Buscarlo en WhatsApp"
+            ]
+          },
+          "der": {
+            "titulo": "Botón de WhatsApp",
+            "items": [
+              "Un toque",
+              "Mensaje ya escrito"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "lo deja para después",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Y lo deja para después"
+        }
+      },
+      {
+        "frase": "un mensaje ya escrito",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hola, quiero hacer una consulta"
+        }
+      },
+      {
+        "frase": "vos contestás",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Te llega la consulta completa"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Cada paso que tu cliente tiene que dar para escribirte es una excusa para no hacerlo. Un botón de WhatsApp en tu página le saca todos esos pasos de encima.",
+    "El botón puede abrir el chat con un mensaje ya escrito, por ejemplo 'Hola, quiero un turno para el sábado'. Tu cliente solo toca enviar.",
+    "Si tu número está escrito al final de la página, en letra chica, perdés consultas que nunca vas a ver."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "whatsappbusiness",
+    "ventas",
+    "atencionalcliente",
+    "conversiones",
+    "emprendedoreslatinos"
+  ],
+  "tema": "whatsapp",
+  "hechos": [
+    "whatsapp-con-consulta-escrita"
+  ]
+}

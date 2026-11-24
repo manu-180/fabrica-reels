@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "clave": "033-claves-web-profesional",
+  "titulo": "Las tres cosas que hacen profesional a tu web",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "arcilla",
+  "hooks": [
+    "Tener web no sirve si cometes esto",
+    "Tu página puede espantar clientes sin saberlo",
+    "Tres errores comunes en páginas de negocios"
+  ],
+  "voz": "Tener una página armada a las apuradas no alcanza. Necesitás que abra al instante sin hacer esperar a nadie. Que se lea cómoda desde cualquier teléfono. Y que tenga un botón claro para mandarte mensaje directo sin vueltas.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Tener una página armada",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Página improvisada",
+            "items": [
+              "Textos amontonados",
+              "Tarda en abrir",
+              "Sin datos claros"
+            ]
+          },
+          "der": {
+            "titulo": "Página pensada",
+            "items": [
+              "Carga inmediata",
+              "Fácil de leer",
+              "Contacto directo"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "abra al instante sin hacer esperar",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tutaller.com.ar",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "cómoda desde cualquier teléfono",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Botones grandes y texto legible",
+          "compu": "Estructura limpia con fotos claras"
+        }
+      },
+      {
+        "frase": "botón claro para mandarte mensaje",
+        "visual": {
+          "tipo": "codigo",
+          "lineas": [
+            "<a class=\"boton-whatsapp\"",
+            "   href=\"https://wa.me/...\">",
+            "  Consultar por WhatsApp",
+            "</a>"
+          ]
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Una web no es solo estar en internet, es que la persona que entra entienda rápido qué hacés y te pueda hablar al instante.",
+    "Si tu página tarda o no se lee bien en la pantalla del celular, el cliente busca a otro en dos segundos.",
+    "Diseño a medida significa pensar en el que visita tu negocio: rapidez, claridad y contacto directo sin complicaciones.",
+    "El secreto de una web útil está en los detalles simples: que cargue al toque y que deje el canal de consulta servido."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "pymesargentinas",
+    "negocioslocales",
+    "emprendedoresargentinos",
+    "desarrolloweb",
+    "sitiosweb",
+    "comercioargentino",
+    "presenciadigital",
+    "ventasonline"
+  ],
+  "tema": "claves-de-una-web",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

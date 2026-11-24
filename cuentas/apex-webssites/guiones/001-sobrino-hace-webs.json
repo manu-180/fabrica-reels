@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "clave": "001-sobrino-hace-webs",
+  "titulo": "The nephew who is building your website",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "Is your nephew building your website?",
+    "I asked my nephew for a website",
+    "No nephew has ever finished a website"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Tommy (nephew)",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Tommy, how's the website for the shop coming?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Good, Uncle Joe, almost done"
+      },
+      {
+        "de": "yo",
+        "texto": "You said that in March"
+      },
+      {
+        "de": "ellos",
+        "texto": "I had midterms"
+      },
+      {
+        "de": "yo",
+        "texto": "So what's left?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Design, copy, photos and putting it online"
+      },
+      {
+        "de": "yo",
+        "texto": "So, everything"
+      },
+      {
+        "de": "ellos",
+        "texto": "But the logo's done: your name in bold"
+      },
+      {
+        "de": "ellos",
+        "texto": "Btw, do you know anyone who builds websites?"
+      }
+    ],
+    "remate": "Your business can't wait for his next midterm"
+  },
+  "captions": [
+    "Everybody has a nephew, a cousin or a buddy who's \"doing your website.\" And we all know how it goes: almost done, almost done, almost done. Meanwhile, your customers look you up on their phone and find nothing.",
+    "If your website has been \"almost done\" for months, you're not alone. It happens to a ton of businesses, and almost always for the same reason: nobody owns finishing it.",
+    "Cheap ends up expensive, and free sometimes never ships. Before you pay anything, see what your business website would look like built by people who do this every day.",
+    "Your nephew has midterms and a life. Your business needs a finished website that looks good on a phone and that someone actually maintains."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "smallbusinesstips",
+    "businessowner",
+    "smallbiz",
+    "humor"
+  ],
+  "tema": "sobrino-hace-la-web",
+  "hechos": []
+}

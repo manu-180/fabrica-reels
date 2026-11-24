@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "025-mama-google",
+  "titulo": "Le pedí a mi mamá que me busque en Google",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "bosque",
+  "hooks": [
+    "Le pedí a mi mamá que me busque",
+    "¿Qué aparece cuando te buscan en Google?",
+    "Buscá tu negocio en Google. Te espero"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mamá",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Ma, buscá 'Herrería Altamira' en Google"
+      },
+      {
+        "de": "ellos",
+        "texto": "Me aparece, nene"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y qué sale?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Una herrería divina, con fotos y todo"
+      },
+      {
+        "de": "yo",
+        "texto": "Esa no es la mía"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y la tuya cuál es?"
+      },
+      {
+        "de": "yo",
+        "texto": "Más abajo. Una foto mía en Facebook"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ay, sí. Qué flaco estabas"
+      },
+      {
+        "de": "ellos",
+        "texto": "Igual le pedí presupuesto a la otra"
+      }
+    ],
+    "remate": "Hasta mi vieja eligió a la competencia"
+  },
+  "captions": [
+    "Si cuando te buscan aparece otro negocio con fotos, horarios y presupuesto, y vos aparecés con una foto vieja en Facebook, ya sabés a quién llaman. Aunque sea tu mamá.",
+    "Hacé la prueba: pedile a alguien que busque tu negocio en Google y que te cuente qué ve. A veces duele, pero sirve.",
+    "Tu competencia puede trabajar peor que vos y llevarse el cliente igual, porque cuando la buscan aparece completa."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "google",
+    "seolocal",
+    "emprendedoresargentinos",
+    "humor"
+  ],
+  "tema": "google",
+  "hechos": []
+}

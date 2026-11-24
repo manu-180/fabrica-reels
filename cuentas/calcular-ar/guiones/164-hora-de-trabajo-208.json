@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "164-hora-de-trabajo-208",
+  "idea": "horas-extras-divisor-200",
+  "titulo": "Cuántas horas tiene un mes de trabajo",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Dividir por 200 no es ley",
+    "Cuántas horas tiene tu mes de trabajo",
+    "El valor de tu hora, bien calculado"
+  ],
+  "voz": "Para sacar el valor de tu hora, muchos recibos dividen el sueldo por doscientos. Eso es costumbre, no una regla de la ley. Con cuarenta y ocho horas por semana, un mes promedio tiene doscientas ocho horas. Y la diferencia entre una cuenta y la otra es plata. Mirá qué dice tu convenio.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "dividen el sueldo por doscientos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Sueldo ÷ 200: la cuenta de siempre"
+        }
+      },
+      {
+        "frase": "Con cuarenta y ocho horas",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Horas por semana",
+              "valor": "48"
+            },
+            {
+              "concepto": "Semanas por mes",
+              "valor": "52 ÷ 12"
+            }
+          ],
+          "total": {
+            "concepto": "Horas por mes",
+            "valor": "208"
+          }
+        }
+      },
+      {
+        "frase": "la diferencia entre una cuenta",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "La diferencia es plata"
+        }
+      },
+      {
+        "frase": "qué dice tu convenio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mandan tu convenio y tu recibo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Dividir el sueldo por 200 sale de 8 horas por 25 días. Lo usan muchas liquidaciones y convenios, pero no es un número de la ley.",
+    "Con una jornada de 48 horas semanales, el promedio real es 48 × 52 ÷ 12 = 208 horas por mes.",
+    "Del valor de tu hora sale el de cada hora extra, con su recargo. Por eso conviene saber qué divisor usa tu recibo.",
+    "Revisá tu convenio colectivo: es el que define cómo se calcula en tu actividad."
+  ],
+  "hashtags": [
+    "horasextras",
+    "valorhora",
+    "sueldo",
+    "recibodesueldo",
+    "convenio",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "rrhh",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "horas-extras",
+  "hechos": [
+    "horas-extras-divisor-200"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "190-desempleo-quien-cobra-mitos",
+  "idea": "desempleo-fin-de-contrato",
+  "titulo": "Quién puede cobrar el seguro de desempleo",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "papel",
+  "hooks": [
+    "Se terminó tu contrato: podés cobrar desempleo",
+    "El desempleo no es sólo por despido",
+    "Tres mitos del seguro de desempleo"
+  ],
+  "voz": "El desempleo se cobra sólo si te despiden. No: también si se termina tu contrato a plazo o la obra para la que te tomaron. Si arreglás un mutuo acuerdo, no cobrás nada. Falso: desde la Ley 27.802 también da desempleo. Si quiebra la empresa, no hay desempleo. Tampoco: la quiebra también cuenta.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "El desempleo se cobra sólo si te despiden",
+        "realidad": "También si termina tu contrato a plazo o la obra para la que te tomaron."
+      },
+      {
+        "mito": "Si arreglás un mutuo acuerdo, no cobrás nada",
+        "realidad": "Desde la Ley 27.802, el mutuo acuerdo también da desempleo."
+      },
+      {
+        "mito": "Si quiebra la empresa, no hay desempleo",
+        "realidad": "La quiebra o el concurso del empleador también cuentan."
+      }
+    ]
+  },
+  "captions": [
+    "El art. 114 de la Ley 24.013 incluye como situación de desempleo la expiración del tiempo convenido o el fin de la obra, tarea o servicio para el que te contrataron.",
+    "La Ley 27.802 sumó el inciso i: la extinción por mutuo acuerdo del art. 241 también da derecho a la prestación.",
+    "La quiebra o el concurso del empleador, la muerte o jubilación del empleador y el despido indirecto también están en la lista.",
+    "Pasáselo a quien terminó un contrato y no sabía que podía pedirlo."
+  ],
+  "hashtags": [
+    "desempleo",
+    "segurodedesempleo",
+    "anses",
+    "despido",
+    "contratoaplazo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.013, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "desempleo",
+  "hechos": [
+    "desempleo-fin-de-contrato"
+  ]
+}

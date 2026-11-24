@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "clave": "111-estatuto-periodista-2027",
+  "titulo": "El Estatuto del Periodista se deroga en 2027",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Periodista: tu estatuto termina este año",
+    "Seis meses de indemnización que desaparecen",
+    "El 1 de enero cambia tu despido"
+  ],
+  "voz": "Si sos periodista, el 1 de enero de 2027 se deroga tu estatuto. Hasta el 31 de diciembre, un despido injustificado suma seis meses de indemnización especial. Desde enero, ese rubro no existe. El despido se paga con la ley general, como cualquier otro trabajo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "el 1 de enero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "1 de enero de 2027"
+        }
+      },
+      {
+        "frase": "seis meses de indemnización especial",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Indemnización especial: seis meses"
+        }
+      },
+      {
+        "frase": "ese rubro no existe",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Desde enero: no existe"
+        }
+      },
+      {
+        "frase": "con la ley general",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ley de Contrato de Trabajo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La Ley 27.802 deroga la Ley 12.908, el Estatuto del Periodista Profesional, a partir del 1 de enero de 2027. El último día vigente es el 31 de diciembre de 2026.",
+    "El estatuto suma una indemnización especial de seis meses de sueldo en todo despido injustificado, haya o no preaviso. La Ley de Contrato de Trabajo no tiene un rubro igual.",
+    "También cambia el preaviso omitido: el estatuto paga dos o cuatro meses según la antigüedad, y la ley general uno o dos.",
+    "Si trabajás en un medio, guardá este dato antes de fin de año."
+  ],
+  "hashtags": [
+    "periodistas",
+    "periodismo",
+    "estatutodelperiodista",
+    "despido",
+    "indemnizacion",
+    "reformalaboral",
+    "ley27802",
+    "derechoslaborales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 12.908: Estatuto del Periodista Profesional, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/43608/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "periodista-calendario-derogacion",
+  "ventana": {
+    "desde": "11-15",
+    "hasta": "12-31"
+  },
+  "caduca": "2026-12-31",
+  "tema": "periodista",
+  "hechos": [
+    "periodista-calendario-derogacion"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "200-cuanto-guardar-recibos",
+  "idea": "recibos-dos-y-diez",
+  "titulo": "Cuánto se guardan los recibos de sueldo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Cuánto se guardan los recibos de sueldo",
+    "Tus recibos tienen fecha de vencimiento",
+    "Dos años y diez años"
+  ],
+  "voz": "Tu empleador tiene que guardar tus recibos de sueldo, y la ley le pone plazo. Dos años por lo laboral y diez por lo previsional, o sea, tu jubilación. Antes no había número: se hablaba del plazo de prescripción. La reforma de marzo de dos mil veintiséis fijó los dos y los diez.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tiene que guardar tus recibos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Tus recibos tienen plazo"
+        }
+      },
+      {
+        "frase": "Dos años por lo laboral",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Lo laboral",
+            "items": [
+              "2 años de guarda",
+              "Prescripción laboral"
+            ]
+          },
+          "der": {
+            "titulo": "Lo previsional",
+            "items": [
+              "10 años de guarda",
+              "Tu jubilación"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "Antes no había número",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Antes: lo que durara la prescripción"
+        }
+      },
+      {
+        "frase": "fijó los dos y",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Hoy: 2 y 10 años"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El artículo 143 de la Ley de Contrato de Trabajo obliga a conservar los recibos 2 años por las obligaciones laborales y 10 por las previsionales.",
+    "Antes, el texto decía que se guardaban durante todo el plazo de la prescripción liberatoria, sin un número. La Ley 27.802 fijó los plazos.",
+    "Vos también conviene que guardes los tuyos: son la prueba de lo que cobraste y de lo que te aportaron.",
+    "Pasáselo a quien lleva los papeles en una empresa."
+  ],
+  "hashtags": [
+    "recibodesueldo",
+    "recibos",
+    "reformalaboral",
+    "empleadores",
+    "rrhh",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "pymes",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "recibos",
+  "hechos": [
+    "recibos-dos-y-diez"
+  ]
+}

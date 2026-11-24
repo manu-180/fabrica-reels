@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "197-obra-social-monotributo-mitos",
+  "idea": "obra-social-monotributo-internacion-3-meses",
+  "titulo": "La obra social del monotributo, por etapas",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "papel",
+  "hooks": [
+    "Te diste de alta en el monotributo",
+    "La obra social del monotributo tiene etapas",
+    "Monotributo nuevo: qué te cubren y cuándo"
+  ],
+  "voz": "Te das de alta y estás cubierto en todo. No: desde el primer día tenés la atención ambulatoria. La internación la cubren desde el inicio. Tampoco: entra a los tres meses. El alto costo llega con la internación. No: las prestaciones de alto costo llegan a los seis meses.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Te das de alta y estás cubierto en todo",
+        "realidad": "Desde el primer día, la atención ambulatoria."
+      },
+      {
+        "mito": "La internación la cubren desde el inicio",
+        "realidad": "La internación entra a los 3 meses."
+      },
+      {
+        "mito": "El alto costo llega con la internación",
+        "realidad": "Las prestaciones de alto costo llegan a los 6 meses."
+      }
+    ]
+  },
+  "captions": [
+    "La obra social del monotributo se activa por escalones: atención ambulatoria desde el día uno, internación a los 3 meses y alto costo a los 6.",
+    "Durante esa espera, la ley permite que la obra social te ofrezca la cobertura completa cobrándote un coseguro.",
+    "Si estás por darte de alta en el monotributo, tené en cuenta estos plazos antes de dejar otra cobertura.",
+    "Pasáselo a quien está por empezar a facturar."
+  ],
+  "hashtags": [
+    "monotributo",
+    "obrasocial",
+    "monotributista",
+    "salud",
+    "cobertura",
+    "emprendedores",
+    "freelance",
+    "argentina",
+    "prepaga",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Decreto 1/2010, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/162518/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "ARCA: jubilación y obra social del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/jubilacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "obra-social-monotributo",
+  "hechos": [
+    "obra-social-monotributo-internacion-3-meses"
+  ]
+}

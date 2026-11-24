@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "clave": "023-cliente-que-perdes",
+  "titulo": "El cliente que perdés sin enterarte",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "tinta",
+  "hooks": [
+    "El cliente que perdiste sin enterarte",
+    "¿Qué encuentra el que te recomendaron?",
+    "Te recomendaron, te buscaron y eligieron a otro"
+  ],
+  "voz": "Alguien te recomienda. Esa persona te busca en el celular antes de escribirte. Si no encuentra nada, o encuentra una página vieja que no carga, sigue con el siguiente de la lista. Vos no te enterás, pero ese cliente ya era tuyo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Alguien te recomienda",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Te recomendó un amigo"
+        }
+      },
+      {
+        "frase": "busca en el celular",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "tapicería de sillones",
+          "resultados": [
+            "Tapicería Ombú | Presupuesto online",
+            "Retapizados del Parque",
+            "Tapicero a domicilio"
+          ],
+          "destacado": 0
+        }
+      },
+      {
+        "frase": "una página vieja que no carga",
+        "visual": {
+          "tipo": "navegador",
+          "url": "tunegocio.com",
+          "estado": "lento"
+        }
+      },
+      {
+        "frase": "el siguiente de la lista",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Y elige al siguiente"
+        }
+      },
+      {
+        "frase": "ya era tuyo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ese cliente ya era tuyo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Las ventas que perdés no te llegan como reclamo. Son personas que te buscaron, no encontraron nada claro y le escribieron a otro.",
+    "La recomendación te la ganaste vos. Que la persona recomendada te encuentre y confíe depende de lo que vea cuando te busca.",
+    "Hacé la prueba: buscá tu negocio en el celular como si fueras un cliente nuevo. Lo que ves vos es lo que ve él."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "clientes",
+    "ventas",
+    "presenciadigital",
+    "comerciolocal",
+    "emprendedoreslatinos"
+  ],
+  "tema": "clientes-que-se-van",
+  "hechos": []
+}

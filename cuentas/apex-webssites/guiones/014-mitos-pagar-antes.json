@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "clave": "014-mitos-pagar-antes",
+  "titulo": "Myths that stop you before you get a website",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "arcilla",
+  "hooks": [
+    "Pay for a website without seeing it?",
+    "Nobody should pay for a website blind",
+    "The fear of paying and getting something ugly"
+  ],
+  "voz": "You have to pay before you see anything. That used to be true: today you can see a demo built for your business and decide from there. Once it's built, a website takes care of itself. Nope: it needs hosting, backups and someone keeping it up to date. That's why hosting and maintenance are included.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "You have to pay before you see anything",
+        "realidad": "You can see a demo built for your business and decide from there"
+      },
+      {
+        "mito": "Once it's built, a website takes care of itself",
+        "realidad": "It needs hosting, backups and someone keeping it up to date"
+      }
+    ]
+  },
+  "captions": [
+    "Paying for a website without knowing how it'll turn out is scary, and for good reason. That's why we show you a demo built for your business first. If you like it, we keep going.",
+    "A website needs a server to live on, backups and someone to update it when your hours or your menu change. If nobody's on it, one day it stops working and you hear about it from a customer.",
+    "Seeing your website built before you pay clears up the biggest question: whether you'll like it. Everything else we can talk through with the demo in hand."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "myths",
+    "webhosting",
+    "websitemaintenance",
+    "entrepreneurship",
+    "onlinepresence"
+  ],
+  "tema": "pagar-antes",
+  "hechos": [
+    "demo-gratis-antes-de-pagar",
+    "cambios-ilimitados-de-por-vida"
+  ]
+}

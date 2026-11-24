@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "121-ganancias-sueldo-reforma-mitos",
+  "idea": "ganancias-reforma-no-toco-sueldo",
+  "titulo": "Ganancias del sueldo: lo que la reforma no tocó",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "hooks": [
+    "La reforma no cambió tu Ganancias",
+    "Ganancias del sueldo: dos mitos de 2026",
+    "Lo que la reforma no tocó"
+  ],
+  "voz": "La reforma laboral cambió Ganancias del sueldo. No: la Ley 27.802 no tocó ese cálculo, tocó plazo fijo, alquileres y hacienda. La tabla de Ganancias cambia todos los meses. Tampoco: deducciones y escala se actualizan en enero y julio, por la inflación del semestre anterior.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "La reforma laboral cambió Ganancias del sueldo",
+        "realidad": "La Ley 27.802 no tocó el cálculo sobre el sueldo."
+      },
+      {
+        "mito": "La tabla de Ganancias cambia todos los meses",
+        "realidad": "Se actualiza en enero y julio, por la inflación del semestre anterior."
+      }
+    ]
+  },
+  "captions": [
+    "La Ley 27.802 (B.O. 6/3/2026) no modificó cómo se calcula Ganancias sobre el sueldo: sus cambios fueron sobre plazo fijo, alquileres y hacienda.",
+    "Deducciones personales y escala de Ganancias se actualizan dos veces por año, en enero y en julio, con el IPC del INDEC del semestre anterior.",
+    "Si tu retención cambió de un mes a otro, la causa está en tu sueldo o en tus deducciones, no en la reforma.",
+    "Mandáselo a quien te dijo que la reforma le subió Ganancias."
+  ],
+  "hashtags": [
+    "ganancias",
+    "impuestoalasganancias",
+    "sueldo",
+    "reformalaboral",
+    "impuestos",
+    "trabajo",
+    "argentina",
+    "empleados",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Impuesto a las Ganancias (t.o. 2019), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/332890/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "ganancias",
+  "hechos": [
+    "ganancias-reforma-no-toco-sueldo"
+  ]
+}

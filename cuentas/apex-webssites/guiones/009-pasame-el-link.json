@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "009-pasame-el-link",
+  "titulo": "They asked for my website and I sent my Instagram",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "arcilla",
+  "hooks": [
+    "They asked for my website, I sent Instagram",
+    "Is your website just your Instagram?",
+    "Instagram is not a website"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Lucy (purchasing)",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hi, do you have a website? I want to send it to my boss"
+      },
+      {
+        "de": "yo",
+        "texto": "Yes, of course. Here's the link"
+      },
+      {
+        "de": "yo",
+        "texto": "instagram.com/oak.official2"
+      },
+      {
+        "de": "ellos",
+        "texto": "Oh, but that's Instagram"
+      },
+      {
+        "de": "yo",
+        "texto": "Everything's there. Check the highlights"
+      },
+      {
+        "de": "ellos",
+        "texto": "My boss doesn't use Instagram"
+      },
+      {
+        "de": "yo",
+        "texto": "Ok, I'll send you a voice memo and explain"
+      },
+      {
+        "de": "ellos",
+        "texto": "No, that's ok. I'll let you know"
+      }
+    ],
+    "remate": "Spoiler: she never reached out again"
+  },
+  "captions": [
+    "A big client wants to see your website to show their boss, and you send your Instagram. Some people check it. Others, like Lucy's boss, don't even have an account.",
+    "Instagram is great for showing off your work. A website lets people find you on Google, compare you and hire you without you having to send a voice memo.",
+    "If your 'website' is your Instagram, you depend on the other person having an account, on your account not getting shut down, and on them finding what they need among all your posts."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "instagramforbusiness",
+    "b2bsales",
+    "onlinepresence",
+    "smallbiz"
+  ],
+  "tema": "clientes-que-se-van",
+  "hechos": []
+}

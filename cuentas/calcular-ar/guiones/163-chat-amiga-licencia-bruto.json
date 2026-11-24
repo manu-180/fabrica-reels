@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "163-chat-amiga-licencia-bruto",
+  "idea": "maternidad-chat-bruto-licencia",
+  "titulo": "En la licencia por maternidad cobrás el bruto",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "selva",
+  "hooks": [
+    "Volvió de la licencia y cobró de más",
+    "Por qué en la licencia cobrás más",
+    "Licencia por maternidad: el misterio del bruto"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Sofi",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Volví de la licencia y cobré más que antes. ¿Lo tengo que devolver?"
+      },
+      {
+        "de": "yo",
+        "texto": "No. Durante la licencia te paga ANSES, no la empresa"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y por qué es más?"
+      },
+      {
+        "de": "yo",
+        "texto": "Es una asignación, no sueldo: no lleva aportes"
+      },
+      {
+        "de": "ellos",
+        "texto": "O sea que cobré el bruto"
+      },
+      {
+        "de": "yo",
+        "texto": "Exacto, el bruto que hubieras cobrado"
+      },
+      {
+        "de": "ellos",
+        "texto": "Con razón no me cerraba nada"
+      }
+    ],
+    "remate": "En la licencia por maternidad cobrás el bruto"
+  },
+  "captions": [
+    "Durante la licencia por maternidad no cobrás sueldo: cobrás una asignación de ANSES igual a la remuneración bruta que hubieras debido percibir. No lleva aportes.",
+    "Para cobrar esa asignación, ANSES pide 3 meses de antigüedad continuada en el empleo.",
+    "La licencia es de 45 días antes y 45 después del parto, y el tramo previo se puede reducir hasta 10 días.",
+    "Etiquetá a alguien que está por empezar la licencia."
+  ],
+  "hashtags": [
+    "maternidad",
+    "licenciapormaternidad",
+    "anses",
+    "asignacionesfamiliares",
+    "humorlaboral",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "mamas",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 24.714 de Asignaciones Familiares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39880/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "maternidad",
+  "hechos": [
+    "maternidad-chat-bruto-licencia"
+  ]
+}

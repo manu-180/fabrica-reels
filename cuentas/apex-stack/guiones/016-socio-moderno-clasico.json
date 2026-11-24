@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "016-socio-moderno-clasico",
+  "titulo": "Algo moderno, pero clásico",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "Quiero algo moderno, pero clásico",
+    "¿Tu socio también opina de la página?",
+    "Así no se termina ninguna página"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Socio",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Para la página quiero algo moderno"
+      },
+      {
+        "de": "ellos",
+        "texto": "Pero clásico"
+      },
+      {
+        "de": "yo",
+        "texto": "Dale. ¿Colores?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Sobrios. Pero que llamen la atención"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Mucho texto o poco?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Poco. Pero que esté toda la info"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y para cuándo la querés?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Para ayer. Pero sin apuro"
+      }
+    ],
+    "remate": "Y así llevamos dos años sin página"
+  },
+  "captions": [
+    "Cuando hay que imaginar la página, nadie se pone de acuerdo. Cuando la ves armada, con tus colores y tus fotos, decidir es mucho más fácil.",
+    "Moderno pero clásico, sobrio pero llamativo, poco texto pero toda la info. Si alguna vez dijiste algo así, no sos el único.",
+    "Cuando cada socio se imagina una página distinta, la página no sale nunca. Con una demo concreta para mirar entre todos, la discusión se destraba."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "socios",
+    "diseñografico",
+    "emprendedoreslatinos",
+    "humor"
+  ],
+  "tema": "web-vieja",
+  "hechos": []
+}

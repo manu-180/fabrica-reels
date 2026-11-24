@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "clave": "153-trabajo-mujeres-mitos",
+  "titulo": "Trabajo de mujeres: tres artículos que ya no existen",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "menta",
+  "hooks": [
+    "Tres reglas del trabajo de mujeres que cayeron",
+    "Lo que todavía creés que dice la ley",
+    "Artículos que ya no están en la ley"
+  ],
+  "voz": "Las mujeres tienen dos horas de descanso al mediodía. Ya no: ese artículo se derogó el 6 de marzo de 2026. No les pueden dar trabajo a domicilio. Esa prohibición también cayó. No pueden hacer tareas insalubres. El artículo 176 se derogó, y la jornada insalubre de seis horas rige para todo el personal.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Las mujeres tienen dos horas de descanso al mediodía",
+        "realidad": "El art. 174 se derogó el 6 de marzo de 2026."
+      },
+      {
+        "mito": "No les pueden dar trabajo a domicilio",
+        "realidad": "La prohibición del art. 175 también se derogó."
+      },
+      {
+        "mito": "No pueden hacer tareas insalubres",
+        "realidad": "El art. 176 cayó. La jornada insalubre de 6 horas rige para todos."
+      }
+    ]
+  },
+  "captions": [
+    "El art. 207 de la Ley 27.802 derogó los arts. 174, 175 y 176 de la LCT, el capítulo de trabajo de mujeres. Rige desde el 6 de marzo de 2026.",
+    "La protección de la maternidad, el capítulo siguiente de la ley, quedó intacta.",
+    "Los topes de jornada siguen: 8 horas diarias y 48 semanales, y 6 y 36 en tareas declaradas insalubres. Rigen para todo el personal por igual.",
+    "Lo que diga tu convenio o tu contrato, si es más favorable, sigue valiendo."
+  ],
+  "hashtags": [
+    "trabajodemujeres",
+    "mujeres",
+    "8m",
+    "reformalaboral",
+    "ley27802",
+    "lct",
+    "derechoslaborales",
+    "trabajo",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802 (Boletín Oficial 6/3/2026)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/339542/20260306",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "trabajo-mujeres-aniversario-reforma",
+  "ventana": {
+    "desde": "03-01",
+    "hasta": "03-08"
+  },
+  "tema": "trabajo-mujeres",
+  "hechos": [
+    "trabajo-mujeres-aniversario-reforma"
+  ]
+}

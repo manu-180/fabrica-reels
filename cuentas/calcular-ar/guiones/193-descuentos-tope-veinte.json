@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "193-descuentos-tope-veinte",
+  "idea": "descuentos-tope-20",
+  "titulo": "Cuánto te pueden descontar del sueldo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Cuánto te pueden retener del sueldo",
+    "El tope del 20 por ciento",
+    "Descuentos en tu sueldo: hay un límite"
+  ],
+  "voz": "Tu empleador no te puede descontar lo que quiera. Sumando deducciones, retenciones y compensaciones, el tope es el 20 por ciento de lo que cobrás en dinero. La retención de Ganancias es la excepción: puede pasar ese límite. Y las multas, directamente, están prohibidas.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Tu empleador no te puede",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No te descuentan lo que quieran"
+        }
+      },
+      {
+        "frase": "el tope es el 20",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Deducciones",
+              "valor": "+"
+            },
+            {
+              "concepto": "Retenciones",
+              "valor": "+"
+            },
+            {
+              "concepto": "Compensaciones",
+              "valor": "+"
+            }
+          ],
+          "total": {
+            "concepto": "Tope del mes",
+            "valor": "20 %"
+          }
+        }
+      },
+      {
+        "frase": "La retención de Ganancias",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ganancias puede pasar el 20 %"
+        }
+      },
+      {
+        "frase": "las multas, directamente",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Multas: prohibidas"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El art. 133 de la Ley de Contrato de Trabajo limita las deducciones, retenciones y compensaciones a un 20 % de la remuneración en dinero del mes.",
+    "La Resolución 436/2004 del Ministerio de Trabajo permite pasar ese límite sólo para retener Ganancias.",
+    "Desde el 6/3/2026, los aportes de convenio a favor del sindicato que valen para no afiliados tienen su propio techo del 2 %.",
+    "Las multas al trabajador están prohibidas por el art. 131, aunque te descuenten dentro del 20 %."
+  ],
+  "hashtags": [
+    "sueldo",
+    "descuentos",
+    "recibodesueldo",
+    "retenciones",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "rrhh",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "descuentos",
+  "hechos": [
+    "descuentos-tope-20"
+  ]
+}

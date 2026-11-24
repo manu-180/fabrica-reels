@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "clave": "118-chat-rrhh-mutuo-acuerdo",
+  "idea": "renuncia-chat-mutuo-acuerdo",
+  "titulo": "Renuncia o mutuo acuerdo: cuál te deja desempleo",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "selva",
+  "hooks": [
+    "Antes de firmar la renuncia, leé esto",
+    "Le pedí a Recursos Humanos el mutuo acuerdo",
+    "Renuncia o mutuo acuerdo: no es igual"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Recursos Humanos",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Si te querés ir, firmá la renuncia y listo"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y si lo hacemos por mutuo acuerdo?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Es lo mismo, ninguna paga indemnización"
+      },
+      {
+        "de": "yo",
+        "texto": "Sí, pero el mutuo acuerdo me deja cobrar desempleo"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Desde cuándo?"
+      },
+      {
+        "de": "yo",
+        "texto": "Desde la Ley 27.802, de marzo de 2026"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, lo hacemos ante escribano"
+      }
+    ],
+    "remate": "Antes de renunciar, mirá el mutuo acuerdo"
+  },
+  "captions": [
+    "Ni la renuncia ni el mutuo acuerdo pagan indemnización. Pero desde la Ley 27.802 la extinción por mutuo acuerdo del art. 241 da derecho a la prestación por desempleo. La renuncia, no.",
+    "El mutuo acuerdo se hace por escritura pública o ante la autoridad judicial o administrativa, y es nulo sin tu presencia personal.",
+    "Con cualquiera de las dos te pagan igual los días trabajados, el aguinaldo proporcional y las vacaciones no gozadas.",
+    "Guardalo para el día que te quieras ir: la forma de salir cambia lo que cobrás después."
+  ],
+  "hashtags": [
+    "renuncia",
+    "mutuoacuerdo",
+    "desempleo",
+    "humorlaboral",
+    "rrhh",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "reformalaboral",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.013, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "renuncia",
+  "hechos": [
+    "renuncia-chat-mutuo-acuerdo"
+  ]
+}

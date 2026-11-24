@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "031-negocio-atendiendo-de-noche",
+  "titulo": "Your business answering at night without you",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Your business can work while you sleep",
+    "Your business, answering after midnight",
+    "Your business, open twenty-four hours"
+  ],
+  "voz": "Your business closes, but people keep searching on Google. They go straight to your website, check your services with clear photos and look at your hours. They answer their own questions, tap the button to text you and leave you a message ready for when you open.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "keep searching on Google",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "emergency movers near me",
+          "resultados": [
+            "Moving Company Directory",
+            "Two Cousins Moving",
+            "North Side Moving Co."
+          ],
+          "destacado": 2
+        }
+      },
+      {
+        "frase": "check your services",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourmovers.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "tap the button to text",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Hours and photos in a snap",
+          "compu": "All the info, neatly organized"
+        }
+      },
+      {
+        "frase": "leave you a message ready",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "No website",
+            "items": [
+              "Messages at all hours",
+              "Basic questions",
+              "They get tired of waiting"
+            ]
+          },
+          "der": {
+            "titulo": "Your own website",
+            "items": [
+              "Questions answered upfront",
+              "They reach out ready",
+              "Messages that get to the point"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Even after you close up shop, people search for services at all hours. A clear website explains what you do and how you work.",
+    "The customer browsing at night doesn't want to wait: they want to see photos, check your hours and send a message right away.",
+    "A well-built website gets you found when people need a solution, even outside your business hours.",
+    "Let your website answer the usual questions so the messages that reach you are ready to close."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "localbusiness",
+    "shoplocal",
+    "onlinepresence",
+    "onlinesales",
+    "webdevelopment"
+  ],
+  "tema": "web-que-vende-de-noche",
+  "hechos": []
+}

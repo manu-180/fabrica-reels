@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "clave": "116-vacaciones-recien-entraste",
+  "idea": "vacaciones-uno-cada-20",
+  "titulo": "Vacaciones si entraste este año",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Entraste este año: igual tenés vacaciones",
+    "Un día de vacaciones cada veinte",
+    "Recién entrado también te toca descanso"
+  ],
+  "voz": "Entraste hace poco y te dicen que este año no tenés vacaciones. Error. Si no llegaste a medio año trabajado, te toca un día de descanso cada veinte días trabajados. Con cien días de trabajo, son cinco días. Y si te vas antes de tomarlas, te las tienen que pagar.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Si no llegaste a medio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Menos de medio año trabajado"
+        }
+      },
+      {
+        "frase": "un día de descanso",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "1 día cada 20 trabajados"
+        }
+      },
+      {
+        "frase": "Con cien días de trabajo",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Días trabajados",
+              "valor": "Cien"
+            },
+            {
+              "concepto": "Uno cada",
+              "valor": "20"
+            }
+          ],
+          "total": {
+            "concepto": "Días de vacaciones",
+            "valor": "Cinco"
+          }
+        }
+      },
+      {
+        "frase": "si te vas antes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Si te vas, te las pagan"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Si no llegaste a medio año trabajado, igual tenés vacaciones: un día de descanso cada 20 días de trabajo efectivo.",
+    "Con cien días trabajados te tocan cinco días de vacaciones. No es un favor del empleador: lo dice la Ley de Contrato de Trabajo.",
+    "Si la relación termina antes de que te las tomes, te tienen que pagar las vacaciones proporcionales, sea cual sea la causa.",
+    "Pasáselo a quien empezó a trabajar este año."
+  ],
+  "hashtags": [
+    "vacaciones",
+    "vacacionesproporcionales",
+    "primertrabajo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "licencia",
+    "rrhh",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/vacaciones.ts:36"
+  ],
+  "tema": "vacaciones",
+  "hechos": [
+    "vacaciones-uno-cada-20"
+  ]
+}

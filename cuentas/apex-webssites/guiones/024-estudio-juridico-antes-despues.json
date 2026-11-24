@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "024-estudio-juridico-antes-despues",
+  "titulo": "A law firm's website, before and after",
+  "categoria": "tecnico",
+  "formato": "antes-despues",
+  "paleta": "arcilla",
+  "hooks": [
+    "Does your firm's site say Not Secure?",
+    "A lawyer with a generic email raises doubts",
+    "Lawyers: what your clients see first"
+  ],
+  "voz": "A law firm runs on trust. If the browser shows a Not Secure warning and you reply from a generic free email, that trust is gone before the first consultation. With your own domain, the padlock and clear copy, the client walks into the meeting already convinced.",
+  "contenido": {
+    "negocio": {
+      "rubro": "estudio-juridico",
+      "nombre": "Quillen Law Group",
+      "lema": "Employment and family law"
+    },
+    "antes": {
+      "defectos": [
+        "Not Secure warning",
+        "Generic free email",
+        "Endless gray paragraphs"
+      ]
+    },
+    "despues": {
+      "titular": "Your rights, explained clearly",
+      "boton": "Discuss your case",
+      "secciones": [
+        "Practice areas",
+        "Our team",
+        "Contact"
+      ]
+    }
+  },
+  "captions": [
+    "At a law firm, clients judge how serious you are before the first meeting. A Not Secure warning or a generic email makes them hesitate right there.",
+    "An email like contact@yourfirm.com says more than any diploma on the wall. And you get it with your website's domain.",
+    "Endless paragraphs in gray text don't explain anything to anyone. Your client wants to know in two lines whether you can help with their case."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "lawyers",
+    "lawfirm",
+    "beforeandafter",
+    "websecurity",
+    "legalmarketing",
+    "professionals"
+  ],
+  "fuente": "Chromium Blog (2018): starting with Chrome 68, all HTTP pages are marked \"Not secure\".",
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

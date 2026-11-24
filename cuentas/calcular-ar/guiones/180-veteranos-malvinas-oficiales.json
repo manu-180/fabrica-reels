@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "clave": "180-veteranos-malvinas-oficiales",
+  "titulo": "Pensión de Malvinas: también oficiales y suboficiales",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "selva",
+  "hooks": [
+    "Malvinas: la pensión no es sólo de conscriptos",
+    "Oficiales y suboficiales también la cobran",
+    "A quién alcanza la pensión de Malvinas"
+  ],
+  "voz": "La pensión honorífica de veteranos de Malvinas no es sólo para ex conscriptos. También alcanza a oficiales y suboficiales en retiro o baja que estuvieron en el teatro de operaciones Malvinas o combatieron en el Atlántico Sur. Y si el titular fallece, su familia cobra el 100 por ciento.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no es sólo para ex conscriptos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No es sólo para ex conscriptos"
+        }
+      },
+      {
+        "frase": "oficiales y suboficiales en retiro",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Oficiales y suboficiales, retiro o baja"
+        }
+      },
+      {
+        "frase": "combatieron en el Atlántico Sur",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Malvinas o Atlántico Sur"
+        }
+      },
+      {
+        "frase": "su familia cobra el 100",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Pensión del titular",
+              "valor": "100 %"
+            },
+            {
+              "concepto": "Pensión de la familia",
+              "valor": "100 %"
+            }
+          ],
+          "total": {
+            "concepto": "Lo que se pierde",
+            "valor": "Nada"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El Decreto 886/2005 extiende la pensión honorífica a oficiales y suboficiales de las Fuerzas Armadas y de Seguridad en retiro o baja que estuvieron destinados en Malvinas o combatieron en el Atlántico Sur.",
+    "La pensión derivada es el 100 % del beneficio del causante, no el 70 % del régimen general (Decreto 1357/2004, art. 7).",
+    "Los padres de los caídos en combate acceden con la sola acreditación del vínculo.",
+    "El 14 de junio se cumple un aniversario más del fin de la guerra. Compartilo con quien lo necesite."
+  ],
+  "hashtags": [
+    "malvinas",
+    "veteranosdemalvinas",
+    "14dejunio",
+    "pension",
+    "fuerzasarmadas",
+    "jubilacion",
+    "derechos",
+    "argentina",
+    "memoria",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Decreto 886/2005 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/105000-109999/108081/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 23.848, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/248/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "veteranos-malvinas-14-de-junio-oficiales",
+  "ventana": {
+    "desde": "06-08",
+    "hasta": "06-14"
+  },
+  "respaldo": [
+    "src/data/veteranos-malvinas.ts:12"
+  ],
+  "tema": "veteranos-malvinas",
+  "hechos": [
+    "veteranos-malvinas-14-de-junio-oficiales"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "106-chat-jefa-aguinaldo-dias-libres",
+  "idea": "aguinaldo-irrenunciable-chat",
+  "titulo": "El aguinaldo no se cambia por días libres",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "Me ofrecieron días libres por el aguinaldo",
+    "La propuesta de mi jefa en diciembre",
+    "Aguinaldo por días libres: no va"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Jefa",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Este año en vez de aguinaldo te doy unos días libres"
+      },
+      {
+        "de": "yo",
+        "texto": "Eso no se puede"
+      },
+      {
+        "de": "ellos",
+        "texto": "Si lo firmamos los dos, sí"
+      },
+      {
+        "de": "yo",
+        "texto": "Tampoco. El aguinaldo es irrenunciable"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Ni con un acuerdo?"
+      },
+      {
+        "de": "yo",
+        "texto": "Ni con un acuerdo. Y vence el 18 de diciembre"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, te lo pago y los días libres los charlamos"
+      }
+    ],
+    "remate": "El aguinaldo no se cambia por nada"
+  },
+  "captions": [
+    "El aguinaldo es irrenunciable: no se puede pactar no cobrarlo, ni a cambio de días libres ni de ninguna otra cosa.",
+    "La segunda cuota vence el 18 de diciembre, y la ley da 4 días hábiles de margen para pagarla.",
+    "Si no te lo pagan, primero reclamalo por escrito, mejor con carta documento.",
+    "Etiquetá a alguien que necesita saber esto antes de fin de año."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "humorlaboral",
+    "jefa",
+    "diciembre",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "oficina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-irrenunciable-chat"
+  ]
+}

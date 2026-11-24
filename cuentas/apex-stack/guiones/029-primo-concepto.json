@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "029-primo-concepto",
+  "titulo": "El primo diseñador y su concepto",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "arcilla",
+  "hooks": [
+    "Le pedí la página a mi primo diseñador",
+    "¿Tu página tiene concepto o tiene clientes?",
+    "Cuando el diseñador se pone artista"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Primo Gastón",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Primo, ¿cómo viene la página?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Te mando una idea. No te asustes"
+      },
+      {
+        "de": "ellos",
+        "texto": "Fondo negro, letras negras. Es un concepto"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y cómo se lee?"
+      },
+      {
+        "de": "ellos",
+        "texto": "No se lee. Se siente"
+      },
+      {
+        "de": "yo",
+        "texto": "Vendo repuestos de heladera"
+      },
+      {
+        "de": "ellos",
+        "texto": "Por eso. Hay que romper el molde"
+      },
+      {
+        "de": "yo",
+        "texto": "Mis clientes quieren el teléfono"
+      },
+      {
+        "de": "ellos",
+        "texto": "Está. Escondido en el logo"
+      }
+    ],
+    "remate": "Sigo sin página. Pero con concepto."
+  },
+  "captions": [
+    "Una página puede ser linda y vender, o ser una obra de arte que nadie entiende. Tus clientes buscan el teléfono, el horario y saber si tenés lo que necesitan.",
+    "Un diseño premium se nota en que tu cliente encuentra todo sin pensar: qué vendés, dónde estás y cómo escribirte.",
+    "Tu página tiene que gustarle a tus clientes antes que a tu primo. Si el que vende repuestos de heladera necesita un concepto, que sea uno que se lea."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "diseñografico",
+    "diseñoux",
+    "emprendedoresargentinos",
+    "humor"
+  ],
+  "tema": "sobrino-hace-la-web",
+  "hechos": []
+}

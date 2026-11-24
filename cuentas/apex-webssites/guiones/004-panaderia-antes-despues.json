@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "clave": "004-panaderia-antes-despues",
+  "titulo": "A bakery's website, before and after",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "arcilla",
+  "hooks": [
+    "Does your website make people hungry, or sad?",
+    "The typical neighborhood bakery website",
+    "Same bread, different website"
+  ],
+  "voz": "Pixelated counter photos, a menu you can't read and no hours or address in sight. That's how a lot of bakery websites look on a phone. The new version has photos that make you hungry, today's bread right at the top and a button to order ahead.",
+  "contenido": {
+    "negocio": {
+      "rubro": "panaderia",
+      "nombre": "High Crumb Bakery",
+      "lema": "Sourdough bread, every single day"
+    },
+    "antes": {
+      "defectos": [
+        "Pixelated counter photos",
+        "Menu you can't read",
+        "No hours or address"
+      ]
+    },
+    "despues": {
+      "titular": "Fresh-baked bread, every morning",
+      "boton": "Order ahead",
+      "secciones": [
+        "Today's bread",
+        "Orders",
+        "Find us"
+      ]
+    }
+  },
+  "captions": [
+    "Your website is the shop window people look at from their phone. If the photos are blurry and your hours don't show up, nobody comes in to ask.",
+    "A bakery sells with the eyes. Photos that make people hungry, today's bread front and center and a button to order: that's enough to get picked.",
+    "What time do you open? Do you take custom cake orders? If your website answers that, you save yourself a ton of messages."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "bakery",
+    "shoplocal",
+    "beforeandafter",
+    "websiteredesign",
+    "foodbusiness"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas",
+    "whatsapp-con-consulta-escrita"
+  ]
+}

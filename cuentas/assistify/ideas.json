@@ -1,0 +1,875 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-23",
+  "ideas": [
+    {
+      "id": "cancelacion-a-medianoche",
+      "tema": "caos-whatsapp",
+      "idea": "La alumna que cancela y pide recuperar por WhatsApp a medianoche",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "tres-dolores",
+        "cancelacion-tardia",
+        "plazo-lo-define-el-taller"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "mitos-lista-de-espera",
+      "tema": "lista-espera",
+      "idea": "Lo que la gente cree de la lista de espera y cómo funciona de verdad",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "espera-no-consume",
+        "lista-espera-automatica",
+        "aviso-promocion",
+        "espera-sin-tope"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "plazo-de-cancelacion",
+      "tema": "cancelaciones",
+      "idea": "Cómo funciona el plazo para cancelar con crédito, con el ejemplo de 24 horas",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "plazo-ejemplo-24",
+        "cancelacion-tardia"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mama-con-dos-hijos",
+      "tema": "familias",
+      "idea": "Una mamá con dos hijos en el taller descubre que con una cuenta alcanza",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "familia-una-cuenta",
+        "familia-credito-vuelve"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mitos-cancelaciones",
+      "tema": "cancelaciones",
+      "idea": "Tres cosas que se creen de cancelar una clase",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "cancelacion-tardia",
+        "plazo-lo-define-el-taller",
+        "cambio-de-plazo-no-retroactivo"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "recuperos-del-28",
+      "tema": "recuperos",
+      "idea": "Todos quieren recuperar el día 28: cómo se reparte la asistencia en el mes",
+      "angulo": "dolor",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "recupero-dia-28",
+        "recuperos-repartidos"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "box-planilla-a-app",
+      "tema": "caos-whatsapp",
+      "idea": "Un box de funcional pasa de la planilla en la pared y los turnos por WhatsApp a la app",
+      "angulo": "comparacion",
+      "formato_sugerido": "antes-despues",
+      "hechos": [
+        "tres-dolores",
+        "lista-espera-automatica",
+        "historial-creditos"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "cuantas-clases-me-quedan",
+      "tema": "recuperos",
+      "idea": "El alumno que pregunta cuántas clases le quedan y el profe que no sabe",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "un-credito-una-clase",
+        "ficha-alumno",
+        "tres-dolores"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "lista-de-espera-paso-a-paso",
+      "tema": "lista-espera",
+      "idea": "Qué pasa paso a paso cuando una clase se llena",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "espera-no-consume",
+        "lista-espera-automatica",
+        "aviso-promocion"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mitos-creditos",
+      "tema": "recuperos",
+      "idea": "Mitos sobre los créditos: perder la clase, quedar debiendo, recuperar el mes pasado",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "plazo-ejemplo-24",
+        "sin-creditos-negativos",
+        "mes-activo"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "feriado-en-el-grupo",
+      "tema": "horarios",
+      "idea": "El grupo de WhatsApp del taller el día antes de un feriado",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "feriados"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "horarios-una-sola-vez",
+      "tema": "horarios",
+      "idea": "Cargar los horarios una vez y que el mes se arme solo",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "horarios-una-vez",
+        "grupos-de-dias",
+        "atajos-dias",
+        "capacidad-por-clase"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "alumna-sin-smartphone",
+      "tema": "invitacion",
+      "idea": "La alumna sin celular moderno también entra al taller",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "cuenta-sin-smartphone"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mitos-mis-alumnos-no-usan-apps",
+      "tema": "invitacion",
+      "idea": "Mis alumnos no van a usar una app: tres mitos",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "codigo-invitacion",
+        "invitar-link",
+        "entrar-con-google",
+        "cuenta-sin-smartphone"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "marzo-sin-mensajes",
+      "tema": "inicio-de-clases",
+      "idea": "Arrancar las clases de marzo sin que explote el WhatsApp",
+      "angulo": "calendario",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "horarios-una-vez",
+        "invitar-link",
+        "inscripciones-24-7"
+      ],
+      "ventana": {
+        "desde": "02-10",
+        "hasta": "03-31"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "me-guardas-el-credito",
+      "tema": "cancelaciones",
+      "idea": "La alumna que cancela una hora antes y pide que le guarden el crédito igual",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "cancelacion-tardia",
+        "plazo-lo-define-el-taller"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "historial-sin-discusiones",
+      "tema": "historial",
+      "idea": "El historial contesta solo la pregunta de si una clase se descontó",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "historial-creditos",
+        "historial-cancelaciones",
+        "pagos-tipos"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mitos-es-muy-tecnologico",
+      "tema": "autogestion",
+      "idea": "Mitos de que la app es complicada para los alumnos",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "plataformas",
+        "entrar-con-google",
+        "perfil-autogestion"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "me-olvide-de-la-clase",
+      "tema": "recordatorios",
+      "idea": "El alumno que se olvida de la clase por tercera vez",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "recordatorio-de-clase"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "cambio-de-mes-solo",
+      "tema": "cambio-de-mes",
+      "idea": "Cómo se pasa de mes sin rearmar nada",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "cambio-de-mes-dia-1",
+        "reinscripcion-fijas",
+        "no-se-borran"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mitos-pagos",
+      "tema": "pagos",
+      "idea": "Tres mitos de llevar los pagos del taller",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "pagos-tipos",
+        "pagos-al-dia",
+        "pagos-metodos"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "colega-ya-no-contesta",
+      "tema": "caos-whatsapp",
+      "idea": "Una colega le pregunta a la otra cómo dejó de contestar mensajes a la noche",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "inscripciones-24-7",
+        "lista-espera-automatica"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "profe-o-secretario",
+      "tema": "caos-whatsapp",
+      "idea": "Si contestás más mensajes que clases das, sos más secretario que profe",
+      "angulo": "dolor",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "mas-secretario",
+        "aviso-al-profe",
+        "lista-espera-automatica"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "mitos-niveles-y-grupos",
+      "tema": "categorias",
+      "idea": "Mitos sobre separar alumnos por nivel, grupo o familia",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "categorias-horario",
+        "familia-una-cuenta",
+        "multitaller-premium"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "entre-de-la-espera",
+      "tema": "lista-espera",
+      "idea": "La alumna que entra desde la lista de espera sin que nadie haga nada",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "aviso-promocion",
+        "lista-espera-automatica"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "manos-con-barro",
+      "tema": "voz",
+      "idea": "El asistente de voz para cuando tenés las manos ocupadas",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "asistente-voz",
+        "voz-sin-tocar"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "estudio-cuaderno-a-app",
+      "tema": "pagos",
+      "idea": "Un estudio de funcional deja el cuaderno de pagos y los recuperos a mano",
+      "angulo": "comparacion",
+      "formato_sugerido": "antes-despues",
+      "hechos": [
+        "pagos-tipos",
+        "pagos-al-dia",
+        "recuperos-repartidos"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "diciembre-cuantas-me-quedan",
+      "tema": "cierre-de-anio",
+      "idea": "El grupo del taller en diciembre preguntando cuántas clases le quedan",
+      "angulo": "calendario",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "mes-activo",
+        "un-credito-una-clase"
+      ],
+      "ventana": {
+        "desde": "11-15",
+        "hasta": "12-20"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "mitos-avisos",
+      "tema": "avisos",
+      "idea": "Mitos sobre quién avisa qué en el taller",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "aviso-al-profe",
+        "avisos-por-categoria",
+        "recordatorio-de-clase"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "lugar-vacio",
+      "tema": "lista-espera",
+      "idea": "El lugar que queda vacío porque nadie se enteró de la cancelación",
+      "angulo": "dolor",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "espacios-vacios",
+        "lista-espera-automatica"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "probar-sin-tarjeta",
+      "tema": "prueba-gratis",
+      "idea": "Una profe le pregunta a otra si para probar hace falta la tarjeta",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "prueba-15-dias",
+        "codigo-invitacion"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "mitos-armar-el-mes",
+      "tema": "horarios",
+      "idea": "Mitos sobre armar la agenda del mes",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "horarios-una-vez",
+        "feriados",
+        "cupo-puntual"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "tres-formas-de-invitar",
+      "tema": "invitacion",
+      "idea": "Las tres formas de sumar alumnos al taller",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "invitar-link",
+        "invitar-whatsapp",
+        "cuenta-sin-smartphone"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "justo-en-el-limite",
+      "tema": "cancelaciones",
+      "idea": "Qué pasa si el alumno cancela justo en el límite del plazo",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "limite-estricto",
+        "plazo-lo-define-el-taller"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "sin-conversaciones-incomodas",
+      "tema": "cancelaciones",
+      "idea": "La regla la pone la app y se terminan los pedidos de favores",
+      "angulo": "dolor",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "cancelacion-tardia",
+        "plazo-lo-define-el-taller"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "clase-que-ya-paso",
+      "tema": "recuperos",
+      "idea": "No se puede reservar una clase que ya pasó",
+      "angulo": "mito",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "clases-pasadas",
+        "mes-activo"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "espera-sin-credito",
+      "tema": "lista-espera",
+      "idea": "Si el primero de la lista no tiene crédito, entra el siguiente",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "espera-saltea-sin-credito",
+        "lista-espera-automatica"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "ficha-en-segundos",
+      "tema": "pagos",
+      "idea": "La ficha de cada alumno con créditos, clases e historial a la vista",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "ficha-alumno",
+        "pagos-al-dia"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "acuerdo-especial",
+      "tema": "pagos",
+      "idea": "Sumar o descontar créditos a mano cuando hay un acuerdo especial",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "creditos-a-mano",
+        "historial-creditos"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "me-cambie-el-numero",
+      "tema": "autogestion",
+      "idea": "El alumno que avisa que cambió el número y ahora lo cambia solo",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "perfil-autogestion"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "cada-uno-su-color",
+      "tema": "autogestion",
+      "idea": "Cada alumno elige su color en la app y hay modo oscuro",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "color-y-modo-oscuro"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "calendario-en-la-compu",
+      "tema": "horarios",
+      "idea": "El profe también ve el calendario desde la compu",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "panel-web-calendario",
+        "plataformas"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "anuncio-del-taller",
+      "tema": "avisos",
+      "idea": "Avisar algo importante a todo el taller sin mandar mensaje por mensaje",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "anuncios-del-taller"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "packs-de-cuatro",
+      "tema": "cambio-de-mes",
+      "idea": "Anotar en 4 clases como un pack o en todas las del mes",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "packs-de-4",
+        "reinscripcion-fijas"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "vacaciones-de-invierno",
+      "tema": "horarios",
+      "idea": "Marcar las semanas de vacaciones de invierno como días sin clase",
+      "angulo": "calendario",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "feriados",
+        "cupo-puntual"
+      ],
+      "ventana": {
+        "desde": "07-01",
+        "hasta": "07-31"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "vuelta-de-invierno",
+      "tema": "cambio-de-mes",
+      "idea": "Volver de las vacaciones de invierno con todos reinscriptos en sus clases fijas",
+      "angulo": "calendario",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "reinscripcion-fijas",
+        "cambio-de-mes-dia-1"
+      ],
+      "ventana": {
+        "desde": "07-20",
+        "hasta": "08-15"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "dia-del-maestro",
+      "tema": "caos-whatsapp",
+      "idea": "Para el día del maestro, menos secretaría y más clase",
+      "angulo": "calendario",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "mas-secretario",
+        "inscripciones-24-7"
+      ],
+      "ventana": {
+        "desde": "09-04",
+        "hasta": "09-11"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "enero-preparar-el-anio",
+      "tema": "inicio-de-clases",
+      "idea": "Enero es el mes para dejar cargados los horarios del año",
+      "angulo": "calendario",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "horarios-una-vez",
+        "grupos-de-dias"
+      ],
+      "ventana": {
+        "desde": "01-05",
+        "hasta": "02-10"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "soporte-por-whatsapp",
+      "tema": "prueba-gratis",
+      "idea": "Si te trabás configurando, el soporte es directo por WhatsApp",
+      "angulo": "dato",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "soporte-whatsapp"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "sedes-en-una-app",
+      "tema": "categorias",
+      "idea": "Tener dos sedes y manejarlas en una sola app",
+      "angulo": "comparacion",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "multitaller-premium"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "tres-dolores-del-taller",
+      "tema": "caos-whatsapp",
+      "idea": "Los tres dolores de todo taller por turnos",
+      "angulo": "dolor",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "tres-dolores"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "tornos-vacios",
+      "tema": "lista-espera",
+      "idea": "En cerámica, un torno vacío por una cancelación que nadie vio",
+      "angulo": "dolor",
+      "formato_sugerido": "antes-despues",
+      "hechos": [
+        "espacios-vacios",
+        "lista-espera-automatica"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "hijo-cancela-a-tiempo",
+      "tema": "familias",
+      "idea": "Cuando un hijo cancela a tiempo, la clase vuelve al saldo del padre",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "familia-credito-vuelve",
+        "familia-una-cuenta"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "codigo-del-taller",
+      "tema": "invitacion",
+      "idea": "Con el código del taller el alumno entra al lugar correcto",
+      "angulo": "explicador",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "codigo-invitacion",
+        "invitar-link"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "aviso-con-detalle",
+      "tema": "avisos",
+      "idea": "El profe se entera de cada cancelación con el detalle de la clase",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "aviso-al-profe"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "a-tiempo-o-tardia",
+      "tema": "historial",
+      "idea": "El historial marca cada cancelación como a tiempo o tardía",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "historial-cancelaciones",
+        "cancelacion-tardia"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "dictado-manos-ocupadas",
+      "tema": "voz",
+      "idea": "Una profe de cerámica le dicta a la app con las manos en el torno",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "asistente-voz"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "crossfit-lista-de-espera",
+      "tema": "lista-espera",
+      "idea": "El turno de las 7 lleno y la lista de espera que se mueve sola",
+      "angulo": "comparacion",
+      "formato_sugerido": "antes-despues",
+      "hechos": [
+        "lista-espera-automatica",
+        "aviso-promocion"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "atajos-de-dias",
+      "tema": "horarios",
+      "idea": "Lunes a viernes, fin de semana o todos los días: los atajos para cargar horarios",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "atajos-dias",
+        "grupos-de-dias"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "transferencia-o-efectivo",
+      "tema": "pagos",
+      "idea": "El alumno que pagó por transferencia y el profe que no lo tiene anotado",
+      "angulo": "comedia",
+      "formato_sugerido": "chat",
+      "hechos": [
+        "pagos-metodos",
+        "pagos-al-dia"
+      ],
+      "ventana": null,
+      "origen": "dolor"
+    },
+    {
+      "id": "cierre-sin-planillas",
+      "tema": "cierre-de-anio",
+      "idea": "Cerrar el año sin cuadernos de recuperos ni planillas",
+      "angulo": "calendario",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "historial-creditos",
+        "pagos-al-dia",
+        "ficha-alumno"
+      ],
+      "ventana": {
+        "desde": "11-15",
+        "hasta": "12-20"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "marzo-mitos",
+      "tema": "inicio-de-clases",
+      "idea": "Mitos de arrancar el año en el taller",
+      "angulo": "calendario",
+      "formato_sugerido": "mito",
+      "hechos": [
+        "horarios-una-vez",
+        "invitar-link",
+        "cambio-de-mes-dia-1"
+      ],
+      "ventana": {
+        "desde": "02-10",
+        "hasta": "03-31"
+      },
+      "origen": "temporada"
+    },
+    {
+      "id": "entra-con-google",
+      "tema": "autogestion",
+      "idea": "Tus alumnos entran con Google y se olvidan de otra contraseña",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "entrar-con-google",
+        "codigo-invitacion"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "avisos-a-gusto",
+      "tema": "avisos",
+      "idea": "Cada uno elige qué avisos quiere recibir",
+      "angulo": "dato",
+      "formato_sugerido": "explicador",
+      "hechos": [
+        "avisos-por-categoria"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    }
+  ]
+}

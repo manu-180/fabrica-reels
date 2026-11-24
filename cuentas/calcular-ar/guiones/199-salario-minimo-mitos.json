@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "clave": "199-salario-minimo-mitos",
+  "idea": "smvm-media-jornada",
+  "titulo": "Salario mínimo: tres mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Media jornada: tu salario mínimo es la mitad",
+    "El salario mínimo no es igual para todos",
+    "Tres mitos del salario mínimo"
+  ],
+  "voz": "El salario mínimo es igual para cualquier jornada. No: el número publicado es para jornada completa, y con media jornada te toca la mitad. El valor por hora también se reduce. Falso: la hora vale lo mismo. Las asignaciones familiares entran en el mínimo. Tampoco: van aparte.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "El salario mínimo es igual para cualquier jornada",
+        "realidad": "Es para jornada completa: con media jornada, la mitad."
+      },
+      {
+        "mito": "El valor por hora también se reduce",
+        "realidad": "La hora no se prorratea: lo que se prorratea es el mensual."
+      },
+      {
+        "mito": "Las asignaciones familiares entran en el mínimo",
+        "realidad": "Son independientes del salario mínimo (art. 118)."
+      }
+    ]
+  },
+  "captions": [
+    "La resolución del Consejo del Salario fija el mínimo para quien cumple la jornada legal completa. Los trabajos a tiempo parcial y de jornada reducida lo cobran en proporción.",
+    "El valor por hora del salario mínimo no cambia según cuántas horas trabajes: lo que se prorratea es el monto mensual.",
+    "Las asignaciones por carga de familia son independientes del salario mínimo: no se descuentan de él.",
+    "Si tenés convenio, tu piso real es la escala de tu categoría, que suele ser más alta."
+  ],
+  "hashtags": [
+    "salariominimo",
+    "smvm",
+    "mediajornada",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "asignacionesfamiliares",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Resolución 4/2026 del Consejo del Salario (Boletín Oficial)",
+      "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/346775/20260902",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/lib/salario-minimo.ts:130"
+  ],
+  "tema": "salario-minimo",
+  "hechos": [
+    "smvm-media-jornada"
+  ]
+}

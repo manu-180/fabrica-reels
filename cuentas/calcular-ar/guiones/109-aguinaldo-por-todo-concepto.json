@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "clave": "109-aguinaldo-por-todo-concepto",
+  "idea": "aguinaldo-por-todo-concepto",
+  "titulo": "Horas extra y comisiones suman al aguinaldo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Tus horas extra también suman al aguinaldo",
+    "El aguinaldo cuenta más que tu básico",
+    "Comisiones y premios entran al aguinaldo"
+  ],
+  "voz": "Para el aguinaldo se toma tu mejor sueldo del semestre por todo concepto. Eso suma las horas extra, las comisiones, los premios y los adicionales remunerativos de ese mes. Lo no remunerativo, como algunos bonos o viáticos, no entra. Por eso un mes con muchas horas extra sube todo el aguinaldo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tu mejor sueldo del semestre",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mejor sueldo, por todo concepto"
+        }
+      },
+      {
+        "frase": "Eso suma las horas extra",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Horas extra, comisiones y premios"
+        }
+      },
+      {
+        "frase": "Lo no remunerativo",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "No entra",
+            "items": [
+              "Bonos no remunerativos",
+              "Algunos viáticos"
+            ]
+          },
+          "der": {
+            "titulo": "Suma",
+            "items": [
+              "Horas extra",
+              "Comisiones",
+              "Premios remunerativos"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "un mes con muchas",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un mes alto sube el aguinaldo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La ley toma la mayor remuneración mensual del semestre por todo concepto: horas extra, comisiones, premios y adicionales remunerativos de ese mes.",
+    "Un mes con muchas horas extra puede ser tu mejor sueldo del semestre, y entonces es la base de todo el aguinaldo.",
+    "Lo no remunerativo no suma: algunos bonos y viáticos quedan afuera de la cuenta.",
+    "Antes de diciembre, fijate cuál fue tu mejor mes y hacé la cuenta con ese."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "sac",
+    "horasextra",
+    "comisiones",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-por-todo-concepto"
+  ]
+}

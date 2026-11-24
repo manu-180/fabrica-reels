@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "005-precio-y-visto",
+  "titulo": "The one who texts 'price' and vanishes",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "bosque",
+  "hooks": [
+    "They text 'price' and vanish",
+    "How many 'price' texts left you on read?",
+    "The customer who only texts 'price'"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Unknown number",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "price"
+      },
+      {
+        "de": "yo",
+        "texto": "Hi! What size do you need?"
+      },
+      {
+        "de": "ellos",
+        "texto": "price"
+      },
+      {
+        "de": "yo",
+        "texto": "Depends on the fabric. Is it for the living room or the bedroom?"
+      },
+      {
+        "de": "ellos",
+        "texto": "just send price"
+      },
+      {
+        "de": "yo",
+        "texto": "I'll send you the catalog"
+      },
+      {
+        "de": "yo",
+        "texto": "curtains_catalog_FINAL_for_real.pdf"
+      },
+      {
+        "de": "ellos",
+        "texto": "ugh that's a lot, just tell me the price"
+      },
+      {
+        "de": "yo",
+        "texto": "It's on page two"
+      }
+    ],
+    "remate": "Seen. Three weeks ago."
+  },
+  "captions": [
+    "They text 'price,' you answer as nicely as you can, and they vanish. A website with your products, photos and sizes answers that before they text you, and whoever does reach out has already decided.",
+    "If your catalog is a PDF you send by text, the customer has to download it, open it and zoom in. On a website they see it all at a glance, right from their phone.",
+    "If you spend your day answering 'price' by message, the info is in the wrong place. Put it where your customer finds it on their own, without having to ask you."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "onlinesales",
+    "digitalcatalog",
+    "customerservice",
+    "smallbiz"
+  ],
+  "tema": "precio",
+  "hechos": []
+}

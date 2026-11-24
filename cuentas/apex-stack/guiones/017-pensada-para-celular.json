@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "017-pensada-para-celular",
+  "titulo": "Por qué tu página se diseña primero para el celular",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "crema",
+  "hooks": [
+    "¿Tu página se lee sin hacer zoom?",
+    "¿Cómo se ve tu página en el colectivo?",
+    "Si hay que hacer zoom, ya perdiste"
+  ],
+  "voz": "Tus clientes te miran desde el celular, con una mano y apurados. Si las letras son chicas y el botón no se puede tocar, se van. Por eso diseñamos primero para el celular: texto que se lee sin zoom, botones grandes y lo importante arriba. Después la adaptamos a la compu.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "desde el celular",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Letras chicas y botones diminutos",
+          "compu": "Todo ordenado y prolijo"
+        }
+      },
+      {
+        "frase": "diseñamos primero para el celular",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Primero el celular"
+        }
+      },
+      {
+        "frase": "botones grandes",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Pensada para la compu",
+            "items": [
+              "Hay que hacer zoom",
+              "Botones diminutos",
+              "Menú escondido"
+            ]
+          },
+          "der": {
+            "titulo": "Pensada para el celular",
+            "items": [
+              "Se lee de una",
+              "Botón al alcance del pulgar",
+              "Lo importante arriba"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "a la compu",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Se lee de una, botón a mano",
+          "compu": "La misma página, más amplia"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Tu cliente abre tu página en el colectivo, en la fila del súper o tirado en el sillón, con el celular. Si ahí no se lee, para él tu negocio no tiene página.",
+    "Diseñar primero para el celular quiere decir letras que se leen sin zoom, botones que se tocan con el pulgar y lo importante en la primera pantalla.",
+    "Probalo ahora: abrí tu página en el celular y tratá de llamarte con una sola mano. Si te costó, a tus clientes también."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "webresponsive",
+    "mobilefirst",
+    "diseñoux",
+    "desarrolloweb",
+    "celular"
+  ],
+  "tema": "celular",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "clave": "002-mitos-boca-a-boca",
+  "titulo": "Los mitos de 'mi rubro no necesita página'",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "crema",
+  "hooks": [
+    "¿Tu rubro no necesita página web?",
+    "El boca a boca ya no alcanza",
+    "Te recomendaron. Ahora te están googleando"
+  ],
+  "voz": "Yo vivo del boca a boca. Bárbaro, pero al que te recomiendan lo primero que hace es buscarte en el celular. Mis clientes son del barrio. Los del barrio también miran fotos y horarios antes de ir. No vendo por internet. Igual te buscan ahí para decidir si te escriben.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Yo vivo del boca a boca",
+        "realidad": "Al que te recomiendan, lo primero que hace es buscarte en el celular"
+      },
+      {
+        "mito": "Mis clientes son del barrio",
+        "realidad": "Los del barrio también miran fotos y horarios antes de ir"
+      },
+      {
+        "mito": "No vendo por internet",
+        "realidad": "Igual te buscan ahí para decidir si te escriben"
+      }
+    ]
+  },
+  "captions": [
+    "El boca a boca sigue funcionando, con un paso más en el medio: antes de llamarte, la persona que te recomendaron te busca en el celular. Si no encuentra nada, duda.",
+    "Herrero, plomera, contador, veterinaria: no importa el rubro. Hoy a todos nos buscan en Google antes de escribirnos.",
+    "Mis clientes son del barrio, yo vivo del boca a boca, no vendo por internet. Las tres frases tienen algo de cierto, y las tres te dejan afuera cuando alguien te busca en el celular.",
+    "Tu mejor cliente te llegó por una recomendación. El próximo te va a buscar en el celular antes de llamarte, y según lo que encuentre, te llama o no."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "bocaaboca",
+    "clientes",
+    "comerciolocal",
+    "emprendedoresargentinos",
+    "mitos"
+  ],
+  "tema": "boca-a-boca",
+  "hechos": []
+}

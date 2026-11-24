@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "clave": "019-chat-me-olvide-de-la-clase",
+  "titulo": "El alumno que se olvida de la clase",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "tema": "recordatorios",
+  "hooks": [
+    "Se olvidó de la clase. Otra vez",
+    "El alumno que nunca se acuerda",
+    "Perdón profe, me olvidé"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Lucas, guitarra",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, perdón, me olvidé por completo de la clase"
+      },
+      {
+        "de": "yo",
+        "texto": "Es la tercera vez este mes, Lucas"
+      },
+      {
+        "de": "ellos",
+        "texto": "Es que no me acuerdo qué día era"
+      },
+      {
+        "de": "yo",
+        "texto": "Martes, como siempre"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y no me podés avisar antes?"
+      },
+      {
+        "de": "yo",
+        "texto": "Ahora te avisa la app, sola"
+      }
+    ],
+    "remate": "Un recordatorio antes de cada clase"
+  },
+  "captions": [
+    "Con Assistify a cada alumno le llega un recordatorio antes de su próxima clase. Vos no mandás nada.",
+    "Menos ausencias por olvido y menos mensajes de perdón.",
+    "Mandáselo a ese alumno que siempre se olvida."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "musica",
+    "guitarra",
+    "humor",
+    "recordatorios",
+    "clases"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "recordatorio-de-clase"
+  ],
+  "idea": "me-olvide-de-la-clase"
+}

@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "105-chat-aviso-vacaciones-enero",
+  "titulo": "Vacaciones de enero: el aviso sale en diciembre",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "menta",
+  "hooks": [
+    "Avisé las vacaciones una semana antes",
+    "Las vacaciones de enero se avisan en diciembre",
+    "¿Con cuánto tiempo avisás las vacaciones?"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mi contadora",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Las vacaciones del equipo las aviso el diez de enero"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y arrancan cuándo?"
+      },
+      {
+        "de": "yo",
+        "texto": "El quince de enero"
+      },
+      {
+        "de": "ellos",
+        "texto": "Tarde. El aviso va por escrito, 30 días antes"
+      },
+      {
+        "de": "yo",
+        "texto": "¿30? ¿No eran 45?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Eran. Con la reforma laboral son 30"
+      },
+      {
+        "de": "yo",
+        "texto": "O sea que aviso en diciembre"
+      },
+      {
+        "de": "ellos",
+        "texto": "Hasta el dieciséis de diciembre. Y por escrito"
+      }
+    ],
+    "remate": "Vacaciones de enero, aviso en diciembre"
+  },
+  "captions": [
+    "Si tenés empleados y las vacaciones arrancan el quince de enero, el aviso por escrito tiene que salir a más tardar el dieciséis de diciembre.",
+    "Desde la Ley 27.802 el aviso de vacaciones es con al menos 30 días de anticipación, por escrito. Antes eran 45.",
+    "Tu convenio colectivo puede fijar otro sistema de aviso: revisalo antes de armar el cronograma.",
+    "Etiquetá a quien todavía avisa las vacaciones la semana anterior."
+  ],
+  "hashtags": [
+    "vacaciones",
+    "empleador",
+    "pymes",
+    "emprendedores",
+    "rrhh",
+    "reformalaboral",
+    "trabajo",
+    "argentina",
+    "humorlaboral",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "vacaciones-empleador-aviso-diciembre",
+  "ventana": {
+    "desde": "11-15",
+    "hasta": "12-15"
+  },
+  "respaldo": [
+    "src/app/(ar)/planillas/vacaciones/page.tsx:129"
+  ],
+  "tema": "vacaciones",
+  "hechos": [
+    "vacaciones-empleador-aviso-diciembre"
+  ]
+}

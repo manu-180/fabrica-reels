@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "clave": "132-inflacion-del-ano-en-enero",
+  "titulo": "La inflación del año se conoce en enero",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "La inflación del año no sale en diciembre",
+    "¿Cuándo se sabe la inflación del año?",
+    "El dato del año llega en enero"
+  ],
+  "voz": "La inflación del año que terminó no se sabe el 31 de diciembre. Se conoce a mediados de enero. El INDEC, el instituto de estadística, suele publicar el índice de precios de cada mes entre el 10 y el 15 del mes siguiente. Con diciembre, se completa el año.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no se sabe el 31",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "31 de diciembre: todavía no"
+        }
+      },
+      {
+        "frase": "a mediados de enero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mediados de enero"
+        }
+      },
+      {
+        "frase": "entre el 10 y el 15",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Publica el INDEC",
+              "valor": "Días 10 a 15"
+            },
+            {
+              "concepto": "Qué mes publica",
+              "valor": "El anterior"
+            }
+          ],
+          "total": {
+            "concepto": "Diciembre se conoce en",
+            "valor": "Enero"
+          }
+        }
+      },
+      {
+        "frase": "se completa el año",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Doce meses, recién en enero"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El INDEC publica el índice de precios al consumidor de cada mes, en general entre el 10 y el 15 del mes siguiente. El de diciembre cierra el año.",
+    "Si tu alquiler o tu sueldo se ajusta por la inflación del año, el número completo recién está a mediados de enero.",
+    "La inflación acumulada del año se arma con los doce meses: hasta que no sale diciembre, falta un pedazo.",
+    "Guardalo para enero, cuando todos pregunten cuánto dio el año."
+  ],
+  "hashtags": [
+    "inflacion",
+    "indec",
+    "ipc",
+    "precios",
+    "alquileres",
+    "sueldo",
+    "economia",
+    "finanzaspersonales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "INDEC: Índice de precios al consumidor (informes técnicos mensuales)",
+      "url": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "inflacion-del-ano-sale-en-enero",
+  "ventana": {
+    "desde": "01-08",
+    "hasta": "01-16"
+  },
+  "tema": "inflacion",
+  "hechos": [
+    "inflacion-del-ano-sale-en-enero"
+  ]
+}

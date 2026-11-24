@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "id": "apex-stack",
+  "usuario": "apex.stack",
+  "idioma": "es-AR",
+  "activa": true,
+  "modo": "sombra",
+  "creativos_por_dia": 1,
+  "variantes_por_creativo": 2,
+  "destinos": {
+    "prueba": {
+      "activo": true,
+      "trial": "MANUAL"
+    },
+    "normal": {
+      "activo": true,
+      "share_to_feed": false,
+      "espera_min": 60
+    },
+    "historia": {
+      "activo": true,
+      "espera_min": 30,
+      "cierre": "reel"
+    }
+  },
+  "franjas": [
+    {
+      "desde": "11:30",
+      "hasta": "14:30"
+    },
+    {
+      "desde": "18:00",
+      "hasta": "23:30"
+    }
+  ],
+  "antispam": {
+    "max_dia": 10,
+    "max_dia_propias": 6,
+    "gap_min": 50,
+    "max_por_corrida": 1,
+    "reserva_cupo": 15
+  },
+  "rampa": null,
+  "voz": {
+    "proveedor": "elevenlabs",
+    "modelo": "eleven_multilingual_v2",
+    "voice_id": "p7AwDmKvTdoHTBuueGvP",
+    "ajustes": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.3
+    },
+    "pausas": {
+      "tras_hook": 0.85,
+      "entre": 0.8,
+      "antes_cta": 0.9,
+      "coma": 0.25
+    },
+    "respaldo": {
+      "proveedor": "gemini",
+      "voz": "Kore",
+      "estilo": "rioplatense cálido"
+    },
+    "presupuesto_mes": 7000
+  },
+  "marca": {
+    "paletas": "marca/paletas.json",
+    "fuentes": {
+      "titulo": "marca/fuentes/bricolage-grotesque-latin-800-normal.woff2",
+      "cuerpo": "marca/fuentes/geist-sans-latin-400-normal.woff2",
+      "mono": "marca/fuentes/geist-mono-latin-500-normal.woff2"
+    },
+    "tracking_titulo": -0.03,
+    "motivos": [
+      "grilla",
+      "luz"
+    ],
+    "logo": "marca/logo.png",
+    "radio": 28,
+    "formatos": [
+      "chat",
+      "mito",
+      "explicador",
+      "antes-despues"
+    ]
+  },
+  "cierre": {
+    "texto_voz": "Comentá WEB y te hacemos tu demo gratis, a medida para tu empresa.",
+    "texto_historia": "Respondé WEB a esta historia",
+    "caption": "Comentá WEB y te armamos gratis la página web de tu empresa. Recién cuando la ves y te gusta, pagás la primera cuota para avanzar.",
+    "clips": "cta/clips.json",
+    "palabra_clave": "WEB"
+  },
+  "captions": {
+    "hashtags_por_post": [
+      5,
+      7
+    ],
+    "hashtags_fijos": [
+      "apexstack"
+    ]
+  },
+  "secretos": {
+    "ig_user": "IG_APEX_STACK_USER_ID",
+    "ig_token": "IG_APEX_STACK_TOKEN",
+    "ig_insights": "IG_APEX_STACK_INSIGHTS_TOKEN"
+  },
+  "reglas_texto": {
+    "prohibidas": [],
+    "max_palabras_voz": [
+      25,
+      55
+    ],
+    "sin_montos": true,
+    "fuentes_dominios": null
+  },
+  "banco": {
+    "guiones": "guiones",
+    "ideas": "ideas.json",
+    "hechos": "hechos.json",
+    "tono": "TONO.md"
+  },
+  "kairo": {
+    "seccion": "reels-apex-stack"
+  }
+}

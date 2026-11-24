@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "124-vacaciones-con-descuentos",
+  "idea": "vacaciones-llevan-aportes",
+  "titulo": "Las vacaciones llevan descuentos",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Tus vacaciones también tienen descuentos",
+    "Por qué el plus vacacional no llega entero",
+    "Vacaciones: lo que te descuentan"
+  ],
+  "voz": "Las vacaciones se pagan distinto: cada día vale tu sueldo dividido 25, no dividido 30. Esa diferencia es el plus vacacional. Pero el pago es remunerativo, así que lleva los descuentos de ley. 11 por ciento de jubilación, 3 de PAMI y 3 de obra social, plus incluido.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tu sueldo dividido 25",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Cada día de vacaciones: sueldo ÷ 25"
+        }
+      },
+      {
+        "frase": "el pago es remunerativo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Es remunerativo: lleva aportes"
+        }
+      },
+      {
+        "frase": "11 por ciento de jubilación",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Jubilación",
+              "valor": "11 %"
+            },
+            {
+              "concepto": "PAMI",
+              "valor": "3 %"
+            },
+            {
+              "concepto": "Obra social",
+              "valor": "3 %"
+            }
+          ],
+          "total": {
+            "concepto": "Sobre todo el pago",
+            "valor": "17 %"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El pago de vacaciones es remunerativo: lleva 11 % de jubilación, 3 % de PAMI y 3 % de obra social, igual que el sueldo.",
+    "El plus vacacional es la diferencia entre pagar cada día como sueldo ÷ 25 y como sueldo ÷ 30. Ya está dentro del pago de vacaciones.",
+    "Si comparás tu recibo con el bruto de una tabla, acordate de restar los aportes.",
+    "Guardalo para cuando te liquiden las vacaciones de este verano."
+  ],
+  "hashtags": [
+    "vacaciones",
+    "plusvacacional",
+    "recibodesueldo",
+    "aportes",
+    "sueldo",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.241, art. 11: aporte jubilatorio (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/639/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/app/(ar)/sueldo-neto/page.tsx:52"
+  ],
+  "tema": "vacaciones",
+  "hechos": [
+    "vacaciones-llevan-aportes"
+  ]
+}

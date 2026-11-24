@@ -1,0 +1,37 @@
+{
+  "noche": {
+    "fondo": "#0A0E18",
+    "superficie": "#131B2C",
+    "tinta": "#F2F5FA",
+    "tenue": "#9AA6BC",
+    "acento": "#2F80ED"
+  },
+  "papel": {
+    "fondo": "#F7F9FC",
+    "superficie": "#FFFFFF",
+    "tinta": "#0B1220",
+    "tenue": "#5B6478",
+    "acento": "#1257AA"
+  },
+  "cielo": {
+    "fondo": "#E8F1FC",
+    "superficie": "#FFFFFF",
+    "tinta": "#0A1E3D",
+    "tenue": "#4A5D7A",
+    "acento": "#1257AA"
+  },
+  "indigo": {
+    "fondo": "#161C52",
+    "superficie": "#212968",
+    "tinta": "#F3F4FF",
+    "tenue": "#AEB4E0",
+    "acento": "#8C9EFF"
+  },
+  "teal": {
+    "fondo": "#002B26",
+    "superficie": "#003D36",
+    "tinta": "#E8FBF7",
+    "tenue": "#8FC7BC",
+    "acento": "#4DD0BE"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "028-dominio-propio",
+  "titulo": "Your own domain vs a borrowed link",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "tinta",
+  "hooks": [
+    "Is your website just a Linktree link?",
+    "Is your web address actually yours?",
+    "What your link says about you"
+  ],
+  "voz": "When you share a Linktree or Instagram link, your business lives in someone else's house. With your own domain, the address carries your name and it's yours: it goes on your business card, your truck and your email. If a social network changes tomorrow, your address stays the same.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "a Linktree or Instagram",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Borrowed link",
+            "items": [
+              "linktr.ee/yourbiz_ok",
+              "Depends on another company"
+            ]
+          },
+          "der": {
+            "titulo": "Your own domain",
+            "items": [
+              "yourbusiness.com",
+              "You're in control"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "in someone else's house",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Your business, in someone else's house"
+        }
+      },
+      {
+        "frase": "the address carries your name",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourbusiness.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "and your email",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "hello@yourbusiness.com"
+        }
+      },
+      {
+        "frase": "your address stays the same",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "The address is still yours"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "A Linktree or Instagram link depends on another company's rules. Your own domain, like yourbusiness.com, is yours to control and sticks with you even when social media changes.",
+    "Your domain goes on your business card, your storefront, your truck and your email. It's your business's address on the internet, and it should belong to you.",
+    "What's easier to remember and spell out over the phone: yourbusiness.com or a link full of underscores and numbers?"
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "domainname",
+    "customdomain",
+    "onlinepresence",
+    "branding",
+    "webdevelopment"
+  ],
+  "tema": "dominio-propio",
+  "hechos": [
+    "hosting-incluido-dominio-propio"
+  ]
+}

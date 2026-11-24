@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "017-pensada-para-celular",
+  "titulo": "Why your website gets designed for phones first",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "crema",
+  "hooks": [
+    "Can people read your site without zooming?",
+    "How does your website look on the bus?",
+    "If they have to zoom, you lost"
+  ],
+  "voz": "Your customers look at you on their phone, one-handed and in a hurry. If the text is small and the button is hard to tap, they leave. That's why we design for the phone first: text you can read without zooming, big buttons and the important stuff up top. Then we adapt it for desktop.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "on their phone",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Tiny text and tiny buttons",
+          "compu": "Everything neat and tidy"
+        }
+      },
+      {
+        "frase": "design for the phone first",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Phone first"
+        }
+      },
+      {
+        "frase": "big buttons",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Built for desktop",
+            "items": [
+              "You have to zoom in",
+              "Tiny buttons",
+              "Hidden menu"
+            ]
+          },
+          "der": {
+            "titulo": "Built for phones",
+            "items": [
+              "Reads at a glance",
+              "Button within thumb's reach",
+              "Important stuff up top"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "for desktop",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Reads at a glance, button in reach",
+          "compu": "Same website, more room"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Your customer opens your website on the bus, in the checkout line or sprawled on the couch, on their phone. If it doesn't read well there, as far as they're concerned your business has no website.",
+    "Designing for phones first means text you can read without zooming, buttons you can hit with your thumb and the important stuff on the first screen.",
+    "Try it now: open your website on your phone and try to call yourself one-handed. If it was a struggle, it is for your customers too."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "responsivedesign",
+    "mobilefirst",
+    "uxdesign",
+    "webdevelopment",
+    "mobile"
+  ],
+  "tema": "celular",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

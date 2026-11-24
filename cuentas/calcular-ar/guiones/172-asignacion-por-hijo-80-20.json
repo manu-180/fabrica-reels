@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "clave": "172-asignacion-por-hijo-80-20",
+  "idea": "asignaciones-familiares-auh-80-20",
+  "titulo": "Asignación Universal por Hijo: el 80 y el 20",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Por qué la asignación no llega entera",
+    "El 20 por ciento que te guarda ANSES",
+    "Asignación Universal: la parte que se junta"
+  ],
+  "voz": "De la Asignación Universal por Hijo, ANSES te deposita el 80 por ciento todos los meses. El 20 por ciento restante se acumula. Lo cobrás una vez al año, cuando presentás la Libreta. Con la asignación por embarazo pasa lo mismo, con su formulario y la constancia del plan Sumar.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "el 80 por ciento todos",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Todos los meses",
+              "valor": "80 %"
+            },
+            {
+              "concepto": "Se acumula",
+              "valor": "20 %"
+            }
+          ],
+          "total": {
+            "concepto": "Asignación completa",
+            "valor": "La completa"
+          }
+        }
+      },
+      {
+        "frase": "Lo cobrás una vez",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Una vez al año, con la Libreta"
+        }
+      },
+      {
+        "frase": "la asignación por embarazo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Embarazo: igual, con su formulario"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "ANSES deposita el 80 % de la Asignación Universal por Hijo todos los meses y acumula el 20 % restante, que se cobra una vez al año contra la presentación de la Libreta.",
+    "En la Asignación por Embarazo el 20 % se cobra con el formulario y la constancia del plan Nacer o Sumar.",
+    "El 20 % acumulado se cobra contra la presentación de la Libreta: anotate cuándo te toca.",
+    "Pasáselo a quien cobra la asignación y no sabía de la parte que se junta."
+  ],
+  "hashtags": [
+    "auh",
+    "asignacionuniversal",
+    "anses",
+    "libretaauh",
+    "hijos",
+    "familia",
+    "argentina",
+    "derechos",
+    "embarazo",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ANSES: Montos de asignaciones familiares, AUH y embarazo",
+      "url": "https://www.anses.gob.ar/sites/default/files/cartilla/2026-09/Montos-AAFF-09-2026.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/data/asignaciones.ts:193"
+  ],
+  "tema": "asignaciones-familiares",
+  "hechos": [
+    "asignaciones-familiares-auh-80-20"
+  ]
+}

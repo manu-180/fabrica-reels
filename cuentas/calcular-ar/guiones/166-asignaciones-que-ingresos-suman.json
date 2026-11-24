@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "clave": "166-asignaciones-que-ingresos-suman",
+  "idea": "asignaciones-familiares-igf-sin-extras",
+  "titulo": "Qué ingresos cuentan para las asignaciones",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Tus horas extra no cuentan para las asignaciones",
+    "El tope de asignaciones no mira todo",
+    "Asignaciones: qué ingresos se suman"
+  ],
+  "voz": "Para saber si cobrás asignaciones familiares, ANSES suma los ingresos brutos de todo el grupo familiar. Pero deja afuera las horas extra, el plus por zona desfavorable y el aguinaldo. Ojo con otra regla: si uno solo supera el tope individual, queda afuera todo el grupo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "suma los ingresos brutos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ingresos brutos de todo el grupo"
+        }
+      },
+      {
+        "frase": "deja afuera las horas",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Se suman",
+            "items": [
+              "Sueldos brutos",
+              "De cada integrante"
+            ]
+          },
+          "der": {
+            "titulo": "Quedan afuera",
+            "items": [
+              "Horas extra",
+              "Plus zona desfavorable",
+              "Aguinaldo"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "si uno solo supera",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Uno pasa el tope: nadie cobra"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "El ingreso del grupo familiar suma los ingresos brutos de todos los integrantes, sin horas extra, plus por zona desfavorable ni aguinaldo.",
+    "Hay un tope grupal y uno individual: si un solo integrante supera el individual, se excluye a todo el grupo, aunque la suma esté por debajo del tope grupal.",
+    "Los topes cambian: revisalos siempre con los valores vigentes de ANSES.",
+    "Guardalo antes de aceptar un aumento que te acerque al tope."
+  ],
+  "hashtags": [
+    "asignacionesfamiliares",
+    "anses",
+    "salariofamiliar",
+    "hijos",
+    "familia",
+    "trabajo",
+    "argentina",
+    "derechos",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ANSES: Montos de asignaciones familiares, AUH y embarazo",
+      "url": "https://www.anses.gob.ar/sites/default/files/cartilla/2026-09/Montos-AAFF-09-2026.pdf",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.714 de Asignaciones Familiares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39880/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "asignaciones-familiares",
+  "hechos": [
+    "asignaciones-familiares-igf-sin-extras"
+  ]
+}

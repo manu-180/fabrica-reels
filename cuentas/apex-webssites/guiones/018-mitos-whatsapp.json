@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "clave": "018-mitos-whatsapp",
+  "titulo": "Myths about handling everything over text",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "tinta",
+  "hooks": [
+    "Is texting customers enough to sell?",
+    "Handling everything by text has a limit",
+    "Answering the same questions all day long"
+  ],
+  "voz": "If they can text me, I don't need a website. On your website they already see hours, prices and location, and they reach out ready to buy. I reply fast, that's enough. At night you sleep, and your website keeps showing everything. A contact form will do. On a phone, a tap-to-text button is faster.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "If they can text me, I don't need a website",
+        "realidad": "On your site they see hours, prices and location, and reach out ready to buy"
+      },
+      {
+        "mito": "I reply fast, that's enough",
+        "realidad": "At night you sleep, and your website keeps showing everything"
+      },
+      {
+        "mito": "A contact form will do",
+        "realidad": "On a phone, tapping a text button beats filling out a form"
+      }
+    ]
+  },
+  "captions": [
+    "Texting is great for closing a sale. But for someone to text you in the first place, they have to find you and trust you, and that happens on your website.",
+    "If you answer the same questions every day, put them on your website: hours, delivery area, payment options. Whoever reaches out after that is ready to buy.",
+    "When you're with a customer, asleep or on vacation, people can still see everything you offer on your website."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "texting",
+    "myths",
+    "customerservice",
+    "sales",
+    "smallbiz"
+  ],
+  "tema": "whatsapp",
+  "hechos": []
+}

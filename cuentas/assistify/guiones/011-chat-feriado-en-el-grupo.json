@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "clave": "011-chat-feriado-en-el-grupo",
+  "titulo": "El grupo del taller antes de un feriado",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "teal",
+  "tema": "horarios",
+  "hooks": [
+    "El grupo del taller antes del feriado",
+    "¿Hay clase el feriado? Nadie sabe",
+    "Un feriado y el grupo explota"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Danza martes",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, el lunes es feriado, ¿hay clase?"
+      },
+      {
+        "de": "yo",
+        "texto": "No, no hay"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y la recuperamos?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Yo no vi nada, ¿hay o no hay?"
+      },
+      {
+        "de": "yo",
+        "texto": "No hay, lo dije arriba"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Arriba dónde? Hay un montón de mensajes"
+      }
+    ],
+    "remate": "Marcás el feriado y la clase se bloquea sola"
+  },
+  "captions": [
+    "Con Assistify marcás el feriado una vez y ese día queda bloqueado para nuevas reservas. Nadie se anota donde no hay clase.",
+    "El grupo de WhatsApp sigue para charlar. Los horarios, en la app.",
+    "Etiquetá al grupo de tu taller que pregunta lo mismo una y otra vez."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "danza",
+    "humor",
+    "feriados",
+    "whatsapp",
+    "grupos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "feriados"
+  ],
+  "idea": "feriado-en-el-grupo"
+}

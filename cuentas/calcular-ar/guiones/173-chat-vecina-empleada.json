@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "173-chat-vecina-empleada",
+  "idea": "empleada-domestica-varias-casas",
+  "titulo": "La empleada que trabaja en dos casas",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "La misma empleada en dos casas",
+    "Mi vecina y el aguinaldo compartido",
+    "El aguinaldo de la empleada, ¿a medias?"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Vecina del 4° B",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Le pagamos el aguinaldo a medias a Marta, ¿no?"
+      },
+      {
+        "de": "yo",
+        "texto": "No va a medias"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y cómo es?"
+      },
+      {
+        "de": "yo",
+        "texto": "Cada casa es una relación aparte"
+      },
+      {
+        "de": "yo",
+        "texto": "Cada una paga su sueldo, su aguinaldo y sus aportes"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Por las horas que trabaja en cada casa?"
+      },
+      {
+        "de": "yo",
+        "texto": "Exacto, casa por casa"
+      }
+    ],
+    "remate": "Cada casa paga lo suyo, por sus horas"
+  },
+  "captions": [
+    "Si una trabajadora de casas particulares trabaja en varias casas, cada empleo es una relación aparte.",
+    "Cada empleador paga el sueldo por las horas que le trabaja, su aguinaldo, sus vacaciones y sus aportes.",
+    "La jornada máxima y los mínimos también se miran casa por casa, sin sumar todo.",
+    "Mandáselo a quien comparte empleada con otra familia."
+  ],
+  "hashtags": [
+    "empleadadomestica",
+    "casasparticulares",
+    "aguinaldo",
+    "aportes",
+    "humor",
+    "empleadores",
+    "trabajo",
+    "argentina",
+    "hogar",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.844 de Casas Particulares, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "empleada-domestica",
+  "hechos": [
+    "empleada-domestica-varias-casas"
+  ]
+}

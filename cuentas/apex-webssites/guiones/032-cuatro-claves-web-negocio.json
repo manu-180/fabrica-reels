@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "032-cuatro-claves-web-negocio",
+  "titulo": "The four things your website needs to sell",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Four things that make your website work",
+    "All your website needs to sell",
+    "The four keys to a good website"
+  ],
+  "voz": "A website that works gets four things right. First, it opens instantly on a phone. Second, it says straight up what you do and where you are. Third, it shows your work with real photos. And the big one: a visible button so people can text you directly, no runaround.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "opens instantly on a phone",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourshop.com",
+          "estado": "rapido"
+        }
+      },
+      {
+        "frase": "says straight up what you do",
+        "visual": {
+          "tipo": "busqueda",
+          "consulta": "custom carpentry denver",
+          "resultados": [
+            "South Side Furniture",
+            "Your Carpentry - Custom Furniture",
+            "Downtown Lumber Co."
+          ],
+          "destacado": 1
+        }
+      },
+      {
+        "frase": "shows your work with real photos",
+        "visual": {
+          "tipo": "celular-vs-compu",
+          "celular": "Clean, quick gallery",
+          "compu": "Sharp, organized photos"
+        }
+      },
+      {
+        "frase": "a visible button so people",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Complicated website",
+            "items": [
+              "Super long text",
+              "Never-ending form"
+            ]
+          },
+          "der": {
+            "titulo": "Straightforward website",
+            "items": [
+              "Photos of your work",
+              "Button straight to your chat"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "You don't need anything fancy: a website works when it makes life easy for the customer looking for you.",
+    "Customers come in from their phone, want to see what you do and where you are, and talk to you right away.",
+    "Having a website isn't about adding more to your plate: it's about making your work clear so people reach out directly.",
+    "Clear info, real photos of your work and a button straight to your messages. That's how you stand out."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "localbusiness",
+    "entrepreneur",
+    "onlinesales",
+    "webdevelopment",
+    "shoplocal",
+    "onlinepresence"
+  ],
+  "tema": "claves-de-una-web",
+  "hechos": [
+    "se-adapta-al-celular"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "clave": "020-las-mismas-preguntas",
+  "titulo": "The same questions, all day long",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "bosque",
+  "hooks": [
+    "Answering the same thing all day?",
+    "Hours, address and do you deliver",
+    "The customer who asks everything twice"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "New customer",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hi, what are your hours?"
+      },
+      {
+        "de": "yo",
+        "texto": "Hi! Monday to Saturday, 9 to 6"
+      },
+      {
+        "de": "ellos",
+        "texto": "And where are you?"
+      },
+      {
+        "de": "yo",
+        "texto": "1450 Maple Ave, across from the park"
+      },
+      {
+        "de": "ellos",
+        "texto": "Do you deliver?"
+      },
+      {
+        "de": "yo",
+        "texto": "Yes, anywhere in the neighborhood"
+      },
+      {
+        "de": "ellos",
+        "texto": "Do you take cards?"
+      },
+      {
+        "de": "yo",
+        "texto": "Yep, all of them. Anything else?"
+      },
+      {
+        "de": "ellos",
+        "texto": "No, thanks. What time do you open?"
+      }
+    ],
+    "remate": "And it's not even noon yet"
+  },
+  "captions": [
+    "If you answer the same questions all day, your website can answer them for you, at night and on Sundays too.",
+    "Hours, address, delivery and payment options: whatever people ask you every day belongs on your website, front and center.",
+    "Every repeat question is time you're not spending on selling. A clear website, with what people always ask right there, gives you that time back."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "entrepreneurhumor",
+    "customerservice",
+    "texting",
+    "shoplocal",
+    "humor"
+  ],
+  "tema": "consultas-repetidas",
+  "hechos": []
+}

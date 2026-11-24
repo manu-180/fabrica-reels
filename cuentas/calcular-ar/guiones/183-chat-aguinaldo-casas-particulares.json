@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "clave": "183-chat-aguinaldo-casas-particulares",
+  "titulo": "Aguinaldo en casas particulares: el último día de junio",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "menta",
+  "hooks": [
+    "Le iba a pagar el aguinaldo en julio",
+    "¿Cuándo se paga el aguinaldo en casas particulares?",
+    "Casas particulares: el aguinaldo no espera"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mi hermana",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "El aguinaldo de la señora que me ayuda se lo pago en julio"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿En julio? Vence antes"
+      },
+      {
+        "de": "yo",
+        "texto": "¿No es el 30 de junio más cuatro días?"
+      },
+      {
+        "de": "ellos",
+        "texto": "En casas particulares es distinto"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y cuándo es?"
+      },
+      {
+        "de": "ellos",
+        "texto": "El último día que trabaja en junio"
+      },
+      {
+        "de": "yo",
+        "texto": "Viene los martes nada más"
+      },
+      {
+        "de": "ellos",
+        "texto": "Entonces el último martes de junio"
+      }
+    ],
+    "remate": "Casas particulares: el último día de trabajo de junio"
+  },
+  "captions": [
+    "En casas particulares el aguinaldo se paga en dos cuotas: el último día de trabajo de junio y el último día de trabajo de diciembre (Ley 26.844, art. 26).",
+    "Cada cuota es el 50 % de la mayor remuneración mensual del semestre, por todo concepto. Un mes con horas extras sube todo el aguinaldo.",
+    "Si viene sólo algunos días por semana, la fecha es el último de esos días en junio.",
+    "Etiquetá a quien pensaba pagarlo en julio."
+  ],
+  "hashtags": [
+    "casasparticulares",
+    "empleadadomestica",
+    "aguinaldo",
+    "sac",
+    "junio",
+    "empleador",
+    "humor",
+    "trabajo",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.844, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "empleada-domestica-aguinaldo-junio",
+  "ventana": {
+    "desde": "06-15",
+    "hasta": "06-30"
+  },
+  "tema": "empleada-domestica",
+  "hechos": [
+    "empleada-domestica-aguinaldo-junio"
+  ]
+}

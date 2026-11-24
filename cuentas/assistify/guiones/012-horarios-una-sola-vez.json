@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "clave": "012-horarios-una-sola-vez",
+  "titulo": "Cargar los horarios una sola vez",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "tema": "horarios",
+  "hooks": [
+    "Cargá tus horarios una sola vez",
+    "El mes armado sin hacer nada",
+    "¿Todavía armás las clases a mano?"
+  ],
+  "voz": "Cargás tus horarios fijos una sola vez. Agrupás los días que comparten horario, con atajos como lunes a viernes o fin de semana. Ponés cuántos lugares tiene cada clase. Y Assistify arma todas las clases del mes por vos.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Cargás tus horarios fijos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Los horarios, una sola vez"
+        }
+      },
+      {
+        "frase": "Agrupás los días que comparten",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Lunes a viernes, de una"
+        }
+      },
+      {
+        "frase": "cuántos lugares tiene cada",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Los lugares de cada clase"
+        }
+      },
+      {
+        "frase": "todas las clases del mes",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El mes entero, armado"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify cargás tus horarios fijos una sola vez y la app crea todas las clases del mes.",
+    "Agrupás los días que comparten horario con atajos: lunes a viernes, fin de semana o todos los días.",
+    "Definís cuántos lugares tiene cada clase y lo ajustás por horario cuando haga falta."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "horarios",
+    "agenda",
+    "clases",
+    "organizacion",
+    "academia"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "horarios-una-vez",
+    "grupos-de-dias",
+    "atajos-dias",
+    "capacidad-por-clase"
+  ],
+  "idea": "horarios-una-sola-vez"
+}

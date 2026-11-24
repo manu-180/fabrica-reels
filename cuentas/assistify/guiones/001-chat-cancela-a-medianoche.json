@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "clave": "001-chat-cancela-a-medianoche",
+  "titulo": "La alumna que cancela a medianoche",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "tema": "caos-whatsapp",
+  "hooks": [
+    "Medianoche y te escribe una alumna",
+    "Cuando cancelar es un mensaje a medianoche",
+    "Tu WhatsApp a la medianoche"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Sofi, yoga",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Profe, mañana no llego, ¿me guardás la clase para otro día?"
+      },
+      {
+        "de": "yo",
+        "texto": "Dale, ¿qué día podés?"
+      },
+      {
+        "de": "ellos",
+        "texto": "El jueves no, el viernes capaz, ¿el sábado hay lugar?"
+      },
+      {
+        "de": "yo",
+        "texto": "Dejame que me fijo en el cuaderno"
+      },
+      {
+        "de": "ellos",
+        "texto": "Ah, y mi hermana también falta"
+      },
+      {
+        "de": "yo",
+        "texto": "Sofi, es medianoche"
+      }
+    ],
+    "remate": "Con Assistify cancela y recupera sola"
+  },
+  "captions": [
+    "Cancelar y reprogramar por WhatsApp es un lío para cualquier profe. Con Assistify tu alumna cancela desde el celular y, si fue a tiempo, el crédito vuelve solo.",
+    "Si tu cuaderno de recuperos vive en el chat, este reel es para vos.",
+    "Mandáselo a esa profe que contesta mensajes a cualquier hora."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "yoga",
+    "humor",
+    "whatsapp",
+    "cancelaciones",
+    "recuperos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "tres-dolores",
+    "cancelacion-tardia",
+    "plazo-lo-define-el-taller"
+  ],
+  "idea": "cancelacion-a-medianoche"
+}

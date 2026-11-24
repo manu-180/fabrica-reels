@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "145-inflacion-acumulada-interanual",
+  "idea": "inflacion-acumulada-vs-interanual",
+  "titulo": "Inflación mensual, acumulada e interanual",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Acumulada e interanual no son lo mismo",
+    "Tres inflaciones distintas en el mismo mes",
+    "Qué inflación tenés que mirar"
+  ],
+  "voz": "El INDEC publica tres números de inflación cada mes. La mensual compara contra el mes anterior. La acumulada mide desde diciembre del año pasado. La interanual compara contra el mismo mes del año anterior. Por eso en enero la acumulada y la mensual son iguales, y la interanual es otra.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "La mensual compara contra",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Mensual: contra el mes anterior"
+        }
+      },
+      {
+        "frase": "La acumulada mide desde",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Acumulada: desde diciembre"
+        }
+      },
+      {
+        "frase": "La interanual compara contra",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Interanual: contra hace un año"
+        }
+      },
+      {
+        "frase": "en enero la acumulada",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Interanual",
+            "items": [
+              "Contra enero del año pasado",
+              "Otro número"
+            ]
+          },
+          "der": {
+            "titulo": "Acumulada de enero",
+            "items": [
+              "Igual a la mensual",
+              "Arranca en diciembre"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La inflación acumulada mide desde diciembre del año anterior. La interanual compara contra el mismo mes del año anterior. Son preguntas distintas.",
+    "Para saber cuánto subieron los precios en los últimos doce meses, la que sirve es la interanual.",
+    "Todos estos números salen del IPC nivel general que publica el INDEC, la referencia oficial.",
+    "Guardalo para la próxima vez que dos noticias den dos inflaciones distintas del mismo mes."
+  ],
+  "hashtags": [
+    "inflacion",
+    "ipc",
+    "indec",
+    "inflacionacumulada",
+    "inflacioninteranual",
+    "economia",
+    "precios",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "INDEC: Índice de precios al consumidor (informes técnicos mensuales)",
+      "url": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "INDEC: IPC Nacional, nivel general (API oficial de series de tiempo)",
+      "url": "https://datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&format=json",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "inflacion",
+  "hechos": [
+    "inflacion-acumulada-vs-interanual"
+  ]
+}

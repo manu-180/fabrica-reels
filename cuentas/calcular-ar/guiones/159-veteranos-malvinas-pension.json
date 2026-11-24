@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "159-veteranos-malvinas-pension",
+  "titulo": "Pensión honorífica de veteranos de Malvinas",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "Veteranos de Malvinas: lo que les corresponde",
+    "La pensión de Malvinas, explicada",
+    "Estuviste en Malvinas: esto es tuyo"
+  ],
+  "voz": "Si fuiste conscripto en Malvinas o entraste en combate en el Atlántico Sur, te corresponde la pensión honorífica. También a los civiles de apoyo entre el 2 de abril y el 14 de junio de 1982. Es tres veces el haber mínimo jubilatorio. Y se cobra junto con otra jubilación, un retiro o un sueldo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "te corresponde la pensión honorífica",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Pensión honorífica de veteranos"
+        }
+      },
+      {
+        "frase": "los civiles de apoyo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "2 de abril al 14 de junio de 1982"
+        }
+      },
+      {
+        "frase": "tres veces el haber mínimo",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Haber mínimo jubilatorio",
+              "valor": "1"
+            },
+            {
+              "concepto": "Por",
+              "valor": "× 3"
+            }
+          ],
+          "total": {
+            "concepto": "Pensión del titular",
+            "valor": "3 mínimos"
+          }
+        }
+      },
+      {
+        "frase": "junto con otra jubilación",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Compatible con jubilación y sueldo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La Ley 23.848 da la pensión honorífica a ex conscriptos destinados en el Teatro de Operaciones Malvinas o que combatieron en el Atlántico Sur, y a civiles de servicio o apoyo entre el 2 de abril y el 14 de junio de 1982.",
+    "El monto es tres veces el haber mínimo jubilatorio (Decreto 1357/2004, art. 2), así que se mueve cada vez que se mueve la mínima.",
+    "Es compatible con cualquier otro beneficio previsional permanente o de retiro, nacional, provincial o municipal, y con otro ingreso.",
+    "Si conocés a un veterano que no la tramitó, compartile este dato."
+  ],
+  "hashtags": [
+    "malvinas",
+    "veteranosdemalvinas",
+    "2deabril",
+    "pension",
+    "jubilacion",
+    "anses",
+    "derechos",
+    "argentina",
+    "memoria",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.848, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/248/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Decreto 886/2005 (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/105000-109999/108081/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "veteranos-malvinas-2-de-abril",
+  "ventana": {
+    "desde": "03-27",
+    "hasta": "04-02"
+  },
+  "tema": "veteranos-malvinas",
+  "hechos": [
+    "veteranos-malvinas-2-de-abril"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "clave": "010-mitos-de-google",
+  "titulo": "Mitos de Google que te dejan sin visitas",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "bosque",
+  "hooks": [
+    "¿Tener página te pone primero en Google?",
+    "Google no te encuentra por arte de magia",
+    "Por qué tu competencia aparece y vos no"
+  ],
+  "voz": "Si tengo página, aparezco primero. Ojalá. Aparecer lleva textos claros, una página rápida y tiempo. Google solo mira las palabras clave. También mira si carga rápido y cómo se ve en el celular. Para aparecer hay que pagar. Con una ficha en Google Maps y una buena página, te encuentran sin pagar cada clic.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si tengo página, aparezco primero",
+        "realidad": "Aparecer lleva textos claros, una página rápida y algo de tiempo"
+      },
+      {
+        "mito": "Google solo mira las palabras clave",
+        "realidad": "También mira si carga rápido y cómo se ve en el celular"
+      },
+      {
+        "mito": "Para aparecer hay que pagar",
+        "realidad": "Una ficha en Google Maps y una buena página te traen visitas sin pagar"
+      }
+    ]
+  },
+  "captions": [
+    "Tener página es el primer paso para aparecer en Google. Después vienen los textos que dicen qué hacés y dónde, una página que cargue rápido y un poco de paciencia.",
+    "Google mira mucho más que palabras clave: si tu página carga rápido, si se ve bien en el celular y si lo que dice responde lo que la gente busca.",
+    "La ficha de Google Maps es gratis y suele ser lo primero que ve alguien que busca tu rubro cerca. Si no la tenés, arrancá por ahí."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "seo",
+    "posicionamientoweb",
+    "google",
+    "googlemaps",
+    "seolocal",
+    "mitos"
+  ],
+  "fuente": "Google Search Central: indexación mobile-first y señales de experiencia en la página (Core Web Vitals); el Perfil de Empresa de Google es gratuito.",
+  "tema": "google",
+  "hechos": [
+    "seo-tecnico"
+  ]
+}

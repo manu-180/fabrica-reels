@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "clave": "128-vacaciones-feriados-mitos",
+  "idea": "vacaciones-corridos-feriados",
+  "titulo": "Vacaciones, feriados y fines de semana",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Un feriado en tus vacaciones",
+    "Te tomás vacaciones y cae un feriado",
+    "Tres mitos de los días de vacaciones"
+  ],
+  "voz": "Si cae un feriado, te devuelven el día. No: las vacaciones son días corridos y el feriado cuenta. Los fines de semana no cuentan. También cuentan, sábado y domingo incluidos. Cada día se paga como uno normal. Tampoco: se paga tu sueldo dividido veinticinco, que es más.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si cae un feriado, te devuelven el día",
+        "realidad": "Son días corridos: el feriado cuenta como vacaciones."
+      },
+      {
+        "mito": "Los fines de semana no cuentan",
+        "realidad": "Cuentan: sábados y domingos también son días corridos."
+      },
+      {
+        "mito": "Cada día se paga como uno normal",
+        "realidad": "Se paga tu sueldo dividido 25, más que un día común."
+      }
+    ]
+  },
+  "captions": [
+    "Las vacaciones se cuentan en días corridos: fines de semana y feriados incluidos. Con hasta 5 años de antigüedad son 14 días corridos.",
+    "Cada día de vacaciones vale tu sueldo dividido 25, no dividido 30. Esa diferencia es el plus vacacional.",
+    "Las vacaciones se pagan antes de empezar a tomarlas.",
+    "Pasáselo a quien está armando sus vacaciones de verano."
+  ],
+  "hashtags": [
+    "vacaciones",
+    "feriados",
+    "diascorridos",
+    "plusvacacional",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "licencia",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "vacaciones",
+  "hechos": [
+    "vacaciones-corridos-feriados"
+  ]
+}

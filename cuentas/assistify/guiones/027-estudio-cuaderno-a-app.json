@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "clave": "027-estudio-cuaderno-a-app",
+  "titulo": "Un estudio de funcional deja el cuaderno",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "paleta": "cielo",
+  "tema": "pagos",
+  "hooks": [
+    "El cuaderno de pagos del estudio",
+    "Mismo estudio, cuentas claras",
+    "¿Quién pagó el mes? Nadie sabe"
+  ],
+  "voz": "Cuaderno de pagos, recuperos a mano y avisos uno por uno. Es la rutina de muchos estudios de funcional. Ahora registrás cada pago en un toque, ves quién está al día y tus alumnos recuperan solos desde el celular.",
+  "contenido": {
+    "negocio": {
+      "rubro": "gimnasio",
+      "nombre": "Estudio Pulso",
+      "lema": "Funcional y pilates por turnos"
+    },
+    "antes": {
+      "defectos": [
+        "Cuaderno de pagos",
+        "Recuperos a mano",
+        "Avisos uno por uno"
+      ]
+    },
+    "despues": {
+      "titular": "Tu estudio, al día",
+      "boton": "Registrar pago",
+      "secciones": [
+        "Pagos",
+        "Alumnos",
+        "Calendario"
+      ]
+    }
+  },
+  "captions": [
+    "En Assistify cada pago se registra como cuota mensual, pack de clases u otro, y la ficha muestra quién está al día con el mes.",
+    "Tus alumnos ven los lugares libres y usan sus créditos cuando les conviene. Los recuperos dejan de ser tu problema.",
+    "Del cuaderno a la app, sin perder ningún dato de quién pagó."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "funcional",
+    "pilates",
+    "pagos",
+    "entrenamientofuncional",
+    "antesydespues"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "pagos-tipos",
+    "pagos-al-dia",
+    "recuperos-repartidos"
+  ],
+  "idea": "estudio-cuaderno-a-app"
+}

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "clave": "003-plazo-de-cancelacion",
+  "titulo": "Cómo funciona el plazo para cancelar",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "tema": "cancelaciones",
+  "hooks": [
+    "¿Cancela tarde? Esto pasa con el crédito",
+    "El plazo para cancelar, explicado",
+    "Cancelar a tiempo o cancelar tarde"
+  ],
+  "voz": "Vos definís un plazo para cancelar, por ejemplo veinticuatro horas. Si tu alumno cancela antes, el crédito vuelve solo y el lugar se libera. Si cancela tarde, el lugar se libera igual pero el crédito no vuelve. Y la app se lo avisa antes de confirmar.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "un plazo para cancelar",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Vos ponés el plazo"
+        }
+      },
+      {
+        "frase": "Si tu alumno cancela antes",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Clases disponibles",
+              "valor": "3"
+            },
+            {
+              "concepto": "Cancela a tiempo",
+              "valor": "+ 1"
+            }
+          ],
+          "total": {
+            "concepto": "Clases disponibles",
+            "valor": "4"
+          }
+        }
+      },
+      {
+        "frase": "Si cancela tarde",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Cancela tarde",
+            "items": [
+              "Lugar libre",
+              "Sin crédito"
+            ]
+          },
+          "der": {
+            "titulo": "Cancela a tiempo",
+            "items": [
+              "Lugar libre",
+              "Crédito de vuelta"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "la app se lo avisa",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Avisado antes de confirmar"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify el plazo para cancelar lo ponés vos, por ejemplo 24 horas. Si tu alumno cancela antes, el crédito vuelve solo.",
+    "Si cancela tarde, el lugar se libera igual para que otro lo tome, pero el crédito no vuelve. Y la app se lo avisa antes de confirmar, así no hay sorpresas.",
+    "Una regla clara para todos y cero conversaciones incómodas."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "cancelaciones",
+    "recuperos",
+    "clases",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "plazo-ejemplo-24",
+    "cancelacion-tardia"
+  ],
+  "idea": "plazo-de-cancelacion"
+}

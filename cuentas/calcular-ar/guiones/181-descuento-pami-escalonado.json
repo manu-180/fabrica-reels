@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clave": "181-descuento-pami-escalonado",
+  "idea": "descuento-pami-tramos",
+  "titulo": "El descuento de PAMI a jubilados es escalonado",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "El descuento de PAMI no es parejo",
+    "Jubilados: el 3 y el 6 por ciento",
+    "Cuánto te descuenta PAMI de verdad"
+  ],
+  "voz": "Si te jubilaste en relación de dependencia, PAMI no te descuenta un porcentaje fijo. Es 3 por ciento hasta el haber mínimo y 6 por ciento sólo sobre lo que lo pasa. Como el mínimo cambia todos los meses, el descuento también se mueve. Si venís de autónomo, es 6 parejo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Si te jubilaste en",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No es un porcentaje fijo"
+        }
+      },
+      {
+        "frase": "3 por ciento hasta el",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Hasta el haber mínimo",
+              "valor": "3 %"
+            },
+            {
+              "concepto": "Lo que pasa el mínimo",
+              "valor": "6 %"
+            }
+          ],
+          "total": {
+            "concepto": "Descuento de PAMI",
+            "valor": "Escalonado"
+          }
+        }
+      },
+      {
+        "frase": "el mínimo cambia todos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El escalón se mueve cada mes"
+        }
+      },
+      {
+        "frase": "Si venís de autónomo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ex autónomos: 6 % parejo"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Ley 19.032, art. 8 inc. a: a los jubilados que vienen de relación de dependencia se les descuenta 3 % hasta el haber mínimo y 6 % sobre lo que excede ese monto.",
+    "El punto de quiebre es el haber mínimo, que se redetermina cada mes por la movilidad. Por eso la alícuota efectiva cambia sin que cambie tu haber.",
+    "Si tu jubilación viene de la ex Caja de Autónomos, el descuento es 6 % sobre todo el haber.",
+    "Pasáselo a quien revisa el recibo de la jubilación de sus papás."
+  ],
+  "hashtags": [
+    "jubilacion",
+    "jubilados",
+    "pami",
+    "anses",
+    "haberminimo",
+    "descuentos",
+    "adultosmayores",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 19.032, art. 8, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16081/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "descuento-pami",
+  "hechos": [
+    "descuento-pami-tramos"
+  ]
+}

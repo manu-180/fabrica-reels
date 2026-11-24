@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "clave": "185-renuncia-o-mutuo-acuerdo",
+  "idea": "renuncia-vs-mutuo-acuerdo-desempleo",
+  "titulo": "Renuncia o mutuo acuerdo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "menta",
+  "hooks": [
+    "Renuncia o mutuo acuerdo: no es igual",
+    "La diferencia que te da el desempleo",
+    "Antes de renunciar, mirá esto"
+  ],
+  "voz": "Renunciar y irte por mutuo acuerdo parecen lo mismo, y no lo son. Ninguna de las dos paga indemnización. Pero desde marzo de dos mil veintiséis, el mutuo acuerdo te da derecho al seguro de desempleo. La renuncia lisa y llana, no. Y en las dos cobrás aguinaldo y vacaciones proporcionales.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Ninguna de las dos paga",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ninguna paga indemnización"
+        }
+      },
+      {
+        "frase": "te da derecho al seguro",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Renuncia",
+            "items": [
+              "Sin indemnización",
+              "Sin seguro de desempleo"
+            ]
+          },
+          "der": {
+            "titulo": "Mutuo acuerdo",
+            "items": [
+              "Sin indemnización",
+              "Con seguro de desempleo"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "en las dos cobrás",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Aguinaldo y vacaciones: en las dos"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Desde la Ley 27.802, la extinción por mutuo acuerdo es una situación legal de desempleo: te da acceso a la prestación por desempleo.",
+    "La renuncia lisa y llana no da indemnización ni seguro de desempleo.",
+    "Te vayas como te vayas, cobrás los días trabajados del mes, el aguinaldo proporcional y las vacaciones no gozadas.",
+    "Si estás por irte de tu trabajo, guardate esto antes de firmar."
+  ],
+  "hashtags": [
+    "renuncia",
+    "mutuoacuerdo",
+    "segurodedesempleo",
+    "reformalaboral",
+    "liquidacionfinal",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "empleados",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 27.802 de Modernización Laboral, texto oficial (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.013 de Empleo, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "renuncia",
+  "hechos": [
+    "renuncia-vs-mutuo-acuerdo-desempleo"
+  ]
+}

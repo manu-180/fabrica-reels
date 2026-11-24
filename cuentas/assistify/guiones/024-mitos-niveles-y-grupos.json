@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "clave": "024-mitos-niveles-y-grupos",
+  "titulo": "Separar alumnos por nivel y grupo",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "papel",
+  "tema": "categorias",
+  "hooks": [
+    "¿Principiantes y avanzados en la misma clase?",
+    "Tres mitos de separar por niveles",
+    "Cada nivel en su horario"
+  ],
+  "voz": "No puedo separar por niveles. Falso: creás categorías y elegís qué grupo reserva cada horario. Para hermanos necesito una cuenta por hijo. No: el titular agrega a cada hijo en una sola cuenta. Tengo que tener una app por sede. Tampoco: en Premium van todas juntas.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "No puedo separar por niveles",
+        "realidad": "Creás categorías y elegís qué grupo reserva cada horario."
+      },
+      {
+        "mito": "Para hermanos necesito una cuenta por hijo",
+        "realidad": "El titular agrega a cada hijo en una sola cuenta."
+      },
+      {
+        "mito": "Tengo que tener una app por sede",
+        "realidad": "En Premium manejás todos tus talleres o sedes en una sola app."
+      }
+    ]
+  },
+  "captions": [
+    "Con las categorías de Assistify separás a tus alumnos por nivel, edad o grupo y elegís quién puede reservar cada horario.",
+    "Para familias con hermanos, el titular agrega a cada hijo en una sola cuenta.",
+    "Si tenés más de una sede, en el plan Premium las manejás todas desde una sola app."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "niveles",
+    "categorias",
+    "mitos",
+    "danza",
+    "academia"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "categorias-horario",
+    "familia-una-cuenta",
+    "multitaller-premium"
+  ],
+  "idea": "mitos-niveles-y-grupos"
+}

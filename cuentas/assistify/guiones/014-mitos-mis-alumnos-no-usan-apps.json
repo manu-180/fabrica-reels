@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clave": "014-mitos-mis-alumnos-no-usan-apps",
+  "titulo": "Mis alumnos no van a usar una app",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "noche",
+  "tema": "invitacion",
+  "hooks": [
+    "Mis alumnos no van a usar una app",
+    "¿Sumar alumnos a la app cuesta?",
+    "Tres mitos de pasarte al celular"
+  ],
+  "voz": "Tengo que cargar uno por uno. Falso: compartís el link del taller y se suman todos a la vez. Hay que crear otra contraseña más. No: pueden entrar con Google. El que no tiene smartphone queda afuera. Tampoco: le creás la cuenta vos.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Tengo que cargar uno por uno",
+        "realidad": "Compartís el link del taller y se suman todos a la vez."
+      },
+      {
+        "mito": "Hay que crear otra contraseña más",
+        "realidad": "Tus alumnos pueden entrar con Google, sin contraseñas."
+      },
+      {
+        "mito": "El que no tiene smartphone queda afuera",
+        "realidad": "Le creás la cuenta vos, de forma asistida."
+      }
+    ]
+  },
+  "captions": [
+    "Sumar a tus alumnos a Assistify es compartir el link del taller. Se suman todos a la vez.",
+    "Tus alumnos pueden entrar con Google, sin acordarse de otra contraseña.",
+    "Y al que no tiene smartphone, le creás la cuenta vos. Nadie queda afuera."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "alumnos",
+    "mitos",
+    "invitacion",
+    "clases",
+    "academia"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "invitar-link",
+    "entrar-con-google",
+    "cuenta-sin-smartphone",
+    "codigo-invitacion"
+  ],
+  "idea": "mitos-mis-alumnos-no-usan-apps"
+}

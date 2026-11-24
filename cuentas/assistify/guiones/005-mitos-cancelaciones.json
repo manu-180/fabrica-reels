@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "clave": "005-mitos-cancelaciones",
+  "titulo": "Tres mitos de cancelar una clase",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "teal",
+  "tema": "cancelaciones",
+  "hooks": [
+    "Tres mitos de cancelar una clase",
+    "¿Cancelar tarde traba el lugar?",
+    "Lo que nadie entiende de las cancelaciones"
+  ],
+  "voz": "Si cancelo tarde, el lugar queda trabado. Falso: el lugar se libera igual, lo que no vuelve es el crédito. El profe decide cada caso a ojo. No: el plazo lo define el taller en la configuración. Si cambia el plazo, cambia lo de antes. Tampoco: aplica de ahí en adelante.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si cancelo tarde, el lugar queda trabado",
+        "realidad": "El lugar se libera igual. Lo que no vuelve es el crédito."
+      },
+      {
+        "mito": "El profe decide cada caso a ojo",
+        "realidad": "El plazo lo define el taller en la configuración."
+      },
+      {
+        "mito": "Si cambia el plazo, cambia lo de antes",
+        "realidad": "El cambio aplica de ahí en adelante, no hacia atrás."
+      }
+    ]
+  },
+  "captions": [
+    "Con Assistify, una cancelación tardía libera el lugar igual para que otro alumno lo tome. Lo que no vuelve es el crédito.",
+    "El plazo para cancelar lo define cada taller y vale igual para todos. Sin casos a ojo ni favores.",
+    "Si cambiás el plazo, aplica desde ese momento en adelante. Lo anterior queda como estaba."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "cancelaciones",
+    "mitos",
+    "yoga",
+    "pilates",
+    "organizacion"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "cancelacion-tardia",
+    "plazo-lo-define-el-taller",
+    "cambio-de-plazo-no-retroactivo"
+  ],
+  "idea": "mitos-cancelaciones"
+}

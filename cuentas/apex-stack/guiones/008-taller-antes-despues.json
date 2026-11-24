@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "clave": "008-taller-antes-despues",
+  "titulo": "La página de un taller mecánico, antes y después",
+  "categoria": "tecnico",
+  "formato": "antes-despues",
+  "paleta": "tinta",
+  "hooks": [
+    "¿Hay que hacer zoom para llamarte?",
+    "La página del taller que nadie puede leer",
+    "Del zoom al botón de presupuesto"
+  ],
+  "voz": "Un clásico: la página del taller se ve chiquita en el celular, el teléfono está escondido y el mapa no carga. En la versión nueva todo se lee de una, abre rápido y el botón para pedir presupuesto queda siempre a mano.",
+  "contenido": {
+    "negocio": {
+      "rubro": "taller-mecanico",
+      "nombre": "Taller Pistón Sur",
+      "lema": "Mecánica general y service"
+    },
+    "antes": {
+      "defectos": [
+        "Letra chiquita en el celular",
+        "Teléfono escondido abajo",
+        "Mapa que nunca carga"
+      ]
+    },
+    "despues": {
+      "titular": "Service y mecánica, con turno",
+      "boton": "Pedí presupuesto",
+      "secciones": [
+        "Servicios",
+        "Turnos",
+        "Cómo llegar"
+      ]
+    }
+  },
+  "captions": [
+    "Si alguien tiene que hacer zoom para encontrar tu teléfono, ya le gastaste la paciencia antes de que te llame.",
+    "Una página pensada para el celular se lee sin zoom, abre rápido y tiene el botón de contacto siempre a la vista, aunque bajes hasta el final.",
+    "El que busca taller suele estar con el auto parado y apurado. Dale el teléfono, la dirección y los horarios en el primer vistazo."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "tallermecanico",
+    "antesydespues",
+    "rediseñoweb",
+    "webresponsive",
+    "mecanica"
+  ],
+  "tema": "antes-despues",
+  "hechos": [
+    "diseno-a-medida-sin-plantillas"
+  ]
+}

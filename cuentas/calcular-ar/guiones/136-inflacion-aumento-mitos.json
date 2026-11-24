@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "clave": "136-inflacion-aumento-mitos",
+  "idea": "inflacion-aumento-no-es-ganarle",
+  "titulo": "Un aumento no es ganarle a la inflación",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "Te aumentaron y aun así perdiste",
+    "Aumento no es ganarle a la inflación",
+    "Dos mitos de la inflación"
+  ],
+  "voz": "Si me aumentaron, le gané a la inflación. No necesariamente: ganaste sólo si tu sueldo de hoy supera al viejo actualizado por inflación. La inflación del INDEC es la mía. Tampoco: el índice promedia lo que gastan todos los hogares, y tu caso puede ser distinto.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si me aumentaron, le gané a la inflación",
+        "realidad": "Sólo si tu sueldo de hoy supera al viejo actualizado por inflación."
+      },
+      {
+        "mito": "La inflación del INDEC es la mía",
+        "realidad": "Promedia a todos los hogares: es la referencia general, no tu caso."
+      }
+    ]
+  },
+  "captions": [
+    "Para saber si le ganaste a la inflación, actualizá tu sueldo viejo con el IPC del INDEC y comparalo con el de hoy. Si el de hoy es menor, perdiste poder de compra aunque el número haya subido.",
+    "El IPC promedia lo que gastan todos los hogares. Si gastás más en lo que más subió, como alquiler o prepaga, tu costo de vida pudo subir más que el índice.",
+    "Usá el mes de tu último aumento como punto de partida: es el que mejor muestra cuánto recuperaste.",
+    "Mandáselo a quien festejó el aumento sin hacer la cuenta."
+  ],
+  "hashtags": [
+    "inflacion",
+    "ipc",
+    "indec",
+    "sueldo",
+    "poderdecompra",
+    "aumento",
+    "economia",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "INDEC: IPC Nacional, nivel general (API oficial de series de tiempo)",
+      "url": "https://datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&format=json",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "INDEC: Índice de precios al consumidor (informes técnicos mensuales)",
+      "url": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "inflacion",
+  "hechos": [
+    "inflacion-aumento-no-es-ganarle"
+  ]
+}

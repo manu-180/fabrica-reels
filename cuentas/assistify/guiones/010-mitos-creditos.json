@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clave": "010-mitos-creditos",
+  "titulo": "Tres mitos de los créditos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "cielo",
+  "tema": "recuperos",
+  "hooks": [
+    "Tres mitos de los créditos de clase",
+    "¿Si cancelo, pierdo la clase?",
+    "Lo que tus alumnos creen de los créditos"
+  ],
+  "voz": "Si cancelo, pierdo la clase. Falso: si cancelás en plazo, el crédito vuelve solo. Puedo quedar debiendo clases. No: los créditos nunca bajan de cero. Puedo recuperar la del mes pasado. Tampoco: solo se reserva en el mes activo.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si cancelo, pierdo la clase",
+        "realidad": "Si cancelás en plazo, el crédito vuelve solo a tu cuenta."
+      },
+      {
+        "mito": "Puedo quedar debiendo clases",
+        "realidad": "Los créditos nunca bajan de cero."
+      },
+      {
+        "mito": "Puedo recuperar la del mes pasado",
+        "realidad": "Solo se reserva en el mes activo. La anterior ya no se recupera."
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify un crédito es una clase. Si cancelás dentro del plazo del taller, vuelve solo a tu cuenta.",
+    "Los créditos nunca quedan en negativo: el mínimo es cero.",
+    "Las clases se reservan en el mes activo. Las del mes anterior ya no se recuperan, así que conviene usarlas a tiempo."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "creditos",
+    "recuperos",
+    "mitos",
+    "clases",
+    "alumnos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "plazo-ejemplo-24",
+    "sin-creditos-negativos",
+    "mes-activo",
+    "un-credito-una-clase"
+  ],
+  "idea": "mitos-creditos"
+}

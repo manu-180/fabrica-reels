@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "clave": "146-alquiler-que-indice",
+  "idea": "alquiler-ipc-vs-icl",
+  "titulo": "Qué índice ajusta tu alquiler",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Qué índice ajusta tu alquiler",
+    "Dos índices, dos aumentos distintos",
+    "El índice que te conviene como inquilino"
+  ],
+  "voz": "Tu alquiler se ajusta por el índice que firmaste. El de precios sigue a la inflación. El índice del Banco Central mezcla inflación y sueldos. Cuando los sueldos pierden contra los precios, ese suele subir menos. Y al inquilino le conviene el que sube menos.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "el índice que firmaste",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Manda tu contrato"
+        }
+      },
+      {
+        "frase": "mezcla inflación y sueldos",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Índice de precios",
+            "items": [
+              "Sigue a la inflación",
+              "Solo precios"
+            ]
+          },
+          "der": {
+            "titulo": "Índice del Banco Central",
+            "items": [
+              "Inflación y sueldos",
+              "Suele subir menos"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "ese suele subir menos",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Si los sueldos pierden, sube menos"
+        }
+      },
+      {
+        "frase": "le conviene el que",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Al inquilino: el que sube menos"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Tu contrato dice con qué índice se ajusta. El índice de precios del INDEC sigue a la inflación; el del Banco Central combina inflación y sueldos.",
+    "Cuando los sueldos pierden contra los precios, el índice que mezcla los dos suele subir un poco menos. Al dueño le conviene al revés.",
+    "Desde el DNU 70/2023 las partes pueden pactar cualquier índice, público o privado. Por eso lo importante es leer la cláusula de actualización.",
+    "Pasáselo a quien está por firmar un contrato de alquiler."
+  ],
+  "hashtags": [
+    "alquiler",
+    "inquilinos",
+    "contratodealquiler",
+    "ipc",
+    "icl",
+    "inflacion",
+    "vivienda",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Código Civil y Comercial, art. 1199 (texto según DNU 70/2023)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/texact.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "INDEC: IPC Nacional, nivel general (API oficial de series de tiempo)",
+      "url": "https://datos.gob.ar/series/api/series/?ids=148.3_INIVELNAL_DICI_M_26&format=json",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "alquiler",
+  "hechos": [
+    "alquiler-ipc-vs-icl"
+  ]
+}

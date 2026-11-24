@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "158-chat-primo-plazo-fijo",
+  "idea": "plazo-fijo-tem-no-es-dividido-12",
+  "titulo": "La tasa mensual del plazo fijo",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "menta",
+  "hooks": [
+    "Mi primo divide la tasa por doce",
+    "La tasa del plazo fijo, mal calculada",
+    "Lo que ganás por mes de plazo fijo"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Primo",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "El banco paga una tasa anual, la divido por doce y listo"
+      },
+      {
+        "de": "yo",
+        "texto": "No es por doce"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Cómo que no?"
+      },
+      {
+        "de": "yo",
+        "texto": "La del mes es la anual por 30 y dividida 365"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y eso por qué?"
+      },
+      {
+        "de": "yo",
+        "texto": "Mes de 30 días, año de 365. Da un poco menos"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, hacémela vos"
+      }
+    ],
+    "remate": "Tasa del mes: la anual por 30, dividida 365"
+  },
+  "captions": [
+    "La tasa nominal anual que publica el banco no es lo que ganás. Lo que ganás en un mes es la tasa efectiva mensual: la anual por 30 y dividida 365.",
+    "Dividir la tasa anual por doce da un poco más de lo real, porque 30 días son menos que un doceavo de 365.",
+    "La tasa efectiva mensual es el número que tenés que comparar con la inflación del mes.",
+    "Etiquetá a quien hace la cuenta del plazo fijo en la calculadora del celular."
+  ],
+  "hashtags": [
+    "plazofijo",
+    "tna",
+    "tasadeinteres",
+    "ahorro",
+    "inversiones",
+    "humor",
+    "bancos",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "BCRA: tasa de depósitos a 30 días (serie 12)",
+      "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/12",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "plazo-fijo",
+  "hechos": [
+    "plazo-fijo-tem-no-es-dividido-12"
+  ]
+}

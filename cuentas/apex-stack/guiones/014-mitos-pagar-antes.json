@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "clave": "014-mitos-pagar-antes",
+  "titulo": "Mitos que te frenan antes de tener tu página",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "arcilla",
+  "hooks": [
+    "¿Pagar una página sin verla antes?",
+    "Nadie debería pagar una página a ciegas",
+    "El miedo de pagar y que quede fea"
+  ],
+  "voz": "Hay que pagar antes de ver algo. Antes era así: hoy podés ver una demo armada para tu negocio y recién ahí decidir. Una vez hecha, la página se cuida sola. Tampoco: necesita hosting, copias de seguridad y alguien que la tenga al día. Por eso el hosting y el mantenimiento vienen incluidos.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Hay que pagar antes de ver algo",
+        "realidad": "Podés ver una demo armada para tu negocio y recién ahí decidir"
+      },
+      {
+        "mito": "Una vez hecha, la página se cuida sola",
+        "realidad": "Necesita hosting, copias de seguridad y alguien que la tenga al día"
+      }
+    ]
+  },
+  "captions": [
+    "Pagar una página sin saber cómo va a quedar da miedo, y con razón. Por eso primero te mostramos una demo armada para tu negocio. Si te gusta, seguimos.",
+    "Una página necesita un servidor donde vivir, copias de seguridad y alguien que la actualice cuando cambia tu horario o tu carta. Si nadie se ocupa, un día deja de andar y te enterás por un cliente.",
+    "Ver tu página armada antes de pagar te saca la duda más grande: si te va a gustar. Lo demás se charla con la demo en la mano."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "mitos",
+    "hosting",
+    "mantenimientoweb",
+    "emprender",
+    "presenciadigital"
+  ],
+  "tema": "pagar-antes",
+  "hechos": [
+    "demo-gratis-antes-de-pagar",
+    "cambios-ilimitados-de-por-vida"
+  ]
+}

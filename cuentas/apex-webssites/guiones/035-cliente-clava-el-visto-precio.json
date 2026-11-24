@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "clave": "035-cliente-clava-el-visto-precio",
+  "titulo": "The customer who leaves you on read",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "arcilla",
+  "hooks": [
+    "When you send the price and they vanish",
+    "The mystery customer who never comes back",
+    "POV: you sent the quote over text"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Luke · Auto repair",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Hi, how much for a full timing belt job?"
+      },
+      {
+        "de": "yo",
+        "texto": "Hi Luke. It's this much with OEM parts and a warranty."
+      },
+      {
+        "de": "ellos",
+        "texto": "Great, let me talk it over with my wife"
+      },
+      {
+        "de": "yo",
+        "texto": "Sure, let me know if you have any questions."
+      },
+      {
+        "de": "yo",
+        "texto": "Hi Luke, did you get a chance to talk it over?"
+      },
+      {
+        "de": "ellos",
+        "texto": "She hasn't gotten back to me yet"
+      },
+      {
+        "de": "yo",
+        "texto": "Luke, it's been eight months"
+      }
+    ],
+    "remate": "His wife is still thinking it over"
+  },
+  "captions": [
+    "Sending cold quotes over text almost always ends with you on read. When you have a clear website explaining your services, the customer already knows what you do before reaching out.",
+    "The classic 'I'll let you know after I talk it over at home.' If your business had a website with photos of your work and how you operate, inquiries would come in a lot more solid.",
+    "For everyone still waiting on that reply since last year."
+  ],
+  "hashtags": [
+    "webdesign",
+    "autorepair",
+    "smallbusiness",
+    "localbusiness",
+    "smallbusinessowner",
+    "businesshumor",
+    "website",
+    "entrepreneur",
+    "onlinesales"
+  ],
+  "tema": "precio",
+  "hechos": []
+}

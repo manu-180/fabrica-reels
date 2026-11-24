@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "clave": "030-lugar-vacio",
+  "titulo": "El lugar vacío que nadie vio",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "papel",
+  "tema": "lista-espera",
+  "hooks": [
+    "Un lugar vacío y gente esperando",
+    "Alguien canceló y nadie se enteró",
+    "Ese lugar libre era de alguien"
+  ],
+  "voz": "Alguien cancela y nadie se entera. Ese lugar queda vacío aunque tenías gente queriendo ir. Con la lista de espera de Assistify, el lugar se libera al instante y el primero con crédito entra solo. Ese lugar no se pierde.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "Alguien cancela y nadie",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Un lugar vacío"
+        }
+      },
+      {
+        "frase": "tenías gente queriendo ir",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Y gente esperando"
+        }
+      },
+      {
+        "frase": "el lugar se libera al instante",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sin lista",
+            "items": [
+              "Lugar vacío",
+              "Nadie se entera"
+            ]
+          },
+          "der": {
+            "titulo": "Con lista de espera",
+            "items": [
+              "Entra el primero",
+              "Aviso al instante"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "Ese lugar no se pierde",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ningún lugar perdido"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Cuando alguien cancela y nadie se entera, el lugar queda vacío aunque había gente queriendo ir.",
+    "Con la lista de espera de Assistify, el primero con crédito entra solo y le llega el aviso.",
+    "Cada lugar libre vuelve a tener dueño, sin que vos escribas nada."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "listadeespera",
+    "cancelaciones",
+    "negocio",
+    "emprendedores",
+    "clases"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "espacios-vacios",
+    "lista-espera-automatica"
+  ],
+  "idea": "lugar-vacio"
+}

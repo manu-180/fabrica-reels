@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "clave": "207-dia-comercio-mitos",
+  "titulo": "Día del Empleado de Comercio: tres mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Tres mitos del día de comercio",
+    "¿Es feriado el día de comercio?",
+    "No está en el calendario, pero vale"
+  ],
+  "voz": "Es feriado nacional. No: no está en el calendario oficial, vale para quienes trabajan en comercio. Como no es feriado, se paga como día común. Tampoco: la ley lo asimila a feriado nacional. Si el local abre, perdés el día. Falso: puede abrir, pero quien trabaja ese día cobra doble.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Es feriado nacional",
+        "realidad": "No está en el calendario oficial: vale para el convenio de comercio."
+      },
+      {
+        "mito": "Como no es feriado, se paga como día común",
+        "realidad": "La ley lo asimila a feriado nacional a todos los efectos."
+      },
+      {
+        "mito": "Si el local abre, perdés el día",
+        "realidad": "Puede abrir, pero quien trabaja ese día cobra doble."
+      }
+    ]
+  },
+  "captions": [
+    "El Día del Empleado de Comercio no figura en la ley de feriados nacionales: vale para quienes trabajan bajo el convenio de comercio.",
+    "El art. 2 de la Ley 26.541 lo asimila a los feriados nacionales a todos los efectos legales. Se paga con esas reglas.",
+    "El local puede abrir: la ley regula el trabajo, no prohíbe abrir. Quien trabaja cobra el día doble.",
+    "¿Cuál de los tres creías? Compartilo con alguien que trabaje en comercio."
+  ],
+  "hashtags": [
+    "diadelempleadodecomercio",
+    "comercio",
+    "empleadosdecomercio",
+    "feriado",
+    "mitos",
+    "septiembre",
+    "trabajo",
+    "derechoslaborales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 26.541: Día del Empleado de Comercio (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161502/norma.htm",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "dia-comercio-no-feriado-nacional",
+  "ventana": {
+    "desde": "09-10",
+    "hasta": "09-28"
+  },
+  "tema": "dia-comercio",
+  "hechos": [
+    "dia-comercio-no-feriado-nacional"
+  ]
+}

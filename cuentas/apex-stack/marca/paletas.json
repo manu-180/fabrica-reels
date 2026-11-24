@@ -1,0 +1,37 @@
+{
+  "noche": {
+    "fondo": "#0E1014",
+    "superficie": "#181B22",
+    "tinta": "#F2EFE8",
+    "tenue": "#9AA0AA",
+    "acento": "#C8F560"
+  },
+  "crema": {
+    "fondo": "#F3EDE3",
+    "superficie": "#FFFFFF",
+    "tinta": "#1D1B18",
+    "tenue": "#6E675E",
+    "acento": "#D8572A"
+  },
+  "bosque": {
+    "fondo": "#0F2A22",
+    "superficie": "#173A2F",
+    "tinta": "#F1EBDD",
+    "tenue": "#A9B8AE",
+    "acento": "#E3B85C"
+  },
+  "tinta": {
+    "fondo": "#101826",
+    "superficie": "#1A2436",
+    "tinta": "#EEF2F8",
+    "tenue": "#8C9AB0",
+    "acento": "#5BA8FF"
+  },
+  "arcilla": {
+    "fondo": "#EADBCB",
+    "superficie": "#F7EFE6",
+    "tinta": "#2A1E17",
+    "tenue": "#7A6656",
+    "acento": "#2F5D50"
+  }
+}

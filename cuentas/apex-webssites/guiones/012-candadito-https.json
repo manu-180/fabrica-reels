@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "clave": "012-candadito-https",
+  "titulo": "The little padlock on your website and why it matters",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "crema",
+  "hooks": [
+    "Does your website have the little padlock?",
+    "No padlock, and your site looks dangerous",
+    "The warning that scares off your customers"
+  ],
+  "voz": "That little padlock next to the address means HTTPS: whatever your customer types on the page travels encrypted. Without it, the browser warns the page is not secure and nobody wants to leave their info there. All our websites ship with the padlock already in place.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "means HTTPS",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Padlock: HTTPS is on"
+        }
+      },
+      {
+        "frase": "travels encrypted",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "No HTTPS",
+            "items": [
+              "Data out in the open",
+              "\"Not secure\" warning"
+            ]
+          },
+          "der": {
+            "titulo": "With HTTPS",
+            "items": [
+              "Encrypted data",
+              "Padlock in the bar"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "is not secure",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Warning: Not secure"
+        }
+      },
+      {
+        "frase": "the padlock already in place",
+        "visual": {
+          "tipo": "navegador",
+          "url": "yourbusiness.com",
+          "estado": "rapido"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "The little padlock next to the address means your website uses HTTPS: whatever your customers type, like their phone number or email, travels encrypted. Without it, the browser warns them your site isn't secure.",
+    "Since 2018, Chrome has flagged websites without HTTPS as not secure. If yours still doesn't have it, your customers see the warning before they see your products.",
+    "A contact form without HTTPS is like shouting your personal info across a crowded bar. Anyone in between could hear it."
+  ],
+  "hashtags": [
+    "webdesign",
+    "website",
+    "smallbusiness",
+    "smallbusinessowner",
+    "entrepreneur",
+    "digitalmarketing",
+    "websecurity",
+    "https",
+    "cybersecurity",
+    "webdevelopment",
+    "trust"
+  ],
+  "fuente": "Chromium Blog (2018): starting with Chrome 68, all HTTP pages are marked \"Not secure\".",
+  "tema": "seguridad",
+  "hechos": []
+}

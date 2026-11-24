@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "clave": "138-recategorizacion-de-oficio-mitos",
+  "titulo": "Tres mitos de la recategorización",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Tres mitos de la recategorización",
+    "Si no te recategorizás, pasa esto",
+    "ARCA sabe más de lo que creés"
+  ],
+  "voz": "Si no me recategorizo, no pasa nada. Falso: si te tocaba subir, ARCA, la ex AFIP, te recategoriza de oficio, con la cuota nueva hacia atrás. ARCA no sabe cuánto facturo. Lo sabe: ve tus facturas, tus cuentas y billeteras. Si me toca bajar y no lo hago, me multan. No: seguís pagando de más.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Si no me recategorizo, no pasa nada",
+        "realidad": "Si te tocaba subir, ARCA te recategoriza de oficio, con retroactivo."
+      },
+      {
+        "mito": "ARCA no sabe cuánto facturo",
+        "realidad": "Ve tu facturación electrónica, tus cuentas y tus billeteras."
+      },
+      {
+        "mito": "Si me toca bajar y no lo hago, me multan",
+        "realidad": "No hay multa: seguís pagando de más hasta la próxima ventana."
+      }
+    ]
+  },
+  "captions": [
+    "Si te tocaba subir de categoría y no hiciste el trámite, ARCA puede recategorizarte de oficio con la cuota nueva hacia atrás y con sanciones.",
+    "ARCA cruza tu facturación electrónica con lo que entra a tus cuentas y billeteras virtuales. Un préstamo o una transferencia entre tus cuentas no es facturación, pero conviene poder demostrarlo.",
+    "Si te tocaba bajar y no lo hiciste, no hay multa: pagás de más todos los meses hasta la próxima recategorización.",
+    "¿Cuál de los tres creías? Antes de febrero, hacé la cuenta de tus últimos doce meses."
+  ],
+  "hashtags": [
+    "monotributo",
+    "recategorizacion",
+    "monotributistas",
+    "arca",
+    "billeterasvirtuales",
+    "emprendedores",
+    "independientes",
+    "impuestos",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: ayuda sobre recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "monotributo-recategorizacion-de-oficio",
+  "ventana": {
+    "desde": "01-15",
+    "hasta": "02-05"
+  },
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-recategorizacion-de-oficio"
+  ]
+}

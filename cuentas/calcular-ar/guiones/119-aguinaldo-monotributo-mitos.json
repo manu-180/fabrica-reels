@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "clave": "119-aguinaldo-monotributo-mitos",
+  "idea": "aguinaldo-monotributista",
+  "titulo": "Aguinaldo y monotributo: mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "selva",
+  "hooks": [
+    "El monotributista y el aguinaldo",
+    "Tres mitos del aguinaldo que no cobrás",
+    "Facturás y esperás aguinaldo"
+  ],
+  "voz": "El monotributista cobra aguinaldo. No: es solo para quien trabaja en relación de dependencia. Si además estás en blanco, suma todo. Tampoco: cobrás solo sobre el sueldo del empleo registrado. La empleada doméstica no cobra aguinaldo. Falso: sí cobra, porque también trabaja en relación de dependencia.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "El monotributista cobra aguinaldo",
+        "realidad": "Es solo para quien trabaja en relación de dependencia."
+      },
+      {
+        "mito": "Si además estás en blanco, suma todo",
+        "realidad": "Cobrás aguinaldo solo sobre el sueldo del empleo registrado."
+      },
+      {
+        "mito": "La empleada doméstica no cobra aguinaldo",
+        "realidad": "Sí cobra: también está en relación de dependencia."
+      }
+    ]
+  },
+  "captions": [
+    "El aguinaldo es un derecho del trabajo en relación de dependencia. Quien factura como monotributista no tiene empleador que se lo pague.",
+    "Si facturás y además tenés un empleo registrado, cobrás aguinaldo por ese sueldo. Lo que facturás no suma.",
+    "El personal de casas particulares sí cobra aguinaldo: tiene un régimen especial, pero está en relación de dependencia.",
+    "Si sos monotributista, armate tu propio aguinaldo: separar cerca de 1/12 de lo que facturás cada mes te deja medio mes juntado por semestre."
+  ],
+  "hashtags": [
+    "aguinaldo",
+    "monotributo",
+    "monotributista",
+    "sac",
+    "freelance",
+    "trabajo",
+    "argentina",
+    "casasparticulares",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 23.041: Sueldo Anual Complementario",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-23041-1983-28165",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley de Contrato de Trabajo 20.744, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "aguinaldo",
+  "hechos": [
+    "aguinaldo-monotributista"
+  ]
+}

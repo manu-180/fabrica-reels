@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "clave": "123-prescripcion-arca-1-enero",
+  "titulo": "Prescripción con ARCA: corre desde el 1 de enero",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "pizarra",
+  "hooks": [
+    "El reloj de la prescripción arranca en enero",
+    "Tu deuda con ARCA no prescribe cuando creés",
+    "Prescripción: la fecha que casi nadie cuenta bien"
+  ],
+  "voz": "Las deudas con ARCA, la ex AFIP, prescriben. Pero el plazo no arranca cuando vence el impuesto. Arranca el 1 de enero del año siguiente. Si una declaración venció en mayo, el reloj empieza recién el 1 de enero que viene. Si estás inscripto, en general son cinco años.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no arranca cuando vence",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No arranca al vencimiento"
+        }
+      },
+      {
+        "frase": "Arranca el 1 de enero",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Arranca el 1 de enero siguiente"
+        }
+      },
+      {
+        "frase": "venció en mayo",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Vence la declaración",
+              "valor": "Mayo"
+            },
+            {
+              "concepto": "Empieza a correr",
+              "valor": "1 de enero"
+            }
+          ],
+          "total": {
+            "concepto": "Inscriptos, en general",
+            "valor": "5 años"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Art. 57 de la Ley 11.683: el término de prescripción corre desde el 1 de enero siguiente al año en que vencen los plazos generales de presentación y pago.",
+    "Para contribuyentes inscriptos el plazo es de cinco años. Se reduce a tres si presentaste y pagaste en término y ARCA no detecta una discrepancia significativa.",
+    "Un impuesto que venció en mayo no empieza a prescribir en mayo: empieza el 1 de enero del año siguiente. Contá desde ahí.",
+    "La suspensión de 120 días que todavía circula en internet está derogada. Fijate siempre el texto actualizado."
+  ],
+  "hashtags": [
+    "arca",
+    "afip",
+    "prescripcion",
+    "impuestos",
+    "deudas",
+    "monotributo",
+    "contador",
+    "finanzaspersonales",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "Ley 11.683 (t.o. 1998), texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/18771/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "prescripcion-arca-1-enero",
+  "ventana": {
+    "desde": "12-01",
+    "hasta": "12-31"
+  },
+  "tema": "prescripcion-arca",
+  "hechos": [
+    "prescripcion-arca-1-enero"
+  ]
+}

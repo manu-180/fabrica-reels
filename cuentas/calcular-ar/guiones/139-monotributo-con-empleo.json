@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "clave": "139-monotributo-con-empleo",
+  "idea": "monotributo-dependencia-solo-impuesto",
+  "titulo": "Monotributo con empleo en blanco: pagás menos",
+  "categoria": "negocio",
+  "formato": "explicador",
+  "paleta": "noche",
+  "hooks": [
+    "Monotributo y empleo en blanco: pagás menos",
+    "Si tenés recibo, tu cuota baja",
+    "Monotributista con sueldo: esto te ahorra"
+  ],
+  "voz": "Si sos monotributista y además tenés un empleo en blanco, tu cuota es más chica. La cuota tiene tres partes: impuesto integrado, jubilación y obra social. Pero jubilación y obra social ya las aportás por tu empleo. Entonces pagás sólo el impuesto integrado. Y vence el día 20 de cada mes.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "tenés un empleo en blanco",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Monotributo más empleo en blanco"
+        }
+      },
+      {
+        "frase": "tiene tres partes",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Sólo monotributo",
+            "items": [
+              "Impuesto integrado",
+              "Jubilación",
+              "Obra social"
+            ]
+          },
+          "der": {
+            "titulo": "Con empleo en blanco",
+            "items": [
+              "Impuesto integrado",
+              "Lo demás, por tu sueldo"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "ya las aportás por",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Ya aportás por tu empleo"
+        }
+      },
+      {
+        "frase": "vence el día 20",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Vence el día 20"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "Si además trabajás en relación de dependencia, la jubilación y la obra social ya se aportan por tu empleo: en el monotributo pagás sólo el impuesto integrado.",
+    "La cuota del monotributo vence todos los meses el día 20, o el día hábil siguiente si cae feriado o fin de semana.",
+    "La cuota tiene tres partes: impuesto integrado, jubilación y obra social. Con empleo en blanco queda sólo la primera.",
+    "Pasáselo a quien tiene un sueldo y factura aparte."
+  ],
+  "hashtags": [
+    "monotributo",
+    "monotributista",
+    "arca",
+    "impuestos",
+    "emprendedores",
+    "freelance",
+    "trabajo",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: jubilación y obra social del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/jubilacion.asp",
+      "consultado": "2026-11-23"
+    },
+    {
+      "nombre": "Ley 24.977, Anexo t.o. Ley 26.565, texto actualizado (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/51609/texact.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "respaldo": [
+    "src/app/(ar)/monotributo/page.tsx:46"
+  ],
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-dependencia-solo-impuesto"
+  ]
+}

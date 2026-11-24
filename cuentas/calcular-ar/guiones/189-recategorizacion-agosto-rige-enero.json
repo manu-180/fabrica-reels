@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "clave": "189-recategorizacion-agosto-rige-enero",
+  "titulo": "La categoría de agosto rige hasta enero",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "papel",
+  "hooks": [
+    "Tu categoría del monotributo dura seis meses",
+    "Agosto a enero: cuánto te dura",
+    "Lo que declarás en agosto rige hasta enero"
+  ],
+  "voz": "La categoría que declarás en agosto no es para todo el año. Rige desde agosto hasta enero inclusive. La de febrero va de febrero a julio. Y en cada una se miran los últimos doce meses: en agosto, de agosto del año pasado a julio de este.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "no es para todo el",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "No es para todo el año"
+        }
+      },
+      {
+        "frase": "desde agosto hasta enero inclusive",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Agosto a enero, inclusive"
+        }
+      },
+      {
+        "frase": "va de febrero a julio",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "Febrero a julio"
+        }
+      },
+      {
+        "frase": "los últimos doce meses",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Desde",
+              "valor": "Agosto"
+            },
+            {
+              "concepto": "Hasta",
+              "valor": "Julio"
+            }
+          ],
+          "total": {
+            "concepto": "Meses que se suman",
+            "valor": "12"
+          }
+        }
+      }
+    ]
+  },
+  "captions": [
+    "La recategorización del monotributo se hace en febrero y en agosto, hasta el día 5. La de agosto rige desde el período agosto hasta enero inclusive.",
+    "La de febrero rige de febrero a julio. Cada una dura seis meses, no un año.",
+    "En la de agosto se suma lo facturado entre agosto del año anterior y julio del año en curso.",
+    "Si te tocaba subir y no lo hiciste, ARCA puede recategorizarte de oficio con retroactivo. Mejor adelantarse."
+  ],
+  "hashtags": [
+    "monotributo",
+    "recategorizacion",
+    "monotributistas",
+    "agosto",
+    "arca",
+    "facturacion",
+    "emprendedores",
+    "independientes",
+    "argentina",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ARCA: ayuda sobre recategorización del monotributo",
+      "url": "https://www.afip.gob.ar/monotributo/ayuda/recategorizacion.asp",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "idea": "monotributo-recategorizacion-agosto-rige-enero",
+  "ventana": {
+    "desde": "07-15",
+    "hasta": "08-05"
+  },
+  "tema": "monotributo",
+  "hechos": [
+    "monotributo-recategorizacion-agosto-rige-enero"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "clave": "001-sobrino-hace-webs",
+  "titulo": "El sobrino que te hace la página",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "noche",
+  "hooks": [
+    "¿Tu página la está haciendo un sobrino?",
+    "Le pedí la página a mi sobrino",
+    "Ningún sobrino terminó una página jamás"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Tomi (sobrino)",
+    "mensajes": [
+      {
+        "de": "yo",
+        "texto": "Tomi, ¿cómo va la página del negocio?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bien tío, ya casi está"
+      },
+      {
+        "de": "yo",
+        "texto": "Eso me dijiste en marzo"
+      },
+      {
+        "de": "ellos",
+        "texto": "Es que tuve parciales"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y qué falta?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Diseño, textos, fotos y subirla"
+      },
+      {
+        "de": "yo",
+        "texto": "O sea, todo"
+      },
+      {
+        "de": "ellos",
+        "texto": "Pero el logo ya está: tu nombre en negrita"
+      },
+      {
+        "de": "ellos",
+        "texto": "Igual, ¿no conocés a alguien que haga páginas?"
+      }
+    ],
+    "remate": "Tu negocio no puede esperar al próximo parcial"
+  },
+  "captions": [
+    "Todos tenemos un sobrino, un primo o un amigo que 'te hace la página'. Y todos sabemos cómo sigue: ya casi, ya casi, ya casi. Mientras tanto, tus clientes te buscan en el celular y no encuentran nada.",
+    "Si tu página lleva meses en 'ya casi', no estás solo. Le pasa a un montón de negocios, y casi siempre por lo mismo: nadie se hace cargo de terminarla.",
+    "Lo barato sale caro, y lo gratis a veces ni sale. Antes de pagar nada, mirá cómo quedaría la página de tu negocio armada por gente que hace esto todos los días.",
+    "El sobrino tiene parciales y su vida. Tu negocio necesita una página terminada, que se vea bien en el celular y que alguien mantenga."
+  ],
+  "hashtags": [
+    "diseñoweb",
+    "paginaweb",
+    "emprendedores",
+    "pymes",
+    "negocios",
+    "marketingdigital",
+    "humoremprendedor",
+    "emprendedoresargentinos",
+    "emprendedoreslatinos",
+    "dueñosdenegocio",
+    "humor"
+  ],
+  "tema": "sobrino-hace-la-web",
+  "hechos": []
+}

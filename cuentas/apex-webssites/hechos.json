@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-23",
+  "hechos": [
+    {
+      "id": "demo-gratis-antes-de-pagar",
+      "tipo": "oferta",
+      "texto": "The demo is free and you see it before paying; if you do not like it, you pay nothing",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:41",
+      "envejece": null
+    },
+    {
+      "id": "demo-en-24-horas",
+      "tipo": "oferta",
+      "texto": "The free demo is ready in under 24 hours",
+      "cifras": [
+        "24"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:25",
+      "envejece": null
+    },
+    {
+      "id": "plazos-por-plan",
+      "tipo": "oferta",
+      "texto": "Landing page in 5 business days, interactive site in 10 and online store in 15, once the content is in",
+      "cifras": [
+        "5",
+        "10",
+        "15"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/plazos.ts:7",
+      "envejece": null
+    },
+    {
+      "id": "plazo-por-escrito-o-devolucion",
+      "tipo": "oferta",
+      "texto": "The deadline is in writing; if it is missed, you get your money back",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:25",
+      "envejece": null
+    },
+    {
+      "id": "cambios-ilimitados-de-por-vida",
+      "tipo": "oferta",
+      "texto": "Unlimited changes and free maintenance for life, hosting included, no monthly fee",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:65",
+      "envejece": null
+    },
+    {
+      "id": "carga-en-menos-de-2-segundos",
+      "tipo": "producto",
+      "texto": "Loads in under 2 seconds, with no monthly fees or sales commissions",
+      "cifras": [
+        "2"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:37",
+      "envejece": null
+    },
+    {
+      "id": "codigo-es-tuyo",
+      "tipo": "oferta",
+      "texto": "The code is yours once it is paid off, and you take it with your data at no cost",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:57",
+      "envejece": null
+    },
+    {
+      "id": "se-adapta-al-celular",
+      "tipo": "producto",
+      "texto": "It adapts to any screen and is checked on different devices before delivery",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:49",
+      "envejece": null
+    },
+    {
+      "id": "hosting-incluido-dominio-propio",
+      "tipo": "oferta",
+      "texto": "Hosting is included; the domain is in your name and costs about USD 10 a year",
+      "cifras": [
+        "10"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/data/es/servicios-faq.ts:53",
+      "envejece": null
+    },
+    {
+      "id": "diseno-a-medida-sin-plantillas",
+      "tipo": "producto",
+      "texto": "100% custom design, no templates",
+      "cifras": [
+        "100"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:34",
+      "envejece": null
+    },
+    {
+      "id": "whatsapp-con-consulta-escrita",
+      "tipo": "producto",
+      "texto": "WhatsApp button with the message already written",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:36",
+      "envejece": null
+    },
+    {
+      "id": "formularios-consulta-completa",
+      "tipo": "producto",
+      "texto": "Forms that bring each inquiry in complete (Interactive Website)",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:65",
+      "envejece": null
+    },
+    {
+      "id": "tienda-sin-comision",
+      "tipo": "producto",
+      "texto": "Your own online store: 0% commission, every sale is 100% yours",
+      "cifras": [
+        "0",
+        "100"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:105",
+      "envejece": null
+    },
+    {
+      "id": "seo-tecnico",
+      "tipo": "producto",
+      "texto": "Fast loading and technical SEO to show up on Google",
+      "cifras": [],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:37",
+      "envejece": null
+    },
+    {
+      "id": "velocidad-tres-segundos",
+      "tipo": "dato",
+      "texto": "Google/SOASTA (2016, \"The Need for Mobile Speed\"): 53% of mobile visits are abandoned if a page takes more than 3 seconds to load",
+      "cifras": [
+        "53",
+        "3"
+      ],
+      "fuente": "repo:manu-180/apex-demos:reels/prueba/guiones/003-velocidad-tres-segundos.json:77",
+      "envejece": null
+    },
+    {
+      "id": "precio-landing-usd",
+      "tipo": "oferta",
+      "texto": "Landing Page: USD 600 in 3 payments",
+      "cifras": [
+        "600",
+        "3"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/i18n/precios.ts:9",
+      "envejece": "cambia si APEX actualiza PRECIOS_USD"
+    },
+    {
+      "id": "precio-web-interactiva-usd",
+      "tipo": "oferta",
+      "texto": "Interactive Website: USD 900 in 3 payments",
+      "cifras": [
+        "900",
+        "3"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/i18n/precios.ts:10",
+      "envejece": "cambia si APEX actualiza PRECIOS_USD"
+    },
+    {
+      "id": "precio-tienda-online-usd",
+      "tipo": "oferta",
+      "texto": "Online Store: from USD 1,500 in 3 payments",
+      "cifras": [
+        "1,500",
+        "1500",
+        "3"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/i18n/precios.ts:11",
+      "envejece": "cambia si APEX actualiza PRECIOS_USD"
+    }
+  ]
+}

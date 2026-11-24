@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "clave": "127-alquileres-viejos-mitos",
+  "idea": "alquiler-contratos-viejos-icl",
+  "titulo": "Alquileres firmados entre 2020 y 2023: dos mitos",
+  "categoria": "mito",
+  "formato": "mito",
+  "paleta": "pizarra",
+  "hooks": [
+    "Firmaste en 2022: tu alquiler no cambió",
+    "Dos mitos de los alquileres viejos",
+    "Tu contrato viejo sigue con su regla"
+  ],
+  "voz": "Todos los alquileres se ajustan con la regla nueva. No: los contratos firmados entre julio de 2020 y diciembre de 2023, en general, siguen con su ajuste anual. Hoy sólo se puede ajustar por inflación. Tampoco: en un contrato nuevo vale cualquier índice que pacten las partes.",
+  "contenido": {
+    "tarjetas": [
+      {
+        "mito": "Todos los alquileres se ajustan con la regla nueva",
+        "realidad": "Los firmados entre julio de 2020 y diciembre de 2023, en general, no."
+      },
+      {
+        "mito": "Hoy sólo se puede ajustar por inflación",
+        "realidad": "Vale cualquier índice que pacten las partes, público o privado."
+      }
+    ]
+  },
+  "captions": [
+    "Si firmaste tu alquiler con la Ley 27.551, entre julio de 2020 y diciembre de 2023, en general seguís con el ajuste anual por el Índice de Contratos de Locación hasta que termine: las leyes nuevas no alcanzan a los contratos en curso.",
+    "Desde el DNU 70/2023, el Código Civil dice que las partes pueden pactar el ajuste con cualquier índice, público o privado, en la misma moneda del alquiler.",
+    "Antes de pagar el próximo aumento, mirá qué dice tu contrato y en qué fecha lo firmaste.",
+    "Pasáselo a quien alquila con un contrato de 2022 o 2023."
+  ],
+  "hashtags": [
+    "alquiler",
+    "alquileres",
+    "inquilinos",
+    "contratodealquiler",
+    "icl",
+    "ajustealquiler",
+    "vivienda",
+    "argentina",
+    "finanzaspersonales",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "DNU 70/2023: arts. 249 y 257 (alquileres) (InfoLEG)",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "alquiler",
+  "hechos": [
+    "alquiler-contratos-viejos-icl"
+  ]
+}

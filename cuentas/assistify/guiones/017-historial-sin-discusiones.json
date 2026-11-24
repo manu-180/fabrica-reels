@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "clave": "017-historial-sin-discusiones",
+  "titulo": "El historial que contesta solo",
+  "categoria": "tecnico",
+  "formato": "explicador",
+  "paleta": "cielo",
+  "tema": "historial",
+  "hooks": [
+    "¿Esa clase me la descontaste o no?",
+    "El historial termina la discusión",
+    "Cuentas claras con cada alumno"
+  ],
+  "voz": "¿Esa clase me la descontaste o no? Con Assistify no hay que discutirlo. Cada alumno ve en su app sus ingresos, descuentos y reintegros de créditos. Y cada cancelación queda marcada como a tiempo o tardía. El historial lo contesta solo.",
+  "contenido": {
+    "bloques": [
+      {
+        "frase": "me la descontaste o no",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "¿Me la descontaste?"
+        }
+      },
+      {
+        "frase": "ingresos, descuentos y reintegros",
+        "visual": {
+          "tipo": "cuenta",
+          "filas": [
+            {
+              "concepto": "Pack de clases",
+              "valor": "+ 4"
+            },
+            {
+              "concepto": "Clase del martes",
+              "valor": "- 1"
+            },
+            {
+              "concepto": "Cancelación a tiempo",
+              "valor": "+ 1"
+            }
+          ],
+          "total": {
+            "concepto": "Clases disponibles",
+            "valor": "4"
+          }
+        }
+      },
+      {
+        "frase": "cada cancelación queda marcada",
+        "visual": {
+          "tipo": "comparacion",
+          "izq": {
+            "titulo": "Tardía",
+            "items": [
+              "Lugar libre",
+              "Sin crédito"
+            ]
+          },
+          "der": {
+            "titulo": "A tiempo",
+            "items": [
+              "Lugar libre",
+              "Crédito de vuelta"
+            ]
+          }
+        }
+      },
+      {
+        "frase": "El historial lo contesta solo",
+        "visual": {
+          "tipo": "titulo",
+          "texto": "El historial contesta"
+        }
+      }
+    ]
+  },
+  "captions": [
+    "En Assistify cada alumno ve en su app los ingresos, descuentos y reintegros de sus créditos. Sin discusiones.",
+    "Cada cancelación queda marcada como a tiempo o tardía, así se sabe por qué volvió o no volvió el crédito.",
+    "Cuentas claras con cada alumno, sin cuadernos ni capturas de pantalla."
+  ],
+  "hashtags": [
+    "assistify",
+    "profesores",
+    "docentes",
+    "talleres",
+    "academias",
+    "historial",
+    "creditos",
+    "clases",
+    "organizacion",
+    "alumnos"
+  ],
+  "fuentes": [],
+  "hechos": [
+    "historial-creditos",
+    "historial-cancelaciones",
+    "pagos-tipos"
+  ],
+  "idea": "historial-sin-discusiones"
+}

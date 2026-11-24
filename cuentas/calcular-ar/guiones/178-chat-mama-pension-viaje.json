@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "clave": "178-chat-mama-pension-viaje",
+  "idea": "puam-90-dias-afuera",
+  "titulo": "Pensión universal: no más de 90 días afuera",
+  "categoria": "comedia",
+  "formato": "chat",
+  "paleta": "pizarra",
+  "hooks": [
+    "Mamá se va cuatro meses afuera",
+    "El viaje que puede costar la pensión",
+    "Pensión universal y viajes largos: ojo"
+  ],
+  "voz": null,
+  "contenido": {
+    "contacto": "Mamá",
+    "mensajes": [
+      {
+        "de": "ellos",
+        "texto": "Me voy cuatro meses a visitar a tu hermano afuera"
+      },
+      {
+        "de": "yo",
+        "texto": "¿Y la pensión universal que cobrás?"
+      },
+      {
+        "de": "ellos",
+        "texto": "Sigue igual, la cobro igual"
+      },
+      {
+        "de": "yo",
+        "texto": "Más de 90 días corridos afuera y dejás de cumplir la residencia"
+      },
+      {
+        "de": "ellos",
+        "texto": "¿Y me la pueden sacar?"
+      },
+      {
+        "de": "yo",
+        "texto": "Puede pasar. Hacé el viaje de menos de 90 días"
+      },
+      {
+        "de": "ellos",
+        "texto": "Bueno, vuelvo antes y listo"
+      }
+    ],
+    "remate": "Pensión universal: no más de 90 días afuera"
+  },
+  "captions": [
+    "La cartilla de ANSES de la Pensión Universal para el Adulto Mayor dice que ausentarse del país más de 90 días corridos incumple el requisito de residencia (Res. ANSES 918/24).",
+    "El límite no está en la Ley 27.260: sale de una resolución de ANSES que publica su cartilla oficial.",
+    "Antes de sacar el pasaje, contá los días corridos entre la salida y la vuelta.",
+    "Pasáselo a quien tiene a sus papás con viaje largo en vista."
+  ],
+  "hashtags": [
+    "puam",
+    "pensionuniversal",
+    "anses",
+    "jubilados",
+    "adultosmayores",
+    "viajes",
+    "humor",
+    "argentina",
+    "familia",
+    "calcularar"
+  ],
+  "fuentes": [
+    {
+      "nombre": "ANSES: Cartilla Pensión Universal para el Adulto Mayor",
+      "url": "https://www.anses.gob.ar/sites/default/files/cartilla/2025-10/Cartilla-PUAM.pdf",
+      "consultado": "2026-11-23"
+    }
+  ],
+  "tema": "puam",
+  "hechos": [
+    "puam-90-dias-afuera"
+  ]
+}
