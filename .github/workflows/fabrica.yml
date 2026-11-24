@@ -31,6 +31,10 @@ on:
         description: 'Producir sin Blob, Instagram ni guardar el estado (los mp4 quedan como artefacto 3 días)'
         type: boolean
         default: false
+      sin_elevenlabs:
+        description: 'Sólo con dry_run: no paga ElevenLabs (lo que no esté en la caché sale con la voz de respaldo)'
+        type: boolean
+        default: false
       ahora:
         description: 'Publicar ya la próxima publicación de hoy (el antispam se respeta igual)'
         type: boolean
@@ -172,7 +176,7 @@ jobs:
         id: producir
         timeout-minutes: 100
         env:
-          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ !(inputs.dry_run && inputs.sin_elevenlabs) && secrets.ELEVENLABS_API_KEY || '' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
           FABRICA_PUSH: ${{ !inputs.dry_run && '1' || '' }}

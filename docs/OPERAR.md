@@ -61,6 +61,7 @@ gh workflow run fabrica.yml -R manu-180/fabrica-reels -f cuenta=apex-stack -f ac
 | `accion` | `todo`, `producir`, `publicar` o `medir` |
 | `guion` | produce ese guion (clave de `cuentas/<id>/guiones/`) aunque hoy ya haya creativos |
 | `dry_run` | produce sin subir videos, sin Instagram y sin guardar el estado; los mp4 quedan como artefacto `fabrica-<id>-seco` 3 días. No mira `activa` ni `FABRICA_ACTIVA_*`. Paga voz (usa la caché de Blob si hay token) |
+| `sin_elevenlabs` | sólo con `dry_run`: el paso Producir no recibe la key de ElevenLabs, así que lo que no está en la caché sale con la voz de respaldo (Gemini) y no se paga ElevenLabs |
 | `ahora` | publica ya la próxima de hoy, sin esperar su horario; el antispam se respeta igual |
 
 Fuera de `main` sólo corre `dry_run`. Las cuentas de prueba de `nucleo/__fixtures__/cuentas/`
