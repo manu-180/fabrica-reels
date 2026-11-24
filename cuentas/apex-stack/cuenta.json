@@ -81,7 +81,11 @@
       "chat",
       "mito",
       "explicador",
-      "antes-despues"
+      "antes-despues",
+      "lista-de-errores",
+      "pregunta",
+      "comparador",
+      "cuenta-regresiva"
     ]
   },
   "cierre": {
