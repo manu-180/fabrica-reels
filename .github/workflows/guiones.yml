@@ -1,0 +1,247 @@
+name: Guiones
+
+# Repone el banco de guiones de cada cuenta (docs/decisiones/fabrica.md § 4.3). Los domingos mira
+# cuántos días de guiones sin salir le quedan a cada cuenta activa; con menos de 15, agentes/tanda.mjs
+# elige las ideas (temporada primero, variantes de los temas que rindieron, el resto repartido por
+# tema) y les asigna formato repartiendo entre todos los de la cuenta; un agente de Claude las escribe
+# siguiendo agentes/GUIONES.md; el revisor descarta lo que no pasa y lo que queda va a
+# cuentas/<id>/guiones-auto/ en la rama `estado`. Nunca a main. Si faltan ideas, dispara ideas.yml.
+#
+# Dos jobs a propósito: el agente corre con un token de sólo lectura y lo que escribe viaja como
+# artefacto; `guardar` hace un checkout limpio de main, vuelve a revisar con ese código (el agente pudo
+# tocar archivos de su copia) y recién ahí pushea con permiso de escritura.
+
+on:
+  schedule:
+    - cron: '30 14 * * 0'
+  workflow_dispatch:
+    inputs:
+      cuenta:
+        description: 'Cuenta (carpeta de cuentas/). Vacío = todas las activas'
+        required: false
+        default: ''
+      tope:
+        description: 'Máximo de guiones por cuenta (vacío = 7 días de la cuenta)'
+        required: false
+        default: ''
+      forzar:
+        description: 'Escribir aunque al banco le sobren guiones'
+        type: boolean
+        default: false
+      encadenado:
+        description: 'Lo dispara ideas.yml: no vuelve a pedir ideas'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  cuentas:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      matriz: ${{ steps.m.outputs.matriz }}
+      hay: ${{ steps.m.outputs.hay }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: m
+        env:
+          CUENTA: ${{ inputs.cuenta }}
+        run: |
+          M=$(node agentes/tanda.mjs cuentas ${CUENTA:+--cuenta "$CUENTA"})
+          echo "matriz=$M" >> "$GITHUB_OUTPUT"
+          echo "hay=$(node -p "JSON.parse(process.argv[1]).include.length > 0" "$M")" >> "$GITHUB_OUTPUT"
+          echo "$M"
+
+  escribir:
+    needs: cuentas
+    if: needs.cuentas.outputs.hay == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJson(needs.cuentas.outputs.matriz) }}
+    concurrency:
+      group: guiones-${{ matrix.cuenta }}
+      cancel-in-progress: false
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+      TOPE: ${{ inputs.tope }}
+      FORZAR: ${{ inputs.forzar && '--forzar' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Traer el estado
+        run: |
+          echo "ESTADO=$RUNNER_TEMP/estado" >> "$GITHUB_ENV"
+          bash .github/scripts/estado.sh lectura "$RUNNER_TEMP/estado"
+
+      # Las ideas de calcular citan su repo (origen_repo): el revisor busca las cifras a 60 líneas de ahí.
+      - name: Repo de calcular
+        if: matrix.cuenta == 'calcular-ar'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/calcular
+          path: fuentes/manu-180/calcular
+          persist-credentials: false
+
+      - name: Ver qué falta
+        id: plan
+        run: |
+          REPOS=""
+          for d in fuentes/*/*; do [ -d "$d" ] && REPOS="$REPOS --repo ${d#fuentes/}=$d"; done
+          echo "REPOS=$REPOS" >> "$GITHUB_ENV"
+          node agentes/tanda.mjs plan-guiones --cuenta "$CUENTA" --estado "$ESTADO" --salida tanda ${TOPE:+--tope "$TOPE"} $FORZAR
+          P=tanda/pedido.json
+          echo "escribir=$(node -p "require('./$P').escribir ? 1 : 0")" >> "$GITHUB_OUTPUT"
+          echo "hoy=$(TZ=America/Argentina/Buenos_Aires date +%F)" >> "$GITHUB_OUTPUT"
+          echo "pedidos=$(node -p "require('./$P').pedidos.length")" >> "$GITHUB_OUTPUT"
+          mkdir -p tanda/guiones
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.plan.outputs.escribir == '1'
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
+          prompt: |
+            REPO: ${{ github.repository }} · cuenta ${{ matrix.cuenta }} · fecha ${{ steps.plan.outputs.hoy }}
+            Leé agentes/GUIONES.md y seguilo al pie de la letra. Las instrucciones están en castellano; los guiones van en el idioma de la cuenta.
+            PEDIDO: tanda/pedido.json (${{ steps.plan.outputs.pedidos }} guiones)
+            GUIONES DE LA CUENTA: cuentas/${{ matrix.cuenta }}/guiones/ (ya incluye los de guiones-auto del estado)
+            ESCRIBIR EN: tanda/guiones/
+            REVISAR CON: node agentes/tanda.mjs revisar-guiones --cuenta ${{ matrix.cuenta }} --estado ${{ env.ESTADO }} --dir tanda/guiones${{ env.REPOS }}
+          claude_args: |
+            --model sonnet
+            --max-turns 200
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(node agentes/tanda.mjs:*),Bash(ls:*),Bash(cat:*),Bash(rm tanda/guiones/:*)"
+
+      - uses: actions/upload-artifact@v4
+        if: steps.plan.outputs.escribir == '1'
+        with:
+          name: guiones-${{ matrix.cuenta }}
+          path: |
+            tanda/pedido.json
+            tanda/guiones/*.json
+          retention-days: 7
+          if-no-files-found: warn
+
+      - uses: actions/upload-artifact@v4
+        if: steps.plan.outputs.escribir != '1'
+        with:
+          name: guiones-${{ matrix.cuenta }}
+          path: tanda/pedido.json
+          retention-days: 7
+
+  guardar:
+    needs: [cuentas, escribir]
+    if: always() && needs.cuentas.outputs.hay == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJson(needs.cuentas.outputs.matriz) }}
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/download-artifact@v4
+        id: bajar
+        continue-on-error: true
+        with:
+          name: guiones-${{ matrix.cuenta }}
+          path: ${{ runner.temp }}/tanda
+
+      - name: Traer el estado
+        run: |
+          echo "ESTADO=$RUNNER_TEMP/estado" >> "$GITHUB_ENV"
+          bash .github/scripts/estado.sh lectura "$RUNNER_TEMP/estado"
+
+      - name: Repo de calcular
+        if: matrix.cuenta == 'calcular-ar'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/calcular
+          path: fuentes/manu-180/calcular
+          persist-credentials: false
+
+      - name: Revisar con el código de main
+        id: revisar
+        run: |
+          T="$RUNNER_TEMP/tanda"
+          mkdir -p "$T/guiones"
+          if [ ! -f "$T/pedido.json" ]; then
+            echo "### $CUENTA" >> "$GITHUB_STEP_SUMMARY"
+            echo "El job escribir no dejó pedido (falló antes de planear)." >> "$GITHUB_STEP_SUMMARY"
+            echo "nuevos=0" >> "$GITHUB_OUTPUT"
+            echo "faltan=0" >> "$GITHUB_OUTPUT"
+            exit 1
+          fi
+          REPOS=""
+          for d in fuentes/*/*; do [ -d "$d" ] && REPOS="$REPOS --repo ${d#fuentes/}=$d"; done
+          node agentes/tanda.mjs revisar-guiones --cuenta "$CUENTA" --estado "$ESTADO" --dir "$T/guiones" $REPOS --quitar > "$RUNNER_TEMP/revision.txt"
+          cat "$RUNNER_TEMP/revision.txt"
+          shopt -s nullglob
+          NUEVOS=("$T"/guiones/*.json)
+          echo "nuevos=${#NUEVOS[@]}" >> "$GITHUB_OUTPUT"
+          echo "faltan=$(node -p "require('$T/pedido.json').faltan_ideas ? 1 : 0")" >> "$GITHUB_OUTPUT"
+          ESCRIBIR=$(node -p "require('$T/pedido.json').escribir ? 1 : 0")
+          {
+            echo "### $CUENTA"
+            echo
+            node -p "const p = require('$T/pedido.json'); [p.motivo, '', ...p.pedidos.map((x) => '- ' + x.numero + ' ' + x.idea.id + ' → ' + x.formato + ' (' + x.motivo + ')')].join('\n')"
+            if [ "$ESCRIBIR" = 1 ]; then
+              echo
+              echo "Pasan la revisión: ${#NUEVOS[@]}."
+              echo
+              echo '```'
+              cat "$RUNNER_TEMP/revision.txt"
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$ESCRIBIR" = 1 ] && [ ${#NUEVOS[@]} = 0 ]; then
+            echo "::warning::[guiones:$CUENTA] el agente no dejó ningún guion que pase la revisión."
+            exit 1
+          fi
+
+      - name: Guardar en la rama estado
+        if: steps.revisar.outputs.nuevos != '0' && steps.revisar.outputs.nuevos != ''
+        env:
+          FABRICA_GIT_TOKEN: ${{ github.token }}
+          NUEVOS_DIR: ${{ runner.temp }}/tanda/guiones
+        run: |
+          bash agentes/empujar.sh "[guiones] ${{ steps.revisar.outputs.nuevos }} guiones nuevos de $CUENTA" \
+            bash -c 'mkdir -p "cuentas/$CUENTA/guiones-auto" && cp "$NUEVOS_DIR"/*.json "cuentas/$CUENTA/guiones-auto/"'
+
+      - name: Pedir ideas
+        if: always() && steps.revisar.outputs.faltan == '1' && !inputs.encadenado
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run ideas.yml --ref main -f cuenta="$CUENTA" -f encadenado=true
+          echo "Faltan ideas libres para la tanda: se dispara ideas.yml para $CUENTA." >> "$GITHUB_STEP_SUMMARY"

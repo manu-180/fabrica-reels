@@ -1,0 +1,284 @@
+name: Ideas
+
+# Ideas nuevas para cada cuenta (docs/decisiones/fabrica.md § 4.3). Los sábados mira cuántos días de
+# ideas sin guion le quedan a cada cuenta activa: con menos de 60 pide una tanda; el primer sábado del
+# mes pide igual una chica (10) para refrescar con lo que rindió y lo que preguntan en los comentarios.
+# Un agente de Claude (agentes/IDEAS.md) las propone desde los hechos de la cuenta, el informe de
+# puntaje, dolores.json y el calendario; para calcular, también desde el repo público manu-180/calcular,
+# cada idea con su archivo:línea. Los repos privados (APEX, Assistify) se leen sólo si existe el
+# secreto REPOS_LECTURA_TOKEN (fine-grained, sólo lectura). nucleo/hechos.mjs descarta toda idea con
+# un hecho inexistente, una cifra que sus hechos no tienen o un dato personal, y la deduplica contra
+# todas las existentes. Sale a cuentas/<id>/ideas-auto.json (y hechos-auto.json, hechos-propuestos.json)
+# en la rama `estado`. Mismo esquema de dos jobs que guiones.yml: el agente nunca tiene permiso de escritura.
+
+on:
+  schedule:
+    - cron: '30 14 * * 6'
+  workflow_dispatch:
+    inputs:
+      cuenta:
+        description: 'Cuenta (carpeta de cuentas/). Vacío = todas las activas'
+        required: false
+        default: ''
+      tope:
+        description: 'Máximo de ideas por cuenta (vacío = 30 días de la cuenta, con techo de 40)'
+        required: false
+        default: ''
+      forzar:
+        description: 'Pedir ideas aunque sobren'
+        type: boolean
+        default: false
+      encadenado:
+        description: 'Lo dispara guiones.yml: al terminar no lo vuelve a disparar'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  cuentas:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      matriz: ${{ steps.m.outputs.matriz }}
+      hay: ${{ steps.m.outputs.hay }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: m
+        env:
+          CUENTA: ${{ inputs.cuenta }}
+        run: |
+          M=$(node agentes/tanda.mjs cuentas ${CUENTA:+--cuenta "$CUENTA"})
+          echo "matriz=$M" >> "$GITHUB_OUTPUT"
+          echo "hay=$(node -p "JSON.parse(process.argv[1]).include.length > 0" "$M")" >> "$GITHUB_OUTPUT"
+          echo "$M"
+
+  escribir:
+    needs: cuentas
+    if: needs.cuentas.outputs.hay == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJson(needs.cuentas.outputs.matriz) }}
+    concurrency:
+      group: ideas-${{ matrix.cuenta }}
+      cancel-in-progress: false
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+      TOPE: ${{ inputs.tope }}
+      FORZAR: ${{ inputs.forzar && '--forzar' || '' }}
+      HAY_LECTURA: ${{ secrets.REPOS_LECTURA_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Traer el estado
+        run: |
+          echo "ESTADO=$RUNNER_TEMP/estado" >> "$GITHUB_ENV"
+          bash .github/scripts/estado.sh lectura "$RUNNER_TEMP/estado"
+
+      - name: Repo de calcular
+        if: matrix.cuenta == 'calcular-ar'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/calcular
+          path: fuentes/manu-180/calcular
+          persist-credentials: false
+
+      - name: Repo de Assistify
+        if: startsWith(matrix.cuenta, 'assistify') && env.HAY_LECTURA == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/Assistify
+          path: fuentes/manu-180/Assistify
+          token: ${{ secrets.REPOS_LECTURA_TOKEN }}
+          persist-credentials: false
+
+      - name: Web de Assistify
+        if: startsWith(matrix.cuenta, 'assistify') && env.HAY_LECTURA == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/assistify_web
+          path: fuentes/manu-180/assistify_web
+          token: ${{ secrets.REPOS_LECTURA_TOKEN }}
+          persist-credentials: false
+
+      - name: Repo de APEX
+        if: startsWith(matrix.cuenta, 'apex-') && env.HAY_LECTURA == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/APEX
+          path: fuentes/manu-180/APEX
+          token: ${{ secrets.REPOS_LECTURA_TOKEN }}
+          persist-credentials: false
+          sparse-checkout: |
+            apex_web/lib
+            factory
+
+      - name: Ver qué falta
+        id: plan
+        run: |
+          REPOS=""
+          for d in fuentes/*/*; do [ -d "$d" ] && REPOS="$REPOS --repo ${d#fuentes/}=$d"; done
+          echo "REPOS=$REPOS" >> "$GITHUB_ENV"
+          node agentes/tanda.mjs plan-ideas --cuenta "$CUENTA" --estado "$ESTADO" --salida tanda $REPOS ${TOPE:+--tope "$TOPE"} $FORZAR
+          ESCRIBIR=$(node -p "require('./tanda/pedido-ideas.json').escribir ? 1 : 0")
+          # El primer sábado del mes, una tanda chica aunque sobren: lo que rindió y lo que preguntan cambia.
+          if [ "$ESCRIBIR" = 0 ] && [ "${{ github.event_name }}" = schedule ] && [ "$(date -u +%d)" -le 7 ]; then
+            node agentes/tanda.mjs plan-ideas --cuenta "$CUENTA" --estado "$ESTADO" --salida tanda $REPOS --forzar --tope 10
+            ESCRIBIR=1
+          fi
+          echo "escribir=$ESCRIBIR" >> "$GITHUB_OUTPUT"
+          echo "hoy=$(TZ=America/Argentina/Buenos_Aires date +%F)" >> "$GITHUB_OUTPUT"
+          echo "cuantas=$(node -p "require('./tanda/pedido-ideas.json').cuantas")" >> "$GITHUB_OUTPUT"
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.plan.outputs.escribir == '1'
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
+          prompt: |
+            REPO: ${{ github.repository }} · cuenta ${{ matrix.cuenta }} · fecha ${{ steps.plan.outputs.hoy }}
+            Leé agentes/IDEAS.md y seguilo al pie de la letra. Las instrucciones están en castellano; las ideas van en el idioma de la cuenta.
+            PEDIDO: tanda/pedido-ideas.json (${{ steps.plan.outputs.cuantas }} ideas)
+            EXISTENTES: tanda/ideas-existentes.txt
+            REPOS DEL PRODUCTO EN DISCO: fuentes/ (vacío si no hay)
+            ESCRIBIR EN: tanda/ideas-nuevas.json y tanda/hechos-propuestos.json
+            REVISAR CON: node agentes/tanda.mjs revisar-ideas --cuenta ${{ matrix.cuenta }} --estado ${{ env.ESTADO }} --dir tanda${{ env.REPOS }}
+          claude_args: |
+            --model opus
+            --effort high
+            --max-turns 250
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(node agentes/tanda.mjs:*),Bash(ls:*),Bash(cat:*)"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ideas-${{ matrix.cuenta }}
+          path: |
+            tanda/pedido-ideas.json
+            tanda/ideas-nuevas.json
+            tanda/hechos-propuestos.json
+          retention-days: 7
+          if-no-files-found: warn
+
+  guardar:
+    needs: [cuentas, escribir]
+    if: always() && needs.cuentas.outputs.hay == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJson(needs.cuentas.outputs.matriz) }}
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+      HAY_LECTURA: ${{ secrets.REPOS_LECTURA_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: ideas-${{ matrix.cuenta }}
+          path: ${{ runner.temp }}/tanda
+
+      - name: Traer el estado
+        run: |
+          echo "ESTADO=$RUNNER_TEMP/estado" >> "$GITHUB_ENV"
+          bash .github/scripts/estado.sh lectura "$RUNNER_TEMP/estado"
+
+      # El revisor abre las fuentes de los hechos propuestos: sin el repo, un hecho nuevo queda pendiente.
+      - name: Repo de calcular
+        if: matrix.cuenta == 'calcular-ar'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/calcular
+          path: fuentes/manu-180/calcular
+          persist-credentials: false
+
+      - name: Repo de Assistify
+        if: startsWith(matrix.cuenta, 'assistify') && env.HAY_LECTURA == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/Assistify
+          path: fuentes/manu-180/Assistify
+          token: ${{ secrets.REPOS_LECTURA_TOKEN }}
+          persist-credentials: false
+
+      - name: Web de Assistify
+        if: startsWith(matrix.cuenta, 'assistify') && env.HAY_LECTURA == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/assistify_web
+          path: fuentes/manu-180/assistify_web
+          token: ${{ secrets.REPOS_LECTURA_TOKEN }}
+          persist-credentials: false
+
+      - name: Repo de APEX
+        if: startsWith(matrix.cuenta, 'apex-') && env.HAY_LECTURA == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: manu-180/APEX
+          path: fuentes/manu-180/APEX
+          token: ${{ secrets.REPOS_LECTURA_TOKEN }}
+          persist-credentials: false
+          sparse-checkout: |
+            apex_web/lib
+            factory
+
+      - name: Revisar con el código de main
+        id: revisar
+        run: |
+          T="$RUNNER_TEMP/tanda"
+          echo "### $CUENTA" >> "$GITHUB_STEP_SUMMARY"
+          if [ ! -f "$T/ideas-nuevas.json" ]; then
+            echo "Sin ideas nuevas en esta corrida." >> "$GITHUB_STEP_SUMMARY"
+            [ -f "$T/pedido-ideas.json" ] && node -p "require('$T/pedido-ideas.json').motivo" >> "$GITHUB_STEP_SUMMARY"
+            echo "ideas=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          REPOS=""
+          for d in fuentes/*/*; do [ -d "$d" ] && REPOS="$REPOS --repo ${d#fuentes/}=$d"; done
+          node agentes/tanda.mjs revisar-ideas --cuenta "$CUENTA" --estado "$ESTADO" --dir "$T" --salida "$T" $REPOS > "$RUNNER_TEMP/revision.txt"
+          cat "$RUNNER_TEMP/revision.txt"
+          echo "ideas=$(node -p "require('$T/resultado-ideas.json').ideas.length")" >> "$GITHUB_OUTPUT"
+          { echo '```'; cat "$RUNNER_TEMP/revision.txt"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Guardar en la rama estado
+        if: steps.revisar.outputs.ideas != '0' && steps.revisar.outputs.ideas != ''
+        env:
+          FABRICA_GIT_TOKEN: ${{ github.token }}
+          RESULTADO: ${{ runner.temp }}/tanda/resultado-ideas.json
+        run: |
+          bash agentes/empujar.sh "[ideas] ${{ steps.revisar.outputs.ideas }} ideas nuevas de $CUENTA" \
+            node "$GITHUB_WORKSPACE/agentes/tanda.mjs" guardar-ideas --resultado "$RESULTADO" --destino "cuentas/$CUENTA"
+
+      - name: Seguir con los guiones
+        if: steps.revisar.outputs.ideas != '0' && steps.revisar.outputs.ideas != '' && inputs.encadenado
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run guiones.yml --ref main -f cuenta="$CUENTA" -f encadenado=true
