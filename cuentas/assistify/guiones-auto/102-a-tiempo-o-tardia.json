@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "clave": "102-a-tiempo-o-tardia",
+  "titulo": "Cancelación a tiempo o tardía, sin discusión",
+  "categoria": "comedia",
+  "formato": "lista-de-errores",
+  "tema": "historial",
+  "idea": "a-tiempo-o-tardia",
+  "hechos": ["historial-cancelaciones", "cancelacion-tardia"],
+  "hooks": [
+    "¿Avisó a tiempo o no avisó?",
+    "Tres líos de cada cancelación tardía",
+    "El historial ya sabe quién avisó"
+  ],
+  "voz": "Discutir si avisó a tiempo. El historial marca a tiempo o tardía. Devolver el crédito de memoria. Si fue tardía, el crédito no vuelve. Avisar recién cuando ya pasó. La app avisa antes de confirmar. El desorden es el problema, no la alumna.",
+  "contenido": {
+    "titulo": "Cancelaciones sin discusión",
+    "errores": [
+      { "error": "Discutir si avisó a tiempo", "arreglo": "El historial marca a tiempo o tardía" },
+      { "error": "Devolver el crédito de memoria", "arreglo": "Si fue tardía, el crédito no vuelve" },
+      { "error": "Avisar recién cuando ya pasó", "arreglo": "La app avisa antes de confirmar" }
+    ]
+  },
+  "captions": [
+    "Cada cancelación queda marcada en el historial como a tiempo o tardía. Se terminó el ya te avisé.",
+    "Si la cancelación es tardía, la app lo avisa antes de confirmar y el cupo se libera igual.",
+    "¿Cuántas veces discutiste esto en el taller?"
+  ],
+  "hashtags": ["assistify", "profesores", "docentes", "talleres", "academias", "cancelaciones", "historial", "humor", "clases"]
+}

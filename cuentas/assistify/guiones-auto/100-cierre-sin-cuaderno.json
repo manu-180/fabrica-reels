@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "clave": "100-cierre-sin-cuaderno",
+  "titulo": "Cerrar el año sin cuaderno ni planilla",
+  "categoria": "negocio",
+  "formato": "antes-despues",
+  "tema": "cierre-de-anio",
+  "idea": "cierre-sin-planillas",
+  "hechos": ["historial-creditos", "pagos-al-dia", "ficha-alumno"],
+  "ventana": { "desde": "11-15", "hasta": "12-20" },
+  "hooks": [
+    "Así se cierra el año en muchos talleres",
+    "Diciembre con cuaderno, planilla y fichas",
+    "Cerrá el año sin cuaderno de recuperos"
+  ],
+  "voz": "Cuaderno de recuperos, planilla de pagos y fichas sueltas. Así se cierra el año en muchos talleres. Este diciembre, cada alumno ve en su app sus créditos y su historial. Y vos ves quién está al día con el mes y quién lo debe.",
+  "contenido": {
+    "negocio": { "rubro": "estetica", "nombre": "Taller Arcilla", "lema": "Cerámica en torno y modelado" },
+    "antes": { "tipo": "papel", "defectos": ["Cuaderno de recuperos", "Planilla de pagos", "Fichas sueltas"] },
+    "despues": {
+      "titular": "Cada alumno ve sus créditos",
+      "boton": "Ver mi historial",
+      "secciones": ["Mis clases", "Historial", "Pagos"],
+      "pantallas": ["misclases", "historial"]
+    }
+  },
+  "captions": [
+    "Diciembre llega con el cuaderno de recuperos lleno de tachaduras. Este año se puede cerrar distinto.",
+    "Cada alumno ve sus créditos y su historial, y vos ves quién está al día con el mes.",
+    "Guardalo para cuando toque ordenar el cierre del año."
+  ],
+  "hashtags": ["assistify", "profesores", "docentes", "talleres", "academias", "cierredeaño", "diciembre", "recuperos", "creditos", "organizacion"]
+}

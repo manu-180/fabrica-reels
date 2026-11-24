@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "clave": "101-enero-horarios-del-anio",
+  "titulo": "¿Cuándo cargo los horarios del año?",
+  "categoria": "pregunta",
+  "formato": "pregunta",
+  "tema": "inicio-de-clases",
+  "idea": "enero-preparar-el-anio",
+  "hechos": ["horarios-una-vez", "grupos-de-dias"],
+  "ventana": { "desde": "01-05", "hasta": "02-10" },
+  "hooks": [
+    "¿Cuándo conviene armar los horarios?",
+    "Enero: el mes para dejar todo cargado",
+    "Llegá a marzo con los horarios listos"
+  ],
+  "voz": "¿Cuándo cargo los horarios del año? Enero es el mes ideal. Los horarios fijos se cargan una sola vez. Assistify crea las clases del mes. Los días iguales se agrupan, hasta 4 grupos. Así llegás a marzo con todo listo.",
+  "contenido": {
+    "pregunta": "¿Cuándo cargo los horarios del año?",
+    "respuesta": "Enero es el mes ideal",
+    "claves": [
+      "Los horarios fijos se cargan una sola vez",
+      "Assistify crea las clases del mes",
+      "Los días iguales se agrupan, hasta 4 grupos"
+    ]
+  },
+  "captions": [
+    "Enero está tranquilo y es el mejor momento para dejar los horarios del año armados.",
+    "Cargás los horarios fijos una sola vez y las clases del mes se crean solas.",
+    "¿Vos cuándo armás tus horarios? Contanos."
+  ],
+  "hashtags": ["assistify", "profesores", "docentes", "talleres", "academias", "enero", "iniciodeclases", "horarios", "organizacion"]
+}
