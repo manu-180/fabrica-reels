@@ -1,0 +1,45 @@
+{
+  "ideas": [
+    {
+      "id": "tienda-propia-contra-comision",
+      "tema": "tienda-online",
+      "idea": "Vender con comisión contra vender en tu tienda propia: 0 % de comisión, cobrás con tu Mercado Pago y cada venta es 100 % del negocio.",
+      "angulo": "comparacion",
+      "formato_sugerido": "comparador",
+      "hechos": [
+        "tienda-sin-comision",
+        "tienda-cobra-con-mercado-pago"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "cuenta-regresiva-de-tu-pagina",
+      "tema": "plazos",
+      "idea": "La cuenta regresiva de tu página: demo en menos de 24 horas y lista en 5, 10 o 15 días hábiles desde que está el contenido, con el plazo por escrito.",
+      "angulo": "dato",
+      "formato_sugerido": "cuenta-regresiva",
+      "hechos": [
+        "demo-en-24-horas",
+        "plazos-por-plan",
+        "plazo-por-escrito-o-devolucion"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    },
+    {
+      "id": "errores-al-contratar-tu-pagina",
+      "tema": "contratar-una-web",
+      "idea": "Errores al contratar tu página: el dominio a nombre de otro, un código que nunca es tuyo y un plazo de palabra que nadie cumple.",
+      "angulo": "error",
+      "formato_sugerido": "lista-de-errores",
+      "hechos": [
+        "codigo-es-tuyo",
+        "hosting-incluido-dominio-propio",
+        "plazo-por-escrito-o-devolucion"
+      ],
+      "ventana": null,
+      "origen": "hechos"
+    }
+  ]
+}
