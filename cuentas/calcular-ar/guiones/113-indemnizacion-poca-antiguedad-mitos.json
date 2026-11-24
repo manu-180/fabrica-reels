@@ -11,7 +11,7 @@
     "No llegaste al año: igual cobrás",
     "Dos mitos de la indemnización corta"
   ],
-  "voz": "Si no llegás al año, no hay indemnización. Falso: pasados los seis meses de prueba, nunca es menos de un sueldo. Ocho meses trabajados es medio sueldo. Tampoco: una fracción de más de tres meses cuenta como un año entero.",
+  "voz": "Si no llegás al año, no hay indemnización. Falso: pasados los seis meses de prueba, nunca es menos de un sueldo. Con menos de un año cobrás medio sueldo. Tampoco: una fracción de más de tres meses cuenta como un año entero.",
   "contenido": {
     "tarjetas": [
       {
@@ -19,14 +19,14 @@
         "realidad": "Pasado el período de prueba, nunca es menos de un sueldo."
       },
       {
-        "mito": "Ocho meses trabajados es medio sueldo",
+        "mito": "Con menos de un año cobrás medio sueldo",
         "realidad": "Más de tres meses de fracción cuentan como un año entero."
       }
     ]
   },
   "captions": [
     "La indemnización por antigüedad tiene un mínimo: pasado el período de prueba (en general, seis meses), nunca puede ser menor a un mes de sueldo.",
-    "La fracción de más de tres meses cuenta como un año. Con ocho meses trabajados te corresponde un sueldo entero, no medio.",
+    "La fracción de más de tres meses cuenta como un año. Pasado el período de prueba te corresponde un sueldo entero, no medio.",
     "Además de la indemnización, un despido sin causa suma preaviso, integración del mes, aguinaldo y vacaciones proporcionales.",
     "Guardalo por si te toca: con poca antigüedad también hay derechos."
   ],
@@ -56,6 +56,7 @@
   ],
   "tema": "indemnizacion",
   "hechos": [
-    "indemnizacion-minimo-un-sueldo"
+    "indemnizacion-minimo-un-sueldo",
+    "legado-prueba-6-meses"
   ]
 }

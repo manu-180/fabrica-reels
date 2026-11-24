@@ -200,6 +200,16 @@
       "cifras": [],
       "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:94",
       "envejece": null
+    },
+    {
+      "id": "vendedor-online-24-horas",
+      "tipo": "producto",
+      "texto": "Tu página es tu vendedor online, las 24 horas",
+      "cifras": [
+        "24"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:29",
+      "envejece": null
     }
   ]
 }

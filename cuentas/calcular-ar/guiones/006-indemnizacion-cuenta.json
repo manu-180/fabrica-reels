@@ -27,7 +27,7 @@
           "filas": [
             {
               "concepto": "Años completos",
-              "valor": "4"
+              "valor": "3"
             },
             {
               "concepto": "Fracción de más de 3 meses",
@@ -36,7 +36,7 @@
           ],
           "total": {
             "concepto": "Sueldos de indemnización",
-            "valor": "5"
+            "valor": "4"
           }
         }
       },
@@ -70,7 +70,7 @@
     ]
   },
   "captions": [
-    "Cuatro años y cuatro meses de antigüedad son cinco sueldos de indemnización: la fracción de más de tres meses cuenta como un año entero.",
+    "Tres años y cuatro meses de antigüedad son cuatro sueldos de indemnización: la fracción de más de tres meses cuenta como un año entero.",
     "La base es la mejor remuneración mensual, normal y habitual del último año. El aguinaldo, las vacaciones y los premios que no son mensuales quedan afuera.",
     "Además de la indemnización por antigüedad, un despido sin causa suma preaviso, integración del mes y lo proporcional. Hacé la cuenta completa.",
     "Ojo: la base tiene un tope según tu convenio, aunque nunca puede bajar del 67 % de tu sueldo real."

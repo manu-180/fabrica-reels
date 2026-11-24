@@ -10,7 +10,7 @@
     "Dejá de dar turnos por mensaje",
     "Tu agenda puede llenarse mientras dormís"
   ],
-  "voz": "¿Tenés a las cinco? ¿Y el jueves? ¿Y más tarde? Cada turno por mensaje es un ida y vuelta que te come la tarde. Con turnos online, tu cliente ve los horarios libres, elige el suyo y le llega un recordatorio. Vos te enterás cuando ya está agendado.",
+  "voz": "¿Tenés algo a la tarde? ¿Y el jueves? ¿Y más tarde? Cada turno por mensaje es un ida y vuelta que te come la tarde. Con turnos online, tu cliente ve los horarios libres, elige el suyo y le llega un recordatorio. Vos te enterás cuando ya está agendado.",
   "contenido": {
     "bloques": [
       {
@@ -53,7 +53,7 @@
         "frase": "ya está agendado",
         "visual": {
           "tipo": "titulo",
-          "texto": "Nuevo turno: jueves 17 h"
+          "texto": "Nuevo turno: jueves a la tarde"
         }
       }
     ]

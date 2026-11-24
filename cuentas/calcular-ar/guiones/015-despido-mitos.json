@@ -58,5 +58,7 @@
     }
   ],
   "tema": "indemnizacion",
-  "hechos": []
+  "hechos": [
+    "legado-preaviso-empleador"
+  ]
 }

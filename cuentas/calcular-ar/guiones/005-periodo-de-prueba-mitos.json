@@ -59,6 +59,10 @@
   ],
   "tema": "periodo-de-prueba",
   "hechos": [
-    "legado-preaviso-prueba"
+    "legado-preaviso-prueba",
+    "legado-prueba-6-meses",
+    "legado-prueba-8-meses",
+    "legado-prueba-hasta-100",
+    "legado-prueba-hasta-5"
   ]
 }

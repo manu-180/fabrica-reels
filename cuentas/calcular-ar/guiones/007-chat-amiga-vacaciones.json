@@ -6,7 +6,7 @@
   "formato": "chat",
   "paleta": "menta",
   "hooks": [
-    "Mi amiga tenía 7 días de vacaciones regalados",
+    "Mi amiga regalaba una semana de vacaciones",
     "Siete años en la empresa y 14 días",
     "¿Cuántos días te dieron a vos?"
   ],
@@ -32,7 +32,7 @@
       },
       {
         "de": "ellos",
-        "texto": "O sea que me deben 7 días"
+        "texto": "O sea que me deben una semana"
       },
       {
         "de": "yo",
@@ -74,5 +74,8 @@
   "hechos": [
     "legado-vacaciones-escala",
     "vacaciones-corridos-feriados"
+  ],
+  "ilustrativos": [
+    "7"
   ]
 }

@@ -27,7 +27,7 @@
           "filas": [
             {
               "concepto": "Tu sueldo mensual",
-              "valor": "100 %"
+              "valor": "Entero"
             },
             {
               "concepto": "Dividido",
@@ -36,7 +36,7 @@
           ],
           "total": {
             "concepto": "Cada día de vacaciones",
-            "valor": "4 %"
+            "valor": "1/25"
           }
         }
       },
@@ -48,14 +48,14 @@
             "titulo": "Día común",
             "items": [
               "Sueldo ÷ 30",
-              "3,3 % del sueldo"
+              "1/30 del sueldo"
             ]
           },
           "der": {
             "titulo": "Día de vacaciones",
             "items": [
               "Sueldo ÷ 25",
-              "4 % del sueldo"
+              "1/25 del sueldo"
             ]
           }
         }

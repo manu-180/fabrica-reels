@@ -173,6 +173,16 @@
       ],
       "fuente": "repo:manu-180/APEX:apex_web/lib/i18n/precios.ts:11",
       "envejece": "cambia si APEX actualiza PRECIOS_USD"
+    },
+    {
+      "id": "vendedor-online-24-horas",
+      "tipo": "producto",
+      "texto": "Your website is your online salesperson, 24 hours a day",
+      "cifras": [
+        "24"
+      ],
+      "fuente": "repo:manu-180/APEX:apex_web/lib/types/services.ts:29",
+      "envejece": null
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
   "version": 1,
   "clave": "020-chat-tia-indemnizacion",
-  "titulo": "Cuatro años y cinco meses",
+  "titulo": "Tres años y cuatro meses",
   "categoria": "comedia",
   "formato": "chat",
   "paleta": "selva",
   "hooks": [
     "Mi tía cobró un sueldo menos de indemnización",
-    "Cuatro años y cinco meses no son cuatro",
+    "Tres años y cuatro meses no son tres",
     "Le revisé la indemnización a mi tía"
   ],
   "voz": null,
@@ -16,7 +16,7 @@
     "mensajes": [
       {
         "de": "ellos",
-        "texto": "Me echaron después de 4 años y 5 meses"
+        "texto": "Me echaron después de 3 años y 4 meses"
       },
       {
         "de": "yo",
@@ -24,7 +24,7 @@
       },
       {
         "de": "ellos",
-        "texto": "Me dieron 4 sueldos"
+        "texto": "Me dieron 3 sueldos"
       },
       {
         "de": "yo",
@@ -46,7 +46,7 @@
     "remate": "Más de 3 meses cuenta como un año entero"
   },
   "captions": [
-    "En la indemnización por antigüedad, la fracción de más de tres meses cuenta como un año entero. 4 años y 5 meses son 5 sueldos.",
+    "En la indemnización por antigüedad, la fracción de más de tres meses cuenta como un año entero. 3 años y 4 meses son 4 sueldos.",
     "La base es el mejor sueldo mensual, normal y habitual del último año, no el último que cobraste.",
     "Etiquetá a quien le tocó revisar la liquidación de alguien de la familia.",
     "Antes de firmar la liquidación, hacé la cuenta con tus números."

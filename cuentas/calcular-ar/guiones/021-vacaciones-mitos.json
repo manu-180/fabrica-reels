@@ -10,7 +10,7 @@
     "Lo que creés de tus vacaciones",
     "Antes de pedir vacaciones, mirá esto"
   ],
-  "voz": "Te avisan las vacaciones con 45 días. Ya no: desde 2026 son 30, y por escrito. Las vacaciones no se pueden partir. Sí, de común acuerdo, en tramos de siete días o más. Si no me las tomo, me las pagan. No: solo cuando termina la relación.",
+  "voz": "Te avisan las vacaciones con 45 días. Ya no: desde 2026 son 30, y por escrito. Las vacaciones no se pueden partir. Sí, si los dos están de acuerdo. Si no me las tomo, me las pagan. No: solo cuando termina la relación.",
   "contenido": {
     "tarjetas": [
       {
@@ -19,7 +19,7 @@
       },
       {
         "mito": "Las vacaciones no se pueden partir",
-        "realidad": "Se pueden fraccionar de común acuerdo, en tramos de 7 días o más."
+        "realidad": "Se pueden fraccionar si los dos están de acuerdo."
       },
       {
         "mito": "Si no me las tomo, me las pagan",
@@ -29,7 +29,7 @@
   },
   "captions": [
     "Con la reforma de 2026, la fecha de tus vacaciones te la tienen que avisar por escrito con al menos 30 días de anticipación.",
-    "Ahora las vacaciones se pueden partir si los dos están de acuerdo, siempre en tramos de 7 días o más.",
+    "Ahora las vacaciones se pueden partir si los dos están de acuerdo.",
     "Se dan entre el 1 de octubre y el 30 de abril, salvo que se acuerde otra cosa.",
     "Las vacaciones no se pagan en lugar de tomarlas: sólo se cobran así cuando termina la relación laboral."
   ],

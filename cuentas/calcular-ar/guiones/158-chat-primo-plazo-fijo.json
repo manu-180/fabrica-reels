@@ -74,5 +74,8 @@
   "tema": "plazo-fijo",
   "hechos": [
     "plazo-fijo-tem-no-es-dividido-12"
+  ],
+  "ilustrativos": [
+    "12"
   ]
 }

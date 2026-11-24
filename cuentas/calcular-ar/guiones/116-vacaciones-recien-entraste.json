@@ -11,7 +11,7 @@
     "Un día de vacaciones cada veinte",
     "Recién entrado también te toca descanso"
   ],
-  "voz": "Entraste hace poco y te dicen que este año no tenés vacaciones. Error. Si no llegaste a medio año trabajado, te toca un día de descanso cada veinte días trabajados. Con cien días de trabajo, son cinco días. Y si te vas antes de tomarlas, te las tienen que pagar.",
+  "voz": "Entraste hace poco y te dicen que este año no tenés vacaciones. Error. Si no llegaste a medio año trabajado, te toca un día de descanso cada veinte días trabajados. Con veinte días de trabajo ya sumás uno. Y si te vas antes de tomarlas, te las tienen que pagar.",
   "contenido": {
     "bloques": [
       {
@@ -29,22 +29,22 @@
         }
       },
       {
-        "frase": "Con cien días de trabajo",
+        "frase": "Con veinte días de trabajo",
         "visual": {
           "tipo": "cuenta",
           "filas": [
             {
               "concepto": "Días trabajados",
-              "valor": "Cien"
+              "valor": "20"
             },
             {
-              "concepto": "Uno cada",
-              "valor": "20"
+              "concepto": "Te dan",
+              "valor": "1 día"
             }
           ],
           "total": {
             "concepto": "Días de vacaciones",
-            "valor": "Cinco"
+            "valor": "1"
           }
         }
       },
@@ -59,7 +59,7 @@
   },
   "captions": [
     "Si no llegaste a medio año trabajado, igual tenés vacaciones: un día de descanso cada 20 días de trabajo efectivo.",
-    "Con cien días trabajados te tocan cinco días de vacaciones. No es un favor del empleador: lo dice la Ley de Contrato de Trabajo.",
+    "Con veinte días trabajados ya sumás un día de vacaciones. No es un favor del empleador: lo dice la Ley de Contrato de Trabajo.",
     "Si la relación termina antes de que te las tomes, te tienen que pagar las vacaciones proporcionales, sea cual sea la causa.",
     "Pasáselo a quien empezó a trabajar este año."
   ],

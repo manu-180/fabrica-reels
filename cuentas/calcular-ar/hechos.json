@@ -11681,6 +11681,68 @@
       ],
       "fuente": "repo:manu-180/calcular:src/data/enfermedad.ts:36",
       "envejece": null
+    },
+    {
+      "id": "legado-prueba-6-meses",
+      "tipo": "norma",
+      "texto": "El período de prueba dura 6 meses (art. 92 bis LCT, texto de la Ley 27.742)",
+      "cifras": [
+        "6"
+      ],
+      "fuente": "repo:manu-180/calcular:src/data/periodo-prueba.ts:49",
+      "envejece": null
+    },
+    {
+      "id": "legado-prueba-8-meses",
+      "tipo": "norma",
+      "texto": "Un convenio colectivo puede llevar el período de prueba a 8 meses",
+      "cifras": [
+        "8"
+      ],
+      "fuente": "repo:manu-180/calcular:src/data/periodo-prueba.ts:52",
+      "envejece": null
+    },
+    {
+      "id": "legado-prueba-hasta-100",
+      "tipo": "norma",
+      "texto": "La ampliación a 8 meses vale en empresas de 6 y hasta 100 trabajadores",
+      "cifras": [
+        "6",
+        "100"
+      ],
+      "fuente": "repo:manu-180/calcular:src/data/periodo-prueba.ts:53",
+      "envejece": null
+    },
+    {
+      "id": "legado-prueba-hasta-5",
+      "tipo": "norma",
+      "texto": "La ampliación a un año vale en empresas de hasta 5 trabajadores",
+      "cifras": [
+        "5"
+      ],
+      "fuente": "repo:manu-180/calcular:src/data/periodo-prueba.ts:58",
+      "envejece": null
+    },
+    {
+      "id": "legado-preaviso-empleador",
+      "tipo": "norma",
+      "texto": "Art. 231 inc. b LCT (Ley 27.802): preaviso del empleador de 1 mes hasta 5 años de antigüedad y de 2 meses cuando es superior",
+      "cifras": [
+        "1",
+        "5"
+      ],
+      "fuente": "repo:manu-180/calcular:src/data/indemnizacion.ts:48",
+      "envejece": null
+    },
+    {
+      "id": "legado-recategorizacion-dia-5",
+      "tipo": "norma",
+      "texto": "La recategorización del monotributo se hace hasta el 5 de febrero o de agosto",
+      "cifras": [
+        "5"
+      ],
+      "fuente": "repo:manu-180/calcular:src/data/monotributo.ts:112",
+      "envejece": null
     }
   ]
 }

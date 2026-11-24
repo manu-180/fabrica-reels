@@ -27,7 +27,7 @@
           "filas": [
             {
               "concepto": "Tu mejor sueldo del semestre",
-              "valor": "100 %"
+              "valor": "Entero"
             },
             {
               "concepto": "Dividido",
