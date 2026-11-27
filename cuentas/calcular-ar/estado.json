@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-27T04:15:54.596Z",
+  "actualizado": "2026-11-27T04:18:20.537Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -24,12 +24,93 @@
       "formato": "chat",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-27T04:18:20.537Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
+      "intentos": 0,
       "voz": null,
-      "variantes": []
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "chat",
+            "layout": "telefono",
+            "motivo": "cuaderno",
+            "paleta": "menta",
+            "hook": 0,
+            "musica": "tech-house-2",
+            "cierre": "menta-buscador",
+            "color": "frio",
+            "textura": "vineta",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · telefono · menta · cuaderno · frío · tech house 2",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/calcular-ar/2026-11-27/2026-11-27-105-chat-aviso-vacaciones-enero-0-reel-30d87b61.mp4",
+          "video_historia_url": null,
+          "duracion_s": 29.733,
+          "publicaciones": {
+            "prueba": {
+              "destino": "prueba",
+              "caption": "Si tenés empleados y las vacaciones arrancan el quince de enero, el aviso por escrito tiene que salir a más tardar el dieciséis de diciembre.\n\n#vacaciones #empleador #pymes #emprendedores #rrhh\n\nHacé la cuenta con tus números, gratis, en calcular.ar",
+              "no_antes_de": "2026-11-27T13:52:17.000Z",
+              "vence": "2026-11-28T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "normal": {
+              "destino": "normal",
+              "caption": "Desde la Ley 27.802 el aviso de vacaciones es con al menos 30 días de anticipación, por escrito. Antes eran 45.\n\n#vacaciones #empleador #pymes #emprendedores #rrhh\n\nHacé la cuenta con tus números, gratis, en calcular.ar",
+              "no_antes_de": null,
+              "vence": "2026-11-28T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-28T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
