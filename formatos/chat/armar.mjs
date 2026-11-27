@@ -2,7 +2,7 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { NEUTROS, derivar, escribirDatos, layoutDe, lienzo, mezclar, prepararSalida, rellenar, sfxHtml, texto, validarBase } from '../_comun/index.mjs'
+import { NEUTROS, derivar, escaparHtml, escribirDatos, layoutDe, lienzo, mezclar, prepararSalida, rellenar, sfxHtml, texto, validarBase } from '../_comun/index.mjs'
 
 const AQUI = dirname(fileURLToPath(import.meta.url))
 const PLANTILLAS = { telefono: join(AQUI, 'plantilla', 'telefono.html'), hoja: join(AQUI, 'plantilla', 'hoja.html') }
@@ -68,6 +68,7 @@ export function validar(guion) {
     const de = new Set(c.mensajes.map((/** @type {any} */ m) => m?.de))
     if (!de.has('ellos') || !de.has('yo')) mal.push('el chat necesita mensajes de los dos lados')
   }
+  if (c.hora !== undefined && !(typeof c.hora === 'string' && /^d{1,2}:d{2}$/.test(c.hora))) mal.push('contenido.hora: HH:MM, o sin el campo')
   if (c.remate !== null && (typeof c.remate !== 'string' || !c.remate.trim() || c.remate.length > 60)) mal.push('contenido.remate: 1 a 60 caracteres, o null')
 
 
@@ -209,6 +210,7 @@ export async function armar({ guion, hook, salida, diseno, tema }) {
     luces: capas.luces,
     audio: sfxHtml(sfx, plan.duracion),
     duracion: plan.duracion.toFixed(3),
+    hora: escaparHtml(guion.contenido.hora ?? texto(tema.idioma, 'chat.hora')),
   }, tema.idioma)
   writeFileSync(join(dir, 'index.html'), html)
   return { duracion_s: plan.duracion }
