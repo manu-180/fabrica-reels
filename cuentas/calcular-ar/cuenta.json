@@ -4,7 +4,7 @@
   "usuario": "calcular.ar",
   "idioma": "es-AR",
   "activa": true,
-  "modo": "sombra",
+  "modo": "real",
   "creativos_por_dia": 5,
   "variantes_por_creativo": 1,
   "destinos": {
@@ -37,7 +37,7 @@
     "reserva_cupo": 15
   },
   "rampa": {
-    "inicio": "2026-12-01",
+    "inicio": "2026-11-27",
     "escalones": [
       {
         "creativos": 1,
