@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-27T19:57:28.948Z",
+  "actualizado": "2026-11-27T19:57:31.244Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -101,7 +101,7 @@
               "no_antes_de": "2026-11-27T11:21:35.000Z",
               "vence": "2026-11-28T02:59:59.000Z",
               "creando_at": "2026-11-27T19:57:28.948Z",
-              "ig_container_id": null,
+              "ig_container_id": "17923960629462147",
               "ig_media_id": null,
               "permalink": null,
               "publicado_at": null,
