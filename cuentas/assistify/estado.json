@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-27T04:17:49.859Z",
+  "actualizado": "2026-11-27T04:19:28.568Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -9,7 +9,12 @@
     "disponible": false,
     "motivo": "todavía no se probó"
   },
-  "destinos_apagados": {},
+  "destinos_apagados": {
+    "prueba": {
+      "motivo": "Meta rechaza los reels de prueba en esta cuenta: Meta 10/2207081: Application does not have permission for this action",
+      "at": "2026-11-27T04:19:28.568Z"
+    }
+  },
   "rampa": null,
   "saltados": {},
   "creativos": {
@@ -64,8 +69,8 @@
               "ig_media_id": null,
               "permalink": null,
               "publicado_at": null,
-              "error_publicar": null,
-              "clase_error": null,
+              "error_publicar": "Meta 10/2207081: Application does not have permission for this action",
+              "clase_error": "permiso-trial",
               "intentos_publicar": 0,
               "descartada_at": null,
               "motivo_descarte": null,
