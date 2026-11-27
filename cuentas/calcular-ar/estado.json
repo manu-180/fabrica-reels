@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "cuenta": "calcular-ar",
+  "actualizado": "2026-11-27T04:15:54.596Z",
+  "pausado": null,
+  "pausado_por": null,
+  "pausado_hasta": null,
+  "insights": {
+    "disponible": false,
+    "motivo": "todavía no se probó"
+  },
+  "destinos_apagados": {},
+  "rampa": null,
+  "saltados": {},
+  "creativos": {
+    "2026-11-27-105-chat-aviso-vacaciones-enero": {
+      "id": "2026-11-27-105-chat-aviso-vacaciones-enero",
+      "clave": "105-chat-aviso-vacaciones-enero",
+      "idea": "vacaciones-empleador-aviso-diciembre",
+      "tema": "vacaciones",
+      "fecha": "2026-11-27",
+      "titulo": "Vacaciones de enero: el aviso sale en diciembre",
+      "categoria": "comedia",
+      "formato": "chat",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
+    }
+  }
+}
