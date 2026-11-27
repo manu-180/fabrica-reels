@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "cuenta": "assistify",
+  "actualizado": "2026-11-27T04:15:58.814Z",
+  "pausado": null,
+  "pausado_por": null,
+  "pausado_hasta": null,
+  "insights": {
+    "disponible": false,
+    "motivo": "todavía no se probó"
+  },
+  "destinos_apagados": {},
+  "rampa": null,
+  "saltados": {},
+  "creativos": {
+    "2026-11-27-028-chat-diciembre-cuantas-me-quedan": {
+      "id": "2026-11-27-028-chat-diciembre-cuantas-me-quedan",
+      "clave": "028-chat-diciembre-cuantas-me-quedan",
+      "idea": "diciembre-cuantas-me-quedan",
+      "tema": "cierre-de-anio",
+      "fecha": "2026-11-27",
+      "titulo": "Diciembre y cuántas clases me quedan",
+      "categoria": "comedia",
+      "formato": "chat",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
+    }
+  }
+}
