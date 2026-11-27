@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-27T04:21:45.512Z",
+  "actualizado": "2026-11-27T18:08:00.103Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -116,6 +116,24 @@
           }
         }
       ]
+    },
+    "2026-11-28-100-cierre-sin-cuaderno": {
+      "id": "2026-11-28-100-cierre-sin-cuaderno",
+      "clave": "100-cierre-sin-cuaderno",
+      "idea": "cierre-sin-planillas",
+      "tema": "cierre-de-anio",
+      "fecha": "2026-11-28",
+      "titulo": "Cerrar el año sin cuaderno ni planilla",
+      "categoria": "negocio",
+      "formato": "antes-despues",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
     }
   }
 }
