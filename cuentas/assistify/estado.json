@@ -1,13 +1,13 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-27T19:58:05.746Z",
+  "actualizado": "2026-11-27T19:58:08.029Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
   "insights": {
     "disponible": false,
-    "motivo": "todavía no se probó"
+    "motivo": "el token no tiene instagram_manage_insights (Meta 10: (#10) Application does not have permission for this action)"
   },
   "destinos_apagados": {
     "prueba": {
@@ -92,7 +92,21 @@
               "intentos_publicar": 0,
               "descartada_at": null,
               "motivo_descarte": null,
-              "metricas": null,
+              "metricas": {
+                "medido_at": "2026-11-27T19:58:07.396Z",
+                "vistas": null,
+                "alcance": null,
+                "likes": 0,
+                "comentarios": 0,
+                "compartidos": null,
+                "guardados": null,
+                "comentarios_web": null,
+                "promedio_visto_s": null,
+                "respuestas": null,
+                "avances": null,
+                "salidas": null,
+                "preguntas": []
+              },
               "metricas_72h": null
             },
             "historia": {
