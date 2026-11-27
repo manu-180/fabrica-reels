@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-27T04:20:58.250Z",
+  "actualizado": "2026-11-27T18:07:59.494Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -116,6 +116,24 @@
           }
         }
       ]
+    },
+    "2026-11-28-108-clientela-viajante-2027": {
+      "id": "2026-11-28-108-clientela-viajante-2027",
+      "clave": "108-clientela-viajante-2027",
+      "idea": "clientela-calendario-2027",
+      "tema": "clientela",
+      "fecha": "2026-11-28",
+      "titulo": "La indemnización por clientela se deroga en 2027",
+      "categoria": "tecnico",
+      "formato": "explicador",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
     }
   }
 }
