@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-27T18:07:59.494Z",
+  "actualizado": "2026-11-27T18:10:34.821Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -128,12 +128,79 @@
       "formato": "explicador",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-27T18:10:34.821Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
-      "voz": null,
-      "variantes": []
+      "intentos": 0,
+      "voz": {
+        "proveedor": "elevenlabs",
+        "caracteres_pagados": 315,
+        "caracteres_cache": 0
+      },
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "explicador",
+            "layout": "zoom",
+            "motivo": "cuaderno",
+            "paleta": "pizarra",
+            "hook": 0,
+            "musica": "tech-house-2",
+            "cierre": "pizarra-tipografico",
+            "color": "calido",
+            "textura": "nada",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · zoom · pizarra · cuaderno · cálido · tech house 2",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/calcular-ar/2026-11-28/2026-11-28-108-clientela-viajante-2027-0-reel-09ada7de.mp4",
+          "video_historia_url": null,
+          "duracion_s": 31.4,
+          "publicaciones": {
+            "normal": {
+              "destino": "normal",
+              "caption": "La indemnización por clientela es el 25 % de lo que te hubiera correspondido por un despido sin causa. No es un porcentaje de tus sueldos.\n\n#viajantes #viajantedecomercio #indemnizacion #clientela #reformalaboral\n\nHacé la cuenta con tus números, gratis, en calcular.ar",
+              "no_antes_de": "2026-11-28T18:37:04.000Z",
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
