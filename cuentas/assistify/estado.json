@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-27T18:08:00.103Z",
+  "actualizado": "2026-11-27T18:09:04.887Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -128,12 +128,79 @@
       "formato": "antes-despues",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-27T18:09:04.887Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
-      "voz": null,
-      "variantes": []
+      "intentos": 0,
+      "voz": {
+        "proveedor": "elevenlabs",
+        "caracteres_pagados": 260,
+        "caracteres_cache": 0
+      },
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "antes-despues",
+            "layout": "app",
+            "motivo": "papel",
+            "paleta": "teal",
+            "hook": 0,
+            "musica": "acustica-1",
+            "cierre": "teal-buscador",
+            "color": "neutro",
+            "textura": "vineta",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · app · teal · papel · acústica 1 · viñeta",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/assistify/2026-11-28/2026-11-28-100-cierre-sin-cuaderno-0-reel-2abba42d.mp4",
+          "video_historia_url": null,
+          "duracion_s": 25.233,
+          "publicaciones": {
+            "normal": {
+              "destino": "normal",
+              "caption": "Cada alumno ve sus créditos y su historial, y vos ves quién está al día con el mes.\n\n#assistify #profesores #docentes #talleres #academias\n\nProbá Assistify gratis 15 días, sin cargar datos de pago. El link está en el perfil.",
+              "no_antes_de": "2026-11-28T22:27:43.000Z",
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
