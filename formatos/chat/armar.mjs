@@ -68,7 +68,7 @@ export function validar(guion) {
     const de = new Set(c.mensajes.map((/** @type {any} */ m) => m?.de))
     if (!de.has('ellos') || !de.has('yo')) mal.push('el chat necesita mensajes de los dos lados')
   }
-  if (c.hora !== undefined && !(typeof c.hora === 'string' && /^d{1,2}:d{2}$/.test(c.hora))) mal.push('contenido.hora: HH:MM, o sin el campo')
+  if (c.hora !== undefined && !(typeof c.hora === 'string' && /^[0-9]{1,2}:[0-9]{2}$/.test(c.hora))) mal.push('contenido.hora: HH:MM, o sin el campo')
   if (c.remate !== null && (typeof c.remate !== 'string' || !c.remate.trim() || c.remate.length > 60)) mal.push('contenido.remate: 1 a 60 caracteres, o null')
 
 
