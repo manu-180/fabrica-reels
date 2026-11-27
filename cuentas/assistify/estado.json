@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-27T04:15:58.814Z",
+  "actualizado": "2026-11-27T04:17:49.859Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -24,12 +24,93 @@
       "formato": "chat",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-27T04:17:49.859Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
+      "intentos": 0,
       "voz": null,
-      "variantes": []
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "chat",
+            "layout": "hoja",
+            "motivo": "papel",
+            "paleta": "noche",
+            "hook": 0,
+            "musica": "acustica-2",
+            "cierre": "noche-tipografico",
+            "color": "mate",
+            "textura": "vineta",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · hoja · noche · papel · mate · acústica 2 · viñeta",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/assistify/2026-11-27/2026-11-27-028-chat-diciembre-cuantas-me-quedan-0-reel-409a6237.mp4",
+          "video_historia_url": null,
+          "duracion_s": 28.6,
+          "publicaciones": {
+            "prueba": {
+              "destino": "prueba",
+              "caption": "Fin de año en el taller: todos quieren saber cuántas clases les quedan. En Assistify lo ven en la app como clases disponibles.\n\n#assistify #profesores #docentes #talleres #academias\n\nProbá Assistify gratis 15 días, sin cargar datos de pago. El link está en el perfil.",
+              "no_antes_de": "2026-11-27T11:16:25.000Z",
+              "vence": "2026-11-28T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "normal": {
+              "destino": "normal",
+              "caption": "Las clases se reservan en el mes activo. Mejor usarlas antes de que termine.\n\n#assistify #profesores #docentes #talleres #academias\n\nProbá Assistify gratis 15 días, sin cargar datos de pago. El link está en el perfil.",
+              "no_antes_de": null,
+              "vence": "2026-11-28T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-28T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
