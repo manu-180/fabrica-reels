@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-28T01:59:46.913Z",
+  "actualizado": "2026-11-28T02:07:35.258Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -93,7 +93,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T01:59:45.937Z",
+                "medido_at": "2026-11-28T02:07:32.411Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
