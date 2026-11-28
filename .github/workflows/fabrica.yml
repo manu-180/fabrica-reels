@@ -284,3 +284,63 @@ jobs:
           if [[ $IG_INSIGHTS_NOMBRE =~ $valido ]]; then export "$IG_INSIGHTS_NOMBRE=$IG_INSIGHTS_VALOR"; fi
           unset IG_USER_VALOR IG_TOKEN_VALOR IG_INSIGHTS_VALOR
           node nucleo/correr.mjs medir --cuenta "$CUENTA"
+
+  # Historias de los reels de APEX, que hoy publica apex-demos (nucleo/espejo.mjs). Se apaga solo
+  # cuando la fábrica publica la cuenta.
+  historias:
+    name: historias ${{ matrix.cuenta }}
+    if: ${{ github.ref == 'refs/heads/main' && !inputs.dry_run }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      # De a una: las dos pushean a la rama estado.
+      max-parallel: 1
+      matrix:
+        include:
+          - { cuenta: apex-stack, ig_user: IG_APEX_STACK_USER_ID, ig_token: IG_APEX_STACK_TOKEN }
+          - { cuenta: apex-webssites, ig_user: IG_APEX_WEBSSITES_USER_ID, ig_token: IG_APEX_WEBSSITES_TOKEN }
+    concurrency:
+      group: historias-${{ matrix.cuenta }}
+      cancel-in-progress: false
+    env:
+      CUENTA: ${{ matrix.cuenta }}
+      FABRICA_ESTADO: ${{ github.workspace }}/../estado
+      FABRICA_PAUSADA: ${{ vars.FABRICA_PAUSADA }}
+      FABRICA_PUSH: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Traer el estado
+        run: bash .github/scripts/estado.sh escritura "$FABRICA_ESTADO" "$CUENTA"
+
+      - name: Variables de la cuenta
+        env:
+          VARIABLES: ${{ toJSON(vars) }}
+        run: |
+          node -e '
+            const v = JSON.parse(process.env.VARIABLES || "{}")
+            for (const [k, x] of Object.entries(v))
+              if (/^FABRICA_(ACTIVA|PAUSADA)_[A-Z0-9_]+$/.test(k) && !/[\r\n]/.test(String(x))) console.log(`${k}=${x}`)
+          ' >> "$GITHUB_ENV"
+
+      - name: Subir la historia
+        env:
+          IG_USER_VALOR: ${{ secrets[matrix.ig_user] }}
+          IG_TOKEN_VALOR: ${{ secrets[matrix.ig_token] }}
+          IG_USER_NOMBRE: ${{ matrix.ig_user }}
+          IG_TOKEN_NOMBRE: ${{ matrix.ig_token }}
+          FABRICA_GIT_TOKEN: ${{ github.token }}
+        run: |
+          export "$IG_USER_NOMBRE=$IG_USER_VALOR" "$IG_TOKEN_NOMBRE=$IG_TOKEN_VALOR"
+          unset IG_USER_VALOR IG_TOKEN_VALOR
+          node nucleo/espejo.mjs --cuenta "$CUENTA"

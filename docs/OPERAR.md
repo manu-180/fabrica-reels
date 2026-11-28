@@ -17,6 +17,19 @@ espera. El estado de cada cuenta vive en `cuentas/<id>/estado.json` de la rama `
 nunca se mergea) y se pushea después de cada paso que toca Meta, con autor manu-180 noreply y sin
 force push.
 
+## Historias de APEX (mientras publica apex-demos)
+
+El job `historias` de `fabrica.yml` (`nucleo/espejo.mjs`) sube como historia reels ya publicados de
+@apex.stack y @apex.webssites: hasta `por_dia` de `cuentas/<id>/espejo.json`, primero lo del último día
+de la grilla, después una sola prueba, después lo atrasado. Lo que salió queda en
+`cuentas/<id>/espejo-estado.json` (rama `estado`). Se apaga solo cuando la cuenta pasa a `modo: "real"`
+con su `FABRICA_ACTIVA_<ID>=1`; también lo frenan `FABRICA_PAUSADA` y `FABRICA_PAUSADA_<ID>`.
+
+## Reels de prueba rechazados
+
+Meta los habilita recién con un mínimo de seguidores (error 10/2207081; el 27/11 sólo @apex.stack
+llegaba). La fábrica apaga el destino `prueba` de la cuenta y lo vuelve a probar a los 7 días.
+
 ## Prender y apagar una cuenta
 
 Una cuenta corre de verdad sólo si se cumplen las dos cosas:
