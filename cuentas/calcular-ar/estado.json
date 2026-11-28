@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T02:41:51.281Z",
+  "actualizado": "2026-11-28T10:54:46.994Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -72,8 +72,8 @@
               "error_publicar": "Meta 10/2207081: Application does not have permission for this action",
               "clase_error": "permiso-trial",
               "intentos_publicar": 0,
-              "descartada_at": null,
-              "motivo_descarte": null,
+              "descartada_at": "2026-11-28T10:54:46.992Z",
+              "motivo_descarte": "no salió el 2026-11-27",
               "metricas": null,
               "metricas_72h": null
             },
