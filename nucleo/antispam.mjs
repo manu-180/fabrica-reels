@@ -18,6 +18,8 @@ const RECIENTES_H = 48
 const RECIENTES_TOPE = 150
 const DIAS_ESCALON = 7
 const PAUSA_ANTISPAM_H = 48
+// Meta habilita los reels de prueba recién con un mínimo de seguidores: se vuelve a probar cada semana.
+const DIAS_SIN_PRUEBA = 7
 
 /** @param {any} t */
 const iso = (t) => {
@@ -153,6 +155,14 @@ export function actualizarRampa({ estado, cuenta, ahora }) {
   const escalon = r.escalon + 1
   if (typeof calendario !== 'number' || escalon >= calendario) return { ...estado, rampa: null }
   return { ...estado, rampa: { ...r, escalon, desde: ahora.toISOString() } }
+}
+
+/** @param {EstadoV2} estado @param {Date} ahora @returns {EstadoV2} */
+export function reintentarPrueba(estado, ahora) {
+  const apagada = estado.destinos_apagados?.prueba
+  if (!apagada || !(ahora.getTime() - Date.parse(apagada.at) >= DIAS_SIN_PRUEBA * DIA)) return estado
+  const { prueba, ...resto } = estado.destinos_apagados
+  return { ...estado, destinos_apagados: resto }
 }
 
 /** La pausa con fecha de fin (antispam) se levanta sola. @param {EstadoV2} estado @param {Date} ahora @returns {EstadoV2} */

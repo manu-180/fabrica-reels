@@ -1,7 +1,7 @@
 // @ts-check
 import { variablePausa } from '../cuenta.mjs'
 import { alPublicar, cola, descartarViejas, siguiente } from '../agenda.mjs'
-import { actualizarRampa, aplicarErrorRampa, leerCuentaReal, levantarPausaVencida } from '../antispam.mjs'
+import { actualizarRampa, aplicarErrorRampa, leerCuentaReal, levantarPausaVencida, reintentarPrueba } from '../antispam.mjs'
 import { publicacionDe, textoRef, todasLasPublicaciones, tocarPublicacion, varianteDe } from '../estado.mjs'
 import { HORA } from '../tiempo.mjs'
 import { clasificarErrorMeta, motivoPausa } from './errores.mjs'
@@ -58,7 +58,7 @@ export function publicadasSinId(estado, ahora) {
  * @returns {Promise<{ estado: EstadoV2, publicadas: string[], motivo: string, fallar: boolean }>}
  */
 export async function publicarCuenta({ cuenta, estado: inicial, ahora = new Date(), env = process.env, fetch: f = fetch, espera = dormir, ya = false, guardar = () => {}, log = () => {}, reloj = () => new Date(), semilla = cuenta.id }) {
-  let estado = levantarPausaVencida(inicial, ahora)
+  let estado = reintentarPrueba(levantarPausaVencida(inicial, ahora), ahora)
   /** @type {string[]} */
   const publicadas = []
   let fallar = false
