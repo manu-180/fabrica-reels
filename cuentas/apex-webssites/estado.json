@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "cuenta": "apex-webssites",
+  "actualizado": "2026-11-28T02:07:49.030Z",
+  "pausado": null,
+  "pausado_por": null,
+  "pausado_hasta": null,
+  "insights": {
+    "disponible": false,
+    "motivo": "todavía no se probó"
+  },
+  "destinos_apagados": {},
+  "rampa": null,
+  "saltados": {},
+  "creativos": {
+    "2026-11-28-001-sobrino-hace-webs": {
+      "id": "2026-11-28-001-sobrino-hace-webs",
+      "clave": "001-sobrino-hace-webs",
+      "idea": null,
+      "tema": "sobrino-hace-la-web",
+      "fecha": "2026-11-28",
+      "titulo": "The nephew who is building your website",
+      "categoria": "comedia",
+      "formato": "chat",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
+    }
+  }
+}
