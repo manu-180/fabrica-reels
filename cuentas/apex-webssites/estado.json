@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "apex-webssites",
-  "actualizado": "2026-11-28T02:07:49.030Z",
+  "actualizado": "2026-11-28T02:09:43.624Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -24,12 +24,93 @@
       "formato": "chat",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-28T02:09:43.624Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
+      "intentos": 0,
       "voz": null,
-      "variantes": []
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "chat",
+            "layout": "hoja",
+            "motivo": "grilla",
+            "paleta": "noche",
+            "hook": 0,
+            "musica": "acustica-2",
+            "cierre": "noche-tipografico",
+            "color": "contraste",
+            "textura": "nada",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · hoja · noche · grilla · contraste · acústica 2",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/apex-webssites/2026-11-28/2026-11-28-001-sobrino-hace-webs-0-reel-22125441.mp4",
+          "video_historia_url": null,
+          "duracion_s": 32.5,
+          "publicaciones": {
+            "prueba": {
+              "destino": "prueba",
+              "caption": "Everybody has a nephew, a cousin or a buddy who's \"doing your website.\" And we all know how it goes: almost done, almost done, almost done. Meanwhile, your customers look you up on their phone and find nothing.\n\n#webdesign #website #smallbusiness #smallbusinessowner #entrepreneur\n\nComment WEB and we'll build your business website for free. You only pay the first installment once you've seen it and love it.",
+              "no_antes_de": "2026-11-28T22:46:02.000Z",
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "normal": {
+              "destino": "normal",
+              "caption": "If your website has been \"almost done\" for months, you're not alone. It happens to a ton of businesses, and almost always for the same reason: nobody owns finishing it.\n\n#webdesign #website #smallbusiness #smallbusinessowner #entrepreneur\n\nComment WEB and we'll build your business website for free. You only pay the first installment once you've seen it and love it.",
+              "no_antes_de": null,
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-29T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
