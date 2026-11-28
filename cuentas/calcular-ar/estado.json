@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T14:50:58.813Z",
+  "actualizado": "2026-11-28T15:51:08.406Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -93,7 +93,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T14:50:58.010Z",
+                "medido_at": "2026-11-28T15:51:07.130Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
