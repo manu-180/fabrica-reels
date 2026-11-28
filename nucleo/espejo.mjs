@@ -8,10 +8,10 @@ import { ErrorGraph, crearGraph } from './meta/graph.mjs'
 import { DIA, HORA, MIN, diaAR, minutoAR, minutosDe } from './tiempo.mjs'
 
 /*
-  Historias de los reels que una cuenta publica por fuera de la fábrica (@apex.stack y @apex.webssites
-  salen hoy desde apex-demos). Lee los reels de Instagram y vuelve a subir como historia los que
-  todavía no salieron. Se apaga solo el día que la fábrica publica esa cuenta: ahí las historias son
-  de su cola y esto las duplicaría.
+  Historias de los reels que una cuenta publica por fuera de la fábrica (@apex.stack y @apex.webssites:
+  las demos salen desde apex-demos). Lee los reels de Instagram y vuelve a subir como historia los que
+  todavía no salieron. El día que la fábrica publica la cuenta, sigue sólo con los de la grilla: los
+  suyos no van a la grilla y ya tienen su historia en la cola, así que tomarlos la duplicaría.
 
   Nunca dos veces: el intento se guarda (y se pushea) antes de tocar Meta, y un reel con un intento
   anterior no se vuelve a subir, salvo que se pueda leer que su contenedor no llegó a publicarse.
@@ -41,12 +41,13 @@ export function leerEstado(texto) {
 
 /** Por qué no corre en esta cuenta, o null. @param {{ id: string, modo: string }} cuenta @param {Record<string, string | undefined>} env */
 export function motivoApagado(cuenta, env) {
-  const activa = `FABRICA_ACTIVA_${cuenta.id.toUpperCase().replace(/-/g, '_')}`
   if (env.FABRICA_PAUSADA === '1') return 'FABRICA_PAUSADA=1'
   if (env[variablePausa(cuenta.id)] === '1') return `${variablePausa(cuenta.id)}=1`
-  if (env[activa] === '1' && cuenta.modo === 'real') return 'la fábrica ya publica esta cuenta: las historias salen de su cola'
   return null
 }
+
+/** @param {{ id: string, modo: string }} cuenta @param {Record<string, string | undefined>} env */
+export const publicaLaFabrica = (cuenta, env) => cuenta.modo === 'real' && env[`FABRICA_ACTIVA_${cuenta.id.toUpperCase().replace(/-/g, '_')}`] === '1'
 
 /**
  * El próximo reel para subir como historia: primero lo del último día que está en la grilla, después
@@ -117,7 +118,8 @@ export async function espejar({ cuenta, config, estado: inicial, igUser, token, 
 
     const yo = await graph.conReintentos(() => graph.llamar('GET', `/${igUser}`, { fields: 'username' }))
     if (yo.username !== cuenta.usuario) return fin(`el token es de @${yo.username ?? '?'}, no de @${cuenta.usuario}`, true)
-    const e = elegir({ reels: await leerReels(graph, igUser), estado, config, ahora })
+    const reels = await leerReels(graph, igUser)
+    const e = elegir({ reels: publicaLaFabrica(cuenta, env) ? reels.filter((r) => r.feed) : reels, estado, config, ahora })
     if (!e.reel) return fin(e.motivo)
     const { reel } = e
 

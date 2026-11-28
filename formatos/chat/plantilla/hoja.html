@@ -84,7 +84,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--
     // Portada: el gancho solo, enorme. Cuando arranca la charla sube y entra la cabecera del chat.
     const s = D.sube;
     tl.fromTo(titulo, { scale: 1.04, transformOrigin: "0% 50%" }, { scale: 1, duration: Math.max(1, s), ease: "power2.out" }, 0);
-    tl.to(titulo, { y: -700, opacity: 0, duration: 0.7, ease: "power3.in" }, s - 0.25);
+    tl.to(titulo, { y: -700, opacity: 0, duration: 0.5, ease: "power3.in" }, s - 0.4);
     tl.to("#riel", { y: -600, duration: 0.9, ease: "power3.inOut" }, s - 0.25);
     tl.to("#profundo", { y: -270, duration: 0.9, ease: "power3.inOut" }, s - 0.25);
     tl.fromTo("#cabecera", { y: 160, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, s + 0.1);
