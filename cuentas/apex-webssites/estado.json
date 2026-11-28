@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "apex-webssites",
-  "actualizado": "2026-11-28T02:09:43.624Z",
+  "actualizado": "2026-11-28T15:51:22.678Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -111,6 +111,24 @@
           }
         }
       ]
+    },
+    "2026-11-29-002-mitos-boca-a-boca": {
+      "id": "2026-11-29-002-mitos-boca-a-boca",
+      "clave": "002-mitos-boca-a-boca",
+      "idea": null,
+      "tema": "boca-a-boca",
+      "fecha": "2026-11-29",
+      "titulo": "Myths of 'my business doesn't need a website'",
+      "categoria": "mito",
+      "formato": "mito",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
     }
   }
 }
