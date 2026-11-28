@@ -1,13 +1,13 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-28T19:50:59.414Z",
+  "actualizado": "2026-11-28T20:51:00.964Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
   "insights": {
     "disponible": false,
-    "motivo": "el token no tiene instagram_manage_insights (Meta 10: (#10) Application does not have permission for this action)"
+    "motivo": "Meta 100/33: Unsupported get request. Object with ID '18114638711235944' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API docu"
   },
   "destinos_apagados": {
     "prueba": {
@@ -93,7 +93,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T19:50:58.381Z",
+                "medido_at": "2026-11-28T20:50:59.689Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
