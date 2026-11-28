@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "assistify",
-  "actualizado": "2026-11-28T15:50:58.158Z",
+  "actualizado": "2026-11-28T15:51:24.377Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -215,6 +215,24 @@
           }
         }
       ]
+    },
+    "2026-11-29-001-chat-cancela-a-medianoche": {
+      "id": "2026-11-29-001-chat-cancela-a-medianoche",
+      "clave": "001-chat-cancela-a-medianoche",
+      "idea": "cancelacion-a-medianoche",
+      "tema": "caos-whatsapp",
+      "fecha": "2026-11-29",
+      "titulo": "La alumna que cancela a medianoche",
+      "categoria": "comedia",
+      "formato": "chat",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
     }
   }
 }
