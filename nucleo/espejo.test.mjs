@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { elegir, espejar, leerEstado, motivoApagado } from './espejo.mjs'
+import { elegir, espejar, leerEstado, motivoApagado, publicaLaFabrica } from './espejo.mjs'
 
 const AHORA = new Date('2026-11-27T18:00:00Z')
 const config = { por_dia: 2, gap_h: 3, desde: '10:00', hasta: '23:30', ventana_dias: 14, margen_min: 30 }
@@ -25,10 +25,10 @@ test('una sola prueba por día y respeta tope, separación, horario y margen', (
   assert.equal(elegir({ reels: [reel('recien', 0.1)], estado: estado(), config, ahora: AHORA }).reel, null)
 })
 
-test('se apaga solo cuando la fábrica publica la cuenta', () => {
+test('sabe cuándo publica la fábrica y respeta las pausas', () => {
+  assert.equal(publicaLaFabrica(cuenta, { FABRICA_ACTIVA_APEX_STACK: '1' }), false)
+  assert.equal(publicaLaFabrica({ ...cuenta, modo: 'real' }, { FABRICA_ACTIVA_APEX_STACK: '1' }), true)
   assert.equal(motivoApagado(cuenta, {}), null)
-  assert.equal(motivoApagado(cuenta, { FABRICA_ACTIVA_APEX_STACK: '1' }), null)
-  assert.match(String(motivoApagado({ ...cuenta, modo: 'real' }, { FABRICA_ACTIVA_APEX_STACK: '1' })), /ya publica/)
   assert.ok(motivoApagado(cuenta, { FABRICA_PAUSADA_APEX_STACK: '1' }))
 })
 

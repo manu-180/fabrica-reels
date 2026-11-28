@@ -4,7 +4,7 @@
   "usuario": "apex.stack",
   "idioma": "es-AR",
   "activa": true,
-  "modo": "sombra",
+  "modo": "real",
   "creativos_por_dia": 1,
   "variantes_por_creativo": 2,
   "destinos": {
@@ -34,7 +34,7 @@
     }
   ],
   "antispam": {
-    "max_dia": 10,
+    "max_dia": 14,
     "max_dia_propias": 6,
     "gap_min": 50,
     "max_por_corrida": 1,

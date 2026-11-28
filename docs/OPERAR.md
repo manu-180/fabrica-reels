@@ -22,8 +22,8 @@ force push.
 El job `historias` de `fabrica.yml` (`nucleo/espejo.mjs`) sube como historia reels ya publicados de
 @apex.stack y @apex.webssites: hasta `por_dia` de `cuentas/<id>/espejo.json`, primero lo del último día
 de la grilla, después una sola prueba, después lo atrasado. Lo que salió queda en
-`cuentas/<id>/espejo-estado.json` (rama `estado`). Se apaga solo cuando la cuenta pasa a `modo: "real"`
-con su `FABRICA_ACTIVA_<ID>=1`; también lo frenan `FABRICA_PAUSADA` y `FABRICA_PAUSADA_<ID>`.
+`cuentas/<id>/espejo-estado.json` (rama `estado`). Cuando la cuenta pasa a `modo: "real"` con su
+`FABRICA_ACTIVA_<ID>=1`, sigue sólo con los de la grilla (las demos); lo frenan `FABRICA_PAUSADA` y `FABRICA_PAUSADA_<ID>`.
 
 ## Reels de prueba rechazados
 
