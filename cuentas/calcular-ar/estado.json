@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T15:51:08.406Z",
+  "actualizado": "2026-11-28T15:51:20.752Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -215,6 +215,24 @@
           }
         }
       ]
+    },
+    "2026-11-29-111-estatuto-periodista-2027": {
+      "id": "2026-11-29-111-estatuto-periodista-2027",
+      "clave": "111-estatuto-periodista-2027",
+      "idea": "periodista-calendario-derogacion",
+      "tema": "periodista",
+      "fecha": "2026-11-29",
+      "titulo": "El Estatuto del Periodista se deroga en 2027",
+      "categoria": "tecnico",
+      "formato": "explicador",
+      "ronda": 0,
+      "slot": 0,
+      "producido_at": null,
+      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "falla": null,
+      "intentos": 1,
+      "voz": null,
+      "variantes": []
     }
   }
 }
