@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T18:51:43.542Z",
+  "actualizado": "2026-11-28T18:51:46.534Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -93,7 +93,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T17:50:58.178Z",
+                "medido_at": "2026-11-28T18:51:45.078Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
@@ -191,7 +191,21 @@
               "intentos_publicar": 0,
               "descartada_at": null,
               "motivo_descarte": null,
-              "metricas": null,
+              "metricas": {
+                "medido_at": "2026-11-28T18:51:45.078Z",
+                "vistas": null,
+                "alcance": null,
+                "likes": 0,
+                "comentarios": 0,
+                "compartidos": null,
+                "guardados": null,
+                "comentarios_web": null,
+                "promedio_visto_s": null,
+                "respuestas": null,
+                "avances": null,
+                "salidas": null,
+                "preguntas": []
+              },
               "metricas_72h": null
             },
             "historia": {
