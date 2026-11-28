@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "apex-webssites",
-  "actualizado": "2026-11-28T15:51:22.678Z",
+  "actualizado": "2026-11-28T15:52:55.909Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -123,12 +123,97 @@
       "formato": "mito",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-28T15:52:55.909Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
-      "voz": null,
-      "variantes": []
+      "intentos": 0,
+      "voz": {
+        "proveedor": "elevenlabs",
+        "caracteres_pagados": 296,
+        "caracteres_cache": 0
+      },
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "mito",
+            "layout": "hoja",
+            "motivo": "luz",
+            "paleta": "crema",
+            "hook": 0,
+            "musica": "tech-house-1",
+            "cierre": "crema-tipografico",
+            "color": "calido",
+            "textura": "nada",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · hoja · crema · luz · cálido · tech house 1",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/apex-webssites/2026-11-29/2026-11-29-002-mitos-boca-a-boca-0-reel-08859b5d.mp4",
+          "video_historia_url": null,
+          "duracion_s": 27.4,
+          "publicaciones": {
+            "prueba": {
+              "destino": "prueba",
+              "caption": "Word of mouth still works, with one extra step in the middle: before calling you, the person who got referred looks you up on their phone. If they find nothing, they hesitate.\n\n#webdesign #website #smallbusiness #smallbusinessowner #entrepreneur\n\nComment WEB and we'll build your business website for free. You only pay the first installment once you've seen it and love it.",
+              "no_antes_de": "2026-11-29T16:53:16.000Z",
+              "vence": "2026-11-30T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "normal": {
+              "destino": "normal",
+              "caption": "Welder, plumber, accountant, vet: it doesn't matter what you do. These days everyone gets Googled before anyone reaches out.\n\n#webdesign #website #smallbusiness #smallbusinessowner #entrepreneur\n\nComment WEB and we'll build your business website for free. You only pay the first installment once you've seen it and love it.",
+              "no_antes_de": null,
+              "vence": "2026-11-30T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-30T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
