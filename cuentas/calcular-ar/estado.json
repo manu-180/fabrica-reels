@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T15:51:20.752Z",
+  "actualizado": "2026-11-28T15:53:50.015Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -93,7 +93,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T15:51:07.130Z",
+                "medido_at": "2026-11-28T14:50:58.010Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
@@ -227,12 +227,79 @@
       "formato": "explicador",
       "ronda": 0,
       "slot": 0,
-      "producido_at": null,
-      "error": "produciendo: si queda así, la corrida se cortó a la mitad",
+      "producido_at": "2026-11-28T15:53:50.015Z",
+      "error": null,
       "falla": null,
-      "intentos": 1,
-      "voz": null,
-      "variantes": []
+      "intentos": 0,
+      "voz": {
+        "proveedor": "elevenlabs",
+        "caracteres_pagados": 293,
+        "caracteres_cache": 0
+      },
+      "variantes": [
+        {
+          "indice": 0,
+          "hook": 0,
+          "firma": {
+            "formato": "explicador",
+            "layout": "zoom",
+            "motivo": "cuaderno",
+            "paleta": "selva",
+            "hook": 0,
+            "musica": "tech-house-2",
+            "cierre": "selva-buscador",
+            "color": "frio",
+            "textura": "grano",
+            "ffmpeg": {
+              "zoom": 1,
+              "encuadre": "centro",
+              "velocidad": 1
+            }
+          },
+          "resumen": "gancho 1 · zoom · selva · cuaderno · frío · tech house 2",
+          "video_url": "https://6d2vxocwxwzl1mtx.public.blob.vercel-storage.com/videos/calcular-ar/2026-11-29/2026-11-29-111-estatuto-periodista-2027-0-reel-5489c258.mp4",
+          "video_historia_url": null,
+          "duracion_s": 29.3,
+          "publicaciones": {
+            "normal": {
+              "destino": "normal",
+              "caption": "El estatuto suma una indemnización especial de seis meses de sueldo en todo despido injustificado, haya o no preaviso. La Ley de Contrato de Trabajo no tiene un rubro igual.\n\n#periodistas #periodismo #estatutodelperiodista #despido #indemnizacion\n\nHacé la cuenta con tus números, gratis, en calcular.ar",
+              "no_antes_de": "2026-11-30T00:03:52.000Z",
+              "vence": "2026-11-30T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            },
+            "historia": {
+              "destino": "historia",
+              "caption": "",
+              "no_antes_de": null,
+              "vence": "2026-11-30T02:59:59.000Z",
+              "creando_at": null,
+              "ig_container_id": null,
+              "ig_media_id": null,
+              "permalink": null,
+              "publicado_at": null,
+              "error_publicar": null,
+              "clase_error": null,
+              "intentos_publicar": 0,
+              "descartada_at": null,
+              "motivo_descarte": null,
+              "metricas": null,
+              "metricas_72h": null
+            }
+          }
+        }
+      ]
     }
   }
 }
