@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T20:51:00.507Z",
+  "actualizado": "2026-11-28T21:50:59.904Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -93,7 +93,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T20:50:59.178Z",
+                "medido_at": "2026-11-28T21:50:58.711Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
@@ -192,7 +192,7 @@
               "descartada_at": null,
               "motivo_descarte": null,
               "metricas": {
-                "medido_at": "2026-11-28T20:50:59.178Z",
+                "medido_at": "2026-11-28T21:50:58.711Z",
                 "vistas": null,
                 "alcance": null,
                 "likes": 0,
