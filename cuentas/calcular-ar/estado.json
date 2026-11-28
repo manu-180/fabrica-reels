@@ -1,7 +1,7 @@
 {
   "version": 2,
   "cuenta": "calcular-ar",
-  "actualizado": "2026-11-28T17:50:59.085Z",
+  "actualizado": "2026-11-28T18:50:59.716Z",
   "pausado": null,
   "pausado_por": null,
   "pausado_hasta": null,
@@ -182,7 +182,7 @@
               "no_antes_de": "2026-11-28T18:37:04.000Z",
               "vence": "2026-11-29T02:59:59.000Z",
               "creando_at": null,
-              "ig_container_id": null,
+              "ig_container_id": "17994275243886200",
               "ig_media_id": null,
               "permalink": null,
               "publicado_at": null,
